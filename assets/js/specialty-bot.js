@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: "Compétences développées", next: "cyberSkills" },
         { text: "Cas d'usage", next: "cyberUseCases" },
         { text: "Débouchés professionnels", next: "cyberCareers" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/epitech-msc-discovery/specialites/cybersecurite" },
+        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/cybersecurite" },
         { text: "Autres spécialités", next: "explainSpecialties" }
       ]
     },
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: "Compétences développées", next: "cloudSkills" },
         { text: "Cas d'usage", next: "cloudUseCases" },
         { text: "Débouchés professionnels", next: "cloudCareers" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/epitech-msc-discovery/specialites/cloud" },
+        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/cloud" },
         { text: "Autres spécialités", next: "explainSpecialties" }
       ]
     },
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: "Compétences développées", next: "aiSkills" },
         { text: "Cas d'usage", next: "aiUseCases" },
         { text: "Débouchés professionnels", next: "aiCareers" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/epitech-msc-discovery/specialites/ia" },
+        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/ia" },
         { text: "Autres spécialités", next: "explainSpecialties" }
       ]
     },
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: "Compétences développées", next: "bigDataSkills" },
         { text: "Cas d'usage", next: "bigDataUseCases" },
         { text: "Débouchés professionnels", next: "bigDataCareers" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/epitech-msc-discovery/specialites/bigdata" },
+        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/bigdata" },
         { text: "Autres spécialités", next: "explainSpecialties" }
       ]
     },
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: "Compétences développées", next: "digitalSkills" },
         { text: "Cas d'usage", next: "digitalUseCases" },
         { text: "Débouchés professionnels", next: "digitalCareers" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/epitech-msc-discovery/specialites/dit" },
+        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/dit" },
         { text: "Autres spécialités", next: "explainSpecialties" }
       ]
     },
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: "Compétences développées", next: "iotSkills" },
         { text: "Cas d'usage", next: "iotUseCases" },
         { text: "Débouchés professionnels", next: "iotCareers" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/epitech-msc-discovery/specialites/iot" },
+        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/iot" },
         { text: "Autres spécialités", next: "explainSpecialties" }
       ]
     },
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: "Compétences développées", next: "vrSkills" },
         { text: "Cas d'usage", next: "vrUseCases" },
         { text: "Débouchés professionnels", next: "vrCareers" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/epitech-msc-discovery/specialites/vr" },
+        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/vr" },
         { text: "Autres spécialités", next: "explainSpecialties" }
       ]
     },
@@ -446,80 +446,80 @@ document.addEventListener('DOMContentLoaded', () => {
     // Cybersécurité - Carrières
     cyberCareers: {
       messages: [
-        "Les carrières en Cybersécurité sont très recherchées :",
-        "• Pentester / Ethical Hacker (55-90k€)",
-        "• Analyste SOC (Security Operations Center) (45-65k€)",
-        "• Architecte Sécurité (70-110k€)",
-        "• RSSI (Responsable Sécurité des Systèmes d'Information) (80-130k€)",
-        "• Expert en forensics et investigation numérique (60-85k€)",
-        "• Consultant en cybersécurité (50-90k€)",
-        "La demande dépasse l'offre avec plus de 3,5 millions de postes non pourvus dans le monde."
+        "Les métiers de la Cybersécurité offrent d'excellentes perspectives :",
+        "• **Pentester / Ethical Hacker** (55-90K€)",
+        "• **SOC Analyst / Security Analyst** (45-70K€)",
+        "• **Security Engineer** (50-80K€)",
+        "• **Threat Intelligence Analyst** (50-75K€)",
+        "• **CISO (Chief Information Security Officer)** (90-150K€)",
+        "• **Security Architect** (70-110K€)",
+        "• **Forensics Expert** (55-85K€)"
       ],
       options: [
-        { text: "Certifications recherchées", next: "cyberCertifications" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/epitech-msc-discovery/specialites/cybersecurite" },
-        { text: "Retour", next: "explainCyber" },
-        { text: "Menu principal", next: "initial" }
+        { text: "Compétences développées", next: "cyberSkills" },
+        { text: "Cas d'usage", next: "cyberUseCases" },
+        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/cybersecurite" },
+        { text: "Retour", next: "explainCyber" }
       ]
     },
     
     // Cloud Computing - Carrières
     cloudCareers: {
       messages: [
-        "Les carrières dans le Cloud Computing offrent d'excellentes perspectives :",
-        "• Architecte Cloud (70-110k€)",
-        "• DevOps Engineer (55-90k€)",
-        "• SRE (Site Reliability Engineer) (65-100k€)",
-        "• Cloud Security Specialist (60-95k€)",
-        "• Cloud Solutions Architect (75-120k€)",
-        "• Multi-cloud Manager (80-120k€)",
-        "Le marché du cloud continue sa forte croissance avec +25% par an."
+        "Les métiers du Cloud Computing sont très demandés :",
+        "• **Cloud Architect** (65-110K€)",
+        "• **DevOps Engineer** (55-90K€)",
+        "• **Site Reliability Engineer (SRE)** (60-95K€)",
+        "• **Cloud Security Specialist** (60-90K€)",
+        "• **Multi-Cloud Consultant** (65-100K€)",
+        "• **Cloud FinOps Specialist** (55-85K€)",
+        "• **Cloud Migration Expert** (60-95K€)"
       ],
       options: [
-        { text: "Certifications recherchées", next: "cloudCertifications" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/epitech-msc-discovery/specialites/cloud" },
-        { text: "Retour", next: "explainCloud" },
-        { text: "Menu principal", next: "initial" }
+        { text: "Compétences développées", next: "cloudSkills" },
+        { text: "Cas d'usage", next: "cloudUseCases" },
+        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/cloud" },
+        { text: "Retour", next: "explainCloud" }
       ]
     },
     
     // Intelligence Artificielle - Carrières
     aiCareers: {
       messages: [
-        "Les carrières en Intelligence Artificielle sont parmi les mieux rémunérées :",
-        "• Data Scientist / ML Engineer (65-110k€)",
-        "• AI Research Engineer (70-120k€)",
-        "• NLP Specialist (60-100k€)",
-        "• Computer Vision Engineer (65-105k€)",
-        "• AI Product Manager (70-115k€)",
-        "• AI Ethics Consultant (60-90k€)",
-        "La demande pour ces profils a augmenté de plus de 300% ces 5 dernières années."
+        "Les métiers de l'IA offrent des parcours variés et prometteurs :",
+        "• **Machine Learning Engineer** (55-95K€)",
+        "• **NLP Specialist** (60-90K€)",
+        "• **Computer Vision Engineer** (60-95K€)",
+        "• **AI Research Scientist** (65-120K€)",
+        "• **MLOps Engineer** (55-85K€)",
+        "• **AI Ethics Consultant** (50-80K€)",
+        "• **Conversational AI Designer** (50-75K€)"
       ],
       options: [
-        { text: "Compétences les plus recherchées", next: "aiTopSkills" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/epitech-msc-discovery/specialites/ia" },
-        { text: "Retour", next: "explainAI" },
-        { text: "Menu principal", next: "initial" }
+        { text: "Compétences développées", next: "aiSkills" },
+        { text: "Cas d'usage", next: "aiUseCases" },
+        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/ia" },
+        { text: "Retour", next: "explainAI" }
       ]
     },
     
     // Big Data - Carrières
     bigDataCareers: {
       messages: [
-        "Les métiers du Big Data & Analytics offrent d'excellentes opportunités :",
-        "• Data Engineer (60-95k€)",
-        "• Data Architect (70-110k€)",
-        "• Big Data Developer (55-85k€)",
-        "• Analytics Manager (65-100k€)",
-        "• Chief Data Officer (100-150k€)",
-        "• Data Governance Specialist (60-90k€)",
-        "Le marché est en forte croissance avec une pénurie de profils qualifiés."
+        "Les métiers du Big Data offrent d'excellentes perspectives :",
+        "• **Data Engineer** (50-85K€)",
+        "• **Data Architect** (65-110K€)",
+        "• **Data Scientist** (50-90K€)",
+        "• **Analytics Engineer** (55-80K€)",
+        "• **Big Data Consultant** (60-95K€)",
+        "• **Data Visualization Specialist** (45-75K€)",
+        "• **Chief Data Officer** (110-180K€)"
       ],
       options: [
-        { text: "Évolution de carrière", next: "bigDataEvolution" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/epitech-msc-discovery/specialites/bigdata" },
-        { text: "Retour", next: "explainBigData" },
-        { text: "Menu principal", next: "initial" }
+        { text: "Compétences développées", next: "bigDataSkills" },
+        { text: "Cas d'usage", next: "bigDataUseCases" },
+        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/bigdata" },
+        { text: "Retour", next: "explainBigData" }
       ]
     },
     
@@ -527,59 +527,59 @@ document.addEventListener('DOMContentLoaded', () => {
     digitalCareers: {
       messages: [
         "Les métiers de la Transformation Digitale sont très diversifiés :",
-        "• Chief Digital Officer (90-150k€)",
-        "• Digital Transformation Consultant (60-100k€)",
-        "• Product Owner / Product Manager (55-85k€)",
-        "• UX/UI Designer (45-75k€)",
-        "• Growth Hacker (50-80k€)",
-        "• Digital Marketing Manager (55-90k€)",
-        "Ces profils sont recherchés dans tous les secteurs d'activité."
+        "• **Chief Digital Officer** (90-150K€)",
+        "• **Digital Transformation Consultant** (55-95K€)",
+        "• **Digital Project Manager** (45-75K€)",
+        "• **UX/UI Specialist** (40-70K€)",
+        "• **E-commerce Manager** (50-85K€)",
+        "• **Digital Marketing Strategist** (45-80K€)",
+        "• **Change Management Specialist** (50-90K€)"
       ],
       options: [
-        { text: "Soft skills essentielles", next: "digitalSoftSkills" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/epitech-msc-discovery/specialites/dit" },
-        { text: "Retour", next: "explainDigital" },
-        { text: "Menu principal", next: "initial" }
+        { text: "Compétences développées", next: "digitalSkills" },
+        { text: "Cas d'usage", next: "digitalUseCases" },
+        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/dit" },
+        { text: "Retour", next: "explainDigital" }
       ]
     },
     
     // IoT - Carrières
     iotCareers: {
       messages: [
-        "L'Internet des Objets ouvre de nombreuses perspectives professionnelles :",
-        "• IoT Solution Architect (65-95k€)",
-        "• Embedded Systems Engineer (55-85k€)",
-        "• IoT Data Analyst (50-80k€)",
-        "• Smart City Consultant (60-90k€)",
-        "• IoT Security Specialist (65-100k€)",
-        "• IoT Product Manager (60-95k€)",
-        "Le marché de l'IoT devrait atteindre 1,6 trillion de dollars d'ici 2025."
+        "Les métiers de l'IoT offrent des perspectives variées :",
+        "• **IoT Solutions Architect** (60-95K€)",
+        "• **Embedded Systems Engineer** (50-80K€)",
+        "• **IoT Cloud Platform Developer** (55-85K€)",
+        "• **IoT Security Specialist** (60-90K€)",
+        "• **Smart City Consultant** (55-85K€)",
+        "• **IoT Product Manager** (60-95K€)",
+        "• **Industrial IoT Specialist** (55-90K€)"
       ],
       options: [
-        { text: "Industries qui recrutent", next: "iotIndustries" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/epitech-msc-discovery/specialites/iot" },
-        { text: "Retour", next: "explainIoT" },
-        { text: "Menu principal", next: "initial" }
+        { text: "Compétences développées", next: "iotSkills" },
+        { text: "Cas d'usage", next: "iotUseCases" },
+        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/iot" },
+        { text: "Retour", next: "explainIoT" }
       ]
     },
     
     // VR/AR - Carrières
     vrCareers: {
       messages: [
-        "Le secteur VR/AR offre des opportunités créatives et techniques :",
-        "• VR/AR Developer (50-85k€)",
-        "• 3D Artist / Modeleur (45-75k€)",
-        "• UX Designer for immersive experiences (50-80k€)",
-        "• Technical Artist (55-85k€)",
-        "• VR/AR Project Manager (60-90k€)",
-        "• Metaverse Specialist (65-95k€)",
-        "Ce marché émergent connaît une croissance annuelle de plus de 30%."
+        "Les métiers de la VR/AR offrent des perspectives créatives et techniques :",
+        "• **VR/AR Developer** (45-80K€)",
+        "• **3D Artist for VR** (40-70K€)",
+        "• **Spatial Computing Engineer** (55-90K€)",
+        "• **Immersive Experience Designer** (45-75K€)",
+        "• **VR/AR Solutions Architect** (60-95K€)",
+        "• **Virtual Production Specialist** (50-80K€)",
+        "• **Haptic Technology Engineer** (55-85K€)"
       ],
       options: [
-        { text: "Entreprises qui recrutent", next: "vrCompanies" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/epitech-msc-discovery/specialites/vr" },
-        { text: "Retour", next: "explainVR" },
-        { text: "Menu principal", next: "initial" }
+        { text: "Compétences développées", next: "vrSkills" },
+        { text: "Cas d'usage", next: "vrUseCases" },
+        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/vrar" },
+        { text: "Retour", next: "explainVR" }
       ]
     },
     
@@ -1288,16 +1288,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Compétences requises pour les spécialités
     skillsNeeded: {
       messages: [
-        "Choisir selon vos compétences actuelles peut être une bonne approche.",
-        "",
-        "Quelles sont vos forces principales ?"
+        "Évaluer ses compétences actuelles est une bonne approche pour choisir sa spécialité :",
+        "• Si vous aimez la programmation bas niveau, la sécurité et le reverse engineering, la **Cybersécurité** pourrait vous convenir.",
+        "• Si vous êtes à l'aise avec les architectures système et l'automatisation, le **Cloud Computing** pourrait être idéal.",
+        "• Si vous excellez en mathématiques et statistiques, l'**IA** ou le **Big Data** sont des options naturelles.",
+        "• Si vous avez des compétences en UX/UI et business, la **Transformation Digitale** pourrait être votre voie.",
+        "• Si vous aimez le hardware et les systèmes embarqués, l'**IoT** vous conviendrait bien.",
+        "• Si vous êtes créatif et intéressé par le design 3D, la **VR/AR** serait un excellent choix."
       ],
       options: [
-        { text: "Programmation et développement", next: "skillsProgramming" },
-        { text: "Mathématiques et statistiques", next: "skillsMath" },
-        { text: "Communication et gestion de projet", next: "skillsComm" },
-        { text: "Design et créativité", next: "skillsDesign" },
-        { text: "Analyse et résolution de problèmes", next: "skillsAnalysis" }
+        { text: "Explorer les compétences par spécialité", next: "compareSkills" },
+        { text: "Faire un test d'orientation", next: "orientationTest" },
+        { text: "Retour", next: "choosingHelp" }
       ]
     },
     
