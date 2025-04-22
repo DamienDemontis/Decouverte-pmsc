@@ -893,10 +893,4 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o�
     </ul>
     <p>Cette spécialité MSc offre un équilibre parfait entre théorie et pratique, te préparant à devenir un acteur de cette transformation technologique majeure tout en développant une vision critique et responsable.</p>
   </div>
-  
-  <div class="text-center mt-4">
-    <a href="{{ '/inscription' | relative_url }}" class="btn btn-primary">
-      <i class="fas fa-graduation-cap"></i> Candidater à cette spécialité
-    </a>
-  </div>
 </section> 

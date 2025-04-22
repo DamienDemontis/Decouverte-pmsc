@@ -1021,10 +1021,4 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
       <p>Domaine en évolution rapide nécessitant apprentissage permanent et veille technologique active.</p>
     </div>
   </div>
-  
-  <div class="text-center mt-4">
-    <a href="{{ '/inscription' | relative_url }}" class="btn btn-primary">
-      <i class="fas fa-graduation-cap"></i> Candidater à cette spécialité
-    </a>
-  </div>
 </section> 
