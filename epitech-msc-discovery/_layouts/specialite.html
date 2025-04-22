@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<header class="main-header" style="background: linear-gradient(135deg, {{ page.color_primary | default: '#4361ee' }}, {{ page.color_secondary | default: '#4cc9f0' }});">
+  <div class="container">
+    <h1><i class="{{ page.icon | default: 'fas fa-graduation-cap' }}"></i> {{ page.title }}</h1>
+    <p>{{ page.description }}</p>
+  </div>
+</header>
+
+<div class="content">
+  <div class="section-nav" id="section-navigation">
+    <a href="#overview" class="section-nav-item active"><i class="fas fa-lightbulb"></i><span>Vue d'ensemble</span></a>
+    <a href="#cases" class="section-nav-item"><i class="fas fa-briefcase"></i><span>Cas d'usage</span></a>
+    <a href="#roadmap" class="section-nav-item"><i class="fas fa-map"></i><span>Parcours</span></a>
+    <a href="#hands-on" class="section-nav-item"><i class="fas fa-laptop-code"></i><span>Projets</span></a>
+    <a href="#ecosystem" class="section-nav-item"><i class="fas fa-network-wired"></i><span>Écosystème</span></a>
+    <a href="#resources" class="section-nav-item"><i class="fas fa-book"></i><span>Ressources</span></a>
+    {% if page.careers %}
+    <a href="#career" class="section-nav-item"><i class="fas fa-briefcase"></i><span>Perspectives de carrière</span></a>
+    {% endif %}
+  </div>
+
+  <div class="specialite-content">
+    {{ content }}
+  </div>
+</div>
+
+<div class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></div>
+
+<!-- Le script est maintenant géré de manière centralisée dans main.js --> 
