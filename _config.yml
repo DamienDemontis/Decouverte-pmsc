@@ -23,7 +23,7 @@ email: equipe-pedagogique@epitech.eu
 description: >- # this means to ignore newlines until "baseurl:"
   Ce site présente les différentes spécialités disponibles dans le cursus MSc d'Epitech,
   avec des projets de découverte et des ressources pour vous aider à choisir votre orientation.
-baseurl: "/Decouverte-pmsc/epitech-msc-discovery" # the subpath of your site, e.g. /blog
+baseurl: "/Decouverte-pmsc" # the subpath of your site, e.g. /blog
 url: "https://DamienDemontis.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Epitech
 github_username: Epitech
