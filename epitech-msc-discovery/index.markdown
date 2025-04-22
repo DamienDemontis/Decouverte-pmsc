@@ -17,8 +17,7 @@ title: Accueil
 </header>
 
 <div class="specialite-grid container">
-  {% assign specialites = site.specialites | sort: 'title' %}
-  {% for specialite in specialites %}
+  {% for specialite in site.specialites %}
     <div class="specialite-card" style="--card-color: {{ specialite.color_primary | default: '#4361ee' }}">
       <div class="specialite-icon">
         <i class="{{ specialite.icon | default: 'fas fa-graduation-cap' }}"></i>
