@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   
@@ -31,9 +34,25 @@
         </a>
       </li>
       
-      <!-- Liens vers les spécialités -->
-      {% assign specialites = site.specialites | sort: 'ordre' %}
-      {% for specialite in specialites %}
+      <!-- Spécialités Expertes Technologiques -->
+      <li class="nav-category">
+        <span>Spécialités Expertes Technologiques</span>
+      </li>
+      {% assign tech_specialites = site.specialites | where: "type", "tech" | sort: 'ordre' %}
+      {% for specialite in tech_specialites %}
+      <li class="nav-item">
+        <a href="{{ specialite.url | relative_url }}" class="nav-link {% if page.url == specialite.url %}active{% endif %}">
+          <i class="{{ specialite.icon | default: 'fas fa-graduation-cap' }}"></i> {{ specialite.title }}
+        </a>
+      </li>
+      {% endfor %}
+      
+      <!-- Spécialités Digital, Business & Management -->
+      <li class="nav-category">
+        <span>Spécialités Digital, Business & Management</span>
+      </li>
+      {% assign business_specialites = site.specialites | where: "type", "business" | sort: 'ordre' %}
+      {% for specialite in business_specialites %}
       <li class="nav-item">
         <a href="{{ specialite.url | relative_url }}" class="nav-link {% if page.url == specialite.url %}active{% endif %}">
           <i class="{{ specialite.icon | default: 'fas fa-graduation-cap' }}"></i> {{ specialite.title }}
@@ -82,5 +101,8 @@
 
   <!-- Scripts -->
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html> 

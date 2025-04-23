@@ -16,18 +16,51 @@ title: Accueil
   </div>
 </header>
 
-<div class="specialite-grid container">
-  {% for specialite in site.specialites %}
-    <div class="specialite-card" style="--card-color: {{ specialite.color_primary | default: '#4361ee' }}">
-      <div class="specialite-icon">
-        <i class="{{ specialite.icon | default: 'fas fa-graduation-cap' }}"></i>
-      </div>
-      <h3>{{ specialite.title }}</h3>
-      <p>{{ specialite.short_description }}</p>
-      <a href="{{ specialite.url | relative_url }}" class="btn-primary">Découvrir</a>
+<section class="specialities-section">
+  <div class="container">
+    <h2 class="section-title">Spécialités Expertes Technologiques</h2>
+    <p class="section-description">
+      Ces spécialités vous forment aux technologies de pointe pour devenir un expert technique dans des domaines à forte demande.
+    </p>
+    
+    <div class="specialite-grid">
+      {% assign tech_specialites = site.specialites | where: "type", "tech" | sort: 'ordre' %}
+      {% for specialite in tech_specialites %}
+        <div class="specialite-card" style="--card-color: {{ specialite.color_primary | default: '#4361ee' }}">
+          <div class="specialite-icon">
+            <i class="{{ specialite.icon | default: 'fas fa-graduation-cap' }}"></i>
+          </div>
+          <h3>{{ specialite.title }}</h3>
+          <p>{{ specialite.short_description }}</p>
+          <a href="{{ specialite.url | relative_url }}" class="btn-primary">Découvrir</a>
+        </div>
+      {% endfor %}
     </div>
-  {% endfor %}
-</div>
+  </div>
+</section>
+
+<section class="specialities-section alt-bg">
+  <div class="container">
+    <h2 class="section-title">Spécialités Digital, Business & Management</h2>
+    <p class="section-description">
+      Ces spécialités combinent expertise technique et compétences business pour vous préparer à des rôles stratégiques au croisement de la technologie et du management.
+    </p>
+    
+    <div class="specialite-grid">
+      {% assign business_specialites = site.specialites | where: "type", "business" | sort: 'ordre' %}
+      {% for specialite in business_specialites %}
+        <div class="specialite-card" style="--card-color: {{ specialite.color_primary | default: '#4361ee' }}">
+          <div class="specialite-icon">
+            <i class="{{ specialite.icon | default: 'fas fa-graduation-cap' }}"></i>
+          </div>
+          <h3>{{ specialite.title }}</h3>
+          <p>{{ specialite.short_description }}</p>
+          <a href="{{ specialite.url | relative_url }}" class="btn-primary">Découvrir</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
 <section class="home-about container">
   <h2>À propos de ce guide</h2>

@@ -1,12 +1,13 @@
 ---
 layout: specialite
 title: Internet of Things
+type: tech
 icon: fas fa-microchip
-ordre: 6
-color_primary: "#0f766e"
-color_secondary: "#14b8a6"
+ordre: 5
+color_primary: "#059669"
+color_secondary: "#10B981"
 careers: true
-short_description: "Explorez l'univers des objets connectés et découvrez comment concevoir, développer et déployer des solutions IoT innovantes qui transforment notre quotidien."
+short_description: "Concevez et développez des solutions connectées complètes, du capteur embarqué jusqu'au cloud, pour transformer n'importe quel objet physique en source d'intelligence."
 description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'électronique embarquée aux plateformes cloud, en passant par les réseaux de capteurs et l'analyse des données, pour développer des solutions intelligentes dans des domaines variés comme la ville intelligente, l'industrie 4.0 ou la santé connectée."
 ---
 

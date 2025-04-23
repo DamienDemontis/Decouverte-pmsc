@@ -1,13 +1,14 @@
 ---
 layout: specialite
 title: Réalité Virtuelle & Augmentée
+type: tech
 icon: fas fa-vr-cardboard
-ordre: 7
-color_primary: "#4c1d95"
-color_secondary: "#8b5cf6"
+ordre: 6
+color_primary: "#7C3AED"
+color_secondary: "#A78BFA"
 careers: true
-short_description: "Plongez dans l'univers immersif de la réalité virtuelle et augmentée et apprenez à créer des expériences qui transforment notre perception du monde réel et numérique."
-description: "Découvrez comment concevoir, développer et déployer des applications immersives qui redéfinissent la façon dont nous interagissons avec l'information, les produits et les services dans des secteurs allant de la santé à l'industrie en passant par l'éducation et le divertissement."
+short_description: "Concevez et développez des expériences immersives en réalité virtuelle et augmentée qui transforment notre façon d'interagir avec le monde."
+description: "Plongez dans l'univers des technologies immersives, où vous apprendrez à créer des environnements virtuels et des expériences augmentées qui révolutionnent des secteurs comme la formation, la santé, l'industrie et le divertissement."
 ---
 
 <!-- ========== INTRO ========= -->
