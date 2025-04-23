@@ -457,4 +457,58 @@ document.addEventListener('DOMContentLoaded', function() {
       this.style.transition = 'transform 0.3s ease';
     });
   }
+  
+  // Typewriter effect for specialties
+  const typewriterElement = document.getElementById('typewriter-text');
+  if (!typewriterElement) return;
+  
+  const specialties = [
+    "Intelligence Artificielle",
+    "Cybersécurité",
+    "Big Data",
+    "Réalité Virtuelle et Augmentée",
+    "Cloud Computing",
+    "DevOps",
+    "Web 3.0",
+    "Digital Marketing",
+    "Blockchain"
+  ];
+  
+  let currentSpecialtyIndex = 0;
+  let isDeleting = false;
+  let text = '';
+  let delta = 200 - Math.random() * 100;
+  
+  function updateTypewriter() {
+    const currentSpecialty = specialties[currentSpecialtyIndex];
+    
+    if (isDeleting) {
+      text = currentSpecialty.substring(0, text.length - 1);
+    } else {
+      text = currentSpecialty.substring(0, text.length + 1);
+    }
+    
+    typewriterElement.innerHTML = text;
+    
+    // Speed control
+    if (isDeleting) {
+      delta = 100; // Deleting is faster
+    } else {
+      delta = 200 - Math.random() * 100;
+    }
+    
+    // Cycle control
+    if (!isDeleting && text === currentSpecialty) {
+      delta = 2000; // Wait before starting to delete
+      isDeleting = true;
+    } else if (isDeleting && text === '') {
+      isDeleting = false;
+      currentSpecialtyIndex = (currentSpecialtyIndex + 1) % specialties.length;
+      delta = 500; // Pause before typing next specialty
+    }
+    
+    setTimeout(updateTypewriter, delta);
+  }
+  
+  updateTypewriter();
 }); 
