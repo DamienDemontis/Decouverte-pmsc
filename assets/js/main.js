@@ -458,57 +458,190 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Typewriter effect for specialties
+  // ===== Animation de l'orbite et changement de fond =====
+  const techOrbit = document.querySelector('.tech-orbit');
+  const techIcons = document.querySelectorAll('.tech-icon');
+  const heroSection = document.querySelector('.hero-section');
+  const heroSectionBefore = heroSection ? window.getComputedStyle(heroSection, '::before') : null;
+  let hoverTimeout;
+  const defaultGradient = 'linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 50%, #BAE6FD 100%)';
+
+  // Function to generate gradient based on color
+  function generateGradient(hexColor) {
+    // Simple example: create a gradient from the color to a lighter shade
+    // You might want to customize this logic for better gradients
+    const lightColor = hexToRgba(hexColor, 0.2); // Lighter shade
+    const midColor = hexToRgba(hexColor, 0.4);
+    return `linear-gradient(135deg, ${lightColor} 0%, ${midColor} 50%, ${hexColor} 100%)`;
+  }
+
+  // Helper to convert hex to rgba (optional, depends on gradient logic)
+  function hexToRgba(hex, alpha) {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  }
+
+  if (techOrbit && techIcons.length > 0 && heroSection) {
+    techIcons.forEach(icon => {
+      icon.addEventListener('mouseenter', () => {
+        clearTimeout(hoverTimeout);
+        const color = icon.dataset.color || '#0EA5E9'; // Default color
+        const newGradient = generateGradient(color);
+
+        // Set the new gradient on the pseudo-element
+        heroSection.style.setProperty('--hero-before-bg', newGradient);
+        // Apply the gradient to the pseudo-element via style override
+        // Note: Directly setting pseudo-element style requires a slightly different approach or using CSS variables
+        // Let's use CSS variables for cleaner control
+        document.documentElement.style.setProperty('--hero-before-bg-dynamic', newGradient);
+
+        // Trigger the transition by adding the class
+        heroSection.classList.add('background-active');
+      });
+
+      icon.addEventListener('mouseleave', () => {
+        // Delay resetting to default to allow transition to another icon
+        hoverTimeout = setTimeout(() => {
+          heroSection.classList.remove('background-active');
+          // Optional: Reset the CSS variable after transition ends
+          // setTimeout(() => document.documentElement.style.setProperty('--hero-before-bg-dynamic', defaultGradient), 700);
+        }, 100); // Small delay
+      });
+    });
+  }
+
+  // Add CSS Variable use in home.css for the ::before background
+  /*
+  In assets/css/home.css, update the .hero-section::before rule:
+  .hero-section::before {
+    ...
+    background: var(--hero-before-bg-dynamic, linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 50%, #BAE6FD 100%));
+    ...
+  }
+  */
+
+  // ===== Animation des compteurs =====
+  // ... existing code ...
+
+  // ===== Initialisation de TypewriterJS pour l'effet de machine à écrire =====
   const typewriterElement = document.getElementById('typewriter-text');
-  if (!typewriterElement) return;
-  
+
+  if (typewriterElement && typeof Typewriter !== 'undefined') {
+    const typewriter = new Typewriter(typewriterElement, {
+      loop: true,
+      delay: 75,
+      deleteSpeed: 50
+    });
+
+    const specialties = [
+      'Intelligence Artificielle',
+      'Big Data & Analytics',
+      'Cloud Computing',
+      'Cybersécurité',
+      'Internet of Things',
+      'VR/AR',
+      'Digital Transformation',
+      'Project Management',
+      'Fintech',
+      'Marketing',
+      'IA & Transformation',
+      'Data Protection',
+      'RH Digitale',
+      'Santé, IA & IoT',
+      'Data Science & BI'
+    ];
+
+    // Shuffle array for variety
+    specialties.sort(() => Math.random() - 0.5);
+
+    typewriter
+      .pauseFor(1000)
+      .typeString(specialties[0])
+      .pauseFor(2500)
+      .deleteAll(50); // Use deleteSpeed
+
+    for (let i = 1; i < specialties.length; i++) {
+      typewriter
+        .typeString(specialties[i])
+        .pauseFor(2500)
+        .deleteAll(50);
+    }
+
+    typewriter.start();
+
+  } else if (typewriterElement) {
+    console.warn('TypewriterJS library not found. Please include it in your HTML.');
+    // Fallback or leave empty if library is missing
+    typewriterElement.textContent = 'votre domaine...';
+  }
+
+  // Remove or comment out the old typewriter function
+  /*
+  const typewriterText = document.getElementById('typewriter-text');
   const specialties = [
-    "Intelligence Artificielle",
-    "Cybersécurité",
-    "Big Data",
-    "Réalité Virtuelle et Augmentée",
-    "Cloud Computing",
-    "DevOps",
-    "Web 3.0",
-    "Digital Marketing",
-    "Blockchain"
+    'Intelligence Artificielle',
+    'Big Data & Analytics',
+    'Cloud Computing',
+    'Cybersécurité',
+    'Internet of Things',
+    'VR/AR',
+    'Digital Transformation',
+    'Project Management',
+    'Fintech',
+    'Marketing',
+    'IA & Transformation',
+    'Data Protection',
+    'RH Digitale',
+    'Santé & IA',
+    'Data Science'
   ];
-  
   let currentSpecialtyIndex = 0;
+  let currentCharIndex = 0;
   let isDeleting = false;
-  let text = '';
-  let delta = 200 - Math.random() * 100;
   
   function updateTypewriter() {
     const currentSpecialty = specialties[currentSpecialtyIndex];
+    let displayedText;
     
     if (isDeleting) {
-      text = currentSpecialty.substring(0, text.length - 1);
+      displayedText = currentSpecialty.substring(0, currentCharIndex - 1);
+      currentCharIndex--;
     } else {
-      text = currentSpecialty.substring(0, text.length + 1);
+      displayedText = currentSpecialty.substring(0, currentCharIndex + 1);
+      currentCharIndex++;
     }
-    
-    typewriterElement.innerHTML = text;
-    
-    // Speed control
+
+    if (typewriterText) {
+       typewriterText.textContent = displayedText;
+    }
+
+    let typeSpeed = 100;
+
     if (isDeleting) {
-      delta = 100; // Deleting is faster
-    } else {
-      delta = 200 - Math.random() * 100;
+      typeSpeed /= 2; // Faster when deleting
     }
     
-    // Cycle control
-    if (!isDeleting && text === currentSpecialty) {
-      delta = 2000; // Wait before starting to delete
+    // If word is fully typed
+    if (!isDeleting && currentCharIndex === currentSpecialty.length) {
+      typeSpeed = 2000; // Pause at end
       isDeleting = true;
-    } else if (isDeleting && text === '') {
+    }
+    // If word is fully deleted
+    else if (isDeleting && currentCharIndex === 0) {
       isDeleting = false;
       currentSpecialtyIndex = (currentSpecialtyIndex + 1) % specialties.length;
-      delta = 500; // Pause before typing next specialty
+      typeSpeed = 500; // Pause before typing next word
     }
     
-    setTimeout(updateTypewriter, delta);
+    setTimeout(updateTypewriter, typeSpeed);
   }
   
-  updateTypewriter();
-}); 
+  // Start the typewriter effect only if the element exists
+  if (typewriterText) {
+    setTimeout(updateTypewriter, 1000); // Initial delay
+  }
+  */
+
+}); // Fin de DOMContentLoaded 
