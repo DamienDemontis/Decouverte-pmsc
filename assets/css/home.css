@@ -336,6 +336,9 @@ body {
   transition: all 0.3s ease, transform 0s;
   z-index: 2;
   text-decoration: none;
+  --tx: 0px;
+  --ty: 0px;
+  transform: translate(var(--tx), var(--ty));
 }
 
 .tech-icon:hover {
@@ -343,6 +346,8 @@ body {
   background-color: var(--primary);
   color: var(--white);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transform: translate(var(--tx, 0), var(--ty, 0)) scale(1.1);
+  text-decoration: none;
 }
 
 /* Style pour le tooltip qui affiche le nom de la spécialité */
@@ -360,7 +365,7 @@ body {
   white-space: nowrap;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease, top 0.3s ease;
   box-shadow: var(--shadow);
   pointer-events: none;
 }
@@ -548,6 +553,8 @@ body {
   position: relative;
   text-align: left;
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .category-card h3 {
@@ -698,6 +705,7 @@ body {
 
 .specialite-card {
   background-color: var(--white);
+  background-image: linear-gradient(to bottom, var(--white) 80%, hsla(from var(--card-color) h s l / 0.1));
   border-radius: var(--radius-lg);
   padding: 2.25rem;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -713,7 +721,7 @@ body {
 
 .specialite-card:hover {
   transform: translateY(-15px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 0 20px hsla(from var(--card-color) h s l / 0.3);
 }
 
 .specialite-icon {
@@ -734,7 +742,7 @@ body {
 }
 
 .specialite-card:hover .specialite-icon {
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(5deg);
   box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
@@ -988,6 +996,22 @@ body {
   font-weight: 700;
   border-radius: 3rem;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  animation: pulse-cta 2.5s infinite ease-in-out;
+}
+
+@keyframes pulse-cta {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
 }
 
 .cta-section .btn-primary:hover {
@@ -995,6 +1019,7 @@ body {
   color: var(--primary-dark);
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  animation-play-state: paused;
 }
 
 .cta-section .btn-secondary {
@@ -1279,4 +1304,71 @@ body {
   .hero-visual {
     height: 350px;
   }
+}
+
+/* Scroll Animation Styles */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggering delay using CSS custom properties (set by JS) */
+.animate-on-scroll {
+  transition-delay: var(--scroll-anim-delay, 0s);
+}
+
+/* Add glow based on category */
+.tech-card:hover {
+   box-shadow: 0 20px 40px rgba(0,0,0,0.12), 0 0 25px rgba(37, 99, 235, 0.3);
+}
+.business-card:hover {
+   box-shadow: 0 20px 40px rgba(0,0,0,0.12), 0 0 25px rgba(192, 38, 211, 0.3);
+}
+
+.category-card .btn-card {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: currentColor;
+  border-radius: var(--radius-full);
+  margin-top: auto;
+  align-self: flex-start;
+  font-weight: 500;
+  border: 1px solid currentColor;
+  transition: all var(--transition-normal);
+}
+
+.tech-card:hover .btn-card {
+  background-color: var(--tech-color);
+  color: var(--white);
+  border-color: var(--tech-color);
+  transform: translateY(-2px) scale(1.05);
+}
+
+.business-card:hover .btn-card {
+  background-color: var(--business-color);
+  color: var(--white);
+  border-color: var(--business-color);
+  transform: translateY(-2px) scale(1.05);
+}
+
+.category-card:hover .btn-card i {
+  transform: translateX(6px);
+}
+
+/* Microinteractions for buttons */
+.btn-primary:active, .btn-secondary:active, .btn-card:active, .btn-cta:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
+
+/* Ensure parallax doesn't affect button active state */
+.hero-cta .btn-primary:active,
+.hero-cta .btn-secondary:active {
+    transform: scale(0.97); /* Re-apply scale on active */
 } 

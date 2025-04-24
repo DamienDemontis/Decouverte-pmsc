@@ -94,15 +94,15 @@ title: Accueil
 <div class="stats-band">
   <div class="stat-item animate__animated animate__fadeInUp">
     <span class="stat-number count-up" data-count="15">0</span>
-    <span class="stat-label">Spécialités disponibles</span>
+    <span class="stat-label"><i class="fas fa-graduation-cap"></i> Spécialités disponibles</span>
   </div>
   <div class="stat-item animate__animated animate__fadeInUp animate__delay-1s">
     <span class="stat-number count-up" data-count="90">0</span><span class="stat-symbol">%</span>
-    <span class="stat-label">Taux d'insertion professionnelle</span>
+    <span class="stat-label"><i class="fas fa-briefcase"></i> Taux d'insertion pro</span>
   </div>
   <div class="stat-item animate__animated animate__fadeInUp animate__delay-2s">
     <span class="stat-number count-up" data-count="100">0</span><span class="stat-symbol">+</span>
-    <span class="stat-label">Entreprises partenaires</span>
+    <span class="stat-label"><i class="fas fa-handshake"></i> Entreprises partenaires</span>
   </div>
 </div>
 

@@ -1,4 +1,3 @@
-// Attend que le DOM soit complètement chargé
 document.addEventListener('DOMContentLoaded', function() {
   // ===== Fonctionnalité des accordéons =====
   const accordionItems = document.querySelectorAll('.accordion-item');
@@ -577,71 +576,102 @@ document.addEventListener('DOMContentLoaded', function() {
     typewriterElement.textContent = 'votre domaine...';
   }
 
-  // Remove or comment out the old typewriter function
-  /*
-  const typewriterText = document.getElementById('typewriter-text');
-  const specialties = [
-    'Intelligence Artificielle',
-    'Big Data & Analytics',
-    'Cloud Computing',
-    'Cybersécurité',
-    'Internet of Things',
-    'VR/AR',
-    'Digital Transformation',
-    'Project Management',
-    'Fintech',
-    'Marketing',
-    'IA & Transformation',
-    'Data Protection',
-    'RH Digitale',
-    'Santé & IA',
-    'Data Science'
-  ];
-  let currentSpecialtyIndex = 0;
-  let currentCharIndex = 0;
-  let isDeleting = false;
-  
-  function updateTypewriter() {
-    const currentSpecialty = specialties[currentSpecialtyIndex];
-    let displayedText;
-    
-    if (isDeleting) {
-      displayedText = currentSpecialty.substring(0, currentCharIndex - 1);
-      currentCharIndex--;
-    } else {
-      displayedText = currentSpecialty.substring(0, currentCharIndex + 1);
-      currentCharIndex++;
-    }
+  // ===== Scroll Animations =====
+  const scrollElements = document.querySelectorAll('.specialties-section, .specialties-grid, .stats-band, .cta-section, .category-card, .specialite-card');
 
-    if (typewriterText) {
-       typewriterText.textContent = displayedText;
-    }
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, observerInstance) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Add stagger effect based on index within its group (e.g., cards in a grid)
+          // Simple approach: use index provided by forEach
+          // More robust: check parent/sibling structure if needed
+          const delay = (index % 6) * 100; // Apply delay up to 6 items, then repeat pattern
+          entry.target.style.setProperty('--scroll-anim-delay', `${delay}ms`);
 
-    let typeSpeed = 100;
+          entry.target.classList.add('is-visible');
+          entry.target.classList.add('animate-on-scroll'); // Add the base class here too
+          observerInstance.unobserve(entry.target); // Stop observing once visible
+        }
+      });
+    }, {
+      threshold: 0.1 // Trigger when 10% of the element is visible
+    });
 
-    if (isDeleting) {
-      typeSpeed /= 2; // Faster when deleting
-    }
-    
-    // If word is fully typed
-    if (!isDeleting && currentCharIndex === currentSpecialty.length) {
-      typeSpeed = 2000; // Pause at end
-      isDeleting = true;
-    }
-    // If word is fully deleted
-    else if (isDeleting && currentCharIndex === 0) {
-      isDeleting = false;
-      currentSpecialtyIndex = (currentSpecialtyIndex + 1) % specialties.length;
-      typeSpeed = 500; // Pause before typing next word
-    }
-    
-    setTimeout(updateTypewriter, typeSpeed);
+    scrollElements.forEach(el => {
+      // Add the base class initially to hide elements before they are observed
+      el.classList.add('animate-on-scroll'); 
+      observer.observe(el);
+    });
+  } else {
+    // Fallback for older browsers: show all elements immediately
+    scrollElements.forEach(el => {
+      el.classList.add('is-visible');
+      el.classList.add('animate-on-scroll'); 
+    });
   }
-  
-  // Start the typewriter effect only if the element exists
-  if (typewriterText) {
-    setTimeout(updateTypewriter, 1000); // Initial delay
+
+  // ===== Hero Parallax Effect =====
+  const heroVisual = document.querySelector('.hero-visual');
+
+  if (heroSection && heroVisual) {
+    heroSection.addEventListener('mousemove', (e) => {
+      const rect = heroSection.getBoundingClientRect();
+      // Calculate mouse position relative to the center of the section
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+
+      // Define parallax intensity (adjust these values)
+      const intensityX = 15; 
+      const intensityY = 10;
+
+      // Calculate translation values
+      const moveX = -(x / rect.width) * intensityX;
+      const moveY = -(y / rect.height) * intensityY;
+
+      // Apply the transform using requestAnimationFrame for performance
+      requestAnimationFrame(() => {
+        heroVisual.style.transform = `translate(${moveX}px, ${moveY}px)`;
+      });
+    });
+
+    // Reset transform when mouse leaves the section
+    heroSection.addEventListener('mouseleave', () => {
+      requestAnimationFrame(() => {
+        heroVisual.style.transform = 'translate(0, 0)';
+      });
+    });
+    
+    // Ensure smooth transition back to original position
+     heroVisual.style.transition = 'transform 0.3s ease-out';
   }
-  */
+
+  // Animation de rotation
+  function rotateTechIcons() {
+    if (!isAnimating) return;
+    
+    angle += 0.001; // Vitesse de rotation réduite pour une orbite plus majestueuse
+    
+    techIcons.forEach(icon => {
+      if (icon === hoveredIcon) return; // Ne pas déplacer l'icône en hover
+      
+      const currentAngle = parseFloat(icon.dataset.angle) + angle;
+      const newX = Math.cos(currentAngle) * radius;
+      const newY = Math.sin(currentAngle) * radius;
+      
+      // Mettre à jour la position via les variables CSS
+      icon.style.setProperty('--tx', `${newX}px`);
+      icon.style.setProperty('--ty', `${newY}px`);
+      
+      // Mettre à jour les attributs data (facultatif maintenant, mais peut servir)
+      icon.dataset.x = newX;
+      icon.dataset.y = newY;
+    });
+    
+    // Faire tourner aussi le cercle de l'orbite
+    orbitCircle.style.transform = `rotate(${angle * (180 / Math.PI)}deg)`;
+    
+    animationFrameId = requestAnimationFrame(rotateTechIcons);
+  }
 
 }); // Fin de DOMContentLoaded 
