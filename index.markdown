@@ -308,69 +308,6 @@ title: Accueil
   </div>
 </div>
 
-<!-- Témoignages avec slider -->
-<div class="testimonials-section">
-  <h2 class="section-title">Ce que disent nos étudiants</h2>
-  <div class="testimonials-slider">
-    <div class="testimonial-card">
-      <div class="testimonial-content">
-        <p>"Le MSc Cybersécurité m'a permis d'acquérir des compétences très recherchées. J'ai décroché un poste en sécurité offensive avant même la fin de ma formation."</p>
-      </div>
-      <div class="testimonial-author">
-        <div class="author-avatar">
-          <img src="{{ '/assets/images/testimonial1.jpg' | relative_url }}" alt="Photo de Thomas">
-        </div>
-        <div class="author-info">
-          <h4>Thomas L.</h4>
-          <p>MSc Cybersécurité, Promotion 2022</p>
-          <p>Maintenant Pentester chez OrangeCyberdefense</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="testimonial-card">
-      <div class="testimonial-content">
-        <p>"La spécialité IA m'a donné une base solide en machine learning et deep learning. Les projets pratiques m'ont permis de constituer un portfolio impressionnant."</p>
-      </div>
-      <div class="testimonial-author">
-        <div class="author-avatar">
-          <img src="{{ '/assets/images/testimonial2.jpg' | relative_url }}" alt="Photo de Sarah">
-        </div>
-        <div class="author-info">
-          <h4>Sarah M.</h4>
-          <p>MSc Intelligence Artificielle, Promotion 2021</p>
-          <p>Maintenant ML Engineer chez Datadog</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="testimonial-card">
-      <div class="testimonial-content">
-        <p>"Les compétences en business et management combinées à la tech font toute la différence. J'ai pu lancer ma startup après ma formation en Strategic Project Management."</p>
-      </div>
-      <div class="testimonial-author">
-        <div class="author-avatar">
-          <img src="{{ '/assets/images/testimonial3.jpg' | relative_url }}" alt="Photo de Lucas">
-        </div>
-        <div class="author-info">
-          <h4>Lucas B.</h4>
-          <p>MSc Strategic Project Management, Promotion 2020</p>
-          <p>Maintenant CEO & Co-fondateur de TechStart</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="testimonial-controls">
-    <button class="testimonial-prev"><i class="fas fa-arrow-left"></i></button>
-    <div class="testimonial-dots">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    <button class="testimonial-next"><i class="fas fa-arrow-right"></i></button>
-  </div>
-</div>
-
 <!-- Call to Action Final -->
 <div class="cta-section">
   <div class="cta-content">
@@ -378,7 +315,6 @@ title: Accueil
     <p>Commencez dès maintenant votre exploration des spécialités MSc et trouvez celle qui vous correspond parfaitement</p>
     <div class="cta-buttons">
       <a href="#specialties" class="btn-primary btn-large">Explorer les spécialités</a>
-      <a href="/about/" class="btn-secondary btn-large">En savoir plus</a>
     </div>
   </div>
   <div class="cta-decoration">

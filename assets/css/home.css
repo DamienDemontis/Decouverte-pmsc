@@ -688,6 +688,14 @@ body {
   margin: 0 auto;
 }
 
+/* Force 3 columns specifically for the tech specialties grid on wider screens */
+@media (min-width: 992px) { /* Adjust breakpoint as needed */
+  #tech-specialties .specialties-masonry {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px; /* Adjust max-width for 3 columns */
+  }
+}
+
 .specialite-card {
   background-color: var(--white);
   border-radius: var(--radius-lg);
