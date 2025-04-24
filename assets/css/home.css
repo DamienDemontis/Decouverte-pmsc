@@ -447,32 +447,38 @@ body {
 .stats-band {
   display: flex;
   justify-content: center;
-  background: linear-gradient(to right, #FFF, #F8FAFC, #FFF);
-  padding: 3rem 2rem;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  /* Use a subtle gradient related to the main theme */
+  background: linear-gradient(to right, var(--light), #E0F2FE, var(--light)); 
+  padding: 4rem 2rem; /* Increased padding */
   box-shadow: 0 -10px 30px rgba(0,0,0,0.03), 0 10px 30px rgba(0,0,0,0.03);
   position: relative;
   z-index: 20;
   border-top: 1px solid rgba(0,0,0,0.03);
   border-bottom: 1px solid rgba(0,0,0,0.03);
+  gap: 2rem; /* Add gap between items */
 }
 
 .stat-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 2.5rem;
+  /* Remove margin, use gap in parent */
   text-align: center;
-  background-color: white;
-  padding: 1.5rem;
+  background-color: #f8fafc; /* Slightly off-white background */
+  padding: 2rem 1.5rem; /* Adjusted padding */
   border-radius: 1rem;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-  min-width: 150px;
+  border: 1px solid #e5e7eb; /* Subtle border */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.04); /* Slightly adjusted shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+  min-width: 200px; /* Increased min-width */
+  flex: 1; /* Allow items to grow but maintain min-width */
+  max-width: 280px; /* Add max-width */
 }
 
 .stat-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transform: translateY(-8px); /* Increased lift */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08); /* Enhanced shadow on hover */
 }
 
 .stat-number {
@@ -487,18 +493,27 @@ body {
 }
 
 .stat-symbol {
-  font-size: 2rem;
+  font-size: 2rem; /* Reduced size slightly */
   font-weight: 800;
   background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-left: 0.25rem; /* Add space before symbol */
 }
 
 .stat-label {
   font-size: 1rem;
   color: var(--gray);
   font-weight: 500;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem; /* Increased margin-top */
+  display: flex; /* Use flex for icon alignment */
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and text */
+}
+
+.stat-label i {
+  color: var(--primary-dark); /* Use a slightly darker color for icon */
+  font-size: 1.1rem;
 }
 
 /* Specialties Section with enhanced styling */
@@ -698,6 +713,11 @@ body {
 /* Force 3 columns specifically for the tech specialties grid on wider screens */
 @media (min-width: 992px) { /* Adjust breakpoint as needed */
   #tech-specialties .specialties-masonry {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px; /* Adjust max-width for 3 columns */
+  }
+  /* Also force 3 columns for business grid */
+  #business-specialties .specialties-masonry {
     grid-template-columns: repeat(3, 1fr);
     max-width: 1100px; /* Adjust max-width for 3 columns */
   }

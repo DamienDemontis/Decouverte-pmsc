@@ -93,16 +93,16 @@ title: Accueil
 <!-- Bande de statistiques -->
 <div class="stats-band">
   <div class="stat-item animate__animated animate__fadeInUp">
-    <span class="stat-number count-up" data-count="15">0</span>
+    <span class="stat-number count-up" data-count="15">0</span><span class="stat-symbol">+</span>
     <span class="stat-label"><i class="fas fa-graduation-cap"></i> Spécialités disponibles</span>
   </div>
   <div class="stat-item animate__animated animate__fadeInUp animate__delay-1s">
-    <span class="stat-number count-up" data-count="90">0</span><span class="stat-symbol">%</span>
-    <span class="stat-label"><i class="fas fa-briefcase"></i> Taux d'insertion pro</span>
+    <span class="stat-number count-up" data-count="50">0</span><span class="stat-symbol">+</span>
+    <span class="stat-label"><i class="fas fa-laptop-code"></i> Projets pratiques</span>
   </div>
   <div class="stat-item animate__animated animate__fadeInUp animate__delay-2s">
-    <span class="stat-number count-up" data-count="100">0</span><span class="stat-symbol">+</span>
-    <span class="stat-label"><i class="fas fa-handshake"></i> Entreprises partenaires</span>
+    <span class="stat-number count-up" data-count="15">0</span><span class="stat-symbol">+</span>
+    <span class="stat-label"><i class="fas fa-users"></i> Experts & Intervenants</span>
   </div>
 </div>
 
@@ -304,6 +304,16 @@ title: Accueil
       <h3>Data Science & Business Intelligence</h3>
       <p>Transformez les données brutes en informations stratégiques pour guider les décisions business.</p>
       <a href="/Decouverte-pmsc/specialites/data-science-bi" class="btn-primary">Découvrir</a>
+    </div>
+    
+    <!-- Add Luxe & Retail Tech card -->
+    <div class="specialite-card" style="--card-color: #A21CAF;">
+      <div class="specialite-icon">
+        <i class="fas fa-gem"></i>
+      </div>
+      <h3>Luxe & Retail Tech</h3>
+      <p>Transformez l'expérience client dans le luxe et le retail grâce aux technologies digitales.</p>
+      <a href="/Decouverte-pmsc/specialites/luxe-retail-tech" class="btn-primary">Découvrir</a>
     </div>
   </div>
 </div>
