@@ -17,1385 +17,244 @@ document.addEventListener('DOMContentLoaded', () => {
   let processingQueue = false;
   let chatHistory = [];
 
-  // Conversation tree - defines all possible conversation paths
+  // Conversation tree - Updated with all specialties
   const conversationTree = {
     initial: {
-      messages: ["Bonjour ! Je suis votre assistant pour découvrir les spécialités MSC EPITECH. Comment puis-je vous aider ?"],
+      messages: ["Bonjour ! Je suis votre assistant pour découvrir les spécialités MSc EPITECH. Comment puis-je vous aider ?"],
       options: [
         { text: "Explorer les spécialités", next: "explainSpecialties" },
+        { text: "Quelles sont les spécialités Tech / Business ?", next: "categorizeSpecialties" },
         { text: "Comment choisir ma spécialité ?", next: "choosingHelp" },
-        { text: "Comparer deux spécialités", next: "compareSpecialties" },
-        { text: "Tendances du marché tech", next: "marketTrends" }
+        // { text: "Comparer deux spécialités", next: "compareSpecialties" }, // TODO: Implement later
       ]
     },
     explainSpecialties: {
-      messages: ["EPITECH MSC propose plusieurs spécialités de pointe dans le domaine des technologies numériques. Laquelle vous intéresse ?"],
+      messages: ["Voici toutes les spécialités MSc proposées. Laquelle vous intéresse en particulier ?"],
       options: [
-        { text: "Cybersécurité", next: "explainCyber" },
-        { text: "Cloud Computing", next: "explainCloud" },
-        { text: "Intelligence Artificielle", next: "explainAI" },
-        { text: "Big Data & Analytics", next: "explainBigData" },
-        { text: "Digital Transformation", next: "explainDigital" },
-        { text: "Internet of Things", next: "explainIoT" },
-        { text: "Réalité Virtuelle & Augmentée", next: "explainVR" },
+        // Tech Specialties
+        { text: "<i class='fas fa-shield-alt'></i> Cybersécurité", next: "explainCyber" },
+        { text: "<i class='fas fa-cloud'></i> Cloud Computing", next: "explainCloud" },
+        { text: "<i class='fas fa-brain'></i> Intelligence Artificielle", next: "explainAI" },
+        { text: "<i class='fas fa-database'></i> Big Data & Analytics", next: "explainBigData" },
+        { text: "<i class='fas fa-microchip'></i> Internet of Things", next: "explainIoT" }, // Corrected icon
+        { text: "<i class='fas fa-vr-cardboard'></i> Réalité Virtuelle & Augmentée", next: "explainVR" },
+        // Business Specialties
+        { text: "<i class='fas fa-tasks'></i> Strategic Project Management", next: "explainProjectManagement" },
+        { text: "<i class='fas fa-chart-bar'></i> Fintech & Stratégies financières", next: "explainFintech" },
+        { text: "<i class='fas fa-bullhorn'></i> Marketing & Influence", next: "explainMarketing" },
+        { text: "<i class='fas fa-brain'></i> IA & Transformation des organisations", next: "explainAITransformation" }, // Icon duplicate with AI
+        { text: "<i class='fas fa-shield-alt'></i> Data, Protection & Sécurité", next: "explainDataProtection" }, // Icon duplicate with Cyber
+        { text: "<i class='fas fa-users-cog'></i> Digitalisation de la fonction RH", next: "explainRH" },
+        { text: "<i class='fas fa-heartbeat'></i> Santé, IA & IoT", next: "explainSante" },
+        { text: "<i class='fas fa-chart-bar'></i> Data Science & Business Intelligence", next: "explainDataScienceBI" }, // Icon duplicate with Fintech
+        { text: "<i class='fas fa-gem'></i> Luxe & Retail Tech", next: "explainLuxe" },
         { text: "Retour", next: "initial" }
       ]
     },
-    
-    // Cybersécurité
+    categorizeSpecialties: {
+      messages: [
+            "Nos spécialités se divisent en deux grandes catégories :",
+            "<i class='fas fa-laptop-code'></i> **Expertes Technologiques** : Pour ceux qui veulent une expertise technique pointue (IA, Cloud, Cybersécurité...).",
+            "<i class='fas fa-briefcase'></i> **Digital, Business & Management** : Pour ceux qui veulent piloter la stratégie et la transformation numérique (Marketing, Fintech, Project Management...).",
+            "Souhaitez-vous explorer une catégorie spécifique ?"
+      ],
+      options: [
+            { text: "Voir les Spécialités Tech", next: "listTechSpecialties" },
+            { text: "Voir les Spécialités Business", next: "listBusinessSpecialties" },
+            { text: "Voir toutes les spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
+      ]
+    },
+    listTechSpecialties: {
+        messages: ["Voici nos spécialités axées sur l'expertise technologique :"],
+      options: [
+            { text: "<i class='fas fa-shield-alt'></i> Cybersécurité", next: "explainCyber" },
+            { text: "<i class='fas fa-cloud'></i> Cloud Computing", next: "explainCloud" },
+            { text: "<i class='fas fa-brain'></i> Intelligence Artificielle", next: "explainAI" },
+            { text: "<i class='fas fa-database'></i> Big Data & Analytics", next: "explainBigData" },
+            { text: "<i class='fas fa-microchip'></i> Internet of Things", next: "explainIoT" },
+            { text: "<i class='fas fa-vr-cardboard'></i> Réalité Virtuelle & Augmentée", next: "explainVR" },
+            { text: "Voir les spécialités Business", next: "listBusinessSpecialties" },
+            { text: "Retour (Catégories)", next: "categorizeSpecialties" }
+        ]
+    },
+    listBusinessSpecialties: {
+        messages: ["Voici nos spécialités orientées Digital, Business & Management :"],
+      options: [
+            { text: "<i class='fas fa-tasks'></i> Strategic Project Management", next: "explainProjectManagement" },
+            { text: "<i class='fas fa-chart-bar'></i> Fintech & Stratégies financières", next: "explainFintech" },
+            { text: "<i class='fas fa-bullhorn'></i> Marketing & Influence", next: "explainMarketing" },
+            { text: "<i class='fas fa-brain'></i> IA & Transformation des organisations", next: "explainAITransformation" },
+            { text: "<i class='fas fa-shield-alt'></i> Data, Protection & Sécurité", next: "explainDataProtection" },
+            { text: "<i class='fas fa-users-cog'></i> Digitalisation de la fonction RH", next: "explainRH" },
+            { text: "<i class='fas fa-heartbeat'></i> Santé, IA & IoT", next: "explainSante" },
+            { text: "<i class='fas fa-chart-bar'></i> Data Science & Business Intelligence", next: "explainDataScienceBI" },
+            { text: "<i class='fas fa-gem'></i> Luxe & Retail Tech", next: "explainLuxe" },
+            { text: "Voir les spécialités Tech", next: "listTechSpecialties" },
+            { text: "Retour (Catégories)", next: "categorizeSpecialties" }
+        ]
+    },
+
+    // --- Existing Tech Specialties (Updated Links/Info) ---
     explainCyber: {
       messages: [
-        "La spécialité Cybersécurité vous forme à protéger les systèmes d'information contre les menaces numériques.",
-        "Vous développerez des compétences en sécurité offensive (pentesting), défensive, analyse des risques et gestion des incidents de sécurité."
+        "<i class='fas fa-shield-alt'></i> **Cybersécurité** : Développez l'expertise nécessaire pour protéger les systèmes d'information contre les menaces numériques et sécuriser les données sensibles des organisations.",
       ],
       options: [
-        { text: "Compétences développées", next: "cyberSkills" },
-        { text: "Cas d'usage", next: "cyberUseCases" },
-        { text: "Débouchés professionnels", next: "cyberCareers" },
         { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/cybersecurite" },
-        { text: "Autres spécialités", next: "explainSpecialties" }
+        { text: "Autres spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
       ]
     },
-    
-    // Cloud Computing
     explainCloud: {
       messages: [
-        "La spécialité Cloud Computing vous forme à la conception, déploiement et gestion d'infrastructures et services cloud.",
-        "Vous maîtriserez les principales plateformes (AWS, Azure, GCP), les architectures distribuées et les techniques d'automatisation."
+        "<i class='fas fa-cloud'></i> **Cloud Computing** : Maîtrisez la conception, le déploiement et la gestion d'infrastructures cloud pour créer des applications évolutives, flexibles et résilientes.",
       ],
       options: [
-        { text: "Compétences développées", next: "cloudSkills" },
-        { text: "Cas d'usage", next: "cloudUseCases" },
-        { text: "Débouchés professionnels", next: "cloudCareers" },
         { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/cloud" },
-        { text: "Autres spécialités", next: "explainSpecialties" }
+        { text: "Autres spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
       ]
     },
-    
-    // Intelligence Artificielle
     explainAI: {
       messages: [
-        "La spécialité Intelligence Artificielle vous forme aux algorithmes et modèles qui permettent aux machines d'apprendre et de prendre des décisions.",
-        "Vous explorerez le machine learning, le deep learning, le NLP et la vision par ordinateur."
+        "<i class='fas fa-brain'></i> **Intelligence Artificielle** : Explorez l'univers fascinant de l'Intelligence Artificielle et apprenez à concevoir des systèmes capables d'apprentissage, de raisonnement et d'adaptation.",
       ],
       options: [
-        { text: "Compétences développées", next: "aiSkills" },
-        { text: "Cas d'usage", next: "aiUseCases" },
-        { text: "Débouchés professionnels", next: "aiCareers" },
         { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/ia" },
-        { text: "Autres spécialités", next: "explainSpecialties" }
+        { text: "Autres spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
       ]
     },
-    
-    // Big Data & Analytics
     explainBigData: {
       messages: [
-        "La spécialité Big Data & Analytics vous forme aux technologies et méthodologies pour collecter, stocker, analyser et visualiser de grands volumes de données.",
-        "Vous maîtriserez les outils comme Hadoop, Spark, et des langages comme Python pour l'analyse de données complexes."
+        "<i class='fas fa-database'></i> **Big Data & Analytics** : Explorez les technologies et méthodologies permettant de collecter, transformer et analyser des volumes massifs de données pour en extraire des insights stratégiques.",
       ],
       options: [
-        { text: "Compétences développées", next: "bigDataSkills" },
-        { text: "Cas d'usage", next: "bigDataUseCases" },
-        { text: "Débouchés professionnels", next: "bigDataCareers" },
         { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/bigdata" },
-        { text: "Autres spécialités", next: "explainSpecialties" }
+        { text: "Autres spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
       ]
     },
-    
-    // Digital Transformation
-    explainDigital: {
-      messages: [
-        "La Transformation Digitale concerne l'intégration des technologies numériques dans tous les aspects d'une entreprise.",
-        "Vous développerez des compétences en stratégie numérique, expérience utilisateur, conduite du changement et optimisation des processus."
-      ],
-      options: [
-        { text: "Compétences développées", next: "digitalSkills" },
-        { text: "Cas d'usage", next: "digitalUseCases" },
-        { text: "Débouchés professionnels", next: "digitalCareers" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/dit" },
-        { text: "Autres spécialités", next: "explainSpecialties" }
-      ]
-    },
-    
-    // Internet of Things
     explainIoT: {
       messages: [
-        "L'Internet des Objets (IoT) vous forme à connecter des objets physiques à Internet pour collecter et échanger des données.",
-        "Vous apprendrez à concevoir des systèmes embarqués, des réseaux de capteurs, et des plateformes de gestion de données IoT."
+        "<i class='fas fa-microchip'></i> **Internet of Things** : Concevez et développez des solutions connectées complètes, du capteur embarqué jusqu'au cloud, pour transformer n'importe quel objet physique en source d'intelligence.",
       ],
       options: [
-        { text: "Compétences développées", next: "iotSkills" },
-        { text: "Cas d'usage", next: "iotUseCases" },
-        { text: "Débouchés professionnels", next: "iotCareers" },
         { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/iot" },
-        { text: "Autres spécialités", next: "explainSpecialties" }
+        { text: "Autres spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
       ]
     },
-    
-    // Réalité Virtuelle & Augmentée
     explainVR: {
       messages: [
-        "La Réalité Virtuelle et Augmentée vous forme à la création d'expériences immersives et interactives.",
-        "Vous maîtriserez des outils comme Unity, Unreal Engine, et les technologies de capteurs et d'affichage pour créer des mondes virtuels et enrichir le monde réel."
+        "<i class='fas fa-vr-cardboard'></i> **Réalité Virtuelle & Augmentée** : Concevez et développez des expériences immersives en réalité virtuelle et augmentée qui transforment notre façon d'interagir avec le monde.",
       ],
       options: [
-        { text: "Compétences développées", next: "vrSkills" },
-        { text: "Cas d'usage", next: "vrUseCases" },
-        { text: "Débouchés professionnels", next: "vrCareers" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/vr" },
-        { text: "Autres spécialités", next: "explainSpecialties" }
-      ]
-    },
-
-    // Aide au choix de spécialité
-    choosingHelp: {
-      messages: ["Choisir sa spécialité est une décision importante. Voici quelques approches qui peuvent vous guider :"],
-      options: [
-        { text: "Selon mes centres d'intérêt", next: "interestsBased" },
-        { text: "Selon les perspectives d'emploi", next: "careerProspects" },
-        { text: "Selon mes compétences actuelles", next: "skillsNeeded" },
-        { text: "Faire un test d'orientation", next: "orientationTest" },
-        { text: "Retour", next: "initial" }
-      ]
-    },
-    
-    // COMPÉTENCES POUR CHAQUE SPÉCIALITÉ
-    
-    // Cybersécurité - Compétences
-    cyberSkills: {
-      messages: [
-        "En Cybersécurité, vous développerez ces compétences essentielles :",
-        "• Analyse de vulnérabilités et ethical hacking",
-        "• Sécurité des réseaux et systèmes d'exploitation",
-        "• Protection des données et cryptographie",
-        "• Investigation numérique (forensics)",
-        "• Gestion des crises et réponse aux incidents",
-        "• Mise en place de SOC (Security Operations Center)",
-        "• Conformité et réglementations (RGPD, ISO 27001)"
-      ],
-      options: [
-        { text: "Cas d'usage", next: "cyberUseCases" },
-        { text: "Outils et technologies", next: "cyberTools" },
-        { text: "Débouchés professionnels", next: "cyberCareers" },
-        { text: "Retour", next: "explainCyber" }
-      ]
-    },
-    
-    // Cloud Computing - Compétences
-    cloudSkills: {
-      messages: [
-        "En Cloud Computing, vous développerez ces compétences clés :",
-        "• Architecture cloud et multi-cloud",
-        "• Virtualisation et containerisation (Docker, Kubernetes)",
-        "• Infrastructure as Code (Terraform, CloudFormation)",
-        "• DevOps et CI/CD pipelines",
-        "• Sécurité cloud et gestion des identités",
-        "• Services managés et serverless",
-        "• Optimisation des coûts et performance"
-      ],
-      options: [
-        { text: "Cas d'usage", next: "cloudUseCases" },
-        { text: "Plateformes et certifications", next: "cloudPlatforms" },
-        { text: "Débouchés professionnels", next: "cloudCareers" },
-        { text: "Retour", next: "explainCloud" }
-      ]
-    },
-    
-    // Intelligence Artificielle - Compétences
-    aiSkills: {
-      messages: [
-        "En Intelligence Artificielle, vous développerez ces compétences fondamentales :",
-        "• Programmation avancée en Python",
-        "• Apprentissage automatique (scikit-learn, TensorFlow, PyTorch)",
-        "• Deep learning et réseaux de neurones",
-        "• Traitement du langage naturel (NLP)",
-        "• Vision par ordinateur",
-        "• MLOps et déploiement de modèles",
-        "• IA éthique et explicable"
-      ],
-      options: [
-        { text: "Cas d'usage", next: "aiUseCases" },
-        { text: "Frameworks et bibliothèques", next: "aiTools" },
-        { text: "Débouchés professionnels", next: "aiCareers" },
-        { text: "Retour", next: "explainAI" }
-      ]
-    },
-    
-    // Big Data - Compétences
-    bigDataSkills: {
-      messages: [
-        "En Big Data & Analytics, vous développerez ces compétences essentielles :",
-        "• Ingénierie de données et ETL (Extract, Transform, Load)",
-        "• Technologies Hadoop et écosystème (HDFS, MapReduce)",
-        "• Traitement en temps réel (Spark, Kafka)",
-        "• Data warehousing et data lakes",
-        "• SQL et NoSQL à grande échelle",
-        "• Visualisation et storytelling avec les données",
-        "• Gouvernance des données"
-      ],
-      options: [
-        { text: "Cas d'usage", next: "bigDataUseCases" },
-        { text: "Outils et plateformes", next: "bigDataTools" },
-        { text: "Débouchés professionnels", next: "bigDataCareers" },
-        { text: "Retour", next: "explainBigData" }
-      ]
-    },
-    
-    // Digital Transformation - Compétences
-    digitalSkills: {
-      messages: [
-        "En Transformation Digitale, vous développerez ces compétences transversales :",
-        "• Stratégie et roadmap digitale",
-        "• User Experience (UX) et customer journey",
-        "• Gestion de projets agiles",
-        "• Marketing digital et analytics",
-        "• CRM et automatisation des processus",
-        "• Conduite du changement et culture digitale",
-        "• Business models innovants"
-      ],
-      options: [
-        { text: "Cas d'usage", next: "digitalUseCases" },
-        { text: "Méthodes et frameworks", next: "digitalMethods" },
-        { text: "Débouchés professionnels", next: "digitalCareers" },
-        { text: "Retour", next: "explainDigital" }
-      ]
-    },
-    
-    // IoT - Compétences
-    iotSkills: {
-      messages: [
-        "En Internet of Things, vous développerez ces compétences techniques :",
-        "• Programmation de systèmes embarqués",
-        "• Protocoles de communication (MQTT, CoAP, LoRaWAN)",
-        "• Plateformes cloud IoT",
-        "• Edge computing et passerelles",
-        "• Sécurité des objets connectés",
-        "• Analyse de données IoT en temps réel",
-        "• Intégration IoT dans l'écosystème digital"
-      ],
-      options: [
-        { text: "Cas d'usage", next: "iotUseCases" },
-        { text: "Technologies et standards", next: "iotTech" },
-        { text: "Débouchés professionnels", next: "iotCareers" },
-        { text: "Retour", next: "explainIoT" }
-      ]
-    },
-    
-    // VR/AR - Compétences
-    vrSkills: {
-      messages: [
-        "En Réalité Virtuelle & Augmentée, vous développerez ces compétences créatives et techniques :",
-        "• Développement 3D (Unity, Unreal Engine)",
-        "• Design d'interactions et d'expériences",
-        "• Modélisation et création d'assets 3D",
-        "• Intégration de capteurs et interfaces",
-        "• Optimisation des performances graphiques",
-        "• Audio spatial et immersif",
-        "• Réalité mixte et technologies XR"
-      ],
-      options: [
-        { text: "Cas d'usage", next: "vrUseCases" },
-        { text: "Matériel et logiciels", next: "vrTech" },
-        { text: "Débouchés professionnels", next: "vrCareers" },
-        { text: "Retour", next: "explainVR" }
-      ]
-    },
-    
-    // CAS D'USAGE POUR CHAQUE SPÉCIALITÉ
-    
-    // Cybersécurité - Cas d'usage
-    cyberUseCases: {
-      messages: [
-        "La Cybersécurité s'applique dans de nombreux contextes critiques :",
-        "• Protection des infrastructures critiques (énergie, santé)",
-        "• Sécurisation des transactions financières et bancaires",
-        "• Protection des données personnelles et sensibles",
-        "• Sécurité du cloud et des environnements multi-cloud",
-        "• Détection et réponse aux attaques APT (Advanced Persistent Threats)",
-        "• Sécurité des environnements industriels (OT/ICS)"
-      ],
-      options: [
-        { text: "Compétences développées", next: "cyberSkills" },
-        { text: "Tendances émergentes", next: "cyberTrends" },
-        { text: "Débouchés professionnels", next: "cyberCareers" },
-        { text: "Retour", next: "explainCyber" }
-      ]
-    },
-    
-    // Cloud Computing - Cas d'usage
-    cloudUseCases: {
-      messages: [
-        "Le Cloud Computing transforme de nombreux secteurs :",
-        "• Migration et modernisation des applications legacy",
-        "• Scaling automatique pour des charges de travail variables",
-        "• Déploiement de sites haute disponibilité et disaster recovery",
-        "• Environnements DevOps et déploiement continu",
-        "• Data lakes et analytics à grande échelle",
-        "• Infrastructures multi-cloud et hybrides"
-      ],
-      options: [
-        { text: "Compétences développées", next: "cloudSkills" },
-        { text: "Plateformes principales", next: "cloudPlatforms" },
-        { text: "Débouchés professionnels", next: "cloudCareers" },
-        { text: "Retour", next: "explainCloud" }
-      ]
-    },
-    
-    // IA - Cas d'usage
-    aiUseCases: {
-      messages: [
-        "L'Intelligence Artificielle révolutionne de nombreux domaines :",
-        "• Systèmes de recommandation personnalisés (e-commerce, streaming)",
-        "• Assistants virtuels et chatbots intelligents",
-        "• Diagnostic médical et détection précoce de maladies",
-        "• Prévision de maintenance industrielle",
-        "• Détection de fraudes financières",
-        "• Véhicules autonomes et systèmes d'aide à la conduite",
-        "• IA générative (images, textes, musique)"
-      ],
-      options: [
-        { text: "Compétences développées", next: "aiSkills" },
-        { text: "Défis éthiques", next: "aiEthics" },
-        { text: "Débouchés professionnels", next: "aiCareers" },
-        { text: "Retour", next: "explainAI" }
-      ]
-    },
-    
-    // Big Data - Cas d'usage
-    bigDataUseCases: {
-      messages: [
-        "Le Big Data transforme la prise de décision dans de nombreux secteurs :",
-        "• Analyse prédictive du comportement client (retail)",
-        "• Détection de fraudes en temps réel (finance)",
-        "• Optimisation de la chaîne logistique",
-        "• Recherche pharmaceutique et médecine personnalisée",
-        "• Smart cities et gestion urbaine",
-        "• Analyse des réseaux sociaux et tendances",
-        "• Optimisation des campagnes marketing multicanales"
-      ],
-      options: [
-        { text: "Compétences développées", next: "bigDataSkills" },
-        { text: "Architecture big data", next: "bigDataArchitecture" },
-        { text: "Débouchés professionnels", next: "bigDataCareers" },
-        { text: "Retour", next: "explainBigData" }
-      ]
-    },
-    
-    // Digital Transformation - Cas d'usage
-    digitalUseCases: {
-      messages: [
-        "La Transformation Digitale s'applique à l'ensemble des secteurs :",
-        "• Digitalisation de l'expérience client (retail, banque)",
-        "• Industrie 4.0 et usines connectées",
-        "• E-santé et télémédecine",
-        "• Smart buildings et gestion énergétique intelligente",
-        "• Plateformes d'apprentissage en ligne et EdTech",
-        "• Digital workplace et nouveaux modes de travail",
-        "• Marketplaces et nouveaux business models numériques"
-      ],
-      options: [
-        { text: "Compétences développées", next: "digitalSkills" },
-        { text: "Méthodologies de transformation", next: "digitalMethods" },
-        { text: "Débouchés professionnels", next: "digitalCareers" },
-        { text: "Retour", next: "explainDigital" }
-      ]
-    },
-    
-    // IoT - Cas d'usage
-    iotUseCases: {
-      messages: [
-        "L'Internet des Objets crée de nouvelles possibilités dans de nombreux domaines :",
-        "• Smart home et domotique",
-        "• Maintenance prédictive industrielle",
-        "• Agriculture connectée et irrigation intelligente",
-        "• Wearables et suivi santé",
-        "• Flottes de véhicules connectés",
-        "• Smart retail et expérience client augmentée",
-        "• Gestion environnementale et qualité de l'air"
-      ],
-      options: [
-        { text: "Compétences développées", next: "iotSkills" },
-        { text: "Défis de l'IoT", next: "iotChallenges" },
-        { text: "Débouchés professionnels", next: "iotCareers" },
-        { text: "Retour", next: "explainIoT" }
-      ]
-    },
-    
-    // VR/AR - Cas d'usage
-    vrUseCases: {
-      messages: [
-        "La Réalité Virtuelle et Augmentée transforme l'expérience utilisateur dans de nombreux secteurs :",
-        "• Formation professionnelle immersive",
-        "• Thérapies par exposition et rééducation",
-        "• Visualisation architecturale et conception 3D",
-        "• Maintenance assistée et remote expertise",
-        "• Marketing expérientiel et showrooms virtuels",
-        "• Tourisme virtuel et patrimoine culturel",
-        "• Collaboration à distance en espace partagé"
-      ],
-      options: [
-        { text: "Compétences développées", next: "vrSkills" },
-        { text: "Technologies immersives", next: "vrTech" },
-        { text: "Débouchés professionnels", next: "vrCareers" },
-        { text: "Retour", next: "explainVR" }
-      ]
-    },
-
-    // DÉBOUCHÉS PROFESSIONNELS POUR CHAQUE SPÉCIALITÉ
-    
-    // Cybersécurité - Carrières
-    cyberCareers: {
-      messages: [
-        "Les métiers de la Cybersécurité offrent d'excellentes perspectives :",
-        "• **Pentester / Ethical Hacker** (55-90K€)",
-        "• **SOC Analyst / Security Analyst** (45-70K€)",
-        "• **Security Engineer** (50-80K€)",
-        "• **Threat Intelligence Analyst** (50-75K€)",
-        "• **CISO (Chief Information Security Officer)** (90-150K€)",
-        "• **Security Architect** (70-110K€)",
-        "• **Forensics Expert** (55-85K€)"
-      ],
-      options: [
-        { text: "Compétences développées", next: "cyberSkills" },
-        { text: "Cas d'usage", next: "cyberUseCases" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/cybersecurite" },
-        { text: "Retour", next: "explainCyber" }
-      ]
-    },
-    
-    // Cloud Computing - Carrières
-    cloudCareers: {
-      messages: [
-        "Les métiers du Cloud Computing sont très demandés :",
-        "• **Cloud Architect** (65-110K€)",
-        "• **DevOps Engineer** (55-90K€)",
-        "• **Site Reliability Engineer (SRE)** (60-95K€)",
-        "• **Cloud Security Specialist** (60-90K€)",
-        "• **Multi-Cloud Consultant** (65-100K€)",
-        "• **Cloud FinOps Specialist** (55-85K€)",
-        "• **Cloud Migration Expert** (60-95K€)"
-      ],
-      options: [
-        { text: "Compétences développées", next: "cloudSkills" },
-        { text: "Cas d'usage", next: "cloudUseCases" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/cloud" },
-        { text: "Retour", next: "explainCloud" }
-      ]
-    },
-    
-    // Intelligence Artificielle - Carrières
-    aiCareers: {
-      messages: [
-        "Les métiers de l'IA offrent des parcours variés et prometteurs :",
-        "• **Machine Learning Engineer** (55-95K€)",
-        "• **NLP Specialist** (60-90K€)",
-        "• **Computer Vision Engineer** (60-95K€)",
-        "• **AI Research Scientist** (65-120K€)",
-        "• **MLOps Engineer** (55-85K€)",
-        "• **AI Ethics Consultant** (50-80K€)",
-        "• **Conversational AI Designer** (50-75K€)"
-      ],
-      options: [
-        { text: "Compétences développées", next: "aiSkills" },
-        { text: "Cas d'usage", next: "aiUseCases" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/ia" },
-        { text: "Retour", next: "explainAI" }
-      ]
-    },
-    
-    // Big Data - Carrières
-    bigDataCareers: {
-      messages: [
-        "Les métiers du Big Data offrent d'excellentes perspectives :",
-        "• **Data Engineer** (50-85K€)",
-        "• **Data Architect** (65-110K€)",
-        "• **Data Scientist** (50-90K€)",
-        "• **Analytics Engineer** (55-80K€)",
-        "• **Big Data Consultant** (60-95K€)",
-        "• **Data Visualization Specialist** (45-75K€)",
-        "• **Chief Data Officer** (110-180K€)"
-      ],
-      options: [
-        { text: "Compétences développées", next: "bigDataSkills" },
-        { text: "Cas d'usage", next: "bigDataUseCases" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/bigdata" },
-        { text: "Retour", next: "explainBigData" }
-      ]
-    },
-    
-    // Digital Transformation - Carrières
-    digitalCareers: {
-      messages: [
-        "Les métiers de la Transformation Digitale sont très diversifiés :",
-        "• **Chief Digital Officer** (90-150K€)",
-        "• **Digital Transformation Consultant** (55-95K€)",
-        "• **Digital Project Manager** (45-75K€)",
-        "• **UX/UI Specialist** (40-70K€)",
-        "• **E-commerce Manager** (50-85K€)",
-        "• **Digital Marketing Strategist** (45-80K€)",
-        "• **Change Management Specialist** (50-90K€)"
-      ],
-      options: [
-        { text: "Compétences développées", next: "digitalSkills" },
-        { text: "Cas d'usage", next: "digitalUseCases" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/dit" },
-        { text: "Retour", next: "explainDigital" }
-      ]
-    },
-    
-    // IoT - Carrières
-    iotCareers: {
-      messages: [
-        "Les métiers de l'IoT offrent des perspectives variées :",
-        "• **IoT Solutions Architect** (60-95K€)",
-        "• **Embedded Systems Engineer** (50-80K€)",
-        "• **IoT Cloud Platform Developer** (55-85K€)",
-        "• **IoT Security Specialist** (60-90K€)",
-        "• **Smart City Consultant** (55-85K€)",
-        "• **IoT Product Manager** (60-95K€)",
-        "• **Industrial IoT Specialist** (55-90K€)"
-      ],
-      options: [
-        { text: "Compétences développées", next: "iotSkills" },
-        { text: "Cas d'usage", next: "iotUseCases" },
-        { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/iot" },
-        { text: "Retour", next: "explainIoT" }
-      ]
-    },
-    
-    // VR/AR - Carrières
-    vrCareers: {
-      messages: [
-        "Les métiers de la VR/AR offrent des perspectives créatives et techniques :",
-        "• **VR/AR Developer** (45-80K€)",
-        "• **3D Artist for VR** (40-70K€)",
-        "• **Spatial Computing Engineer** (55-90K€)",
-        "• **Immersive Experience Designer** (45-75K€)",
-        "• **VR/AR Solutions Architect** (60-95K€)",
-        "• **Virtual Production Specialist** (50-80K€)",
-        "• **Haptic Technology Engineer** (55-85K€)"
-      ],
-      options: [
-        { text: "Compétences développées", next: "vrSkills" },
-        { text: "Cas d'usage", next: "vrUseCases" },
         { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/vrar" },
-        { text: "Retour", next: "explainVR" }
-      ]
-    },
-    
-    // TECHNOLOGIES ET OUTILS POUR CHAQUE SPÉCIALITÉ
-    
-    // Cybersécurité - Outils
-    cyberTools: {
-      messages: [
-        "Principaux outils et technologies en Cybersécurité :",
-        "• Kali Linux, Metasploit, Burp Suite (pentest)",
-        "• Wireshark, Snort, Suricata (analyse réseau)",
-        "• Splunk, ELK Stack (SIEM)",
-        "• Nessus, OpenVAS, Qualys (scan de vulnérabilités)",
-        "• HashCat, John the Ripper (cracking)",
-        "• OWASP ZAP, Acunetix (sécurité web)",
-        "• Cyber Kill Chain, MITRE ATT&CK (frameworks)"
-      ],
-      options: [
-        { text: "Certifications recommandées", next: "cyberCertifications" },
-        { text: "Retour aux compétences", next: "cyberSkills" },
-        { text: "Retour", next: "explainCyber" }
-      ]
-    },
-    
-    // Cloud - Plateformes
-    cloudPlatforms: {
-      messages: [
-        "Principales plateformes et technologies Cloud :",
-        "• AWS (Amazon Web Services) : leader du marché",
-        "• Microsoft Azure : forte intégration enterprise",
-        "• Google Cloud Platform : puissant pour le ML/AI",
-        "• Kubernetes, Docker (containerisation)",
-        "• Terraform, Ansible, CloudFormation (IaC)",
-        "• Jenkins, GitHub Actions, GitLab CI (CI/CD)",
-        "• Prometheus, Grafana (monitoring)"
-      ],
-      options: [
-        { text: "Certifications cloud", next: "cloudCertifications" },
-        { text: "Retour aux compétences", next: "cloudSkills" },
-        { text: "Retour", next: "explainCloud" }
-      ]
-    },
-    
-    // IA - Outils
-    aiTools: {
-      messages: [
-        "Principaux frameworks et bibliothèques en IA :",
-        "• TensorFlow, PyTorch, Keras (deep learning)",
-        "• scikit-learn, XGBoost (machine learning)",
-        "• NLTK, spaCy, Hugging Face (NLP)",
-        "• OpenCV, TensorFlow Lite (vision)",
-        "• MLflow, Weights & Biases (MLOps)",
-        "• Ray, Spark ML (distributed ML)",
-        "• ONNX, TensorRT (optimisation)"
-      ],
-      options: [
-        { text: "Infrastructures IA", next: "aiInfrastructure" },
-        { text: "Retour aux compétences", next: "aiSkills" },
-        { text: "Retour", next: "explainAI" }
-      ]
-    },
-    
-    // Big Data - Outils
-    bigDataTools: {
-      messages: [
-        "Principaux outils et technologies Big Data :",
-        "• Apache Hadoop, HDFS (stockage distribué)",
-        "• Apache Spark, Flink (traitement)",
-        "• Apache Kafka, RabbitMQ (streaming)",
-        "• Snowflake, BigQuery, Redshift (data warehousing)",
-        "• MongoDB, Cassandra, HBase (NoSQL)",
-        "• Tableau, Power BI, Looker (visualisation)",
-        "• Airflow, NiFi (orchestration)"
-      ],
-      options: [
-        { text: "Architecture Big Data", next: "bigDataArchitecture" },
-        { text: "Retour aux compétences", next: "bigDataSkills" },
-        { text: "Retour", next: "explainBigData" }
-      ]
-    },
-    
-    // Digital Transformation - Méthodes
-    digitalMethods: {
-      messages: [
-        "Méthodologies et frameworks de Transformation Digitale :",
-        "• Design Thinking et approche centrée utilisateur",
-        "• Lean Startup et innovation continue",
-        "• Agilité à l'échelle (SAFe, LeSS)",
-        "• Growth Hacking et marketing digital",
-        "• Business Model Canvas et Value Proposition",
-        "• Modèles de maturité digitale",
-        "• OKRs (Objectives and Key Results)"
-      ],
-      options: [
-        { text: "Soft skills essentielles", next: "digitalSoftSkills" },
-        { text: "Retour aux compétences", next: "digitalSkills" },
-        { text: "Retour", next: "explainDigital" }
-      ]
-    },
-    
-    // IoT - Technologies
-    iotTech: {
-      messages: [
-        "Technologies et standards IoT clés :",
-        "• Arduino, Raspberry Pi, ESP32 (hardware)",
-        "• MQTT, CoAP, AMQP (protocoles)",
-        "• LoRaWAN, Sigfox, NB-IoT (réseau)",
-        "• AWS IoT, Azure IoT, Google Cloud IoT (plateformes)",
-        "• Node-RED, ThingSpeak (middleware)",
-        "• TinyML, Edge Impulse (edge AI)",
-        "• IOTA, Helium (blockchain IoT)"
-      ],
-      options: [
-        { text: "Défis de l'IoT", next: "iotChallenges" },
-        { text: "Retour aux compétences", next: "iotSkills" },
-        { text: "Retour", next: "explainIoT" }
-      ]
-    },
-    
-    // VR/AR - Technologies
-    vrTech: {
-      messages: [
-        "Technologies et matériel VR/AR clés :",
-        "• Unity, Unreal Engine (moteurs)",
-        "• Meta Quest, Valve Index, HTC Vive (casques VR)",
-        "• HoloLens, Magic Leap (AR/MR)",
-        "• ARKit (iOS), ARCore (Android)",
-        "• WebXR, A-Frame (VR/AR web)",
-        "• Blender, Maya, 3DS Max (modélisation)",
-        "• Haptics, motion capture (interfaces)"
-      ],
-      options: [
-        { text: "Tendances émergentes", next: "vrTrends" },
-        { text: "Retour aux compétences", next: "vrSkills" },
-        { text: "Retour", next: "explainVR" }
-      ]
-    },
-    
-    // SECTIONS SPÉCIALES POUR CHAQUE SPÉCIALITÉ
-    
-    // Cybersecurité - Certifications
-    cyberCertifications: {
-      messages: [
-        "Les certifications les plus valorisées en Cybersécurité :",
-        "• CEH (Certified Ethical Hacker) - Base solide en pentesting",
-        "• CISSP (Certified Information Systems Security Professional) - Référence pour les postes seniors",
-        "• OSCP (Offensive Security Certified Professional) - Très prisée pour le pentesting",
-        "• CompTIA Security+ - Bon point d'entrée pour débutants",
-        "• SANS/GIAC (GSEC, GCIH, GPEN) - Très respectées dans l'industrie",
-        "• ISO 27001 Lead Implementer/Auditor - Pour les aspects gouvernance",
-        "",
-        "Ces certifications peuvent augmenter votre salaire de 15 à 30% selon les postes."
-      ],
-      options: [
-        { text: "Débouchés professionnels", next: "cyberCareers" },
-        { text: "Outils et technologies", next: "cyberTools" },
-        { text: "Retour", next: "explainCyber" },
-        { text: "Menu principal", next: "initial" }
-      ]
-    },
-    
-    // Cybersécurité - Tendances
-    cyberTrends: {
-      messages: [
-        "Tendances émergentes en Cybersécurité :",
-        "• Zero Trust Architecture - Ne faire confiance à rien ni personne par défaut",
-        "• DevSecOps - Intégration de la sécurité dans le CI/CD",
-        "• XDR - Détection et réponse étendues",
-        "• SASE - Secure Access Service Edge",
-        "• Cloud Security Posture Management",
-        "• Sécurité des conteneurs et Kubernetes",
-        "• IA/ML pour la détection des menaces",
-        "• Quantum-safe cryptography",
-        "",
-        "La capacité à s'adapter à ces évolutions technologiques est cruciale."
-      ],
-      options: [
-        { text: "Outils et technologies", next: "cyberTools" },
-        { text: "Certifications recherchées", next: "cyberCertifications" },
-        { text: "Débouchés professionnels", next: "cyberCareers" },
-        { text: "Menu principal", next: "initial" }
-      ]
-    },
-    
-    // Comparaison des spécialités
-    compareSpecialties: {
-      messages: ["Quelles spécialités souhaitez-vous comparer ?"],
-      options: [
-        { text: "IA vs Big Data", next: "compareAIBigData" },
-        { text: "Cybersécurité vs Cloud", next: "compareCyberCloud" },
-        { text: "Digital Transformation vs IoT", next: "compareDigitalIoT" },
-        { text: "VR/AR vs IA", next: "compareVRAI" },
-        { text: "Cloud vs Big Data", next: "compareCloudBigData" },
-        { text: "Retour", next: "initial" }
-      ]
-    },
-    
-    // Comparaisons détaillées
-    compareAIBigData: {
-      messages: [
-        "Comparaison IA vs Big Data :",
-        "",
-        "Intelligence Artificielle :",
-        "• Focus : Création d'algorithmes intelligents et apprentissage",
-        "• Compétences : Mathématiques avancées, programmation (Python), deep learning",
-        "• Salaire moyen : 65-110k€ (légèrement supérieur au Big Data)",
-        "• Difficulté : Barrière d'entrée plus élevée (maths, complexité algorithmique)",
-        "• Débouchés : Data Scientist, ML Engineer, AI Researcher",
-        "",
-        "Big Data :",
-        "• Focus : Gestion, traitement et analyse de grands volumes de données",
-        "• Compétences : SQL/NoSQL, ETL, data pipelines, visualisation",
-        "• Salaire moyen : 60-100k€",
-        "• Difficulté : Plus accessible pour débutants avec bases techniques",
-        "• Débouchés : Data Engineer, Data Analyst, Big Data Architect",
-        "",
-        "Les deux domaines sont complémentaires et souvent combinés dans les projets."
-      ],
-      options: [
-        { text: "En savoir plus sur l'IA", next: "explainAI" },
-        { text: "En savoir plus sur le Big Data", next: "explainBigData" },
-        { text: "Autre comparaison", next: "compareSpecialties" },
-        { text: "Menu principal", next: "initial" }
-      ]
-    },
-    
-    compareCyberCloud: {
-      messages: [
-        "Comparaison Cybersécurité vs Cloud Computing :",
-        "",
-        "Cybersécurité :",
-        "• Focus : Protection des systèmes et des données contre les menaces",
-        "• Compétences : Sécurité réseau, pentesting, forensics, gestion des risques",
-        "• Salaire moyen : 55-110k€ (légèrement supérieur en début de carrière)",
-        "• Difficulté : Demande une vigilance constante et formation continue",
-        "• Débouchés : Pentester, Security Engineer, RSSI, SOC Analyst",
-        "",
-        "Cloud Computing :",
-        "• Focus : Déploiement et gestion d'infrastructures cloud évolutives",
-        "• Compétences : Virtualisation, containerisation, IaC, automatisation",
-        "• Salaire moyen : 55-120k€ (potentiel plus élevé aux niveaux seniors)",
-        "• Difficulté : Écosystème vaste avec évolution rapide des technologies",
-        "• Débouchés : Cloud Architect, DevOps Engineer, SRE, Cloud Security",
-        "",
-        "Ces domaines convergent avec le développement de la sécurité cloud."
-      ],
-      options: [
-        { text: "En savoir plus sur la Cybersécurité", next: "explainCyber" },
-        { text: "En savoir plus sur le Cloud", next: "explainCloud" },
-        { text: "Autre comparaison", next: "compareSpecialties" },
-        { text: "Menu principal", next: "initial" }
-      ]
-    },
-    
-    compareDigitalIoT: {
-      messages: [
-        "Comparaison Digital Transformation vs IoT :",
-        "",
-        "Digital Transformation :",
-        "• Focus : Stratégie globale d'intégration des technologies dans l'entreprise",
-        "• Compétences : Business, gestion de projet, UX, marketing digital",
-        "• Salaire moyen : 50-100k€",
-        "• Profil : Plus orienté business et management que technique",
-        "• Débouchés : Chief Digital Officer, Digital Consultant, Project Manager",
-        "",
-        "Internet of Things :",
-        "• Focus : Connexion d'objets physiques pour collecter et échanger des données",
-        "• Compétences : Systèmes embarqués, réseaux, protocols de communication",
-        "• Salaire moyen : 45-95k€",
-        "• Profil : Plus technique et spécialisé",
-        "• Débouchés : IoT Solutions Architect, Embedded Systems Engineer",
-        "",
-        "L'IoT est souvent un élément clé des stratégies de transformation digitale."
-      ],
-      options: [
-        { text: "En savoir plus sur la Digital Transformation", next: "explainDigital" },
-        { text: "En savoir plus sur l'IoT", next: "explainIoT" },
-        { text: "Autre comparaison", next: "compareSpecialties" },
-        { text: "Menu principal", next: "initial" }
-      ]
-    },
-    
-    compareVRAI: {
-      messages: [
-        "Comparaison VR/AR vs Intelligence Artificielle :",
-        "",
-        "Réalité Virtuelle/Augmentée :",
-        "• Focus : Création d'expériences immersives et interactives",
-        "• Compétences : Développement 3D, design d'interfaces spatiales, Unity/Unreal",
-        "• Salaire moyen : 45-95k€",
-        "• Caractéristiques : Créativité, innovation, expérience utilisateur",
-        "• Débouchés : VR/AR Developer, 3D Artist, UX Designer pour XR",
-        "",
-        "Intelligence Artificielle :",
-        "• Focus : Conception d'algorithmes intelligents qui apprennent",
-        "• Compétences : Mathématiques, ML/DL, Python, résolution de problèmes",
-        "• Salaire moyen : 65-110k€",
-        "• Caractéristiques : Analytique, recherche, modélisation",
-        "• Débouchés : Data Scientist, ML Engineer, AI Researcher",
-        "",
-        "Ces domaines convergent dans des applications comme la vision par ordinateur pour AR."
-      ],
-      options: [
-        { text: "En savoir plus sur la VR/AR", next: "explainVR" },
-        { text: "En savoir plus sur l'IA", next: "explainAI" },
-        { text: "Autre comparaison", next: "compareSpecialties" },
-        { text: "Menu principal", next: "initial" }
-      ]
-    },
-    
-    compareCloudBigData: {
-      messages: [
-        "Comparaison Cloud Computing vs Big Data :",
-        "",
-        "Cloud Computing :",
-        "• Focus : Infrastructure, plateformes et services accessibles à distance",
-        "• Compétences : IaC, virtualisation, DevOps, sécurité cloud",
-        "• Salaire moyen : 55-120k€",
-        "• Caractéristiques : Automatisation, scaling, hautes disponibilités",
-        "• Débouchés : Cloud Architect, DevOps Engineer, SRE",
-        "",
-        "Big Data :",
-        "• Focus : Gestion et analyse de grandes quantités de données",
-        "• Compétences : Hadoop, Spark, data warehousing, ETL, analytics",
-        "• Salaire moyen : 60-100k€",
-        "• Caractéristiques : Traitement distribué, stockage optimisé, insights",
-        "• Débouchés : Data Engineer, Data Analyst, Big Data Architect",
-        "",
-        "Ces technologies sont très complémentaires, le cloud étant souvent l'infrastructure privilégiée pour les solutions Big Data."
-      ],
-      options: [
-        { text: "En savoir plus sur le Cloud", next: "explainCloud" },
-        { text: "En savoir plus sur le Big Data", next: "explainBigData" },
-        { text: "Autre comparaison", next: "compareSpecialties" },
-        { text: "Menu principal", next: "initial" }
-      ]
-    },
-
-    // Tendances du marché
-    marketTrends: {
-      messages: [
-        "Les grandes tendances du marché tech en 2023-2024 :",
-        "",
-        "• IA Générative - Explosion des applications basées sur les LLMs",
-        "• Zero Trust Security - Nouvelle approche de cybersécurité",
-        "• Cloud Natif - Architectures orientées Kubernetes et microservices",
-        "• Edge Computing - Traitement décentralisé plus proche des sources",
-        "• Développement Low-Code/No-Code - Démocratisation du développement",
-        "• ESG Tech - Technologies au service du développement durable",
-        "",
-        "Que souhaitez-vous explorer ?"
-      ],
-      options: [
-        { text: "Meilleur ROI (salaire/formation)", next: "bestROI" },
-        { text: "Métiers les plus recherchés", next: "topJobs" },
-        { text: "Tendances émergentes par secteur", next: "emergingTrends" },
-        { text: "Retour", next: "initial" }
-      ]
-    },
-
-    // Tendances émergentes par secteur
-    emergingTrends: {
-      messages: [
-        "Tendances émergentes par secteur technologique :",
-        "",
-        "• IA : Modèles génératifs, IA multimodale, edge AI, IA explicable",
-        "• Cybersécurité : Zero Trust, SASE, souveraineté des données",
-        "• Cloud : Multi-cloud, FinOps, cloud souverain, serverless avancé",
-        "• Big Data : Data Mesh, DataOps, Lakehouse, real-time analytics",
-        "• Développement : Web3, Progressive Web Apps, API-first",
-        "• IoT : Digital Twins, 5G private networks, edge analytics",
-        "• XR : Métavers d'entreprise, AR cloud, interfaces cerveau-machine",
-        "",
-        "Ces tendances façonnent l'évolution des spécialités tech."
-      ],
-      options: [
-        { text: "Impact sur les compétences requises", next: "skillsEvolution" },
-        { text: "Métiers les plus recherchés", next: "topJobs" },
-        { text: "Explorer les spécialités", next: "explainSpecialties" },
-        { text: "Menu principal", next: "initial" }
-      ]
-    },
-
-    // Évolution des compétences requises
-    skillsEvolution: {
-      messages: [
-        "Évolution des compétences tech recherchées :",
-        "",
-        "• Polyvalence technique : Maîtrise de plusieurs domaines complémentaires",
-        "• Hybridation business/tech : Comprendre les enjeux métiers",
-        "• Prompt Engineering : Interaction optimale avec les LLMs",
-        "• Automatisation : IaC, CI/CD, robotisation des processus",
-        "• Tech éthique : Confidentialité, durabilité, inclusion",
-        "• Résilience des systèmes : Chaos engineering, SRE",
-        "• Collaboration augmentée : Outils et méthodes pour le travail hybride",
-        "",
-        "La capacité d'adaptation rapide devient la compétence la plus valorisée."
-      ],
-      options: [
-        { text: "Comment acquérir ces compétences", next: "skillsAcquisition" },
-        { text: "Certifications recommandées", next: "valuableCertifications" },
-        { text: "Retour aux tendances", next: "emergingTrends" },
-        { text: "Menu principal", next: "initial" }
-      ]
-    },
-
-    // Selon centres d'intérêt
-    interestsBased: {
-      messages: [
-        "Choisir une spécialité selon vos centres d'intérêt :",
-        "",
-        "Qu'est-ce qui vous passionne le plus ?"
-      ],
-      options: [
-        { text: "Algorithmes et résolution de problèmes", next: "interestsAlgo" },
-        { text: "Créer des interfaces et expériences utilisateur", next: "interestsUX" },
-        { text: "Analyser et visualiser des données", next: "interestsData" },
-        { text: "Sécuriser et protéger les systèmes", next: "interestsSecurity" },
-        { text: "Innover et transformer les organisations", next: "interestsBusiness" }
-      ]
-    },
-
-    // Recommandations basées sur les centres d'intérêt
-    interestsAlgo: {
-      messages: [
-        "Avec votre intérêt pour les algorithmes et la résolution de problèmes, ces spécialités pourraient vous convenir :",
-        "",
-        "1. Intelligence Artificielle - Conception d'algorithmes intelligents",
-        "2. Big Data - Algorithmes de traitement de données massives",
-        "3. Cloud Computing - Architecture de systèmes complexes",
-        "",
-        "L'IA offre les défis algorithmiques les plus stimulants, mais requiert de solides bases en mathématiques."
-      ],
-      options: [
-        { text: "En savoir plus sur l'IA", next: "explainAI" },
-        { text: "En savoir plus sur le Big Data", next: "explainBigData" },
-        { text: "Autres centres d'intérêt", next: "interestsBased" },
-        { text: "Menu principal", next: "initial" }
-      ]
-    },
-
-    interestsUX: {
-      messages: [
-        "Avec votre intérêt pour les interfaces et l'expérience utilisateur, ces spécialités pourraient vous convenir :",
-        "",
-        "1. Réalité Virtuelle & Augmentée - Création d'expériences immersives",
-        "2. Digital Transformation - Expérience client et parcours utilisateur",
-        "3. IoT - Interfaces entre monde physique et numérique",
-        "",
-        "La VR/AR offre les défis d'interface les plus innovants et créatifs."
-      ],
-      options: [
-        { text: "En savoir plus sur la VR/AR", next: "explainVR" },
-        { text: "En savoir plus sur la Digital Transformation", next: "explainDigital" },
-        { text: "Autres centres d'intérêt", next: "interestsBased" },
-        { text: "Menu principal", next: "initial" }
-      ]
-    },
-
-    interestsData: {
-      messages: [
-        "Avec votre intérêt pour l'analyse et la visualisation de données, ces spécialités pourraient vous convenir :",
-        "",
-        "1. Big Data & Analytics - Traitement et analyse de volumes massifs",
-        "2. Intelligence Artificielle - Extraction d'insights via ML/DL",
-        "3. Digital Transformation - Prise de décision data-driven",
-        "",
-        "Le Big Data offre les défis d'analyse les plus diversifiés, avec un accent sur les infrastructures et pipelines."
-      ],
-      options: [
-        { text: "En savoir plus sur le Big Data", next: "explainBigData" },
-        { text: "En savoir plus sur l'IA", next: "explainAI" },
-        { text: "Autres centres d'intérêt", next: "interestsBased" },
-        { text: "Menu principal", next: "initial" }
-      ]
-    },
-
-    interestsSecurity: {
-      messages: [
-        "Avec votre intérêt pour la sécurité et la protection des systèmes, ces spécialités pourraient vous convenir :",
-        "",
-        "1. Cybersécurité - Défense et sécurisation des systèmes d'information",
-        "2. Cloud Computing - Sécurité des infrastructures cloud",
-        "3. IoT - Sécurisation des objets connectés",
-        "",
-        "La Cybersécurité offre la formation la plus complète en matière de protection des systèmes et des données."
-      ],
-      options: [
-        { text: "En savoir plus sur la Cybersécurité", next: "explainCyber" },
-        { text: "En savoir plus sur le Cloud", next: "explainCloud" },
-        { text: "Autres centres d'intérêt", next: "interestsBased" },
-        { text: "Menu principal", next: "initial" }
-      ]
-    },
-
-    interestsBusiness: {
-      messages: [
-        "Avec votre intérêt pour l'innovation et la transformation des organisations, ces spécialités pourraient vous convenir :",
-        "",
-        "1. Digital Transformation - Stratégie digitale et conduite du changement",
-        "2. Cloud Computing - Modernisation des infrastructures IT",
-        "3. IoT - Nouveaux modèles d'affaires basés sur les objets connectés",
-        "",
-        "La Digital Transformation offre l'approche la plus business et stratégique, combinant technologie et management."
-      ],
-      options: [
-        { text: "En savoir plus sur la Digital Transformation", next: "explainDigital" },
-        { text: "En savoir plus sur le Cloud", next: "explainCloud" },
-        { text: "Autres centres d'intérêt", next: "interestsBased" },
-        { text: "Menu principal", next: "initial" }
-      ]
-    },
-
-    // Test d'orientation amélioré
-    orientationTest: {
-      messages: [
-        "Ce test rapide vous aidera à identifier les spécialités qui correspondent le mieux à votre profil.",
-        "",
-        "Première question : Comment préférez-vous résoudre des problèmes ?"
-      ],
-      options: [
-        { text: "En analysant des données et des patterns", next: "testAnalytical" },
-        { text: "En imaginant des solutions créatives", next: "testCreative" },
-        { text: "En suivant une approche méthodique et structurée", next: "testMethodical" },
-        { text: "En collaborant et en échangeant avec d'autres", next: "testCollaborative" }
-      ]
-    },
-    
-    // Test d'orientation - profil créatif
-    testCreative: {
-      messages: [
-        "Avec votre profil créatif et innovant, ces spécialités pourraient vous correspondre :",
-        "",
-        "• Réalité Virtuelle & Augmentée - Création d'expériences immersives",
-        "• Digital Transformation - Conception de nouveaux parcours utilisateurs",
-        "• Intelligence Artificielle - Applications innovantes de l'IA générative",
-        "",
-        "Une autre question : préférez-vous créer des expériences visuelles ou plutôt concevoir des stratégies d'innovation ?"
-      ],
-      options: [
-        { text: "Expériences visuelles et immersives", next: "recommendVR" },
-        { text: "Stratégies et parcours d'innovation", next: "recommendDigital" },
-        { text: "Applications intelligentes innovantes", next: "recommendAI" },
-        { text: "Voir toutes les spécialités", next: "explainSpecialties" }
-      ]
-    },
-    
-    // Test d'orientation - profil méthodique
-    testMethodical: {
-      messages: [
-        "Avec votre profil méthodique et structuré, ces spécialités pourraient vous correspondre :",
-        "",
-        "• Cloud Computing - Architectures et infrastructures optimisées",
-        "• Cybersécurité - Approches systématiques de protection des systèmes",
-        "• Big Data - Pipelines et structures de données efficaces",
-        "",
-        "Une autre question : préférez-vous construire des infrastructures, les sécuriser, ou organiser des flux de données ?"
-      ],
-      options: [
-        { text: "Concevoir des infrastructures", next: "recommendCloud" },
-        { text: "Sécuriser des systèmes", next: "recommendCyber" },
-        { text: "Organiser des flux de données", next: "recommendBigData" },
-        { text: "Voir toutes les spécialités", next: "explainSpecialties" }
-      ]
-    },
-    
-    // Test d'orientation - profil collaboratif
-    testCollaborative: {
-      messages: [
-        "Avec votre profil collaboratif et orienté communication, ces spécialités pourraient vous correspondre :",
-        "",
-        "• Digital Transformation - Conduite du changement et accompagnement",
-        "• IoT - Projets multidisciplinaires connectant différents domaines",
-        "• Cloud Computing - Collaboration DevOps et équipes transverses",
-        "",
-        "Une autre question : préférez-vous accompagner des équipes dans le changement ou créer des liens entre systèmes et technologies ?"
-      ],
-      options: [
-        { text: "Accompagner le changement", next: "recommendDigital" },
-        { text: "Connecter systèmes et objets", next: "recommendIoT" },
-        { text: "Faire collaborer technologies et équipes", next: "recommendCloud" },
-        { text: "Voir toutes les spécialités", next: "explainSpecialties" }
-      ]
-    },
-    
-    // Recommandations supplémentaires
-    recommendBigData: {
-      messages: [
-        "Basé sur vos réponses, le Big Data & Analytics semble être une excellente option pour vous !",
-        "",
-        "Cette spécialité combine parfaitement :",
-        "• Traitement de grandes masses de données",
-        "• Analyses approfondies et découverte d'insights",
-        "• Architectures de données complexes",
-        "",
-        "Vous pourrez transformer des données brutes en informations stratégiques dans tous les secteurs d'activité, de la finance à la santé en passant par le retail."
-      ],
-      options: [
-        { text: "En savoir plus sur le Big Data", next: "explainBigData" },
-        { text: "Voir les débouchés professionnels", next: "bigDataCareers" },
-        { text: "Explorer d'autres spécialités", next: "explainSpecialties" },
-        { text: "Retour au début", next: "initial" }
-      ]
-    },
-    
-    recommendCyber: {
-      messages: [
-        "Basé sur vos réponses, la Cybersécurité semble être une excellente option pour vous !",
-        "",
-        "Cette spécialité combine parfaitement :",
-        "• Résolution de défis de sécurité complexes",
-        "• Protection des systèmes et des données",
-        "• Analyse de risques et de vulnérabilités",
-        "",
-        "Vous pourrez protéger les organisations contre les cybermenaces dans un domaine en constante évolution où les talents sont très recherchés."
-      ],
-      options: [
-        { text: "En savoir plus sur la Cybersécurité", next: "explainCyber" },
-        { text: "Voir les débouchés professionnels", next: "cyberCareers" },
-        { text: "Explorer d'autres spécialités", next: "explainSpecialties" },
-        { text: "Retour au début", next: "initial" }
-      ]
-    },
-    
-    recommendCloud: {
-      messages: [
-        "Basé sur vos réponses, le Cloud Computing semble être une excellente option pour vous !",
-        "",
-        "Cette spécialité combine parfaitement :",
-        "• Conception d'architectures évolutives",
-        "• Automatisation et optimisation des infrastructures",
-        "• Collaboration DevOps et approches modernes",
-        "",
-        "Vous pourrez transformer la manière dont les entreprises déploient leurs applications et services, en offrant flexibilité, performance et sécurité."
-      ],
-      options: [
-        { text: "En savoir plus sur le Cloud", next: "explainCloud" },
-        { text: "Voir les débouchés professionnels", next: "cloudCareers" },
-        { text: "Explorer d'autres spécialités", next: "explainSpecialties" },
-        { text: "Retour au début", next: "initial" }
-      ]
-    },
-    
-    recommendDigital: {
-      messages: [
-        "Basé sur vos réponses, la Transformation Digitale semble être une excellente option pour vous !",
-        "",
-        "Cette spécialité combine parfaitement :",
-        "• Vision stratégique et business",
-        "• Innovation centrée utilisateur",
-        "• Gestion du changement organisationnel",
-        "",
-        "Vous pourrez accompagner les organisations dans leur évolution numérique, en créant de nouveaux services, expériences client et modèles d'affaires."
-      ],
-      options: [
-        { text: "En savoir plus sur la Digital Transformation", next: "explainDigital" },
-        { text: "Voir les débouchés professionnels", next: "digitalCareers" },
-        { text: "Explorer d'autres spécialités", next: "explainSpecialties" },
-        { text: "Retour au début", next: "initial" }
-      ]
-    },
-    
-    recommendIoT: {
-      messages: [
-        "Basé sur vos réponses, l'Internet des Objets semble être une excellente option pour vous !",
-        "",
-        "Cette spécialité combine parfaitement :",
-        "• Connexion entre monde physique et numérique",
-        "• Collecte et analyse de données temps réel",
-        "• Conception de systèmes connectés innovants",
-        "",
-        "Vous pourrez développer des solutions qui transforment notre façon d'interagir avec les objets du quotidien, dans des domaines comme la ville intelligente, l'industrie 4.0 ou la santé connectée."
-      ],
-      options: [
-        { text: "En savoir plus sur l'IoT", next: "explainIoT" },
-        { text: "Voir les débouchés professionnels", next: "iotCareers" },
-        { text: "Explorer d'autres spécialités", next: "explainSpecialties" },
-        { text: "Retour au début", next: "initial" }
-      ]
-    },
-
-    // Perspectives d'emploi
-    careerProspects: {
-      messages: [
-        "Voici un aperçu des perspectives d'emploi par spécialité :",
-        "",
-        "• Cybersécurité : Demande extrêmement forte, pénurie mondiale (+350% en 5 ans)",
-        "• Cloud Computing : Adoption massive par les entreprises, croissance soutenue",
-        "• Intelligence Artificielle : Explosion des applications, profils très recherchés",
-        "• Big Data : Besoin constant en analyse de données dans tous secteurs",
-        "• VR/AR : Marché en forte croissance dans formation, santé, industrie",
-        "• Digital Transformation : Besoin transversal dans toutes les organisations",
-        "• IoT : Développement rapide dans industrie, smart cities, santé connectée",
-        "",
-        "Quelle spécialité vous intéresse le plus pour approfondir ?"
-      ],
-      options: [
-        { text: "Cybersécurité", next: "cyberCareers" },
-        { text: "Intelligence Artificielle", next: "aiCareers" },
-        { text: "Big Data", next: "bigDataCareers" },
         { text: "Autres spécialités", next: "explainSpecialties" },
-        { text: "Retour", next: "choosingHelp" }
+        { text: "Retour", next: "initial" }
       ]
     },
-    
-    // Compétences requises pour les spécialités
-    skillsNeeded: {
-      messages: [
-        "Évaluer ses compétences actuelles est une bonne approche pour choisir sa spécialité :",
-        "• Si vous aimez la programmation bas niveau, la sécurité et le reverse engineering, la **Cybersécurité** pourrait vous convenir.",
-        "• Si vous êtes à l'aise avec les architectures système et l'automatisation, le **Cloud Computing** pourrait être idéal.",
-        "• Si vous excellez en mathématiques et statistiques, l'**IA** ou le **Big Data** sont des options naturelles.",
-        "• Si vous avez des compétences en UX/UI et business, la **Transformation Digitale** pourrait être votre voie.",
-        "• Si vous aimez le hardware et les systèmes embarqués, l'**IoT** vous conviendrait bien.",
-        "• Si vous êtes créatif et intéressé par le design 3D, la **VR/AR** serait un excellent choix."
-      ],
+
+    // --- New Business Specialties ---
+    explainProjectManagement: {
+      messages: ["<i class='fas fa-tasks'></i> **Strategic Project Management & Entrepreneurship** : Développez les compétences stratégiques et opérationnelles pour mener des projets complexes et créer des entreprises innovantes dans l'écosystème tech."],
       options: [
-        { text: "Explorer les compétences par spécialité", next: "compareSkills" },
-        { text: "Faire un test d'orientation", next: "orientationTest" },
-        { text: "Retour", next: "choosingHelp" }
+        { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" }, 
+        { text: "Autres spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
       ]
     },
-    
-    // Recommandations basées sur les compétences
-    skillsProgramming: {
-      messages: [
-        "Avec vos compétences en programmation, ces spécialités seraient accessibles :",
-        "",
-        "• Intelligence Artificielle - Python, bibliothèques ML/DL",
-        "• Développement Web/Mobile - JavaScript, frameworks frontend/backend",
-        "• Cloud Computing - IaC, conteneurisation, automatisation",
-        "• IoT - Systèmes embarqués, protocols de communication",
-        "",
-        "Si vous êtes à l'aise avec l'algorithmique complexe, l'IA est un excellent choix. Si vous préférez le développement d'applications, le Web/Mobile ou l'IoT peuvent être plus adaptés."
-      ],
+    explainFintech: {
+      messages: ["<i class='fas fa-chart-bar'></i> **Fintech & Stratégies financières** : Explorez l'intersection de la finance et de la technologie pour transformer les services financiers et développer des stratégies innovantes dans un monde en pleine digitalisation."],
       options: [
-        { text: "En savoir plus sur l'IA", next: "explainAI" },
-        { text: "En savoir plus sur le Cloud", next: "explainCloud" },
-        { text: "Explorer d'autres compétences", next: "skillsNeeded" },
-        { text: "Menu principal", next: "initial" }
+        { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
+        { text: "Autres spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
       ]
     },
-    
-    skillsMath: {
-      messages: [
-        "Avec vos compétences en mathématiques et statistiques, ces spécialités seraient accessibles :",
-        "",
-        "• Intelligence Artificielle - Fondements mathématiques du ML/DL",
-        "• Big Data & Analytics - Statistiques, modélisation, prédiction",
-        "• Cybersécurité - Cryptographie, analyse de risques",
-        "",
-        "L'IA est le domaine qui valorise le plus les compétences mathématiques avancées, suivi du Big Data et de certains aspects de la cybersécurité."
-      ],
+    explainMarketing: {
+      messages: ["<i class='fas fa-bullhorn'></i> **Marketing & Influence** : Développez des stratégies de marketing digital innovantes et exploitez le pouvoir des médias sociaux pour construire une influence significative et générer un impact mesurable."],
       options: [
-        { text: "En savoir plus sur l'IA", next: "explainAI" },
-        { text: "En savoir plus sur le Big Data", next: "explainBigData" },
-        { text: "Explorer d'autres compétences", next: "skillsNeeded" },
-        { text: "Menu principal", next: "initial" }
+        { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
+        { text: "Autres spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
       ]
     },
-    
-    skillsComm: {
-      messages: [
-        "Avec vos compétences en communication et gestion de projet, ces spécialités seraient accessibles :",
-        "",
-        "• Digital Transformation - Conduite du changement, stratégie digitale",
-        "• Cloud Computing - Coordination DevOps, transformation IT",
-        "• Cybersécurité - Gouvernance, conformité, gestion des risques",
-        "",
-        "La Digital Transformation est la spécialité qui valorise le plus ces soft skills, tout en nécessitant une compréhension technique des enjeux."
-      ],
+    explainAITransformation: {
+      messages: ["<i class='fas fa-brain'></i> **IA & Transformation des organisations** : Orchestrez la transformation numérique des organisations grâce à l'intelligence artificielle pour optimiser les processus, stimuler l'innovation et créer de la valeur durable."],
       options: [
-        { text: "En savoir plus sur la Digital Transformation", next: "explainDigital" },
-        { text: "En savoir plus sur le Cloud", next: "explainCloud" },
-        { text: "Explorer d'autres compétences", next: "skillsNeeded" },
-        { text: "Menu principal", next: "initial" }
+        { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
+        { text: "Autres spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
       ]
     },
-    
-    skillsDesign: {
-      messages: [
-        "Avec vos compétences en design et créativité, ces spécialités seraient accessibles :",
-        "",
-        "• Réalité Virtuelle & Augmentée - Design d'expériences immersives",
-        "• Digital Transformation - UX/UI, parcours utilisateur",
-        "• Web/Mobile - Frontend, expérience utilisateur",
-        "",
-        "La VR/AR est le domaine qui valorise le plus la créativité et le design d'expérience, combinés à des compétences techniques."
-      ],
+    explainDataProtection: {
+      messages: ["<i class='fas fa-shield-alt'></i> **Data, Protection & Sécurité** : Protégez les données sensibles, élaborez des stratégies de sécurité et assurez la conformité réglementaire dans un environnement numérique en constante évolution."],
       options: [
-        { text: "En savoir plus sur la VR/AR", next: "explainVR" },
-        { text: "En savoir plus sur la Digital Transformation", next: "explainDigital" },
-        { text: "Explorer d'autres compétences", next: "skillsNeeded" },
-        { text: "Menu principal", next: "initial" }
+        { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
+        { text: "Autres spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
       ]
     },
-    
-    skillsAnalysis: {
-      messages: [
-        "Avec vos compétences en analyse et résolution de problèmes, ces spécialités seraient accessibles :",
-        "",
-        "• Cybersécurité - Analyse de vulnérabilités et de menaces",
-        "• Big Data - Exploration et interprétation des données",
-        "• Intelligence Artificielle - Modélisation et optimisation",
-        "• Cloud Computing - Architecture de solutions complexes",
-        "",
-        "Ces domaines valorisent la pensée analytique, avec différentes orientations selon que vous préférez l'analyse de sécurité, de données ou d'algorithmes."
-      ],
+     explainRH: {
+      messages: ["<i class='fas fa-users-cog'></i> **Digitalisation de la fonction RH** : Transformez la gestion des ressources humaines grâce aux technologies digitales pour créer une expérience collaborateur innovante et développer le capital humain."],
       options: [
-        { text: "En savoir plus sur la Cybersécurité", next: "explainCyber" },
-        { text: "En savoir plus sur le Big Data", next: "explainBigData" },
-        { text: "Explorer d'autres compétences", next: "skillsNeeded" },
-        { text: "Menu principal", next: "initial" }
+        { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
+        { text: "Autres spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
       ]
-    }
-  };
+    },
+     explainSante: {
+      messages: ["<i class='fas fa-heartbeat'></i> **Santé, IA & IoT** : Transformez le secteur de la santé grâce à l'intelligence artificielle et aux objets connectés pour améliorer les soins, optimiser les processus médicaux et développer la médecine préventive."],
+      options: [
+        { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
+        { text: "Autres spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
+      ]
+    },
+    explainDataScienceBI: {
+      messages: ["<i class='fas fa-chart-bar'></i> **Data Science & Business Intelligence** : Exploitez le potentiel des données pour générer des insights stratégiques, prendre des décisions éclairées et créer un avantage concurrentiel durable."],
+      options: [
+        { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
+        { text: "Autres spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
+      ]
+    },
+    explainLuxe: {
+      messages: ["<i class='fas fa-gem'></i> **Luxe & Retail Tech** : Transformez l'expérience client dans le luxe et le retail grâce aux technologies digitales pour créer des parcours d'achat innovants et personnalisés."],
+      options: [
+        { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
+        { text: "Autres spécialités", next: "explainSpecialties" },
+        { text: "Retour", next: "initial" }
+      ]
+    },
+    comingSoon: {
+        messages: ["Désolé, plus de détails sur cette spécialité seront bientôt disponibles ! N'hésitez pas à consulter la page correspondante."],
+      options: [
+        { text: "Explorer d'autres spécialités", next: "explainSpecialties" },
+            { text: "Retour à l'accueil du bot", next: "initial" }
+        ]
+    },
+
+    // --- Help Section ---
+    choosingHelp: {
+      messages: ["Choisir sa spécialité est une décision importante. Voici quelques pistes :"],
+      options: [
+        { text: "Quels sont mes centres d'intérêt ?", next: "interestsBased" },
+        { text: "Quelles sont les perspectives d'emploi ?", next: "careerProspects" },
+        { text: "Voir les spécialités Tech", next: "listTechSpecialties" },
+        { text: "Voir les spécialités Business", next: "listBusinessSpecialties" },
+        { text: "Retour", next: "initial" }
+      ]
+    },
+    interestsBased: { messages: ["<i class='fas fa-question-circle'></i> Pensez aux domaines qui vous passionnent le plus : résoudre des énigmes (Cybersécurité), construire des systèmes robustes (Cloud), explorer les données (Big Data, IA), créer des expériences (VR/AR), connecter le monde physique (IoT), piloter des projets (Management), innover dans la finance (Fintech), etc."], options: [{ text: "Retour", next: "choosingHelp" }] },
+    careerProspects: { messages: ["<i class='fas fa-briefcase'></i> Toutes nos spécialités offrent d'excellents débouchés ! Consultez les sections 'Perspectives de carrière' sur les pages détaillées (quand disponibles) pour voir les métiers typiques."], options: [{ text: "Retour", next: "choosingHelp" }] },
+
+    // Removed old explainDigital and skill/use case states
+
+  }; // End of conversationTree
 
   // Initialize bot
   function initBot() {
@@ -1548,10 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Render options only
   function renderOptions(options) {
     // Remove old options if they exist
-    const oldOptions = botChatContainer.querySelector('.bot-options');
-    if (oldOptions) {
-      botChatContainer.removeChild(oldOptions);
-    }
+    removeOptions();
     
     // Create options container
     const optionsContainer = document.createElement('div');
@@ -1561,7 +417,8 @@ document.addEventListener('DOMContentLoaded', () => {
     options.forEach(option => {
       const optionButton = document.createElement('button');
       optionButton.className = 'bot-option';
-      optionButton.textContent = option.text;
+      // Use innerHTML instead of textContent to render icons
+      optionButton.innerHTML = option.text; 
       
       // Handle option click
       optionButton.addEventListener('click', () => handleOptionClick(option));
@@ -1577,50 +434,98 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create user response element
     const userResponse = document.createElement('div');
     userResponse.className = 'user-message';
-    userResponse.textContent = option.text;
+    // Use innerHTML to render potential icons/HTML in the choice correctly
+    userResponse.innerHTML = option.text; 
     botMessagesContainer.appendChild(userResponse);
     
-    // Add to chat history
+    // Add to chat history (store raw text for potential future use/logic)
     chatHistory.push({
       type: 'user',
-      content: option.text
+      content: option.text // Store the text with potential HTML for now
     });
     
-    // Scroll to bottom
-    botMessagesContainer.scrollTop = botMessagesContainer.scrollHeight;
+    // Remove old options immediately
+    removeOptions(); 
+    
+    // Show typing indicator
+    showTypingIndicator();
+
+    // Scroll to bottom to show user message and indicator
+    scrollToBottom();
     
     // Handle navigation action
     if (option.action === 'navigate') {
-      window.location.href = option.url;
-      return;
+      // No need to remove indicator here, page is changing
+      window.location.href = option.url; 
+      return; 
     }
     
-    // Move to next state
+    // Move to next state after a short delay
     if (option.next) {
-      conversationState = option.next;
+      const nextState = option.next;
       setTimeout(() => {
-        renderConversationState(option.next);
-      }, 500);
+        removeTypingIndicator(); // Remove indicator before showing new content
+        conversationState = nextState;
+        renderConversationState(nextState);
+      }, 800); // Delay to simulate thinking/network
+    } else {
+       removeTypingIndicator(); // Remove indicator if it's an end state with no 'next'
+    }
+  }
+
+  // Remove current options
+  function removeOptions() {
+    const oldOptions = botChatContainer.querySelector('.bot-options');
+    if (oldOptions) {
+      botChatContainer.removeChild(oldOptions);
     }
   }
   
+  // Show typing indicator
+  function showTypingIndicator() {
+    const indicator = document.createElement('div');
+    indicator.className = 'bot-message typing-indicator';
+    indicator.innerHTML = '<span></span><span></span><span></span>'; // Simple dots
+    botMessagesContainer.appendChild(indicator);
+    scrollToBottom(); // Ensure indicator is visible
+  }
+
+  // Remove typing indicator
+  function removeTypingIndicator() {
+      const indicator = botMessagesContainer.querySelector('.typing-indicator');
+      if (indicator) {
+          botMessagesContainer.removeChild(indicator);
+      }
+  }
+
+  // Helper function to scroll to bottom
+  function scrollToBottom() {
+      botMessagesContainer.scrollTop = botMessagesContainer.scrollHeight;
+  }
+
   // Render conversation state (messages + options)
   function renderConversationState(stateKey) {
     const state = conversationTree[stateKey];
     
     if (!state) {
       console.error(`State "${stateKey}" not found in conversation tree`);
+       removeTypingIndicator(); // Ensure indicator is removed in case of error
       return;
     }
     
+    // Ensure any previous indicator is removed before starting new messages
+    removeTypingIndicator(); 
+
     // Add messages to queue
-    messageQueue = [...state.messages];
+    messageQueue = [...(state.messages || [])]; // Ensure messages array exists
     
     // Process messages
     processMessageQueue().then(() => {
+       removeTypingIndicator(); // Ensure indicator is removed after messages
       // Add options after messages are displayed
       if (state.options && state.options.length > 0) {
         renderOptions(state.options);
+        scrollToBottom(); // Scroll after adding options too
       }
     });
   }

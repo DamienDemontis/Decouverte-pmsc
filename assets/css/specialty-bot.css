@@ -175,7 +175,7 @@
   color: var(--bot-primary-color);
   border: 1px solid var(--bot-primary-color);
   border-radius: 30px;
-  padding: 12px 18px;
+  padding: 10px 16px;
   font-size: 15px;
   cursor: pointer;
   transition: var(--bot-transition);
@@ -183,6 +183,9 @@
   font-weight: 500;
   white-space: nowrap;
   box-shadow: 0 2px 6px rgba(74, 108, 247, 0.1);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .bot-option:hover {
@@ -233,6 +236,44 @@
 
 .bot-chat-header .close-button:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Typing Indicator */
+.typing-indicator {
+  padding: 10px var(--bot-padding);
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+  margin-left: var(--bot-message-spacing);
+  margin-top: var(--bot-message-spacing);
+  margin-bottom: var(--bot-message-spacing);
+}
+
+.typing-indicator span {
+  height: 8px;
+  width: 8px;
+  background-color: #a0a0a0;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 2px;
+  animation: typing-bounce 1.4s infinite ease-in-out both;
+}
+
+.typing-indicator span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes typing-bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1.0);
+  }
 }
 
 /* Animations */
