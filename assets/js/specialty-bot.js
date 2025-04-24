@@ -372,19 +372,26 @@ document.addEventListener('DOMContentLoaded', () => {
     processingQueue = false;
   }
   
-  // Display a single message with typing animation
+  // Display a single message (HTML rendering, no typing effect)
   function displayMessage(message) {
     return new Promise(resolve => {
       const messageElement = document.createElement('div');
       messageElement.className = 'bot-message';
+      // Use innerHTML to render HTML tags correctly
+      messageElement.innerHTML = message; 
       botMessagesContainer.appendChild(messageElement);
       
       // Add to chat history
       chatHistory.push({
         type: 'bot',
-        content: message
+        content: message // Store the message with HTML
       });
       
+      // Auto-scroll to bottom
+      scrollToBottom(); 
+      
+      // Remove typing effect logic
+      /* 
       let i = 0;
       const typingSpeed = 20; // ms per character
       
@@ -401,6 +408,10 @@ document.addEventListener('DOMContentLoaded', () => {
           setTimeout(resolve, 300); // Pause after message completes
         }
       }, typingSpeed);
+      */
+
+      // Resolve after a short delay to allow spacing between messages
+      setTimeout(resolve, 300); 
     });
   }
   
@@ -456,8 +467,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Handle navigation action
     if (option.action === 'navigate') {
       // No need to remove indicator here, page is changing
-      window.location.href = option.url; 
-      return; 
+      window.location.href = option.url;
+      return;
     }
     
     // Move to next state after a short delay
@@ -502,7 +513,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function scrollToBottom() {
       botMessagesContainer.scrollTop = botMessagesContainer.scrollHeight;
   }
-
+  
   // Render conversation state (messages + options)
   function renderConversationState(stateKey) {
     const state = conversationTree[stateKey];
@@ -515,7 +526,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Ensure any previous indicator is removed before starting new messages
     removeTypingIndicator(); 
-
+    
     // Add messages to queue
     messageQueue = [...(state.messages || [])]; // Ensure messages array exists
     
