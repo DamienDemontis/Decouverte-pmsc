@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let processingQueue = false;
   let chatHistory = [];
 
-  // Conversation tree - Updated with all specialties
+  // Conversation tree - Updated with all specialties and HTML tags
   const conversationTree = {
     initial: {
       messages: ["Bonjour ! Je suis votre assistant pour découvrir les spécialités MSc EPITECH. Comment puis-je vous aider ?"],
@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     explainSpecialties: {
       messages: ["Voici toutes les spécialités MSc proposées. Laquelle vous intéresse en particulier ?"],
       options: [
+        // Title for Tech
+        { type: "title", text: "<i class='fas fa-laptop-code'></i> Expertes Technologiques" },
         // Tech Specialties
         { text: "<i class='fas fa-shield-alt'></i> Cybersécurité", next: "explainCyber" },
         { text: "<i class='fas fa-cloud'></i> Cloud Computing", next: "explainCloud" },
@@ -38,6 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: "<i class='fas fa-database'></i> Big Data & Analytics", next: "explainBigData" },
         { text: "<i class='fas fa-microchip'></i> Internet of Things", next: "explainIoT" }, // Corrected icon
         { text: "<i class='fas fa-vr-cardboard'></i> Réalité Virtuelle & Augmentée", next: "explainVR" },
+        // Title for Business
+        { type: "title", text: "<i class='fas fa-briefcase'></i> Digital, Business & Management" },
         // Business Specialties
         { text: "<i class='fas fa-tasks'></i> Strategic Project Management", next: "explainProjectManagement" },
         { text: "<i class='fas fa-chart-bar'></i> Fintech & Stratégies financières", next: "explainFintech" },
@@ -52,12 +56,12 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     categorizeSpecialties: {
-      messages: [
+        messages: [
             "Nos spécialités se divisent en deux grandes catégories :",
-            "<i class='fas fa-laptop-code'></i> **Expertes Technologiques** : Pour ceux qui veulent une expertise technique pointue (IA, Cloud, Cybersécurité...).",
-            "<i class='fas fa-briefcase'></i> **Digital, Business & Management** : Pour ceux qui veulent piloter la stratégie et la transformation numérique (Marketing, Fintech, Project Management...).",
+            "<i class='fas fa-laptop-code'></i> <strong>Expertes Technologiques</strong> : Pour ceux qui veulent une expertise technique pointue (IA, Cloud, Cybersécurité...).",
+            "<i class='fas fa-briefcase'></i> <strong>Digital, Business & Management</strong> : Pour ceux qui veulent piloter la stratégie et la transformation numérique (Marketing, Fintech, Project Management...).",
             "Souhaitez-vous explorer une catégorie spécifique ?"
-      ],
+        ],
       options: [
             { text: "Voir les Spécialités Tech", next: "listTechSpecialties" },
             { text: "Voir les Spécialités Business", next: "listBusinessSpecialties" },
@@ -98,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Existing Tech Specialties (Updated Links/Info) ---
     explainCyber: {
       messages: [
-        "<i class='fas fa-shield-alt'></i> **Cybersécurité** : Développez l'expertise nécessaire pour protéger les systèmes d'information contre les menaces numériques et sécuriser les données sensibles des organisations.",
+        "<i class='fas fa-shield-alt'></i> <strong>Cybersécurité</strong> : Développez l'expertise nécessaire pour protéger les systèmes d'information contre les menaces numériques et sécuriser les données sensibles des organisations.",
       ],
       options: [
         { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/cybersecurite" },
@@ -108,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     explainCloud: {
       messages: [
-        "<i class='fas fa-cloud'></i> **Cloud Computing** : Maîtrisez la conception, le déploiement et la gestion d'infrastructures cloud pour créer des applications évolutives, flexibles et résilientes.",
+        "<i class='fas fa-cloud'></i> <strong>Cloud Computing</strong> : Maîtrisez la conception, le déploiement et la gestion d'infrastructures cloud pour créer des applications évolutives, flexibles et résilientes.",
       ],
       options: [
         { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/cloud" },
@@ -118,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     explainAI: {
       messages: [
-        "<i class='fas fa-brain'></i> **Intelligence Artificielle** : Explorez l'univers fascinant de l'Intelligence Artificielle et apprenez à concevoir des systèmes capables d'apprentissage, de raisonnement et d'adaptation.",
+        "<i class='fas fa-brain'></i> <strong>Intelligence Artificielle</strong> : Explorez l'univers fascinant de l'Intelligence Artificielle et apprenez à concevoir des systèmes capables d'apprentissage, de raisonnement et d'adaptation.",
       ],
       options: [
         { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/ia" },
@@ -128,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     explainBigData: {
       messages: [
-        "<i class='fas fa-database'></i> **Big Data & Analytics** : Explorez les technologies et méthodologies permettant de collecter, transformer et analyser des volumes massifs de données pour en extraire des insights stratégiques.",
+        "<i class='fas fa-database'></i> <strong>Big Data & Analytics</strong> : Explorez les technologies et méthodologies permettant de collecter, transformer et analyser des volumes massifs de données pour en extraire des insights stratégiques.",
       ],
       options: [
         { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/bigdata" },
@@ -138,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     explainIoT: {
       messages: [
-        "<i class='fas fa-microchip'></i> **Internet of Things** : Concevez et développez des solutions connectées complètes, du capteur embarqué jusqu'au cloud, pour transformer n'importe quel objet physique en source d'intelligence.",
+        "<i class='fas fa-microchip'></i> <strong>Internet of Things</strong> : Concevez et développez des solutions connectées complètes, du capteur embarqué jusqu'au cloud, pour transformer n'importe quel objet physique en source d'intelligence.",
       ],
       options: [
         { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/iot" },
@@ -148,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     explainVR: {
       messages: [
-        "<i class='fas fa-vr-cardboard'></i> **Réalité Virtuelle & Augmentée** : Concevez et développez des expériences immersives en réalité virtuelle et augmentée qui transforment notre façon d'interagir avec le monde.",
+        "<i class='fas fa-vr-cardboard'></i> <strong>Réalité Virtuelle & Augmentée</strong> : Concevez et développez des expériences immersives en réalité virtuelle et augmentée qui transforment notre façon d'interagir avec le monde.",
       ],
       options: [
         { text: "Voir la page détaillée", action: "navigate", url: "/Decouverte-pmsc/specialites/vrar" },
@@ -156,10 +160,10 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: "Retour", next: "initial" }
       ]
     },
-
+    
     // --- New Business Specialties ---
     explainProjectManagement: {
-      messages: ["<i class='fas fa-tasks'></i> **Strategic Project Management & Entrepreneurship** : Développez les compétences stratégiques et opérationnelles pour mener des projets complexes et créer des entreprises innovantes dans l'écosystème tech."],
+      messages: ["<i class='fas fa-tasks'></i> <strong>Strategic Project Management & Entrepreneurship</strong> : Développez les compétences stratégiques et opérationnelles pour mener des projets complexes et créer des entreprises innovantes dans l'écosystème tech."],
       options: [
         { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" }, 
         { text: "Autres spécialités", next: "explainSpecialties" },
@@ -167,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     explainFintech: {
-      messages: ["<i class='fas fa-chart-bar'></i> **Fintech & Stratégies financières** : Explorez l'intersection de la finance et de la technologie pour transformer les services financiers et développer des stratégies innovantes dans un monde en pleine digitalisation."],
+      messages: ["<i class='fas fa-chart-bar'></i> <strong>Fintech & Stratégies financières</strong> : Explorez l'intersection de la finance et de la technologie pour transformer les services financiers et développer des stratégies innovantes dans un monde en pleine digitalisation."],
       options: [
         { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
         { text: "Autres spécialités", next: "explainSpecialties" },
@@ -175,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     explainMarketing: {
-      messages: ["<i class='fas fa-bullhorn'></i> **Marketing & Influence** : Développez des stratégies de marketing digital innovantes et exploitez le pouvoir des médias sociaux pour construire une influence significative et générer un impact mesurable."],
+      messages: ["<i class='fas fa-bullhorn'></i> <strong>Marketing & Influence</strong> : Développez des stratégies de marketing digital innovantes et exploitez le pouvoir des médias sociaux pour construire une influence significative et générer un impact mesurable."],
       options: [
         { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
         { text: "Autres spécialités", next: "explainSpecialties" },
@@ -183,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     explainAITransformation: {
-      messages: ["<i class='fas fa-brain'></i> **IA & Transformation des organisations** : Orchestrez la transformation numérique des organisations grâce à l'intelligence artificielle pour optimiser les processus, stimuler l'innovation et créer de la valeur durable."],
+      messages: ["<i class='fas fa-brain'></i> <strong>IA & Transformation des organisations</strong> : Orchestrez la transformation numérique des organisations grâce à l'intelligence artificielle pour optimiser les processus, stimuler l'innovation et créer de la valeur durable."],
       options: [
         { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
         { text: "Autres spécialités", next: "explainSpecialties" },
@@ -191,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     explainDataProtection: {
-      messages: ["<i class='fas fa-shield-alt'></i> **Data, Protection & Sécurité** : Protégez les données sensibles, élaborez des stratégies de sécurité et assurez la conformité réglementaire dans un environnement numérique en constante évolution."],
+      messages: ["<i class='fas fa-shield-alt'></i> <strong>Data, Protection & Sécurité</strong> : Protégez les données sensibles, élaborez des stratégies de sécurité et assurez la conformité réglementaire dans un environnement numérique en constante évolution."],
       options: [
         { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
         { text: "Autres spécialités", next: "explainSpecialties" },
@@ -199,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
      explainRH: {
-      messages: ["<i class='fas fa-users-cog'></i> **Digitalisation de la fonction RH** : Transformez la gestion des ressources humaines grâce aux technologies digitales pour créer une expérience collaborateur innovante et développer le capital humain."],
+      messages: ["<i class='fas fa-users-cog'></i> <strong>Digitalisation de la fonction RH</strong> : Transformez la gestion des ressources humaines grâce aux technologies digitales pour créer une expérience collaborateur innovante et développer le capital humain."],
       options: [
         { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
         { text: "Autres spécialités", next: "explainSpecialties" },
@@ -207,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
      explainSante: {
-      messages: ["<i class='fas fa-heartbeat'></i> **Santé, IA & IoT** : Transformez le secteur de la santé grâce à l'intelligence artificielle et aux objets connectés pour améliorer les soins, optimiser les processus médicaux et développer la médecine préventive."],
+      messages: ["<i class='fas fa-heartbeat'></i> <strong>Santé, IA & IoT</strong> : Transformez le secteur de la santé grâce à l'intelligence artificielle et aux objets connectés pour améliorer les soins, optimiser les processus médicaux et développer la médecine préventive."],
       options: [
         { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
         { text: "Autres spécialités", next: "explainSpecialties" },
@@ -215,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     explainDataScienceBI: {
-      messages: ["<i class='fas fa-chart-bar'></i> **Data Science & Business Intelligence** : Exploitez le potentiel des données pour générer des insights stratégiques, prendre des décisions éclairées et créer un avantage concurrentiel durable."],
+      messages: ["<i class='fas fa-chart-bar'></i> <strong>Data Science & Business Intelligence</strong> : Exploitez le potentiel des données pour générer des insights stratégiques, prendre des décisions éclairées et créer un avantage concurrentiel durable."],
       options: [
         { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
         { text: "Autres spécialités", next: "explainSpecialties" },
@@ -223,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     explainLuxe: {
-      messages: ["<i class='fas fa-gem'></i> **Luxe & Retail Tech** : Transformez l'expérience client dans le luxe et le retail grâce aux technologies digitales pour créer des parcours d'achat innovants et personnalisés."],
+      messages: ["<i class='fas fa-gem'></i> <strong>Luxe & Retail Tech</strong> : Transformez l'expérience client dans le luxe et le retail grâce aux technologies digitales pour créer des parcours d'achat innovants et personnalisés."],
       options: [
         { text: "Voir la page détaillée (Bientôt !)", next: "comingSoon" },
         { text: "Autres spécialités", next: "explainSpecialties" },
@@ -235,9 +239,9 @@ document.addEventListener('DOMContentLoaded', () => {
       options: [
         { text: "Explorer d'autres spécialités", next: "explainSpecialties" },
             { text: "Retour à l'accueil du bot", next: "initial" }
-        ]
+      ]
     },
-
+    
     // --- Help Section ---
     choosingHelp: {
       messages: ["Choisir sa spécialité est une décision importante. Voici quelques pistes :"],
@@ -424,17 +428,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const optionsContainer = document.createElement('div');
     optionsContainer.className = 'bot-options';
     
-    // Add options
+    // Add options or titles
     options.forEach(option => {
-      const optionButton = document.createElement('button');
-      optionButton.className = 'bot-option';
-      // Use innerHTML instead of textContent to render icons
-      optionButton.innerHTML = option.text; 
-      
-      // Handle option click
-      optionButton.addEventListener('click', () => handleOptionClick(option));
-      
-      optionsContainer.appendChild(optionButton);
+      if (option.type === 'title') {
+        // Create a title element
+        const titleElement = document.createElement('div');
+        titleElement.className = 'category-title';
+        titleElement.innerHTML = option.text; // Render icons in title
+        optionsContainer.appendChild(titleElement);
+      } else {
+        // Create a regular button option
+        const optionButton = document.createElement('button');
+        optionButton.className = 'bot-option';
+        // Use innerHTML instead of textContent to render icons
+        optionButton.innerHTML = option.text; 
+        
+        // Handle option click
+        optionButton.addEventListener('click', () => handleOptionClick(option));
+        
+        optionsContainer.appendChild(optionButton);
+      }
     });
     
     botChatContainer.appendChild(optionsContainer);
