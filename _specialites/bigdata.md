@@ -1,13 +1,14 @@
 ---
 layout: specialite
 title: Big Data & Analytics
-icon: fas fa-chart-bar
-ordre: 4
-color_primary: "#b45309"
-color_secondary: "#fbbf24"
+type: tech
+icon: fas fa-database
+ordre: 3
+color_primary: "#0EA5E9"
+color_secondary: "#38BDF8"
 careers: true
-short_description: "Maîtrisez l'art d'extraire des insights stratégiques à partir de volumes massifs de données grâce aux technologies Big Data et à l'analyse avancée."
-description: "Découvrez comment transformer des données brutes en informations actionnables pour aider les entreprises à prendre de meilleures décisions, optimiser leurs opérations et créer de nouveaux produits et services basés sur les données."
+short_description: "Explorez les technologies et méthodologies permettant de collecter, transformer et analyser des volumes massifs de données pour en extraire des insights stratégiques."
+description: "Découvrez comment maîtriser le déluge de données de notre ère digitale grâce aux technologies Big Data, aux architectures distribuées et aux techniques analytiques avancées qui révolutionnent la prise de décision."
 ---
 
 <!-- ========== INTRO ========= -->

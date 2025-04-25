@@ -1,4 +1,3 @@
-// Attend que le DOM soit complètement chargé
 document.addEventListener('DOMContentLoaded', function() {
   // ===== Fonctionnalité des accordéons =====
   const accordionItems = document.querySelectorAll('.accordion-item');
@@ -457,4 +456,222 @@ document.addEventListener('DOMContentLoaded', function() {
       this.style.transition = 'transform 0.3s ease';
     });
   }
-}); 
+  
+  // ===== Animation de l'orbite et changement de fond =====
+  const techOrbit = document.querySelector('.tech-orbit');
+  const techIcons = document.querySelectorAll('.tech-icon');
+  const heroSection = document.querySelector('.hero-section');
+  const heroSectionBefore = heroSection ? window.getComputedStyle(heroSection, '::before') : null;
+  let hoverTimeout;
+  const defaultGradient = 'linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 50%, #BAE6FD 100%)';
+
+  // Function to generate gradient based on color
+  function generateGradient(hexColor) {
+    // Simple example: create a gradient from the color to a lighter shade
+    // You might want to customize this logic for better gradients
+    const lightColor = hexToRgba(hexColor, 0.2); // Lighter shade
+    const midColor = hexToRgba(hexColor, 0.4);
+    return `linear-gradient(135deg, ${lightColor} 0%, ${midColor} 50%, ${hexColor} 100%)`;
+  }
+
+  // Helper to convert hex to rgba (optional, depends on gradient logic)
+  function hexToRgba(hex, alpha) {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  }
+
+  if (techOrbit && techIcons.length > 0 && heroSection) {
+    techIcons.forEach(icon => {
+      icon.addEventListener('mouseenter', () => {
+        clearTimeout(hoverTimeout);
+        const color = icon.dataset.color || '#0EA5E9'; // Default color
+        const newGradient = generateGradient(color);
+
+        // Set the new gradient on the pseudo-element
+        heroSection.style.setProperty('--hero-before-bg', newGradient);
+        // Apply the gradient to the pseudo-element via style override
+        // Note: Directly setting pseudo-element style requires a slightly different approach or using CSS variables
+        // Let's use CSS variables for cleaner control
+        document.documentElement.style.setProperty('--hero-before-bg-dynamic', newGradient);
+
+        // Trigger the transition by adding the class
+        heroSection.classList.add('background-active');
+      });
+
+      icon.addEventListener('mouseleave', () => {
+        // Delay resetting to default to allow transition to another icon
+        hoverTimeout = setTimeout(() => {
+          heroSection.classList.remove('background-active');
+          // Optional: Reset the CSS variable after transition ends
+          // setTimeout(() => document.documentElement.style.setProperty('--hero-before-bg-dynamic', defaultGradient), 700);
+        }, 100); // Small delay
+      });
+    });
+  }
+
+  // Add CSS Variable use in home.css for the ::before background
+  /*
+  In assets/css/home.css, update the .hero-section::before rule:
+  .hero-section::before {
+    ...
+    background: var(--hero-before-bg-dynamic, linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 50%, #BAE6FD 100%));
+    ...
+  }
+  */
+
+  // ===== Animation des compteurs =====
+  // ... existing code ...
+
+  // ===== Initialisation de TypewriterJS pour l'effet de machine à écrire =====
+  const typewriterElement = document.getElementById('typewriter-text');
+
+  if (typewriterElement && typeof Typewriter !== 'undefined') {
+    const typewriter = new Typewriter(typewriterElement, {
+      loop: true,
+      delay: 75,
+      deleteSpeed: 50
+    });
+
+    const specialties = [
+      'Intelligence Artificielle',
+      'Big Data & Analytics',
+      'Cloud Computing',
+      'Cybersécurité',
+      'Internet of Things',
+      'VR/AR',
+      'Digital Transformation',
+      'Project Management',
+      'Fintech',
+      'Marketing',
+      'IA & Transformation',
+      'Data Protection',
+      'RH Digitale',
+      'Santé, IA & IoT',
+      'Data Science & BI'
+    ];
+
+    // Shuffle array for variety
+    specialties.sort(() => Math.random() - 0.5);
+
+    typewriter
+      .pauseFor(1000)
+      .typeString(specialties[0])
+      .pauseFor(2500)
+      .deleteAll(50); // Use deleteSpeed
+
+    for (let i = 1; i < specialties.length; i++) {
+      typewriter
+        .typeString(specialties[i])
+        .pauseFor(2500)
+        .deleteAll(50);
+    }
+
+    typewriter.start();
+
+  } else if (typewriterElement) {
+    console.warn('TypewriterJS library not found. Please include it in your HTML.');
+    // Fallback or leave empty if library is missing
+    typewriterElement.textContent = 'votre domaine...';
+  }
+
+  // ===== Scroll Animations =====
+  const scrollElements = document.querySelectorAll('.specialties-section, .specialties-grid, .stats-band, .cta-section, .category-card, .specialite-card');
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, observerInstance) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Add stagger effect based on index within its group (e.g., cards in a grid)
+          // Simple approach: use index provided by forEach
+          // More robust: check parent/sibling structure if needed
+          const delay = (index % 6) * 100; // Apply delay up to 6 items, then repeat pattern
+          entry.target.style.setProperty('--scroll-anim-delay', `${delay}ms`);
+
+          entry.target.classList.add('is-visible');
+          entry.target.classList.add('animate-on-scroll'); // Add the base class here too
+          observerInstance.unobserve(entry.target); // Stop observing once visible
+        }
+      });
+    }, {
+      threshold: 0.1 // Trigger when 10% of the element is visible
+    });
+
+    scrollElements.forEach(el => {
+      // Add the base class initially to hide elements before they are observed
+      el.classList.add('animate-on-scroll'); 
+      observer.observe(el);
+    });
+  } else {
+    // Fallback for older browsers: show all elements immediately
+    scrollElements.forEach(el => {
+      el.classList.add('is-visible');
+      el.classList.add('animate-on-scroll'); 
+    });
+  }
+
+  // ===== Hero Parallax Effect =====
+  const heroVisual = document.querySelector('.hero-visual');
+
+  if (heroSection && heroVisual) {
+    heroSection.addEventListener('mousemove', (e) => {
+      const rect = heroSection.getBoundingClientRect();
+      // Calculate mouse position relative to the center of the section
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+
+      // Define parallax intensity (adjust these values)
+      const intensityX = 15; 
+      const intensityY = 10;
+
+      // Calculate translation values
+      const moveX = -(x / rect.width) * intensityX;
+      const moveY = -(y / rect.height) * intensityY;
+
+      // Apply the transform using requestAnimationFrame for performance
+      requestAnimationFrame(() => {
+        heroVisual.style.transform = `translate(${moveX}px, ${moveY}px)`;
+      });
+    });
+
+    // Reset transform when mouse leaves the section
+    heroSection.addEventListener('mouseleave', () => {
+      requestAnimationFrame(() => {
+        heroVisual.style.transform = 'translate(0, 0)';
+      });
+    });
+    
+    // Ensure smooth transition back to original position
+     heroVisual.style.transition = 'transform 0.3s ease-out';
+  }
+
+  // Animation de rotation
+  function rotateTechIcons() {
+    if (!isAnimating) return;
+    
+    angle += 0.001; // Vitesse de rotation réduite pour une orbite plus majestueuse
+    
+    techIcons.forEach(icon => {
+      if (icon === hoveredIcon) return; // Ne pas déplacer l'icône en hover
+      
+      const currentAngle = parseFloat(icon.dataset.angle) + angle;
+      const newX = Math.cos(currentAngle) * radius;
+      const newY = Math.sin(currentAngle) * radius;
+      
+      // Mettre à jour la position via les variables CSS
+      icon.style.setProperty('--tx', `${newX}px`);
+      icon.style.setProperty('--ty', `${newY}px`);
+      
+      // Mettre à jour les attributs data (facultatif maintenant, mais peut servir)
+      icon.dataset.x = newX;
+      icon.dataset.y = newY;
+    });
+    
+    // Faire tourner aussi le cercle de l'orbite
+    orbitCircle.style.transform = `rotate(${angle * (180 / Math.PI)}deg)`;
+    
+    animationFrameId = requestAnimationFrame(rotateTechIcons);
+  }
+
+}); // Fin de DOMContentLoaded 

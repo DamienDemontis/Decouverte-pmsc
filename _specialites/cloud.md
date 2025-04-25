@@ -1,13 +1,14 @@
 ---
 layout: specialite
 title: Cloud Computing
+type: tech
 icon: fas fa-cloud
-ordre: 3
-color_primary: "#0284c7"
-color_secondary: "#38bdf8"
+ordre: 2
+color_primary: "#3B82F6"
+color_secondary: "#60A5FA"
 careers: true
-short_description: "Découvrez comment concevoir, déployer et gérer des infrastructures cloud évolutives, résilientes et automatisées qui propulsent les applications modernes."
-description: "Maîtrisez les technologies cloud et les pratiques DevOps qui révolutionnent l'industrie tech, permettant le déploiement rapide d'applications scalables, la réduction des coûts d'infrastructure et l'amélioration de l'agilité opérationnelle."
+short_description: "Maîtrisez la conception, le déploiement et la gestion d'infrastructures cloud pour créer des applications évolutives, flexibles et résilientes."
+description: "Plongez dans l'univers du Cloud Computing pour apprendre à concevoir, déployer et gérer des infrastructures et services cloud modernes, flexibles et sécurisés."
 ---
 
 <!-- ========== INTRO ========= -->

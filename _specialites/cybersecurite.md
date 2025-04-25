@@ -1,13 +1,14 @@
 ---
 layout: specialite
 title: Cybersécurité
+type: tech
 icon: fas fa-shield-alt
-ordre: 2
-color_primary: "#166534"
-color_secondary: "#22c55e"
+ordre: 1
+color_primary: "#DC2626"
+color_secondary: "#EF4444"
 careers: true
-short_description: "Devenez un expert en cybersécurité capable de protéger les systèmes d'information contre les menaces numériques croissantes."
-description: "Apprenez à défendre les infrastructures, applications et données des organisations contre les cyberattaques en maîtrisant l'art de la sécurité offensive et défensive, l'analyse des vulnérabilités et la réponse aux incidents."
+short_description: "Développez l'expertise nécessaire pour protéger les systèmes d'information contre les menaces numériques et sécuriser les données sensibles des organisations."
+description: "Maîtrisez les techniques offensives et défensives de la cybersécurité pour protéger les infrastructures critiques, anticiper les attaques et répondre efficacement aux incidents de sécurité dans un monde de plus en plus connecté."
 ---
 
 <!-- ========== INTRO ========= -->

@@ -3,6 +3,7 @@ layout: specialite
 title: Intelligence Artificielle
 icon: fas fa-brain
 ordre: 4
+type: tech
 color_primary: "#9333EA"
 color_secondary: "#C084FC"
 careers: true
