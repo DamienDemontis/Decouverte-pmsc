@@ -211,8 +211,6 @@ description: "Plongez dans l'univers des technologies immersives, où vous appre
       <ul>
         <li>Unity 2022 LTS avec le package XR Interaction Toolkit</li>
         <li>Casque VR (recommandé mais pas obligatoire - simulation possible)</li>
-        <li><a href="{{ '/assets/subjects/vrar/escape_room/G-VRA-100_vr_escape_room.pdf' | relative_url }}" target="_blank"><i class="fas fa-file-pdf"></i> Sujet complet (PDF)</a></li>
-        <li><a href="{{ '/assets/subjects/vrar/escape_room/starter_assets.zip' | relative_url }}" target="_blank"><i class="fas fa-file-archive"></i> Assets de démarrage</a></li>
       </ul>
     </div>
   </div>
@@ -249,8 +247,8 @@ description: "Plongez dans l'univers des technologies immersives, où vous appre
     <div class="mb-3">
       <strong>Ressources</strong>:
       <ul>
-        <li><a href="{{ '/assets/subjects/vrar/product_viz/G-VRA-250_ar_product_visualizer.pdf' | relative_url }}" target="_blank"><i class="fas fa-file-pdf"></i> Sujet complet (PDF)</a></li>
-        <li><a href="{{ '/assets/subjects/vrar/product_viz/furniture_models.zip' | relative_url }}" target="_blank"><i class="fas fa-file-archive"></i> Modèles 3D</a></li>
+        <li>Smartphone compatible AR (Android ou iOS)</li>
+        <li>Unity avec le package AR Foundation</li>
       </ul>
     </div>
   </div>
@@ -277,8 +275,14 @@ description: "Plongez dans l'univers des technologies immersives, où vous appre
     <div class="mb-3">
       <strong>Ressources</strong>:
       <ul>
-        <li><a href="{{ '/assets/subjects/vrar/multi_user/G-VRA-400_multi_user_vr.pdf' | relative_url }}" target="_blank"><i class="fas fa-file-pdf"></i> Sujet complet (PDF)</a></li>
-        <li><a href="{{ '/assets/subjects/vrar/multi_user/starter_project.zip' | relative_url }}" target="_blank"><i class="fas fa-file-archive"></i> Projet de démarrage</a></li>
+        <li>Casque VR (au moins 2 pour tester le multi-utilisateurs)</li>
+      </ul>
+    </div>
+    <div class="mb-3">
+      <strong>Technologies</strong>:
+      <ul>
+        <li>Unity avec XR Interaction Toolkit et Netcode for GameObjects (ou Photon)</li>
+        <li>Serveur de relais (si Photon est utilisé)</li>
       </ul>
     </div>
   </div>

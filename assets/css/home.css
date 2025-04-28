@@ -1309,8 +1309,8 @@ body {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
+  }
+  
 .animate-on-scroll.is-visible {
   opacity: 1;
   transform: translateY(0);
@@ -1327,8 +1327,8 @@ body {
 }
 .business-card:hover {
    box-shadow: 0 20px 40px rgba(0,0,0,0.12), 0 0 25px rgba(192, 38, 211, 0.3);
-}
-
+  }
+  
 .category-card .btn-card {
   padding: 0.5rem 1rem;
   background-color: transparent;
@@ -1339,8 +1339,8 @@ body {
   font-weight: 500;
   border: 1px solid currentColor;
   transition: all var(--transition-normal);
-}
-
+  }
+  
 .tech-card:hover .btn-card {
   background-color: var(--tech-color);
   color: var(--white);
@@ -1353,8 +1353,8 @@ body {
   color: var(--white);
   border-color: var(--business-color);
   transform: translateY(-2px) scale(1.05);
-}
-
+  }
+  
 .category-card:hover .btn-card i {
   transform: translateX(6px);
 }
@@ -1363,8 +1363,8 @@ body {
 .btn-primary:active, .btn-secondary:active, .btn-card:active, .btn-cta:active {
   transform: scale(0.97);
   transition: transform 0.1s ease;
-}
-
+  }
+  
 /* Ensure parallax doesn't affect button active state */
 .hero-cta .btn-primary:active,
 .hero-cta .btn-secondary:active {
