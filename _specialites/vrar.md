@@ -355,15 +355,15 @@ description: "Plongez dans l'univers des technologies immersives, où vous appre
     <div class="feature-card">
       <h4>Introduction to XR: VR, AR, and MR Foundations</h4>
       <p><i class="fas fa-university"></i> University of Michigan sur Coursera</p>
-      <p>Vue d'ensemble théorique et pratique des technologies XR et leurs applications.</p>
-      <p><a href="https://www.coursera.org/learn/intro-xr-vr-ar-mr" target="_blank">Accéder au cours →</a></p>
+      <p>Cours d'introduction aux concepts fondamentaux de la XR (VR, AR, MR) par l'Université du Michigan.</p>
+      <p><a href="https://www.coursera.org/learn/introduction-virtual-reality" target="_blank" class="btn btn-sm btn-primary">Accéder au cours →</a> (Alternative: Intro VR)</p>
     </div>
     
     <div class="feature-card">
-      <h4>Unreal Engine 5 XR Development</h4>
-      <p><i class="fas fa-graduation-cap"></i> Epic Games Learning</p>
-      <p>Guide de développement XR avec Unreal Engine 5, incluant VR et AR.</p>
-      <p><a href="https://dev.epicgames.com/community/learning/tutorials/l7wR/unreal-engine-creating-your-first-vr-project-in-ue5" target="_blank">Accéder au cours →</a></p>
+      <h4>Créer votre premier projet VR avec Unreal Engine 5</h4>
+      <p><i class="fab fa-unreal-engine"></i> Epic Games / Unreal Engine Docs</p>
+      <p>Tutoriel officiel pour démarrer un projet VR avec Unreal Engine 5.</p>
+      <p><a href="https://docs.unrealengine.com/5.3/en-US/vr-development-in-unreal-engine/" target="_blank" class="btn btn-sm btn-primary">Accéder au cours →</a></p>
     </div>
   </div>
   

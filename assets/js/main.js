@@ -627,18 +627,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Add CSS Variable use in home.css for the ::before background
-  /*
-  In assets/css/home.css, update the .hero-section::before rule:
-  .hero-section::before {
-    ...
-    background: var(--hero-before-bg-dynamic, linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 50%, #BAE6FD 100%));
-    ...
-  }
-  */
-
-  // ===== Animation des compteurs =====
-  // ... existing code ...
-
+  
   // ===== Initialisation de TypewriterJS pour l'effet de machine à écrire =====
   const typewriterElement = document.getElementById('typewriter-text');
 

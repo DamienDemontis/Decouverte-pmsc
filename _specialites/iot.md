@@ -288,7 +288,7 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
       <p><span class="badge badge-primary">Ressources</span></p>
       <ul>
         <li><a href="https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html" target="_blank">AWS IoT Core</a></li>
-        <li><a href="https://docs.microsoft.com/en-us/azure/iot-hub/" target="_blank">Azure IoT Hub</a></li>
+        <li><a href="https://learn.microsoft.com/en-us/azure/iot-hub/" target="_blank">Azure IoT Hub</a></li>
         <li><a href="https://thingsboard.io/docs/getting-started-guides/helloworld/" target="_blank">ThingsBoard - Getting Started</a></li>
       </ul>
     </li>
@@ -342,8 +342,8 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
       <p>Explorez comment appliquer l'IA et le machine learning aux données IoT pour la prédiction, détection d'anomalies et optimisation.</p>
       <p><span class="badge badge-primary">Ressources</span></p>
       <ul>
-        <li><a href="https://www.tensorflow.org/lite/microcontrollers" target="_blank">TensorFlow Lite pour Microcontrôleurs</a></li>
-        <li><a href="https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-machine-learning-edge" target="_blank">Azure IoT Edge ML Tutorial</a></li>
+        <li><a href="https://ai.google.dev/edge/litert/microcontrollers/overview" target="_blank">TensorFlow Lite pour Microcontrôleurs</a></li>
+        <li><a href="https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-machine-learning?view=iot-edge-1.5" target="_blank">Azure IoT Edge ML Tutorial</a></li>
       </ul>
     </li>
   </div>
@@ -356,8 +356,8 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
       <p>Maîtrisez les principes et pratiques de sécurisation des dispositifs, réseaux et données IoT.</p>
       <p><span class="badge badge-primary">Ressources</span></p>
       <ul>
-        <li><a href="https://owasp.org/www-project-iot-top-ten/" target="_blank">OWASP IoT Top 10</a></li>
-        <li><a href="https://www.coursera.org/learn/iot-security" target="_blank">IoT Security (Coursera)</a></li>
+        <li><a href="https://www.wattlecorp.com/owasp-iot-top-10/" target="_blank">OWASP IoT Top 10</a></li>
+        <li><a href="https://www.coursera.org/specializations/iot" target="_blank">IoT Specialization (Coursera)</a></li>
       </ul>
     </li>
     
@@ -367,7 +367,7 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
       <p><span class="badge badge-primary">Ressources</span></p>
       <ul>
         <li><a href="https://docs.aws.amazon.com/iot/latest/developerguide/iot-jobs.html" target="_blank">AWS IoT Jobs</a></li>
-        <li><a href="https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins" target="_blank">Azure IoT Device Twins</a></li>
+        <li><a href="https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins" target="_blank">Azure IoT Device Twins</a></li>
       </ul>
     </li>
     
@@ -376,8 +376,8 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
       <p>Explorez le concept de jumeaux numériques pour simuler, analyser et optimiser vos systèmes IoT.</p>
       <p><span class="badge badge-primary">Ressources</span></p>
       <ul>
-        <li><a href="https://docs.microsoft.com/en-us/azure/digital-twins/" target="_blank">Azure Digital Twins</a></li>
-        <li><a href="https://www.ibm.com/internet-of-things/solutions/iot-digital-twin" target="_blank">IBM Digital Twin</a></li>
+        <li><a href="https://learn.microsoft.com/en-us/azure/digital-twins/" target="_blank">Azure Digital Twins</a></li>
+        <li><a href="https://www.ibm.com/business-operations" target="_blank">IBM Digital Twin</a></li>
       </ul>
     </li>
   </div>
@@ -540,6 +540,9 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
         <li><strong><a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a></strong> - Ordinateurs monocarte polyvalents pour IoT</li>
         <li><strong><a href="https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html" target="_blank">STM32</a></strong> - Microcontrôleurs ARM hautes performances pour applications industrielles</li>
         <li><strong><a href="https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52840" target="_blank">Nordic nRF52</a></strong> - SoCs optimisés pour applications BLE à faible consommation</li>
+        <li><a href="https://www.stmicroelectronics.com/" target="_blank">STMicroelectronics</a> - Fabricant de puces IoT</li>
+        <li><a href="https://www.iotworldtoday.com/" target="_blank">IoT World Today</a> - Site d'actualités IoT</li>
+        <li><a href="https://www.eclipse.org/iot/" target="_blank">Eclipse IoT</a> - Communauté open source pour IoT</li>
       </ul>
     </div>
     
@@ -548,7 +551,7 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
       <ul>
         <li><strong><a href="https://lora-alliance.org/" target="_blank">LoRaWAN</a></strong> - Protocole LPWAN pour communications longue portée, faible énergie</li>
         <li><strong><a href="https://www.sigfox.com/" target="_blank">Sigfox</a></strong> - Réseau LPWAN mondial pour objets à faible bande passante</li>
-        <li><strong><a href="https://www.bluetooth.com/bluetooth-technology/le-mesh/" target="_blank">Bluetooth Mesh</a></strong> - Réseaux maillés pour objets connectés indoor</li>
+        <li><strong><a href="https://www.mokoblue.com/fr/what-is-bluetooth-mesh" target="_blank">Bluetooth Mesh</a></strong> - Réseaux maillés pour objets connectés indoor</li>
         <li><strong><a href="https://zigbeealliance.org/" target="_blank">Zigbee/Matter</a></strong> - Standard pour réseaux maillés domestiques et industriels</li>
         <li><strong><a href="https://www.3gpp.org/technologies/keywords-acronyms/98-lte" target="_blank">NB-IoT/LTE-M</a></strong> - Connectivité cellulaire optimisée IoT</li>
       </ul>
@@ -572,7 +575,7 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
         <li><strong><a href="https://tinyml.org/" target="_blank">TinyML</a></strong> - ML sur microcontrôleurs et appareils contraints</li>
         <li><strong><a href="https://www.influxdata.com/" target="_blank">InfluxDB</a></strong> - Base de données time-series pour données IoT</li>
         <li><strong><a href="https://nodered.org/" target="_blank">Node-RED</a></strong> - Outil de programmation visuelle pour IoT</li>
-        <li><strong><a href="https://www.docker.com/solutions/iot/" target="_blank">Docker/K8s Edge</a></strong> - Conteneurisation pour applications edge</li>
+        <li><strong><a href="https://dev.to/abhay_yt_52a8e72b213be229/unlocking-the-power-of-docker-for-edge-computing-real-time-processing-and-scalability-3g94" target="_blank">Docker/K8s Edge</a></strong> - Conteneurisation pour applications edge</li>
       </ul>
     </div>
   </div>
@@ -587,7 +590,7 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
         <li><strong><a href="https://www.ge.com/digital/" target="_blank">GE Digital</a></strong> - Predix Platform pour IIoT</li>
         <li><strong><a href="https://new.siemens.com/global/en/products/automation/industry-software/automation-software/tia-portal.html" target="_blank">Siemens</a></strong> - MindSphere pour manufacturing connecté</li>
         <li><strong><a href="https://www.bosch-iot-suite.com/" target="_blank">Bosch IoT Suite</a></strong> - Solutions complètes pour industrie, mobility et smart cities</li>
-        <li><strong><a href="https://www.abb-ability.com/" target="_blank">ABB Ability</a></strong> - Plateforme industrielle pour automation et monitoring</li>
+        <li><strong><a href="https://global.abb/topic/ability/en" target="_blank">ABB Ability</a></strong> - Plateforme industrielle pour automation et monitoring</li>
       </ul>
     </div>
     
@@ -598,7 +601,7 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
         <li><strong><a href="https://www.cisco.com/c/en/us/solutions/industries/smart-connected-communities.html" target="_blank">Cisco Smart Cities</a></strong> - Infrastructure réseau et plateformes pour villes</li>
         <li><strong><a href="https://www.hubject.com/" target="_blank">Hubject</a></strong> - Infrastructure de recharge pour mobilité électrique</li>
         <li><strong><a href="https://www.itron.com/na/solutions/what-we-enable/smart-cities" target="_blank">Itron</a></strong> - Gestion des ressources urbaines (eau, énergie)</li>
-        <li><strong><a href="https://www.echelon.com/" target="_blank">Echelon</a></strong> - Contrôle d'éclairage urbain intelligent</li>
+        <li><strong><a href="https://www.citylone.com/" target="_blank">Citylone</a></strong> - Contrôle d'éclairage urbain intelligent</li>
       </ul>
     </div>
     
@@ -607,7 +610,7 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
       <p>Innovateurs dans le domaine de la santé connectée et du monitoring médical.</p>
       <ul>
         <li><strong><a href="https://www.medtronic.com/us-en/about/digital-health.html" target="_blank">Medtronic</a></strong> - Dispositifs médicaux connectés implantables</li>
-        <li><strong><a href="https://www.philips.fr/healthcare/resources/landing/philips-patient-monitoring-system" target="_blank">Philips Healthcare</a></strong> - Monitoring patient et solutions hospitalières</li>
+        <li><strong><a href="https://www.philips.fr/healthcare/solutions/patient-monitoring" target="_blank">Philips Healthcare</a></strong> - Monitoring patient et solutions hospitalières</li>
         <li><strong><a href="https://www.withings.com/" target="_blank">Withings</a></strong> - Dispositifs de santé grand public connectés</li>
         <li><strong><a href="https://www.alivecor.com/" target="_blank">AliveCor</a></strong> - Cardiologie mobile et AI</li>
       </ul>
@@ -625,7 +628,7 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
       <div class="accordion-content">
         <div class="accordion-content-inner">
           <ul>
-            <li><a href="https://www.iot-alliance.org/" target="_blank">IoT Alliance</a> - Organisation promouvant standards et meilleures pratiques</li>
+            <li><a href="https://iotworldalliance.org/" target="_blank">IoT Alliance</a> - Organisation promouvant standards et meilleures pratiques</li>
             <li><a href="https://iotslam.com/" target="_blank">IoT Community</a> - Communauté de pratique pour professionnels IoT</li>
             <li><a href="https://www.thethingsnetwork.org/" target="_blank">The Things Network</a> - Communauté globale construisant réseaux LoRaWAN ouverts</li>
             <li><a href="https://www.iotworldtoday.com/" target="_blank">IoT World Today</a> - Actualités et ressources IoT</li>
@@ -647,7 +650,9 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
             <li><a href="https://ces.tech/" target="_blank">CES</a> - Consumer Electronics Show avec large section IoT</li>
             <li><a href="https://www.iotevolutionexpo.com/" target="_blank">IoT Evolution Expo</a> - Conférence sur l'écosystème IoT</li>
             <li><a href="https://www.embeddedworld.de/en" target="_blank">Embedded World</a> - Plus grand salon mondial des systèmes embarqués</li>
-            <li><a href="https://www.thingmonk.com/" target="_blank">ThingMonk</a> - Conférence centrée sur les développeurs IoT</li>
+            <li><strong><a href="https://csa-iot.org/" target="_blank">Connectivity Standards Alliance (CSA)</a></strong> - Standardisation (Zigbee, Matter)</li>
+            <li><strong><a href="https://iot.london/" target="_blank">ThingMonk</a></strong> - Conférence développeurs IoT</li>
+            <li><strong><a href="https://internetofthingsagenda.techtarget.com/" target="_blank">IoT Agenda (TechTarget)</a></strong> - Site d'information spécialisé</li>
           </ul>
         </div>
       </div>
@@ -663,9 +668,8 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
           <ul>
             <li><a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" target="_blank">AWS Certified Solutions Architect</a> - Avec spécialisation IoT</li>
             <li><a href="https://docs.microsoft.com/en-us/learn/certifications/azure-iot-developer-specialty/" target="_blank">Microsoft Azure IoT Developer</a> - Certification spécialisée IoT</li>
-            <li><a href="https://cloud.google.com/certification/cloud-iot-developer" target="_blank">Google Cloud IoT Developer</a> - Certification développeur IoT</li>
-            <li><a href="https://www.caba.org/certification/" target="_blank">CABA Intelligent Buildings</a> - Certification bâtiments intelligents</li>
-            <li><a href="https://www.cl-iot.org/" target="_blank">Certified IoT Professional (CIoTP)</a> - Certification généraliste IoT</li>
+            <li><a href="https://cloud.google.com/iot" target="_blank">Google Cloud IoT Developer</a> - Certification développeur IoT</li>
+            <li><a href="https://caba.org/" target="_blank">CABA Intelligent Buildings</a> - Certification bâtiments intelligents</li>
           </ul>
         </div>
       </div>
@@ -720,7 +724,14 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
       <h4>AWS IoT: Developing and Deploying an Internet of Things</h4>
       <p><i class="fas fa-cloud"></i> AWS Training</p>
       <p>Formation officielle sur les services AWS IoT et comment déployer une solution complète.</p>
-      <p><a href="https://aws.amazon.com/training/course-descriptions/developing-deploying-internet-things/" target="_blank">Accéder au cours →</a></p>
+      <p><a href="https://www.edx.org/learn/amazon-web-services-aws/amazon-web-services-aws-iot-developing-and-deploying-an-internet-of-things" target="_blank">Accéder au cours →</a></p>
+    </div>
+    
+    <div class="feature-card">
+      <h4>Developing on AWS IoT</h4>
+      <p><i class="fab fa-aws"></i> AWS Training</p>
+      <p>Formation officielle d'AWS axée sur le développement et le déploiement de solutions IoT.</p>
+      <p><a href="https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs.html" target="_blank" class="btn btn-sm btn-primary">Accéder au cours →</a></p>
     </div>
   </div>
   

@@ -239,8 +239,8 @@ description: "Plongez dans l'univers du Cloud Computing pour apprendre à concev
       <p>Comprenez les technologies sous-jacentes du cloud : machines virtuelles, hyperviseurs, conteneurs et orchestration.</p>
       <p><span class="badge badge-primary">Ressources</span></p>
       <ul>
-        <li><a href="https://www.docker.com/101-tutorial" target="_blank">Docker 101 Tutorial</a></li>
-        <li><a href="https://www.vmware.com/topics/glossary/content/virtualization" target="_blank">VMware - Introduction à la virtualisation</a></li>
+        <li><a href="https://www.docker.com/101-tutorial/" target="_blank">Docker 101 Tutorial</a></li>
+        <li><a href="https://www.vmware.com/topics/glossary/content/virtual-machine.html" target="_blank">VMware - Introduction à la virtualisation</a></li>
       </ul>
     </li>
     
@@ -260,7 +260,7 @@ description: "Plongez dans l'univers du Cloud Computing pour apprendre à concev
       <p><span class="badge badge-primary">Ressources</span></p>
       <ul>
         <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html" target="_blank">AWS - Guide utilisateur VPC</a></li>
-        <li><a href="https://www.cloudflare.com/learning/network-layer/what-is-a-network/" target="_blank">Cloudflare - Bases des réseaux</a></li>
+        <li><a href="https://www.cloudflare.com/fr-fr/learning/network-layer/" target="_blank">Cloudflare - Bases des réseaux</a></li>
       </ul>
     </li>
   </div>
@@ -274,7 +274,7 @@ description: "Plongez dans l'univers du Cloud Computing pour apprendre à concev
       <p><span class="badge badge-primary">Ressources</span></p>
       <ul>
         <li><a href="https://aws.amazon.com/fr/getting-started/" target="_blank">AWS - Guide de démarrage</a></li>
-        <li><a href="https://learn.microsoft.com/fr-fr/azure/cloud-adoption-framework/" target="_blank">Azure - Framework d'adoption du cloud</a></li>
+        <li><a href="https://learn.microsoft.com/fr-fr/training/paths/azure-fundamentals/" target="_blank">Microsoft Learn</a></li>
         <li><a href="https://cloud.google.com/docs/overview" target="_blank">GCP - Vue d'ensemble</a></li>
       </ul>
     </li>
@@ -420,10 +420,10 @@ description: "Plongez dans l'univers du Cloud Computing pour apprendre à concev
     </div>
     
     <div class="feature-card">
-      <h4>Google Cloud Platform Fundamentals</h4>
-      <p><i class="fas fa-laptop-code"></i> Google Cloud Training</p>
-      <p>Introduction aux concepts clés et services de Google Cloud Platform.</p>
-      <p><a href="https://cloud.google.com/training/courses/gcp-fundamentals" target="_blank">Accéder au cours →</a></p>
+      <h4>Google Cloud Platform (GCP) Fundamentals</h4>
+      <p><i class="fas fa-graduation-cap"></i> Google Cloud Training</p>
+      <p>Formation aux concepts fondamentaux de GCP.</p>
+      <p><a href="https://cloud.google.com/training/cloud-infrastructure#google-cloud-fundamentals:-core-infrastructure" target="_blank">Accéder au cours →</a></p>
     </div>
     
     <div class="feature-card">
@@ -589,4 +589,16 @@ description: "Plongez dans l'univers du Cloud Computing pour apprendre à concev
       <li><strong>Écart salarial</strong> de +25% pour les profils certifiés (AWS, Azure, GCP, etc.)</li>
     </ul>
   </div>
-</section> 
+</section>
+
+*   **[Documentation AWS](https://docs.aws.amazon.com/)**: La documentation officielle d'Amazon Web Services.
+*   **[Documentation Azure](https://learn.microsoft.com/en-us/azure/)**: La documentation officielle de Microsoft Azure.
+*   **Coursera**:
+    *   <a href="https://www.coursera.org/search?query=google%20cloud%20professional%20certificate" target="_blank">Google Cloud Professional Certificates</a> (Recherche)
+    *   <a href="https://learn.microsoft.com/fr-fr/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification" target="_blank">Microsoft Azure Fundamentals AZ-900 Exam Prep</a>
+*   **[Formations et certifications AWS](https://aws.amazon.com/training/)**: Ressources officielles d'AWS pour la formation et la certification.
+*   **[Formations et certifications Azure](https://learn.microsoft.com/en-us/training/azure/)**: Ressources officielles de Microsoft pour la formation et la certification Azure.
+*   **[Formations et certifications Google Cloud](https://cloud.google.com/learn)**: Ressources officielles de Google Cloud pour la formation et la certification.
+*   **Udacity**: <a href="https://www.udacity.com/school-of-cloud-computing" target="_blank">Cloud Developer Nanodegree</a>
+*   **Pluralsight**: [Parcours Cloud Computing](https://www.pluralsight.com/browse/cloud-computing)
+*   **A Cloud Guru (Pluralsight)**: [Formations Cloud Spécialisées](https://www.pluralsight.com/cloud-guru) 

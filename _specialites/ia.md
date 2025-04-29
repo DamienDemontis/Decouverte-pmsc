@@ -208,6 +208,7 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o�
         <li><a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Learn Python 3 (Codecademy)</a></li>
         <li><a href="https://www.kaggle.com/learn/python" target="_blank">Python (Kaggle Learn)</a></li>
         <li><a href="https://numpy.org/doc/stable/user/absolute_beginners.html" target="_blank">NumPy pour débutants</a></li>
+        <li>Pandas, Matplotlib, Scikit-learn</li>
       </ul>
     </li>
     
@@ -217,8 +218,8 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o�
       <p><span class="badge badge-primary">Ressources</span></p>
       <ul>
         <li><a href="https://www.coursera.org/learn/machine-learning" target="_blank">Machine Learning (Andrew Ng, Coursera)</a></li>
-        <li><a href="https://scikit-learn.org/stable/tutorial/index.html" target="_blank">Tutoriels scikit-learn</a></li>
-        <li><a href="https://www.manning.com/books/hands-on-machine-learning-with-scikit-learn-and-tensorflow" target="_blank">Hands-On ML with Scikit-Learn & TensorFlow</a></li>
+        <li><a href="https://scikit-learn.org/stable/getting_started.html" target="_blank">Didacticiels Scikit-learn</a></li>
+        <li><a href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/" target="_blank">Hands-On ML with Scikit-Learn, Keras & TensorFlow (O'Reilly)</a></li>
       </ul>
     </li>
   </div>
@@ -242,7 +243,7 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o�
       <p>Explorez les techniques modernes de NLP, des word embeddings aux transformers, en passant par la compréhension et génération de texte.</p>
       <p><span class="badge badge-primary">Ressources</span></p>
       <ul>
-        <li><a href="https://huggingface.co/course/chapter1/1" target="_blank">NLP Course (Hugging Face)</a></li>
+        <li><a href="https://huggingface.co/learn/llm-course/chapter1/1" target="_blank">NLP Course (Hugging Face)</a></li>
         <li><a href="https://www.nltk.org/book/" target="_blank">Natural Language Processing with Python</a></li>
         <li><a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank">Speech and Language Processing (Jurafsky & Martin)</a></li>
       </ul>
@@ -268,7 +269,7 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o�
       <p>Découvrez comment créer des agents qui apprennent à interagir de manière optimale avec leur environnement grâce à un système de récompenses.</p>
       <p><span class="badge badge-primary">Ressources</span></p>
       <ul>
-        <li><a href="https://spinningup.openai.com/" target="_blank">Spinning Up in Deep RL (OpenAI)</a></li>
+        <li><a href="https://spinningup.openai.com/en/latest/" target="_blank">Spinning Up in Deep RL (OpenAI)</a></li>
         <li><a href="https://www.coursera.org/specializations/reinforcement-learning" target="_blank">Reinforcement Learning Specialization (Coursera)</a></li>
       </ul>
     </li>
@@ -290,7 +291,7 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o�
       <ul>
         <li><a href="https://madewithml.com/" target="_blank">Made With ML</a></li>
         <li><a href="https://fullstackdeeplearning.com/" target="_blank">Full Stack Deep Learning</a></li>
-        <li><a href="https://www.mlflow.org/docs/latest/tracking.html" target="_blank">Documentation MLflow</a></li>
+        <li><a href="https://www.mlflow.org/docs/latest/tracking/" target="_blank">Documentation MLflow</a></li>
       </ul>
     </li>
   </div>
@@ -358,9 +359,9 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o�
     <div class="mb-3">
       <strong>Ressources complémentaires</strong>:
       <ul>
-        <li><a href="https://python.langchain.com/docs/get_started/introduction" target="_blank">Documentation LangChain</a></li>
+        <li><a href="https://python.langchain.com/docs/introduction/" target="_blank">Documentation LangChain</a></li>
         <li><a href="https://docs.streamlit.io/" target="_blank">Streamlit Documentation</a></li>
-        <li><a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank">Guide d'ingénierie de prompts OpenAI</a></li>
+        <li><a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank">Guide d'Ingénierie des Prompts OpenAI</a></li>
       </ul>
     </div>
   </div>
@@ -494,7 +495,7 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o�
       <ul>
         <li><strong><a href="https://opencv.org/" target="_blank">OpenCV</a></strong> - Bibliothèque complète pour le traitement d'images et vidéos</li>
         <li><strong><a href="https://github.com/facebookresearch/detectron2" target="_blank">Detectron2</a></strong> - Framework de détection d'objets de Meta</li>
-        <li><strong><a href="https://www.tensorflow.org/hub/tutorials/tf_hub_load_use" target="_blank">TensorFlow Hub</a></strong> - Modèles de vision pré-entraînés</li>
+        <li><strong><a href="https://www.tensorflow.org/hub" target="_blank">TensorFlow Hub</a></strong> - Modèles de vision pré-entraînés</li>
         <li><strong><a href="https://albumentations.ai/" target="_blank">Albumentations</a></strong> - Augmentation d'images pour améliorer les modèles</li>
       </ul>
     </div>
@@ -545,8 +546,8 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o�
           <ul>
             <li><a href="https://www.deeplearning.ai/" target="_blank">DeepLearning.AI</a> - Fondée par Andrew Ng, propose des spécialisations de qualité sur Coursera</li>
             <li><a href="https://www.fast.ai/" target="_blank">Fast.ai</a> - Approche pratique du deep learning, du haut vers le bas</li>
-            <li><a href="https://www.udacity.com/school-of-ai" target="_blank">Udacity AI School</a> - Nanodegrees créés avec des experts de l'industrie</li>
-            <li><a href="https://www.datacamp.com/tracks/machine-learning-scientist-with-python" target="_blank">DataCamp ML Track</a> - Parcours interactif avec exercices pratiques</li>
+            <li><a href="https://www.udacity.com/school-of-ai" target="_blank">Udacity - School of AI</a> - Parcours d'apprentissage pour devenir un expert en IA, du niveau débutant à avancé</li>
+            <li><a href="https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python" target="_blank">DataCamp - Machine Learning Scientist with Python</a> - Track complet pour maîtriser le Machine Learning avec Python</li>
           </ul>
         </div>
       </div>
@@ -663,7 +664,7 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o�
         <li><a href="https://www.coursera.org/specializations/deep-learning" target="_blank"><strong>Deep Learning Specialization</strong></a> - Andrew Ng (deeplearning.ai)</li>
         <li><a href="https://course.fast.ai/" target="_blank"><strong>Practical Deep Learning for Coders</strong></a> - Jeremy Howard (Fast.ai)</li>
         <li><a href="https://www.edx.org/professional-certificate/harvardx-tiny-machine-learning" target="_blank"><strong>TinyML</strong></a> - HarvardX</li>
-        <li><a href="https://www.udacity.com/course/intro-to-artificial-intelligence--cs271" target="_blank"><strong>Intro to Artificial Intelligence</strong></a> - Udacity</li>
+        <li><a href="https://www.udacity.com/school-of-ai" target="_blank"><strong>Intro to Artificial Intelligence</strong></a> - Udacity</li>
       </ul>
     </div>
     
@@ -697,7 +698,7 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o�
         <li><a href="https://www.deeplearning.ai/the-batch/" target="_blank"><strong>The Batch</strong></a> - Newsletter hebdomadaire de deeplearning.ai</li>
         <li><a href="https://importai.substack.com/" target="_blank"><strong>Import AI</strong></a> - Newsletter par Jack Clark sur les avancées en IA</li>
         <li><a href="https://www.ben-evans.com/newsletter" target="_blank"><strong>Benedict Evans</strong></a> - Analyses sur l'impact technologique et business de l'IA</li>
-        <li><a href="https://read.deeplearning.ai/" target="_blank"><strong>Deep Learning AI Newsletter</strong></a> - Actualités et tendances en IA</li>
+        <li><a href="https://www.deeplearning.ai/" target="_blank">Deep Learning AI Newsletter</li>
       </ul>
     </div>
   </div>
@@ -724,7 +725,6 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o�
       <li><a href="https://icml.cc/" target="_blank"><strong>ICML</strong></a> - International Conference on Machine Learning</li>
       <li><a href="https://iclr.cc/" target="_blank"><strong>ICLR</strong></a> - International Conference on Learning Representations</li>
       <li><a href="https://cvpr.thecvf.com/" target="_blank"><strong>CVPR</strong></a> - Conference on Computer Vision and Pattern Recognition</li>
-      <li><a href="https://www.emnlp.org/" target="_blank"><strong>EMNLP</strong></a> - Empirical Methods in Natural Language Processing</li>
       <li><a href="https://www.vivatechnology.com/" target="_blank"><strong>VivaTech</strong></a> - Conférence tech européenne avec forte présence IA</li>
     </ul>
   </div>
