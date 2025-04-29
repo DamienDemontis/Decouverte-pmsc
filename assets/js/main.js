@@ -13,23 +13,44 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   // ===== Menu toggle pour mobile =====
-  const menuToggle = document.getElementById('menu-toggle');
-  const sidebar = document.getElementById('sidebar');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const sidebar = document.querySelector('.sidebar');
+  const mainContent = document.querySelector('.main-content');
+  let sidebarOverlay = document.querySelector('.sidebar-overlay');
   
   if (menuToggle && sidebar) {
+    // Create overlay if it doesn't exist
+    if (!sidebarOverlay) {
+      sidebarOverlay = document.createElement('div');
+      sidebarOverlay.className = 'sidebar-overlay';
+      // Insert overlay before the sidebar or append to body
+      if (mainContent) {
+         mainContent.parentNode.insertBefore(sidebarOverlay, mainContent);
+      } else {
+         document.body.appendChild(sidebarOverlay);
+      }
+    }
+
     menuToggle.addEventListener('click', () => {
       sidebar.classList.toggle('active');
+      sidebarOverlay.classList.toggle('active');
+      document.body.classList.toggle('sidebar-open'); // Prevent body scroll
     });
-    
-    // Fermer le menu au clic sur un lien (mobile)
-    const navLinks = document.querySelectorAll('.nav-link');
-    
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 1024) {
+
+    // Close sidebar when clicking on the overlay
+    sidebarOverlay.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+      sidebarOverlay.classList.remove('active');
+      document.body.classList.remove('sidebar-open');
+    });
+
+     // Optional: Close sidebar when a link inside it is clicked
+     sidebar.addEventListener('click', (e) => {
+        if (e.target.matches('.nav-link')) {
           sidebar.classList.remove('active');
+           sidebarOverlay.classList.remove('active');
+           document.body.classList.remove('sidebar-open');
         }
-      });
     });
   }
   
@@ -460,22 +481,91 @@ document.addEventListener('DOMContentLoaded', function() {
   // ===== Animation de l'orbite et changement de fond =====
   const techOrbit = document.querySelector('.tech-orbit');
   const techIcons = document.querySelectorAll('.tech-icon');
+  const orbitCircle = document.querySelector('.orbit-circle');
   const heroSection = document.querySelector('.hero-section');
-  const heroSectionBefore = heroSection ? window.getComputedStyle(heroSection, '::before') : null;
   let hoverTimeout;
   const defaultGradient = 'linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 50%, #BAE6FD 100%)';
+  let radius = 250; // Sera mis à jour
+  let angle = 0;
+  let animationFrameId;
+  let isAnimating = true;
+  let hoveredIcon = null;
+
+  // Fonction pour mettre à jour le rayon (inchangée)
+  function updateOrbitRadius() {
+    if (techOrbit) {
+      const orbitWidth = parseFloat(window.getComputedStyle(techOrbit).width);
+      // Ensure radius is never NaN or 0 if calculation fails briefly
+      radius = (orbitWidth / 2) > 0 ? (orbitWidth / 2) : 150; // Min radius 150px
+      // console.log("Orbit radius updated:", radius);
+    } else {
+      radius = 150; // Fallback/minimum
+    }
+  }
+
+  // Fonction pour définir les angles initiaux (appelée une fois)
+  function setInitialAngles() {
+    if (!techOrbit || techIcons.length === 0) return;
+    const numIcons = techIcons.length;
+    techIcons.forEach((icon, index) => {
+      icon.dataset.angle = (index / numIcons) * 2 * Math.PI;
+    });
+  }
+
+  // Fonction pour mettre à jour la position d'UNE icône (appelée dans la boucle)
+  function updateIconPosition(icon) {
+    const currentAngle = parseFloat(icon.dataset.angle || 0) + angle;
+    // Use the CURRENT radius for calculations
+    const newX = Math.cos(currentAngle) * radius;
+    const newY = Math.sin(currentAngle) * radius;
+    icon.style.setProperty('--tx', `${newX}px`);
+    icon.style.setProperty('--ty', `${newY}px`);
+  }
+
+  // Fonction pour démarrer/arrêter l'animation (inchangée)
+  function toggleOrbitAnimation(start) {
+    isAnimating = start;
+    if (isAnimating && !animationFrameId) {
+      animationFrameId = requestAnimationFrame(rotateTechIcons);
+    } else if (!isAnimating && animationFrameId) {
+      cancelAnimationFrame(animationFrameId);
+      animationFrameId = null;
+    }
+  }
+
+  // Animation de rotation
+  function rotateTechIcons() {
+    if (!isAnimating || !techOrbit) {
+      animationFrameId = null;
+      return;
+    }
+
+    // *** Mise à jour du rayon à chaque frame ***
+    updateOrbitRadius();
+
+    angle += 0.001; // Vitesse de rotation
+
+    // Mettre à jour la position de chaque icône
+    techIcons.forEach(updateIconPosition);
+
+    // Faire tourner aussi le cercle de l'orbite
+    if (orbitCircle) {
+      orbitCircle.style.transform = `rotate(${angle * (180 / Math.PI)}deg)`;
+    }
+
+    animationFrameId = requestAnimationFrame(rotateTechIcons); // Continue loop
+  }
 
   // Function to generate gradient based on color
   function generateGradient(hexColor) {
-    // Simple example: create a gradient from the color to a lighter shade
-    // You might want to customize this logic for better gradients
-    const lightColor = hexToRgba(hexColor, 0.2); // Lighter shade
+    const lightColor = hexToRgba(hexColor, 0.2);
     const midColor = hexToRgba(hexColor, 0.4);
     return `linear-gradient(135deg, ${lightColor} 0%, ${midColor} 50%, ${hexColor} 100%)`;
   }
 
   // Helper to convert hex to rgba (optional, depends on gradient logic)
   function hexToRgba(hex, alpha) {
+    if (!hex || hex.length < 7) hex = '#0EA5E9'; // Fallback color
     const r = parseInt(hex.slice(1, 3), 16);
     const g = parseInt(hex.slice(3, 5), 16);
     const b = parseInt(hex.slice(5, 7), 16);
@@ -483,47 +573,61 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   if (techOrbit && techIcons.length > 0 && heroSection) {
+    // Fonction pour initialiser/réinitialiser l'orbite
+    function initializeOrbit() {
+      setInitialAngles(); // Définit les angles de base une seule fois
+      // Attendre le prochain frame pour démarrer
+      requestAnimationFrame(() => {
+        if(isAnimating && !animationFrameId) {
+          // Update positions once before starting animation loop
+          techIcons.forEach(updateIconPosition); // Met à jour rayon + position
+          animationFrameId = requestAnimationFrame(rotateTechIcons);
+        } else {
+          // Ensure positions are correct even if not animating initially
+          updateOrbitRadius(); // Get current radius
+          techIcons.forEach(updateIconPosition); // Set positions based on current angle/radius
+        }
+      });
+    }
+
+    // Initialiser au chargement
+    initializeOrbit();
+
+    // Recalculer au redimensionnement (avec debounce)
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      const wasAnimating = isAnimating;
+      toggleOrbitAnimation(false); // Arrêter l'animation temporairement
+
+      resizeTimer = setTimeout(() => {
+        // Réinitialise les positions basé sur le nouveau rayon
+        initializeOrbit(); // Redémarre l'init (qui relance l'anim si needed)
+      }, 250); // Debounce
+    });
+
+    // Gestion du survol (inchangée)
     techIcons.forEach(icon => {
       icon.addEventListener('mouseenter', () => {
+        hoveredIcon = icon;
         clearTimeout(hoverTimeout);
-        const color = icon.dataset.color || '#0EA5E9'; // Default color
+        const color = icon.dataset.color || '#0EA5E9';
         const newGradient = generateGradient(color);
-
-        // Set the new gradient on the pseudo-element
-        heroSection.style.setProperty('--hero-before-bg', newGradient);
-        // Apply the gradient to the pseudo-element via style override
-        // Note: Directly setting pseudo-element style requires a slightly different approach or using CSS variables
-        // Let's use CSS variables for cleaner control
         document.documentElement.style.setProperty('--hero-before-bg-dynamic', newGradient);
-
-        // Trigger the transition by adding the class
         heroSection.classList.add('background-active');
       });
 
       icon.addEventListener('mouseleave', () => {
-        // Delay resetting to default to allow transition to another icon
+        hoveredIcon = null;
         hoverTimeout = setTimeout(() => {
           heroSection.classList.remove('background-active');
-          // Optional: Reset the CSS variable after transition ends
-          // setTimeout(() => document.documentElement.style.setProperty('--hero-before-bg-dynamic', defaultGradient), 700);
-        }, 100); // Small delay
+        }, 100);
       });
     });
   }
 
   // Add CSS Variable use in home.css for the ::before background
-  /*
-  In assets/css/home.css, update the .hero-section::before rule:
-  .hero-section::before {
-    ...
-    background: var(--hero-before-bg-dynamic, linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 50%, #BAE6FD 100%));
-    ...
-  }
-  */
-
-  // ===== Animation des compteurs =====
-  // ... existing code ...
-
+  
   // ===== Initialisation de TypewriterJS pour l'effet de machine à écrire =====
   const typewriterElement = document.getElementById('typewriter-text');
 
@@ -533,8 +637,8 @@ document.addEventListener('DOMContentLoaded', function() {
       delay: 75,
       deleteSpeed: 50
     });
-
-    const specialties = [
+  
+  const specialties = [
       'Intelligence Artificielle',
       'Big Data & Analytics',
       'Cloud Computing',
@@ -578,7 +682,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // ===== Scroll Animations =====
   const scrollElements = document.querySelectorAll('.specialties-section, .specialties-grid, .stats-band, .cta-section, .category-card, .specialite-card');
-
+    
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries, observerInstance) => {
       entries.forEach((entry, index) => {
@@ -603,14 +707,14 @@ document.addEventListener('DOMContentLoaded', function() {
       el.classList.add('animate-on-scroll'); 
       observer.observe(el);
     });
-  } else {
+    } else {
     // Fallback for older browsers: show all elements immediately
     scrollElements.forEach(el => {
       el.classList.add('is-visible');
       el.classList.add('animate-on-scroll'); 
     });
-  }
-
+    }
+    
   // ===== Hero Parallax Effect =====
   const heroVisual = document.querySelector('.hero-visual');
 
@@ -644,34 +748,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Ensure smooth transition back to original position
      heroVisual.style.transition = 'transform 0.3s ease-out';
-  }
-
-  // Animation de rotation
-  function rotateTechIcons() {
-    if (!isAnimating) return;
-    
-    angle += 0.001; // Vitesse de rotation réduite pour une orbite plus majestueuse
-    
-    techIcons.forEach(icon => {
-      if (icon === hoveredIcon) return; // Ne pas déplacer l'icône en hover
-      
-      const currentAngle = parseFloat(icon.dataset.angle) + angle;
-      const newX = Math.cos(currentAngle) * radius;
-      const newY = Math.sin(currentAngle) * radius;
-      
-      // Mettre à jour la position via les variables CSS
-      icon.style.setProperty('--tx', `${newX}px`);
-      icon.style.setProperty('--ty', `${newY}px`);
-      
-      // Mettre à jour les attributs data (facultatif maintenant, mais peut servir)
-      icon.dataset.x = newX;
-      icon.dataset.y = newY;
-    });
-    
-    // Faire tourner aussi le cercle de l'orbite
-    orbitCircle.style.transform = `rotate(${angle * (180 / Math.PI)}deg)`;
-    
-    animationFrameId = requestAnimationFrame(rotateTechIcons);
   }
 
 }); // Fin de DOMContentLoaded 

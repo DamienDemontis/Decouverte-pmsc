@@ -56,12 +56,12 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     categorizeSpecialties: {
-        messages: [
+      messages: [
             "Nos spécialités se divisent en deux grandes catégories :",
             "<i class='fas fa-laptop-code'></i> <strong>Expertes Technologiques</strong> : Pour ceux qui veulent une expertise technique pointue (IA, Cloud, Cybersécurité...).",
             "<i class='fas fa-briefcase'></i> <strong>Digital, Business & Management</strong> : Pour ceux qui veulent piloter la stratégie et la transformation numérique (Marketing, Fintech, Project Management...).",
             "Souhaitez-vous explorer une catégorie spécifique ?"
-        ],
+      ],
       options: [
             { text: "Voir les Spécialités Tech", next: "listTechSpecialties" },
             { text: "Voir les Spécialités Business", next: "listBusinessSpecialties" },
@@ -438,15 +438,15 @@ document.addEventListener('DOMContentLoaded', () => {
         optionsContainer.appendChild(titleElement);
       } else {
         // Create a regular button option
-        const optionButton = document.createElement('button');
-        optionButton.className = 'bot-option';
+      const optionButton = document.createElement('button');
+      optionButton.className = 'bot-option';
         // Use innerHTML instead of textContent to render icons
         optionButton.innerHTML = option.text; 
-        
-        // Handle option click
-        optionButton.addEventListener('click', () => handleOptionClick(option));
-        
-        optionsContainer.appendChild(optionButton);
+      
+      // Handle option click
+      optionButton.addEventListener('click', () => handleOptionClick(option));
+      
+      optionsContainer.appendChild(optionButton);
       }
     });
     

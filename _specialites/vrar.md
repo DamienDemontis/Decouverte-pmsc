@@ -211,8 +211,6 @@ description: "Plongez dans l'univers des technologies immersives, où vous appre
       <ul>
         <li>Unity 2022 LTS avec le package XR Interaction Toolkit</li>
         <li>Casque VR (recommandé mais pas obligatoire - simulation possible)</li>
-        <li><a href="{{ '/assets/subjects/vrar/escape_room/G-VRA-100_vr_escape_room.pdf' | relative_url }}" target="_blank"><i class="fas fa-file-pdf"></i> Sujet complet (PDF)</a></li>
-        <li><a href="{{ '/assets/subjects/vrar/escape_room/starter_assets.zip' | relative_url }}" target="_blank"><i class="fas fa-file-archive"></i> Assets de démarrage</a></li>
       </ul>
     </div>
   </div>
@@ -249,8 +247,8 @@ description: "Plongez dans l'univers des technologies immersives, où vous appre
     <div class="mb-3">
       <strong>Ressources</strong>:
       <ul>
-        <li><a href="{{ '/assets/subjects/vrar/product_viz/G-VRA-250_ar_product_visualizer.pdf' | relative_url }}" target="_blank"><i class="fas fa-file-pdf"></i> Sujet complet (PDF)</a></li>
-        <li><a href="{{ '/assets/subjects/vrar/product_viz/furniture_models.zip' | relative_url }}" target="_blank"><i class="fas fa-file-archive"></i> Modèles 3D</a></li>
+        <li>Smartphone compatible AR (Android ou iOS)</li>
+        <li>Unity avec le package AR Foundation</li>
       </ul>
     </div>
   </div>
@@ -277,8 +275,14 @@ description: "Plongez dans l'univers des technologies immersives, où vous appre
     <div class="mb-3">
       <strong>Ressources</strong>:
       <ul>
-        <li><a href="{{ '/assets/subjects/vrar/multi_user/G-VRA-400_multi_user_vr.pdf' | relative_url }}" target="_blank"><i class="fas fa-file-pdf"></i> Sujet complet (PDF)</a></li>
-        <li><a href="{{ '/assets/subjects/vrar/multi_user/starter_project.zip' | relative_url }}" target="_blank"><i class="fas fa-file-archive"></i> Projet de démarrage</a></li>
+        <li>Casque VR (au moins 2 pour tester le multi-utilisateurs)</li>
+      </ul>
+    </div>
+    <div class="mb-3">
+      <strong>Technologies</strong>:
+      <ul>
+        <li>Unity avec XR Interaction Toolkit et Netcode for GameObjects (ou Photon)</li>
+        <li>Serveur de relais (si Photon est utilisé)</li>
       </ul>
     </div>
   </div>
@@ -351,15 +355,15 @@ description: "Plongez dans l'univers des technologies immersives, où vous appre
     <div class="feature-card">
       <h4>Introduction to XR: VR, AR, and MR Foundations</h4>
       <p><i class="fas fa-university"></i> University of Michigan sur Coursera</p>
-      <p>Vue d'ensemble théorique et pratique des technologies XR et leurs applications.</p>
-      <p><a href="https://www.coursera.org/learn/intro-xr-vr-ar-mr" target="_blank">Accéder au cours →</a></p>
+      <p>Cours d'introduction aux concepts fondamentaux de la XR (VR, AR, MR) par l'Université du Michigan.</p>
+      <p><a href="https://www.coursera.org/learn/introduction-virtual-reality" target="_blank" class="btn btn-sm btn-primary">Accéder au cours →</a> (Alternative: Intro VR)</p>
     </div>
     
     <div class="feature-card">
-      <h4>Unreal Engine 5 XR Development</h4>
-      <p><i class="fas fa-graduation-cap"></i> Epic Games Learning</p>
-      <p>Guide de développement XR avec Unreal Engine 5, incluant VR et AR.</p>
-      <p><a href="https://dev.epicgames.com/community/learning/tutorials/l7wR/unreal-engine-creating-your-first-vr-project-in-ue5" target="_blank">Accéder au cours →</a></p>
+      <h4>Créer votre premier projet VR avec Unreal Engine 5</h4>
+      <p><i class="fab fa-unreal-engine"></i> Epic Games / Unreal Engine Docs</p>
+      <p>Tutoriel officiel pour démarrer un projet VR avec Unreal Engine 5.</p>
+      <p><a href="https://docs.unrealengine.com/5.3/en-US/vr-development-in-unreal-engine/" target="_blank" class="btn btn-sm btn-primary">Accéder au cours →</a></p>
     </div>
   </div>
   

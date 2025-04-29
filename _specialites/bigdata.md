@@ -276,11 +276,11 @@ description: "Découvrez comment maîtriser le déluge de données de notre ère
       <p>Pour chaque étape, documenter ton raisonnement et justifier tes choix techniques dans un notebook Jupyter.</p>
     </div>
     <div class="mb-3">
-      <strong>Jeux de données suggérés</strong>:
+      <strong>Jeux de données pour s'entraîner</strong></p>
       <ul>
-        <li><a href="https://www.kaggle.com/datasets/new-york-city/nyc-taxi-trip-data" target="_blank">NYC Taxi Trips</a> - Des millions de courses de taxi à New York avec horodatage, géolocalisation et tarifs</li>
-        <li><a href="https://www.kaggle.com/datasets/instacart/instacart-market-basket-analysis" target="_blank">Instacart Market Basket</a> - 3 millions de commandes d'épicerie en ligne, idéal pour l'analyse de panier</li>
-        <li><a href="https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-parcoursup/information/" target="_blank">Parcoursup</a> - Données anonymisées sur les vœux d'orientation des bacheliers français</li>
+        <li><a href="https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page" target="_blank">NYC Taxi Trips</a> (Données publiques de millions de trajets de taxi)</li>
+        <li><a href="https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis" target="_blank">Instacart Market Basket</a></li>
+        <li><a href="https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-parcoursup/information/" target="_blank">Parcoursup</a></li>
       </ul>
     </div>
   </div>

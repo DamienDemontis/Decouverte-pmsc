@@ -248,8 +248,8 @@ description: "Maîtrisez les techniques offensives et défensives de la cybersé
       <p>Comprenez en profondeur le fonctionnement des réseaux TCP/IP, des protocoles et de l'architecture réseau.</p>
       <p><span class="badge badge-primary">Ressources</span></p>
       <ul>
-        <li><a href="https://www.netacad.com/courses/networking" target="_blank">Cisco Networking Academy</a></li>
-        <li><a href="https://www.cloudflare.com/learning/" target="_blank">Cloudflare Learning Center</a></li>
+        <li><a href="https://www.netacad.com/networking" target="_blank">Cisco Networking Academy</a></li>
+        <li><a href="https://www.cloudflare.com/learning/security/what-is-web-security/" target="_blank">Cloudflare Learning Center (Sécurité Web)</a></li>
       </ul>
     </li>
     
@@ -259,7 +259,8 @@ description: "Maîtrisez les techniques offensives et défensives de la cybersé
       <p><span class="badge badge-primary">Ressources</span></p>
       <ul>
         <li><a href="https://linuxjourney.com/" target="_blank">Linux Journey</a></li>
-        <li><a href="https://www.cybrary.it/course/CompTIA-linux-plus/" target="_blank">Cybrary - Linux+</a></li>
+        <li><a href="https://www.cybrary.it/catalog/" target="_blank">Cybrary - Catalogue</a></li>
+        <li>Scripts Bash</li>
       </ul>
     </li>
     

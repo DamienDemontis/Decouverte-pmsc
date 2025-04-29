@@ -35,7 +35,7 @@ permalink: /about/
               </div>
               <h3>Big Data & Analytics</h3>
               <p>Maîtrisez les techniques et outils pour stocker, traiter et analyser des volumes massifs de données.</p>
-              <a href="/specialites/bigdata/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/bigdata" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
@@ -46,7 +46,7 @@ permalink: /about/
               </div>
               <h3>Cloud Computing</h3>
               <p>Concevez, déployez et gérez des infrastructures cloud évolutives, résilientes et économiques.</p>
-              <a href="/specialites/cloud/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/cloud" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
@@ -57,18 +57,7 @@ permalink: /about/
               </div>
               <h3>Cybersécurité</h3>
               <p>Protégez les systèmes d'information contre les menaces avec des compétences en sécurité offensive et défensive.</p>
-              <a href="/specialites/cybersecurity/" class="btn-primary">Découvrir</a>
-            </div>
-          </div>
-          
-          <div class="swiper-slide">
-            <div class="specialite-card" style="--card-color: #06B6D4;">
-              <div class="specialite-icon">
-                <i class="fas fa-laptop-code"></i>
-              </div>
-              <h3>Digital Transformation (DIT)</h3>
-              <p>Transformez les entreprises par le numérique en intégrant de nouvelles technologies et en repensant les processus métier.</p>
-              <a href="/specialites/dit/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/cybersecurite" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
@@ -79,7 +68,7 @@ permalink: /about/
               </div>
               <h3>Intelligence Artificielle</h3>
               <p>Créez des systèmes intelligents capables d'apprendre et de résoudre des problèmes complexes.</p>
-              <a href="/specialites/ai/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/ia" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
@@ -90,7 +79,7 @@ permalink: /about/
               </div>
               <h3>Internet of Things (IoT)</h3>
               <p>Concevez et développez des écosystèmes d'objets connectés et les infrastructures associées.</p>
-              <a href="/specialites/iot/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/iot" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
@@ -101,7 +90,7 @@ permalink: /about/
               </div>
               <h3>VR/AR</h3>
               <p>Créez des expériences immersives en réalité virtuelle et augmentée pour divers secteurs d'activité.</p>
-              <a href="/specialites/vrar/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/vrar" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
@@ -113,7 +102,7 @@ permalink: /about/
               </div>
               <h3>Strategic Project Management</h3>
               <p>Développez les compétences pour diriger des projets technologiques complexes et transformer des idées innovantes en entreprises prospères.</p>
-              <a href="/specialites/project-management/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/project-management" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
@@ -124,7 +113,7 @@ permalink: /about/
               </div>
               <h3>Fintech & Stratégies financières</h3>
               <p>Explorez l'intersection de la finance et de la technologie pour transformer les services financiers dans un monde en pleine digitalisation.</p>
-              <a href="/specialites/fintech/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/fintech" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
@@ -135,7 +124,7 @@ permalink: /about/
               </div>
               <h3>Marketing & Influence</h3>
               <p>Développez des stratégies de marketing digital innovantes et exploitez le pouvoir des médias sociaux pour construire une influence significative.</p>
-              <a href="/specialites/marketing/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/marketing" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
@@ -146,7 +135,7 @@ permalink: /about/
               </div>
               <h3>IA & Transformation des organisations</h3>
               <p>Orchestrez la transformation numérique des organisations grâce à l'intelligence artificielle pour optimiser les processus et stimuler l'innovation.</p>
-              <a href="/specialites/ai-transformation/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/ai-transformation" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
@@ -157,7 +146,7 @@ permalink: /about/
               </div>
               <h3>Data, Protection & Sécurité</h3>
               <p>Protégez les données sensibles, élaborez des stratégies de sécurité et assurez la conformité réglementaire dans un environnement numérique en évolution.</p>
-              <a href="/specialites/data-protection/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/data-protection" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
@@ -168,7 +157,7 @@ permalink: /about/
               </div>
               <h3>Digitalisation de la fonction RH</h3>
               <p>Transformez la gestion des ressources humaines grâce aux technologies digitales pour créer une expérience collaborateur innovante.</p>
-              <a href="/specialites/rh-digitale/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/rh-digitale" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
@@ -179,7 +168,7 @@ permalink: /about/
               </div>
               <h3>Santé, IA & IoT</h3>
               <p>Transformez le secteur de la santé grâce à l'intelligence artificielle et aux objets connectés pour améliorer les soins et développer la médecine préventive.</p>
-              <a href="/specialites/sante-ia-iot/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/sante-ia-iot" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
@@ -190,7 +179,7 @@ permalink: /about/
               </div>
               <h3>Data Science & Business Intelligence</h3>
               <p>Exploitez le potentiel des données pour générer des insights stratégiques, prendre des décisions éclairées et créer un avantage concurrentiel durable.</p>
-              <a href="/specialites/data-science-bi/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/data-science-bi" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
@@ -201,7 +190,7 @@ permalink: /about/
               </div>
               <h3>Luxe & Retail Tech</h3>
               <p>Transformez l'expérience client dans le luxe et le retail grâce aux technologies digitales pour créer des parcours d'achat innovants et personnalisés.</p>
-              <a href="/specialites/luxe-retail-tech/" class="btn-primary">Découvrir</a>
+              <a href="/Decouverte-pmsc/specialites/luxe-retail-tech" class="btn-primary">Découvrir</a>
             </div>
           </div>
           
