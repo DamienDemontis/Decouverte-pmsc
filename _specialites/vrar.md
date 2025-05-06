@@ -7,6 +7,7 @@ ordre: 6
 color_primary: "#7C3AED"
 color_secondary: "#A78BFA"
 careers: true
+has_media: true
 short_description: "Concevez et développez des expériences immersives en réalité virtuelle et augmentée qui transforment notre façon d'interagir avec le monde."
 description: "Plongez dans l'univers des technologies immersives, où vous apprendrez à créer des environnements virtuels et des expériences augmentées qui révolutionnent des secteurs comme la formation, la santé, l'industrie et le divertissement."
 ---
@@ -326,6 +327,35 @@ description: "Plongez dans l'univers des technologies immersives, où vous appre
         </tr>
       </tbody>
     </table>
+  </div>
+</section>
+
+<!-- ========== MEDIAS ========== -->
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez des témoignages, des présentations et des explications sur la Réalité Virtuelle et Augmentée.</p>
+  <div class="card-grid">
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/VA53VfoayHY" title="Témoignage – Brandon Segers (Epitech MSc Pro IoT & VR), allier aérospatiale et réalité virtuelle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Témoignage – Brandon Segers (Epitech MSc Pro)</h4>
+      <p class="video-description">Allier aérospatiale et réalité virtuelle.</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/rqxwJ7AzER4" title="Focus Tech Epitech – Journée Réalité Virtuelle & Réalité Augmentée (présentation & talks)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Focus Tech Epitech – Journée VR/AR</h4>
+      <p class="video-description">Présentation & talks.</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/-ySjl_UJuUA" title="VR vs AR : quelles différences ? – Explication des réalités virtuelle et augmentée" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">VR vs AR : quelles différences ?</h4>
+      <p class="video-description">Explication des réalités virtuelle et augmentée.</p>
+    </div>
   </div>
 </section>
 

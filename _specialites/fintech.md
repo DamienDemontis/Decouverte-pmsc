@@ -7,6 +7,7 @@ ordre: 2
 color_primary: "#0891B2"
 color_secondary: "#22D3EE"
 careers: true
+has_media: true
 short_description: "Explorez l'intersection de la finance et de la technologie pour transformer les services financiers et développer des stratégies innovantes dans un monde en pleine digitalisation."
 description: "Maîtrisez les technologies et modèles d'affaires qui révolutionnent le secteur financier, de la blockchain aux paiements mobiles, en passant par l'analyse prédictive et l'automatisation des processus financiers."
 ---
@@ -65,6 +66,36 @@ description: "Maîtrisez les technologies et modèles d'affaires qui révolution
   <p>Cette section sera enrichie prochainement avec une présentation détaillée de l'écosystème Fintech et des stratégies financières numériques.</p>
 </section>
 
+<!-- ========== MEDIAS ========== -->
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez des témoignages, des explications et des reportages sur la Fintech.</p>
+  <div class="card-grid">
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/EZqk_s5rA7U" title="Témoignage – Alexis (MSc Pro Epitech), alternant en Fintech chez Crédit Mutuel Arkéa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Témoignage – Alexis (MSc Pro Epitech)</h4>
+      <p class="video-description">Alternant en Fintech chez Crédit Mutuel Arkéa.</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/Rur9ZbKERqw" title="La Fintech, c'est quoi ? – Définition et exemples (vidéo lexique)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">La Fintech, c'est quoi ?</h4>
+      <p class="video-description">Définition et exemples (vidéo lexique).</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/1S6gWp8_r9I" title="Reportage – Les fintech bousculent le monde de la finance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Reportage – Les fintech bousculent le monde de la finance</h4>
+      <p class="video-description">France 24.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== RESSOURCES ========= -->
 <section id="resources">
   <h2><i class="fas fa-book"></i> Ressources</h2>
   

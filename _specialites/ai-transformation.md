@@ -7,6 +7,7 @@ ordre: 4
 color_primary: "#3B82F6"
 color_secondary: "#93C5FD"
 careers: true
+has_media: true
 short_description: "Orchestrez la transformation numérique des organisations grâce à l'intelligence artificielle pour optimiser les processus, stimuler l'innovation et créer de la valeur durable."
 description: "Développez une expertise stratégique à l'intersection du management et de la technologie pour implémenter des solutions d'intelligence artificielle qui transforment les organisations, en tenant compte des dimensions humaines, éthiques et opérationnelles du changement."
 ---
@@ -65,6 +66,29 @@ description: "Développez une expertise stratégique à l'intersection du manage
   <p>Cette section sera enrichie prochainement avec une présentation détaillée de l'écosystème des technologies, méthodologies et parties prenantes impliquées dans la transformation des organisations par l'IA.</p>
 </section>
 
+<!-- ========== MEDIAS ========== -->
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez des retours d'expérience et des conférences sur l'IA et la transformation des organisations.</p>
+  <div class="card-grid">
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/vFpVYwvZdsM" title="Retour d'expérience – IA & transformation des organisations (Saad Kadioui, CIO chez Citwell)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Retour d'expérience – IA & transformation des organisations</h4>
+      <p class="video-description">Saad Kadioui, CIO chez Citwell.</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/SejL6jQ55oY" title="Conférence – Conduire l'adoption de l'IA en entreprise (IA générative & futur du travail)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Conférence – Conduire l'adoption de l'IA en entreprise</h4>
+      <p class="video-description">IA générative & futur du travail.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== RESSOURCES ========= -->
 <section id="resources">
   <h2><i class="fas fa-book"></i> Ressources</h2>
   

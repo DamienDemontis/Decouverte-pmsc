@@ -7,6 +7,7 @@ ordre: 9
 color_primary: "#A21CAF"
 color_secondary: "#D946EF"
 careers: true
+has_media: true
 short_description: "Transformez l'expérience client dans le luxe et le retail grâce aux technologies digitales pour créer des parcours d'achat innovants et personnalisés."
 description: "Développez une expertise à l'intersection du luxe, du retail et de la technologie pour concevoir et implémenter des solutions innovantes qui redéfinissent l'expérience client, optimisent les opérations et créent de nouveaux modèles commerciaux."
 ---
@@ -63,6 +64,28 @@ description: "Développez une expertise à l'intersection du luxe, du retail et 
   <h2><i class="fas fa-network-wired"></i> Écosystème</h2>
   
   <p>Cette section sera enrichie prochainement avec une présentation détaillée de l'écosystème des technologies, acteurs et tendances dans le domaine du Luxe & Retail Tech.</p>
+</section>
+
+<!-- ========== MEDIAS ========== -->
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez des témoignages et conférences sur le Luxe & Retail Tech.</p>
+  <div class="card-grid">
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/SiSEzF34EU0" title="La transformation digitale dans l'industrie du luxe, expliquée par Tim Benniks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">La transformation digitale dans l'industrie du luxe, expliquée par Tim Benniks</h4>
+      <p class="video-description">Epitech Digital School. À l'occasion de la Journée Découverte Luxe, les étudiant.e.s d'Epitech Digital School ont eu la chance de recevoir Tim Benniks, ...</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/dEDzDuQW3Vs" title="Connected Day - Conférence L'intelligence artificielle au cœur de la révolution du retail" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Connected Day - Conférence "L'intelligence artificielle au cœur de la révolution du retail"</h4>
+      <p class="video-description">Conférence sur l'IA dans la révolution du retail.</p>
+    </div>
+  </div>
 </section>
 
 <section id="resources">

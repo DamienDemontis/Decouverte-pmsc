@@ -7,6 +7,7 @@ ordre: 8
 color_primary: "#0284C7"
 color_secondary: "#38BDF8"
 careers: true
+has_media: true
 short_description: "Exploitez le potentiel des données pour générer des insights stratégiques, prendre des décisions éclairées et créer un avantage concurrentiel durable."
 description: "Maîtrisez les techniques d'analyse de données avancées et les outils de business intelligence pour transformer les données brutes en connaissances actionnables qui guident la stratégie d'entreprise et optimisent les performances."
 ---
@@ -65,6 +66,29 @@ description: "Maîtrisez les techniques d'analyse de données avancées et les o
   <p>Cette section sera enrichie prochainement avec une présentation détaillée de l'écosystème des technologies, plateformes et méthodologies utilisées en Data Science et Business Intelligence.</p>
 </section>
 
+<!-- ========== MEDIAS ========== -->
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez un témoignage et une explication des différences entre Business Intelligence et Data Science.</p>
+  <div class="card-grid">
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/JCywHkeHqpM" title="Témoignage – David (Alumni Epitech), Data Engineer dans l'industrie du jeu en ligne" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Témoignage – David (Alumni Epitech)</h4>
+      <p class="video-description">Data Engineer dans l'industrie du jeu en ligne.</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/mBB1jWeqEWg" title="Business Intelligence vs Data Science – Différences et complémentarités" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Business Intelligence vs Data Science</h4>
+      <p class="video-description">Différences et complémentarités.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== RESSOURCES ========= -->
 <section id="resources">
   <h2><i class="fas fa-book"></i> Ressources</h2>
   

@@ -7,7 +7,8 @@ ordre: 3
 color_primary: "#0EA5E9"
 color_secondary: "#38BDF8"
 careers: true
-short_description: "Explorez les technologies et méthodologies permettant de collecter, transformer et analyser des volumes massifs de données pour en extraire des insights stratégiques."
+has_media: true
+short_description: "Apprenez à collecter, stocker, traiter et analyser des volumes massifs de données pour en extraire des informations stratégiques et piloter la prise de décision."
 description: "Découvrez comment maîtriser le déluge de données de notre ère digitale grâce aux technologies Big Data, aux architectures distribuées et aux techniques analytiques avancées qui révolutionnent la prise de décision."
 ---
 
@@ -314,6 +315,28 @@ description: "Découvrez comment maîtriser le déluge de données de notre ère
         </tr>
       </tbody>
     </table>
+  </div>
+</section>
+
+<!-- ========== MEDIAS ========== -->
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez des témoignages et des explications sur le Big Data.</p>
+  <div class="card-grid">
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/JCywHkeHqpM" title="Témoignage – David (Alumni Epitech 2018), Staff Data Engineer chez Betclic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Témoignage – David (Alumni Epitech 2018)</h4>
+      <p class="video-description">Staff Data Engineer chez Betclic.</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/xO7M2yfDNoc" title="Le Big Data, c'est quoi ? – Définition et explication en vidéo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Le Big Data, c'est quoi ?</h4>
+      <p class="video-description">Définition et explication en vidéo.</p>
+    </div>
   </div>
 </section>
 

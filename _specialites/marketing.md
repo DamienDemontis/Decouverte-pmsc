@@ -7,6 +7,7 @@ ordre: 3
 color_primary: "#C026D3"
 color_secondary: "#E879F9"
 careers: true
+has_media: true
 short_description: "Développez des stratégies de marketing digital innovantes et exploitez le pouvoir des médias sociaux pour construire une influence significative et générer un impact mesurable."
 description: "Maîtrisez les techniques avancées de marketing digital, d'analyse de données comportementales et de création de contenu pour concevoir des stratégies d'influence qui créent de véritables connexions avec les audiences et transforment les intentions en actions."
 ---
@@ -65,6 +66,29 @@ description: "Maîtrisez les techniques avancées de marketing digital, d'analys
   <p>Cette section sera enrichie prochainement avec une présentation détaillée de l'écosystème du marketing digital et des stratégies d'influence.</p>
 </section>
 
+<!-- ========== MEDIAS ========== -->
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez un témoignage et une explication du marketing d'influence.</p>
+  <div class="card-grid">
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/pBRrvcFXRNs" title="Témoignage – Émilie (Epitech Digital), alternance Traffic Manager chez Link" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Témoignage – Émilie (Epitech Digital)</h4>
+      <p class="video-description">Alternance Traffic Manager chez Link.</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/vjenFGQyZDM" title="Le marketing d'influence, c'est quoi ? – Vidéo explicative" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Le marketing d'influence, c'est quoi ?</h4>
+      <p class="video-description">Vidéo explicative.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== RESSOURCES ========= -->
 <section id="resources">
   <h2><i class="fas fa-book"></i> Ressources</h2>
   
