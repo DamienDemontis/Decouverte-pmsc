@@ -698,7 +698,7 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o√
         <li><a href="https://www.deeplearning.ai/the-batch/" target="_blank"><strong>The Batch</strong></a> - Newsletter hebdomadaire de deeplearning.ai</li>
         <li><a href="https://importai.substack.com/" target="_blank"><strong>Import AI</strong></a> - Newsletter par Jack Clark sur les avanc√©es en IA</li>
         <li><a href="https://www.ben-evans.com/newsletter" target="_blank"><strong>Benedict Evans</strong></a> - Analyses sur l'impact technologique et business de l'IA</li>
-        <li><a href="https://www.deeplearning.ai/" target="_blank">Deep Learning AI Newsletter</li>
+        <li><a href="https://www.deeplearning.ai/" target="_blank">Deep Learning AI Newsletter</a></li>
       </ul>
     </div>
   </div>
