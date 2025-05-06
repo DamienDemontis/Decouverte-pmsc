@@ -433,6 +433,45 @@ description: "Plongez dans l'univers du Cloud Computing pour apprendre à concev
       <p><a href="https://training.linuxfoundation.org/training/introduction-to-kubernetes/" target="_blank">Accéder au cours →</a></p>
     </div>
   </div>
+
+  <h3 class="mt-4">Documentation et Formations Complémentaires</h3>
+  <div class="card-grid">
+    <div class="feature-card">
+      <h4><i class="fas fa-file-alt"></i> Documentation Officielle</h4>
+      <ul>
+        <li><strong>AWS:</strong> <a href="https://docs.aws.amazon.com/" target="_blank">Documentation officielle AWS</a></li>
+        <li><strong>Azure:</strong> <a href="https://learn.microsoft.com/azure/" target="_blank">Documentation officielle Azure</a></li>
+      </ul>
+    </div>
+
+    <div class="feature-card">
+      <h4><i class="fas fa-award"></i> Formations et Certifications des Plateformes</h4>
+      <ul>
+        <li><strong>AWS:</strong> <a href="https://aws.amazon.com/training/" target="_blank">Portail de formation AWS</a></li>
+        <li><strong>Azure:</strong> <a href="https://learn.microsoft.com/training/azure/" target="_blank">Portail de formation Azure</a></li>
+        <li><strong>Google Cloud:</strong> <a href="https://cloud.google.com/training" target="_blank">Portail de formation Google Cloud</a></li>
+      </ul>
+    </div>
+
+    <div class="feature-card">
+      <h4><i class="fas fa-graduation-cap"></i> MOOCs et Plateformes d'Apprentissage</h4>
+      <ul>
+        <li><strong>Coursera:</strong>
+          <ul class="nested-list">
+            <li><a href="https://www.coursera.org/search?query=google%20cloud%20professional%20certificate" target="_blank">Google Cloud Professional Certificates</a></li>
+            <li><a href="https://learn.microsoft.com/credentials/certifications/azure-fundamentals/" target="_blank">Azure Fundamentals AZ-900 Prep</a></li>
+          </ul>
+        </li>
+        <li><strong>Udacity:</strong> <a href="https://www.udacity.com/school/cloud-computing" target="_blank">Cloud Developer Nanodegree</a></li>
+        <li><strong>Pluralsight & A Cloud Guru:</strong>
+          <ul class="nested-list">
+            <li><a href="https://www.pluralsight.com/browse/cloud-computing" target="_blank">Parcours Cloud Computing (Pluralsight)</a></li>
+            <li><a href="https://www.pluralsight.com/cloud-guru" target="_blank">Formations A Cloud Guru</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 <!-- ========== CARRIÈRES ========= -->
@@ -591,14 +630,19 @@ description: "Plongez dans l'univers du Cloud Computing pour apprendre à concev
   </div>
 </section>
 
-*   **[Documentation AWS](https://docs.aws.amazon.com/)**: La documentation officielle d'Amazon Web Services.
-*   **[Documentation Azure](https://learn.microsoft.com/en-us/azure/)**: La documentation officielle de Microsoft Azure.
-*   **Coursera**:
-    *   <a href="https://www.coursera.org/search?query=google%20cloud%20professional%20certificate" target="_blank">Google Cloud Professional Certificates</a> (Recherche)
-    *   <a href="https://learn.microsoft.com/fr-fr/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification" target="_blank">Microsoft Azure Fundamentals AZ-900 Exam Prep</a>
-*   **[Formations et certifications AWS](https://aws.amazon.com/training/)**: Ressources officielles d'AWS pour la formation et la certification.
-*   **[Formations et certifications Azure](https://learn.microsoft.com/en-us/training/azure/)**: Ressources officielles de Microsoft pour la formation et la certification Azure.
-*   **[Formations et certifications Google Cloud](https://cloud.google.com/learn)**: Ressources officielles de Google Cloud pour la formation et la certification.
-*   **Udacity**: <a href="https://www.udacity.com/school-of-cloud-computing" target="_blank">Cloud Developer Nanodegree</a>
-*   **Pluralsight**: [Parcours Cloud Computing](https://www.pluralsight.com/browse/cloud-computing)
-*   **A Cloud Guru (Pluralsight)**: [Formations Cloud Spécialisées](https://www.pluralsight.com/cloud-guru) 
+<!-- ========== SUMMARY ========= -->
+<section id="summary">
+  <h2><i class="fas fa-check-circle"></i> En résumé</h2>
+  
+  <div class="feature-card">
+    <p>Le Cloud Computing est une compétence essentielle pour tout professionnel de la tech, offrant des solutions innovantes pour des défis complexes. Cette spécialité couvre :</p>
+    <ul>
+      <li><strong>Flexibilité et agilité</strong> - Capacité à s'adapter rapidement aux besoins changeants</li>
+      <li><strong>Économies d'échelle</strong> - Optimisation des coûts grâce aux modèles de paiement à l'usage</li>
+      <li><strong>Innovation accélérée</strong> - Accès à des services de pointe (IA, Big Data, IoT)</li>
+      <li><strong>Haute disponibilité</strong> - Architectures résilientes garantissant la continuité de service</li>
+      <li><strong>Sécurité avancée</strong> - Outils et pratiques pour protéger les données et applications</li>
+    </ul>
+    <p>Cette spécialité MSc vous prépare à devenir un expert en conception, déploiement et gestion d'infrastructures cloud robustes, sécurisées et performantes, ouvrant la voie à des carrières passionnantes dans un secteur en pleine expansion.</p>
+  </div>
+</section> 
