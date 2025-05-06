@@ -620,19 +620,22 @@ a:hover {
 /* ========== CARTES ET COMPOSANTS ========= */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-  margin: 1rem 0;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem auto;
+  padding: 0 1rem;
 }
 
 .feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: var(--card-bg);
   border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: var(--card-shadow);
   border: 1px solid var(--card-border);
-  transition: transform 0.2s, box-shadow 0.2s;
-  margin-bottom: 0.75rem;
+  padding: 1.5rem;
+  overflow: hidden;
 }
 
 .feature-card:hover {
@@ -947,6 +950,54 @@ aside p {
 
 .timeline-content h4 {
   margin-top: 0;
+}
+
+/* ========== MEDIA CARDS ========= */
+.media-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--card-border);
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.media-card .video-embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  background-color: #000;
+}
+
+.media-card .video-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.media-card .video-title {
+  font-size: 1.1rem;
+  color: var(--dark);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.media-card .video-description {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 0;
+  line-height: 1.5;
 }
 
 /* Utilities */

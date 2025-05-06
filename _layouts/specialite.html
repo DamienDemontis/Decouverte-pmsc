@@ -16,6 +16,9 @@ layout: default
     <a href="#roadmap" class="section-nav-item"><i class="fas fa-map"></i><span>Parcours</span></a>
     <a href="#hands-on" class="section-nav-item"><i class="fas fa-laptop-code"></i><span>Projets</span></a>
     <a href="#ecosystem" class="section-nav-item"><i class="fas fa-network-wired"></i><span>Écosystème</span></a>
+    {% if page.has_media %}
+    <a href="#media" class="section-nav-item"><i class="fas fa-play-circle"></i><span>Médias</span></a>
+    {% endif %}
     <a href="#resources" class="section-nav-item"><i class="fas fa-book"></i><span>Ressources</span></a>
     {% if page.careers %}
     <a href="#career" class="section-nav-item"><i class="fas fa-briefcase"></i><span>Perspectives de carrière</span></a>
