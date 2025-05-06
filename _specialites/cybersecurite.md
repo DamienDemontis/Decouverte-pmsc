@@ -7,6 +7,7 @@ ordre: 1
 color_primary: "#DC2626"
 color_secondary: "#EF4444"
 careers: true
+has_media: true
 short_description: "Développez l'expertise nécessaire pour protéger les systèmes d'information contre les menaces numériques et sécuriser les données sensibles des organisations."
 description: "Maîtrisez les techniques offensives et défensives de la cybersécurité pour protéger les infrastructures critiques, anticiper les attaques et répondre efficacement aux incidents de sécurité dans un monde de plus en plus connecté."
 ---
@@ -490,6 +491,42 @@ description: "Maîtrisez les techniques offensives et défensives de la cybersé
         </tr>
       </tbody>
     </table>
+  </div>
+</section>
+
+<!-- ========== MEDIAS ========== -->
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez des témoignages d'anciens élèves, des interviews d'experts et des présentations sur la cybersécurité.</p>
+  <div class="card-grid">
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/xwButxNRe_o" title="Témoignage – Nicolas (Epitech promo 2022), spécialisation Cybersécurité à l'étranger" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Témoignage – Nicolas (Epitech promo 2022)</h4>
+      <p class="video-description">Spécialisation Cybersécurité à l'étranger.</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/LLvRT0tNk40" title="Témoignage – Jérôme Muller (Alumni Epitech 2019), Ingénieur Cybersécurité chez EES Clemessy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Témoignage – Jérôme Muller (Alumni Epitech 2019)</h4>
+      <p class="video-description">Ingénieur Cybersécurité chez EES Clemessy.</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/bF1SXJwoyzU" title="Témoignage – Cyril, apprenti ingénieur en Cybersécurité (MSc Pro Epitech)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Témoignage – Cyril (MSc Pro Epitech)</h4>
+      <p class="video-description">Apprenti ingénieur en Cybersécurité.</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/e5GWqaf5Dvw" title="Interview – Edouard Mbo (Architecte Cybersécurité) lors de la journée spéciale Cyber à Epitech Digital" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Interview – Edouard Mbo</h4>
+      <p class="video-description">Architecte Cybersécurité, journée spéciale Cyber Epitech Digital.</p>
+    </div>
   </div>
 </section>
 

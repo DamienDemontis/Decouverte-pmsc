@@ -7,6 +7,7 @@ type: tech
 color_primary: "#9333EA"
 color_secondary: "#C084FC"
 careers: true
+has_media: true
 short_description: "Explorez l'univers fascinant de l'Intelligence Artificielle et apprenez à concevoir des systèmes capables d'apprentissage, de raisonnement et d'adaptation."
 description: "Plongez dans le monde captivant de l'Intelligence Artificielle, où vous apprendrez à créer des systèmes qui imitent l'intelligence humaine, résolvent des problèmes complexes et transforment notre façon d'interagir avec la technologie."
 ---
@@ -623,6 +624,28 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o�
         <li>Contribuez à des projets open source en IA</li>
         <li>Développez une expertise en IA responsable et éthique</li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MEDIAS ========== -->
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez des témoignages et des conférences sur l'Intelligence Artificielle.</p>
+  <div class="card-grid">
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/rok3TOH_F84" title="Témoignage – Thibault Neveu (Alumni Epitech), co-fondateur de Visual Behavior (IA & robotique)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Témoignage – Thibault Neveu (Alumni Epitech)</h4>
+      <p class="video-description">Co-fondateur de Visual Behavior (IA & robotique).</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/8kCNZMXle4s" title="Conférence – "L'IA comme vous ne l'avez jamais vue" (présentation grand public sur l'IA, 2024)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Conférence – "L'IA comme vous ne l'avez jamais vue"</h4>
+      <p class="video-description">Présentation grand public sur l'IA (2024).</p>
     </div>
   </div>
 </section>

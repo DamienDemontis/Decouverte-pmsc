@@ -3,11 +3,12 @@ layout: specialite
 title: Santé, IA & IoT
 type: business
 icon: fas fa-heartbeat
-ordre: 7
-color_primary: "#E11D48"
-color_secondary: "#FB7185"
+ordre: 13
+color_primary: "#E11D48" # Rose-600
+color_secondary: "#F472B6" # Rose-400
 careers: true
-short_description: "Transformez le secteur de la santé grâce à l'intelligence artificielle et aux objets connectés pour améliorer les soins, optimiser les processus médicaux et développer la médecine préventive."
+has_media: true
+short_description: "Développez des solutions technologiques innovantes à l'intersection de la santé, de l'intelligence artificielle et des objets connectés."
 description: "Développez une expertise à l'intersection de la santé, de l'IA et de l'IoT pour concevoir des solutions innovantes qui révolutionnent les parcours de soins, améliorent l'efficacité des systèmes de santé et permettent une médecine plus personnalisée et proactive."
 ---
 
@@ -65,6 +66,29 @@ description: "Développez une expertise à l'intersection de la santé, de l'IA 
   <p>Cette section sera enrichie prochainement avec une présentation détaillée de l'écosystème des technologies, acteurs et régulations dans le domaine de la e-santé.</p>
 </section>
 
+<!-- ========== MEDIAS ========== -->
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez un témoignage d'entrepreneur et un reportage sur les technologies en santé.</p>
+  <div class="card-grid">
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/dIEqOpjdecc" title="Témoignage – Antoine Bertrand (Alumni Epitech 2019), cofondateur de Pheal (startup e-santé)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Témoignage – Antoine Bertrand (Alumni Epitech 2019)</h4>
+      <p class="video-description">Cofondateur de Pheal (startup e-santé).</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/ud4yALS0wPk" title="L'IA au service de la santé : apports ou dangers ? – Reportage sur l'IA en médecine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">L'IA au service de la santé : apports ou dangers ?</h4>
+      <p class="video-description">Reportage sur l'IA en médecine.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== RESSOURCES ========= -->
 <section id="resources">
   <h2><i class="fas fa-book"></i> Ressources</h2>
   

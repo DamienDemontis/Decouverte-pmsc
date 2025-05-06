@@ -7,6 +7,7 @@ ordre: 2
 color_primary: "#3B82F6"
 color_secondary: "#60A5FA"
 careers: true
+has_media: true
 short_description: "Maîtrisez la conception, le déploiement et la gestion d'infrastructures cloud pour créer des applications évolutives, flexibles et résilientes."
 description: "Plongez dans l'univers du Cloud Computing pour apprendre à concevoir, déployer et gérer des infrastructures et services cloud modernes, flexibles et sécurisés."
 ---
@@ -215,141 +216,6 @@ description: "Plongez dans l'univers du Cloud Computing pour apprendre à concev
   </div>
 </section>
 
-<!-- ========== ROADMAP ========= -->
-<section id="roadmap">
-  <h2><i class="fas fa-map"></i> Parcours d'apprentissage</h2>
-  
-  <p>Voici une feuille de route progressive pour maîtriser le Cloud Computing, organisée en phases d'apprentissage logiques. Chaque phase s'appuie sur les compétences précédentes.</p>
-  
-  <h3>Phase 1 : Fondamentaux du Cloud</h3>
-  
-  <div class="step-list">
-    <li>
-      <h4>Concepts de base</h4>
-      <p>Familiarisez-vous avec les modèles de service (IaaS, PaaS, SaaS), les types de déploiement (public, privé, hybride) et les avantages du cloud.</p>
-      <p><span class="badge badge-primary">Ressources</span></p>
-      <ul>
-        <li><a href="https://aws.amazon.com/fr/what-is-cloud-computing/" target="_blank">AWS - Qu'est-ce que le cloud computing</a></li>
-        <li><a href="https://azure.microsoft.com/fr-fr/resources/cloud-computing-dictionary/" target="_blank">Microsoft - Dictionnaire du cloud computing</a></li>
-      </ul>
-    </li>
-    
-    <li>
-      <h4>Virtualisation et conteneurs</h4>
-      <p>Comprenez les technologies sous-jacentes du cloud : machines virtuelles, hyperviseurs, conteneurs et orchestration.</p>
-      <p><span class="badge badge-primary">Ressources</span></p>
-      <ul>
-        <li><a href="https://www.docker.com/101-tutorial/" target="_blank">Docker 101 Tutorial</a></li>
-        <li><a href="https://www.vmware.com/topics/glossary/content/virtual-machine.html" target="_blank">VMware - Introduction à la virtualisation</a></li>
-      </ul>
-    </li>
-    
-    <li>
-      <h4>Linux et ligne de commande</h4>
-      <p>Maîtrisez les bases de Linux et du shell, essentiels pour administrer des systèmes cloud.</p>
-      <p><span class="badge badge-primary">Ressources</span></p>
-      <ul>
-        <li><a href="https://linuxjourney.com/" target="_blank">Linux Journey</a></li>
-        <li><a href="https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux" target="_blank">OpenClassrooms - Reprenez le contrôle à l'aide de Linux</a></li>
-      </ul>
-    </li>
-    
-    <li>
-      <h4>Réseaux cloud</h4>
-      <p>Comprenez les concepts de réseaux virtuels, VPC, sous-réseaux, DNS et les modèles de connectivité hybride.</p>
-      <p><span class="badge badge-primary">Ressources</span></p>
-      <ul>
-        <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html" target="_blank">AWS - Guide utilisateur VPC</a></li>
-        <li><a href="https://www.cloudflare.com/fr-fr/learning/network-layer/" target="_blank">Cloudflare - Bases des réseaux</a></li>
-      </ul>
-    </li>
-  </div>
-  
-  <h3 class="mt-4">Phase 2 : Cloud Providers et Services</h3>
-  
-  <div class="step-list">
-    <li>
-      <h4>AWS, Azure ou GCP</h4>
-      <p>Choisissez un fournisseur cloud majeur et apprenez ses services fondamentaux (calcul, stockage, réseau, IAM).</p>
-      <p><span class="badge badge-primary">Ressources</span></p>
-      <ul>
-        <li><a href="https://aws.amazon.com/fr/getting-started/" target="_blank">AWS - Guide de démarrage</a></li>
-        <li><a href="https://learn.microsoft.com/fr-fr/training/paths/azure-fundamentals/" target="_blank">Microsoft Learn</a></li>
-        <li><a href="https://cloud.google.com/docs/overview" target="_blank">GCP - Vue d'ensemble</a></li>
-      </ul>
-    </li>
-  </div>
-</section>
-
-<!-- ========== MINI‑PROJETS ========= -->
-<section id="hands-on">
-  <h2><i class="fas fa-laptop-code"></i> Projets pratiques</h2>
-  
-  <p>Ces mini-projets te permettront de découvrir le Cloud Computing par la pratique. Ils sont conçus pour être réalisables en quelques heures ou jours, tout en offrant une expérience concrète des défis et solutions du domaine.</p>
-
-  <div class="project-card">
-    <h4>Projet 1: Infrastructure as Code avec Terraform <span class="difficulty beginner">Débutant</span></h4>
-    <div class="mb-3">
-      <strong>Durée estimée</strong>: 4-6 heures
-    </div>
-    <div class="mb-3">
-      <strong>Objectif</strong>: Créer et gérer une infrastructure cloud simple via du code plutôt que manuellement
-    </div>
-    <div class="mb-3">
-      <strong>Description</strong>: 
-      <p>Dans ce projet, tu découvriras Terraform, l'outil de référence pour l'Infrastructure as Code. Tu apprendras à définir ton infrastructure sous forme de code, la déployer automatiquement et la modifier de façon contrôlée.</p>
-    </div>
-    <div class="mb-3">
-      <strong>Étapes</strong>:
-      <ol>
-        <li>Installer Terraform et configurer l'accès à un fournisseur cloud (AWS/Azure/GCP)</li>
-        <li>Écrire un fichier Terraform simple pour déployer une machine virtuelle</li>
-        <li>Ajouter des ressources réseau (VPC, sous-réseau, groupe de sécurité)</li>
-        <li>Utiliser des variables et sorties pour rendre le code réutilisable</li>
-        <li>Tester la modification et la suppression d'infrastructure</li>
-      </ol>
-    </div>
-    <div class="mb-3">
-      <strong>Ressources</strong>:
-      <ul>
-        <li><a href="https://learn.hashicorp.com/terraform" target="_blank">HashiCorp Learn - Terraform</a></li>
-        <li><a href="https://developer.hashicorp.com/terraform/tutorials/aws-get-started" target="_blank">Terraform AWS Tutorial</a></li>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="project-card">
-    <h4>Projet 2: Déploiement d'une application dans Kubernetes <span class="difficulty intermediate">Intermédiaire</span></h4>
-    <div class="mb-3">
-      <strong>Durée estimée</strong>: 8-10 heures
-    </div>
-    <div class="mb-3">
-      <strong>Objectif</strong>: Déployer et gérer une application conteneurisée sur Kubernetes
-    </div>
-    <div class="mb-3">
-      <strong>Description</strong>: 
-      <p>Kubernetes est devenu le standard de fait pour l'orchestration de conteneurs. Dans ce projet, tu apprendras à déployer une application web simple dans un cluster K8s, à la mettre à l'échelle et à la rendre hautement disponible.</p>
-    </div>
-    <div class="mb-3">
-      <strong>Étapes</strong>:
-      <ol>
-        <li>Configurer un cluster Kubernetes local avec Kind ou Minikube</li>
-        <li>Créer une image Docker d'une application simple (Node.js/Python)</li>
-        <li>Définir les ressources Kubernetes (Deployment, Service, ConfigMap)</li>
-        <li>Déployer l'application et vérifier son fonctionnement</li>
-        <li>Configurer l'autoscaling et tester la résilience aux pannes</li>
-      </ol>
-    </div>
-    <div class="mb-3">
-      <strong>Ressources</strong>:
-      <ul>
-        <li><a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/" target="_blank">Kubernetes - Tutoriel de base</a></li>
-        <li><a href="https://kind.sigs.k8s.io/docs/user/quick-start/" target="_blank">Kind - Quick Start</a></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
 <!-- ========== OUTILS ========= -->
 <section id="tools">
   <h2><i class="fas fa-tools"></i> Écosystème Cloud</h2>
@@ -393,6 +259,35 @@ description: "Plongez dans l'univers du Cloud Computing pour apprendre à concev
         </tr>
       </tbody>
     </table>
+  </div>
+</section>
+
+<!-- ========== MEDIAS ========== -->
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez des témoignages d'anciens élèves et des interviews d'acteurs clés du Cloud Computing.</p>
+  <div class="card-grid">
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/SLkZb71tNbI" title="Témoignage – Pierre-Marie Danieau (Alumni Epitech 2019), Software Engineer chez AWS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Témoignage – Pierre-Marie Danieau (Alumni Epitech 2019)</h4>
+      <p class="video-description">Software Engineer chez AWS.</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/HuKefDBDa-w" title="Témoignage – Lucas Ferry (Alumni Epitech 2019), DevOps Engineer (ArtDesignStory)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Témoignage – Lucas Ferry (Alumni Epitech 2019)</h4>
+      <p class="video-description">DevOps Engineer (ArtDesignStory).</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/CxMj1CuOD4E" title="Interview – Solomon Hykes (Epitech 2006), co-fondateur de Docker/dotCloud" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Interview – Solomon Hykes (Epitech 2006)</h4>
+      <p class="video-description">Co-fondateur de Docker/dotCloud.</p>
+    </div>
   </div>
 </section>
 

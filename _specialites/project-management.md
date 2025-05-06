@@ -7,6 +7,7 @@ ordre: 1
 color_primary: "#0D6EFD"
 color_secondary: "#6EA8FE"
 careers: true
+has_media: true
 short_description: "Développez les compétences stratégiques et opérationnelles pour mener des projets complexes et créer des entreprises innovantes dans l'écosystème tech."
 description: "Maîtrisez les méthodologies de gestion de projet avancées et les stratégies entrepreneuriales pour diriger efficacement des initiatives technologiques d'envergure et transformer des idées innovantes en entreprises prospères."
 ---
@@ -65,6 +66,29 @@ description: "Maîtrisez les méthodologies de gestion de projet avancées et le
   <p>Cette section sera enrichie prochainement avec une présentation détaillée de l'écosystème du Strategic Project Management & Entrepreneurship.</p>
 </section>
 
+<!-- ========== MEDIAS ========== -->
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez des témoignages d'anciens élèves devenus chefs de projet ou Product Managers.</p>
+  <div class="card-grid">
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/hZ_UUPvqQZA" title="Témoignage – Angelo Turnu (Alumni Epitech 2019), Business Analyst & Project Manager (Okoone, Cambodge)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Témoignage – Angelo Turnu (Alumni Epitech 2019)</h4>
+      <p class="video-description">Business Analyst & Project Manager (Okoone, Cambodge).</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/lGNFEfMFRGI" title="Témoignage – Félix Marcotte-Ruffin (Alumni Epitech 2019), Product Manager chez Legitbee" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Témoignage – Félix Marcotte-Ruffin (Alumni Epitech 2019)</h4>
+      <p class="video-description">Product Manager chez Legitbee.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== RESSOURCES ========= -->
 <section id="resources">
   <h2><i class="fas fa-book"></i> Ressources</h2>
   

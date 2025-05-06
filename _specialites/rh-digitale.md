@@ -7,6 +7,7 @@ ordre: 6
 color_primary: "#059669"
 color_secondary: "#34D399"
 careers: true
+has_media: true
 short_description: "Transformez la gestion des ressources humaines grâce aux technologies digitales pour créer une expérience collaborateur innovante et développer le capital humain."
 description: "Maîtrisez les outils et stratégies de digitalisation RH pour optimiser les processus, améliorer l'engagement des collaborateurs et développer une culture d'entreprise axée sur l'innovation et l'agilité."
 ---
@@ -65,6 +66,29 @@ description: "Maîtrisez les outils et stratégies de digitalisation RH pour opt
   <p>Cette section sera enrichie prochainement avec une présentation détaillée de l'écosystème des technologies, plateformes et acteurs clés dans le domaine de la digitalisation RH.</p>
 </section>
 
+<!-- ========== MEDIAS ========== -->
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez des présentations sur la digitalisation de la fonction RH.</p>
+  <div class="card-grid">
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/CRxH9tILCYs" title="Séminaire RH – Découverte de la digitalisation RH en 2e année (Epitech Digital School)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Séminaire RH – Découverte de la digitalisation RH</h4>
+      <p class="video-description">Epitech Digital School (2e année).</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/jada66L6ONU" title="Webinar – Digitalisation de la fonction RH : solutions, IA et cadre légal (Archimag)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">Webinar – Digitalisation de la fonction RH</h4>
+      <p class="video-description">Solutions, IA et cadre légal (Archimag).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== RESSOURCES ========= -->
 <section id="resources">
   <h2><i class="fas fa-book"></i> Ressources</h2>
   

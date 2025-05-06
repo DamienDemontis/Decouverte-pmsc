@@ -7,6 +7,7 @@ ordre: 5
 color_primary: "#059669"
 color_secondary: "#10B981"
 careers: true
+has_media: true
 short_description: "Concevez et développez des solutions connectées complètes, du capteur embarqué jusqu'au cloud, pour transformer n'importe quel objet physique en source d'intelligence."
 description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'électronique embarquée aux plateformes cloud, en passant par les réseaux de capteurs et l'analyse des données, pour développer des solutions intelligentes dans des domaines variés comme la ville intelligente, l'industrie 4.0 ou la santé connectée."
 ---
@@ -687,6 +688,28 @@ description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'élect
       <li><strong><a href="https://csa-iot.org/all-solutions/matter/" target="_blank">Matter (ex-Project CHIP)</a></strong> - Standard unifié pour smart home</li>
       <li><strong><a href="https://opcfoundation.org/" target="_blank">OPC Foundation</a></strong> - OPC UA pour interopérabilité industrielle</li>
     </ul>
+  </div>
+</section>
+
+<!-- ========== MEDIAS ========== -->
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez un projet étudiant et une explication de l'Internet des Objets.</p>
+  <div class="card-grid">
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/9yqtSnCLExc" title="IoT à but militaire : focus sur Le projet « DETER », de notre étudiant MSc Pro Yann Fontaine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">IoT à but militaire : focus sur Le projet « DETER », de notre étudiant MSc Pro Yann Fontaine</h4>
+      <p class="video-description">Projet « DETER » de Yann Fontaine, étudiant MSc Pro Epitech (spé IoT).</p>
+    </div>
+    <div class="feature-card media-card">
+      <div class="video-embed-container">
+        <iframe src="https://www.youtube.com/embed/HCJtvzG6v10" title="L'Internet des Objets, c'est quoi ? – Vidéo explicative sur l'IoT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h4 class="video-title">L'Internet des Objets, c'est quoi ?</h4>
+      <p class="video-description">Vidéo explicative sur l'IoT.</p>
+    </div>
   </div>
 </section>
 
