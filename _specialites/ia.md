@@ -642,7 +642,7 @@ description: "Plongez dans le monde captivant de l'Intelligence Artificielle, o�
     </div>
     <div class="feature-card media-card">
       <div class="video-embed-container">
-        <iframe src="https://www.youtube.com/embed/8kCNZMXle4s" title="Conférence – "L'IA comme vous ne l'avez jamais vue" (présentation grand public sur l'IA, 2024)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/8kCNZMXle4s" title="Conférence – L'IA comme vous ne l'avez jamais vue (présentation grand public sur l'IA, 2024)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       <h4 class="video-title">Conférence – "L'IA comme vous ne l'avez jamais vue"</h4>
       <p class="video-description">Présentation grand public sur l'IA (2024).</p>
