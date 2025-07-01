@@ -22,8 +22,8 @@
 /* Bot Container */
 #specialty-bot-container {
   position: fixed;
-  bottom: 40px;
-  left: 40px;
+  bottom: 20px;
+  right: 80px;
   z-index: var(--bot-z-index);
   font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
@@ -79,9 +79,9 @@
 #bot-chat-container {
   position: absolute;
   bottom: calc(var(--bot-avatar-size) + 20px);
-  left: 0;
+  right: 0;
   width: 500px;
-  height: 550px;
+  height: 750px;
   background-color: white;
   border-radius: var(--bot-border-radius);
   box-shadow: var(--bot-shadow);
@@ -375,13 +375,13 @@
   #bot-chat-container {
     width: calc(100vw - 40px);
     height: 450px;
-    left: 0;
+    right: 0;
     bottom: calc(var(--bot-avatar-size) + 30px);
   }
   
   #specialty-bot-container {
     bottom: 20px;
-    left: 20px;
+    right: 20px;
   }
   
   .bot-option {
