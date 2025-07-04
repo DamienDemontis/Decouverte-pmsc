@@ -179,14 +179,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     listTechSpecialties: {
       messages: [
-        "<h3>🔧 Spécialités Expertes Technologiques</h3>Voici nos spécialités pour les futurs experts tech :<br/><br/><div class='specialty-grid'><div class='specialty-card' onclick='handleInlineClick(\"explainCyber\")'><strong>🛡️ Cybersécurité</strong><br/>Protéger les systèmes</div><div class='specialty-card' onclick='handleInlineClick(\"explainCloud\")'><strong>☁️ Cloud Computing</strong><br/>Infrastructures scalables</div><div class='specialty-card' onclick='handleInlineClick(\"explainAI\")'><strong>🧠 Intelligence Artificielle</strong><br/>Algorithmes intelligents</div></div><div class='specialty-grid'><div class='specialty-card' onclick='handleInlineClick(\"explainBigData\")'><strong>📊 Big Data & Analytics</strong><br/>Données massives</div><div class='specialty-card' onclick='handleInlineClick(\"explainIoT\")'><strong>📡 Internet of Things</strong><br/>Objets connectés</div><div class='specialty-card' onclick='handleInlineClick(\"explainVR\")'><strong>🥽 VR & AR</strong><br/>Réalités immersives</div></div><br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>📈 Voir spé Business</button><button class='inline-btn' onclick='handleInlineClick(\"help_q1\")'>🎯 Aide au choix</button><button class='inline-btn' onclick='handleInlineClick(\"compare_specialties\")'>⚖️ Comparer</button></div>"
+        "<h3>🔧 Spécialités Expertes Technologiques</h3>Voici nos spécialités pour les futurs experts tech :<br/><br/><div class='specialty-grid'><div class='specialty-card' onclick='handleInlineClick(\"explainCyber\")'><strong>🛡️ Cybersécurité</strong><br/>Protéger les systèmes</div><div class='specialty-card' onclick='handleInlineClick(\"explainCloud\")'><strong>☁️ Cloud Computing</strong><br/>Infrastructures scalables</div><div class='specialty-card' onclick='handleInlineClick(\"explainAI\")'><strong>🧠 Intelligence Artificielle</strong><br/>Algorithmes intelligents</div><div class='specialty-card' onclick='handleInlineClick(\"explainBigData\")'><strong>📊 Big Data & Analytics</strong><br/>Données massives</div><div class='specialty-card' onclick='handleInlineClick(\"explainIoT\")'><strong>📡 Internet of Things</strong><br/>Objets connectés</div><div class='specialty-card' onclick='handleInlineClick(\"explainVR\")'><strong>🥽 VR & AR</strong><br/>Réalités immersives</div></div><br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>📈 Voir spé Business</button><button class='inline-btn' onclick='handleInlineClick(\"help_q1\")'>🎯 Aide au choix</button><button class='inline-btn' onclick='handleInlineClick(\"compare_specialties\")'>⚖️ Comparer</button></div>"
       ],
       options: []
     },
 
     listBusinessSpecialties: {
       messages: [
-        "<h3>📈 Spécialités Digital, Business & Management</h3>Voici nos spécialités pour les futurs leaders de la transformation :<br/><br/><div class='specialty-grid'><div class='specialty-card' onclick='handleInlineClick(\"explainProjectManagement\")'><strong>🎯 Strategic Project Management</strong><br/>Leadership & entrepreneuriat</div><div class='specialty-card' onclick='handleInlineClick(\"explainFintech\")'><strong>💰 Fintech</strong><br/>Innovation financière</div><div class='specialty-card' onclick='handleInlineClick(\"explainMarketing\")'><strong>📱 Marketing & Influence</strong><br/>Stratégies digitales</div></div><div class='specialty-grid'><div class='specialty-card' onclick='handleInlineClick(\"explainAITransformation\")'><strong>🚀 IA & Transformation</strong><br/>Conduite du changement</div><div class='specialty-card' onclick='handleInlineClick(\"explainDataProtection\")'><strong>🔒 Data & Protection</strong><br/>Conformité RGPD</div><div class='specialty-card' onclick='handleInlineClick(\"explainRH\")'><strong>👥 RH Digitale</strong><br/>Expérience collaborateur</div></div><div class='specialty-grid'><div class='specialty-card' onclick='handleInlineClick(\"explainSante\")'><strong>🏥 Santé, IA & IoT</strong><br/>E-santé</div><div class='specialty-card' onclick='handleInlineClick(\"explainDataScienceBI\")'><strong>📊 Data Science & BI</strong><br/>Aide à la décision</div><div class='specialty-card' onclick='handleInlineClick(\"explainLuxe\")'><strong>💎 Luxe & Retail Tech</strong><br/>Expérience client</div></div><br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"listTechSpecialties\")'>🔧 Voir spé Tech</button><button class='inline-btn' onclick='handleInlineClick(\"help_q1\")'>🎯 Aide au choix</button><button class='inline-btn' onclick='handleInlineClick(\"compare_specialties\")'>⚖️ Comparer</button></div>"
+        "<h3>📈 Spécialités Business & Management</h3>Voici nos spécialités pour les futurs leaders de la transformation :<br/><br/><div class='specialty-grid'><div class='specialty-card' onclick='handleInlineClick(\"explainProjectManagement\")'><strong>🎯 Strategic Project Management</strong><br/>Leadership & entrepreneuriat</div><div class='specialty-card' onclick='handleInlineClick(\"explainFintech\")'><strong>💰 Fintech</strong><br/>Innovation financière</div><div class='specialty-card' onclick='handleInlineClick(\"explainMarketing\")'><strong>📱 Marketing & Influence</strong><br/>Stratégies digitales</div><div class='specialty-card' onclick='handleInlineClick(\"explainAITransformation\")'><strong>🚀 IA & Transformation</strong><br/>Conduite du changement</div><div class='specialty-card' onclick='handleInlineClick(\"explainDataProtection\")'><strong>🔒 Data & Protection</strong><br/>Conformité RGPD</div><div class='specialty-card' onclick='handleInlineClick(\"explainRH\")'><strong>👥 RH Digitale</strong><br/>Expérience collaborateur</div><div class='specialty-card' onclick='handleInlineClick(\"explainSante\")'><strong>🏥 Santé, IA & IoT</strong><br/>E-santé</div><div class='specialty-card' onclick='handleInlineClick(\"explainDataScienceBI\")'><strong>📊 Data Science & BI</strong><br/>Aide à la décision</div><div class='specialty-card' onclick='handleInlineClick(\"explainLuxe\")'><strong>💎 Luxe & Retail Tech</strong><br/>Expérience client</div></div><br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"listTechSpecialties\")'>🔧 Voir spé Tech</button><button class='inline-btn' onclick='handleInlineClick(\"help_q1\")'>🎯 Aide au choix</button><button class='inline-btn' onclick='handleInlineClick(\"compare_specialties\")'>⚖️ Comparer</button></div>"
       ],
       options: []
     },
@@ -386,6 +386,48 @@ document.addEventListener('DOMContentLoaded', () => {
         "👥 <strong>Profil Collaboratif :</strong> Vous excellez en équipe !<br/>Votre esprit d'équipe vous orienterait vers des spécialités où la collaboration et le management sont au cœur du métier.<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainProjectManagement\")'>🎯 Project Management</button><button class='inline-btn' onclick='handleInlineClick(\"explainRH\")'>👥 RH Digitale</button><button class='inline-btn' onclick='handleInlineClick(\"explainMarketing\")'>📱 Marketing & Influence</button></div>"
       ],
       options: []
+    },
+
+    help_q_tech_ai_data: {
+      messages: [
+        "<h3>🤖 Solutions Data & IA</h3>Le domaine de la donnée est passionnant ! Vous préférez :<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainAI\")'>🧠 Créer les modèles d'IA</button><button class='inline-btn' onclick='handleInlineClick(\"explainBigData\")'>🗄️ Construire les pipelines de données massives</button><button class='inline-btn' onclick='handleInlineClick(\"explainDataScienceBI\")'>📈 Analyser la donnée pour la décision</button></div>"
+      ],
+      options: []
+    },
+
+    help_q_business_industry: {
+      messages: [
+        "<h3>🚀 Transformer les Secteurs</h3>Quel secteur souhaitez-vous réinventer grâce à la technologie ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"recommend_fintech\")'>💰 La Finance (Fintech)</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_sante\")'>🏥 La Santé (Health Tech)</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_luxe\")'>💎 Le Luxe & Retail</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_marketing\")'>📱 Le Marketing & Média</button></div>"
+      ],
+      options: []
+    },
+    
+    help_q_business_internal: {
+      messages: [
+        "<h3>⚙️ Optimiser les Organisations</h3>Très bonne approche ! Quel levier de performance interne vous intéresse le plus ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"recommend_project\")'>🎯 Le pilotage de projets stratégiques</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_ai_transfo\")'>🚀 L'intégration de l'IA</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_rh\")'>👥 La digitalisation des RH</button></div>"
+      ],
+      options: []
+    },
+    
+    help_q_business_data: {
+      messages: [
+        "<h3>📊 Stratégie par la Data</h3>La data est un levier puissant. Quelle est votre priorité ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"recommend_ds_bi\")'>📈 Créer des dashboards pour guider la prise de décision.</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_data_protection\")'>📋 Garantir la sécurité et la conformité (RGPD, etc.).</button></div>"
+      ],
+      options: []
+    },
+    
+    help_q_tech: {
+        messages: [
+            "<h3>🔧 Exploration Technique</h3>Parfait ! Le monde de l'expertise technique est vaste. Qu'est-ce qui vous attire le plus ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainCyber\")'>🛡️ Construire des forteresses numériques</button><button class='inline-btn' onclick='handleInlineClick(\"explainAI\")'>🧠 Créer des intelligences artificielles</button><button class='inline-btn' onclick='handleInlineClick(\"explainCloud\")'>☁️ Bâtir l'infrastructure du futur</button></div>"
+        ],
+        options: []
+    },
+
+    help_q_business: {
+        messages: [
+            "<h3>📈 Vers le Management</h3>Excellent choix ! Votre profil technique est un atout majeur pour piloter des projets et des équipes. Nos spécialités 'Digital, Business & Management' sont conçues pour vous.<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>Découvrir les spécialités Business</button><button class='inline-btn' onclick='handleInlineClick(\"explainProjectManagement\")'>Focus sur le Management de Projet</button></div>"
+        ],
+        options: []
     },
 
     // Additional trend and detail states
@@ -745,7 +787,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     compare_specialties: {
       messages: [
-        "<h3>⚖️ Comparateur de spécialités</h3>Outil de comparaison rapide :<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"ai_vs_data\")'>🧠 IA vs Data Science</button><button class='inline-btn' onclick='handleInlineClick(\"bigdata_vs_bi\")'>📊 Big Data vs BI</button><button class='inline-btn' onclick='handleInlineClick(\"compare_security\")'>🛡️ Cyber vs Data Protection</button></div><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"categorizeSpecialties\")'>🔄 Tech vs Business</button><button class='inline-btn' onclick='handleInlineClick(\"help_q1\")'>🎯 Aide au choix</button></div>"
+        "<h3>⚖️ Comparateur de spécialités</h3>Outil de comparaison rapide :<br/><div class='inline-buttons'><button class='inline-btn' data-action='ai_vs_data'>🧠 IA vs Data Science</button><button class='inline-btn' data-action='bigdata_vs_bi'>📊 Big Data vs BI</button><button class='inline-btn' data-action='compare_security'>🛡️ Cyber vs Data Protection</button></div><div class='inline-buttons'><button class='inline-btn' data-action='categorizeSpecialties'>🔄 Tech vs Business</button><button class='inline-btn' data-action='help_q1'>🎯 Aide au choix</button></div>"
       ],
       options: []
     },
@@ -908,13 +950,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Enhanced functions for inline button handling
   window.handleInlineClick = function(action, param) {
-    // Simulate user click for history
-    const clickedButton = event.target.closest('.inline-btn');
-    const buttonText = clickedButton.textContent || clickedButton.innerText;
+    // Get the button text from the clicked element
+    const clickedElement = event.target.closest('[onclick]');
+    if (!clickedElement) return;
+
+    const titleElement = clickedElement.querySelector('strong');
+    const buttonText = titleElement ? titleElement.innerText : (clickedElement.textContent || clickedElement.innerText);
     
     const userResponse = document.createElement('div');
     userResponse.className = 'user-response-inline';
-    userResponse.innerHTML = `${buttonText}`;
+    userResponse.innerHTML = `${buttonText.trim()}`;
     botMessagesContainer.appendChild(userResponse);
     
     // Add to navigation history
@@ -968,21 +1013,43 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function calculateAndShowResult() {
-      let maxScore = 0;
-      let bestProfile = 'reco_default'; // Default recommendation
+    let scores = userProfile.scores || {};
+    
+    // Convert scores to an array and sort
+    const sortedProfiles = Object.entries(scores).sort(([,a],[,b]) => b-a);
 
-      if (userProfile.scores) {
-          for (const profile in userProfile.scores) {
-              if (userProfile.scores[profile] > maxScore) {
-                  maxScore = userProfile.scores[profile];
-                  bestProfile = 'reco_' + profile;
-              }
-          }
-      }
-      
-      // Reset scores for the next quiz
-      userProfile.scores = {};
-      renderConversationState(bestProfile);
+    // Reset scores for the next quiz
+    userProfile.scores = {};
+
+    if (sortedProfiles.length === 0) {
+        renderConversationState('reco_default');
+        return;
+    }
+
+    const topProfile = sortedProfiles[0][0];
+    const topScore = sortedProfiles[0][1];
+    
+    let finalReco = 'reco_' + topProfile; // Default to top profile
+
+    // Check for a close second or a tie
+    if (sortedProfiles.length > 1) {
+        const secondProfile = sortedProfiles[1][0];
+        const secondScore = sortedProfiles[1][1];
+
+        // If the second score is close to the top score (e.g., within 1 point), we have a hybrid profile
+        if (topScore > 0 && topScore - secondScore <= 1) {
+            // Create a consistent key for the hybrid profile (e.g., architect_innovator)
+            const hybridKey = [topProfile, secondProfile].sort().join('_');
+            const hybridReco = 'reco_' + hybridKey;
+            
+            // Check if a specific hybrid recommendation exists
+            if (conversationTree[hybridReco]) {
+                finalReco = hybridReco;
+            }
+        }
+    }
+    
+    renderConversationState(finalReco);
   }
 
   // Initialize bot
@@ -1077,4 +1144,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize the bot
   initBot();
+
+  // --- EVENT HANDLING ---
+  // Use a single, delegated event listener for all dynamic content
+  botMessagesContainer.addEventListener('click', function(event) {
+    const target = event.target;
+    let clickedElement = target.closest('[data-action]');
+    
+    if (clickedElement) {
+        const action = clickedElement.dataset.action;
+        const param = clickedElement.dataset.param;
+        handleAction(action, param, clickedElement);
+    }
+  });
+
+  function handleAction(action, param, clickedElement) {
+    const titleElement = clickedElement.querySelector('strong');
+    const buttonText = titleElement ? titleElement.innerText : (clickedElement.textContent || clickedElement.innerText);
+    
+    const userResponse = document.createElement('div');
+    userResponse.className = 'user-response-inline';
+    userResponse.innerHTML = `${buttonText.trim()}`;
+    botMessagesContainer.appendChild(userResponse);
+    
+    if (action !== 'navigate') {
+      navigationHistory.push(action);
+    }
+    
+    removeTypingIndicator();
+    showTypingIndicator();
+    scrollToBottom();
+    
+    setTimeout(() => {
+      if (action === 'navigate') {
+        window.open(param, '_blank');
+        removeTypingIndicator();
+        renderConversationState('after_navigate');
+      } else {
+        conversationState = action;
+        renderConversationState(conversationState);
+      }
+    }, 800);
+  }
 }); 
