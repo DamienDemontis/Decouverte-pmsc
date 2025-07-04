@@ -316,7 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     faq_locations: {
       messages: [
-        "<h3>📍 Campus disponibles</h3><div class='faq-answer'><strong>🇫🇷 En France (15 campus) :</strong><br/>Paris, Lyon, Marseille, Bordeaux, Lille, Toulouse, Nantes, Rennes, Strasbourg, Nancy, Nice, Montpellier, Mulhouse, Moulins, La Réunion.<br/><br/><strong>🌍 À l'international :</strong><br/>Cotonou.<br/><br/>💡 Toutes les spécialités MSc sont disponibles sur l'ensemble de nos campus.</div><br/>Besoin de plus d'infos ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"faq\")'>❓ Retour FAQ</button><button class='inline-btn' onclick='handleInlineClick(\"admission_process\")'>📝 Candidater</button></div>"
+        "<h3>📍 Campus disponibles</h3><div class='faq-answer'><strong>🇫🇷 En France (15 campus) :</strong><br/>Paris, Lyon, Marseille, Bordeaux, Lille, Toulouse, Nantes, Rennes, Strasbourg, Nancy, Nice, Montpellier, Mulhouse, La Réunion.<br/><br/><strong>🌍 À l'international :</strong><br/>Cotonou.<br/><br/>💡 Toutes les spécialités MSc sont disponibles sur l'ensemble de nos campus.</div><br/>Besoin de plus d'infos ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"faq\")'>❓ Retour FAQ</button><button class='inline-btn' onclick='handleInlineClick(\"admission_process\")'>📝 Candidater</button></div>"
       ],
       options: []
     },
@@ -806,103 +806,112 @@ document.addEventListener('DOMContentLoaded', () => {
       options: []
     },
 
-    // --- NEWLY ADDED STATES FOR UNRESPONSIVE BUTTONS ---
-    help_q_tech: {
+    // --- NEW PERSONALITY QUIZ FLOW ---
+    personality_test: {
       messages: [
-        "<h3>🔧 Exploration Technique</h3>Parfait ! Le monde de l'expertise technique est vaste. Qu'est-ce qui vous attire le plus ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainCyber\")'>🛡️ Construire des forteresses numériques</button><button class='inline-btn' onclick='handleInlineClick(\"explainAI\")'>🧠 Créer des intelligences artificielles</button><button class='inline-btn' onclick='handleInlineClick(\"explainCloud\")'>☁️ Bâtir l'infrastructure du futur</button></div>"
+        "<h3>🧠 Test de Personnalité Tech</h3>Commençons ! Ce test en 5 questions va nous aider à révéler votre profil.<br/>Prêt(e) ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleQuizClick(\"pt_q1\", {})'>🚀 C'est parti !</button></div>"
       ],
       options: []
     },
 
-    help_q_business: {
+    pt_q1: {
       messages: [
-        "<h3>📈 Vers le Management</h3>Excellent choix ! Votre profil technique est un atout majeur pour piloter des projets et des équipes. Nos spécialités 'Digital, Business & Management' sont conçues pour vous.<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>Découvrir les spécialités Business</button><button class='inline-btn' onclick='handleInlineClick(\"explainProjectManagement\")'>Focus sur le Management de Projet</button></div>"
+        "<h4>Question 1/5</h4><p>Votre super-pouvoir rêvé serait de :</p><div class='inline-buttons'><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q2\", {analyst: 2, innovator: 1})'>🔮 Prévoir le futur avec précision</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q2\", {protector: 2})'>🛡️ Construire des forteresses imprenables</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q2\", {strategist: 2})'>🧠 Organiser et mener n'importe quel groupe</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q2\", {architect: 2, innovator: 1})'>🌍 Bâtir des mondes à partir de rien</button></div>"
       ],
       options: []
     },
 
-    help_q_business_industry: {
+    pt_q2: {
       messages: [
-        "<h3>🚀 Transformer les Secteurs</h3>Quel secteur souhaitez-vous réinventer grâce à la technologie ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"recommend_fintech\")'>💰 La Finance (Fintech)</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_sante\")'>🏥 La Santé (Health Tech)</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_luxe\")'>💎 Le Luxe & Retail</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_marketing\")'>📱 Le Marketing & Média</button></div>"
+        "<h4>Question 2/5</h4><p>Un projet est une vraie réussite si :</p><div class='inline-buttons'><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q3\", {protector: 2})'>🔒 Il est parfaitement sécurisé et fiable</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q3\", {strategist: 2})'>📅 Il est livré à temps et dans le budget</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q3\", {architect: 2, innovator: 1})'>💡 Il est techniquement élégant et innovant</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q3\", {analyst: 2, catalyst: 2})'>📈 Son impact sur les utilisateurs est positif</button></div>"
+      ],
+      options: []
+    },
+
+    pt_q3: {
+      messages: [
+        "<h4>Question 3/5</h4><p>Face à une nouvelle technologie, votre premier réflexe est de :</p><div class='inline-buttons'><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q4\", {architect: 2})'>🔧 La démonter pour comprendre comment elle marche</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q4\", {catalyst: 2, innovator: 1})'>🚀 Imaginer comment elle peut changer le monde</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q4\", {protector: 2})'> Hacker ses failles de sécurité</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q4\", {analyst: 2})'>📊 Analyser les données qu'elle produit</button></div>"
+      ],
+      options: []
+    },
+
+    pt_q4: {
+      messages: [
+        "<h4>Question 4/5</h4><p>La phrase qui vous décrit le mieux :</p><div class='inline-buttons'><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q5\", {strategist: 2})'>\"J'aime quand un plan se déroule sans accroc.\"</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q5\", {innovator: 2, catalyst: 1})'>\"Je veux créer des choses qui n'ont jamais été faites.\"</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q5\", {architect: 2})'>\"Je trouve la beauté dans l'organisation de systèmes complexes.\"</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q5\", {protector: 2})'>\"Mon but : laisser le système plus sûr que je ne l'ai trouvé.\"</button></div>"
+      ],
+      options: []
+    },
+
+    pt_q5: {
+      messages: [
+        "<h4>Question 5/5</h4><p>Le secteur le plus passionnant à transformer selon vous :</p><div class='inline-buttons'><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_results\", {strategist: 1, analyst: 1})'>💰 La Finance ou la Santé</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_results\", {architect: 1, protector: 1})'>🏭 L'Industrie ou les infrastructures critiques</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_results\", {catalyst: 2})'>📱 La Communication, le retail et les médias</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_results\", {innovator: 2})'>🎮 Le Divertissement et les expériences immersives</button></div>"
       ],
       options: []
     },
     
-    help_q_business_internal: {
+    pt_results: {
       messages: [
-        "<h3>⚙️ Optimiser les Organisations</h3>Très bonne approche ! Quel levier de performance interne vous intéresse le plus ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainProjectManagement\")'>🎯 Le pilotage de projets stratégiques</button><button class='inline-btn' onclick='handleInlineClick(\"explainAITransformation\")'>🚀 L'intégration de l'IA</button><button class='inline-btn' onclick='handleInlineClick(\"explainRH\")'>👥 La digitalisation des RH</button></div>"
-      ],
-      options: []
-    },
-    
-    help_q_tech_ai_data: {
-      messages: [
-        "<h3>🤖 Solutions Data & IA</h3>Le domaine de la donnée est passionnant ! Vous préférez :<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainAI\")'>🧠 Créer les modèles d'IA</button><button class='inline-btn' onclick='handleInlineClick(\"explainBigData\")'>🗄️ Construire les pipelines de données massives</button><button class='inline-btn' onclick='handleInlineClick(\"explainDataScienceBI\")'>📈 Analyser la donnée pour la décision</button></div>"
-      ],
-      options: []
-    },
-    
-    recommend_fintech: {
-      messages: [
-        "<h3>🎯 Recommandation : Fintech</h3>Excellent choix ! La révolution de la finance est en marche.<br/><div class='recommendation primary'>🥇 <strong>Fintech & Stratégies Financières</strong> est la spécialité idéale pour vous.</div><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainFintech\")'>💰 Découvrir la spé Fintech</button><button class='inline-btn' onclick='handleInlineClick(\"ai_finance\")'>🤖 L'IA dans la finance</button></div>"
+        "Analyse de vos réponses..."
       ],
       options: []
     },
 
-    recommend_sante: {
-      messages: [
-        "<h3>🎯 Recommandation : Santé</h3>La Health Tech est un secteur d'avenir !<br/><div class='recommendation primary'>🥇 <strong>Santé, IA & IoT</strong> est faite pour vous.</div><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainSante\")'>🏥 Découvrir la spé Santé</button><button class='inline-btn' onclick='handleInlineClick(\"health_innovations\")'>💡 Voir les innovations</button></div>"
-      ],
-      options: []
+    // --- NEW RECOMMENDATION STATES ---
+    reco_protector: {
+        messages: [
+            "<h3>Votre profil : Le Protecteur 🛡️</h3><p>Vous êtes méthodique, rigoureux et vous anticipez les risques. Votre mission : construire une forteresse numérique et garantir la confiance.</p><strong>Spécialités recommandées :</strong><div class='recommendation primary'>🥇 <strong>Cybersécurité</strong> - Pour devenir un expert de la défense technique.</div><div class='recommendation secondary'>🥈 <strong>Data, Protection & Sécurité</strong> - Pour maîtriser la conformité et la gouvernance (RGPD).</div><br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainCyber\")'>Explorer Cybersécurité</button><button class='inline-btn' onclick='handleInlineClick(\"explainDataProtection\")'>Explorer Data Protection</button></div>"
+        ],
+        options: []
+    },
+    reco_architect: {
+        messages: [
+            "<h3>Votre profil : L'Architecte 🏗️</h3><p>Vous aimez concevoir, organiser et bâtir des systèmes complexes, robustes et élégants. Vous créez les fondations du monde de demain.</p><strong>Spécialités recommandées :</strong><div class='recommendation primary'>🥇 <strong>Cloud Computing</strong> - Pour construire des infrastructures scalables.</div><div class='recommendation secondary'>🥈 <strong>Big Data & Analytics</strong> - Pour architecturer les pipelines de données massives.</div><div class='recommendation tertiary'>🥉 <strong>Internet of Things (IoT)</strong> - Pour concevoir des écosystèmes d'objets connectés.</div><br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainCloud\")'>☁️ Explorer Cloud</button><button class='inline-btn' onclick='handleInlineClick(\"explainBigData\")'>📊 Explorer Big Data</button><button class='inline-btn' onclick='handleInlineClick(\"explainIoT\")'>📡 Explorer IoT</button></div>"
+        ],
+        options: []
+    },
+    reco_innovator: {
+        messages: [
+            "<h3>Votre profil : L'Innovateur 💡</h3><p>Vous êtes un créatif qui repousse les limites du possible. Vous utilisez la technologie pour inventer de nouvelles expériences et de nouveaux usages.</p><strong>Spécialités recommandées :</strong><div class='recommendation primary'>🥇 <strong>Intelligence Artificielle</strong> - Pour créer des algorithmes qui apprennent et raisonnent.</div><div class='recommendation secondary'>🥈 <strong>Réalité Virtuelle & Augmentée</strong> - Pour créer des mondes immersifs.</div><div class='recommendation tertiary'>🥉 <strong>Internet of Things (IoT)</strong> - Pour inventer les objets de demain.</div><br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainAI\")'>🧠 Explorer IA</button><button class='inline-btn' onclick='handleInlineClick(\"explainVR\")'>🥽 Explorer VR/AR</button><button class='inline-btn' onclick='handleInlineClick(\"explainIoT\")'>📡 Explorer IoT</button></div>"
+        ],
+        options: []
+    },
+    reco_strategist: {
+        messages: [
+            "<h3>Votre profil : Le Stratège 🧠</h3><p>Vous avez une vision d'ensemble. Vous aimez piloter, planifier et orchestrer des projets complexes pour atteindre un objectif business clair.</p><strong>Spécialités recommandées :</strong><div class='recommendation primary'>🥇 <strong>Strategic Project Management</strong> - Pour devenir un chef d'orchestre de la tech.</div><div class='recommendation secondary'>🥈 <strong>IA & Transformation des organisations</strong> - Pour piloter le changement grâce à l'IA.</div><div class='recommendation tertiary'>🥉 <strong>Fintech & Stratégies financières</strong> - Pour définir la stratégie des services financiers de demain.</div><br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainProjectManagement\")'>🎯 Explorer Project Management</button><button class='inline-btn' onclick='handleInlineClick(\"explainAITransformation\")'>🚀 Explorer IA & Transfo</button><button class='inline-btn' onclick='handleInlineClick(\"explainFintech\")'>💰 Explorer Fintech</button></div>"
+        ],
+        options: []
+    },
+    reco_catalyst: {
+        messages: [
+            "<h3>Votre profil : Le Catalyseur 🚀</h3><p>Vous comprenez les gens et les marchés. Vous utilisez la technologie pour créer des connexions, engager des communautés et transformer une industrie.</p><strong>Spécialités recommandées :</strong><div class='recommendation primary'>🥇 <strong>Marketing Digital & Influence</strong> - Pour construire et animer des marques fortes.</div><div class='recommendation secondary'>🥈 <strong>Luxe & Retail Tech</strong> - Pour réinventer l'expérience client.</div><div class='recommendation tertiary'>🥉 <strong>Digitalisation de la fonction RH</strong> - Pour transformer l'expérience collaborateur.</div><br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainMarketing\")'>📱 Explorer Marketing</button><button class='inline-btn' onclick='handleInlineClick(\"explainLuxe\")'>💎 Explorer Luxe & Retail</button><button class='inline-btn' onclick='handleInlineClick(\"explainRH\")'>👥 Explorer RH</button></div>"
+        ],
+        options: []
+    },
+    reco_analyst: {
+        messages: [
+            "<h3>Votre profil : L'Analyste 📊</h3><p>Les données vous parlent. Vous aimez les explorer, les faire parler et les transformer en décisions intelligentes qui pilotent l'entreprise.</p><strong>Spécialités recommandées :</strong><div class='recommendation primary'>🥇 <strong>Data Science & Business Intelligence</strong> - Pour créer des insights et des dashboards.</div><div class='recommendation secondary'>🥈 <strong>Santé, IA & IoT</strong> - Pour analyser les données médicales et améliorer les soins.</div><div class='recommendation tertiary'>🥉 <strong>Fintech & Stratégies financières</strong> - Pour analyser les données de marché.</div><br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainDataScienceBI\")'>📊 Explorer Data Science</button><button class='inline-btn' onclick='handleInlineClick(\"explainSante\")'>🏥 Explorer Santé</button><button class='inline-btn' onclick='handleInlineClick(\"explainFintech\")'>💰 Explorer Fintech</button></div>"
+        ],
+        options: []
+    },
+    reco_default: {
+        messages: [
+            "<h3>Votre profil : Le Polyvalent 🌟</h3><p>Vous êtes un touche-à-tout ! Votre profil est équilibré, ce qui vous ouvre de nombreuses portes, que ce soit en tech pure ou en management.</p>Je vous suggère d'explorer ces deux voies :<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"categorizeSpecialties\")'>🔄 Tech vs Business</button><button class='inline-btn' onclick='handleInlineClick(\"explainSpecialties\")'>📋 Voir toutes les spécialités</button></div>"
+        ],
+        options: []
     },
 
-    recommend_luxe: {
-      messages: [
-        "<h3>🎯 Recommandation : Luxe & Retail</h3>Un domaine où la technologie réinvente l'expérience client.<br/><div class='recommendation primary'>🥇 <strong>Luxe & Retail Tech</strong> correspond parfaitement à votre projet.</div><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainLuxe\")'>💎 Découvrir la spé Luxe</button><button class='inline-btn' onclick='handleInlineClick(\"luxury_trends\")'>✨ Voir les tendances</button></div>"
-      ],
-      options: []
-    },
 
-    recommend_marketing: {
-      messages: [
-        "<h3>🎯 Recommandation : Marketing Digital</h3>Un secteur en constante évolution !<br/><div class='recommendation primary'>🥇 <strong>Marketing Digital & Influence</strong> est la spécialité qu'il vous faut.</div><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainMarketing\")'>📱 Découvrir la spé Marketing</button><button class='inline-btn' onclick='handleInlineClick(\"marketing_trends\")'>📈 Voir les tendances</button></div>"
-      ],
-      options: []
-    },
-    
-    recommend_ai_transfo: {
-      messages: [
-        "<h3>🎯 Recommandation : Transformation par l'IA</h3>Piloter le changement est une compétence clé.<br/><div class='recommendation primary'>🥇 <strong>IA & Transformation des organisations</strong> est la voie royale.</div><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainAITransformation\")'>🚀 Découvrir la spé IA & Transfo</button><button class='inline-btn' onclick='handleInlineClick(\"ai_use_cases\")'>💡 Voir des cas d'usage</button></div>"
-      ],
-      options: []
-    },
-
-
-    // END OF NEWLY ADDED STATES
-
-    // ENHANCED RECOMMENDATIONS ---
-    recommend_ai: {
-      messages: [
-        "<h3>⚖️ Cloud vs IA</h3>Deux piliers de la tech moderne :<br/><div class='comparison-mini'>☁️ <strong>Cloud :</strong> Infrastructure, scalabilité</div><div class='comparison-mini'>🧠 <strong>IA :</strong> Algorithmes, intelligence</div><br/>Votre préférence ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainCloud\")'>☁️ Cloud Computing</button><button class='inline-btn' onclick='handleInlineClick(\"explainAI\")'>🧠 Intelligence Artificielle</button></div>"
-      ],
-      options: []
-    },
-
-    compare_specialties: {
-      messages: [
-        "<h3>⚖️ Comparateur de spécialités</h3>Outil de comparaison rapide :<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"ai_vs_data\")'>🧠 IA vs Data Science</button><button class='inline-btn' onclick='handleInlineClick(\"bigdata_vs_bi\")'>📊 Big Data vs BI</button><button class='inline-btn' onclick='handleInlineClick(\"compare_security\")'>🛡️ Cyber vs Data Protection</button></div><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"categorizeSpecialties\")'>🔄 Tech vs Business</button><button class='inline-btn' onclick='handleInlineClick(\"help_q1\")'>🎯 Aide au choix</button></div>"
-      ],
-      options: []
-    }
+    // --- RECOMMENDATIONS (old, to be potentially removed or refactored) ---
+    // ... (code existant)
+  
   };
 
   // Enhanced functions for inline button handling
   window.handleInlineClick = function(action, param) {
-    // Get the button text from the clicked element
-    const clickedButton = event.target;
+    // Simulate user click for history
+    const clickedButton = event.target.closest('.inline-btn');
     const buttonText = clickedButton.textContent || clickedButton.innerText;
     
-    // Simulate user click for history with actual button text
     const userResponse = document.createElement('div');
     userResponse.className = 'user-response-inline';
     userResponse.innerHTML = `${buttonText}`;
@@ -928,6 +937,53 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }, 800);
   };
+  
+  window.handleQuizClick = function(nextState, scores) {
+    const clickedButton = event.target.closest('.inline-btn');
+    const buttonText = clickedButton.textContent || clickedButton.innerText;
+    
+    const userResponse = document.createElement('div');
+    userResponse.className = 'user-response-inline';
+    userResponse.innerHTML = `${buttonText}`;
+    botMessagesContainer.appendChild(userResponse);
+    
+    // Aggregate scores
+    for (const profile in scores) {
+      if (!userProfile.scores) userProfile.scores = {};
+      if (!userProfile.scores[profile]) userProfile.scores[profile] = 0;
+      userProfile.scores[profile] += scores[profile];
+    }
+    
+    showTypingIndicator();
+    scrollToBottom();
+    
+    setTimeout(() => {
+      if (nextState === 'pt_results') {
+        renderConversationState('pt_results');
+        setTimeout(calculateAndShowResult, 2000); // Simulate calculation
+      } else {
+        renderConversationState(nextState);
+      }
+    }, 800);
+  };
+
+  function calculateAndShowResult() {
+      let maxScore = 0;
+      let bestProfile = 'reco_default'; // Default recommendation
+
+      if (userProfile.scores) {
+          for (const profile in userProfile.scores) {
+              if (userProfile.scores[profile] > maxScore) {
+                  maxScore = userProfile.scores[profile];
+                  bestProfile = 'reco_' + profile;
+              }
+          }
+      }
+      
+      // Reset scores for the next quiz
+      userProfile.scores = {};
+      renderConversationState(bestProfile);
+  }
 
   // Initialize bot
   function initBot() {
