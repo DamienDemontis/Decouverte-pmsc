@@ -1,0 +1,26 @@
+<!-- Step list component for learning roadmap phases -->
+{% if include.phases %}
+  {% for phase in include.phases %}
+    <div class="step-list-section">
+      <h3>{{ phase.title }}</h3>
+      {% if phase.duration %}<p class="duration"><strong>Durée estimée</strong>: {{ phase.duration }}</p>{% endif %}
+      
+      {% for step in phase.steps %}
+        <div class="step-item">
+          <h4>{{ step.title }}</h4>
+          <p>{{ step.description }}</p>
+          {% if step.resources %}
+            <div class="mb-3">
+              <strong>Ressources complémentaires</strong>:
+              <ul>
+                {% for resource in step.resources %}
+                  <li><a href="{{ resource.url }}" target="_blank">{{ resource.text }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+{% endif %}

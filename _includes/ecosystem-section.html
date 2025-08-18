@@ -1,0 +1,129 @@
+<!-- Ecosystem section component for tools and resources -->
+{% if include.ecosystem %}
+  <section id="ecosystem">
+    <h2><i class="fas fa-globe"></i> {{ include.ecosystem.title }}</h2>
+    
+    {% if include.ecosystem.tools %}
+      <h3>Outils et bibliothèques essentiels</h3>
+      <div class="card-grid">
+        {% for tool_category in include.ecosystem.tools %}
+          <div class="feature-card">
+            <h4><i class="{{ tool_category.icon }}"></i> {{ tool_category.title }}</h4>
+            <ul>
+              {% for item in tool_category.items %}
+                <li><strong><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></strong> - {{ item.description }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    
+    {% if include.ecosystem.cloud_providers %}
+      <h3 class="mt-4">Écosystèmes cloud pour l'IA</h3>
+      <div class="card-grid">
+        {% for provider in include.ecosystem.cloud_providers %}
+          <div class="feature-card">
+            <h4><i class="{{ provider.icon }}"></i> {{ provider.title }}</h4>
+            <p>{{ provider.description }}</p>
+            <p><a href="{{ provider.url }}" target="_blank">Explorer →</a></p>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    
+    {% if include.ecosystem.community %}
+      <h3 class="mt-4">{{ include.ecosystem.community.title }}</h3>
+      
+      {% if include.ecosystem.community.learning %}
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">
+              📚 {{ include.ecosystem.community.learning.title }}
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul>
+                  {% for item in include.ecosystem.community.learning.items %}
+                    <li><a href="{{ item.url }}" target="_blank">{{ item.name }}</a> - {{ item.description }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              🧩 {{ include.ecosystem.community.competitions.title }}
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul>
+                  {% for item in include.ecosystem.community.competitions.items %}
+                    <li><a href="{{ item.url }}" target="_blank">{{ item.name }}</a> - {{ item.description }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              👥 {{ include.ecosystem.community.networks.title }}
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul>
+                  {% for item in include.ecosystem.community.networks.items %}
+                    <li><a href="{{ item.url }}" target="_blank">{{ item.name }}</a> - {{ item.description }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endif %}
+    
+    {% if include.ecosystem.job_market %}
+      <h3 class="mt-4">{{ include.ecosystem.job_market.title }}</h3>
+      
+      <div class="centered-card">
+        <div class="feature-card">
+          <h4><i class="fas fa-chart-line"></i> {{ include.ecosystem.job_market.in_demand_roles.title }}</h4>
+          <ul>
+            {% for role in include.ecosystem.job_market.in_demand_roles.items %}
+              <li><strong>{{ role.role }}</strong> - {{ role.salary }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      
+      <div class="centered-card">
+        <div class="feature-card">
+          <h4><i class="fas fa-building"></i> {{ include.ecosystem.job_market.sectors.title }}</h4>
+          <ul>
+            {% for sector in include.ecosystem.job_market.sectors.items %}
+              <li><strong>{{ sector.sector }}</strong> - {{ sector.description }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      
+      <div class="centered-card">
+        <div class="feature-card">
+          <h4><i class="fas fa-briefcase"></i> {{ include.ecosystem.job_market.tips.title }}</h4>
+          <p>{{ include.ecosystem.job_market.tips.description }}</p>
+          <ul>
+            {% for tip in include.ecosystem.job_market.tips.items %}
+              <li>{{ tip }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+  </section>
+{% endif %}

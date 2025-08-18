@@ -1,0 +1,17 @@
+<!-- Timeline component for use cases -->
+<div class="timeline">
+  {% for item in include.timeline %}
+    <div class="timeline-item {{ item.side }}">
+      <div class="timeline-content">
+        <h4>{{ item.category }}</h4>
+        <ul>
+          {% for use_case in item.items %}
+            <li>
+              <strong>{{ use_case.title }}</strong> : {{ use_case.description }}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+</div>

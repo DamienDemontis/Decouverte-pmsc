@@ -275,6 +275,7 @@ body {
 /* Navigation des sections - AMÉLIORÉ */
 .section-nav {
   display: flex;
+  justify-content: center;
   overflow-x: auto;
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 12px;
@@ -541,18 +542,81 @@ section:nth-child(odd) {
 /* Titres de section avec effet sticky amélioré */
 section h2 {
   position: relative;
-  padding: 0.75rem 0;
+  padding: 1.5rem 0;
   margin-top: 0.5rem;
-  margin-bottom: 1.25rem;
-  border-radius: 8px;
-  font-size: 1.75rem;
-  color: var(--text);
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--main);
   transition: var(--transition);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+section h2 i {
+  background: linear-gradient(135deg, var(--main), var(--main-light));
+  color: white;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+  flex-shrink: 0;
+  text-align: center;
+  line-height: 48px;
+  font-style: normal;
+  position: relative;
+}
+
+section h2 i::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 section:first-of-type h2 {
   margin-top: 0;
   padding-top: 0.5rem;
+}
+
+section h3 {
+  text-align: center;
+  color: var(--main);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0 1.5rem 0;
+}
+
+/* General section content centering */
+section > p {
+  text-align: center;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+section .text-center {
+  text-align: center;
+}
+
+/* Centered card wrapper for single cards that shouldn't take full width */
+.centered-card {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.centered-card .feature-card {
+  max-width: 800px;
+  width: 100%;
 }
 
 section:nth-child(odd) h2 {
@@ -619,23 +683,95 @@ a:hover {
 
 /* ========== CARTES ET COMPOSANTS ========= */
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
-  margin: 1rem auto;
+  margin: 2rem auto;
   padding: 0 1rem;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card-grid .feature-card {
+  flex: 0 1 calc(33.333% - 1rem);
+  min-width: 300px;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .card-grid .feature-card {
+    flex: 0 1 calc(50% - 0.75rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid .feature-card {
+    flex: 0 1 100%;
+  }
+}
+
+/* Project cards grid - force 3 per row */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 1400px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.projects-grid .feature-card {
+  flex: 0 1 calc(33.333% - 1rem);
+  min-width: 320px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .projects-grid .feature-card {
+    flex: 0 1 calc(50% - 0.75rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid .feature-card {
+    flex: 0 1 100%;
+  }
 }
 
 .feature-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   background: var(--card-bg);
   border-radius: 8px;
   box-shadow: var(--card-shadow);
   border: 1px solid var(--card-border);
   padding: 1.5rem;
   overflow: hidden;
+  height: 100%;
+}
+
+.feature-card h4 {
+  display: flex;
+  align-items: center;
+  margin: 0 0 1rem 0;
+  color: var(--main);
+}
+
+.feature-card > p {
+  margin: 0 0 1rem 0;
+  flex-grow: 1;
+}
+
+.feature-card > *:last-child {
+  margin-bottom: 0;
+  margin-top: auto;
 }
 
 .feature-card:hover {
@@ -643,12 +779,6 @@ a:hover {
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
-.feature-card h4 {
-  display: flex;
-  align-items: center;
-  margin-top: 0;
-  color: var(--main);
-}
 
 .feature-card h4 i {
   background: var(--main-light);
@@ -700,49 +830,125 @@ a:hover {
 .difficulty {
   display: inline-flex;
   align-items: center;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.75rem;
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-left: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.beginner, .debutant {
+  background: linear-gradient(135deg, #10B981, #34D399);
+  color: white;
+}
+
+.beginner::before, .debutant::before {
+  content: '⭐';
+  margin-right: 6px;
+  font-size: 0.9em;
+}
+
+.intermediate, .intermediaire {
+  background: linear-gradient(135deg, #F59E0B, #FBBF24);
+  color: white;
+}
+
+.intermediate::before, .intermediaire::before {
+  content: '🚀';
+  margin-right: 6px;
+  font-size: 0.9em;
+}
+
+.advanced, .avance {
+  background: linear-gradient(135deg, #EF4444, #F87171);
+  color: white;
+}
+
+.advanced::before, .avance::before {
+  content: '🔥';
+  margin-right: 6px;
+  font-size: 0.9em;
+}
+
+/* Project cards specific styling */
+.project-card {
+  border-left: 4px solid var(--main);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-card h4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.project-card h4::after {
+  content: '▼';
+  font-size: 0.8rem;
+  color: var(--main);
+  transition: transform 0.3s ease;
+}
+
+.project-card.expanded h4::after {
+  transform: rotate(180deg);
+}
+
+.project-card .project-summary {
+  margin-bottom: 1rem;
+}
+
+.project-card .project-summary .mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.project-card .project-details {
+  display: none;
+}
+
+.project-card.expanded .project-details {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Ensure each project card maintains its own height independently */
+.project-card {
+  height: fit-content;
+  align-self: start;
+}
+
+.project-card .mb-3 {
+  margin-bottom: 1rem;
+}
+
+.project-card .mb-3 strong {
+  display: inline;
+  color: var(--main);
   font-weight: 600;
-  margin-left: 0.5rem;
-}
-
-.beginner {
-  background: rgba(74, 222, 128, 0.15);
-  color: #15803d;
-}
-
-.beginner::before {
-  content: '●';
-  margin-right: 4px;
-  color: #15803d;
-}
-
-.intermediate {
-  background: rgba(251, 191, 36, 0.15);
-  color: #b45309;
-}
-
-.intermediate::before {
-  content: '●';
-  margin-right: 4px;
-  color: #b45309;
-}
-
-.advanced {
-  background: rgba(244, 63, 94, 0.15);
-  color: #be123c;
-}
-
-.advanced::before {
-  content: '●';
-  margin-right: 4px;
-  color: #be123c;
+  margin-right: 0.5rem;
 }
 
 /* Accordéon */
 .accordion {
-  margin: 1.25rem 0;
+  margin: 2rem auto;
+  max-width: 900px;
 }
 
 .accordion-item {
@@ -795,8 +1001,10 @@ blockquote {
   background-color: var(--section-bg);
   border-left: 4px solid var(--main);
   padding: 1.25rem;
-  margin: 1.5rem 0;
+  margin: 2rem auto;
   border-radius: 0 8px 8px 0;
+  max-width: 800px;
+  text-align: center;
   position: relative;
 }
 
@@ -845,6 +1053,154 @@ aside h3 {
 
 aside p {
   position: relative;
+}
+
+/* Clean flexbox roadmap styling */
+.linear-roadmap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: stretch;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.roadmap-item {
+  flex: 0 1 calc(33.333% - 1rem);
+  min-width: 280px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s ease;
+  position: relative;
+  height: 100%;
+}
+
+.roadmap-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  border-color: var(--main);
+}
+
+@media (max-width: 1024px) {
+  .roadmap-item {
+    flex: 0 1 calc(50% - 0.75rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .roadmap-item {
+    flex: 0 1 100%;
+  }
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--main), var(--main-light));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 10px rgba(67, 97, 238, 0.4);
+  margin-bottom: 0.75rem;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h4 {
+  color: var(--main);
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.step-content p {
+  margin: 0 0 0.75rem 0;
+  color: var(--text);
+  line-height: 1.4;
+  font-size: 0.85rem;
+}
+
+.step-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.resource-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, rgba(67, 97, 238, 0.1), rgba(76, 201, 240, 0.1));
+  color: var(--main);
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(67, 97, 238, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.resource-link::before {
+  content: '📚';
+  font-size: 0.8rem;
+}
+
+.resource-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--main), var(--main-light));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.resource-link:hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+}
+
+.resource-link:hover::after {
+  opacity: 1;
+}
+
+.resource-link:hover::before {
+  position: relative;
+  z-index: 1;
+}
+
+.resource-link > span {
+  position: relative;
+  z-index: 1;
+}
+
+.resources-list {
+  margin-top: 0.75rem;
+  padding-left: 1rem;
+}
+
+.resources-list li {
+  margin: 0.5rem 0;
 }
 
 /* Liste d'étapes et timeline */

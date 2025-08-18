@@ -1,0 +1,15 @@
+<!-- Feature card component -->
+<div class="feature-card">
+  <h4>
+    <i class="{{ include.feature.icon }}"></i> 
+    {{ include.feature.title }}
+  </h4>
+  <p>{{ include.feature.description }}</p>
+  
+  {% if include.feature.example %}
+    <p class="text-center">
+      <span class="badge badge-primary">Exemple</span>
+    </p>
+    <p>{{ include.feature.example }}</p>
+  {% endif %}
+</div>

@@ -1,0 +1,6 @@
+<!-- Feature grid component -->
+<div class="card-grid">
+  {% for feature in include.features %}
+    {% include feature-card.html feature=feature %}
+  {% endfor %}
+</div>

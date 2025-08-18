@@ -1,0 +1,75 @@
+<!-- Project card component for hands-on project display -->
+<div class="projects-grid">
+  {% for project in include.projects %}
+    {% assign project_id = forloop.index %}
+    <div class="feature-card project-card" id="project-{{ project_id }}">
+      <h4>{{ project.title }} <span class="difficulty {{ project.difficulty | downcase | replace: 'é', 'e' }}">{{ project.difficulty }}</span></h4>
+      
+      <div class="project-summary">
+        <div class="mb-3">
+          <strong>⏱️ Durée estimée</strong>: {{ project.duration }}
+        </div>
+        <div class="mb-3">
+          <strong>🎯 Objectif</strong>: {{ project.objective }}
+        </div>
+      </div>
+
+      <div class="project-details">
+        <div class="mb-3">
+          <strong>📝 Description</strong>: 
+          {{ project.description }}
+        </div>
+        <div class="mb-3">
+          <strong>🛠️ Technologies</strong>:
+          <ul>
+            {% for tech in project.technologies %}
+              <li>{{ tech }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="mb-3">
+          <strong>📚 Ressources complémentaires</strong>:
+          <ul>
+            {% for resource in project.resources %}
+              <li><a href="{{ resource.url }}" target="_blank">{{ resource.text }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Ensure each project card has individual click handling
+  document.querySelectorAll('.project-card').forEach(function(card, index) {
+    card.addEventListener('click', function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      
+      // Toggle only this specific card
+      this.classList.toggle('expanded');
+      
+      console.log('Card clicked:', index, 'Expanded:', this.classList.contains('expanded'));
+    });
+  });
+});
+
+// Backup function for onclick handlers
+function toggleProject(cardId) {
+  const card = document.getElementById(cardId);
+  if (card) {
+    card.classList.toggle('expanded');
+    console.log('Toggle card:', cardId, 'Expanded:', card.classList.contains('expanded'));
+  }
+}
+</script>
+
+{% if include.github_link %}
+  <div class="text-center mt-4">
+    <a href="{{ include.github_link }}" target="_blank" class="btn btn-primary">
+      <i class="fab fa-github"></i> Explorer plus de projets sur GitHub
+    </a>
+  </div>
+{% endif %}
