@@ -27,53 +27,59 @@
       <h3 class="mt-4">{{ include.careers.skills.title }}</h3>
       
       <div class="accordion">
-        <div class="accordion-item">
-          <div class="accordion-header">
-            💻 {{ include.careers.skills.technical.title }}
-            <i class="fas fa-chevron-down"></i>
-          </div>
-          <div class="accordion-content">
-            <div class="accordion-content-inner">
-              <ul>
-                {% for skill in include.careers.skills.technical.items %}
-                  <li>{{ skill }}</li>
-                {% endfor %}
-              </ul>
+        {% if include.careers.skills.technical and include.careers.skills.technical.items %}
+          <div class="accordion-item">
+            <div class="accordion-header">
+              💻 {{ include.careers.skills.technical.title }}
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul>
+                  {% for skill in include.careers.skills.technical.items %}
+                    <li>{{ skill }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+        {% endif %}
         
-        <div class="accordion-item">
-          <div class="accordion-header">
-            🔍 {{ include.careers.skills.specialized.title }}
-            <i class="fas fa-chevron-down"></i>
-          </div>
-          <div class="accordion-content">
-            <div class="accordion-content-inner">
-              <ul>
-                {% for skill in include.careers.skills.specialized.items %}
-                  <li>{{ skill }}</li>
-                {% endfor %}
-              </ul>
+        {% if include.careers.skills.specialized and include.careers.skills.specialized.items %}
+          <div class="accordion-item">
+            <div class="accordion-header">
+              🔍 {{ include.careers.skills.specialized.title }}
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul>
+                  {% for skill in include.careers.skills.specialized.items %}
+                    <li>{{ skill }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+        {% endif %}
         
-        <div class="accordion-item">
-          <div class="accordion-header">
-            🧠 {{ include.careers.skills.soft_skills.title }}
-            <i class="fas fa-chevron-down"></i>
-          </div>
-          <div class="accordion-content">
-            <div class="accordion-content-inner">
-              <ul>
-                {% for skill in include.careers.skills.soft_skills.items %}
-                  <li>{{ skill }}</li>
-                {% endfor %}
-              </ul>
+        {% if include.careers.skills.soft_skills and include.careers.skills.soft_skills.items %}
+          <div class="accordion-item">
+            <div class="accordion-header">
+              🧠 {{ include.careers.skills.soft_skills.title }}
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul>
+                  {% for skill in include.careers.skills.soft_skills.items %}
+                    <li>{{ skill }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+        {% endif %}
       </div>
     {% endif %}
     
