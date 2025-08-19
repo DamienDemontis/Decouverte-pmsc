@@ -1,0 +1,458 @@
+title: "Fintech & Stratégies Financières"
+slug: "fintech"
+icon: "fas fa-chart-pie"
+type: "business"
+order: 3
+colors:
+  primary: "#17A2B8"
+  secondary: "#6DD5E8"
+short_description: "Pilotez la transformation numérique de la finance en maîtrisant les technologies de pointe et les nouvelles stratégies d'investissement."
+description: "De la blockchain à l'intelligence artificielle, développez une expertise complète pour innover dans les services financiers, créer de nouveaux business models et naviguer dans l'écosystème réglementaire de la finance de demain."
+
+overview:
+  title: "Pourquoi la Fintech & les Stratégies Financières ?"
+  features:
+    - title: "Révolution du secteur bancaire"
+      icon: "fas fa-university"
+      description: "La finance est l'un des secteurs les plus massivement transformés par la technologie. Les acteurs traditionnels sont challengés par des startups agiles."
+      example: ""
+    
+    - title: "Démocratisation de l'accès"
+      icon: "fas fa-hand-holding-usd"
+      description: "La Fintech rend les services financiers (paiement, crédit, investissement) plus accessibles, moins chers et plus simples pour des millions de personnes."
+      example: ""
+    
+    - title: "Convergence Technologie & Finance"
+      icon: "fas fa-cogs"
+      description: "Ce domaine est au carrefour de l'ingénierie logicielle, de la data science, de la cryptographie et de l'expertise financière traditionnelle."
+      example: ""
+    
+    - title: "Décisions basées sur les données"
+      icon: "fas fa-brain"
+      description: "L'IA et le Big Data permettent d'analyser les marchés, de prédire les risques et de personnaliser les services financiers à une échelle inédite."
+      example: ""
+    
+    - title: "Émergence de la finance décentralisée"
+      icon: "fab fa-btc"
+      description: "La blockchain et les crypto-actifs créent un système financier alternatif, ouvert, transparent et programmable, redéfinissant la notion même de confiance."
+      example: ""
+    
+    - title: "Enjeux réglementaires complexes"
+      icon: "fas fa-balance-scale"
+      description: "Innover dans la finance impose de naviguer dans un environnement réglementaire dense (DSP2, RGPD, MiCA) qui est à la fois une contrainte et une opportunité."
+      example: ""
+
+  accordion:
+    - title: "1. Technologies de Paiement"
+      content: |
+        <p>Le cœur de la révolution Fintech. Faciliter des paiements rapides, sécurisés et à faible coût, en ligne comme en magasin.</p>
+        <ul>
+          <li><strong>M-Pesa au Kenya</strong> : Un des premiers systèmes de paiement mobile qui a bancarisé des millions de personnes.</li>
+          <li><strong>Stripe</strong> : Une API qui a permis à des millions de développeurs d'intégrer facilement le paiement dans leurs applications.</li>
+          <li><strong>Le "sans contact" (NFC)</strong> : Une technologie qui a transformé les paiements du quotidien.</li>
+        </ul>
+    
+    - title: "2. Blockchain et Actifs Numériques"
+      content: |
+        <p>Une technologie de registre distribué qui permet de créer des systèmes transparents, sécurisés et sans intermédiaire central.</p>
+        <ul>
+          <li><strong>Bitcoin</strong> : La première monnaie numérique décentralisée.</li>
+          <li><strong>Ethereum</strong> : Une blockchain qui a introduit les "smart contracts", des programmes auto-exécutables, ouvrant la voie à la Finance Décentralisée (DeFi).</li>
+          <li><strong>Tokenisation</strong> : Représenter des actifs réels (immobilier, art) sous forme de jetons numériques sur une blockchain pour les rendre plus liquides et accessibles.</li>
+        </ul>
+    
+    - title: "3. Intelligence Artificielle & Big Data"
+      content: |
+        <p>L'utilisation d'algorithmes pour analyser d'immenses volumes de données et prendre des décisions financières plus intelligentes.</p>
+        <ul>
+          <li><strong>Scoring de crédit</strong> : Des IA analysent des milliers de points de données pour évaluer la solvabilité d'un emprunteur de manière plus juste et rapide.</li>
+          <li><strong>Trading algorithmique</strong> : Des algorithmes exécutent des millions d'ordres sur les marchés financiers en une fraction de seconde, basés sur des stratégies complexes.</li>
+          <li><strong>Détection de fraude</strong> : Des modèles de machine learning analysent les transactions en temps réel pour repérer et bloquer les activités suspectes.</li>
+        </ul>
+    
+    - title: "4. Open Banking & APIs"
+      content: |
+        <p>Une tendance (souvent poussée par la réglementation comme la DSP2 en Europe) qui oblige les banques à partager l'accès aux données de comptes de leurs clients (avec leur consentement) via des APIs sécurisées.</p>
+        <ul>
+          <li><strong>Agrégateurs de comptes</strong> : Des applications (comme Bankin' ou Linxo en France) qui permettent de visualiser tous ses comptes bancaires au même endroit.</li>
+          <li><strong>Initiation de paiement</strong> : Payer directement depuis le compte bancaire sur un site e-commerce, sans passer par une carte bancaire.</li>
+          <li><strong>Innovation</strong> : Permet à de nouvelles startups de créer des services innovants en se "branchant" sur les infrastructures bancaires existantes.</li>
+        </ul>
+
+  quote: "La Fintech, c'est mettre le client au centre de l'univers financier, et non plus la banque."
+  quote_author: "Chris Skinner, auteur et commentateur Fintech"
+
+use_cases:
+  title: "Cas d'usage emblématiques"
+  timeline:
+    - category: "Néo-banques et services bancaires"
+      side: "left"
+      items:
+        - title: "Revolut (UK) / N26 (Allemagne)"
+          description: "Des banques 100% mobiles qui ont conquis des millions de clients avec des frais réduits, une expérience utilisateur fluide et des fonctionnalités innovantes."
+        - title: "Qonto (France)"
+          description: "Une néo-banque dédiée aux PME et aux indépendants, simplifiant la gestion financière, la comptabilité et les dépenses d'entreprise."
+        - title: "Focus"
+          description: "Expérience client, agilité, services à valeur ajoutée (multi-devises, assurances, etc.)."
+          
+    - category: "Paiements et Commerce"
+      side: "right"
+      items:
+        - title: "Stripe (USA)"
+          description: "A rendu l'acceptation de paiements en ligne accessible à tous les développeurs avec quelques lignes de code, devenant l'épine dorsale de l'économie numérique."
+        - title: "Lydia (France)"
+          description: "Initialement une application de paiement entre amis, elle est devenue une \"super-app\" financière offrant des comptes, des crédits, et de l'investissement."
+        - title: "Focus"
+          description: "Simplicité d'intégration, sécurité, conversion pour les marchands."
+    
+    - category: "Investissement et Épargne (Wealthtech)"
+      side: "left"
+      items:
+        - title: "Robinhood (USA)"
+          description: "A popularisé le trading d'actions sans commission, attirant une nouvelle génération d'investisseurs."
+        - title: "Yomoni / Nalo (France)"
+          description: "Des \"robo-advisors\" qui créent et gèrent des portefeuilles d'investissement diversifiés et optimisés via des algorithmes, pour une fraction du coût d'un conseiller traditionnel."
+        - title: "Focus"
+          description: "Accessibilité, frais réduits, automatisation, éducation financière."
+    
+    - category: "Assurance (Insurtech)"
+      side: "right"
+      items:
+        - title: "Alan (France)"
+          description: "Une assurance santé 100% numérique qui mise sur la transparence, la simplicité et une expérience utilisateur exceptionnelle pour les entreprises et les indépendants."
+        - title: "Lemonade (USA)"
+          description: "Utilise l'IA et les chatbots pour fournir des assurances habitation en 90 secondes et traiter les sinistres en 3 minutes."
+        - title: "Focus"
+          description: "Transparence, personnalisation, automatisation des processus."
+
+  trends:
+    title: "Tendances émergentes"
+    features:
+      - title: "Embedded Finance (Finance intégrée)"
+        icon: "fas fa-wallet"
+        description: "Intégrer des services financiers (paiement fractionné, assurance, prêt) directement dans le parcours d'achat d'acteurs non financiers (ex: acheter maintenant, payer plus tard sur un site e-commerce)."
+      
+      - title: "Finance Décentralisée (DeFi)"
+        icon: "fas fa-globe"
+        description: "Reconstruire tous les services financiers (prêt, emprunt, échange) sur des blockchains publiques, sans aucun intermédiaire, via des protocoles ouverts et transparents."
+      
+      - title: "RegTech (Technologie Réglementaire)"
+        icon: "fas fa-landmark"
+        description: "Utiliser la technologie pour aider les entreprises financières à se conformer à la réglementation de manière plus efficace et moins coûteuse (ex: automatisation du reporting, vérification d'identité)."
+      
+      - title: "Finance Durable (Green Finance)"
+        icon: "fas fa-leaf"
+        description: "Utiliser la technologie pour orienter les investissements vers des projets à impact environnemental et social positif, et pour mesurer cet impact de manière fiable."
+
+roadmap:
+  title: "Parcours d'apprentissage"
+  phases:
+    - title: "🎯 Phase 1: Les doubles fondamentaux"
+      duration: "1-3 mois"
+      steps:
+        - title: "Principes de la Finance"
+          description: "Comprendre le langage et les concepts de base : marchés financiers, classes d'actifs (actions, obligations), taux d'intérêt, évaluation du risque."
+          resources:
+            - text: "Introduction to Finance and Accounting (Coursera)"
+              url: "https://www.coursera.org/learn/introduction-to-finance-the-basics"
+            - text: "Investopedia"
+              url: "https://www.investopedia.com/"
+        - title: "Fondamentaux Technologiques"
+          description: "Maîtriser les bases du développement : APIs, bases de données, au moins un langage de programmation (Python est très utilisé en finance)."
+          resources:
+            - text: "Codecademy - Apprendre Python 3"
+              url: "https://www.codecademy.com/learn/learn-python-3"
+            - text: "Qu'est-ce qu'une API ? (Vidéo)"
+              url: "https://www.youtube.com/watch?v=GZvSYJDk-us"
+    
+    - title: "🚀 Phase 2: Le cœur de la Fintech"
+      duration: "3-6 mois"
+      steps:
+        - title: "Blockchain & Cryptomonnaies"
+          description: "Comprendre le fonctionnement de Bitcoin, Ethereum, les smart contracts et les enjeux de la décentralisation."
+          resources:
+            - text: "Cryptocurrency and Blockchain: An Introduction to Digital Currencies (Coursera - Wharton)"
+              url: "https://www.coursera.org/learn/cryptocurrency"
+            - text: "Documentation Ethereum"
+              url: "https://ethereum.org/fr/developers/docs/"
+        - title: "IA et Machine Learning en Finance"
+          description: "Découvrir comment les modèles prédictifs et l'analyse de données sont appliqués au trading, au scoring de crédit et à la détection de fraude."
+          resources:
+            - text: "Machine Learning for Trading Specialization (Coursera)"
+              url: "https://www.coursera.org/specializations/machine-learning-trading"
+            - text: "Kaggle"
+              url: "https://www.kaggle.com/"
+
+projects:
+  title: "Projets pratiques"
+  items:
+    - title: "Projet 1: Analyser des données de marché avec Python"
+      difficulty: "Débutant"
+      duration: "6-8 heures"
+      objective: "Utiliser des librairies Python pour récupérer, analyser et visualiser des données financières historiques."
+      description: |
+        <p>Utilisez des librairies comme `yfinance` pour télécharger le cours d'une action (ex: CAC 40, Apple), `pandas` pour la manipuler et `matplotlib` pour la visualiser. Calculez des indicateurs simples comme les moyennes mobiles.</p>
+        <p><strong>Étapes</strong>:</p>
+        <ol>
+          <li>Configurer un environnement Python (Jupyter Notebook est idéal).</li>
+          <li>Installer les librairies nécessaires (`pip install yfinance pandas matplotlib`).</li>
+          <li>Écrire un script pour télécharger les données d'une action sur plusieurs années.</li>
+          <li>Calculer le rendement quotidien et une moyenne mobile sur 50 jours.</li>
+          <li>Créer un graphique qui affiche le cours de clôture et la moyenne mobile.</li>
+        </ol>
+      technologies:
+        - "Python (yfinance, pandas, matplotlib)"
+        - "Jupyter Notebook"
+        - "Analyse de données financières"
+        - "Visualisation de données"
+      resources:
+        - text: "Documentation yfinance"
+          url: "https://pypi.org/project/yfinance/"
+        - text: "Getting started with pandas"
+          url: "https://pandas.pydata.org/docs/getting_started/index.html"
+    
+    - title: "Projet 2: Interagir avec l'API Open Banking d'une banque (en sandbox)"
+      difficulty: "Intermédiaire"
+      duration: "8-12 heures"
+      objective: "Comprendre le fonctionnement d'une API bancaire pour agréger des données."
+      description: |
+        <p>De nombreuses banques ou agrégateurs (comme Plaid, Tink) proposent des environnements "sandbox" gratuits pour les développeurs. L'objectif est de s'y connecter et de construire une mini-application qui récupère et affiche une liste de transactions fictives.</p>
+        <p><strong>Étapes</strong>:</p>
+        <ol>
+          <li>Créer un compte développeur sur une plateforme d'Open Banking (ex: Plaid Sandbox).</li>
+          <li>Obtenir ses clés d'API.</li>
+          <li>Utiliser un outil comme Postman ou un script (Python, Node.js) pour s'authentifier.</li>
+          <li>Effectuer un appel API pour récupérer la liste des comptes.</li>
+          <li>Effectuer un appel API pour récupérer les transactions d'un compte.</li>
+          <li>Afficher les résultats de manière lisible.</li>
+        </ol>
+      technologies:
+        - "APIs RESTful et authentification OAuth"
+        - "Python ou Node.js"
+        - "Postman pour tests d'API"
+        - "JSON et données bancaires"
+      resources:
+        - text: "Plaid Sandbox"
+          url: "https://plaid.com/docs/sandbox/"
+        - text: "Tink Transactions (avec sandbox)"
+          url: "https://www.tink.com/products/transactions"
+    
+    - title: "Projet 3: Déployer et interagir avec un Smart Contract simple sur un testnet Ethereum"
+      difficulty: "Intermédiaire"
+      duration: "12-16 heures"
+      objective: "Comprendre le cycle de vie d'une application décentralisée (DApp)."
+      description: |
+        <p>En utilisant le langage Solidity et l'environnement de développement Hardhat ou Truffle, vous allez écrire un contrat simple (ex: un contrat qui stocke un message), le compiler, le déployer sur un réseau de test public (comme Sepolia) et interagir avec lui via un script.</p>
+        <p><strong>Étapes</strong>:</p>
+        <ol>
+          <li>Installer les outils : Node.js, Hardhat.</li>
+          <li>Écrire un smart contract "HelloWorld.sol" en Solidity.</li>
+          <li>Écrire un script de déploiement.</li>
+          <li>Obtenir des ETH de test depuis un "faucet" pour le réseau Sepolia.</li>
+          <li>Déployer le contrat sur le testnet.</li>
+          <li>Écrire un script pour appeler une fonction du contrat (ex: lire le message stocké).</li>
+        </ol>
+      technologies:
+        - "Solidity pour les smart contracts"
+        - "Hardhat ou Truffle pour le développement"
+        - "Ethereum testnets (Sepolia)"
+        - "Web3 et interaction blockchain"
+      resources:
+        - text: "Solidity by Example"
+          url: "https://solidity-by-example.org/"
+        - text: "Tutoriel Hardhat"
+          url: "https://hardhat.org/tutorial"
+        - text: "Sepolia Faucet"
+          url: "https://sepoliafaucet.com/"
+
+ecosystem:
+  title: "Écosystème Fintech"
+  description: "La Fintech est un écosystème dynamique qui relie technologies, régulateurs, startups et investisseurs."
+  
+  table:
+    headers: ["Catégorie", "Exemples Clés", "Description"]
+    rows:
+      - category: "Régulateurs & Autorités"
+        examples: "ACPR (France), AMF (France), EBA (Europe), SEC (USA)"
+        description: "Organismes qui supervisent les activités financières, protègent les consommateurs et assurent la stabilité du système."
+      - category: "Cadres réglementaires"
+        examples: "DSP2 (Open Banking), RGPD (Données), MiCA (Crypto-actifs)"
+        description: "Les lois et directives qui définissent les règles du jeu pour les acteurs de la Fintech en Europe."
+      - category: "Infrastructures & APIs"
+        examples: "Plaid, Tink (Open Banking), Stripe (Paiement), Chainlink (Oracles Blockchain)"
+        description: "Les \"plomberies\" de la Fintech qui fournissent des services essentiels via des APIs."
+      - category: "Blockchains Publiques"
+        examples: "Ethereum, Solana, Polygon, Avalanche"
+        description: "Les plateformes décentralisées sur lesquelles sont construites la plupart des applications de DeFi et de Web3."
+      - category: "Communautés & Associations"
+        examples: "France Fintech, Le Swave, Bpifrance"
+        description: "Organisations qui animent l'écosystème, soutiennent les startups et font le lien avec les pouvoirs publics."
+
+resources:
+  title: "Ressources d'apprentissage"
+  books:
+    fundamentals:
+      title: "Cours en Ligne"
+      items:
+        - title: "Fintech: Foundations & Applications of Financial Technology"
+          authors: "Coursera - Wharton School"
+          description: "Une spécialisation complète qui couvre les paiements, la blockchain, l'investissement et la réglementation."
+          url: "https://www.coursera.org/specializations/wharton-fintech"
+        - title: "DeFi and the Future of Finance"
+          authors: "Coursera - Duke University"
+          description: "Un cours pour comprendre en profondeur les mécanismes et les enjeux de la Finance Décentralisée."
+          url: "https://www.coursera.org/learn/defi-future-finance"
+        - title: "Oxford Fintech Programme"
+          authors: "Saïd Business School, University of Oxford"
+          description: "Un programme exécutif pour comprendre les grandes tendances qui façonnent la finance de demain."
+          url: "https://www.sbs.ox.ac.uk/programmes/oxford-fintech-programme"
+    
+    specialized:
+      title: "Blogs & Newsletters"
+      items:
+        - title: "Fintech Magazine"
+          authors: "Fintech Weekly"
+          description: "Actualités et analyses sur l'industrie mondiale de la Fintech."
+          url: "https://www.fintechweekly.com/magazine"
+        - title: "Finextra"
+          authors: "Finextra Community"
+          description: "Une des plus grandes communautés en ligne sur la technologie financière."
+          url: "https://www.finextra.com/"
+        - title: "The Block"
+          authors: "The Block Crypto"
+          description: "Média de référence pour l'actualité des actifs numériques et de la DeFi."
+          url: "https://www.theblockcrypto.com/"
+
+careers: true
+career_paths:
+  title: "Perspectives de carrière"
+  description: "La Fintech est l'un des secteurs les plus dynamiques en termes de recrutement, à la recherche de profils hybrides."
+  
+  roles:
+    - title: "Product Manager Fintech"
+      icon: "fas fa-lightbulb"
+      mission: "Définir la stratégie et la feuille de route d'un produit financier, en faisant le pont entre les équipes techniques, design, et business."
+      skills: "Vision produit, empathie client, compréhension réglementaire, analyse de données"
+      salary: "45-60K€"
+      country: "France, junior"
+    
+    - title: "Blockchain Developer"
+      icon: "fab fa-ethereum"
+      mission: "Concevoir, développer et déployer des smart contracts et des applications décentralisées (DApps)."
+      skills: "Solidity, Rust, architectures décentralisées, cryptographie, sécurité"
+      salary: "50-70K€"
+      country: "France, junior"
+    
+    - title: "Quantitative Analyst (\"Quant\")"
+      icon: "fas fa-calculator"
+      mission: "Développer des modèles mathématiques et statistiques complexes pour les stratégies de trading, la gestion des risques et la tarification des produits dérivés."
+      skills: "Mathématiques avancées, statistiques, Python/C++, machine learning"
+      salary: "55-80K€"
+      country: "France, junior"
+    
+    - title: "Financial Data Scientist"
+      icon: "fas fa-search-dollar"
+      mission: "Analyser de grands volumes de données financières pour en extraire des insights, construire des modèles de scoring, ou détecter des fraudes."
+      skills: "Machine Learning, Big Data, Python (Pandas, Scikit-learn), SQL"
+      salary: "45-60K€"
+      country: "France, junior"
+    
+    - title: "RegTech / Compliance Officer"
+      icon: "fas fa-gavel"
+      mission: "S'assurer que les produits et opérations de l'entreprise sont conformes à la réglementation financière. Mettre en place des outils pour automatiser ce suivi."
+      skills: "Droit financier, gestion des risques, connaissance des réglementations (KYC, AML)"
+      salary: "40-55K€"
+      country: "France, junior"
+
+  evolution:
+    title: "Évolution de carrière"
+    timeline:
+      - category: "Début de carrière (0-3 ans)"
+        side: "left"
+        items:
+          - title: "Associate Product Manager"
+            description: "Gestion de produits financiers sous supervision"
+          - title: "Junior Data Scientist / Quant Analyst"
+            description: "Analyse de données et modélisation financière"
+          - title: "Software Engineer (Backend, avec focus finance)"
+            description: "Développement de solutions fintech"
+          - title: "Analyste KYC / AML"
+            description: "Conformité réglementaire et lutte contre le blanchiment"
+      
+      - category: "Milieu de carrière (3-8 ans)"
+        side: "right"
+        items:
+          - title: "Senior Product Manager / Lead PM"
+            description: "Direction de la stratégie produit"
+          - title: "Lead Data Scientist / Quant"
+            description: "Leadership technique en analyse quantitative"
+          - title: "Senior Blockchain Developer"
+            description: "Architecture de solutions décentralisées"
+          - title: "Compliance Manager"
+            description: "Gestion de la conformité réglementaire"
+      
+      - category: "Carrière senior (+8 ans)"
+        side: "left"
+        items:
+          - title: "Head of Product / CPO"
+            description: "Direction de la stratégie produit globale"
+          - title: "Head of Data Science / Chief Quant Officer"
+            description: "Direction de l'équipe quantitative"
+          - title: "Fondateur de sa propre Fintech"
+            description: "Entrepreneuriat dans la fintech"
+          - title: "Chief Compliance Officer"
+            description: "Direction de la conformité réglementaire"
+
+  skills:
+    title: "Compétences recherchées"
+    technical:
+      title: "Compétences Techniques & Business"
+      items:
+        - "Analyse financière - Compréhension des marchés, modèles de revenus, gestion des risques"
+        - "Réglementation - Connaissance des cadres comme DSP2, MiCA, et les processus KYC/AML"
+        - "Technologies de paiement - Maîtrise des flux de paiement, des APIs (Stripe, etc.) et des solutions mobiles"
+        - "Blockchain & DeFi - Compréhension de la tokenisation, des smart contracts et des protocoles de la finance décentralisée"
+        - "Analyse de données - Compétences en SQL, Python et outils de BI pour le scoring, la détection de fraude et l'analyse de marché"
+    
+    soft_skills:
+      title: "Soft skills et autres compétences"
+      items:
+        - "Vision Produit - Capacité à transformer un problème complexe en un produit financier simple et intuitif"
+        - "Adaptabilité - Naviguer dans un environnement qui évolue très vite, tant technologiquement que réglementairement"
+        - "Gestion de la complexité - Faire le pont entre des experts de domaines variés (finance, droit, tech)"
+        - "Pensée critique - Analyser les nouveaux modèles économiques et évaluer leur viabilité et leurs risques"
+        - "Communication - Savoir expliquer des concepts financiers et techniques à des audiences non-spécialistes"
+
+  market_trends:
+    title: "Tendances du marché"
+    items:
+      - "Hyper-personnalisation : Les services financiers deviennent de plus en plus personnalisés grâce à l'IA"
+      - "Finance Intégrée (Embedded Finance) : La finance sort des banques pour s'intégrer dans toutes les applications (paiement, crédit, assurance)"
+      - "Convergence Web2 et Web3 : Les acteurs traditionnels intègrent des technologies blockchain, tandis que les acteurs DeFi cherchent à simplifier l'accès"
+      - "Focus sur la RegTech : L'automatisation de la conformité réglementaire est un secteur en pleine explosion"
+      - "Finance Durable : Forte demande pour des solutions Fintech qui mesurent et favorisent l'investissement à impact (ESG)"
+
+summary:
+  title: "En résumé"
+  description: "La Fintech & Stratégies Financières représentent l'intersection entre innovation technologique et services financiers, transformant la façon dont nous gérons, investissons et utilisons l'argent. Cette spécialité combine :"
+  points:
+    - title: "Innovation technologique"
+      description: "Maîtrise des technologies émergentes (blockchain, IA, APIs) appliquées à la finance"
+    - title: "Compréhension financière"
+      description: "Connaissance approfondie des marchés, produits et réglementations financières"
+    - title: "Vision produit"
+      description: "Capacité à concevoir des services financiers centrés utilisateur"
+    - title: "Conformité réglementaire"
+      description: "Navigation dans l'environnement réglementaire complexe de la finance"
+    - title: "Impact sociétal"
+      description: "Participation à la démocratisation et à la durabilité de la finance"
+  conclusion: "Cette spécialité MSc te prépare à devenir un acteur clé de la transformation numérique de la finance, capable d'innover dans un secteur stratégique tout en respectant les contraintes réglementaires et éthiques."
+
+has_media: true
+media:
+  - title: "What is fintech? (CNBC Explains)"
+    description: "Une explication claire et concise de ce qu'est la Fintech et des domaines qu'elle transforme. (Vidéo en anglais)."
+    url: "https://www.youtube.com/embed/-EoNrg_DR3s"
+  - title: "Alex Prot, CEO de Qonto"
+    description: "Le fondateur de Qonto partage sa vision et les secrets de la croissance d'une des plus grandes Fintech européennes. (Vidéo en anglais)"
+    url: "https://www.youtube.com/embed/1XuuA8Awy-s"

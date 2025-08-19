@@ -13,7 +13,7 @@ short_description: "Explorez l'univers fascinant de l'Intelligence Artificielle 
 description: "Plongez dans le monde captivant de l'Intelligence Artificielle, où vous apprendrez à créer des systèmes qui imitent l'intelligence humaine, résolvent des problèmes complexes et transforment notre façon d'interagir avec la technologie."
 ---
 
-{% assign specialty_data = site.data.specialities[page.slug] %}
+{% assign specialty_data = site.data.ia %}
 
 <!-- ========== INTRO ========= -->
 {% include overview-section.html overview=specialty_data.overview %}

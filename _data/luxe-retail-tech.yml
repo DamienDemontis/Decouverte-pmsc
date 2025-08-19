@@ -1,0 +1,406 @@
+title: "Luxe & Retail Tech"
+slug: "luxe-retail-tech"
+icon: "fas fa-gem"
+type: "business"
+order: 9
+colors:
+  primary: "#A21CAF"
+  secondary: "#D946EF"
+short_description: "Transformez l'expérience client dans le luxe et le retail grâce aux technologies digitales pour créer des parcours d'achat innovants et personnalisés."
+description: "Développez une expertise à l'intersection du luxe, du retail et de la technologie pour concevoir et implémenter des solutions innovantes qui redéfinissent l'expérience client, optimisent les opérations et créent de nouveaux modèles commerciaux."
+
+overview:
+  title: "Pourquoi le Luxe & la Retail Tech ?"
+  features:
+    - title: "L'Expérience est le produit"
+      icon: "fas fa-store"
+      description: "Dans le luxe, l'expérience d'achat est aussi importante que le produit lui-même. La technologie permet de créer des moments magiques et mémorables."
+    
+    - title: "Hyper-personnalisation"
+      icon: "fas fa-hand-sparkles"
+      description: "Utilisez la data et l'IA pour offrir un service ultra-personnalisé, anticipant les désirs des clients et créant une relation unique avec la marque."
+    
+    - title: "Phygital & Omnicanal"
+      icon: "fas fa-border-style"
+      description: "Fusionnez les mondes physique et digital pour un parcours client sans couture, où le site web, l'application mobile et la boutique ne font qu'un."
+    
+    - title: "Réalités Immersives (XR)"
+      icon: "fas fa-vr-cardboard"
+      description: "Intégrez la réalité augmentée (AR) pour essayer des produits virtuellement et la réalité virtuelle (VR) pour des expériences de marque immersives."
+    
+    - title: "Nouveaux marchés, nouveaux codes"
+      icon: "fas fa-globe-asia"
+      description: "La technologie est la clé pour toucher les nouvelles générations de consommateurs de luxe (Gen Z) et s'implanter sur les marchés asiatiques dynamiques."
+    
+    - title: "Traçabilité & Authentification"
+      icon: "fas fa-link"
+      description: "Utilisez la blockchain et les NFTs pour garantir l'authenticité des produits, lutter contre la contrefaçon et raconter l'histoire unique de chaque pièce."
+
+  accordion:
+    - title: "L'Expérience Client Unifiée"
+      content: |
+        <p>L'objectif est de rendre l'expérience client cohérente et fluide sur tous les points de contact.</p>
+        <ul>
+          <li><strong>Commerce Unifié</strong> : Avoir une vue unique sur les stocks, les clients et les commandes, quel que soit le canal de vente (en ligne, en magasin).</li>
+          <li><strong>Clienteling</strong> : Donner aux vendeurs en magasin des outils digitaux (tablettes) pour accéder à l'historique et aux préférences du client et lui offrir un service sur-mesure.</li>
+          <li><strong>Parcours Phygital</strong> : Click-and-collect, e-réservation, prise de rendez-vous en ligne pour une visite en boutique.</li>
+        </ul>
+    
+    - title: "La Data & l'IA au service de la personnalisation"
+      content: |
+        <p>La donnée est le moteur de la personnalisation à grande échelle.</p>
+        <ul>
+          <li><strong>Customer Data Platform (CDP)</strong> : Une plateforme qui unifie toutes les données client pour créer une vue à 360°.</li>
+          <li><strong>Algorithmes de recommandation</strong> : Suggérer les bons produits aux bonnes personnes, sur le site e-commerce ou via des emails personnalisés.</li>
+          <li><strong>Analyse prédictive</strong> : Anticiper les futurs achats ou le risque de départ d'un client pour agir de manière proactive.</li>
+        </ul>
+    
+    - title: "Web3 et le futur du Luxe"
+      content: |
+        <p>Le Web3 ouvre de nouvelles avenues pour l'exclusivité, la propriété et la communauté.</p>
+        <ul>
+          <li><strong>NFTs</strong> : Certificats d'authenticité numériques, "jumeaux digitaux" d'un produit physique, ou accès à des expériences exclusives.</li>
+          <li><strong>Métavers</strong> : Création de boutiques et d'expériences de marque immersives dans des mondes virtuels comme Roblox ou The Sandbox.</li>
+          <li><strong>Communautés "Token-gated"</strong> : Accès à des groupes ou des événements exclusifs réservés aux détenteurs d'un certain NFT.</li>
+        </ul>
+
+  quote: "Dans le luxe, la technologie ne doit jamais être visible. Elle doit être ressentie, comme une magie qui rend l'expérience plus fluide, plus personnelle, plus exceptionnelle."
+  quote_author: ""
+
+use_cases:
+  title: "Cas d'usage emblématiques"
+  timeline:
+    - category: "Mode & Luxe"
+      side: "left"
+      items:
+        - title: "Gucci & la Réalité Augmentée"
+          description: "L'application Gucci permet aux utilisateurs d'essayer virtuellement des baskets, des lunettes ou des montres en réalité augmentée ('Try-On'). Utilisation de la caméra du smartphone pour superposer un modèle 3D du produit sur les pieds ou le visage de l'utilisateur. Impact : une expérience ludique et engageante qui lève un frein à l'achat en ligne et génère un fort écho sur les réseaux sociaux."
+    
+    - category: "Beauté & Cosmétiques"
+      side: "right"
+      items:
+        - title: "Sephora & le Commerce Unifié"
+          description: "Sephora a été pionnier dans la création d'un parcours client omnicanal. L'application mobile permet de scanner un produit en magasin pour voir les avis, de prendre rendez-vous, et le programme de fidélité est parfaitement synchronisé entre le online et le offline. Impact : une expérience client sans friction qui augmente la fidélité et la valeur du panier moyen."
+    
+    - category: "Retail Innovant"
+      side: "left"
+      items:
+        - title: "Burberry & l'Expérience en Boutique"
+          description: "La marque a transformé son flagship de Regent Street en un espace 'phygital', avec des miroirs interactifs qui se transforment en écrans et affichent du contenu (vidéos de défilés, détails du produit) lorsqu'un client s'approche avec un article équipé d'une puce RFID. Impact : la boutique devient un lieu de découverte et de divertissement, enrichissant l'expérience de marque."
+
+  trends:
+    title: "Tendances émergentes"
+    features:
+      - title: "Supply Chain Agile"
+        icon: "fas fa-dolly-flatbed"
+        description: "Utiliser l'IA et l'IoT pour optimiser les stocks en temps réel, offrir une traçabilité totale et permettre une personnalisation à la demande."
+      
+      - title: "Live Shopping"
+        icon: "fas fa-store-alt"
+        description: "Des sessions de vente en direct animées par des influenceurs ou des conseillers de la marque, combinant divertissement, interaction et commerce."
+      
+      - title: "Économie Circulaire"
+        icon: "fas fa-recycle"
+        description: "La technologie (blockchain, puces NFC) est utilisée pour tracer et authentifier les produits de seconde main, créant un marché de l'occasion fiable et contrôlé par les marques."
+      
+      - title: "Clienteling à distance"
+        icon: "fas fa-user-secret"
+        description: "Permettre aux meilleurs vendeurs en boutique de contacter et de vendre à leurs clients VIP à distance via des applications de messagerie et des sessions vidéo personnalisées."
+
+roadmap:
+  title: "Parcours d'apprentissage"
+  phases:
+    - title: "🎯 Phase 1: Les Fondamentaux (1-3 mois)"
+      duration: "1-3 mois"
+      steps:
+        - title: "Culture du Luxe et du Retail"
+          description: "Comprendre les codes, l'histoire, les business models et les attentes spécifiques des clients dans ces deux secteurs."
+          resources:
+            - text: "Livre : 'Le Luxe' de Jean-Noël Kapferer"
+              url: ""
+            - text: "Journal du Luxe"
+              url: "https://journalduluxe.fr/"
+            - text: "Business of Fashion"
+              url: "https://businessoffashion.com"
+        
+        - title: "Gestion de la Relation Client (CRM)"
+          description: "Comprendre comment les entreprises gèrent les interactions avec leurs clients et l'importance de la donnée client."
+          resources:
+            - text: "Salesforce Trailhead"
+              url: "https://trailhead.salesforce.com/"
+    
+    - title: "🚀 Phase 2: Spécialisation Tech (3-6 mois)"
+      duration: "3-6 mois"
+      steps:
+        - title: "Technologies Expérientielles"
+          description: "Se familiariser avec le fonctionnement et les applications de la Réalité Augmentée, de la VR et des plateformes du Métavers."
+          resources:
+            - text: "Snapchat for AR Shopping"
+              url: "https://www.snap.com/en-US/ar-shopping"
+        
+        - title: "Data Analytics pour le Retail"
+          description: "Apprendre à analyser les données de ventes, de trafic en magasin et de comportement en ligne pour en tirer des insights."
+          resources:
+            - text: "Google Analytics et bases de la data visualisation"
+              url: ""
+
+projects:
+  title: "Projets pratiques"
+  items:
+    - title: "Projet 1: Créer un filtre en Réalité Augmentée"
+      difficulty: "Débutant"
+      duration: "6-8 heures"
+      objective: "Se familiariser avec les outils de création AR."
+      description: |
+        <p>Utilisez des plateformes comme Spark AR (Meta) ou Lens Studio (Snapchat) pour créer un filtre simple pour Instagram ou Snapchat. Il peut s'agir d'un filtre qui ajoute un chapeau, des lunettes ou un logo sur le visage de l'utilisateur.</p>
+      technologies:
+        - "Meta Spark (ex-Spark AR)"
+        - "Lens Studio (Snapchat)"
+        - "Modélisation 3D basique"
+      resources:
+        - text: "Meta Spark"
+          url: "https://spark.meta.com/"
+    
+    - title: "Projet 2: Analyser le parcours client d'une marque omnicanale"
+      difficulty: "Intermédiaire"
+      duration: "8-10 heures"
+      objective: "Identifier les points de friction et les opportunités dans un parcours client réel."
+      description: |
+        <p>Choisissez une marque (ex: Zara, Fnac, Nike). Testez son parcours client sur plusieurs canaux : visitez le site web, téléchargez l'application, allez en magasin. Notez tout ce qui est fluide et tout ce qui ne l'est pas. Rédigez une note avec 3 recommandations d'amélioration basées sur la technologie.</p>
+      technologies:
+        - "Outils d'analyse UX"
+        - "Customer Journey Mapping"
+        - "Grille d'audit omnicanal"
+      resources: []
+    
+    - title: "Projet 3: Designer un concept de boutique 'phygitale'"
+      difficulty: "Intermédiaire"
+      duration: "12-15 heures"
+      objective: "Imaginer une expérience retail innovante."
+      description: |
+        <p>Choisissez une marque (existante ou fictive). Imaginez le concept de sa boutique de demain. Quelles technologies utiliseriez-vous (écrans interactifs, miroirs connectés, paiement sans caisse...) ? Créez une présentation (avec Canva, Figma...) qui décrit le parcours du client dans cette boutique.</p>
+      technologies:
+        - "Outils de design (Canva, Figma)"
+        - "Concepts retail tech"
+        - "UX/UI design"
+      resources: []
+
+ecosystem:
+  title: "Écosystème Luxe & Retail Tech"
+  tools:
+    - title: "Plateformes E-commerce"
+      icon: "fas fa-shopping-cart"
+      items:
+        - name: "Shopify Plus"
+          description: "Solution e-commerce pour grandes marques avec fonctionnalités avancées"
+          url: "https://www.shopify.com/plus"
+        - name: "Salesforce Commerce Cloud"
+          description: "Plateforme de commerce numérique entreprise"
+          url: "https://www.salesforce.com/products/commerce-cloud/"
+        - name: "Adobe Commerce (ex-Magento)"
+          description: "Solution e-commerce flexible et personnalisable"
+          url: "https://business.adobe.com/products/magento/magento-commerce.html"
+    
+    - title: "CRM & Clienteling"
+      icon: "fas fa-users"
+      items:
+        - name: "Salesforce"
+          description: "Leader mondial des solutions CRM"
+          url: "https://www.salesforce.com/"
+        - name: "Cegid"
+          description: "Solutions de gestion pour le retail et la mode"
+          url: "https://www.cegid.com/"
+        - name: "Mercatus"
+          description: "Plateforme de clienteling pour le luxe"
+          url: "https://www.mercatus.com/"
+    
+    - title: "XR (AR/VR) & Métavers"
+      icon: "fas fa-vr-cardboard"
+      items:
+        - name: "Unity"
+          description: "Moteur de création pour expériences 3D et AR/VR"
+          url: "https://unity.com/"
+        - name: "Unreal Engine"
+          description: "Plateforme de développement 3D temps réel"
+          url: "https://www.unrealengine.com/"
+        - name: "The Sandbox"
+          description: "Plateforme de métavers décentralisée"
+          url: "https://www.sandbox.game/"
+        - name: "Decentraland"
+          description: "Monde virtuel basé sur la blockchain"
+          url: "https://decentraland.org/"
+    
+    - title: "Authentification & Traçabilité"
+      icon: "fas fa-shield-alt"
+      items:
+        - name: "Arianee"
+          description: "Protocole pour créer des passeports numériques de produits"
+          url: "https://www.arianee.org/"
+        - name: "Aura Blockchain Consortium"
+          description: "Consortium blockchain pour le luxe (LVMH, Prada, Cartier)"
+          url: "https://www.auraluxuryblockchain.com/"
+
+resources:
+  title: "Ressources d'apprentissage"
+  books:
+    media:
+      title: "Médias de référence"
+      items:
+        - title: "Business of Fashion"
+          authors: "USA/UK (en anglais)"
+          description: "Le média de référence pour une analyse approfondie de l'industrie de la mode et du luxe."
+          url: "https://www.businessoffashion.com/"
+        - title: "LSA - Libre Service Actualités"
+          authors: "France"
+          description: "Le magazine leader en France sur l'actualité de la grande consommation et du retail."
+          url: "https://www.lsa-conso.fr/"
+        - title: "Vogue Business"
+          authors: "USA/UK (en anglais)"
+          description: "Analyse les tendances émergentes à l'intersection de la mode, du luxe et de la technologie."
+          url: "https://www.voguebusiness.com/"
+  
+  reports:
+    title: "Rapports & Études"
+    items:
+      - title: "Bain & Company Luxury Study"
+        description: "L'étude de référence annuelle sur le marché du luxe, réalisée avec la fondation Altagamma."
+        url: "https://www.bain.com/insights/renaissance-in-uncertainty-luxury-builds-on-its-rebound/"
+      - title: "Deloitte Global Powers of Retailing"
+        description: "Un rapport annuel qui analyse les performances et les stratégies des plus grands distributeurs mondiaux."
+        url: "https://www2.deloitte.com/global/en/pages/consumer-business/articles/global-powers-of-retailing.html"
+
+careers: true
+career_paths:
+  title: "Perspectives de carrière"
+  description: "Des carrières passionnantes à la croisée de la créativité, du business et de la technologie de pointe."
+  
+  roles:
+    - title: "Chef de Projet E-commerce / Omnicanal"
+      icon: "fas fa-mobile-alt"
+      mission: "Piloter les projets digitaux (refonte de site, lancement d'app, projet omnicanal) en coordonnant les équipes techniques, marketing et commerciales."
+      skills: "Gestion de projet, compréhension des enjeux e-commerce et retail, communication"
+      salary: "40-50K€"
+      country: "France"
+    
+    - title: "Client Experience Manager"
+      icon: "fas fa-heart"
+      mission: "Cartographier et optimiser le parcours client sur tous les points de contact pour garantir une expérience fluide, cohérente et exceptionnelle."
+      skills: "Design thinking, empathie client, analyse de données, gestion de projet"
+      salary: "40-50K€"
+      country: "France"
+    
+    - title: "Retail Innovation Manager"
+      icon: "fas fa-lightbulb"
+      mission: "Assurer une veille sur les nouvelles technologies et les startups, et piloter des projets pilotes pour tester de nouvelles expériences en magasin ou en ligne."
+      skills: "Curiosité, connaissance de l'écosystème tech, gestion de projet, capacité à convaincre"
+      salary: "42-55K€"
+      country: "France"
+    
+    - title: "Retail / E-commerce Data Analyst"
+      icon: "fas fa-chart-line"
+      mission: "Analyser les données de ventes, de trafic et de comportement client pour identifier des insights et recommander des actions d'optimisation."
+      skills: "SQL, outils de BI (Tableau/Power BI), connaissance des KPIs du retail"
+      salary: "40-48K€"
+      country: "France"
+    
+    - title: "CRM & Personalization Manager"
+      icon: "fas fa-user-tag"
+      mission: "Gérer la plateforme CRM et développer des campagnes marketing personnalisées pour augmenter l'engagement et la fidélité des clients."
+      skills: "Maîtrise des outils CRM, analyse de données, marketing digital"
+      salary: "38-48K€"
+      country: "France"
+
+  evolution:
+    title: "Évolution de carrière"
+    timeline:
+      - category: "Début de carrière"
+        side: "left"
+        items:
+          - title: "Chef de projet digital junior"
+            description: "Gestion de projets e-commerce et digitaux"
+          - title: "Chargé de CRM / E-merchandising"
+            description: "Optimisation de l'expérience client digital"
+          - title: "Retail Analyst"
+            description: "Analyse des performances retail et e-commerce"
+          - title: "Assistant chef de produit"
+            description: "Support au développement produit retail"
+      
+      - category: "Milieu de carrière"
+        side: "right"
+        items:
+          - title: "Chef de projet senior / Omnicanal Manager"
+            description: "Pilotage de projets complexes multi-canaux"
+          - title: "Responsable CRM & Fidélisation"
+            description: "Stratégie et gestion de la fidélité client"
+          - title: "Responsable Innovation Retail"
+            description: "Veille technologique et innovation"
+          - title: "E-commerce Manager"
+            description: "Gestion complète de la stratégie e-commerce"
+      
+      - category: "Carrière senior"
+        side: "left"
+        items:
+          - title: "Directeur E-commerce / Omnicanal"
+            description: "Direction stratégique du commerce digital"
+          - title: "Directeur de l'Expérience Client"
+            description: "Supervision de l'expérience client globale"
+          - title: "Head of Innovation"
+            description: "Direction de l'innovation et de la transformation"
+          - title: "Chief Digital Officer (CDO)"
+            description: "Direction exécutive de la transformation digitale"
+
+  skills:
+    title: "Compétences recherchées"
+    retail_business:
+      title: "Compétences Retail & Business"
+      items:
+        - "Connaissance du secteur - Compréhension des codes du luxe, des cycles de collection et des opérations retail"
+        - "Gestion de l'Expérience Client (CX) - Maîtrise des techniques de cartographie de parcours client et de design de service"
+        - "Gestion de projet omnicanal - Capacité à piloter des projets complexes qui lient le physique et le digital"
+        - "CRM & Analyse de données client - Compétences en segmentation, analyse de la valeur client (CLV) et personnalisation"
+        - "Merchandising & E-commerce - Connaissance des plateformes (Shopify, Salesforce Commerce Cloud) et des stratégies e-commerce"
+    
+    tech_innovation:
+      title: "Compétences Technologiques & Innovantes"
+      items:
+        - "Technologies Immersives - Compréhension des usages de la VR/AR et des plateformes du métavers"
+        - "Data & IA pour le Retail - Savoir comment l'IA peut optimiser les stocks, personnaliser les recommandations et prévoir les tendances"
+        - "Web3 & Blockchain - Connaissance des NFTs, de la tokenisation et de leurs applications pour l'authenticité et la fidélisation"
+        - "Veille Technologique - Capacité à identifier et évaluer les startups et les technologies émergentes pertinentes pour le secteur"
+
+  market_trends:
+    title: "Tendances du marché"
+    items:
+      - "Le 'Clienteling' augmenté : Les vendeurs sont équipés d'outils d'IA pour offrir un service hyper-personnalisé en boutique"
+      - "Commerce Immersif : L'essayage virtuel en AR et les showrooms en VR deviennent des standards de l'expérience d'achat"
+      - "Ultra-personnalisation : Des produits et services co-créés avec les clients grâce à la data et à l'IA"
+      - "Traçabilité et seconde main : La blockchain est utilisée pour créer un marché de la seconde main certifié et durable, contrôlé par les marques elles-mêmes"
+      - "Métavers et communautés exclusives : Les marques de luxe créent des expériences et des communautés exclusives dans les mondes virtuels pour leurs meilleurs clients"
+
+summary:
+  title: "En résumé"
+  description: "Le Luxe & Retail Tech représente l'art de transformer l'expérience d'achat grâce à la technologie, en conservant l'excellence et l'émotion propres au secteur du luxe. Cette spécialité combine :"
+  points:
+    - title: "Vision expérientielle"
+      description: "Capacité à créer des expériences mémorables qui dépassent les attentes clients"
+    - title: "Maîtrise technologique"
+      description: "Expertise des technologies immersives, de l'IA et des plateformes omnicanales"
+    - title: "Compréhension sectorielle"
+      description: "Connaissance approfondie des codes du luxe et des enjeux retail"
+    - title: "Innovation constante"
+      description: "Capacité à identifier et intégrer les dernières innovations technologiques"
+    - title: "Vision business"
+      description: "Equilibre entre innovation technologique et rentabilité économique"
+  conclusion: "Cette spécialité MSc te prépare à devenir un architecte de l'expérience client de demain, capable de fusionner l'art du luxe avec les possibilités infinies de la technologie pour créer des expériences d'achat extraordinaires."
+
+has_media: true
+media:
+  - title: "La transformation digitale dans le luxe"
+    description: "Une introduction aux enjeux de la digitalisation pour les marques de luxe par un expert, invité par Epitech Digital."
+    url: "https://www.youtube.com/embed/SiSEzF34EU0"
+  - title: "L'IA au cœur de la révolution du retail"
+    description: "Une conférence qui explore comment l'intelligence artificielle transforme tous les aspects du commerce de détail."
+    url: "https://www.youtube.com/embed/dEDzDuQW3Vs"
+  - title: "Cas pratique : la cabine d'essayage virtuelle"
+    description: "Une démonstration concrète d'une solution de réalité augmentée pour l'essayage de vêtements en ligne."
+    url: "https://www.youtube.com/embed/7sE3MDWEdqw"

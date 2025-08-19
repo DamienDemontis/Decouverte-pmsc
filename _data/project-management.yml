@@ -1,0 +1,474 @@
+title: "Strategic Project Management & Entrepreneurship"
+slug: "project-management"
+icon: "fas fa-tasks"
+type: "business"
+order: 1
+colors:
+  primary: "#0D6EFD"
+  secondary: "#6EA8FE"
+short_description: "Développez les compétences stratégiques et opérationnelles pour mener des projets complexes et créer des entreprises innovantes dans l'écosystème tech."
+description: "Maîtrisez les méthodologies de gestion de projet avancées et les stratégies entrepreneuriales pour diriger efficacement des initiatives technologiques d'envergure et transformer des idées innovantes en entreprises prospères."
+
+overview:
+  title: "Pourquoi le Strategic Project Management & Entrepreneurship ?"
+  features:
+    - title: "Pilotage de projets complexes"
+      icon: "fas fa-project-diagram"
+      description: "Apprenez à décomposer des défis complexes en projets gérables et à les mener à bien dans le respect des délais, du budget et de la qualité."
+    
+    - title: "Création de valeur et innovation"
+      icon: "fas fa-rocket"
+      description: "Acquérez les méthodes pour identifier des opportunités de marché, valider des idées et construire des business models solides pour des entreprises innovantes."
+    
+    - title: "Leadership et gestion d'équipe"
+      icon: "fas fa-users-cog"
+      description: "Maîtrisez l'art de constituer, motiver et diriger des équipes multidisciplinaires pour atteindre des objectifs ambitieux dans le secteur technologique."
+    
+    - title: "Vision stratégique"
+      icon: "fas fa-chart-line"
+      description: "Développez une vision à 360° pour aligner les projets sur la stratégie de l'entreprise et anticiper les évolutions du marché."
+    
+    - title: "Maîtrise des méthodologies"
+      icon: "fas fa-cogs"
+      description: "Devenez expert des approches prédictives (Waterfall), adaptatives (Agile, Scrum, Kanban) et hybrides pour choisir le bon outil pour chaque contexte."
+    
+    - title: "Prise de décision éclairée"
+      icon: "fas fa-balance-scale"
+      description: "Apprenez à utiliser les données et les indicateurs clés (KPIs) pour prendre des décisions rationnelles et piloter la performance."
+
+  accordion:
+    - title: "Méthodologies de gestion de projet"
+      content: |
+        <p>La maîtrise des cadres méthodologiques est essentielle pour structurer et piloter les projets.</p>
+        <ul>
+          <li><strong>Approches prédictives (Waterfall)</strong> : Idéales pour les projets dont les exigences sont stables et bien définies. Ex: construction d'un bâtiment.</li>
+          <li><strong>Approches agiles (Scrum, Kanban)</strong> : Conçues pour l'incertitude et le changement, elles favorisent les cycles courts et l'amélioration continue. Ex: développement d'un logiciel.</li>
+          <li><strong>Approches hybrides</strong> : Combinaison des deux mondes pour tirer parti de la planification structurée et de la flexibilité agile.</li>
+        </ul>
+    
+    - title: "Lean Startup & Développement client"
+      content: |
+        <p>Une approche pour lancer des entreprises et des produits qui minimise les risques et maximise l'apprentissage.</p>
+        <ul>
+          <li><strong>Cycle "Build-Measure-Learn"</strong> : Construire un Produit Minimum Viable (MVP), mesurer son adoption par les utilisateurs et apprendre des retours pour itérer.</li>
+          <li><strong>Pivot</strong> : Changer de stratégie sans changer de vision. C'est une correction de trajectoire structurée.</li>
+          <li><strong>Customer Development</strong> : Sortir du bureau pour comprendre les "pains" (problèmes) et les "gains" (bénéfices attendus) des clients.</li>
+        </ul>
+    
+    - title: "Business Model Canvas & Value Proposition"
+      content: |
+        <p>Des outils visuels pour concevoir, tester et faire évoluer des modèles économiques.</p>
+        <ul>
+          <li><strong>Business Model Canvas</strong> : Une cartographie en 9 blocs pour décrire comment une entreprise crée, délivre et capture de la valeur.</li>
+          <li><strong>Value Proposition Canvas</strong> : Un zoom sur la relation entre les segments de clientèle et la proposition de valeur pour garantir l'adéquation produit-marché (Product-Market Fit).</li>
+        </ul>
+
+  quote: "Le management, c'est de faire les choses bien. Le leadership, c'est de faire les bonnes choses."
+  quote_author: "Peter Drucker, théoricien du management"
+
+use_cases:
+  title: "Cas d'usage emblématiques"
+  timeline:
+    - category: "Gestion de Projet Tech"
+      side: "left"
+      items:
+        - title: "Gestion de Projet : Le lancement de l'iPhone"
+          description: "Défi : Créer un appareil révolutionnaire combinant téléphone, lecteur de musique et navigateur internet, dans le plus grand secret. Méthodologie : Une approche hybride combinant une planification matérielle rigoureuse (Waterfall) et un développement logiciel itératif (Agile). Résultat : Un produit qui a redéfini le marché de la téléphonie mobile et créé un écosystème applicatif valant des milliards."
+    
+    - category: "Entrepreneuriat Lean"
+      side: "right"
+      items:
+        - title: "Entrepreneuriat : La naissance d'Airbnb"
+          description: "Idée : Face à une conférence de design à San Francisco où tous les hôtels étaient pleins, les fondateurs ont eu l'idée de louer des matelas pneumatiques dans leur salon. Approche Lean : Ils ont créé un site web très simple (MVP) pour tester leur idée. Ils ont ensuite compris que la qualité des photos était cruciale et sont allés eux-mêmes prendre des photos professionnelles des premiers logements. Résultat : Une entreprise mondiale qui a transformé l'industrie du voyage et de l'hébergement."
+    
+    - category: "Projet Agile"
+      side: "left"
+      items:
+        - title: "Gestion de Projet Agile : Spotify"
+          description: "Défi : Lutter contre le piratage musical en offrant une alternative légale, simple et attractive. Organisation : Spotify a popularisé son propre modèle d'organisation agile à grande échelle ('Tribes', 'Squads', 'Chapters' & 'Guilds') pour favoriser l'autonomie, l'innovation et la rapidité. Résultat : Le leader mondial du streaming musical, connu pour sa capacité à innover en permanence."
+    
+    - category: "Entrepreneuriat Visionnaire"
+      side: "right"
+      items:
+        - title: "Entrepreneuriat : SpaceX"
+          description: "Vision : Rendre l'humanité multiplanétaire en réduisant drastiquement les coûts d'accès à l'espace. Stratégie : Remettre en question les principes de l'industrie aérospatiale, notamment en développant des fusées réutilisables. Échecs et itérations rapides (comme pour le Starship) sont au cœur de la démarche. Résultat : Un acteur dominant du lancement spatial qui a bouleversé une industrie établie."
+
+  trends:
+    title: "Tendances émergentes"
+    features:
+      - title: "IA en gestion de projet"
+        icon: "fas fa-robot"
+        description: "L'IA automatise les tâches répétitives (reporting, planification), prédit les retards et aide à l'allocation des ressources pour des décisions plus rapides et précises."
+      
+      - title: "Entrepreneuriat à impact"
+        icon: "fas fa-leaf"
+        description: "Les nouvelles entreprises cherchent de plus en plus à combiner profitabilité économique avec un impact social et environnemental positif (B Corp, entreprises à mission)."
+      
+      - title: "Outils Low-Code/No-Code"
+        icon: "fas fa-tools"
+        description: "Ces plateformes permettent aux entrepreneurs et chefs de projet de créer des applications et d'automatiser des processus sans savoir coder, accélérant la création de MVP."
+      
+      - title: "Le chef de projet hybride"
+        icon: "fas fa-network-wired"
+        description: "La distinction entre chef de projet, product owner et scrum master s'estompe. Les entreprises recherchent des leaders capables de maîtriser à la fois la stratégie produit et l'excellence opérationnelle."
+
+roadmap:
+  title: "Parcours d'apprentissage"
+  phases:
+    - title: "🎯 Phase 1: Les Fondamentaux (1-3 mois)"
+      duration: "1-3 mois"
+      steps:
+        - title: "Gestion de Projet Classique"
+          description: "Comprendre les bases du cycle de vie d'un projet, le triangle d'or (coût, délai, périmètre) et les processus clés."
+          resources:
+            - text: "Guide PMBOK® du PMI"
+              url: "https://ibimone.com/PMBOK%207th%20Edition%20(iBIMOne.com).pdf"
+            - text: "Google Project Management Certificate (Coursera)"
+              url: "https://www.coursera.org/professional-certificates/google-project-management"
+        
+        - title: "Principes de l'Agilité"
+          description: "S'imprégner du Manifeste Agile et maîtriser les frameworks Scrum et Kanban."
+          resources:
+            - text: "Le Manifeste Agile"
+              url: "https://agilemanifesto.org/"
+            - text: "Le Guide Scrum"
+              url: "https://www.scrum.org/resources/scrum-guide"
+            - text: "Guide Kanban par Atlassian"
+              url: "https://www.atlassian.com/agile/kanban"
+    
+    - title: "🚀 Phase 2: Stratégie & Produit (3-6 mois)"
+      duration: "3-6 mois"
+      steps:
+        - title: "Lean Startup & Business Modeling"
+          description: "Apprendre à construire des produits que les clients veulent vraiment, en minimisant le gaspillage."
+          resources:
+            - text: "'The Lean Startup' par Eric Ries"
+              url: "https://www.theleanstartup.com"
+            - text: "Business Model & Value Proposition Canvas"
+              url: "https://www.strategyzer.com/canvas"
+            - text: "'The Four Steps to the Epiphany' par Steve Blank"
+              url: "https://steveblank.com/books-for-startups/"
+        
+        - title: "Gestion de Produit (Product Management)"
+          description: "Apprendre à définir une vision produit, à gérer un backlog et à prioriser les fonctionnalités."
+          resources:
+            - text: "'Inspired' par Marty Cagan"
+              url: "https://www.svpg.com/inspired-how-to-create-tech-products-customers-love/"
+            - text: "Mind the Product"
+              url: "https://www.mindtheproduct.com/"
+
+projects:
+  title: "Projets pratiques"
+  items:
+    - title: "Projet 1: Gérer un projet personnel avec un outil Kanban"
+      difficulty: "Débutant"
+      duration: "2-4 heures (mise en place) + suivi continu"
+      objective: "Appliquer les principes Kanban pour visualiser et gérer un flux de travail."
+      description: |
+        <p>Choisissez un projet personnel (ex: organiser un voyage, réviser pour un examen). Utilisez Trello, Asana ou Notion pour créer un tableau Kanban simple avec les colonnes "À faire", "En cours", "Terminé".</p>
+        <p>Étapes :</p>
+        <ol>
+          <li>Choisir un outil (Trello est excellent pour commencer).</li>
+          <li>Créer un tableau et les colonnes de base.</li>
+          <li>Lister toutes les tâches ("cartes") dans la colonne "À faire".</li>
+          <li>Déplacer les tâches au fur et à mesure de leur avancement.</li>
+          <li>(Optionnel) Limiter le nombre de tâches dans "En cours" pour se concentrer.</li>
+        </ol>
+      technologies:
+        - "Trello, Asana ou Notion"
+        - "Méthode Kanban"
+        - "Gestion de flux de travail"
+      resources:
+        - text: "Trello"
+          url: "https://trello.com/"
+        - text: "Asana"
+          url: "https://asana.com/"
+    
+    - title: "Projet 2: Créer un Business Model Canvas pour une fausse startup"
+      difficulty: "Débutant"
+      duration: "3-5 heures"
+      objective: "Formaliser une idée d'entreprise en utilisant un cadre structuré."
+      description: |
+        <p>Inventez une idée de startup (ex: un service de livraison par drone pour les cafés, une application qui traduit les miaulements de chat). Remplissez les 9 blocs du Business Model Canvas pour cette idée.</p>
+        <p>Étapes :</p>
+        <ol>
+          <li>Télécharger un template du Business Model Canvas.</li>
+          <li>Brainstormer pour remplir chaque bloc : Segments de clientèle, Proposition de valeur, Canaux, etc.</li>
+          <li>Identifier les hypothèses les plus risquées de votre modèle.</li>
+          <li>Réfléchir à comment vous pourriez tester ces hypothèses.</li>
+        </ol>
+      technologies:
+        - "Business Model Canvas"
+        - "Outils de brainstorming"
+        - "Analyse de business model"
+      resources:
+        - text: "Template et explications du Business Model Canvas"
+          url: "https://www.strategyzer.com/canvas"
+        - text: "Miro (outil collaboratif avec template)"
+          url: "https://miro.com/templates/business-model-canvas/"
+    
+    - title: "Projet 3: Lancer un MVP avec une solution No-Code"
+      difficulty: "Intermédiaire"
+      duration: "10-20 heures"
+      objective: "Construire et lancer un produit fonctionnel sans écrire une ligne de code."
+      description: |
+        <p>Utilisez un outil comme Bubble, Glide ou Softr pour construire une version simple de votre idée de startup. L'objectif est de créer un produit que de vrais utilisateurs peuvent tester.</p>
+        <p>Étapes :</p>
+        <ol>
+          <li>Choisir une idée simple (ex: un annuaire, une marketplace simple).</li>
+          <li>Choisir l'outil No-Code le plus adapté.</li>
+          <li>Suivre les tutoriels pour apprendre les bases de l'outil.</li>
+          <li>Construire les fonctionnalités essentielles (MVP).</li>
+          <li>Partager le lien avec des amis ou sur des forums pour obtenir des retours.</li>
+        </ol>
+      technologies:
+        - "Bubble, Glide ou Softr"
+        - "Développement No-Code"
+        - "MVP (Minimum Viable Product)"
+      resources:
+        - text: "Bubble (pour les web apps complexes)"
+          url: "https://bubble.io/"
+        - text: "Glide (pour créer des apps depuis Google Sheets)"
+          url: "https://www.glideapps.com/"
+        - text: "Softr (pour créer des portails et marketplaces depuis Airtable)"
+          url: "https://www.softr.io/"
+
+ecosystem:
+  title: "Écosystème"
+  tools:
+    - title: "Outils de gestion de projet"
+      icon: "fas fa-tasks"
+      items:
+        - name: "Jira"
+          description: "Plateforme de gestion de projet Agile par Atlassian"
+          url: "https://www.atlassian.com/software/jira"
+        - name: "Asana"
+          description: "Outil de gestion d'équipe et de projets"
+          url: "https://asana.com/"
+        - name: "Trello"
+          description: "Tableau Kanban visuel simple et efficace"
+          url: "https://trello.com/"
+        - name: "Monday.com"
+          description: "Plateforme de collaboration et gestion de projets"
+          url: "https://monday.com/"
+        - name: "Microsoft Project"
+          description: "Solution Microsoft pour la gestion de projets complexes"
+          url: "https://www.microsoft.com/en-us/microsoft-365/project"
+    
+    - title: "Outils de collaboration"
+      icon: "fas fa-users"
+      items:
+        - name: "Slack"
+          description: "Plateforme de communication d'équipe"
+          url: "https://slack.com/"
+        - name: "Microsoft Teams"
+          description: "Hub de collaboration Microsoft"
+          url: "https://www.microsoft.com/en-us/microsoft-teams/"
+        - name: "Miro"
+          description: "Tableau blanc collaboratif en ligne"
+          url: "https://miro.com/"
+        - name: "Notion"
+          description: "Espace de travail collaboratif all-in-one"
+          url: "https://www.notion.so/"
+        - name: "Figma"
+          description: "Outil de design collaboratif"
+          url: "https://www.figma.com/"
+    
+    - title: "Méthodologies & Frameworks"
+      icon: "fas fa-cogs"
+      items:
+        - name: "PMBOK"
+          description: "Guide du corpus des connaissances en management de projet"
+          url: "https://www.pmi.org/pmbok-guide-standards"
+        - name: "PRINCE2"
+          description: "Méthode de gestion de projet structurée"
+          url: "https://www.prince2.com/"
+        - name: "Agile (Scrum, Kanban)"
+          description: "Méthodologies de développement itératif et adaptatif"
+          url: "https://agilemanifesto.org/"
+        - name: "SAFe"
+          description: "Scaled Agile Framework pour l'entreprise"
+          url: "https://www.scaledagileframework.com/"
+    
+    - title: "Incubateurs & Accélérateurs"
+      icon: "fas fa-rocket"
+      items:
+        - name: "Y Combinator"
+          description: "L'accélérateur de startups le plus prestigieux au monde"
+          url: "https://www.ycombinator.com/"
+        - name: "Station F (Paris)"
+          description: "Plus grand campus de startups au monde"
+          url: "https://stationf.co/"
+        - name: "500 Global"
+          description: "Fonds d'investissement et accélérateur international"
+          url: "https://500.co/"
+        - name: "Techstars"
+          description: "Réseau mondial d'accélérateurs"
+          url: "https://www.techstars.com/"
+
+resources:
+  title: "Ressources d'apprentissage"
+  books:
+    fundamentals:
+      title: "Livres incontournables"
+      items:
+        - title: "The Lean Startup"
+          authors: "Eric Ries"
+          description: "La bible pour comprendre comment lancer des entreprises et des produits de manière itérative et centrée sur le client."
+          url: "https://www.theleanstartup.com"
+        - title: "Inspired"
+          authors: "Marty Cagan"
+          description: "Un guide essentiel pour comprendre le rôle du Product Manager et créer des produits technologiques que les clients adorent."
+          url: "https://www.svpg.com/inspired-how-to-create-tech-products-customers-love/"
+        - title: "Measure What Matters"
+          authors: "John Doerr"
+          description: "Introduction à la méthode des OKR (Objectives and Key Results) pour fixer et suivre des objectifs ambitieux."
+          url: ""
+        - title: "The Hard Thing About Hard Things"
+          authors: "Ben Horowitz"
+          description: "Des conseils francs et directs sur les défis les plus difficiles de la création et de la direction d'une startup."
+          url: ""
+  
+  courses:
+    title: "Cours en ligne"
+    items:
+      - title: "Become a Product Manager"
+        description: "Un Nanodegree complet qui couvre la stratégie produit, la conception, le développement et le lancement."
+        url: "https://www.udacity.com/course/product-manager-nanodegree--nd036"
+      - title: "Agile with Atlassian Jira"
+        description: "Apprenez les principes de l'Agilité et comment les appliquer concrètement avec l'outil le plus populaire du marché, Jira."
+        url: "https://www.coursera.org/learn/agile-atlassian-jira"
+
+careers: true
+career_paths:
+  title: "Perspectives de carrière"
+  description: "Cette double compétence ouvre la voie à des carrières dynamiques à l'intersection de la technologie et du business."
+  
+  roles:
+    - title: "Chef de Projet / Project Manager"
+      icon: "fas fa-user-tie"
+      mission: "Planifier, exécuter et finaliser les projets en respectant les contraintes de coût, de délai et de qualité."
+      skills: "Organisation, communication, gestion des risques, maîtrise des méthodologies"
+      salary: "38-45K€"
+      country: "France"
+    
+    - title: "Product Manager / Product Owner"
+      icon: "fas fa-lightbulb"
+      mission: "Définir la vision et la stratégie d'un produit, et maximiser sa valeur pour les utilisateurs et l'entreprise."
+      skills: "Vision stratégique, empathie client, priorisation, analyse de données"
+      salary: "42-55K€"
+      country: "France"
+    
+    - title: "Scrum Master"
+      icon: "fas fa-sync-alt"
+      mission: "Faciliter l'application du framework Scrum. Aider l'équipe à être plus efficace et à s'améliorer en continu."
+      skills: "Pédagogie, coaching, résolution de conflits, maîtrise de Scrum"
+      salary: "40-50K€"
+      country: "France"
+    
+    - title: "Entrepreneur / Fondateur"
+      icon: "fas fa-rocket"
+      mission: "Créer une entreprise à partir d'une idée, en gérant tous les aspects : produit, commercial, financement, équipe."
+      skills: "Résilience, vision, capacité de vente, polyvalence, leadership"
+      salary: "Variable (de 0 à ...)"
+      country: "France"
+    
+    - title: "Consultant en transformation digitale"
+      icon: "fas fa-chart-bar"
+      mission: "Aider les entreprises à adopter de nouvelles technologies et de nouvelles manières de travailler (agilité, innovation)."
+      skills: "Analyse, stratégie, gestion du changement, communication"
+      salary: "40-50K€"
+      country: "France"
+
+  evolution:
+    title: "Évolution de carrière"
+    timeline:
+      - category: "Début de carrière"
+        side: "left"
+        items:
+          - title: "Chef de projet junior"
+            description: "Gestion de projets à périmètre restreint avec accompagnement"
+          - title: "Product Owner / Associate Product Manager"
+            description: "Support à la gestion produit et interface avec les équipes techniques"
+          - title: "Bras droit d'entrepreneur"
+            description: "Assistance opérationnelle dans une startup"
+          - title: "Consultant junior"
+            description: "Accompagnement de projets de transformation"
+      
+      - category: "Milieu de carrière"
+        side: "right"
+        items:
+          - title: "Chef de projet senior"
+            description: "Pilotage de projets complexes et encadrement d'équipes"
+          - title: "Product Manager / Lead Product Manager"
+            description: "Propriété complète de la stratégie produit"
+          - title: "Scrum Master / Coach Agile"
+            description: "Facilitation de la transformation agile"
+          - title: "Lancement de sa propre startup"
+            description: "Entrepreneuriat et création d'entreprise"
+      
+      - category: "Carrière senior"
+        side: "left"
+        items:
+          - title: "Directeur de projet / Responsable de pôle (PMO)"
+            description: "Direction d'un portefeuille de projets"
+          - title: "Head of Product / Chief Product Officer (CPO)"
+            description: "Direction de la stratégie produit de l'entreprise"
+          - title: "Entrepreneur en série / Business Angel"
+            description: "Création et investissement dans des startups"
+          - title: "Directeur de la transformation"
+            description: "Pilotage de la transformation digitale de l'entreprise"
+
+  skills:
+    title: "Compétences recherchées"
+    hard_skills:
+      title: "Compétences dures (Hard skills)"
+      items:
+        - "Maîtrise des méthodologies - Agile (Scrum, Kanban), Waterfall, Hybride"
+        - "Outils - Jira, Asana, Trello, Notion, Miro"
+        - "Gestion financière - Budgétisation, suivi des coûts, calcul du ROI"
+        - "Analyse de données - KPIs, métriques produit (AARRR), SQL basique"
+        - "Product Roadmapping - Création de feuilles de route produit"
+    
+    soft_skills:
+      title: "Compétences humaines (Soft skills)"
+      items:
+        - "Leadership - Inspirer et motiver une équipe sans autorité hiérarchique"
+        - "Communication - Clarté à l'écrit comme à l'oral, capacité à s'adresser à des interlocuteurs techniques et business"
+        - "Négociation & Influence - Obtenir l'adhésion des parties prenantes"
+        - "Résolution de problèmes - Analyser des situations complexes et trouver des solutions créatives"
+        - "Adaptabilité - Naviguer dans l'incertitude et gérer le changement"
+
+  market_trends:
+    title: "Tendances du marché de l'emploi"
+    items:
+      - "Forte demande : Le PMI estime un besoin de 25 millions de nouveaux professionnels de la gestion de projet d'ici 2030"
+      - "Valorisation des 'soft skills' : Les compétences humaines comme le leadership et la communication sont devenues aussi importantes que les compétences techniques"
+      - "Hybridation des rôles : La frontière entre Product Manager, Project Manager et Business Analyst devient de plus en plus floue"
+      - "Montée des outils IA : L'intelligence artificielle aide à automatiser la planification, le reporting et l'analyse des risques"
+      - "Focus sur la valeur : Le succès n'est plus seulement mesuré par le respect du triptyque coût-délai-qualité, mais par la valeur apportée à l'entreprise et aux clients"
+
+summary:
+  title: "En résumé"
+  description: "Le Strategic Project Management & Entrepreneurship combine l'excellence opérationnelle et la vision stratégique pour créer de la valeur dans l'écosystème technologique. Cette spécialité offre :"
+  points:
+    - title: "Polyvalence méthodologique"
+      description: "Maîtrise des approches Agile, prédictives et hybrides selon les contextes"
+    - title: "Vision entrepreneuriale"
+      description: "Capacité à identifier les opportunités et transformer les idées en réalité"
+    - title: "Leadership adaptatif"
+      description: "Compétences pour diriger des équipes diverses dans des environnements changeants"
+    - title: "Orientation résultats"
+      description: "Focus sur la création de valeur mesurable pour l'entreprise et les clients"
+    - title: "Agilité stratégique"
+      description: "Capacité à adapter rapidement les stratégies selon les évolutions du marché"
+  conclusion: "Cette spécialité MSc te prépare à devenir un leader capable de transformer des défis complexes en succès concrets, que ce soit en pilotant des projets d'envergure ou en créant des entreprises innovantes qui façonnent l'avenir."
+
+has_media: true
+media:
+  - title: "Témoignage – Angelo Turnu (Alumni Epitech 2019)"
+    description: "Business Analyst & Project Manager (Okoone, Cambodge)."
+    url: "https://www.youtube.com/embed/hZ_UUPvqQZA"
+  - title: "Témoignage – Félix Marcotte-Ruffin (Alumni Epitech 2019)"
+    description: "Product Manager chez Legitbee."
+    url: "https://www.youtube.com/embed/lGNFEfMFRGI"

@@ -1,0 +1,536 @@
+title: "Cybersécurité"
+slug: "cybersecurite"
+icon: "fas fa-shield-alt"
+type: "tech"
+order: 1
+colors:
+  primary: "#DC2626"
+  secondary: "#EF4444"
+short_description: "Développez l'expertise nécessaire pour protéger les systèmes d'information contre les menaces numériques et sécuriser les données sensibles des organisations."
+description: "Maîtrisez les techniques offensives et défensives de la cybersécurité pour protéger les infrastructures critiques, anticiper les attaques et répondre efficacement aux incidents de sécurité dans un monde de plus en plus connecté."
+
+overview:
+  title: "Pourquoi la Cybersécurité ?"
+  features:
+    - title: "Menaces croissantes"
+      icon: "fas fa-chart-line"
+      description: "L'augmentation exponentielle des cyberattaques crée un besoin critique d'experts en sécurité."
+      example: "En 2022, les rançongiciels ont causé plus de 20 milliards de dollars de dégâts, une augmentation de 80% en deux ans."
+    
+    - title: "Sophistication des attaques"
+      icon: "fas fa-user-secret"
+      description: "Les menaces évoluent constamment, devenant plus ciblées et sophistiquées."
+      example: "L'attaque SolarWinds a compromis plus de 18 000 organisations, dont plusieurs agences gouvernementales américaines, en passant inaperçue pendant des mois."
+    
+    - title: "Surface d'attaque élargie"
+      icon: "fas fa-globe"
+      description: "La transformation numérique et l'IoT multiplient les points d'entrée potentiels."
+      example: "D'ici 2025, plus de 75 milliards d'appareils IoT seront connectés, chacun représentant une cible potentielle."
+    
+    - title: "Contraintes réglementaires"
+      icon: "fas fa-gavel"
+      description: "Les lois sur la protection des données imposent des exigences strictes de sécurité."
+      example: "Le RGPD peut imposer des amendes allant jusqu'à 4% du chiffre d'affaires mondial en cas de violation de données."
+    
+    - title: "Opportunités de carrière"
+      icon: "fas fa-briefcase"
+      description: "Pénurie mondiale d'experts avec plus de 3,5 millions de postes non pourvus."
+      example: "Les salaires en cybersécurité sont en moyenne 16% plus élevés que les autres postes IT équivalents."
+    
+    - title: "Challenge intellectuel"
+      icon: "fas fa-chess"
+      description: "Un domaine en constante évolution qui exige créativité, logique et apprentissage continu."
+      example: "Les professionnels de la cybersécurité alternent entre mentalité d'attaquant et de défenseur pour anticiper les menaces."
+
+  accordion:
+    - title: "Confidentialité"
+      content: |
+        <p>Garantir que les informations ne sont accessibles qu'aux personnes autorisées.</p>
+        <ul>
+          <li><strong>Chiffrement</strong> : Protéger les données au repos et en transit avec des algorithmes comme AES, RSA ou TLS</li>
+          <li><strong>Contrôle d'accès</strong> : Mettre en œuvre des mécanismes d'authentification et d'autorisation</li>
+          <li><strong>Classification des données</strong> : Catégoriser les informations selon leur sensibilité</li>
+        </ul>
+        <p>Exemple : Le chiffrement de bout en bout dans WhatsApp garantit que seuls l'expéditeur et le destinataire peuvent lire les messages.</p>
+    
+    - title: "Intégrité"
+      content: |
+        <p>Assurer que les données restent exactes et complètes, sans modification non autorisée.</p>
+        <ul>
+          <li><strong>Signatures numériques</strong> : Vérifier l'authenticité et l'intégrité d'un message ou fichier</li>
+          <li><strong>Fonctions de hachage</strong> : Créer des empreintes numériques uniques (SHA-256, MD5)</li>
+          <li><strong>Journalisation</strong> : Enregistrer toutes les modifications apportées aux données</li>
+        </ul>
+        <p>Exemple : Les blockchains utilisent des mécanismes cryptographiques pour garantir l'intégrité de chaque transaction sans autorité centrale.</p>
+    
+    - title: "Disponibilité"
+      content: |
+        <p>Garantir que les systèmes et données sont accessibles quand nécessaire.</p>
+        <ul>
+          <li><strong>Haute disponibilité</strong> : Architectures redondantes et tolérantes aux pannes</li>
+          <li><strong>Protection DDoS</strong> : Défense contre les attaques par déni de service</li>
+          <li><strong>Plan de continuité</strong> : Procédures de reprise après sinistre</li>
+        </ul>
+        <p>Exemple : Amazon AWS propose des SLAs garantissant 99,99% de disponibilité grâce à des infrastructures multi-régions.</p>
+    
+    - title: "Non-répudiation"
+      content: |
+        <p>Empêcher qu'un utilisateur puisse nier avoir effectué une action.</p>
+        <ul>
+          <li><strong>Signatures électroniques</strong> : Prouver l'identité de l'auteur d'un document</li>
+          <li><strong>Horodatage</strong> : Certifier la date et l'heure d'une action</li>
+          <li><strong>Audit trails</strong> : Tracer de manière inaltérable toutes les actions</li>
+        </ul>
+        <p>Exemple : Les systèmes de vote électronique sécurisés permettent de vérifier qu'un vote a été compté sans révéler pour qui l'électeur a voté.</p>
+    
+    - title: "Défense en profondeur"
+      content: |
+        <p>Approche multicouche où plusieurs mécanismes de sécurité se complètent.</p>
+        <ul>
+          <li><strong>Sécurité périmétrique</strong> : Firewalls, DMZ, filtrage réseau</li>
+          <li><strong>Sécurité des hôtes</strong> : Durcissement des systèmes d'exploitation, antivirus</li>
+          <li><strong>Sécurité applicative</strong> : Code sécurisé, tests d'intrusion</li>
+          <li><strong>Sécurité des données</strong> : Chiffrement, tokenisation</li>
+        </ul>
+        <p>Exemple : Une banque protège ses systèmes avec des firewalls, de l'authentification multi-facteurs, du chiffrement, des audits réguliers et de la sensibilisation du personnel.</p>
+
+  quote: "La sécurité n'est pas un produit, mais un processus."
+  quote_author: "Bruce Schneier, cryptographe et expert en sécurité"
+
+use_cases:
+  title: "Cas d'usage emblématiques"
+  timeline:
+    - category: "Sécurité offensive"
+      side: "left"
+      items:
+        - title: "Red teaming"
+          description: "L'équipe de sécurité offensive de Netflix simule des attaques complexes contre leurs propres systèmes, découvrant des vulnérabilités avant les attaquants."
+        - title: "Bug bounty"
+          description: "HackerOne a versé plus de 100 millions de dollars à des chercheurs en sécurité qui ont identifié des vulnérabilités pour Google, Microsoft et le Pentagone."
+        - title: "Threat intelligence"
+          description: "Le CERT-FR analyse les tendances des cyberattaques pour anticiper les futures menaces contre les infrastructures françaises."
+          
+    - category: "Sécurité défensive"
+      side: "right"
+      items:
+        - title: "SOC (Security Operations Center)"
+          description: "Airbus CyberSecurity surveille 24/7 les systèmes de l'avionneur contre les attaques ciblées de cyberespionnage industriel."
+        - title: "Zero Trust"
+          description: "Google a adopté le modèle BeyondCorp où aucun utilisateur ou appareil n'est de confiance par défaut, même au sein du réseau interne."
+        - title: "Détection d'anomalies"
+          description: "PayPal utilise l'IA pour analyser en temps réel des milliards de transactions et repérer les comportements frauduleux avec une précision de 99,3%."
+    
+    - category: "Secteurs critiques"
+      side: "left"
+      items:
+        - title: "Infrastructures énergétiques"
+          description: "Les réseaux électriques intelligents utilisent la ségrégation réseau et des PKI spécialisées pour se protéger contre des attaques comme celle de l'Ukraine en 2015."
+        - title: "Systèmes médicaux"
+          description: "Les hôpitaux déploient des solutions d'isolation réseau pour protéger les équipements médicaux vulnérables mais critiques."
+        - title: "Industrie 4.0"
+          description: "Les usines connectées implémentent des architectures ICS/SCADA sécurisées avec air-gap sélectif et monitoring OT spécialisé."
+    
+    - category: "Gouvernance et conformité"
+      side: "right"
+      items:
+        - title: "Gestion des risques"
+          description: "Les banques comme BNP Paribas suivent le cadre NIST pour identifier, protéger, détecter, répondre et récupérer face aux cybermenaces."
+        - title: "Privacy by design"
+          description: "Apple intègre la protection de la vie privée dès la conception de ses produits, comme le traitement local des données biométriques de Face ID."
+        - title: "Réponse aux incidents"
+          description: "Equifax a complètement transformé son approche de la cybersécurité après sa brèche majeure de 2017, investissant 1,5 milliard de dollars en sécurité."
+
+  trends:
+    title: "Tendances émergentes"
+    features:
+      - title: "Cybersécurité et IA"
+        icon: "fas fa-robot"
+        description: "L'intelligence artificielle révolutionne à la fois l'attaque (deepfakes, fuzzing automatisé) et la défense (détection de patterns, automatisation de la réponse)."
+      
+      - title: "Sécurité quantique"
+        icon: "fas fa-microchip"
+        description: "La cryptographie post-quantique se développe pour anticiper la menace des ordinateurs quantiques sur les algorithmes de chiffrement actuels."
+      
+      - title: "Sécurité Cloud-Native"
+        icon: "fas fa-cloud"
+        description: "Nouvelles approches pour sécuriser les architectures éphémères basées sur les microservices, conteneurs et serverless."
+      
+      - title: "Convergence IT/OT/IoT"
+        icon: "fas fa-mobile-alt"
+        description: "Stratégies unifiées pour sécuriser à la fois les systèmes d'information classiques, les technologies opérationnelles et les objets connectés."
+
+roadmap:
+  title: "Parcours d'apprentissage"
+  phases:
+    - title: "🎯 Phase 1: Fondamentaux techniques"
+      duration: "1-3 mois"
+      steps:
+        - title: "Réseaux informatiques"
+          description: "Comprenez en profondeur le fonctionnement des réseaux TCP/IP, des protocoles et de l'architecture réseau."
+          resources:
+            - text: "Cisco Networking Academy"
+              url: "https://www.netacad.com/networking"
+            - text: "Cloudflare Learning Center (Sécurité Web)"
+              url: "https://www.cloudflare.com/learning/security/what-is-web-security/"
+        - title: "Systèmes d'exploitation"
+          description: "Maîtrisez Linux et Windows, leur fonctionnement interne, la gestion des services et la ligne de commande."
+          resources:
+            - text: "Linux Journey"
+              url: "https://linuxjourney.com/"
+            - text: "Cybrary - Catalogue"
+              url: "https://www.cybrary.it/catalog/"
+        - title: "Programmation sécurisée"
+          description: "Apprenez au moins un langage de programmation (Python, C) et les principes de développement sécurisé."
+          resources:
+            - text: "Codecademy - Python"
+              url: "https://www.codecademy.com/learn/learn-python-3"
+            - text: "Hacksplaining"
+              url: "https://www.hacksplaining.com/"
+        - title: "Cryptographie appliquée"
+          description: "Comprenez les principes de la cryptographie et comment l'utiliser correctement pour protéger les données."
+          resources:
+            - text: "Coursera - Cryptographie"
+              url: "https://www.coursera.org/learn/crypto"
+            - text: "Cryptopals Challenges"
+              url: "https://cryptopals.com/"
+    
+    - title: "🚀 Phase 2: Compétences fondamentales en sécurité"
+      duration: "3-6 mois"
+      steps:
+        - title: "Sécurité Web"
+          description: "Apprenez à identifier et exploiter les vulnérabilités web comme les injections SQL, XSS, CSRF et leurs contre-mesures."
+          resources:
+            - text: "PortSwigger Web Security Academy"
+              url: "https://portswigger.net/web-security"
+            - text: "OWASP Top 10"
+              url: "https://owasp.org/www-project-top-ten/"
+        - title: "Sécurité réseau"
+          description: "Maîtrisez les outils de sécurité réseau comme les firewalls, IDS/IPS, et les techniques d'analyse de paquets."
+          resources:
+            - text: "Guide Wireshark"
+              url: "https://www.wireshark.org/docs/wsug_html_chunked/"
+            - text: "Metasploit Unleashed"
+              url: "https://www.offensive-security.com/metasploit-unleashed/"
+
+projects:
+  title: "Projets pratiques"
+  items:
+    - title: "Projet 1: Laboratoire virtuel de sécurité"
+      difficulty: "Débutant"
+      duration: "4-6 heures"
+      objective: "Créer un environnement d'apprentissage sécurisé pour tester des outils et techniques"
+      description: |
+        <p>Dans ce projet, tu vas mettre en place un laboratoire virtuel sécurisé pour expérimenter différentes techniques de sécurité offensive et défensive sans risque légal ou éthique.</p>
+        <p>Le projet suit une approche étape par étape, avec des points de contrôle pour valider ta compréhension.</p>
+      technologies:
+        - "VirtualBox ou VMware"
+        - "Kali Linux comme machine d'attaque"
+        - "Metasploitable ou DVWA comme cible"
+        - "Configuration réseau isolé"
+      resources:
+        - text: "Documentation Kali Linux pour la virtualisation"
+          url: "https://www.kali.org/docs/virtualization/"
+        - text: "Metasploitable VM"
+          url: "https://www.metasploit.com/download"
+    
+    - title: "Projet 2: Analyse de sécurité web"
+      difficulty: "Débutant"
+      duration: "6-8 heures"
+      objective: "Découvrir les vulnérabilités web courantes et leur exploitation éthique"
+      description: |
+        <p>Ce projet te permettra d'explorer la sécurité des applications web en identifiant et exploitant des vulnérabilités courantes dans un environnement contrôlé et légal.</p>
+        <p>Tu apprendras les techniques de base d'audit de sécurité et comment sécuriser les applications web.</p>
+      technologies:
+        - "DVWA (Damn Vulnerable Web Application)"
+        - "Burp Suite Community Edition"
+        - "Techniques d'exploitation éthique"
+        - "Documentation des vulnérabilités"
+      resources:
+        - text: "DVWA GitHub"
+          url: "https://github.com/digininja/DVWA"
+        - text: "Burp Suite Community Edition"
+          url: "https://portswigger.net/burp/communitydownload"
+    
+    - title: "Projet 3: Introduction à la Sécurité des Applications"
+      difficulty: "Intermédiaire"
+      duration: "8-10 heures"
+      objective: "Découvrir et exploiter différentes vulnérabilités courantes dans les applications, puis apprendre à les corriger"
+      description: |
+        <p>Ce projet pratique complet vous guide à travers plusieurs types de vulnérabilités applicatives comme :</p>
+        <ul>
+          <li><strong>Format String Attack</strong> - Exploiter les chaînes de formatage vulnérables</li>
+          <li><strong>Buffer Overflow</strong> - Découvrir comment déborder les tampons mémoire</li>
+          <li><strong>Use After Free</strong> - Comprendre les vulnérabilités liées à la gestion de la mémoire</li>
+          <li><strong>Command Injection</strong> - Exécuter des commandes non autorisées sur un système</li>
+          <li><strong>Race Condition</strong> - Exploiter le timing des opérations</li>
+          <li><strong>Hardcoded Password</strong> - Trouver des mots de passe codés en dur dans les applications</li>
+          <li><strong>Core Dumps</strong> - Analyser les fichiers de vidage mémoire lors de crashs</li>
+        </ul>
+      technologies:
+        - "Analyse de binaires et code source"
+        - "Techniques d'exploitation éthique"
+        - "Développement de code sécurisé"
+        - "Debugging et analyse de crash"
+      resources:
+        - text: "Sujet Découverte Cybersécurité (PDF)"
+          url: "/assets/subjects/cybersecurity/Sujet_Decouverte_CyberSec.pdf"
+        - text: "Assets pour les exercices (ZIP)"
+          url: "/assets/subjects/cybersecurity/Assets.zip"
+    
+    - title: "Projet 4: CTF (Capture The Flag)"
+      difficulty: "Intermédiaire"
+      duration: "8-12 heures"
+      objective: "Résoudre une série de défis de sécurité pratiques"
+      description: |
+        <p>Les CTF sont des compétitions de sécurité informatique où vous devez résoudre des énigmes et exploiter des vulnérabilités pour trouver des "flags" cachés. C'est une excellente façon d'apprendre par la pratique.</p>
+      technologies:
+        - "Techniques d'exploitation variées"
+        - "Analyse forensique"
+        - "Cryptographie"
+        - "Reverse engineering"
+      resources:
+        - text: "PicoCTF - Plateforme d'apprentissage gratuite"
+          url: "https://picoctf.org/"
+        - text: "OverTheWire - Challenges progressifs"
+          url: "https://overthewire.org/wargames/"
+        - text: "TryHackMe - Plateformes de challenges et formation"
+          url: "https://tryhackme.com/"
+
+ecosystem:
+  title: "Écosystème Cybersécurité"
+  tools:
+    - title: "Tests d'intrusion"
+      icon: "fas fa-search"
+      items:
+        - name: "Kali Linux"
+          description: "Distribution Linux dédiée aux tests de sécurité"
+          url: "https://www.kali.org/"
+        - name: "Metasploit"
+          description: "Framework d'exploitation et de test de pénétration"
+          url: "https://www.metasploit.com/"
+        - name: "Burp Suite"
+          description: "Plateforme intégrée pour les tests de sécurité web"
+          url: "https://portswigger.net/burp"
+        - name: "Nmap"
+          description: "Outil de découverte réseau et audit de sécurité"
+          url: "https://nmap.org/"
+    
+    - title: "Analyse de vulnérabilités"
+      icon: "fas fa-bug"
+      items:
+        - name: "Nessus"
+          description: "Scanner de vulnérabilités commercial leader"
+          url: "https://www.tenable.com/products/nessus"
+        - name: "OpenVAS"
+          description: "Framework open-source de gestion des vulnérabilités"
+          url: "https://www.openvas.org/"
+        - name: "OWASP ZAP"
+          description: "Proxy de sécurité open-source pour applications web"
+          url: "https://owasp.org/www-project-zap/"
+        - name: "Qualys"
+          description: "Plateforme cloud de sécurité et conformité"
+          url: "https://www.qualys.com/"
+    
+    - title: "Détection et réponse"
+      icon: "fas fa-shield-alt"
+      items:
+        - name: "Splunk"
+          description: "Plateforme d'analyse de données de sécurité"
+          url: "https://www.splunk.com/"
+        - name: "ELK Stack"
+          description: "Suite open-source pour recherche et analyse de logs"
+          url: "https://www.elastic.co/what-is/elk-stack"
+        - name: "Suricata"
+          description: "Moteur IDS/IPS et surveillance réseau"
+          url: "https://suricata.io/"
+        - name: "Wazuh"
+          description: "Plateforme de sécurité unifiée open-source"
+          url: "https://wazuh.com/"
+    
+    - title: "Sécurité réseau"
+      icon: "fas fa-network-wired"
+      items:
+        - name: "pfSense"
+          description: "Firewall et routeur open-source"
+          url: "https://www.pfsense.org/"
+        - name: "Palo Alto Networks"
+          description: "Solutions de sécurité réseau next-generation"
+          url: "https://www.paloaltonetworks.com/"
+        - name: "Fortinet"
+          description: "Solutions de cybersécurité intégrées"
+          url: "https://www.fortinet.com/"
+        - name: "Cisco ASA"
+          description: "Appliances de sécurité adaptatifs"
+          url: "https://www.cisco.com/c/en/us/products/security/adaptive-security-appliance-asa-software.html"
+
+resources:
+  title: "Ressources d'apprentissage"
+  books:
+    fundamentals:
+      title: "Cours en ligne gratuits ou freemium"
+      items:
+        - title: "Cybersecurity Fundamentals"
+          authors: "edX - RITx"
+          description: "Introduction complète aux concepts fondamentaux de la cybersécurité, du réseau à la cryptographie."
+          url: "https://www.edx.org/course/cybersecurity-fundamentals"
+        - title: "Hack The Box Academy"
+          authors: "Hack The Box"
+          description: "Plateforme d'apprentissage pratique avec des modules sur la sécurité offensive et défensive."
+          url: "https://academy.hackthebox.com/"
+        - title: "Cybersecurity Career Path"
+          authors: "TryHackMe"
+          description: "Parcours complet de formation avec des labs pratiques pour débutants et intermédiaires."
+          url: "https://tryhackme.com/paths"
+        - title: "Cybersécurité de l'ANSSI"
+          authors: "ANSSI"
+          description: "Ressources et guides de bonnes pratiques par l'Agence Nationale de la Sécurité des Systèmes d'Information."
+          url: "https://www.ssi.gouv.fr/particulier/formations/"
+
+careers: true
+career_paths:
+  title: "Perspectives de carrière"
+  description: "La cybersécurité offre des opportunités de carrière diverses, stimulantes et bien rémunérées dans un marché en forte demande."
+  
+  roles:
+    - title: "Pentester / Red Team"
+      icon: "fas fa-user-secret"
+      mission: "Tester la sécurité des systèmes en simulant des attaques réelles pour identifier les vulnérabilités."
+      skills: "Hacking éthique, OSINT, social engineering, sécurité web et réseau"
+      salary: "45-80K€"
+      country: "France"
+    
+    - title: "SOC Analyst / Blue Team"
+      icon: "fas fa-shield-alt"
+      mission: "Surveiller, détecter et répondre aux incidents de sécurité en temps réel."
+      skills: "SIEM, détection d'intrusion, forensics, gestion d'incidents"
+      salary: "40-70K€"
+      country: "France"
+    
+    - title: "Architecte sécurité"
+      icon: "fas fa-sitemap"
+      mission: "Concevoir des architectures de sécurité robustes pour protéger les systèmes d'information."
+      skills: "IAM, cryptographie, sécurité cloud, Zero Trust, normes de sécurité"
+      salary: "60-90K€"
+      country: "France"
+    
+    - title: "Security Researcher"
+      icon: "fas fa-bug"
+      mission: "Découvrir de nouvelles vulnérabilités et développer des techniques de protection innovantes."
+      skills: "Reverse engineering, développement d'exploits, recherche fondamentale"
+      salary: "50-100K€"
+      country: "France"
+    
+    - title: "RSSI / CISO"
+      icon: "fas fa-shield-alt"
+      mission: "Définir et piloter la stratégie de sécurité globale d'une organisation."
+      skills: "Gouvernance, gestion des risques, conformité, leadership, communication"
+      salary: "80-150K€"
+      country: "France"
+
+  evolution:
+    title: "Évolution de carrière"
+    timeline:
+      - category: "Début de carrière"
+        side: "left"
+        items:
+          - title: "Analyste SOC Junior"
+            description: "Surveillance et réponse aux alertes de sécurité"
+          - title: "Testeur de pénétration junior"
+            description: "Tests de sécurité sous supervision"
+          - title: "Administrateur sécurité"
+            description: "Configuration et maintenance des outils de sécurité"
+          - title: "Développeur sécurité"
+            description: "Intégration de la sécurité dans le cycle de développement"
+      
+      - category: "Mi-carrière"
+        side: "right"
+        items:
+          - title: "Red Team Lead"
+            description: "Direction des équipes de simulation d'attaques"
+          - title: "Blue Team Manager"
+            description: "Supervision de la défense et détection"
+          - title: "Security Engineer"
+            description: "Conception de solutions de sécurité avancées"
+          - title: "GRC Specialist"
+            description: "Expert en gouvernance, risques et conformité"
+      
+      - category: "Senior"
+        side: "left"
+        items:
+          - title: "CISO/RSSI"
+            description: "Direction de la sécurité au niveau exécutif"
+          - title: "Security Consultant Partner"
+            description: "Associé dans un cabinet de conseil"
+          - title: "Security Vendor CTO"
+            description: "Direction technique chez un éditeur de solutions"
+          - title: "Cyber Entrepreneur"
+            description: "Création de startups en cybersécurité"
+
+  skills:
+    title: "Compétences recherchées"
+    technical:
+      title: "Compétences techniques"
+      items:
+        - "Sécurité des systèmes - Windows, Linux, macOS hardening"
+        - "Sécurité réseau - Firewalls, IDS/IPS, VPN, SIEM, proxies"
+        - "Sécurité cloud - AWS Security, Azure Security, GCP Security"
+        - "DevSecOps - Intégration de la sécurité dans CI/CD, containers"
+        - "Scripting/programmation - Python, Bash, PowerShell, Go"
+    
+    specialized:
+      title: "Domaines de spécialisation"
+      items:
+        - "Pentest et Red Team - Tests d'intrusion, simulation d'attaques avancées"
+        - "Blue Team et défense - SOC, détection, réponse aux incidents"
+        - "Reverse engineering - Analyse de malwares, création de signatures"
+        - "Cryptographie - Conception et analyse de systèmes cryptographiques"
+        - "Sécurité OT/IoT - Protection des systèmes industriels et connectés"
+    
+    soft_skills:
+      title: "Soft skills et autres compétences"
+      items:
+        - "Pensée adverse - Capacité à raisonner comme un attaquant"
+        - "Communication - Traduction des risques techniques en langage business"
+        - "Veille permanente - Suivi des menaces et vulnérabilités émergentes"
+        - "Gestion de crise - Calme et méthodologie face aux incidents"
+        - "Éthique - Respect des limites légales et éthiques"
+
+  market_trends:
+    title: "Tendances du marché"
+    items:
+      - "+350,000 postes vacants en cybersécurité en Europe actuellement"
+      - "Croissance de 28% du nombre d'emplois en cybersécurité prévue d'ici 2026"
+      - "Déficit chronique de talents qualifiés poussant les salaires à la hausse"
+      - "Diversification des rôles avec l'émergence de l'IA/ML pour la cybersécurité"
+      - "Secteurs en forte demande : santé, finance, défense, infrastructures critiques"
+
+summary:
+  title: "En résumé"
+  description: "La cybersécurité représente un domaine fondamental dans notre société numérisée, où la protection des informations et des systèmes devient critique. Cette spécialité combine :"
+  points:
+    - title: "Expertise technique"
+      description: "Maîtrise des outils et techniques de sécurité offensive et défensive"
+    - title: "Pensée stratégique"
+      description: "Capacité à anticiper les menaces et concevoir des défenses adaptées"
+    - title: "Évolution constante"
+      description: "Un domaine qui se renouvelle continuellement face à de nouvelles menaces"
+    - title: "Impact sociétal"
+      description: "Protection des infrastructures critiques et de la vie privée"
+    - title: "Opportunités diverses"
+      description: "Large éventail de carrières dans tous les secteurs économiques"
+  conclusion: "Cette spécialité MSc te forme à devenir un gardien du numérique, capable de protéger les organisations contre les menaces actuelles et futures tout en développant une expertise reconnue sur le marché de l'emploi."
+
+has_media: true
+media:
+  - title: "Témoignage – Nicolas (Epitech promo 2022)"
+    description: "Spécialisation Cybersécurité à l'étranger."
+    url: "https://www.youtube.com/embed/xwButxNRe_o"
+  - title: "Témoignage – Jérôme Muller (Alumni Epitech 2019)"
+    description: "Ingénieur Cybersécurité chez EES Clemessy."
+    url: "https://www.youtube.com/embed/LLvRT0tNk40"
+  - title: "Témoignage – Cyril (MSc Pro Epitech)"
+    description: "Apprenti ingénieur en Cybersécurité."
+    url: "https://www.youtube.com/embed/bF1SXJwoyzU"
+  - title: "Interview – Edouard Mbo"
+    description: "Architecte Cybersécurité, journée spéciale Cyber Epitech Digital."
+    url: "https://www.youtube.com/embed/e5GWqaf5Dvw"

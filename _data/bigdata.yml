@@ -1,0 +1,327 @@
+title: "Big Data & Analytics"
+slug: "bigdata"
+icon: "fas fa-database"
+type: "tech"
+order: 3
+colors:
+  primary: "#0EA5E9"
+  secondary: "#38BDF8"
+short_description: "Apprenez à collecter, stocker, traiter et analyser des volumes massifs de données pour en extraire des informations stratégiques et piloter la prise de décision."
+description: "Découvrez comment maîtriser le déluge de données de notre ère digitale grâce aux technologies Big Data, aux architectures distribuées et aux techniques analytiques avancées qui révolutionnent la prise de décision."
+
+overview:
+  title: "Pourquoi le Big Data ?"
+  features:
+    - title: "Volume"
+      icon: "fas fa-chart-line"
+      description: "Des quantités massives de données qui dépassent les capacités de traitement traditionnelles."
+      example: "Netflix ingère plus de 150 To de données par jour pour alimenter ses systèmes de recommandation."
+    
+    - title: "Vitesse"
+      icon: "fas fa-bolt"
+      description: "La création et le traitement de données à haute fréquence, souvent en temps réel."
+      example: "Twitter traite plus de 500 millions de tweets quotidiens, soit près de 6000 tweets par seconde."
+      
+    - title: "Variété"
+      icon: "fas fa-random"
+      description: "Données structurées, semi-structurées et non structurées provenant de sources diverses."
+      example: "TikTok analyse vidéos, audio, texte, comportement utilisateur et métadonnées simultanément."
+      
+    - title: "Véracité"
+      icon: "fas fa-check-circle"
+      description: "La fiabilité et la qualité des données, souvent compromise par leur volume même."
+      example: "IBM estime que les mauvaises données coûtent 3,1 billions de dollars par an à l'économie américaine."
+      
+    - title: "Valeur"
+      icon: "fas fa-gem"
+      description: "Capacité à transformer les données en insights et en avantages concurrentiels."
+      example: "Amazon génère 35% de ses ventes grâce à son système de recommandation basé sur le Big Data."
+      
+    - title: "Intelligence"
+      icon: "fas fa-brain"
+      description: "La capacité à extraire des connaissances et à prendre des décisions automatisées."
+      example: "Les modèles prédictifs de Walmart prévoient les ventes avec une précision de 90% en intégrant 40 PB de données."
+
+  accordion:
+    - title: "Limitations des bases de données traditionnelles"
+      content: |
+        <p>Les SGBDR classiques (MySQL, PostgreSQL) rencontrent plusieurs obstacles face aux Big Data :</p>
+        <ul>
+          <li><strong>Scaling vertical limité</strong> : Impossible d'ajouter indéfiniment de la RAM ou des CPU</li>
+          <li><strong>Jointures coûteuses</strong> : Deviennent prohibitives sur des milliards de lignes</li>
+          <li><strong>Schéma rigide</strong> : Difficile d'adapter pour des données semi-structurées</li>
+          <li><strong>Licensing onéreux</strong> : Les solutions Oracle/SQL Server deviennent très chères à grande échelle</li>
+        </ul>
+        <p>En revanche, les technologies Big Data sont conçues pour le <em>scaling horizontal</em> : ajouter des machines plutôt que de la puissance.</p>
+    
+    - title: "Limites du traitement séquentiel"
+      content: |
+        <p>Le traitement ligne par ligne devient problématique à l'échelle du Big Data :</p>
+        <ul>
+          <li><strong>Temps de calcul linéaire</strong> : Un traitement qui prend 1 minute sur 1 GB prendra théoriquement ~17 heures sur 1 TB</li>
+          <li><strong>Goulots d'étranglement I/O</strong> : Les disques ne peuvent pas fournir les données assez rapidement</li>
+          <li><strong>Limites de mémoire</strong> : Impossible de charger l'ensemble des données dans la RAM</li>
+        </ul>
+        <p>Les frameworks Big Data comme Spark ou Hadoop distribuent le traitement sur des dizaines ou centaines de nœuds en parallèle.</p>
+
+  quote: "Nous ne sommes plus dans l'ère de l'information. Nous sommes dans l'ère de la gestion de l'information."
+  quote_author: "Leandro Herrero"
+
+use_cases:
+  title: "Cas d'usage emblématiques"
+  timeline:
+    - category: "Commerce et Marketing"
+      side: "left"
+      items:
+        - title: "Personnalisation"
+          description: "Amazon analyse l'historique d'achat, le comportement de navigation et les tendances pour personnaliser 35% de ses ventes via son système de recommandation."
+        - title: "Optimisation des prix"
+          description: "Les compagnies aériennes ajustent leurs tarifs jusqu'à 100 000 fois par jour en fonction de la demande en temps réel."
+        - title: "Analyse du parcours client"
+          description: "Sephora combine données en ligne et en magasin pour créer une vue à 360° de ses 25 millions de clients."
+          
+    - category: "Santé et Recherche"
+      side: "right"
+      items:
+        - title: "Médecine personnalisée"
+          description: "Le projet \"All of Us\" du NIH américain analyse les données génomiques et médicales de plus d'un million de personnes pour révolutionner les traitements."
+        - title: "Prédiction d'épidémies"
+          description: "HealthMap a détecté l'épidémie d'Ebola 9 jours avant l'OMS en analysant les médias sociaux et les recherches web."
+        - title: "Drug discovery"
+          description: "Atomwise utilise l'IA sur des pétaoctets de données moléculaires pour simuler et tester virtuellement 10 millions de composés par jour."
+
+  trends:
+    title: "Tendances émergentes"
+    features:
+      - title: "IA Générative + Big Data"
+        icon: "fas fa-robot"
+        description: "L'explosion des LLMs ouvre de nouvelles perspectives pour naviguer, interroger et résumer des corpus massifs de données en langage naturel."
+      
+      - title: "Confidentialité et Souveraineté"
+        icon: "fas fa-shield-alt"
+        description: "Les réglementations comme RGPD et les préoccupations liées à la souveraineté des données imposent de nouvelles contraintes et opportunités."
+
+roadmap:
+  title: "Parcours d'apprentissage"
+  phases:
+    - title: "Phase 1 : Fondamentaux techniques"
+      duration: "1-3 mois"
+      steps:
+        - title: "Bases de programmation"
+          description: "Maîtrisez Python, le langage le plus utilisé en data engineering aujourd'hui. Comprenez les structures de données, l'algorithmique et l'orienté objet."
+          resources:
+            - text: "Python Official Tutorial"
+              url: "https://www.python.org/about/gettingstarted/"
+            - text: "Codecademy - Learn Python"
+              url: "https://www.codecademy.com/learn/learn-python-3"
+        - title: "Manipulation de données"
+          description: "Apprenez à nettoyer, transformer et analyser des datasets avec Pandas, la bibliothèque Python incontournable pour la manipulation de données."
+          resources:
+            - text: "Pandas Getting Started"
+              url: "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html"
+            - text: "Kaggle - Pandas Course"
+              url: "https://www.kaggle.com/learn/pandas"
+
+projects:
+  title: "Projets pratiques"
+  items:
+    - title: "Projet 1: TARDIS Bootstrap - Nettoyage et visualisation de données"
+      difficulty: "Débutant"
+      duration: "3-4 heures"
+      objective: "Explorer, nettoyer et visualiser un jeu de données sur les retards de trains"
+      description: |
+        <p>Ce projet guidé te permettra d'acquérir les compétences essentielles en préparation et visualisation de données, fondamentales pour tout projet de data science. Tu apprendras à:</p>
+        <ul>
+          <li>Charger et explorer un jeu de données à l'aide de pandas</li>
+          <li>Identifier et résoudre les problèmes courants (valeurs manquantes, doublons, formats incohérents)</li>
+          <li>Générer des visualisations pour comprendre les tendances</li>
+          <li>Préparer les données pour l'analyse dans le projet principal</li>
+        </ul>
+        <p>Le projet suit une approche étape par étape, avec des points de contrôle pour valider ta compréhension.</p>
+      technologies:
+        - "Python avec les bibliothèques pandas, matplotlib et seaborn"
+        - "Jupyter Notebook pour l'analyse interactive"
+      resources:
+        - text: "Sujet complet (PDF)"
+          url: "/assets/subjects/bigdata/tardis_bootstrap/G-AIA-210_tardis_bootstrap.pdf"
+        - text: "Dataset"
+          url: "/assets/subjects/bigdata/tardis_bootstrap/dataset.csv"
+
+    - title: "Projet 2: TARDIS - Prédire l'imprévisible"
+      difficulty: "Intermédiaire"
+      duration: "10-15 heures"
+      objective: "Analyser et prédire les retards de trains à l'aide de techniques de machine learning"
+      description: |
+        <p>Ce projet te place dans le rôle d'un analyste de données pour la SNCF. Ta mission est d'analyser les données historiques sur les retards des trains, de découvrir des modèles cachés et de développer un modèle prédictif qui peut prévoir les retards avant qu'ils ne se produisent.</p>
+        <p>Le projet se décompose en 4 étapes principales :</p>
+        <ol>
+          <li><strong>Nettoyage et prétraitement des données</strong> - Gestion des valeurs manquantes, des incohérences et préparation du dataset pour l'analyse.</li>
+          <li><strong>Analyse exploratoire (EDA)</strong> - Création de visualisations pertinentes pour comprendre les tendances et corrélations.</li>
+          <li><strong>Modélisation prédictive</strong> - Implémentation d'un modèle de machine learning pour prédire les retards des trains.</li>
+          <li><strong>Développement d'un dashboard</strong> - Création d'une application web interactive avec Streamlit pour présenter les résultats.</li>
+        </ol>
+        <p>Un sujet complet détaille chaque étape et les livrables attendus.</p>
+      technologies:
+        - "Python avec pandas, matplotlib, seaborn"
+        - "Machine learning avec scikit-learn"
+        - "Création d'interfaces utilisateur avec Streamlit"
+        - "Développement d'un pipeline complet de data science"
+      resources:
+        - text: "Sujet complet (PDF)"
+          url: "/assets/subjects/bigdata/tardis_suite/G-AIA-210_tardis.pdf"
+        - text: "Dataset"
+          url: "/assets/subjects/bigdata/tardis_suite/dataset.csv"
+
+    - title: "Projet 3: Analyse de données massives"
+      difficulty: "Débutant"
+      duration: "4-6 heures"
+      objective: "Explorer et analyser un jeu de données volumineux pour en extraire des insights"
+      description: |
+        <p>Dans ce projet, tu vas plonger dans un dataset volumineux du monde réel pour en extraire des tendances et patterns intéressants. Tu suivras une méthodologie structurée:</p>
+        <ol>
+          <li><strong>Préparation</strong>: Installer les bibliothèques nécessaires (pandas, matplotlib, seaborn) et charger le dataset</li>
+          <li><strong>Exploration initiale</strong>: Comprendre la structure des données (types, valeurs manquantes, distributions)</li>
+          <li><strong>Nettoyage</strong>: Traiter les valeurs manquantes et aberrantes, standardiser les formats</li>
+          <li><strong>Analyse</strong>: Calculer des statistiques descriptives et identifier des relations entre variables</li>
+          <li><strong>Visualisation</strong>: Créer au moins 3 types de graphiques différents pour illustrer tes découvertes</li>
+          <li><strong>Insights</strong>: Formuler au moins 5 conclusions basées sur ton analyse</li>
+        </ol>
+        <p>Pour chaque étape, documenter ton raisonnement et justifier tes choix techniques dans un notebook Jupyter.</p>
+      technologies:
+        - "Python avec pandas, matplotlib, seaborn"
+        - "Jupyter Notebook"
+      datasets:
+        - text: "NYC Taxi Trips"
+          url: "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page"
+        - text: "Instacart Market Basket"
+          url: "https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis"
+        - text: "Parcoursup"
+          url: "https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-parcoursup/information/"
+
+ecosystem:
+  title: "Écosystème Big Data"
+  tools:
+    - title: "Stockage distribué"
+      technologies: "HDFS, Amazon S3, Azure Data Lake Storage, Google Cloud Storage, MinIO"
+      notes: "Les data lakes sont devenus le standard pour stocker de grandes quantités de données brutes à faible coût. **S3** a imposé son API comme interface standard."
+    
+    - title: "Processing batch"
+      technologies: "Apache Spark, Apache Hadoop MapReduce, Apache Flink"  
+      notes: "**Spark** domine largement ce segment grâce à ses performances in-memory et ses APIs variées (SQL, DataFrame, ML)."
+
+resources:
+  title: "Ressources d'apprentissage"
+  courses:
+    - title: "Big Data Specialization"
+      provider: "UC San Diego sur Coursera"
+      description: "Série de 6 cours couvrant l'écosystème Hadoop, Spark, NoSQL et les techniques d'analyse."
+      url: "https://www.coursera.org/specializations/big-data"
+    
+    - title: "Databricks Academy"
+      provider: "Databricks"
+      description: "Formations gratuites sur Spark, Delta Lake et le Lakehouse, par les créateurs de ces technologies."
+      url: "https://www.databricks.com/learn/training/lakehouse-fundamentals"
+
+career_paths:
+  title: "Perspectives de carrière"
+  roles:
+    - title: "Data Engineer"
+      icon: "fas fa-cogs"
+      mission: "Construire et maintenir l'infrastructure et les pipelines de données."
+      skills: "SQL, Python, Spark, cloud, pipelines ETL/ELT, orchestration"
+      salary: "45-75K€"
+      country: "France"
+    
+    - title: "Big Data Architect"
+      icon: "fas fa-sitemap"
+      mission: "Concevoir des architectures data robustes, scalables et sécurisées."
+      skills: "Architecture distribuée, data modeling, sécurité, gouvernance"
+      salary: "60-90K€"
+      country: "France"
+    
+    - title: "Data Analyst"
+      icon: "fas fa-chart-line"
+      mission: "Analyser les données pour en extraire des insights business et faciliter la prise de décision."
+      skills: "SQL, Excel, BI (Tableau, Power BI), statistiques, data storytelling"
+      salary: "40-65K€"
+      country: "France"
+    
+    - title: "Data Scientist"
+      icon: "fas fa-database"
+      mission: "Créer des modèles prédictifs et extraire de la valeur des données via des algorithmes avancés."
+      skills: "Python/R, statistiques, machine learning, data mining, modélisation"
+      salary: "45-80K€"
+      country: "France"
+
+  evolution:
+    title: "Évolution de carrière"
+    timeline:
+      - category: "Début de carrière"
+        side: "left"
+        items:
+          - title: "Junior Data Engineer"
+            description: "Construction de pipelines ETL et infrastructure data"
+          - title: "BI Analyst"
+            description: "Création de tableaux de bord et reporting pour le business"
+          - title: "Data Analyst"
+            description: "Analyse de données et production d'insights"
+          - title: "Database Developer"
+            description: "Développement et optimisation de bases de données"
+      
+      - category: "Mi-carrière"
+        side: "right"
+        items:
+          - title: "Senior Data Engineer"
+            description: "Conception d'architectures data complexes"
+          - title: "Data Science Manager"
+            description: "Supervision d'équipes d'analystes et scientifiques"
+          - title: "Cloud Data Architect"
+            description: "Conception de solutions data sur le cloud"
+          - title: "Analytics Consultant"
+            description: "Conseil en stratégie data pour organisations"
+      
+      - category: "Senior"
+        side: "left"
+        items:
+          - title: "Chief Data Officer"
+            description: "Direction de la stratégie data au niveau exécutif"
+          - title: "VP of Analytics"
+            description: "Supervision des initiatives analytiques globales"
+          - title: "Data Governance Director"
+            description: "Établissement des standards et politiques de données"
+          - title: "Data Entrepreneur"
+            description: "Création de startups innovantes basées sur les données"
+
+  market_trends:
+    title: "Tendances du marché"
+    items:
+      - "+43% de croissance des offres d'emploi en Big Data et Analytics depuis 2020"
+      - "85% des entreprises déclarent avoir du mal à recruter des profils data qualifiés"
+      - "Fortes demandes dans les secteurs de la santé, finance, retail et industrie 4.0"
+      - "Convergence IA/Big Data créant de nouveaux rôles hybrides à forte valeur ajoutée"
+      - "+30% de premium salarial pour les profils maîtrisant à la fois les technologies data et le cloud"
+
+summary:
+  title: "En résumé"
+  description: "Le Big Data & Analytics représente un domaine fondamental dans l'économie numérique moderne, transformant la façon dont les organisations comprennent leurs activités et prennent des décisions. Cette spécialité combine :"
+  points:
+    - title: "Technologies de pointe"
+      description: "Maîtrise des frameworks distribués et architectures scalables"
+    - title: "Analyse stratégique"
+      description: "Transformation des données en insights actionables pour le business"
+    - title: "Impact mesurable"
+      description: "Optimisation des performances et création de valeur tangible"
+    - title: "Polyvalence"
+      description: "Applications dans tous les secteurs économiques"
+    - title: "Évolution rapide"
+      description: "Intégration croissante avec l'IA et les technologies émergentes"
+  conclusion: "Cette spécialité MSc te prépare à devenir un architecte de solutions data modernes, capable de naviguer dans l'écosystème complexe du Big Data tout en gardant une perspective business."
+
+has_media: true
+media:
+  - title: "Témoignage – David (Alumni Epitech 2018)"
+    description: "Staff Data Engineer chez Betclic."
+    url: "https://www.youtube.com/embed/JCywHkeHqpM"
+  - title: "Le Big Data, c'est quoi ?"
+    description: "Définition et explication en vidéo."
+    url: "https://www.youtube.com/embed/xO7M2yfDNoc"
