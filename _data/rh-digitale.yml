@@ -160,7 +160,13 @@ projects:
         - "Trello ou Asana pour la gestion de projet"
         - "Mailchimp pour l'automatisation d'emails"
         - "Google Forms pour les formulaires"
-      resources: []
+      resources:
+        - text: "Guide onboarding - Trello"
+          url: "https://blog.trello.com/employee-onboarding-process"
+        - text: "Mailchimp Academy - Automation"
+          url: "https://mailchimp.com/help/about-automation/"
+        - text: "Google Forms - Créer des formulaires"
+          url: "https://support.google.com/docs/answer/6281888"
     
     - title: "Projet 2: Construire un tableau de bord RH sur un jeu de données"
       difficulty: "Intermédiaire"
@@ -186,7 +192,13 @@ projects:
         - "Analyse comparative SIRH"
         - "Évaluation de solutions"
         - "Rédaction de recommandations"
-      resources: []
+      resources:
+        - text: "Guide d'évaluation SIRH"
+          url: "https://www.lucca.fr/guide/choisir-sirh"
+        - text: "Comparatif SIRH PME"
+          url: "https://www.capterra.fr/directory/30079/hr/software"
+        - text: "Grille d'évaluation logiciel"
+          url: "https://blog.payfit.com/fr/comment-choisir-sirh/"
 
 ecosystem:
   title: "Écosystème de la HR Tech"

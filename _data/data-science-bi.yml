@@ -164,7 +164,13 @@ projects:
         - "Python avec pandas, matplotlib, seaborn"
         - "Jupyter Notebook pour l'analyse interactive"
         - "APIs de services (Spotify, etc.)"
-      resources: []
+      resources:
+        - text: "Spotify Web API Guide"
+          url: "https://developer.spotify.com/documentation/web-api/"
+        - text: "Pandas Tutorial complet"
+          url: "https://pandas.pydata.org/docs/getting_started/intro_tutorials/"
+        - text: "Seaborn Gallery"
+          url: "https://seaborn.pydata.org/examples/index.html"
     
     - title: "Projet 2: Participer à une compétition Kaggle"
       difficulty: "Intermédiaire"
@@ -194,7 +200,13 @@ projects:
         - "Préparation et nettoyage de données"
         - "Principes de data visualisation"
         - "Design de dashboards interactifs"
-      resources: []
+      resources:
+        - text: "Tableau Learning Path"
+          url: "https://www.tableau.com/learn/training"
+        - text: "Power BI Learning Path"
+          url: "https://docs.microsoft.com/en-us/learn/powerplatform/power-bi"
+        - text: "Data Visualization Principles"
+          url: "https://www.storytellingwithdata.com/fundamentals"
 
 ecosystem:
   title: "Écosystème Data"

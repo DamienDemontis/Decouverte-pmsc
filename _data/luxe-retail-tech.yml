@@ -171,7 +171,13 @@ projects:
         - "Outils d'analyse UX"
         - "Customer Journey Mapping"
         - "Grille d'audit omnicanal"
-      resources: []
+      resources:
+        - text: "Customer Journey Mapping Guide"
+          url: "https://www.salesforce.com/resources/articles/customer-journey/"
+        - text: "UX Tools et Methods"
+          url: "https://uxtools.co/survey-2021/"
+        - text: "Audit d'expérience omnicanal"
+          url: "https://blog.adobe.com/en/publish/2019/04/18/omnichannel-customer-experience-audit"
     
     - title: "Projet 3: Designer un concept de boutique 'phygitale'"
       difficulty: "Intermédiaire"
@@ -183,7 +189,13 @@ projects:
         - "Outils de design (Canva, Figma)"
         - "Concepts retail tech"
         - "UX/UI design"
-      resources: []
+      resources:
+        - text: "Figma - Design de magasins connectés"
+          url: "https://www.figma.com/community/file/retail-design-templates"
+        - text: "Retail Innovation Lab"
+          url: "https://nrf.com/research/retail-innovation-and-technology"
+        - text: "Concepts phygital retail"
+          url: "https://blog.salesforce.com/what-is-phygital-retail/"
 
 ecosystem:
   title: "Écosystème Luxe & Retail Tech"
@@ -241,33 +253,145 @@ ecosystem:
           url: "https://www.auraluxuryblockchain.com/"
 
 resources:
-  title: "Ressources d'apprentissage"
+  title: "Ressources"
   books:
-    media:
-      title: "Médias de référence"
+    fundamentals:
+      title: "Fondamentaux et introduction"
+      items:
+        - title: "The New Rules of Retail"
+          authors: "Robin Lewis & Michael Dart"
+          url: "https://www.amazon.fr/New-Rules-Retail-Competing-Consumer/dp/0230103788"
+        - title: "Retail 4.0"
+          authors: "Stefan Gerlach & Michael Renz"
+          url: "https://www.amazon.fr/Retail-4-0-Digital-Transformation-Industry/dp/3030301567"
+        - title: "The Luxury Strategy"
+          authors: "Jean-Noël Kapferer & Vincent Bastien"
+          url: "https://www.amazon.fr/Luxury-Strategy-Break-Rules-Marketing/dp/0749464912"
+        - title: "Digital Luxury"
+          authors: "Wided Batat"
+          url: "https://www.amazon.fr/Digital-Luxury-Transforming-Brands-Consumer/dp/1137600004"
+    
+    specialized:
+      title: "Spécialisations avancées"
+      items:
+        - title: "The Future of Retail"
+          authors: "Doug Stephens"
+          url: "https://www.amazon.fr/Future-Retail-Everything-Selling-Buying/dp/1118456538"
+        - title: "Retail Therapy"
+          authors: "Mark Pilkington"
+          url: "https://www.amazon.fr/Retail-Therapy-Industry-Transformed-Technology/dp/1472962484"
+        - title: "Luxury Brand Management"
+          authors: "Michel Chevalier & Gerald Mazzalovo"
+          url: "https://www.amazon.fr/Luxury-Brand-Management-Chevalier-Mazzalovo/dp/1119192498"
+        - title: "The Experience Economy"
+          authors: "B. Joseph Pine II & James H. Gilmore"
+          url: "https://www.amazon.fr/Experience-Economy-Updated-Edition/dp/1422161976"
+
+  online_courses:
+    moocs:
+      title: "MOOCs de référence"
+      items:
+        - title: "Retail and Omnichannel Management"
+          provider: "Coursera - University of Pennsylvania"
+          url: "https://www.coursera.org/learn/retail-omnichannel"
+        - title: "Digital Marketing"
+          provider: "Coursera - University of Illinois"
+          url: "https://www.coursera.org/specializations/digital-marketing"
+        - title: "Fashion as Design"
+          provider: "Coursera - MoMA"
+          url: "https://www.coursera.org/learn/fashion-design"
+        - title: "Customer Analytics"
+          provider: "Coursera - University of Pennsylvania"
+          url: "https://www.coursera.org/learn/customer-analytics"
+    
+    youtube:
+      title: "Chaînes YouTube éducatives"
       items:
         - title: "Business of Fashion"
-          authors: "USA/UK (en anglais)"
-          description: "Le média de référence pour une analyse approfondie de l'industrie de la mode et du luxe."
+          description: "Analyses et interviews sur la mode et le luxe"
+          url: "https://www.youtube.com/c/BusinessofFashion"
+        - title: "Vogue"
+          description: "Contenu mode et luxe"
+          url: "https://www.youtube.com/c/Vogue"
+        - title: "Retail TouchPoints"
+          description: "Actualités et analyses retail"
+          url: "https://www.youtube.com/c/RetailTouchPoints"
+        - title: "Luxury Society"
+          description: "Contenu sur l'industrie du luxe"
+          url: "https://www.youtube.com/c/LuxurySociety"
+
+  blogs_newsletters:
+    blogs:
+      title: "Blogs techniques"
+      items:
+        - title: "Business of Fashion"
+          description: "Média de référence sur la mode et le luxe"
           url: "https://www.businessoffashion.com/"
         - title: "LSA - Libre Service Actualités"
-          authors: "France"
-          description: "Le magazine leader en France sur l'actualité de la grande consommation et du retail."
+          description: "Actualités retail françaises"
           url: "https://www.lsa-conso.fr/"
         - title: "Vogue Business"
-          authors: "USA/UK (en anglais)"
-          description: "Analyse les tendances émergentes à l'intersection de la mode, du luxe et de la technologie."
+          description: "Analyses mode, luxe et technologie"
           url: "https://www.voguebusiness.com/"
-  
-  reports:
-    title: "Rapports & Études"
+        - title: "Retail TouchPoints"
+          description: "Blog sur l'innovation retail"
+          url: "https://www.retailtouchpoints.com/"
+    
+    newsletters:
+      title: "Newsletters et actualités"
+      items:
+        - title: "Business of Fashion Newsletter"
+          description: "Newsletter quotidienne sur la mode"
+          url: "https://www.businessoffashion.com/newsletter"
+        - title: "LSA Newsletter"
+          description: "Actualités retail françaises"
+          url: "https://www.lsa-conso.fr/newsletter"
+        - title: "Vogue Business Newsletter"
+          description: "Analyses mode et luxe"
+          url: "https://www.voguebusiness.com/newsletter"
+        - title: "Retail TouchPoints Newsletter"
+          description: "Innovation retail"
+          url: "https://www.retailtouchpoints.com/newsletter"
+
+  datasets:
+    title: "Outils et plateformes de pratique"
+    description: "Pour pratiquer et tester vos compétences en retail tech :"
     items:
-      - title: "Bain & Company Luxury Study"
-        description: "L'étude de référence annuelle sur le marché du luxe, réalisée avec la fondation Altagamma."
-        url: "https://www.bain.com/insights/renaissance-in-uncertainty-luxury-builds-on-its-rebound/"
-      - title: "Deloitte Global Powers of Retailing"
-        description: "Un rapport annuel qui analyse les performances et les stratégies des plus grands distributeurs mondiaux."
-        url: "https://www2.deloitte.com/global/en/pages/consumer-business/articles/global-powers-of-retailing.html"
+      - title: "Shopify"
+        description: "Plateforme e-commerce pour créer des boutiques en ligne"
+        url: "https://www.shopify.com/"
+      - title: "WooCommerce"
+        description: "Plugin e-commerce pour WordPress"
+        url: "https://woocommerce.com/"
+      - title: "Magento"
+        description: "Plateforme e-commerce open source"
+        url: "https://magento.com/"
+      - title: "Salesforce Commerce Cloud"
+        description: "Plateforme e-commerce B2C et B2B"
+        url: "https://www.salesforce.com/products/commerce-cloud/"
+      - title: "Figma"
+        description: "Outil de design pour créer des interfaces"
+        url: "https://www.figma.com/"
+
+  conferences:
+    title: "Conférences et événements"
+    description: "Pour rester à jour et networker avec la communauté retail :"
+    items:
+      - title: "NRF (National Retail Federation)"
+        description: "Conférence majeure sur le retail"
+        url: "https://nrf.com/events"
+      - title: "Retail Week Live"
+        description: "Conférence retail européenne"
+        url: "https://retailweeklive.com/"
+      - title: "Paris Retail Week"
+        description: "Salon retail français"
+        url: "https://www.parisretailweek.com/"
+      - title: "Luxury Digital Summit"
+        description: "Conférence sur le luxe digital"
+        url: "https://luxurydigitalsummit.com/"
+      - title: "Viva Technology"
+        description: "Salon français de l'innovation"
+        url: "https://vivatechnology.com/"
 
 careers: true
 career_paths:

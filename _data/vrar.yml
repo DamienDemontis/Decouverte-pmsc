@@ -145,7 +145,13 @@ projects:
         - "Casque VR (recommandé mais pas obligatoire - simulation possible)"
         - "C# pour le scripting"
         - "Conception d'environnements 3D"
-      resources: []
+      resources:
+        - text: "Unity XR Interaction Toolkit Documentation"
+          url: "https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.0/manual/index.html"
+        - text: "Unity Learn - VR Development"
+          url: "https://learn.unity.com/course/oculus-vr"
+        - text: "C# pour Unity - Microsoft Learn"
+          url: "https://docs.microsoft.com/en-us/dotnet/csharp/"
     
     - title: "Projet 2: AR Product Visualizer"
       difficulty: "Intermédiaire"

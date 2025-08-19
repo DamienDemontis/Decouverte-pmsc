@@ -247,7 +247,13 @@ projects:
         - "Capteurs DHT11/22, BMP280"
         - "Protocole MQTT et Wi-Fi"
         - "Plateforme cloud IoT"
-      resources: []
+      resources:
+        - text: "Guide ESP32 - Documentation officielle"
+          url: "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/"
+        - text: "Arduino IDE pour ESP32"
+          url: "https://randomnerdtutorials.com/getting-started-with-esp32/"
+        - text: "MQTT Tutorial - ESP32"
+          url: "https://randomnerdtutorials.com/esp32-mqtt-publish-subscribe-arduino-ide/"
     
     - title: "Projet 2: Système de contrôle domotique"
       difficulty: "Intermédiaire"
@@ -268,7 +274,13 @@ projects:
         - "ESP32 et ESP8266"
         - "Modules relais et capteurs variés"
         - "Communication MQTT"
-      resources: []
+      resources:
+        - text: "Home Assistant - Guide d'installation"
+          url: "https://www.home-assistant.io/installation/"
+        - text: "ESP32 avec Home Assistant"
+          url: "https://esphome.io/guides/getting_started_hassio.html"
+        - text: "MQTT Integration Guide"
+          url: "https://www.home-assistant.io/integrations/mqtt/"
     
     - title: "Projet 3: Système de surveillance environnementale LoRaWAN"
       difficulty: "Avancé"
@@ -289,7 +301,13 @@ projects:
         - "Passerelle LoRaWAN (TTIG, Dragino, RAK)"
         - "The Things Network"
         - "Optimisation énergétique avancée"
-      resources: []
+      resources:
+        - text: "The Things Network - Documentation"
+          url: "https://www.thethingsnetwork.org/docs/"
+        - text: "LoRaWAN Academy"
+          url: "https://lora-developers.semtech.com/resources/tools/lora-basics/"
+        - text: "LoRa Development Tutorial"
+          url: "https://randomnerdtutorials.com/esp32-lora-rfm95-transceiver-arduino-ide/"
 
 ecosystem:
   title: "Écosystème IoT"

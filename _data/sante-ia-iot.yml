@@ -155,7 +155,13 @@ projects:
         - "Analyse d'applications mobiles santé"
         - "Expérience utilisateur (UX)"
         - "Modèles économiques e-santé"
-      resources: []
+      resources:
+        - text: "Guide des applications de santé - ANSM"
+          url: "https://ansm.sante.fr/documents/reference/referentiel-de-bonnes-pratiques-sur-les-applications-et-les-objets-connectes-en-sante-mobile-health-ou-m-sante"
+        - text: "UX Design pour la santé"
+          url: "https://www.interaction-design.org/literature/topics/healthcare-design"
+        - text: "Modèles économiques e-santé"
+          url: "https://www.fondation-fhf.org/documents/modeles-economiques-e-sante.pdf"
     
     - title: "Projet 2: Concevoir le concept d'une application de e-santé"
       difficulty: "Intermédiaire"
@@ -167,7 +173,13 @@ projects:
         - "Design thinking en santé"
         - "Maquettage et prototypage"
         - "Stratégie produit e-santé"
-      resources: []
+      resources:
+        - text: "Design Thinking pour la santé - d.school"
+          url: "https://dschool.stanford.edu/resources/design-thinking-for-health"
+        - text: "Figma - Prototypage d'applications"
+          url: "https://www.figma.com/resources/learn-design/"
+        - text: "Product Management en e-santé"
+          url: "https://medium.com/healthtech-product-management"
     
     - title: "Projet 3: Rédiger une note sur les enjeux éthiques d'un projet IA en santé"
       difficulty: "Intermédiaire"
@@ -179,7 +191,13 @@ projects:
         - "Éthique de l'IA en santé"
         - "Analyse des risques réglementaires"
         - "Rédaction de recommandations"
-      resources: []
+      resources:
+        - text: "Éthique de l'IA en santé - WHO"
+          url: "https://www.who.int/publications/i/item/9789240029200"
+        - text: "RGPD et données de santé - CNIL"
+          url: "https://www.cnil.fr/fr/la-sante-connectee"
+        - text: "Guide réglementaire dispositifs médicaux - ANSM"
+          url: "https://ansm.sante.fr/page/dispositifs-medicaux-et-dispositifs-medicaux-de-diagnostic-in-vitro"
 
 ecosystem:
   title: "Écosystème de la e-santé"

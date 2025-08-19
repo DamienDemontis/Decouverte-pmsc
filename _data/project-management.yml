@@ -307,37 +307,148 @@ ecosystem:
           url: "https://www.techstars.com/"
 
 resources:
-  title: "Ressources d'apprentissage"
+  title: "Ressources"
   books:
     fundamentals:
-      title: "Livres incontournables"
+      title: "Fondamentaux et introduction"
       items:
         - title: "The Lean Startup"
           authors: "Eric Ries"
-          description: "La bible pour comprendre comment lancer des entreprises et des produits de manière itérative et centrée sur le client."
           url: "https://www.theleanstartup.com"
         - title: "Inspired"
           authors: "Marty Cagan"
-          description: "Un guide essentiel pour comprendre le rôle du Product Manager et créer des produits technologiques que les clients adorent."
           url: "https://www.svpg.com/inspired-how-to-create-tech-products-customers-love/"
         - title: "Measure What Matters"
           authors: "John Doerr"
-          description: "Introduction à la méthode des OKR (Objectives and Key Results) pour fixer et suivre des objectifs ambitieux."
-          url: ""
+          url: "https://www.whatmatters.com/"
         - title: "The Hard Thing About Hard Things"
           authors: "Ben Horowitz"
-          description: "Des conseils francs et directs sur les défis les plus difficiles de la création et de la direction d'une startup."
-          url: ""
-  
-  courses:
-    title: "Cours en ligne"
+          url: "https://www.amazon.fr/Hard-Thing-About-Things-Building/dp/0062273205"
+        - title: "Scrum: The Art of Doing Twice the Work in Half the Time"
+          authors: "Jeff Sutherland"
+          url: "https://www.amazon.fr/Scrum-Doing-Twice-Work-Half/dp/1847941100"
+    
+    specialized:
+      title: "Spécialisations avancées"
+      items:
+        - title: "The Startup Owner's Manual"
+          authors: "Steve Blank & Bob Dorf"
+          url: "https://www.amazon.fr/Startup-Owners-Manual-Step-Step/dp/0984999302"
+        - title: "Running Lean"
+          authors: "Ash Maurya"
+          url: "https://www.amazon.fr/Running-Lean-Iterate-Plan-Works/dp/1449305172"
+        - title: "The Design of Everyday Things"
+          authors: "Don Norman"
+          url: "https://www.amazon.fr/Design-Everyday-Things-Don-Norman/dp/0465050654"
+        - title: "Hooked: How to Build Habit-Forming Products"
+          authors: "Nir Eyal"
+          url: "https://www.amazon.fr/Hooked-Build-Habit-Forming-Products/dp/1591847788"
+
+  online_courses:
+    moocs:
+      title: "MOOCs de référence"
+      items:
+        - title: "Become a Product Manager"
+          provider: "Udacity"
+          url: "https://www.udacity.com/course/product-manager-nanodegree--nd036"
+        - title: "Agile with Atlassian Jira"
+          provider: "Coursera"
+          url: "https://www.coursera.org/learn/agile-atlassian-jira"
+        - title: "Digital Product Management"
+          provider: "edX"
+          url: "https://www.edx.org/course/digital-product-management"
+        - title: "Project Management Principles and Practices"
+          provider: "Coursera"
+          url: "https://www.coursera.org/learn/project-management"
+    
+    youtube:
+      title: "Chaînes YouTube éducatives"
+      items:
+        - title: "Product School"
+          description: "Webinaires et tutoriels sur le Product Management"
+          url: "https://www.youtube.com/c/ProductSchool"
+        - title: "Marty Cagan"
+          description: "Conférences et conseils du fondateur de SVPG"
+          url: "https://www.youtube.com/c/MartyCagan"
+        - title: "Mind the Product"
+          description: "Conférences et interviews de Product Managers"
+          url: "https://www.youtube.com/c/MindTheProduct"
+        - title: "Agile Alliance"
+          description: "Contenu éducatif sur l'agilité et Scrum"
+          url: "https://www.youtube.com/c/AgileAlliance"
+
+  blogs_newsletters:
+    blogs:
+      title: "Blogs techniques"
+      items:
+        - title: "SVPG Blog"
+          description: "Blog de Marty Cagan sur le Product Management"
+          url: "https://svpg.com/articles/"
+        - title: "Mind the Product"
+          description: "Blog de référence sur le Product Management"
+          url: "https://www.mindtheproduct.com/"
+        - title: "Roman Pichler"
+          description: "Blog spécialisé sur Scrum et Product Ownership"
+          url: "https://www.romanpichler.com/blog/"
+        - title: "The Lean Startup Blog"
+          description: "Blog officiel d'Eric Ries"
+          url: "https://theleanstartup.com/blog/"
+    
+    newsletters:
+      title: "Newsletters et actualités"
+      items:
+        - title: "Product Hunt Daily"
+          description: "Découverte de nouveaux produits et tendances"
+          url: "https://www.producthunt.com/newsletter"
+        - title: "Mind the Product Newsletter"
+          description: "Newsletter hebdomadaire sur le Product Management"
+          url: "https://www.mindtheproduct.com/newsletter/"
+        - title: "The Startup Newsletter"
+          description: "Actualités et conseils pour entrepreneurs"
+          url: "https://thestartup.co/"
+        - title: "Agile Alliance Newsletter"
+          description: "Actualités et ressources sur l'agilité"
+          url: "https://www.agilealliance.org/newsletter/"
+
+  datasets:
+    title: "Outils et plateformes de pratique"
+    description: "Pour pratiquer et tester vos compétences en gestion de projet :"
     items:
-      - title: "Become a Product Manager"
-        description: "Un Nanodegree complet qui couvre la stratégie produit, la conception, le développement et le lancement."
-        url: "https://www.udacity.com/course/product-manager-nanodegree--nd036"
-      - title: "Agile with Atlassian Jira"
-        description: "Apprenez les principes de l'Agilité et comment les appliquer concrètement avec l'outil le plus populaire du marché, Jira."
-        url: "https://www.coursera.org/learn/agile-atlassian-jira"
+      - title: "Trello"
+        description: "Outil de gestion de projet visuel et collaboratif"
+        url: "https://trello.com/"
+      - title: "Asana"
+        description: "Plateforme de gestion de projet et de travail d'équipe"
+        url: "https://asana.com/"
+      - title: "Jira"
+        description: "Outil de gestion de projet agile par Atlassian"
+        url: "https://www.atlassian.com/software/jira"
+      - title: "Notion"
+        description: "Espace de travail tout-en-un pour équipes"
+        url: "https://www.notion.so/"
+      - title: "Miro"
+        description: "Tableau blanc collaboratif pour brainstorming"
+        url: "https://miro.com/"
+
+  conferences:
+    title: "Conférences et événements"
+    description: "Pour rester à jour et networker avec la communauté :"
+    items:
+      - title: "Mind the Product"
+        description: "Conférence internationale de Product Management"
+        url: "https://www.mindtheproduct.com/conferences/"
+      - title: "ProductCamp"
+        description: "Conférences non-commerciales organisées par la communauté"
+        url: "https://productcamp.org/"
+      - title: "Agile Alliance Conference"
+        description: "Conférence annuelle sur l'agilité"
+        url: "https://www.agilealliance.org/agile2024/"
+      - title: "Startup Grind"
+        description: "Conférences et événements pour entrepreneurs"
+        url: "https://www.startupgrind.com/"
+      - title: "Viva Technology"
+        description: "Salon français de l'innovation et des startups"
+        url: "https://vivatechnology.com/"
 
 careers: true
 career_paths:

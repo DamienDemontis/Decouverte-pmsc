@@ -45,6 +45,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // Ensure each project card has individual click handling
   document.querySelectorAll('.project-card').forEach(function(card, index) {
     card.addEventListener('click', function(e) {
+      // Don't toggle if clicking on a link
+      if (e.target.tagName === 'A' || e.target.closest('a')) {
+        return;
+      }
+      
       e.stopPropagation();
       e.preventDefault();
       

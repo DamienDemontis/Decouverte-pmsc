@@ -83,7 +83,7 @@ _config.yml → Global Variables → All Templates
 ```liquid
 {{ site.data.navigation.main }}         # Menu principal
 {{ site.data.navigation.categories }}   # Catégories spécialités
-{{ site.data.specialities.[slug] }}     # Données spécialité
+{{ site.data.specialities[slug] }}      # Données spécialité
 ```
 
 ## 🧩 Système de composants

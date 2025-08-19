@@ -251,33 +251,9 @@ projects:
         - text: "Burp Suite Community Edition"
           url: "https://portswigger.net/burp/communitydownload"
     
-    - title: "Projet 3: Introduction à la Sécurité des Applications"
-      difficulty: "Intermédiaire"
-      duration: "8-10 heures"
-      objective: "Découvrir et exploiter différentes vulnérabilités courantes dans les applications, puis apprendre à les corriger"
-      description: |
-        <p>Ce projet pratique complet vous guide à travers plusieurs types de vulnérabilités applicatives comme :</p>
-        <ul>
-          <li><strong>Format String Attack</strong> - Exploiter les chaînes de formatage vulnérables</li>
-          <li><strong>Buffer Overflow</strong> - Découvrir comment déborder les tampons mémoire</li>
-          <li><strong>Use After Free</strong> - Comprendre les vulnérabilités liées à la gestion de la mémoire</li>
-          <li><strong>Command Injection</strong> - Exécuter des commandes non autorisées sur un système</li>
-          <li><strong>Race Condition</strong> - Exploiter le timing des opérations</li>
-          <li><strong>Hardcoded Password</strong> - Trouver des mots de passe codés en dur dans les applications</li>
-          <li><strong>Core Dumps</strong> - Analyser les fichiers de vidage mémoire lors de crashs</li>
-        </ul>
-      technologies:
-        - "Analyse de binaires et code source"
-        - "Techniques d'exploitation éthique"
-        - "Développement de code sécurisé"
-        - "Debugging et analyse de crash"
-      resources:
-        - text: "Sujet Découverte Cybersécurité (PDF)"
-          url: "/assets/subjects/cybersecurity/Sujet_Decouverte_CyberSec.pdf"
-        - text: "Assets pour les exercices (ZIP)"
-          url: "/assets/subjects/cybersecurity/Assets.zip"
+
     
-    - title: "Projet 4: CTF (Capture The Flag)"
+    - title: "Projet 3: CTF (Capture The Flag)"
       difficulty: "Intermédiaire"
       duration: "8-12 heures"
       objective: "Résoudre une série de défis de sécurité pratiques"
@@ -364,27 +340,145 @@ ecosystem:
           url: "https://www.cisco.com/c/en/us/products/security/adaptive-security-appliance-asa-software.html"
 
 resources:
-  title: "Ressources d'apprentissage"
+  title: "Ressources"
   books:
     fundamentals:
-      title: "Cours en ligne gratuits ou freemium"
+      title: "Fondamentaux et introduction"
+      items:
+        - title: "The Web Application Hacker's Handbook"
+          authors: "Dafydd Stuttard & Marcus Pinto"
+          url: "https://www.amazon.fr/Web-Application-Hackers-Handbook-Exploiting/dp/1118026470"
+        - title: "Hacking: The Art of Exploitation"
+          authors: "Jon Erickson"
+          url: "https://www.amazon.fr/Hacking-Art-Exploitation-Jon-Erickson/dp/1593271441"
+        - title: "Network Security: Private Communication in a Public World"
+          authors: "Charlie Kaufman, Radia Perlman & Mike Speciner"
+          url: "https://www.amazon.fr/Network-Security-Private-Communication-Public/dp/0137155889"
+        - title: "Applied Cryptography"
+          authors: "Bruce Schneier"
+          url: "https://www.amazon.fr/Applied-Cryptography-Protocols-Algorithms-Source/dp/1119096723"
+    
+    specialized:
+      title: "Spécialisations avancées"
+      items:
+        - title: "The Art of Deception"
+          authors: "Kevin Mitnick"
+          url: "https://www.amazon.fr/Art-Deception-Controlling-Human-Element/dp/076454280X"
+        - title: "Malware Analyst's Cookbook"
+          authors: "Michael Ligh, Steven Adair, Blake Hartstein & Matthew Richard"
+          url: "https://www.amazon.fr/Malware-Analysts-Cookbook-DVD-Techniques/dp/0470613033"
+        - title: "Practical Reverse Engineering"
+          authors: "Bruce Dang, Alexandre Gazet, Elias Bachaalany & Sébastien Josse"
+          url: "https://www.amazon.fr/Practical-Reverse-Engineering-Bruce-Dang/dp/1118787315"
+        - title: "The Shellcoder's Handbook"
+          authors: "Chris Anley, John Heasman, Felix Lindner & Gerardo Richarte"
+          url: "https://www.amazon.fr/Shellcoders-Handbook-Discovering-Exploiting-Security/dp/047008023X"
+
+  online_courses:
+    moocs:
+      title: "MOOCs de référence"
       items:
         - title: "Cybersecurity Fundamentals"
-          authors: "edX - RITx"
-          description: "Introduction complète aux concepts fondamentaux de la cybersécurité, du réseau à la cryptographie."
+          provider: "edX - RITx"
           url: "https://www.edx.org/course/cybersecurity-fundamentals"
-        - title: "Hack The Box Academy"
-          authors: "Hack The Box"
-          description: "Plateforme d'apprentissage pratique avec des modules sur la sécurité offensive et défensive."
-          url: "https://academy.hackthebox.com/"
-        - title: "Cybersecurity Career Path"
-          authors: "TryHackMe"
-          description: "Parcours complet de formation avec des labs pratiques pour débutants et intermédiaires."
-          url: "https://tryhackme.com/paths"
-        - title: "Cybersécurité de l'ANSSI"
-          authors: "ANSSI"
-          description: "Ressources et guides de bonnes pratiques par l'Agence Nationale de la Sécurité des Systèmes d'Information."
-          url: "https://www.ssi.gouv.fr/particulier/formations/"
+        - title: "Introduction to Cybersecurity"
+          provider: "Coursera - NYU"
+          url: "https://www.coursera.org/learn/intro-cyber-security"
+        - title: "Cybersecurity Specialization"
+          provider: "Coursera - University of Maryland"
+          url: "https://www.coursera.org/specializations/cyber-security"
+        - title: "Ethical Hacking"
+          provider: "Udemy"
+          url: "https://www.udemy.com/course/learn-ethical-hacking-from-scratch/"
+    
+    youtube:
+      title: "Chaînes YouTube éducatives"
+      items:
+        - title: "Computerphile"
+          description: "Explications techniques de concepts de sécurité"
+          url: "https://www.youtube.com/c/Computerphile"
+        - title: "LiveOverflow"
+          description: "Tutoriels de hacking et sécurité informatique"
+          url: "https://www.youtube.com/c/LiveOverflow"
+        - title: "John Hammond"
+          description: "CTF walkthroughs et techniques de sécurité"
+          url: "https://www.youtube.com/c/JohnHammond010"
+        - title: "The Cyber Mentor"
+          description: "Formation pratique en cybersécurité"
+          url: "https://www.youtube.com/c/TheCyberMentor"
+
+  blogs_newsletters:
+    blogs:
+      title: "Blogs techniques"
+      items:
+        - title: "Schneier on Security"
+          description: "Blog de Bruce Schneier sur la sécurité"
+          url: "https://www.schneier.com/"
+        - title: "Krebs on Security"
+          description: "Actualités et analyses de sécurité par Brian Krebs"
+          url: "https://krebsonsecurity.com/"
+        - title: "The Hacker News"
+          description: "Actualités quotidiennes en cybersécurité"
+          url: "https://thehackernews.com/"
+        - title: "Dark Reading"
+          description: "Ressources et analyses pour professionnels de la sécurité"
+          url: "https://www.darkreading.com/"
+    
+    newsletters:
+      title: "Newsletters et actualités"
+      items:
+        - title: "SANS NewsBites"
+          description: "Newsletter quotidienne de SANS Institute"
+          url: "https://www.sans.org/newsletters/newsbites/"
+        - title: "The Record by Recorded Future"
+          description: "Actualités cybersécurité par Recorded Future"
+          url: "https://therecord.media/"
+        - title: "Threatpost"
+          description: "Newsletter de Kaspersky sur les menaces"
+          url: "https://threatpost.com/"
+        - title: "CSO Online"
+          description: "Ressources pour Chief Security Officers"
+          url: "https://www.csoonline.com/"
+
+  datasets:
+    title: "Datasets et environnements de test"
+    description: "Pour pratiquer et tester vos compétences en sécurité :"
+    items:
+      - title: "VulnHub"
+        description: "Machines virtuelles vulnérables pour l'entraînement"
+        url: "https://www.vulnhub.com/"
+      - title: "HackTheBox"
+        description: "Plateforme de machines vulnérables en ligne"
+        url: "https://www.hackthebox.com/"
+      - title: "TryHackMe"
+        description: "Environnements d'apprentissage interactifs"
+        url: "https://tryhackme.com/"
+      - title: "MalwareBazaar"
+        description: "Collection d'échantillons de malware pour analyse"
+        url: "https://bazaar.abuse.ch/"
+      - title: "CVE Database"
+        description: "Base de données des vulnérabilités connues"
+        url: "https://cve.mitre.org/"
+
+  conferences:
+    title: "Conférences et événements"
+    description: "Pour rester à jour et networker avec la communauté cybersécurité :"
+    items:
+      - title: "Black Hat"
+        description: "Conférence internationale de sécurité informatique"
+        url: "https://www.blackhat.com/"
+      - title: "DEF CON"
+        description: "Plus grande conférence de hackers au monde"
+        url: "https://defcon.org/"
+      - title: "RSA Conference"
+        description: "Conférence majeure sur la cybersécurité"
+        url: "https://www.rsaconference.com/"
+      - title: "SANS"
+        description: "Formations et conférences de SANS Institute"
+        url: "https://www.sans.org/events/"
+      - title: "Hack In Paris"
+        description: "Conférence cybersécurité française"
+        url: "https://www.hackinparis.com/"
 
 careers: true
 career_paths:

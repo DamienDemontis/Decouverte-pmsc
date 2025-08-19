@@ -258,30 +258,145 @@ ecosystem:
           url: "https://www.adobe.com/sensei.html"
 
 resources:
-  title: "Ressources d'apprentissage"
+  title: "Ressources"
   books:
     fundamentals:
-      title: "Livres fondamentaux"
+      title: "Fondamentaux et introduction"
       items:
         - title: "Human + Machine"
           authors: "Paul Daugherty & James Wilson"
-          description: "Un guide d'Accenture sur la réinvention du travail à l'ère de l'IA, centré sur la collaboration homme-machine."
+          url: "https://www.amazon.fr/Human-Machine-Artificial-Intelligence-Transformation/dp/1633693864"
         - title: "Prediction Machines"
           authors: "Agrawal, Gans & Goldfarb"
-          description: "Un livre qui démythifie l'IA en la présentant comme une baisse radicale du coût de la prédiction."
-  
-  reports:
-    title: "Rapports & Études"
+          url: "https://www.amazon.fr/Prediction-Machines-Simple-Economics-Artificial/dp/1633695670"
+        - title: "AI Superpowers"
+          authors: "Kai-Fu Lee"
+          url: "https://www.amazon.fr/AI-Superpowers-China-Silicon-Valley/dp/132854639X"
+        - title: "The Business of AI"
+          authors: "Michael Chui & James Manyika"
+          url: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-business-value-of-ai"
+    
+    specialized:
+      title: "Spécialisations avancées"
+      items:
+        - title: "Competing in the Age of AI"
+          authors: "Marco Iansiti & Karim Lakhani"
+          url: "https://www.amazon.fr/Competing-Age-AI-Strategy-Algorithms/dp/1633697622"
+        - title: "The Alignment Problem"
+          authors: "Brian Christian"
+          url: "https://www.amazon.fr/Alignment-Problem-Machine-Learning-Values/dp/0393635821"
+        - title: "AI and the Future of Work"
+          authors: "Paul Daugherty & H. James Wilson"
+          url: "https://www.amazon.fr/Radically-Human-Intelligence-Amplify-Creativity/dp/1647821318"
+        - title: "The AI Organization"
+          authors: "David De Cremer & Garry Kasparov"
+          url: "https://www.amazon.fr/AI-Organization-Artificial-Intelligence-Transformation/dp/1633697894"
+
+  online_courses:
+    moocs:
+      title: "MOOCs de référence"
+      items:
+        - title: "AI for Everyone"
+          provider: "Coursera - Andrew Ng"
+          url: "https://www.coursera.org/learn/ai-for-everyone"
+        - title: "Digital Transformation"
+          provider: "edX - Boston University"
+          url: "https://www.edx.org/course/digital-transformation"
+        - title: "AI Strategy"
+          provider: "Coursera - University of Pennsylvania"
+          url: "https://www.coursera.org/learn/ai-strategy"
+        - title: "Business Analytics"
+          provider: "Coursera - University of Pennsylvania"
+          url: "https://www.coursera.org/learn/business-analytics"
+    
+    youtube:
+      title: "Chaînes YouTube éducatives"
+      items:
+        - title: "Two Minute Papers"
+          description: "Vulgarisation des avancées en IA et recherche"
+          url: "https://www.youtube.com/c/KárolyZsolnai"
+        - title: "Lex Fridman"
+          description: "Podcasts et interviews sur l'IA et la technologie"
+          url: "https://www.youtube.com/c/lexfridman"
+        - title: "MIT Technology Review"
+          description: "Actualités et analyses sur les technologies émergentes"
+          url: "https://www.youtube.com/c/MITTechnologyReview"
+        - title: "AI Alignment"
+          description: "Contenu sur l'alignement et l'éthique de l'IA"
+          url: "https://www.youtube.com/c/AIAlignment"
+
+  blogs_newsletters:
+    blogs:
+      title: "Blogs techniques"
+      items:
+        - title: "McKinsey AI Blog"
+          description: "Analyses et insights sur l'IA en entreprise"
+          url: "https://www.mckinsey.com/capabilities/quantumblack/our-insights"
+        - title: "MIT Technology Review"
+          description: "Actualités et analyses sur les technologies émergentes"
+          url: "https://www.technologyreview.com/"
+        - title: "AI Business"
+          description: "Blog spécialisé sur l'IA en entreprise"
+          url: "https://aibusiness.com/"
+        - title: "VentureBeat AI"
+          description: "Actualités et analyses sur l'IA et la tech"
+          url: "https://venturebeat.com/category/ai/"
+    
+    newsletters:
+      title: "Newsletters et actualités"
+      items:
+        - title: "The Algorithm"
+          description: "Newsletter de MIT Technology Review sur l'IA"
+          url: "https://www.technologyreview.com/newsletter/the-algorithm/"
+        - title: "AI Weekly"
+          description: "Newsletter hebdomadaire sur l'IA"
+          url: "https://aiweekly.co/"
+        - title: "Import AI"
+          description: "Newsletter sur les avancées en IA"
+          url: "https://importai.substack.com/"
+        - title: "Machine Learning Monthly"
+          description: "Newsletter sur le machine learning"
+          url: "https://mlmonthly.com/"
+
+  datasets:
+    title: "Outils et plateformes de pratique"
+    description: "Pour pratiquer et tester vos compétences en transformation IA :"
     items:
-      - title: "The State of AI (McKinsey)"
-        description: "Le rapport annuel de référence sur l'adoption de l'IA en entreprise"
-        url: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
-      - title: "Accenture Technology Vision"
-        description: "Un rapport annuel sur les grandes tendances technologiques qui impactent les entreprises"
-        url: "https://www.accenture.com/us-en/insights/technology/technology-vision"
-      - title: "Gartner Emerging Technologies"
-        description: "Pour comprendre le niveau de maturité des différentes technologies"
-        url: "https://www.gartner.com/en/research/emerging-trends"
+      - title: "Google AI Hub"
+        description: "Plateforme de ressources et outils IA de Google"
+        url: "https://aihub.google.com/"
+      - title: "Microsoft AI"
+        description: "Ressources et outils IA de Microsoft"
+        url: "https://www.microsoft.com/en-us/ai"
+      - title: "IBM Watson"
+        description: "Plateforme d'IA cognitive d'IBM"
+        url: "https://www.ibm.com/watson"
+      - title: "Kaggle"
+        description: "Plateforme de compétitions et datasets de data science"
+        url: "https://www.kaggle.com/"
+      - title: "Hugging Face"
+        description: "Plateforme de modèles et outils d'IA"
+        url: "https://huggingface.co/"
+
+  conferences:
+    title: "Conférences et événements"
+    description: "Pour rester à jour et networker avec la communauté IA :"
+    items:
+      - title: "NeurIPS"
+        description: "Conférence majeure sur le machine learning"
+        url: "https://neurips.cc/"
+      - title: "ICML"
+        description: "Conférence internationale sur le machine learning"
+        url: "https://icml.cc/"
+      - title: "AAAI"
+        description: "Conférence sur l'intelligence artificielle"
+        url: "https://aaai.org/Conferences/AAAI/"
+      - title: "AI Summit"
+        description: "Conférence sur l'IA en entreprise"
+        url: "https://aisummit.com/"
+      - title: "Viva Technology"
+        description: "Salon français de l'innovation et de la tech"
+        url: "https://vivatechnology.com/"
 
 careers: true
 career_paths:

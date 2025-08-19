@@ -121,7 +121,13 @@ roadmap:
         
         - title: "Technologies de sécurité"
           description: "Approfondir les connaissances sur les outils de sécurité : cryptographie, gestion des accès, sécurité des réseaux."
-          resources: []
+          resources:
+            - text: "Cryptographie appliquée - Coursera"
+              url: "https://www.coursera.org/learn/crypto"
+            - text: "Guide ANSSI - Sécurité des réseaux"
+              url: "https://www.ssi.gouv.fr/guide/recommandations-de-securite-relatives-a-ipsec/"
+            - text: "NIST Cybersecurity Framework"
+              url: "https://www.nist.gov/cyberframework"
 
 projects:
   title: "Projets pratiques"
@@ -137,7 +143,13 @@ projects:
         - "Outils d'audit en ligne (ex: Website Policy Generator)"
         - "Grille d'audit RGPD"
         - "Documentation juridique CNIL"
-      resources: []
+      resources:
+        - text: "Kit d'audit RGPD - CNIL"
+          url: "https://www.cnil.fr/fr/rgpd-par-ou-commencer"
+        - text: "Guide pratique RGPD"
+          url: "https://www.cnil.fr/sites/default/files/atoms/files/guide_rgpd_tpe_pme.pdf"
+        - text: "Modèles de politique de confidentialité"
+          url: "https://www.cnil.fr/fr/modeles-mentions-information-et-formulaires"
     
     - title: "Projet 2: Mener une analyse de risques sur un cas simple"
       difficulty: "Intermédiaire"
@@ -150,7 +162,13 @@ projects:
         - "Méthodologie EBIOS Risk Manager"
         - "Matrice de risques"
         - "Outils de cartographie (ex: Lucidchart)"
-      resources: []
+      resources:
+        - text: "Guide EBIOS Risk Manager - ANSSI"
+          url: "https://www.ssi.gouv.fr/guide/ebios-risk-manager-the-method/"
+        - text: "Matrice de risques template"
+          url: "https://www.lucidchart.com/pages/templates/risk-assessment-matrix"
+        - text: "Cartographie des risques - Méthode"
+          url: "https://www.cnil.fr/fr/gerer-les-risques"
     
     - title: "Projet 3: Rédiger une charte informatique"
       difficulty: "Intermédiaire"
@@ -163,7 +181,13 @@ projects:
         - "Templates de charte informatique"
         - "Outils de rédaction collaborative"
         - "Référentiels de bonnes pratiques ANSSI"
-      resources: []
+      resources:
+        - text: "Modèle de charte informatique - ANSSI"
+          url: "https://www.ssi.gouv.fr/particulier/guide/charte-dutilisation-des-moyens-informatiques-et-des-outils-numeriques/"
+        - text: "Guide des bonnes pratiques - ANSSI"
+          url: "https://www.ssi.gouv.fr/guide/guide-dhygiene-informatique/"
+        - text: "Templates charte utilisateur"
+          url: "https://www.cnil.fr/fr/securite-des-donnees-personnelles"
 
 ecosystem:
   title: "Écosystème de la Protection des Données"

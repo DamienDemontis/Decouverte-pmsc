@@ -176,7 +176,13 @@ projects:
         - "Canva pour les visuels"
         - "Outils SEO basiques"
         - "Réseaux sociaux (Instagram, TikTok, YouTube)"
-      resources: []
+      resources:
+        - text: "WordPress.com - Créer un blog"
+          url: "https://wordpress.com/create-blog/"
+        - text: "Guide SEO pour débutants - Moz"
+          url: "https://moz.com/beginners-guide-to-seo"
+        - text: "Canva - Créer des visuels de blog"
+          url: "https://www.canva.com/create/blog-graphics/"
     
     - title: "Projet 2: Gérer un budget publicitaire de 50€ sur Meta"
       difficulty: "Débutant"
@@ -197,7 +203,13 @@ projects:
         - "Facebook Ads Manager"
         - "Canva pour les créations"
         - "Google Analytics pour le suivi"
-      resources: []
+      resources:
+        - text: "Guide Facebook Ads - Meta Business"
+          url: "https://www.facebook.com/business/help/200000840044554"
+        - text: "Créer sa première campagne Facebook"
+          url: "https://www.facebook.com/business/learn/facebook-create-ad-basics"
+        - text: "Analytics Academy - Google"
+          url: "https://analytics.google.com/analytics/academy/"
     
     - title: "Projet 3: Contacter 10 micro-influenceurs pour un partenariat (même fictif)"
       difficulty: "Intermédiaire"
@@ -218,7 +230,13 @@ projects:
         - "Instagram, TikTok, YouTube"
         - "Tableur pour le suivi"
         - "Templates de messages"
-      resources: []
+      resources:
+        - text: "Guide complet du marketing d'influence"
+          url: "https://blog.hubspot.com/marketing/influencer-marketing-guide"
+        - text: "Template outreach influenceur"
+          url: "https://grin.co/influencer-outreach-email-templates/"
+        - text: "Recherche d'influenceurs sur Instagram"
+          url: "https://blog.hootsuite.com/find-instagram-influencers/"
 
 ecosystem:
   title: "Écosystème Marketing & Influence"
