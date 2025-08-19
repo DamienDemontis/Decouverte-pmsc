@@ -9,7 +9,7 @@
         <div class="video-embed-container">
           <iframe 
             src="{{ video.url }}" 
-            title="{{ video.title }}" 
+            title="{{ video.title | escape }}" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             allowfullscreen

@@ -683,66 +683,59 @@ a:hover {
 
 /* ========== CARTES ET COMPOSANTS ========= */
 .card-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 420px));
   gap: 1.5rem;
   margin: 2rem auto;
   padding: 0 1rem;
   max-width: 1200px;
   justify-content: center;
-  align-items: stretch;
 }
 
 .card-grid .feature-card {
-  flex: 0 1 calc(33.333% - 1rem);
-  min-width: 300px;
-  max-width: 380px;
-  display: flex;
-  flex-direction: column;
-}
-
-@media (max-width: 1024px) {
-  .card-grid .feature-card {
-    flex: 0 1 calc(50% - 0.75rem);
-  }
-}
-
-@media (max-width: 768px) {
-  .card-grid .feature-card {
-    flex: 0 1 100%;
-  }
-}
-
-/* Project cards grid - force 3 per row */
-.projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  max-width: 1400px;
-  justify-content: center;
-  align-items: stretch;
-}
-
-.projects-grid .feature-card {
-  flex: 0 1 calc(33.333% - 1rem);
-  min-width: 320px;
+  width: 100%;
   max-width: 420px;
   display: flex;
   flex-direction: column;
 }
 
-@media (max-width: 1200px) {
-  .projects-grid .feature-card {
-    flex: 0 1 calc(50% - 0.75rem);
-  }
+/* 3-column card grid for specific sections */
+.card-grid-3col {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+  justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .projects-grid .feature-card {
-    flex: 0 1 100%;
-  }
+.card-grid-3col .feature-card {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+/* CSS Grid handles responsive layout automatically */
+
+/* Project cards grid - force 3 per row */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 420px));
+  gap: 1.5rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 1400px;
+  justify-content: center;
+}
+
+.projects-grid .feature-card {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-card {
@@ -1057,19 +1050,17 @@ aside p {
 
 /* Clean flexbox roadmap styling */
 .linear-roadmap {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 350px));
   gap: 1.5rem;
   justify-content: center;
-  align-items: stretch;
   margin: 2rem auto;
   max-width: 1200px;
   padding: 0 1rem;
 }
 
 .roadmap-item {
-  flex: 0 1 calc(33.333% - 1rem);
-  min-width: 280px;
+  width: 100%;
   max-width: 350px;
   display: flex;
   flex-direction: column;

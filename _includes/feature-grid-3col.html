@@ -1,0 +1,6 @@
+<!-- 3-column feature grid component -->
+<div class="card-grid-3col">
+  {% for feature in include.features %}
+    {% include feature-card.html feature=feature %}
+  {% endfor %}
+</div>
