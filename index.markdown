@@ -52,7 +52,7 @@ title: Accueil
         <span class="icon-tooltip">Strategic Project Management</span>
       </a>
       <a href="/Decouverte-pmsc/specialites/fintech" class="tech-icon" data-specialty="Fintech" data-color="#0891B2">
-        <i class="fas fa-chart-bar"></i>
+        <i class="fas fa-chart-pie"></i>
         <span class="icon-tooltip">Fintech & Stratégies financières</span>
       </a>
       <a href="/Decouverte-pmsc/specialites/marketing" class="tech-icon" data-specialty="Marketing" data-color="#C026D3">
@@ -121,7 +121,7 @@ title: Accueil
           <li><i class="fas fa-cloud"></i> Cloud Computing</li>
           <li><i class="fas fa-shield-alt"></i> Cybersécurité</li>
           <li><i class="fas fa-brain"></i> Intelligence Artificielle</li>
-          <li><i class="fas fa-wifi"></i> Internet of Things (IoT)</li>
+          <li><i class="fas fa-microchip"></i> Internet of Things (IoT)</li>
           <li><i class="fas fa-vr-cardboard"></i> VR/AR</li>
         </ul>
         <a href="#tech-specialties" class="btn-card">Découvrir <i class="fas fa-arrow-right"></i></a>
@@ -143,7 +143,7 @@ title: Accueil
         <p>Développez des compétences stratégiques à l'intersection du business et de la technologie</p>
         <ul class="specialty-list">
           <li><i class="fas fa-tasks"></i> Strategic Project Management</li>
-          <li><i class="fas fa-chart-bar"></i> Fintech & Stratégies financières</li>
+          <li><i class="fas fa-chart-pie"></i> Fintech & Stratégies financières</li>
           <li><i class="fas fa-bullhorn"></i> Marketing & Influence</li>
           <li><i class="fas fa-building-user"></i> IA & Transformation des organisations</li>
           <li><i class="fas fa-user-shield"></i> Data, Protection & Sécurité</li>
@@ -210,7 +210,7 @@ title: Accueil
     
     <div class="specialite-card" style="--card-color: #10B981;">
       <div class="specialite-icon">
-        <i class="fas fa-wifi"></i>
+        <i class="fas fa-microchip"></i>
       </div>
       <h3>Internet of Things (IoT)</h3>
       <p>Concevez et développez des écosystèmes d'objets connectés et les infrastructures associées.</p>
@@ -245,7 +245,7 @@ title: Accueil
     
     <div class="specialite-card" style="--card-color: #0891B2;">
       <div class="specialite-icon">
-        <i class="fas fa-chart-bar"></i>
+        <i class="fas fa-chart-pie"></i>
       </div>
       <h3>Fintech & Stratégies financières</h3>
       <p>Explorez l'intersection de la finance et de la technologie, des cryptomonnaies aux algorithmes de trading.</p>
