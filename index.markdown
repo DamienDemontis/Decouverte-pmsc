@@ -60,11 +60,11 @@ title: Accueil
         <span class="icon-tooltip">Marketing & Influence</span>
       </a>
       <a href="/Decouverte-pmsc/specialites/ai-transformation" class="tech-icon" data-specialty="IA & Transformation" data-color="#3B82F6">
-        <i class="fas fa-brain"></i>
+        <i class="fas fa-building-user"></i>
         <span class="icon-tooltip">IA & Transformation des organisations</span>
       </a>
       <a href="/Decouverte-pmsc/specialites/data-protection" class="tech-icon" data-specialty="Data Protection" data-color="#4F46E5">
-        <i class="fas fa-shield-alt"></i>
+        <i class="fas fa-user-shield"></i>
         <span class="icon-tooltip">Data, Protection & Sécurité</span>
       </a>
       <a href="/Decouverte-pmsc/specialites/rh-digitale" class="tech-icon" data-specialty="RH Digitale" data-color="#059669">
@@ -76,7 +76,7 @@ title: Accueil
         <span class="icon-tooltip">Santé, IA & IoT</span>
       </a>
       <a href="/Decouverte-pmsc/specialites/data-science-bi" class="tech-icon" data-specialty="Data Science" data-color="#0284C7">
-        <i class="fas fa-chart-bar"></i>
+        <i class="fas fa-chart-line"></i>
         <span class="icon-tooltip">Data Science & Business Intelligence</span>
       </a>
       <a href="/Decouverte-pmsc/specialites/luxe-retail-tech" class="tech-icon" data-specialty="Luxe & Retail Tech" data-color="#A21CAF">

@@ -3,7 +3,13 @@
  * Handles animations, typewriter effects, and interactive elements
  */
 
+// Cache DOM elements for better performance
+let cachedElements = {};
+
 document.addEventListener('DOMContentLoaded', function() {
+  // Cache frequently used DOM elements
+  cacheDOMElements();
+  
   // Initialize all home page functionality
   initCountUpAnimation();
   initTypewriterEffect();
@@ -13,21 +19,41 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /**
+ * Cache frequently used DOM elements
+ */
+function cacheDOMElements() {
+  cachedElements = {
+    typewriterElement: document.getElementById('typewriter-text'),
+    techOrbit: document.querySelector('.tech-orbit'),
+    orbitCircle: document.querySelector('.orbit-circle'),
+    techIcons: document.querySelectorAll('.tech-icon'),
+    heroSection: document.querySelector('.hero-section'),
+    specialtyCards: document.querySelectorAll('.specialite-card'),
+    counters: document.querySelectorAll('.count-up')
+  };
+}
+
+/**
  * Count-up animation for statistics
  */
 function initCountUpAnimation() {
-  const counters = document.querySelectorAll('.count-up');
-  const speed = 200;
+  const counters = cachedElements.counters;
+  if (!counters || counters.length === 0) return;
   
   counters.forEach(counter => {
-    const updateCount = () => {
-      const target = +counter.getAttribute('data-count');
-      const count = +counter.innerText;
-      const increment = target / speed;
+    const updateCount = (startTime) => {
+      const currentTime = performance.now();
+      const elapsed = currentTime - startTime;
+      const duration = 2000; // 2 seconds total
       
-      if (count < target) {
-        counter.innerText = Math.ceil(count + increment);
-        setTimeout(updateCount, 1);
+      const target = +counter.getAttribute('data-count');
+      const progress = Math.min(elapsed / duration, 1);
+      const currentCount = Math.floor(target * progress);
+      
+      counter.innerText = currentCount;
+      
+      if (progress < 1) {
+        requestAnimationFrame(() => updateCount(startTime));
       } else {
         counter.innerText = target;
       }
@@ -37,7 +63,7 @@ function initCountUpAnimation() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          updateCount();
+          updateCount(performance.now());
           observer.unobserve(entry.target);
         }
       });
@@ -51,7 +77,7 @@ function initCountUpAnimation() {
  * Typewriter effect for specialty text
  */
 function initTypewriterEffect() {
-  const typewriterElement = document.getElementById('typewriter-text');
+  const typewriterElement = cachedElements.typewriterElement;
   if (!typewriterElement) return;
 
   const specialties = [
@@ -72,17 +98,18 @@ function initTypewriterEffect() {
   let currentCharIndex = 0;
   let isDeleting = false;
   let isWaiting = false;
-  let animationFrame;
+  let animationFrameId = null;
+  let isActive = true;
 
   typewriterElement.textContent = '';
 
   function typeEffect() {
-    if (!typewriterElement) return;
+    if (!typewriterElement || !isActive) return;
     
     const currentSpecialty = specialties[currentSpecialtyIndex];
     
     if (isWaiting) {
-      animationFrame = requestAnimationFrame(() => {
+      animationFrameId = requestAnimationFrame(() => {
         setTimeout(typeEffect, 50);
       });
       return;
@@ -97,8 +124,10 @@ function initTypewriterEffect() {
       if (currentCharIndex > currentSpecialty.length) {
         isWaiting = true;
         setTimeout(() => {
-          isWaiting = false;
-          isDeleting = true;
+          if (isActive) {
+            isWaiting = false;
+            isDeleting = true;
+          }
         }, 1000);
       }
     } 
@@ -113,7 +142,9 @@ function initTypewriterEffect() {
         currentSpecialtyIndex = (currentSpecialtyIndex + 1) % specialties.length;
         isWaiting = true;
         setTimeout(() => {
-          isWaiting = false;
+          if (isActive) {
+            isWaiting = false;
+          }
         }, 300);
       }
     }
@@ -125,17 +156,20 @@ function initTypewriterEffect() {
       typingSpeed += 40;
     }
 
-    animationFrame = requestAnimationFrame(() => {
-      setTimeout(typeEffect, typingSpeed);
-    });
+    if (isActive) {
+      animationFrameId = requestAnimationFrame(() => {
+        setTimeout(typeEffect, typingSpeed);
+      });
+    }
   }
 
   setTimeout(typeEffect, 500);
 
   // Cleanup on page unload
   window.addEventListener('beforeunload', () => {
-    if (animationFrame) {
-      cancelAnimationFrame(animationFrame);
+    isActive = false;
+    if (animationFrameId) {
+      cancelAnimationFrame(animationFrameId);
     }
   });
 }
@@ -144,10 +178,10 @@ function initTypewriterEffect() {
  * Tech orbit animation for specialty icons
  */
 function initTechOrbitAnimation() {
-  const orbit = document.querySelector('.tech-orbit');
-  const orbitCircle = document.querySelector('.orbit-circle');
-  const techIcons = document.querySelectorAll('.tech-icon');
-  const heroSection = document.querySelector('.hero-section');
+  const orbit = cachedElements.techOrbit;
+  const orbitCircle = cachedElements.orbitCircle;
+  const techIcons = cachedElements.techIcons;
+  const heroSection = cachedElements.heroSection;
   
   if (!orbit || techIcons.length === 0) return;
   
@@ -157,6 +191,28 @@ function initTechOrbitAnimation() {
   let animationFrameId = null;
   let originalBackground = window.getComputedStyle(heroSection).background;
   let hoveredIcon = null;
+  let lastTime = 0;
+  const rotationSpeed = 0.005; // Degrees per second for consistent speed (very slow)
+  
+  // Pre-create pulse elements for reuse
+  const pulseElements = new Map();
+  techIcons.forEach(icon => {
+    const pulseElement = document.createElement('div');
+    pulseElement.className = 'icon-pulse';
+    pulseElement.style.position = 'absolute';
+    pulseElement.style.top = '0';
+    pulseElement.style.left = '0';
+    pulseElement.style.width = '100%';
+    pulseElement.style.height = '100%';
+    pulseElement.style.borderRadius = '50%';
+    pulseElement.style.opacity = '0.2';
+    pulseElement.style.transform = 'scale(1.5)';
+    pulseElement.style.zIndex = '-1';
+    pulseElement.style.animation = 'pulse 2s infinite';
+    pulseElement.style.display = 'none';
+    icon.appendChild(pulseElement);
+    pulseElements.set(icon, pulseElement);
+  });
   
   // Position icons in orbit
   techIcons.forEach((icon, index) => {
@@ -185,7 +241,13 @@ function initTechOrbitAnimation() {
       }
       
       icon.classList.add('hovered');
-      createPulseEffect(icon);
+      
+      // Show pre-created pulse element
+      const pulseElement = pulseElements.get(icon);
+      if (pulseElement) {
+        pulseElement.style.display = 'block';
+        pulseElement.style.backgroundColor = icon.getAttribute('data-color') || 'var(--primary)';
+      }
     });
     
     icon.addEventListener('mouseleave', () => {
@@ -198,38 +260,33 @@ function initTechOrbitAnimation() {
       
       icon.classList.remove('hovered');
       
-      const pulseElement = icon.querySelector('.icon-pulse');
+      // Hide pre-created pulse element
+      const pulseElement = pulseElements.get(icon);
       if (pulseElement) {
-        icon.removeChild(pulseElement);
+        pulseElement.style.display = 'none';
       }
       
-      rotateTechIcons();
+      // Restart animation with current time
+      lastTime = performance.now();
+      rotateTechIcons(performance.now());
     });
   });
   
-  function createPulseEffect(icon) {
-    const pulseElement = document.createElement('div');
-    pulseElement.className = 'icon-pulse';
-    
-    pulseElement.style.position = 'absolute';
-    pulseElement.style.top = '0';
-    pulseElement.style.left = '0';
-    pulseElement.style.width = '100%';
-    pulseElement.style.height = '100%';
-    pulseElement.style.borderRadius = '50%';
-    pulseElement.style.backgroundColor = icon.getAttribute('data-color') || 'var(--primary)';
-    pulseElement.style.opacity = '0.2';
-    pulseElement.style.transform = 'scale(1.5)';
-    pulseElement.style.zIndex = '-1';
-    pulseElement.style.animation = 'pulse 2s infinite';
-    
-    icon.appendChild(pulseElement);
-  }
+
   
-  function rotateTechIcons() {
+  function rotateTechIcons(currentTime) {
     if (!isAnimating) return;
     
-    angle += 0.005; // Increased for smoother animation
+    // Time-based animation for consistent speed
+    if (lastTime === 0) {
+      lastTime = currentTime;
+    }
+    
+    const deltaTime = currentTime - lastTime;
+    const deltaAngle = (rotationSpeed * deltaTime * Math.PI) / 180; // Convert to radians
+    
+    angle += deltaAngle;
+    lastTime = currentTime;
     
     techIcons.forEach(icon => {
       if (icon === hoveredIcon) return;
@@ -253,13 +310,36 @@ function initTechOrbitAnimation() {
     animationFrameId = requestAnimationFrame(rotateTechIcons);
   }
   
-  setTimeout(rotateTechIcons, 100);
+  // Start animation with initial time
+  lastTime = performance.now();
+  rotateTechIcons(performance.now());
+  
+  // Cleanup function
+  window.addEventListener('beforeunload', () => {
+    isAnimating = false;
+    if (animationFrameId) {
+      cancelAnimationFrame(animationFrameId);
+    }
+  });
+}
+
+// Performance monitoring (only in development)
+if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+  console.log('🚀 Home page performance optimizations loaded:');
+  console.log('- DOM elements cached for faster access');
+  console.log('- Count-up animations use requestAnimationFrame');
+  console.log('- Typewriter effect optimized with proper cleanup');
+  console.log('- Orbit animation uses pre-created elements');
+  console.log('- Scroll animations use cached selectors');
 }
 
 /**
  * Animation for cards on scroll
  */
 function initScrollAnimations() {
+  const specialtyCards = cachedElements.specialtyCards;
+  if (!specialtyCards || specialtyCards.length === 0) return;
+  
   const animateOnScroll = (elements, className) => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -279,20 +359,23 @@ function initScrollAnimations() {
   };
   
   // Animate specialty cards
-  animateOnScroll(document.querySelectorAll('.specialite-card'), 'animated-in');
+  animateOnScroll(specialtyCards, 'animated-in');
   
-  // Add animation styles
-  const style = document.createElement('style');
-  style.textContent = `
-    .animated-in {
-      opacity: 1 !important;
-      transform: translateY(0) !important;
-    }
-    .typewriter {
-      min-width: 5rem;
-    }
-  `;
-  document.head.appendChild(style);
+  // Add animation styles only once
+  if (!document.getElementById('home-animations-style')) {
+    const style = document.createElement('style');
+    style.id = 'home-animations-style';
+    style.textContent = `
+      .animated-in {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+      }
+      .typewriter {
+        min-width: 5rem;
+      }
+    `;
+    document.head.appendChild(style);
+  }
 }
 
 /**
