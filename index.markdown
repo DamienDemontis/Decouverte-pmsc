@@ -101,8 +101,8 @@ title: Accueil
     <span class="stat-label"><i class="fas fa-laptop-code"></i> Projets pratiques</span>
   </div>
   <div class="stat-item animate__animated animate__fadeInUp animate__delay-2s">
-    <span class="stat-number count-up" data-count="15">0</span><span class="stat-symbol">+</span>
-    <span class="stat-label"><i class="fas fa-users"></i> Experts & Intervenants</span>
+    <span class="stat-number count-up" data-count="60">0</span><span class="stat-symbol">+</span>
+    <span class="stat-label"><i class="fas fa-users"></i> Experts & Intervenants dans nos campus</span>
   </div>
 </div>
 

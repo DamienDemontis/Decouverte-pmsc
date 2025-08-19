@@ -485,6 +485,41 @@ body {
   transform: translateY(-2px);
 }
 
+/* GitHub explore button - subtle styling that fits the page */
+.github-explore-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f8fafc;
+  color: #374151;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.github-explore-btn:hover {
+  background: #f1f5f9;
+  color: #1f2937;
+  border-color: #d1d5db;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.github-explore-btn i {
+  font-size: 1.1rem;
+  color: #6b7280;
+  transition: color 0.3s ease;
+}
+
+.github-explore-btn:hover i {
+  color: #374151;
+}
+
 /* Section À propos */
 .home-about {
   padding: 3rem 1.5rem;
