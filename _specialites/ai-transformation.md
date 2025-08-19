@@ -3,7 +3,7 @@ layout: specialite
 title: IA & Transformation des organisations
 slug: ai-transformation
 type: business
-icon: fas fa-brain
+icon: fas fa-building-user
 ordre: 5
 color_primary: "#3B82F6"
 color_secondary: "#93C5FD"

@@ -438,7 +438,7 @@ career_paths:
         - "Gestion de Contenu - Maîtrise des CMS (Wordpress, etc.) et des outils de création (Canva, Figma, suite Adobe)"
         - "Social Media Management - Utilisation des plateformes de gestion (Hootsuite, Buffer) et des outils d'analyse natifs"
     
-    strategic:
+    specialized:
       title: "Compétences Stratégiques & Créatives"
       items:
         - "Storytelling - Capacité à créer des récits de marque engageants et authentiques"
@@ -446,6 +446,15 @@ career_paths:
         - "Créativité - Concevoir des campagnes originales et des formats de contenu innovants"
         - "Gestion de Communauté - Savoir engager, modérer et faire grandir une communauté en ligne"
         - "Relationnel & Négociation - Construire des relations solides avec les influenceurs et négocier des partenariats"
+    
+    soft_skills:
+      title: "Soft skills et compétences comportementales"
+      items:
+        - "Empathie et écoute - Comprendre profondément les besoins et aspirations de sa cible"
+        - "Adaptabilité - Suivre les tendances rapidement évolutives des plateformes et des algorithmes"
+        - "Résilience - Gérer les critiques et les échecs dans un domaine très exposé publiquement"
+        - "Curiosité permanente - Veille constante sur les nouveaux formats, influenceurs et plateformes émergentes"
+        - "Collaboration - Travailler efficacement avec des équipes créatives, techniques et commerciales"
 
   market_trends:
     title: "Tendances du marché"

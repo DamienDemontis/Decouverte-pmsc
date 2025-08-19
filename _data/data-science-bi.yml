@@ -386,6 +386,15 @@ career_paths:
         - "Statistiques & Machine Learning - Compréhension des concepts statistiques fondamentaux et des principaux algorithmes de ML"
         - "Cloud & Data Warehousing - Connaissance de base des plateformes cloud (AWS, Azure, GCP) et des entrepôts de données (Snowflake, BigQuery)"
     
+    specialized:
+      title: "Compétences Spécialisées & Sectorielles"
+      items:
+        - "Modélisation prédictive - Développer des modèles pour anticiper les ventes, la demande ou les comportements clients"
+        - "A/B Testing & Expérimentation - Concevoir et analyser des tests pour optimiser les produits et les campagnes"
+        - "Data Engineering - Comprendre les pipelines de données, l'ETL et l'architecture de données moderne"
+        - "Machine Learning en production - Savoir déployer et monitorer des modèles ML dans des environnements de production"
+        - "Domaines d'expertise - Se spécialiser dans un secteur (finance, e-commerce, santé) pour mieux comprendre les enjeux métier"
+    
     soft_skills:
       title: "Soft skills et autres compétences"
       items:

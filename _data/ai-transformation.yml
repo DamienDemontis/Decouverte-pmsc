@@ -480,7 +480,16 @@ career_paths:
 
   skills:
     title: "Compétences recherchées"
-    strategic:
+    technical:
+      title: "Compétences Techniques & IA"
+      items:
+        - "Compréhension de l'IA - Maîtrise des concepts clés (Machine Learning, Deep Learning, NLP) sans nécessairement savoir coder"
+        - "Gestion de données - Comprendre les enjeux de qualité, gouvernance et sécurité des données pour l'IA"
+        - "Architecture IT - Vision d'ensemble sur l'intégration des solutions IA dans les systèmes d'information existants"
+        - "Outils No-Code/Low-Code - Connaissance des plateformes permettant de déployer des solutions IA sans développement"
+        - "Mesure de performance - Savoir définir et suivre les KPIs de succès d'un projet IA (ROI, adoption, impact métier)"
+    
+    specialized:
       title: "Compétences Stratégiques & Managériales"
       items:
         - "Vision Stratégique - Aligner les initiatives IA avec les objectifs business de l'entreprise"

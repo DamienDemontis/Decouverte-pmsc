@@ -395,20 +395,29 @@ career_paths:
 
   skills:
     title: "Compétences recherchées"
-    health_regulatory:
+    technical:
       title: "Compétences Santé & Réglementaire"
       items:
         - "Connaissance de l'écosystème de santé - Comprendre les parcours de soin, les acteurs (hôpitaux, médecins, assurance maladie) et les enjeux"
         - "Réglementation des données de santé - Maîtrise du RGPD, de la certification HDS et du cadre réglementaire des dispositifs médicaux"
         - "Éthique de l'IA en santé - Savoir adresser les questions de biais, de transparence et d'équité des algorithmes"
     
-    tech_project:
+    specialized:
       title: "Compétences Techniques & Projet"
       items:
         - "Gestion de projet complexe - Piloter des projets innovants impliquant des parties prenantes très diverses (médecins, ingénieurs, patients, juristes)"
         - "Connaissance des technologies IoT & IA - Comprendre les principes de fonctionnement des capteurs, des protocoles de communication et des modèles d'IA"
         - "Analyse de données de santé - Capacité à analyser des données cliniques ou issues de dispositifs pour en extraire des informations pertinentes"
         - "Gestion de la relation patient/client - Savoir concevoir des solutions centrées sur les besoins des utilisateurs finaux"
+    
+    soft_skills:
+      title: "Soft skills et compétences transversales"
+      items:
+        - "Empathie et écoute active - Comprendre les besoins des patients et des professionnels de santé avec sensibilité"
+        - "Communication pédagogique - Vulgariser des concepts techniques complexes pour des audiences médicales et grand public"
+        - "Rigueur éthique - Maintenir les plus hauts standards de confidentialité et d'intégrité avec les données de santé"
+        - "Adaptabilité réglementaire - S'adapter rapidement aux évolutions du cadre légal et des bonnes pratiques"
+        - "Pensée systémique - Comprendre les interactions complexes dans l'écosystème de santé"
 
   market_trends:
     title: "Tendances du marché"

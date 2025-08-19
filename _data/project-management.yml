@@ -532,7 +532,7 @@ career_paths:
 
   skills:
     title: "Compétences recherchées"
-    hard_skills:
+    technical:
       title: "Compétences dures (Hard skills)"
       items:
         - "Maîtrise des méthodologies - Agile (Scrum, Kanban), Waterfall, Hybride"
@@ -540,6 +540,15 @@ career_paths:
         - "Gestion financière - Budgétisation, suivi des coûts, calcul du ROI"
         - "Analyse de données - KPIs, métriques produit (AARRR), SQL basique"
         - "Product Roadmapping - Création de feuilles de route produit"
+    
+    specialized:
+      title: "Compétences stratégiques et entrepreneuriales"
+      items:
+        - "Vision stratégique - Aligner les projets avec les objectifs business et anticiper les évolutions du marché"
+        - "Lean Startup - Maîtriser les principes de validation d'hypothèses, MVP et cycles build-measure-learn"
+        - "Business Model Innovation - Comprendre et concevoir des modèles économiques disruptifs"
+        - "Écosystème startup - Connaître le fonctionnement du financement (VC, BA) et l'accompagnement entrepreneurial"
+        - "Design Thinking - Approche centrée utilisateur pour résoudre des problèmes complexes de manière créative"
     
     soft_skills:
       title: "Compétences humaines (Soft skills)"

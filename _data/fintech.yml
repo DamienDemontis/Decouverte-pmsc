@@ -637,6 +637,15 @@ career_paths:
         - "Blockchain & DeFi - Compréhension de la tokenisation, des smart contracts et des protocoles de la finance décentralisée"
         - "Analyse de données - Compétences en SQL, Python et outils de BI pour le scoring, la détection de fraude et l'analyse de marché"
     
+    specialized:
+      title: "Compétences Stratégiques & Innovation"
+      items:
+        - "Analyse de marché - Identifier les disruptions potentielles et les opportunités de nouveaux business models"
+        - "Design d'expérience utilisateur - Créer des interfaces intuitives pour des services financiers complexes"
+        - "Gestion de partenariats - Négocier avec les acteurs traditionnels (banques, assureurs) et les régulateurs"
+        - "Modélisation économique - Construire des modèles de revenus viables dans un environnement concurrentiel"
+        - "Veille technologique - Suivre les innovations émergentes (IA, quantum computing, nouveaux protocoles blockchain)"
+    
     soft_skills:
       title: "Soft skills et autres compétences"
       items:

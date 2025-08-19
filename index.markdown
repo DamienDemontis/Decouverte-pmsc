@@ -26,9 +26,9 @@ title: Accueil
         <i class="fas fa-brain"></i>
         <span class="icon-tooltip">Intelligence Artificielle</span>
       </a>
-      <a href="/Decouverte-pmsc/specialites/bigdata" class="tech-icon" data-specialty="Big Data & Analytics" data-color="#0EA5E9">
+      <a href="/Decouverte-pmsc/specialites/bigdata" class="tech-icon" data-specialty="Big Data" data-color="#0EA5E9">
         <i class="fas fa-database"></i>
-        <span class="icon-tooltip">Big Data & Analytics</span>
+        <span class="icon-tooltip">Big Data</span>
       </a>
       <a href="/Decouverte-pmsc/specialites/cloud" class="tech-icon" data-specialty="Cloud Computing" data-color="#2563EB">
         <i class="fas fa-cloud"></i>
@@ -117,7 +117,7 @@ title: Accueil
         <h3>Spécialités Expertes Technologiques</h3>
         <p>Développez une expertise technique pointue dans les domaines les plus recherchés de la tech</p>
         <ul class="specialty-list">
-          <li><i class="fas fa-database"></i> Big Data & Analytics</li>
+          <li><i class="fas fa-database"></i> Big Data</li>
           <li><i class="fas fa-cloud"></i> Cloud Computing</li>
           <li><i class="fas fa-shield-alt"></i> Cybersécurité</li>
           <li><i class="fas fa-brain"></i> Intelligence Artificielle</li>
@@ -176,7 +176,7 @@ title: Accueil
       <div class="specialite-icon">
         <i class="fas fa-database"></i>
       </div>
-      <h3>Big Data & Analytics</h3>
+      <h3>Big Data</h3>
       <p>Maîtrisez les techniques et outils pour stocker, traiter et analyser des volumes massifs de données.</p>
       <a href="/Decouverte-pmsc/specialites/bigdata" class="btn-primary">Découvrir</a>
     </div>

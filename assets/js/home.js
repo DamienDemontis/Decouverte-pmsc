@@ -161,7 +161,9 @@ function initTechOrbitAnimation() {
   // Position icons in orbit
   techIcons.forEach((icon, index) => {
     const iconAngle = (index * (360 / techIcons.length)) * (Math.PI / 180);
-    icon.style.transform = `translate(${Math.cos(iconAngle) * radius}px, ${Math.sin(iconAngle) * radius}px)`;
+    // Use transform3d for hardware acceleration
+    icon.style.transform = `translate3d(${Math.cos(iconAngle) * radius}px, ${Math.sin(iconAngle) * radius}px, 0)`;
+    icon.style.willChange = 'transform'; // Hint for browser optimization
     
     icon.dataset.angle = iconAngle;
     icon.dataset.x = Math.cos(iconAngle) * radius;
@@ -227,7 +229,7 @@ function initTechOrbitAnimation() {
   function rotateTechIcons() {
     if (!isAnimating) return;
     
-    angle += 0.001;
+    angle += 0.005; // Increased for smoother animation
     
     techIcons.forEach(icon => {
       if (icon === hoveredIcon) return;
@@ -236,14 +238,16 @@ function initTechOrbitAnimation() {
       const newX = Math.cos(currentAngle) * radius;
       const newY = Math.sin(currentAngle) * radius;
       
-      icon.style.transform = `translate(${newX}px, ${newY}px)`;
+      // Use transform3d for hardware acceleration
+      icon.style.transform = `translate3d(${newX}px, ${newY}px, 0)`;
       
       icon.dataset.x = newX;
       icon.dataset.y = newY;
     });
     
     if (orbitCircle) {
-      orbitCircle.style.transform = `rotate(${angle * (180 / Math.PI)}deg)`;
+      // Use transform3d for better performance
+      orbitCircle.style.transform = `rotate3d(0, 0, 1, ${angle * (180 / Math.PI)}deg)`;
     }
     
     animationFrameId = requestAnimationFrame(rotateTechIcons);

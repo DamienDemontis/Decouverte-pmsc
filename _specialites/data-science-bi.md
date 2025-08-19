@@ -3,7 +3,7 @@ layout: specialite
 title: Data Science & Business Intelligence
 slug: data-science-bi
 type: business
-icon: fas fa-chart-bar
+icon: fas fa-chart-line
 ordre: 8
 color_primary: "#0284C7"
 color_secondary: "#38BDF8"

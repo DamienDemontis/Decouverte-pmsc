@@ -3,7 +3,7 @@ layout: specialite
 title: Data, Protection & Sécurité
 slug: data-protection
 type: business
-icon: fas fa-shield-alt
+icon: fas fa-user-shield
 ordre: 5
 color_primary: "#4F46E5"
 color_secondary: "#A5B4FC"

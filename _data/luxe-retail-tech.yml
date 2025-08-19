@@ -475,7 +475,7 @@ career_paths:
 
   skills:
     title: "Compétences recherchées"
-    retail_business:
+    technical:
       title: "Compétences Retail & Business"
       items:
         - "Connaissance du secteur - Compréhension des codes du luxe, des cycles de collection et des opérations retail"
@@ -484,13 +484,22 @@ career_paths:
         - "CRM & Analyse de données client - Compétences en segmentation, analyse de la valeur client (CLV) et personnalisation"
         - "Merchandising & E-commerce - Connaissance des plateformes (Shopify, Salesforce Commerce Cloud) et des stratégies e-commerce"
     
-    tech_innovation:
+    specialized:
       title: "Compétences Technologiques & Innovantes"
       items:
         - "Technologies Immersives - Compréhension des usages de la VR/AR et des plateformes du métavers"
         - "Data & IA pour le Retail - Savoir comment l'IA peut optimiser les stocks, personnaliser les recommandations et prévoir les tendances"
         - "Web3 & Blockchain - Connaissance des NFTs, de la tokenisation et de leurs applications pour l'authenticité et la fidélisation"
         - "Veille Technologique - Capacité à identifier et évaluer les startups et les technologies émergentes pertinentes pour le secteur"
+    
+    soft_skills:
+      title: "Soft skills et compétences relationnelles"
+      items:
+        - "Sensibilité esthétique - Développer un œil artistique et une compréhension des codes du luxe"
+        - "Relation client premium - Maîtriser les codes du service haut de gamme et de l'hospitalité"
+        - "Communication storytelling - Savoir raconter des histoires captivantes autour des marques et des produits"
+        - "Adaptabilité culturelle - Comprendre les spécificités culturelles pour aborder les marchés internationaux"
+        - "Leadership d'influence - Fédérer des équipes créatives et techniques autour d'une vision commune"
 
   market_trends:
     title: "Tendances du marché"

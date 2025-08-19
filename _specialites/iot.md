@@ -3,7 +3,7 @@ layout: specialite
 title: Internet of Things
 slug: iot
 type: tech
-icon: fas fa-microchip
+icon: fas fa-wifi
 ordre: 5
 color_primary: "#059669"
 color_secondary: "#10B981"

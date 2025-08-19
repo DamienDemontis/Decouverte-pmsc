@@ -403,6 +403,15 @@ career_paths:
         - "Marketing RH - Appliquer les techniques de marketing pour attirer les talents (marque employeur)"
         - "Droit social - Connaissance de base du droit du travail pour assurer la conformité des processus"
     
+    specialized:
+      title: "Compétences Stratégiques & Transformation"
+      items:
+        - "Vision People Analytics - Transformer la fonction RH d'administrative à stratégique grâce aux données"
+        - "Employee Experience Design - Concevoir des parcours collaborateur fluides et engageants"
+        - "Culture & Transformation - Accompagner l'évolution de la culture d'entreprise vers l'agilité et l'innovation"
+        - "Prospective RH - Anticiper les évolutions du travail (télétravail, compétences futures, nouveaux métiers)"
+        - "Écosystème HR Tech - Connaître les startups et solutions innovantes du secteur"
+    
     soft_skills:
       title: "Soft skills et autres compétences"
       items:

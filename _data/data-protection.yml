@@ -339,7 +339,7 @@ career_paths:
 
   skills:
     title: "Compétences recherchées"
-    juridical:
+    technical:
       title: "Compétences Juridiques & Conformité"
       items:
         - "Maîtrise du RGPD - Connaissance approfondie du règlement et de son application"
@@ -347,7 +347,7 @@ career_paths:
         - "Analyses d'Impact (AIPD) - Capacité à mener des analyses de risques sur la vie privée"
         - "Veille réglementaire - Suivi constant de l'évolution des législations nationales et européennes"
     
-    security:
+    specialized:
       title: "Compétences en Sécurité & Gouvernance"
       items:
         - "Gestion des risques - Maîtrise des méthodologies d'analyse de risques (EBIOS, ISO 27005)"
