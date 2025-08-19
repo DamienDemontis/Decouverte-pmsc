@@ -148,6 +148,8 @@ body {
   height: 4px;
   background-color: var(--primary);
   border-radius: var(--radius-full);
+  /* Removed blue line for consistency with specialty pages */
+  display: none;
 }
 
 .section-subtitle {

@@ -1,8 +1,8 @@
 <!-- Project card component for hands-on project display -->
-<div class="projects-grid">
+<div class="projects-grid{% if include.projects.size == 3 %} center-orphan{% endif %}">
   {% for project in include.projects %}
     {% assign project_id = forloop.index %}
-    <div class="feature-card project-card" id="project-{{ project_id }}">
+    <div class="feature-card project-card" data-project-id="{{ project_id }}">
       <h4>{{ project.title }} <span class="difficulty {{ project.difficulty | downcase | replace: 'é', 'e' }}">{{ project.difficulty }}</span></h4>
       
       <div class="project-summary">
@@ -14,38 +14,62 @@
         </div>
       </div>
 
-      <div class="project-details">
-        <div class="mb-3">
-          <strong>📝 Description</strong>: 
-          {{ project.description }}
-        </div>
-        <div class="mb-3">
-          <strong>🛠️ Technologies</strong>:
-          <ul>
-            {% for tech in project.technologies %}
-              <li>{{ tech }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="mb-3">
-          <strong>📚 Ressources complémentaires</strong>:
-          <ul>
-            {% for resource in project.resources %}
-              <li><a href="{{ resource.url }}" target="_blank">{{ resource.text }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
     </div>
   {% endfor %}
 </div>
 
+<!-- Store project data for modal -->
+<script>
+window.projectsData = [
+  {% for project in include.projects %}
+  {
+    title: {{ project.title | jsonify }},
+    difficulty: {{ project.difficulty | jsonify }},
+    duration: {{ project.duration | jsonify }},
+    objective: {{ project.objective | jsonify }},
+    description: {{ project.description | jsonify }},
+    technologies: {{ project.technologies | jsonify }},
+    resources: {{ project.resources | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+];
+</script>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Ensure each project card has individual click handling
-  document.querySelectorAll('.project-card').forEach(function(card, index) {
+  // Create modal HTML structure and append to body
+  const modalHTML = `
+    <div id="projectModal" class="project-modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="modalTitle"></h3>
+          <button class="modal-close-btn" aria-label="Fermer">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="modalContent"></div>
+        </div>
+      </div>
+    </div>
+  `;
+  
+  // Check if modal doesn't already exist
+  if (!document.getElementById('projectModal')) {
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+  }
+  
+  const modal = document.getElementById('projectModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalContent = document.getElementById('modalContent');
+  const modalOverlay = modal.querySelector('.modal-overlay');
+  const closeBtn = modal.querySelector('.modal-close-btn');
+  
+  // Open modal when clicking project card
+  document.querySelectorAll('.project-card').forEach(function(card) {
     card.addEventListener('click', function(e) {
-      // Don't toggle if clicking on a link
+      // Don't open modal if clicking on a link
       if (e.target.tagName === 'A' || e.target.closest('a')) {
         return;
       }
@@ -53,22 +77,71 @@ document.addEventListener('DOMContentLoaded', function() {
       e.stopPropagation();
       e.preventDefault();
       
-      // Toggle only this specific card
-      this.classList.toggle('expanded');
+      const projectId = parseInt(this.dataset.projectId) - 1; // Convert to 0-based index
+      const project = window.projectsData[projectId];
       
-      console.log('Card clicked:', index, 'Expanded:', this.classList.contains('expanded'));
+      if (project) {
+        openProjectModal(project);
+      }
     });
   });
-});
-
-// Backup function for onclick handlers
-function toggleProject(cardId) {
-  const card = document.getElementById(cardId);
-  if (card) {
-    card.classList.toggle('expanded');
-    console.log('Toggle card:', cardId, 'Expanded:', card.classList.contains('expanded'));
+  
+  // Close modal functions
+  function closeProjectModal() {
+    modal.classList.remove('active');
+    document.body.classList.remove('modal-open');
   }
-}
+  
+  function openProjectModal(project) {
+    modalTitle.textContent = project.title;
+    
+    // Build modal content
+    let content = `
+      <div class="project-meta">
+        <span class="difficulty ${project.difficulty.toLowerCase().replace('é', 'e')}">${project.difficulty}</span>
+      </div>
+      <div class="project-info">
+        <div class="info-item">
+          <strong>⏱️ Durée estimée:</strong> ${project.duration}
+        </div>
+        <div class="info-item">
+          <strong>🎯 Objectif:</strong> ${project.objective}
+        </div>
+        <div class="info-item">
+          <strong>📝 Description:</strong>
+          <div class="description-content">${project.description}</div>
+        </div>
+        <div class="info-item">
+          <strong>🛠️ Technologies:</strong>
+          <ul class="tech-list">
+            ${project.technologies.map(tech => `<li>${tech}</li>`).join('')}
+          </ul>
+        </div>
+        <div class="info-item">
+          <strong>📚 Ressources complémentaires:</strong>
+          <ul class="resources-list">
+            ${project.resources.map(resource => `<li><a href="${resource.url}" target="_blank">${resource.text}</a></li>`).join('')}
+          </ul>
+        </div>
+      </div>
+    `;
+    
+    modalContent.innerHTML = content;
+    modal.classList.add('active');
+    document.body.classList.add('modal-open');
+  }
+  
+  // Close modal event listeners
+  closeBtn.addEventListener('click', closeProjectModal);
+  modalOverlay.addEventListener('click', closeProjectModal);
+  
+  // Close modal with Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeProjectModal();
+    }
+  });
+});
 </script>
 
 {% if include.github_link %}

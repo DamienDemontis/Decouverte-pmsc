@@ -7,7 +7,7 @@
     
     <h3>Les métiers de l'Intelligence Artificielle</h3>
     
-    <div class="card-grid">
+    <div class="card-grid{% if include.careers.roles.size == 3 %} center-orphan{% endif %}">
       {% for role in include.careers.roles %}
         <div class="feature-card">
           <h4><i class="{{ role.icon }}"></i> {{ role.title }}</h4>

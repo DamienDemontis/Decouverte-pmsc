@@ -1,5 +1,5 @@
 <!-- Feature grid component -->
-<div class="card-grid">
+<div class="card-grid{% if include.features.size == 3 %} center-orphan{% endif %}">
   {% for feature in include.features %}
     {% include feature-card.html feature=feature %}
   {% endfor %}

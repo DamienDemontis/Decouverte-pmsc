@@ -5,7 +5,7 @@
     
     {% if include.ecosystem.tools %}
       <h3>Outils et bibliothèques essentiels</h3>
-      <div class="card-grid">
+      <div class="card-grid{% if include.ecosystem.tools.size == 3 %} center-orphan{% endif %}">
         {% for tool_category in include.ecosystem.tools %}
           <div class="feature-card">
             <h4><i class="{{ tool_category.icon }}"></i> {{ tool_category.title }}</h4>
@@ -21,7 +21,7 @@
     
     {% if include.ecosystem.cloud_providers %}
       <h3 class="mt-4">Écosystèmes cloud pour l'IA</h3>
-      <div class="card-grid">
+      <div class="card-grid{% if include.ecosystem.cloud_providers.size == 3 %} center-orphan{% endif %}">
         {% for provider in include.ecosystem.cloud_providers %}
           <div class="feature-card">
             <h4><i class="{{ provider.icon }}"></i> {{ provider.title }}</h4>
