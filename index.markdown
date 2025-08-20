@@ -16,6 +16,7 @@ title: Accueil
     </div>
     <div class="hero-cta animate__animated animate__fadeInUp animate__delay-2s">
       <a href="#specialties" class="btn-primary btn-large">Explorer les spécialités</a>
+      <button id="personality-test-hero-btn" class="btn-secondary btn-large">🧠 Test de personnalité</button>
     </div>
   </div>
   <div class="hero-visual animate__animated animate__fadeIn animate__delay-1s">

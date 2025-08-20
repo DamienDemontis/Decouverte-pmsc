@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initTechOrbitAnimation();
   initScrollAnimations();
   initSmoothScroll();
+  initPersonalityTestButton();
 });
 
 /**
@@ -397,4 +398,39 @@ function initSmoothScroll() {
       }
     });
   });
+}
+
+/**
+ * Initialize personality test button functionality
+ */
+function initPersonalityTestButton() {
+  const personalityTestBtn = document.getElementById('personality-test-hero-btn');
+  
+  if (personalityTestBtn) {
+    personalityTestBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Vérifier si le bot est disponible
+      const botContainer = document.getElementById('specialty-bot-container');
+      const botAvatar = document.getElementById('bot-avatar');
+      
+      if (botContainer && botAvatar) {
+        // Simuler un clic sur l'avatar pour ouvrir le bot
+        botAvatar.click();
+        
+        // Attendre que le bot soit ouvert et lancer le test
+        setTimeout(() => {
+          if (typeof startPersonalityTest === 'function') {
+            startPersonalityTest();
+          } else if (typeof handleInlineClick === 'function') {
+            handleInlineClick('personality_test_start');
+          } else {
+            console.warn('Système de test de personnalité non disponible');
+          }
+        }, 500);
+      } else {
+        console.warn('Bot assistant non trouvé');
+      }
+    });
+  }
 }

@@ -1207,6 +1207,25 @@
   border-left-color: #10b981;
   color: #047857;
 }
+
+.clickable-specialty {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.clickable-specialty:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.click-hint {
+  font-size: var(--bot-font-size-xs);
+  opacity: 0.7;
+  font-weight: normal;
+  margin-top: 4px;
+  display: block;
+}
 }
 
 /* Health innovations */

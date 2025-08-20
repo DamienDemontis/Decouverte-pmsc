@@ -221,6 +221,25 @@ class PersonalitySystem {
       'luxe-retail-tech': 'Luxe & Retail Tech',
       'sante-ia-iot': 'Santé, IA & IoT'
     };
+
+    // Mapping vers les actions du chatbot
+    this.specialtyActions = {
+      'ia': 'explainAI',
+      'cloud': 'explainCloud',
+      'cybersecurite': 'explainCyber',
+      'bigdata': 'explainBigData',
+      'iot': 'explainIoT',
+      'vrar': 'explainVR',
+      'data-science-bi': 'explainDataScienceBI',
+      'fintech': 'explainFintech',
+      'marketing': 'explainMarketing',
+      'project-management': 'explainProjectManagement',
+      'ai-transformation': 'explainAITransformation',
+      'data-protection': 'explainDataProtection',
+      'rh-digitale': 'explainRH',
+      'luxe-retail-tech': 'explainLuxe',
+      'sante-ia-iot': 'explainSante'
+    };
   }
 
   resetTest() {
@@ -397,7 +416,9 @@ class PersonalitySystem {
     topSpecialties.forEach((specialtyKey, index) => {
       const rank = ['🥇', '🥈', '🥉'][index] || '🏅';
       const name = this.specialtyNames[specialtyKey] || specialtyKey;
-      specialtiesHtml += `<div class="recommendation ${index === 0 ? 'primary' : index === 1 ? 'secondary' : 'tertiary'}">${rank} <strong>${name}</strong></div>`;
+      const action = this.specialtyActions[specialtyKey] || 'explainSpecialties';
+      const className = index === 0 ? 'primary' : index === 1 ? 'secondary' : 'tertiary';
+      specialtiesHtml += `<div class="recommendation ${className} clickable-specialty" onclick="handleInlineClick('${action}')">${rank} <strong>${name}</strong><br/><span class="click-hint">Cliquez pour en savoir plus →</span></div>`;
     });
 
     return {
