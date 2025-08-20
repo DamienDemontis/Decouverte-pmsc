@@ -4,13 +4,46 @@ layout: default
 
 {% assign specialty_data = site.data.specialities[page.slug] %}
 
+<!-- Minor specialty mapping for technical specialties -->
+{% assign minor_specialty_mapping = site.data.minor_specialty_mapping %}
+{% assign current_minor = minor_specialty_mapping[page.slug] %}
+
 <header class="main-header" style="background: linear-gradient(135deg, {{ page.color_primary | default: '#4361ee' }}, {{ page.color_secondary | default: '#4cc9f0' }});">
   <div class="container">
-    <h1>
-      <i class="{{ page.icon | default: 'fas fa-graduation-cap' }}"></i> 
-      {{ page.title }}
-    </h1>
-    <p>{{ page.short_description | default: page.description }}</p>
+    <div class="header-content">
+      <div class="main-info">
+        <h1>
+          <i class="{{ page.icon | default: 'fas fa-graduation-cap' }}"></i> 
+          {{ page.title }}
+        </h1>
+        <p>{{ page.short_description | default: page.description }}</p>
+      </div>
+      
+      <!-- Minor Specialty Bubble (only for technical specialties) -->
+      {% if page.type == 'tech' and current_minor %}
+        {% assign minor_specialty = site.specialites | where: "slug", current_minor.slug | first %}
+        {% if minor_specialty %}
+          <div class="minor-specialty-container">
+            <div class="minor-specialty-bubble" 
+                 data-minor-slug="{{ current_minor.slug }}"
+                 style="background: linear-gradient(135deg, {{ minor_specialty.color_primary }}, {{ minor_specialty.color_secondary }});">
+              <div class="bubble-icon">
+                <i class="{{ minor_specialty.icon }}"></i>
+              </div>
+              <div class="bubble-content">
+                <span class="bubble-label">Spécialité mineure</span>
+                <span class="bubble-title">{{ minor_specialty.title }}</span>
+              </div>
+            </div>
+            <div class="minor-specialty-tooltip">
+              <div class="tooltip-content">
+                <p>{{ current_minor.explanation }}</p>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+    </div>
   </div>
 </header>
 
