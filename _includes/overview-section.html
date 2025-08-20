@@ -1,0 +1,14 @@
+<!-- Overview section component -->
+{% if include.overview %}
+<section id="overview">
+  <h2><i class="fas fa-lightbulb"></i> {{ include.overview.title }}</h2>
+  
+  {% include feature-grid-3col.html features=include.overview.features %}
+  
+  {% include accordion.html items=include.overview.accordion %}
+  
+  <blockquote class="mt-4">
+    <p>"{{ include.overview.quote }}" — {{ include.overview.quote_author }}</p>
+  </blockquote>
+</section>
+{% endif %}

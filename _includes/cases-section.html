@@ -1,0 +1,15 @@
+<!-- Cases section component -->
+{% if include.use_cases %}
+<section id="cases">
+  <h2><i class="fas fa-briefcase"></i> {{ include.use_cases.title }}</h2>
+  
+  {% include timeline.html timeline=include.use_cases.timeline %}
+  
+  <h3 class="mt-4">{{ include.use_cases.trends.title }}</h3>
+  <div class="card-grid{% if include.use_cases.trends.features.size == 3 %} center-orphan{% endif %}">
+    {% for feature in include.use_cases.trends.features %}
+      {% include feature-card.html feature=feature %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

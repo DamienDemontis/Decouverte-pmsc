@@ -1,7 +1,48 @@
 /* Styles modernes pour la page d'accueil */
 
-/* Intégration des animations */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+/* Custom lightweight animations (replaces external animate.css import) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate__animated {
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+  will-change: transform, opacity;
+  transform: translate3d(0, 0, 0); /* Force GPU acceleration */
+}
+
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+.animate__delay-1s {
+  animation-delay: 0.2s;
+}
+
+.animate__delay-2s {
+  animation-delay: 0.4s;
+}
 
 /* Variables globales */
 :root {
@@ -148,6 +189,8 @@ body {
   height: 4px;
   background-color: var(--primary);
   border-radius: var(--radius-full);
+  /* Removed blue line for consistency with specialty pages */
+  display: none;
 }
 
 .section-subtitle {
@@ -295,6 +338,19 @@ body {
   gap: 1rem;
   justify-content: center;
   margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .hero-cta .btn-large {
+    min-width: 250px;
+  }
 }
 
 /* Orbiting tech icons with enhanced styling */

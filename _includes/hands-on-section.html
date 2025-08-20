@@ -1,0 +1,8 @@
+<!-- Hands-on section component for projects -->
+{% if include.projects %}
+<section id="hands-on">
+  <h2><i class="fas fa-laptop-code"></i> Projets pratiques</h2>
+  
+  {% include project-card.html projects=include.projects.items github_link="https://github.com/topics/artificial-intelligence-projects" %}
+</section>
+{% endif %}

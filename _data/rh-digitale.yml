@@ -1,0 +1,459 @@
+title: "Digitalisation de la fonction RH (HR Tech)"
+slug: "rh-digitale"
+icon: "fas fa-users-cog"
+type: "business"
+order: 6
+colors:
+  primary: "#059669"
+  secondary: "#34D399"
+short_description: "Transformez la gestion des ressources humaines grâce aux technologies digitales pour créer une expérience collaborateur innovante et développer le capital humain."
+description: "Maîtrisez les outils et stratégies de la HR Tech pour optimiser les processus, améliorer l'engagement des collaborateurs et développer une culture d'entreprise axée sur l'innovation, la donnée et l'agilité."
+
+overview:
+  title: "Pourquoi la Digitalisation de la fonction RH ?"
+  features:
+    - title: "L'Expérience Collaborateur au centre"
+      icon: "fas fa-heart"
+      description: "Offrez à vos collaborateurs une expérience aussi fluide et intuitive que celle qu'ils connaissent en tant que consommateurs, de l'embauche à l'offboarding."
+    
+    - title: "Des décisions basées sur la donnée"
+      icon: "fas fa-chart-line"
+      description: "Passez d'une gestion administrative à un pilotage stratégique du capital humain grâce à l'analyse de données (turnover, engagement, performance)."
+    
+    - title: "Gain d'efficacité et de temps"
+      icon: "fas fa-tachometer-alt"
+      description: "Automatisez les tâches à faible valeur ajoutée (gestion des congés, notes de frais) pour que les équipes RH se concentrent sur l'accompagnement et la stratégie."
+    
+    - title: "Attirer et retenir les talents"
+      icon: "fas fa-search"
+      description: "Une expérience RH moderne et des outils performants sont devenus des arguments clés pour attirer les meilleurs profils et fidéliser les employés."
+    
+    - title: "Culture de l'innovation"
+      icon: "fas fa-lightbulb"
+      description: "La digitalisation des RH est un moteur pour insuffler une culture d'agilité, de feedback continu et de développement des compétences dans toute l'entreprise."
+    
+    - title: "Conformité et sécurité"
+      icon: "fas fa-gavel"
+      description: "Assurez la conformité réglementaire (RGPD, etc.) et sécurisez les données sensibles des collaborateurs grâce à des systèmes robustes et centralisés."
+
+  accordion:
+    - title: "Le SIRH (Système d'Information de Gestion des Ressources Humaines)"
+      content: |
+        <p>Le SIRH est la colonne vertébrale de la digitalisation RH. C'est une suite de logiciels qui permet de gérer l'ensemble des processus RH sur une seule et même plateforme.</p>
+        <ul>
+          <li><strong>Core RH</strong> : La base de données centrale avec toutes les informations des collaborateurs (contrat, poste, etc.).</li>
+          <li><strong>Gestion de la paie</strong> : Automatisation du calcul et de la distribution des salaires.</li>
+          <li><strong>Gestion des talents</strong> : Modules pour le recrutement (ATS), la gestion de la performance, la formation (LMS) et la planification de carrière.</li>
+        </ul>
+    
+    - title: "L'Analyse de Données RH (HR Analytics)"
+      content: |
+        <p>Utiliser les données pour comprendre les tendances et prendre des décisions éclairées.</p>
+        <ul>
+          <li><strong>Analyse descriptive</strong> : Que s'est-il passé ? (ex: taux de turnover le mois dernier).</li>
+          <li><strong>Analyse diagnostique</strong> : Pourquoi cela s'est-il passé ? (ex: corrélation entre le turnover et le management).</li>
+          <li><strong>Analyse prédictive</strong> : Que va-t-il se passer ? (ex: prédire les employés à risque de démission).</li>
+          <li><strong>Analyse prescriptive</strong> : Que devrions-nous faire ? (ex: suggérer des actions ciblées pour retenir un talent).</li>
+        </ul>
+    
+    - title: "L'Expérience Collaborateur (EX)"
+      content: |
+        <p>Concevoir chaque interaction entre l'employé et l'entreprise pour qu'elle soit positive, engageante et efficace.</p>
+        <ul>
+          <li><strong>Onboarding</strong> : Un parcours d'intégration digitalisé et accueillant pour les nouvelles recrues.</li>
+          <li><strong>Feedback continu</strong> : Des outils pour faciliter les retours réguliers entre managers et collaborateurs, en dehors de l'entretien annuel.</li>
+          <li><strong>Portails self-service</strong> : Permettre aux employés de gérer eux-mêmes leurs demandes (congés, informations personnelles) de manière autonome.</li>
+        </ul>
+
+  quote: "Les entreprises les plus performantes sont celles qui comprennent que l'expérience collaborateur et l'expérience client sont les deux faces d'une même pièce."
+  quote_author: "Jacob Morgan, auteur et futurologue du travail"
+
+use_cases:
+  title: "Cas d'usage emblématiques"
+  timeline:
+    - category: "Recrutement Intelligent"
+      side: "left"
+      items:
+        - title: "Recrutement prédictif"
+          description: "Entreprise : Un centre d'appel avec un fort turnover. Défi : Recruter des candidats qui resteront plus longtemps et seront plus performants. Solution HR Tech : Une plateforme analyse les données des meilleurs employés (parcours, compétences, résultats aux tests) pour créer un 'profil de succès'. L'IA score ensuite les nouveaux candidats par rapport à ce profil. Transformation : Le turnover des nouvelles recrues baisse de 25% la première année. Le temps des recruteurs est concentré sur les candidats les plus prometteurs."
+    
+    - category: "Formation Personnalisée"
+      side: "right"
+      items:
+        - title: "Formation personnalisée à grande échelle"
+          description: "Entreprise : Une multinationale du conseil. Défi : Offrir des plans de développement de compétences pertinents à des milliers de consultants aux profils variés. Solution HR Tech : Une plateforme LXP (Learning Experience Platform) utilise l'IA pour recommander des formations (internes, externes, articles, vidéos) en fonction du poste du collaborateur, de ses compétences actuelles et de ses aspirations de carrière. Transformation : Le taux d'engagement sur les formations augmente de 50%. Les compétences de l'entreprise sont constamment mises à jour pour répondre aux besoins du marché."
+    
+    - category: "Performance Continue"
+      side: "left"
+      items:
+        - title: "Gestion de la performance continue"
+          description: "Entreprise : Une startup de la tech en forte croissance. Défi : Remplacer l'entretien annuel, jugé obsolète, par un système plus agile et motivant. Solution HR Tech : Un outil permet de fixer des objectifs trimestriels (OKRs), de donner et recevoir du feedback 360° en temps réel via une app mobile, et de faciliter des points de suivi réguliers entre manager et collaborateur. Transformation : L'engagement des équipes s'améliore, les objectifs sont plus clairs et l'entreprise gagne en agilité pour s'adapter aux changements."
+
+  trends:
+    title: "Tendances émergentes"
+    features:
+      - title: "L'IA Générative pour les RH"
+        icon: "fas fa-user-astronaut"
+        description: "Création automatique de descriptions de poste, assistance à la rédaction des feedbacks, chatbots RH pour répondre aux questions des employés 24/7."
+      
+      - title: "Analyse du réseau organisationnel (ONA)"
+        icon: "fas fa-chart-network"
+        description: "Analyser les interactions (anonymisées) pour comprendre les flux de communication, identifier les influenceurs internes et détecter les équipes en silo."
+      
+      - title: "Bien-être et santé mentale"
+        icon: "fas fa-walking"
+        description: "Des plateformes dédiées offrent un accès confidentiel à des ressources de coaching, de thérapie et de méditation pour prévenir l'épuisement professionnel."
+      
+      - title: "Marché interne des talents"
+        icon: "fas fa-graduation-cap"
+        description: "Des plateformes qui permettent aux employés de voir toutes les opportunités internes (missions courtes, postes à pourvoir) et aux managers de trouver les compétences dont ils ont besoin en interne."
+
+roadmap:
+  title: "Parcours d'apprentissage"
+  phases:
+    - title: "🎯 Phase 1: Les Fondamentaux RH & Tech (1-3 mois)"
+      duration: "1-3 mois"
+      steps:
+        - title: "Gestion des Ressources Humaines"
+          description: "Comprendre les grands processus RH : recrutement, paie, gestion de la performance, droit du travail."
+          resources:
+            - text: "Livre : 'Le Grand Livre du Droit du Travail' (un grand classique)"
+              url: "https://www.eyrolles.com/Entreprise/Livre/le-grand-livre-du-droit-du-travail-en-pratique-9782416000478/"
+            - text: "Culture RH (Site d'actualités et de fiches pratiques)"
+              url: "https://www.culture-rh.com/"
+        
+        - title: "Gestion de projet SIRH"
+          description: "Comprendre les étapes et les enjeux du déploiement d'un outil technologique en entreprise."
+          resources:
+            - text: "Livre blanc des éditeurs (ex: Lucca, Cegid, Workday) sur les bonnes pratiques de déploiement"
+              url: ""
+    
+    - title: "🚀 Phase 2: Spécialisation HR Tech (3-6 mois)"
+      duration: "3-6 mois"
+      steps:
+        - title: "HR Data & Analytics"
+          description: "Apprendre à collecter, nettoyer et analyser les données RH pour produire des tableaux de bord pertinents."
+          resources:
+            - text: "People Analytics (Coursera)"
+              url: "https://www.coursera.org/learn/wharton-people-analytics"
+            - text: "Apprendre les bases d'outils de visualisation comme Tableau ou Power BI"
+              url: ""
+        
+        - title: "Marketing RH & Marque Employeur"
+          description: "Appliquer les techniques du marketing pour attirer et recruter les talents."
+          resources:
+            - text: "Blog de Lucca (souvent de bons articles sur le marketing RH)"
+              url: "https://blog.lucca.io/"
+            - text: "Welcome to the Jungle (pour s'inspirer des meilleures marques employeur)"
+              url: "https://www.welcometothejungle.com/fr"
+
+projects:
+  title: "Projets pratiques"
+  items:
+    - title: "Projet 1: Créer un processus d'onboarding automatisé"
+      difficulty: "Débutant"
+      duration: "6-8 heures"
+      objective: "Utiliser des outils simples pour améliorer l'expérience d'un nouvel arrivant."
+      description: |
+        <p>Imaginez l'arrivée d'un nouveau collaborateur. Utilisez des outils comme Trello ou Asana pour créer un "board" d'onboarding avec toutes les tâches à faire (RH, manager, IT). Utilisez un outil d'emailing comme Mailchimp pour programmer une série d'emails de bienvenue sur la première semaine.</p>
+      technologies:
+        - "Trello ou Asana pour la gestion de projet"
+        - "Mailchimp pour l'automatisation d'emails"
+        - "Google Forms pour les formulaires"
+      resources:
+        - text: "Guide onboarding - Trello"
+          url: "https://blog.trello.com/employee-onboarding-process"
+        - text: "Mailchimp Academy - Automation"
+          url: "https://mailchimp.com/help/about-automation/"
+        - text: "Google Forms - Créer des formulaires"
+          url: "https://support.google.com/docs/answer/6281888"
+    
+    - title: "Projet 2: Construire un tableau de bord RH sur un jeu de données"
+      difficulty: "Intermédiaire"
+      duration: "8-12 heures"
+      objective: "Se familiariser avec l'analyse et la visualisation de données RH."
+      description: |
+        <p>Trouvez un jeu de données RH public (sur Kaggle par exemple). Utilisez un tableur (Excel, Google Sheets) ou un outil de BI (Tableau Public, Power BI Desktop) pour créer un tableau de bord visuel avec des indicateurs clés : répartition par genre/âge, turnover par département, etc.</p>
+      technologies:
+        - "Excel ou Google Sheets"
+        - "Tableau Public ou Power BI Desktop"
+        - "Analyse de données RH"
+      resources:
+        - text: "Exemple de jeu de données RH sur Kaggle"
+          url: "https://www.kaggle.com/datasets/rhuebner/human-resources-data-set"
+    
+    - title: "Projet 3: Évaluer et comparer 3 outils SIRH pour une PME"
+      difficulty: "Intermédiaire"
+      duration: "10 heures"
+      objective: "Apprendre à analyser un besoin et à évaluer des solutions technologiques."
+      description: |
+        <p>Imaginez que vous êtes le DRH d'une PME de 100 personnes. Définissez ses besoins clés (gestion des congés, entretiens, notes de frais). Identifiez 3 acteurs du marché français (ex: Lucca, Payfit, Personio). Visitez leur site, demandez une démo si possible, et créez une grille de comparaison pour recommander la meilleure solution.</p>
+      technologies:
+        - "Analyse comparative SIRH"
+        - "Évaluation de solutions"
+        - "Rédaction de recommandations"
+      resources:
+        - text: "Guide d'évaluation SIRH"
+          url: "https://www.lucca.fr/guide/choisir-sirh"
+        - text: "Comparatif SIRH PME"
+          url: "https://www.capterra.fr/directory/30079/hr/software"
+        - text: "Grille d'évaluation logiciel"
+          url: "https://blog.payfit.com/fr/comment-choisir-sirh/"
+
+ecosystem:
+  title: "Écosystème de la HR Tech"
+  tools:
+    - title: "SIRH Intégrés"
+      icon: "fas fa-cogs"
+      items:
+        - name: "Workday"
+          description: "Suite SIRH complète pour les grands groupes"
+          url: "https://www.workday.com/"
+        - name: "Oracle HCM"
+          description: "Solution de gestion du capital humain d'Oracle"
+          url: "https://www.oracle.com/human-capital-management/"
+        - name: "SAP SuccessFactors"
+          description: "Suite RH cloud de SAP"
+          url: "https://www.successfactors.com/"
+        - name: "Lucca"
+          description: "SIRH français pour PME/ETI"
+          url: "https://www.lucca.fr/"
+        - name: "Personio"
+          description: "Solution RH tout-en-un pour PME"
+          url: "https://www.personio.fr/"
+        - name: "HiBob"
+          description: "SIRH moderne et collaboratif"
+          url: "https://www.hibob.com/"
+    
+    - title: "Recrutement (ATS)"
+      icon: "fas fa-search"
+      items:
+        - name: "Greenhouse"
+          description: "Plateforme de recrutement et d'onboarding"
+          url: "https://www.greenhouse.io/"
+        - name: "Lever"
+          description: "ATS moderne et collaboratif"
+          url: "https://www.lever.co/"
+        - name: "SmartRecruiters"
+          description: "Suite de recrutement intelligente"
+          url: "https://www.smartrecruiters.com/"
+        - name: "Teamtailor"
+          description: "ATS avec focus sur l'expérience candidat"
+          url: "https://www.teamtailor.com/"
+    
+    - title: "Gestion de la paie"
+      icon: "fas fa-calculator"
+      items:
+        - name: "PayFit"
+          description: "Solution de paie française automatisée"
+          url: "https://payfit.com/"
+        - name: "Silae"
+          description: "Logiciel de paie et RH"
+          url: "https://www.silae.fr/"
+    
+    - title: "Formation (LMS/LXP)"
+      icon: "fas fa-graduation-cap"
+      items:
+        - name: "360Learning"
+          description: "Plateforme française de formation collaborative"
+          url: "https://360learning.com/"
+        - name: "Cornerstone OnDemand"
+          description: "Suite de gestion des talents et formation"
+          url: "https://www.cornerstoneondemand.com/"
+        - name: "Rise Up"
+          description: "LMS français avec IA"
+          url: "https://www.rise-up.fr/"
+        - name: "Go1"
+          description: "Bibliothèque de contenus de formation"
+          url: "https://www.go1.com/"
+    
+    - title: "Engagement & Performance"
+      icon: "fas fa-heart"
+      items:
+        - name: "Culture Amp"
+          description: "Plateforme d'engagement et de développement"
+          url: "https://www.cultureamp.com/"
+        - name: "Peakon (Workday)"
+          description: "Solution d'engagement collaborateur"
+          url: "https://www.workday.com/en-us/products/human-capital-management/employee-engagement.html"
+        - name: "Leapsome"
+          description: "Plateforme de performance et développement"
+          url: "https://www.leapsome.com/"
+        - name: "Bleexo"
+          description: "Solution française d'engagement"
+          url: "https://www.bleexo.com/"
+
+resources:
+  title: "Ressources d'apprentissage"
+  books:
+    media:
+      title: "Blogs & Médias de référence"
+      items:
+        - title: "myRHline"
+          authors: "France"
+          description: "Un des médias leaders en France sur l'actualité des ressources humaines et de la HR Tech."
+          url: "https://www.myrhline.com/"
+        - title: "Parlons RH"
+          authors: "France"
+          description: "Agence de marketing digital spécialisée RH qui produit beaucoup de contenus de qualité (articles, webinaires)."
+          url: "https://www.parlonsrh.com/"
+        - title: "Josh Bersin"
+          authors: "USA (en anglais)"
+          description: "Un des analystes les plus influents au monde sur le marché de la HR Tech et le futur du travail."
+          url: "https://joshbersin.com/"
+  
+  reports:
+    title: "Rapports & Études"
+    items:
+      - title: "Étude sur la Digitalisation RH (Factorial)"
+        description: "Une étude annuelle sur l'état de la digitalisation en France."
+        url: "https://factorial.fr/ebooks/etude-rh?utm_source=reflect&utm_medium=partner&utm_campaign=hr_report_2023"
+      - title: "Rapports des grands cabinets de conseil"
+        description: "Rapports des grands cabinets de conseil (Deloitte, PWC, etc.) sur les tendances RH."
+        url: ""
+
+careers: true
+career_paths:
+  title: "Perspectives de carrière"
+  description: "La HR Tech crée de nouveaux métiers à l'intersection des RH, de la tech et de la gestion de projet."
+  
+  roles:
+    - title: "Chef de Projet SIRH"
+      icon: "fas fa-cogs"
+      mission: "Piloter le déploiement et l'évolution des outils RH. Faire le lien entre les besoins des utilisateurs et les équipes techniques."
+      skills: "Gestion de projet, compréhension fonctionnelle des processus RH, communication"
+      salary: "40-50K€"
+      country: "France"
+    
+    - title: "HR Data Analyst"
+      icon: "fas fa-chart-bar"
+      mission: "Collecter, analyser et visualiser les données RH pour créer des rapports et aider à la prise de décision stratégique."
+      skills: "Analyse de données, maîtrise d'Excel/Tableau/Power BI, connaissance des indicateurs RH"
+      salary: "40-50K€"
+      country: "France"
+    
+    - title: "Responsable de l'Expérience Collaborateur"
+      icon: "fas fa-user-tie"
+      mission: "Concevoir et améliorer l'ensemble du parcours employé, en s'appuyant sur des outils digitaux et des retours utilisateurs."
+      skills: "Empathie, design thinking, gestion de projet, marketing RH"
+      salary: "38-48K€"
+      country: "France"
+    
+    - title: "Learning & Development Manager (Digital)"
+      icon: "fas fa-graduation-cap"
+      mission: "Construire la stratégie de formation en s'appuyant sur des plateformes digitales (LMS/LXP) et des contenus innovants."
+      skills: "Ingénierie pédagogique, gestion de projet, connaissance des plateformes de formation"
+      salary: "38-45K€"
+      country: "France"
+    
+    - title: "Consultant en Transformation RH"
+      icon: "fas fa-handshake"
+      mission: "Aider les entreprises à choisir et à implémenter leurs outils RH, et à accompagner le changement auprès des équipes."
+      skills: "Gestion de projet, connaissance du marché SIRH, conduite du changement"
+      salary: "42-55K€"
+      country: "France"
+
+  evolution:
+    title: "Évolution de carrière"
+    timeline:
+      - category: "Début de carrière"
+        side: "left"
+        items:
+          - title: "Chargé de projet SIRH"
+            description: "Participation aux projets de déploiement d'outils RH"
+          - title: "Analyste RH"
+            description: "Analyse des données et création de rapports RH"
+          - title: "Consultant junior"
+            description: "Accompagnement des clients dans leurs projets RH"
+          - title: "Chargé de formation digitale"
+            description: "Gestion des plateformes de formation en ligne"
+      
+      - category: "Milieu de carrière"
+        side: "right"
+        items:
+          - title: "Chef de projet SIRH senior"
+            description: "Pilotage de projets complexes de transformation RH"
+          - title: "Responsable SIRH"
+            description: "Gestion complète du système d'information RH"
+          - title: "Manager en cabinet de conseil"
+            description: "Encadrement d'équipes et relation client"
+          - title: "Responsable Expérience Collaborateur"
+            description: "Conception et amélioration du parcours employé"
+      
+      - category: "Carrière senior"
+        side: "left"
+        items:
+          - title: "Directeur de la Transformation RH"
+            description: "Direction de la stratégie de digitalisation RH"
+          - title: "DRH Adjoint en charge du digital"
+            description: "Responsabilité RH avec focus sur la transformation"
+          - title: "Head of People Analytics"
+            description: "Direction de l'analyse des données RH"
+          - title: "Partner en cabinet de conseil"
+            description: "Direction d'activité et développement commercial"
+
+  skills:
+    title: "Compétences recherchées"
+    technical:
+      title: "Compétences Techniques & Projets"
+      items:
+        - "Gestion de projet SIRH - Piloter le déploiement d'outils (cadrage, appel d'offres, conduite du changement)"
+        - "HR Analytics - Maîtriser Excel et des outils de BI (Tableau, Power BI) pour créer des dashboards RH"
+        - "Connaissance des outils - Comprendre l'écosystème des logiciels RH (paie, gestion des talents, etc.)"
+        - "Marketing RH - Appliquer les techniques de marketing pour attirer les talents (marque employeur)"
+        - "Droit social - Connaissance de base du droit du travail pour assurer la conformité des processus"
+    
+    specialized:
+      title: "Compétences Stratégiques & Transformation"
+      items:
+        - "Vision People Analytics - Transformer la fonction RH d'administrative à stratégique grâce aux données"
+        - "Employee Experience Design - Concevoir des parcours collaborateur fluides et engageants"
+        - "Culture & Transformation - Accompagner l'évolution de la culture d'entreprise vers l'agilité et l'innovation"
+        - "Prospective RH - Anticiper les évolutions du travail (télétravail, compétences futures, nouveaux métiers)"
+        - "Écosystème HR Tech - Connaître les startups et solutions innovantes du secteur"
+    
+    soft_skills:
+      title: "Soft skills et autres compétences"
+      items:
+        - "Communication - Dialoguer avec la DSI, les directions métiers et les collaborateurs"
+        - "Gestion du changement - Accompagner les équipes dans l'adoption de nouveaux outils et processus"
+        - "Empathie - Concevoir des processus et des outils centrés sur l'expérience du collaborateur"
+        - "Analyse et synthèse - Transformer les données RH en recommandations stratégiques"
+        - "Curiosité - Assurer une veille permanente sur les innovations et les nouvelles pratiques RH"
+
+  market_trends:
+    title: "Tendances du marché"
+    items:
+      - "Expérience collaborateur symétrique : Offrir aux employés une expérience digitale aussi fluide que celle des clients"
+      - "IA pour l'automatisation : L'IA générative est de plus en plus utilisée pour rédiger des offres d'emploi, analyser des CV ou répondre aux questions des salariés"
+      - "Le 'skills-based organization' : Les entreprises se tournent vers des outils qui permettent de gérer les compétences plutôt que les postes"
+      - "People Analytics : La prise de décision basée sur les données RH devient un standard pour piloter la stratégie humaine"
+      - "Plateformes de 'Talent Marketplace' : Des outils qui favorisent la mobilité interne en rendant visibles toutes les opportunités (postes, projets) au sein de l'entreprise"
+
+summary:
+  title: "En résumé"
+  description: "La Digitalisation de la fonction RH (HR Tech) révolutionne la gestion du capital humain en plaçant l'expérience collaborateur et la donnée au cœur des processus. Cette spécialité combine :"
+  points:
+    - title: "Transformation digitale"
+      description: "Modernisation des processus RH grâce aux outils SIRH et à l'automatisation"
+    - title: "Analyse de données"
+      description: "Utilisation de la HR Analytics pour des décisions stratégiques basées sur la donnée"
+    - title: "Expérience collaborateur"
+      description: "Conception de parcours employé fluides et engageants"
+    - title: "Gestion du changement"
+      description: "Accompagnement des équipes dans l'adoption de nouvelles pratiques"
+    - title: "Innovation RH"
+      description: "Intégration des dernières technologies (IA, analytics) pour optimiser la gestion des talents"
+  conclusion: "Cette spécialité MSc te prépare à devenir un acteur clé de la transformation RH, capable de concevoir et déployer des solutions innovantes qui améliorent l'efficacité des processus tout en enrichissant l'expérience des collaborateurs."
+
+has_media: true
+media:
+  - title: "Introduction par des étudiants Epitech"
+    description: "Une présentation des enjeux de la digitalisation RH par des étudiants d'Epitech Digital School."
+    url: "https://www.youtube.com/embed/CRxH9tILCYs"
+  - title: "Webinar : Solutions, IA et cadre légal"
+    description: "Une analyse complète des outils, de l'impact de l'IA et des contraintes réglementaires par Archimag."
+    url: "https://www.youtube.com/embed/jada66L6ONU"
+  - title: "Évolution et futur de la fonction RH"
+    description: "Une perspective sur les 10 dernières années de transformation RH et les tendances à venir (vidéo en anglais)."
+    url: "https://www.youtube.com/embed/kisi5RMTnxo"

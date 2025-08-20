@@ -1,0 +1,442 @@
+title: "Data Science & Business Intelligence"
+slug: "data-science-bi"
+icon: "fas fa-chart-bar"
+type: "business"
+order: 8
+colors:
+  primary: "#0284C7"
+  secondary: "#38BDF8"
+short_description: "Exploitez le potentiel des données pour générer des insights stratégiques, prendre des décisions éclairées et créer un avantage concurrentiel durable."
+description: "Maîtrisez les techniques d'analyse de données avancées et les outils de business intelligence pour transformer les données brutes en connaissances actionnables qui guident la stratégie d'entreprise et optimisent les performances."
+
+overview:
+  title: "Pourquoi la Data Science & Business Intelligence ?"
+  features:
+    - title: "Le nouvel or noir"
+      icon: "fas fa-database"
+      description: "Les données sont l'actif le plus précieux du 21e siècle. Apprenez à les extraire, les raffiner et les transformer en décisions stratégiques."
+    
+    - title: "Du descriptif au prédictif"
+      icon: "fas fa-magic"
+      description: "Allez au-delà du \"que s'est-il passé ?\" (BI) pour répondre à \"que va-t-il se passer ?\" (Data Science) et prescrire les meilleures actions."
+    
+    - title: "Prise de décision éclairée"
+      icon: "fas fa-bullseye"
+      description: "Remplacez l'intuition par des faits. Fournissez aux décideurs des visualisations claires et des analyses robustes pour guider la stratégie de l'entreprise."
+    
+    - title: "Optimisation des performances"
+      icon: "fas fa-cogs"
+      description: "Identifiez les inefficacités, optimisez les processus marketing, les opérations logistiques ou la tarification grâce à une analyse fine des données."
+    
+    - title: "Compréhension client 360°"
+      icon: "fas fa-user-friends"
+      description: "Analysez les comportements, segmentez les audiences et personnalisez l'expérience client pour augmenter la satisfaction et la fidélité."
+    
+    - title: "Un avantage concurrentiel"
+      icon: "fas fa-search-dollar"
+      description: "Les entreprises \"data-driven\" (pilotées par la donnée) sont plus agiles, plus innovantes et surpassent systématiquement leurs concurrents."
+
+  accordion:
+    - title: "Business Intelligence (BI)"
+      content: |
+        <p>La BI se concentre sur l'analyse descriptive pour comprendre le passé et le présent. C'est le reporting et la visualisation des données de l'entreprise.</p>
+        <ul>
+          <li><strong>ETL (Extract, Transform, Load)</strong> : Processus pour collecter les données de multiples sources, les nettoyer et les charger dans un entrepôt de données (Data Warehouse).</li>
+          <li><strong>Data Visualisation</strong> : Création de tableaux de bord (dashboards) et de rapports interactifs avec des outils comme Tableau, Power BI ou Looker.</li>
+          <li><strong>Indicateurs clés de performance (KPIs)</strong> : Définition et suivi des métriques qui comptent pour l'entreprise.</li>
+        </ul>
+    
+    - title: "Data Science"
+      content: |
+        <p>La Data Science utilise des méthodes statistiques et le Machine Learning pour faire des prédictions sur l'avenir et découvrir des insights cachés.</p>
+        <ul>
+          <li><strong>Exploratory Data Analysis (EDA)</strong> : Exploration approfondie des données pour formuler des hypothèses.</li>
+          <li><strong>Machine Learning</strong> : Entraînement de modèles (régression, classification, clustering) pour prédire des résultats ou segmenter des données.</li>
+          <li><strong>Déploiement</strong> : Mettre un modèle en production pour qu'il puisse faire des prédictions en continu.</li>
+        </ul>
+    
+    - title: "Data Engineering"
+      content: |
+        <p>C'est la fondation qui rend la BI et la Data Science possibles. Le Data Engineering construit et maintient les pipelines et les architectures de données.</p>
+        <ul>
+          <li><strong>Data Pipelines</strong> : Création de flux de données robustes et automatisés.</li>
+          <li><strong>Data Warehousing & Data Lakes</strong> : Conception des systèmes de stockage pour les données structurées (Warehouse) et non structurées (Lake).</li>
+          <li><strong>Qualité et Gouvernance</strong> : Assurer que la donnée est fiable, sécurisée et accessible.</li>
+        </ul>
+
+  quote: "Sans données, vous n'êtes qu'une personne de plus avec une opinion."
+  quote_author: "W. Edwards Deming, statisticien et consultant en management"
+
+use_cases:
+  title: "Cas d'usage emblématiques"
+  timeline:
+    - category: "Streaming & Divertissement"
+      side: "left"
+      items:
+        - title: "Netflix : La recommandation de contenu"
+          description: "Des algorithmes de machine learning analysent l'historique de visionnage de millions d'utilisateurs pour prédire les films et séries qu'un utilisateur spécifique est susceptible d'aimer. Même les vignettes des films sont personnalisées. Netflix estime que son système lui fait économiser plus d'un milliard de dollars par an en réduisant le désabonnement."
+    
+    - category: "E-commerce & Logistique"
+      side: "right"
+      items:
+        - title: "Amazon : L'optimisation de la chaîne logistique"
+          description: "Des modèles prédictifs anticipent les achats des clients au niveau local pour pré-positionner les stocks dans les entrepôts les plus proches. L'optimisation des tournées des livreurs résout un problème complexe avec des algorithmes. Résultat : des délais de livraison record qui sont devenus un avantage concurrentiel majeur."
+    
+    - category: "Musique & Découverte"
+      side: "left"
+      items:
+        - title: "Spotify : La découverte musicale"
+          description: "Des algorithmes (notamment le filtrage collaboratif) analysent les goûts des utilisateurs et les comparent à ceux d'autres profils similaires pour créer des playlists personnalisées comme le \"Discover Weekly\". Une expérience utilisateur hyper-personnalisée qui a fait de Spotify le leader du streaming musical."
+
+  trends:
+    title: "Tendances émergentes"
+    features:
+      - title: "Augmented Analytics"
+        icon: "fas fa-brain"
+        description: "L'IA est intégrée directement dans les outils de BI pour suggérer des analyses, détecter des anomalies et expliquer les insights en langage naturel."
+      
+      - title: "Data Mesh"
+        icon: "fas fa-sitemap"
+        description: "Une nouvelle approche décentralisée de l'architecture de données, où chaque domaine métier gère ses propres données comme un produit."
+      
+      - title: "Modern Data Stack"
+        icon: "fas fa-feather-alt"
+        description: "L'émergence d'outils cloud-natifs et interopérables (comme Snowflake, dbt, Fivetran) pour construire des plateformes de données plus rapidement et plus souplement."
+      
+      - title: "MLOps (Machine Learning Operations)"
+        icon: "fas fa-shield-alt"
+        description: "Des pratiques inspirées du DevOps pour industrialiser, superviser et maintenir les modèles de machine learning en production."
+
+roadmap:
+  title: "Parcours d'apprentissage"
+  phases:
+    - title: "🎯 Phase 1: Les Fondamentaux (1-3 mois)"
+      duration: "1-3 mois"
+      steps:
+        - title: "Mathématiques et Statistiques"
+          description: "Rafraîchir les bases en statistiques descriptives, probabilités et algèbre linéaire. C'est le langage de la data."
+          resources:
+            - text: "Statistiques et probabilités (Khan Academy)"
+              url: "https://www.khanacademy.org/math/statistics-probability"
+        
+        - title: "Programmation avec Python"
+          description: "Apprendre les bases de Python et maîtriser les librairies essentielles de la data science : Pandas, NumPy, Matplotlib et Scikit-learn."
+          resources:
+            - text: "Python 3 Programming Specialization (Coursera)"
+              url: "https://www.coursera.org/specializations/python-3-programming"
+            - text: "10 minutes to pandas"
+              url: "https://pandas.pydata.org/docs/user_guide/10min.html"
+    
+    - title: "🚀 Phase 2: Le cœur du métier (3-6 mois)"
+      duration: "3-6 mois"
+      steps:
+        - title: "SQL et Bases de Données"
+          description: "Le SQL est indispensable pour extraire des données. Comprendre les bases de données relationnelles est un prérequis."
+          resources:
+            - text: "SQLBolt (tutoriel interactif)"
+              url: "https://sqlbolt.com/"
+        
+        - title: "Business Intelligence & Data Visualisation"
+          description: "Apprendre à utiliser un outil de BI comme Tableau ou Power BI pour créer des tableaux de bord percutants."
+          resources:
+            - text: "Formations gratuites sur Tableau"
+              url: "https://www.tableau.com/learn/training"
+            - text: "Parcours d'apprentissage Power BI"
+              url: "https://docs.microsoft.com/fr-fr/power-bi/learning-paths/"
+        
+        - title: "Machine Learning"
+          description: "Comprendre les principaux algorithmes, comment les entraîner et, surtout, comment évaluer leur performance de manière critique."
+          resources:
+            - text: "Machine Learning Specialization par Andrew Ng (Coursera)"
+              url: "https://www.coursera.org/specializations/machine-learning-introduction"
+
+projects:
+  title: "Projets pratiques"
+  items:
+    - title: "Projet 1: Analyser vos propres données"
+      difficulty: "Débutant"
+      duration: "8-10 heures"
+      objective: "Appliquer tout le cycle d'analyse sur un sujet que vous connaissez bien."
+      description: |
+        <p>Exportez vos données depuis un service que vous utilisez (Spotify, Netflix, votre banque...). Utilisez Python/Pandas pour les nettoyer et les analyser.</p>
+        <p>Posez-vous des questions (Quelle est ma chanson la plus écoutée chaque mois ?). Créez des visualisations pour y répondre. Ce projet personnel vous permettra de comprendre concrètement toute la chaîne d'analyse de données.</p>
+      technologies:
+        - "Python avec pandas, matplotlib, seaborn"
+        - "Jupyter Notebook pour l'analyse interactive"
+        - "APIs de services (Spotify, etc.)"
+      resources:
+        - text: "Spotify Web API Guide"
+          url: "https://developer.spotify.com/documentation/web-api/"
+        - text: "Pandas Tutorial complet"
+          url: "https://pandas.pydata.org/docs/getting_started/intro_tutorials/"
+        - text: "Seaborn Gallery"
+          url: "https://seaborn.pydata.org/examples/index.html"
+    
+    - title: "Projet 2: Participer à une compétition Kaggle"
+      difficulty: "Intermédiaire"
+      duration: "15-20 heures"
+      objective: "Se confronter à un vrai problème de data science et apprendre des meilleurs."
+      description: |
+        <p>Choisissez une compétition pour débutants sur Kaggle (ex: Titanic, House Prices). Téléchargez les données, explorez-les, entraînez un premier modèle et soumettez vos prédictions.</p>
+        <p>L'essentiel est d'analyser les \"notebooks\" partagés par les meilleurs pour comprendre leurs techniques. C'est une excellente façon d'apprendre des pratiques de data science de niveau professionnel.</p>
+      technologies:
+        - "Python avec scikit-learn, pandas"
+        - "Jupyter Notebook"
+        - "Techniques de feature engineering"
+        - "Validation croisée et métriques d'évaluation"
+      resources:
+        - text: "Kaggle Competitions"
+          url: "https://www.kaggle.com/competitions"
+    
+    - title: "Projet 3: Créer un tableau de bord interactif de A à Z"
+      difficulty: "Intermédiaire"
+      duration: "12-15 heures"
+      objective: "Maîtriser un outil de BI et les bonnes pratiques de la data visualisation."
+      description: |
+        <p>Trouvez un jeu de données public qui vous intéresse (ex: données sur le COVID, sur les films...). Définissez 3 à 5 questions business.</p>
+        <p>Utilisez Tableau Public ou Power BI Desktop pour créer un tableau de bord interactif qui répond à ces questions. Publiez-le en ligne pour le partager. Ce projet vous donnera une expérience complète de la BI.</p>
+      technologies:
+        - "Tableau Public ou Power BI Desktop"
+        - "Préparation et nettoyage de données"
+        - "Principes de data visualisation"
+        - "Design de dashboards interactifs"
+      resources:
+        - text: "Tableau Learning Path"
+          url: "https://www.tableau.com/learn/training"
+        - text: "Power BI Learning Path"
+          url: "https://docs.microsoft.com/en-us/learn/powerplatform/power-bi"
+        - text: "Data Visualization Principles"
+          url: "https://www.storytellingwithdata.com/fundamentals"
+
+ecosystem:
+  title: "Écosystème Data"
+  tools:
+    - title: "Entrepôts de données (Warehouse)"
+      icon: "fas fa-database"
+      items:
+        - name: "Snowflake"
+          description: "Plateforme cloud native ultra-performante pour l'analyse"
+          url: "https://www.snowflake.com/"
+        - name: "Google BigQuery"
+          description: "Entrepôt de données serverless de Google"
+          url: "https://cloud.google.com/bigquery"
+        - name: "Amazon Redshift"
+          description: "Service d'entrepôt de données d'AWS"
+          url: "https://aws.amazon.com/redshift/"
+    
+    - title: "Ingestion de données (ELT)"
+      icon: "fas fa-download"
+      items:
+        - name: "Fivetran"
+          description: "Plateforme d'intégration de données automatisée"
+          url: "https://fivetran.com/"
+        - name: "Airbyte"
+          description: "Plateforme open source d'intégration de données"
+          url: "https://airbyte.com/"
+        - name: "Stitch"
+          description: "Service ETL cloud simple et rapide"
+          url: "https://www.stitchdata.com/"
+    
+    - title: "Transformation de données"
+      icon: "fas fa-cogs"
+      items:
+        - name: "dbt (Data Build Tool)"
+          description: "L'outil qui a révolutionné la transformation de données en SQL"
+          url: "https://www.getdbt.com/"
+    
+    - title: "Business Intelligence"
+      icon: "fas fa-chart-bar"
+      items:
+        - name: "Tableau"
+          description: "Leader de la visualisation de données"
+          url: "https://www.tableau.com/"
+        - name: "Microsoft Power BI"
+          description: "Outil de BI intégré à l'écosystème Microsoft"
+          url: "https://powerbi.microsoft.com/"
+        - name: "Looker"
+          description: "Plateforme moderne de BI et d'analyse"
+          url: "https://looker.com/"
+        - name: "Metabase"
+          description: "Outil de BI open source simple d'utilisation"
+          url: "https://www.metabase.com/"
+    
+    - title: "Data Science & Notebooks"
+      icon: "fas fa-laptop-code"
+      items:
+        - name: "Jupyter"
+          description: "L'environnement de notebooks de référence"
+          url: "https://jupyter.org/"
+        - name: "Google Colab"
+          description: "Notebooks gratuits avec GPU dans le cloud"
+          url: "https://colab.research.google.com/"
+        - name: "Databricks"
+          description: "Plateforme unifiée pour big data et ML"
+          url: "https://databricks.com/"
+        - name: "Hex"
+          description: "Plateforme collaborative moderne pour data science"
+          url: "https://hex.tech/"
+
+resources:
+  title: "Ressources d'apprentissage"
+  books:
+    blogs:
+      title: "Blogs & Newsletters de référence"
+      items:
+        - title: "Towards Data Science"
+          authors: "USA (en anglais)"
+          description: "Une immense publication sur Medium avec des articles sur tous les sujets de la data, du débutant à l'expert."
+          url: "https://towardsdatascience.com/"
+        - title: "Data Analytics Post"
+          authors: "France"
+          description: "Un blog en français avec des articles de qualité sur la data science et la BI."
+          url: "https://dataanalyticspost.com/"
+        - title: "The Analytics Engineering Roundup"
+          authors: "USA (en anglais)"
+          description: "La newsletter de référence sur la \"Modern Data Stack\", publiée par l'équipe de dbt."
+          url: "https://roundup.getdbt.com/"
+    
+    fundamentals:
+      title: "Livres incontournables"
+      items:
+        - title: "Python for Data Analysis"
+          authors: "Wes McKinney"
+          description: "Le livre de référence par le créateur de la librairie Pandas."
+          url: "https://www.oreilly.com/library/view/python-for-data/9781491957653/"
+        - title: "Storytelling with Data"
+          authors: "Cole Nussbaumer Knaflic"
+          description: "Un livre essentiel pour apprendre à communiquer efficacement avec les données."
+          url: "https://www.storytellingwithdata.com/books"
+
+careers: true
+career_paths:
+  title: "Perspectives de carrière"
+  description: "Les métiers de la data sont parmi les plus recherchés et les mieux rémunérés sur le marché du travail."
+  
+  roles:
+    - title: "Data Analyst / BI Analyst"
+      icon: "fas fa-chart-line"
+      mission: "Transformer les données brutes en insights via des tableaux de bord, des rapports et des analyses pour aider les équipes métiers à prendre des décisions."
+      skills: "SQL, Outils de BI (Tableau, Power BI), communication, compréhension business"
+      salary: "38-48K€"
+      country: "France"
+    
+    - title: "Data Scientist"
+      icon: "fas fa-flask"
+      mission: "Utiliser des techniques statistiques et de machine learning pour créer des modèles prédictifs (prédire le churn, segmenter des clients, etc.)."
+      skills: "Python/R, Machine Learning, statistiques, communication"
+      salary: "45-55K€"
+      country: "France"
+    
+    - title: "Data Engineer"
+      icon: "fas fa-cogs"
+      mission: "Construire et maintenir l'infrastructure et les pipelines qui permettent de collecter, stocker et transformer la donnée à grande échelle."
+      skills: "SQL, Python, Architectures de données (ETL, ELT), Cloud (AWS, GCP, Azure)"
+      salary: "42-52K€"
+      country: "France"
+    
+    - title: "Machine Learning Engineer"
+      icon: "fas fa-brain"
+      mission: "Prendre les modèles créés par les Data Scientists et les industrialiser, c'est-à-dire les déployer en production de manière fiable et scalable."
+      skills: "Python, Software Engineering, Cloud, DevOps/MLOps, Docker"
+      salary: "48-60K€"
+      country: "France"
+    
+    - title: "Analytics Engineer"
+      icon: "fas fa-arrows-alt-h"
+      mission: "Un rôle hybride entre le Data Analyst et le Data Engineer, qui se concentre sur la transformation, la modélisation et la documentation de la donnée avec des outils comme dbt."
+      skills: "SQL avancé, dbt, modélisation de données, compréhension business"
+      salary: "40-50K€"
+      country: "France"
+
+  evolution:
+    title: "Évolution de carrière"
+    timeline:
+      - category: "Carrière individuelle"
+        side: "left"
+        items:
+          - title: "Data Analyst → Senior Data Analyst"
+            description: "Spécialisation et expertise approfondie en analyse"
+          - title: "Data Scientist → Senior Data Scientist"
+            description: "Développement de modèles complexes et recherche"
+          - title: "Data Engineer → Senior Data Engineer"
+            description: "Architecture de données et systèmes distribués"
+          - title: "Évolution vers Staff/Principal"
+            description: "Expertise technique de très haut niveau"
+      
+      - category: "Carrière managériale"
+        side: "right"
+        items:
+          - title: "Senior → Lead → Manager"
+            description: "Encadrement d'équipes et coordination de projets"
+          - title: "Engineering Manager"
+            description: "Management technique et stratégique"
+          - title: "Head of Data / Director"
+            description: "Direction de département et stratégie data"
+          - title: "Chief Data Officer"
+            description: "Direction exécutive de la stratégie data"
+
+  skills:
+    title: "Compétences recherchées"
+    technical:
+      title: "Compétences Techniques"
+      items:
+        - "SQL - Le langage incontournable pour interroger les bases de données"
+        - "Python ou R - Maîtrise d'au moins un langage de programmation pour la data, avec ses librairies clés (Pandas, Scikit-learn)"
+        - "Outils de BI - Expérience avec Tableau, Power BI, Looker ou un outil similaire pour créer des visualisations"
+        - "Statistiques & Machine Learning - Compréhension des concepts statistiques fondamentaux et des principaux algorithmes de ML"
+        - "Cloud & Data Warehousing - Connaissance de base des plateformes cloud (AWS, Azure, GCP) et des entrepôts de données (Snowflake, BigQuery)"
+    
+    specialized:
+      title: "Compétences Spécialisées & Sectorielles"
+      items:
+        - "Modélisation prédictive - Développer des modèles pour anticiper les ventes, la demande ou les comportements clients"
+        - "A/B Testing & Expérimentation - Concevoir et analyser des tests pour optimiser les produits et les campagnes"
+        - "Data Engineering - Comprendre les pipelines de données, l'ETL et l'architecture de données moderne"
+        - "Machine Learning en production - Savoir déployer et monitorer des modèles ML dans des environnements de production"
+        - "Domaines d'expertise - Se spécialiser dans un secteur (finance, e-commerce, santé) pour mieux comprendre les enjeux métier"
+    
+    soft_skills:
+      title: "Soft skills et autres compétences"
+      items:
+        - "Compréhension Business - Capacité à comprendre les enjeux d'un secteur et à traduire un problème business en problème data"
+        - "Communication & Data Storytelling - Savoir présenter des résultats complexes de manière simple, claire et percutante"
+        - "Esprit critique - Ne pas prendre les données pour argent comptant, savoir questionner leur qualité et la validité d'une analyse"
+        - "Curiosité - Une envie constante d'explorer les données pour découvrir des insights cachés"
+        - "Rigueur et organisation - Mener des analyses de manière structurée et reproductible"
+
+  market_trends:
+    title: "Tendances du marché"
+    items:
+      - "Le \"Self-Service\" BI : Donner aux équipes métiers des outils simples pour qu'elles puissent explorer elles-mêmes les données"
+      - "Augmented Analytics : L'IA s'intègre aux outils de BI pour automatiser la découverte d'insights et les expliquer en langage naturel"
+      - "L'essor de l'Analytics Engineer : Un nouveau rôle à l'intersection de l'analyse et de l'ingénierie, centré sur la modélisation de données fiables avec des outils comme dbt"
+      - "La pile de données moderne (Modern Data Stack) : Adoption massive d'outils cloud-natifs, flexibles et interopérables"
+      - "Gouvernance et Qualité des données : Avec la multiplication des sources, assurer la fiabilité et la gouvernance des données devient un enjeu critique"
+
+summary:
+  title: "En résumé"
+  description: "La Data Science & Business Intelligence représente l'art de transformer les données en décisions stratégiques. Cette spécialité combine :"
+  points:
+    - title: "Analyse descriptive et prédictive"
+      description: "Maîtrise des techniques pour comprendre le passé et anticiper l'avenir"
+    - title: "Visualisation et communication"
+      description: "Capacité à rendre les insights accessibles et actionnables"
+    - title: "Expertise technique solide"
+      description: "Programmation, statistiques, outils de BI et architectures de données"
+    - title: "Vision business"
+      description: "Compréhension des enjeux métiers pour orienter les analyses"
+    - title: "Impact mesurable"
+      description: "Création de valeur concrète pour les organisations"
+  conclusion: "Cette spécialité MSc te prépare à devenir un expert de la donnée, capable de révéler les insights cachés dans les données et de guider les décisions stratégiques des entreprises à l'ère du numérique."
+
+has_media: true
+media:
+  - title: "Témoignage d'un Data Engineer (Alumni Epitech)"
+    description: "Un ancien étudiant partage son expérience concrète dans l'industrie du jeu en ligne."
+    url: "https://www.youtube.com/embed/JCywHkeHqpM"
+  - title: "Cas pratique : un dashboard Power BI"
+    description: "Une démonstration concrète de création d'un tableau de bord pour analyser le niveau de vie en France."
+    url: "https://www.youtube.com/embed/zUO6WzjR27Q"
+  - title: "Business Intelligence vs Data Science"
+    description: "Une vidéo claire qui explique les différences et surtout la complémentarité entre ces deux domaines."
+    url: "https://www.youtube.com/embed/mBB1jWeqEWg"

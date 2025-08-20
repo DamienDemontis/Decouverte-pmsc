@@ -1,0 +1,79 @@
+# Navigation structure for the site
+main:
+  - title: "Accueil"
+    url: "/"
+    icon: "fas fa-home"
+
+categories:
+  tech:
+    title: "Spécialités Expertes Technologiques"
+    specialities:
+      - slug: "bigdata"
+        title: "Big Data"
+        icon: "fas fa-database"
+        order: 1
+      - slug: "cloud"
+        title: "Cloud Computing"
+        icon: "fas fa-cloud"
+        order: 2
+      - slug: "cybersecurite"
+        title: "Cybersécurité"
+        icon: "fas fa-shield-alt"
+        order: 3
+      - slug: "ia"
+        title: "Intelligence Artificielle"
+        icon: "fas fa-brain"
+        order: 4
+      - slug: "iot"
+        title: "Internet of Things (IoT)"
+        icon: "fas fa-microchip"
+        order: 5
+      - slug: "vrar"
+        title: "VR/AR"
+        icon: "fas fa-vr-cardboard"
+        order: 6
+
+  business:
+    title: "Spécialités Digital, Business & Management"
+    specialities:
+      - slug: "project-management"
+        title: "Strategic Project Management"
+        icon: "fas fa-tasks"
+        order: 1
+      - slug: "fintech"
+        title: "Fintech & Stratégies financières"
+        icon: "fas fa-chart-pie"
+        order: 2
+      - slug: "marketing"
+        title: "Marketing & Influence"
+        icon: "fas fa-bullhorn"
+        order: 3
+      - slug: "ai-transformation"
+        title: "IA & Transformation des organisations"
+        icon: "fas fa-building-user"
+        order: 4
+      - slug: "data-protection"
+        title: "Data, Protection & Sécurité"
+        icon: "fas fa-shield-alt"
+        order: 5
+      - slug: "rh-digitale"
+        title: "Digitalisation de la fonction RH"
+        icon: "fas fa-users-cog"
+        order: 6
+      - slug: "sante-ia-iot"
+        title: "Santé, IA & IoT"
+        icon: "fas fa-heartbeat"
+        order: 7
+      - slug: "data-science-bi"
+        title: "Data Science & Business Intelligence"
+        icon: "fas fa-chart-line"
+        order: 8
+      - slug: "luxe-retail-tech"
+        title: "Luxe & Retail Tech"
+        icon: "fas fa-gem"
+        order: 9
+
+footer:
+  - title: "À propos"
+    url: "/about/"
+    icon: "fas fa-info-circle"

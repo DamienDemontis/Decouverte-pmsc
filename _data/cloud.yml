@@ -1,0 +1,530 @@
+title: "Cloud Computing"
+slug: "cloud"
+icon: "fas fa-cloud"
+type: "tech"
+order: 2
+colors:
+  primary: "#3B82F6"
+  secondary: "#60A5FA"
+short_description: "Maîtrisez la conception, le déploiement et la gestion d'infrastructures cloud pour créer des applications évolutives, flexibles et résilientes."
+description: "Plongez dans l'univers du Cloud Computing pour apprendre à concevoir, déployer et gérer des infrastructures et services cloud modernes, flexibles et sécurisés."
+
+overview:
+  title: "Pourquoi le Cloud Computing ?"
+  features:
+    - title: "Agilité"
+      icon: "fas fa-tachometer-alt"
+      description: "Déploiement rapide de ressources informatiques et réduction drastique du time-to-market."
+      example: "Netflix a migré 100% de son infrastructure vers AWS, réduisant ses délais de déploiement de semaines à minutes."
+    
+    - title: "Scalabilité"
+      icon: "fas fa-chart-line"
+      description: "Adaptation dynamique des ressources en fonction de la demande, sans interruption de service."
+      example: "Lors du Black Friday, Amazon Web Services permet à ses clients e-commerce de multiplier leurs capacités par 10 en quelques minutes."
+    
+    - title: "Économie"
+      icon: "fas fa-wallet"
+      description: "Transformation des coûts d'infrastructure de CAPEX (investissement) en OPEX (dépenses opérationnelles)."
+      example: "Dropbox a économisé plus de 75 millions de dollars en migrant de AWS vers sa propre infrastructure hybride optimisée."
+    
+    - title: "Distribution mondiale"
+      icon: "fas fa-globe"
+      description: "Déploiement d'applications au plus proche des utilisateurs partout dans le monde."
+      example: "Airbnb utilise 20+ régions cloud pour assurer des temps de réponse inférieurs à 100ms à ses utilisateurs globaux."
+    
+    - title: "Résilience"
+      icon: "fas fa-shield-alt"
+      description: "Tolérance aux pannes et haute disponibilité grâce à la redondance multi-zones et multi-régions."
+      example: "Les solutions multi-régions de Stripe garantissent un taux de disponibilité de 99,999% pour les transactions financières."
+    
+    - title: "Innovation"
+      icon: "fas fa-rocket"
+      description: "Accès immédiat aux dernières technologies (IA, IoT, Data) sans investissement initial."
+      example: "Lyft utilise des services managés de ML sur Google Cloud pour optimiser ses algorithmes de tarification en temps réel."
+
+  accordion:
+    - title: "Cloud Public"
+      content: |
+        <p>Les services cloud publics sont fournis par des fournisseurs tiers et partagés entre plusieurs organisations.</p>
+        <ul>
+          <li><strong>Avantages</strong> : Coût réduit, aucun investissement matériel, mise à l'échelle illimitée</li>
+          <li><strong>Inconvénients</strong> : Moins de contrôle, problématiques potentielles de sécurité et confidentialité</li>
+          <li><strong>Acteurs majeurs</strong> : AWS, Microsoft Azure, Google Cloud Platform, Alibaba Cloud</li>
+        </ul>
+        <p>Idéal pour : startups, applications web grand public, charges de travail variables</p>
+    
+    - title: "Cloud Privé"
+      content: |
+        <p>Infrastructure dédiée à une seule organisation, hébergée en interne ou par un tiers.</p>
+        <ul>
+          <li><strong>Avantages</strong> : Contrôle maximal, sécurité renforcée, conformité réglementaire</li>
+          <li><strong>Inconvénients</strong> : Coûts plus élevés, capacité de mise à l'échelle limitée</li>
+          <li><strong>Technologies</strong> : OpenStack, VMware Cloud Foundation, Microsoft Azure Stack</li>
+        </ul>
+        <p>Idéal pour : secteur financier, santé, défense, organisations avec des données très sensibles</p>
+    
+    - title: "Cloud Hybride"
+      content: |
+        <p>Combinaison d'infrastructures cloud publiques et privées fonctionnant ensemble.</p>
+        <ul>
+          <li><strong>Avantages</strong> : Flexibilité, optimisation des coûts, équilibre sécurité/évolutivité</li>
+          <li><strong>Inconvénients</strong> : Complexité d'intégration, défis de gestion</li>
+          <li><strong>Technologies</strong> : Kubernetes, Terraform, solutions VPN/Direct Connect</li>
+        </ul>
+        <p>Idéal pour : grandes entreprises, applications avec des besoins variables de stockage/calcul, stratégies de cloud bursting</p>
+    
+    - title: "Multi-Cloud"
+      content: |
+        <p>Utilisation de services cloud de plusieurs fournisseurs différents.</p>
+        <ul>
+          <li><strong>Avantages</strong> : Évite la dépendance à un fournisseur, optimisation des services spécifiques</li>
+          <li><strong>Inconvénients</strong> : Complexité accrue, défis d'interopérabilité, gouvernance</li>
+          <li><strong>Outils</strong> : Terraform, Kubernetes, Anthos, Cloud Foundry</li>
+        </ul>
+        <p>Idéal pour : entreprises cherchant à éviter le vendor lock-in, besoins de haute disponibilité</p>
+
+  quote: "Le cloud computing, c'est transformer l'infrastructure informatique d'un produit en un service consommé à la demande."
+  quote_author: "Werner Vogels, CTO d'Amazon"
+
+use_cases:
+  title: "Cas d'usage emblématiques"
+  timeline:
+    - category: "Transformation digitale"
+      side: "left"
+      items:
+        - title: "Modernisation d'applications"
+          description: "Maersk a migré ses 1000+ applications legacy vers des microservices cloud-native, réduisant les coûts d'infrastructure de 60% et divisant par 20 les délais de déploiement."
+        - title: "DevOps & CI/CD"
+          description: "Toyota a adopté une approche DevOps sur AWS, permettant 1800 déploiements par mois contre 10 auparavant, accélérant drastiquement l'innovation."
+        - title: "Digital Workplace"
+          description: "Pendant la pandémie, Siemens a basculé 300 000 employés sur Microsoft 365 en quelques semaines, assurant la continuité d'activité grâce au cloud."
+          
+    - category: "Computing à grande échelle"
+      side: "right"
+      items:
+        - title: "HPC (High Performance Computing)"
+          description: "Moderna a utilisé AWS pour modéliser le vaccin COVID-19 en réduisant le temps de conception de plusieurs années à 2 mois grâce à des calculs intensifs."
+        - title: "ML & IA"
+          description: "Airbus utilise Google Cloud pour analyser des pétaoctets d'images satellites avec des modèles de détection d'objets, identifiant automatiquement navires, avions et véhicules."
+        - title: "Gaming multi-joueurs"
+          description: "Epic Games utilise AWS pour héberger Fortnite, scalant à plus de 10 millions de joueurs simultanés avec une latence minimale."
+    
+    - category: "Architectures cloud-native"
+      side: "left"
+      items:
+        - title: "Microservices"
+          description: "Netflix a décomposé son monolithe en 700+ microservices, permettant à 3000+ développeurs de déployer des milliers de fois par jour sans perturber l'expérience utilisateur."
+        - title: "Serverless"
+          description: "Coca-Cola utilise AWS Lambda pour gérer des millions de transactions IoT depuis ses distributeurs connectés sans aucune gestion d'infrastructure."
+        - title: "Containérisation"
+          description: "Pinterest a migré vers Kubernetes pour orchestrer 1000+ services, réduisant les coûts d'infrastructure de 30% tout en améliorant la résilience."
+    
+    - category: "Stockage et Data Lakes"
+      side: "right"
+      items:
+        - title: "Médias & Streaming"
+          description: "Disney+ stocke et diffuse 500+ PB de contenu vidéo via le cloud, servant 100+ millions d'abonnés avec un streaming de haute qualité."
+        - title: "Data Lake"
+          description: "Capital One a construit un lac de données sur AWS pour unifier 40 TB de données quotidiennes provenant de sources disparates, facilitant l'analyse et la conformité réglementaire."
+        - title: "Archivage & Conservation"
+          description: "Le Digital Public Library of America préserve le patrimoine culturel américain dans le cloud, stockant des pétaoctets de documents historiques avec un coût minime."
+
+  trends:
+    title: "Tendances émergentes"
+    features:
+      - title: "Serverless computing"
+        icon: "fas fa-server"
+        description: "L'abstraction complète de l'infrastructure permet aux développeurs de se concentrer uniquement sur le code, avec facturation à la milliseconde d'exécution."
+      
+      - title: "GitOps & Infrastructure as Code"
+        icon: "fas fa-code-branch"
+        description: "L'infrastructure est désormais gérée comme du code source, avec des workflows automatisés basés sur Git pour le déploiement et la gestion des changements."
+      
+      - title: "Edge Computing"
+        icon: "fas fa-network-wired"
+        description: "Extension du cloud au plus près des utilisateurs et des appareils IoT pour réduire la latence et optimiser la bande passante."
+      
+      - title: "Zero Trust Security"
+        icon: "fas fa-lock"
+        description: "Nouveau paradigme de sécurité cloud où aucune entité n'est de confiance par défaut, avec authentification et autorisation continues."
+
+roadmap:
+  title: "Parcours d'apprentissage"
+  phases:
+    - title: "🎯 Phase 1: Fondamentaux Cloud"
+      duration: "1-3 mois"
+      steps:
+        - title: "Concepts fondamentaux"
+          description: "Comprendre les modèles de service (IaaS, PaaS, SaaS), les modèles de déploiement et les avantages du cloud."
+          resources:
+            - text: "AWS Cloud Practitioner Essentials"
+              url: "https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/"
+            - text: "Microsoft Azure Fundamentals"
+              url: "https://learn.microsoft.com/training/paths/azure-fundamentals/"
+        - title: "Virtualisation et conteneurs"
+          description: "Maîtriser Docker, comprendre la différence avec les VMs, et découvrir l'orchestration avec Kubernetes."
+          resources:
+            - text: "Docker Getting Started"
+              url: "https://docs.docker.com/get-started/"
+            - text: "Kubernetes Basics"
+              url: "https://kubernetes.io/docs/tutorials/kubernetes-basics/"
+    
+    - title: "🚀 Phase 2: Infrastructure et Services"
+      duration: "3-6 mois"
+      steps:
+        - title: "Services cloud principaux"
+          description: "Explorer les services compute, storage, networking et database d'une plateforme cloud majeure."
+          resources:
+            - text: "AWS Well-Architected Framework"
+              url: "https://aws.amazon.com/architecture/well-architected/"
+            - text: "Azure Architecture Center"
+              url: "https://docs.microsoft.com/azure/architecture/"
+        - title: "Infrastructure as Code"
+          description: "Apprendre Terraform pour automatiser le provisioning d'infrastructure cloud."
+          resources:
+            - text: "Terraform Get Started"
+              url: "https://learn.hashicorp.com/terraform"
+            - text: "AWS CloudFormation Guide"
+              url: "https://docs.aws.amazon.com/cloudformation/"
+    
+    - title: "⭐ Phase 3: DevOps et Déploiement"
+      duration: "6+ mois"
+      steps:
+        - title: "CI/CD dans le cloud"
+          description: "Mettre en place des pipelines de déploiement continu avec GitHub Actions, GitLab CI ou AWS CodePipeline."
+          resources:
+            - text: "GitHub Actions Documentation"
+              url: "https://docs.github.com/actions"
+            - text: "AWS DevOps Services"
+              url: "https://aws.amazon.com/devops/"
+        - title: "Monitoring et observabilité"
+          description: "Surveiller les applications et infrastructures cloud avec des solutions comme CloudWatch, Prometheus ou Grafana."
+          resources:
+            - text: "Prometheus Monitoring"
+              url: "https://prometheus.io/docs/introduction/overview/"
+            - text: "AWS CloudWatch Guide"
+              url: "https://docs.aws.amazon.com/cloudwatch/"
+
+projects:
+  title: "Projets pratiques"
+  items:
+    - title: "Projet 1: Infrastructure Web Scalable"
+      difficulty: "Débutant"
+      duration: "6-8 heures"
+      objective: "Déployer une application web sur le cloud avec mise à l'échelle automatique"
+      description: |
+        <p>Ce projet te guide dans la création d'une infrastructure web complète sur AWS ou Azure, incluant load balancing, auto-scaling et monitoring.</p>
+        <p>Tu apprendras à déployer une application simple, la rendre hautement disponible et mettre en place un système de surveillance.</p>
+      technologies:
+        - "AWS EC2, ALB, Auto Scaling Groups"
+        - "Azure VMs, Load Balancer, Scale Sets"
+        - "CloudWatch ou Azure Monitor"
+        - "Infrastructure as Code (Terraform)"
+      resources:
+        - text: "AWS Auto Scaling Guide"
+          url: "https://docs.aws.amazon.com/autoscaling/"
+        - text: "Terraform AWS Provider"
+          url: "https://registry.terraform.io/providers/hashicorp/aws/"
+    
+    - title: "Projet 2: Pipeline CI/CD Containerisé"
+      difficulty: "Intermédiaire"
+      duration: "10-12 heures"
+      objective: "Créer un pipeline complet de build, test et déploiement pour une application conteneurisée"
+      description: |
+        <p>Ce projet avancé te permet de maîtriser les pratiques DevOps modernes en créant un pipeline automatisé qui :</p>
+        <ol>
+          <li><strong>Build automatique</strong> - Construction d'images Docker à partir du code source</li>
+          <li><strong>Tests automatisés</strong> - Exécution de tests unitaires et d'intégration</li>
+          <li><strong>Déploiement sur Kubernetes</strong> - Déploiement automatique sur un cluster EKS ou AKS</li>
+          <li><strong>Rollback automatique</strong> - Retour en arrière en cas de problème</li>
+        </ol>
+      technologies:
+        - "Docker et registre de conteneurs"
+        - "Kubernetes (EKS, AKS ou GKE)"
+        - "GitHub Actions ou GitLab CI"
+        - "Helm pour le packaging Kubernetes"
+      resources:
+        - text: "Kubernetes CI/CD with GitLab"
+          url: "https://docs.gitlab.com/ee/user/clusters/agent/"
+        - text: "AWS EKS Workshop"
+          url: "https://www.eksworkshop.com/"
+    
+    - title: "Projet 3: Architecture Microservices"
+      difficulty: "Avancé"
+      duration: "15-20 heures"
+      objective: "Concevoir et déployer une architecture microservices complète avec service mesh"
+      description: |
+        <p>Ce projet complexe simule un environnement de production réel avec plusieurs microservices communiquant entre eux :</p>
+        <ol>
+          <li><strong>API Gateway</strong> - Point d'entrée unique pour tous les services</li>
+          <li><strong>Services métier</strong> - Plusieurs microservices avec leurs propres bases de données</li>
+          <li><strong>Service Mesh</strong> - Communication sécurisée avec Istio</li>
+          <li><strong>Observabilité</strong> - Logging, metrics et tracing distribué</li>
+          <li><strong>Résilience</strong> - Circuit breakers et retry policies</li>
+        </ol>
+      technologies:
+        - "Kubernetes avec Istio service mesh"
+        - "API Gateway (Kong, AWS API Gateway)"
+        - "Bases de données managées (RDS, CosmosDB)"
+        - "Observabilité (Jaeger, Prometheus, Grafana)"
+      resources:
+        - text: "Istio Getting Started"
+          url: "https://istio.io/latest/docs/setup/getting-started/"
+        - text: "Microservices Patterns"
+          url: "https://microservices.io/patterns/"
+
+ecosystem:
+  title: "Écosystème Cloud"
+  tools:
+    - title: "Cloud Providers"
+      icon: "fas fa-cloud"
+      items:
+        - name: "Amazon Web Services (AWS)"
+          description: "Leader du marché avec le plus large éventail de services"
+          url: "https://aws.amazon.com/"
+        - name: "Microsoft Azure"
+          description: "Forte intégration avec l'écosystème Microsoft"
+          url: "https://azure.microsoft.com/"
+        - name: "Google Cloud Platform (GCP)"
+          description: "Excellence en IA/ML et analytics"
+          url: "https://cloud.google.com/"
+        - name: "IBM Cloud"
+          description: "Focus sur les solutions d'entreprise et hybrid cloud"
+          url: "https://www.ibm.com/cloud"
+    
+    - title: "Infrastructure as Code"
+      icon: "fas fa-code"
+      items:
+        - name: "Terraform"
+          description: "Outil multi-cloud pour provisionner l'infrastructure"
+          url: "https://www.terraform.io/"
+        - name: "AWS CloudFormation"
+          description: "Service natif AWS pour l'infrastructure as code"
+          url: "https://aws.amazon.com/cloudformation/"
+        - name: "Azure Resource Manager"
+          description: "Modèles ARM pour déployer sur Azure"
+          url: "https://docs.microsoft.com/azure/azure-resource-manager/"
+        - name: "Pulumi"
+          description: "Infrastructure as code avec des langages de programmation"
+          url: "https://www.pulumi.com/"
+    
+    - title: "Conteneurs & Orchestration"
+      icon: "fas fa-boxes"
+      items:
+        - name: "Docker"
+          description: "Plateforme de conteneurisation leader"
+          url: "https://www.docker.com/"
+        - name: "Kubernetes"
+          description: "Orchestrateur de conteneurs open-source"
+          url: "https://kubernetes.io/"
+        - name: "Amazon EKS"
+          description: "Service Kubernetes managé d'AWS"
+          url: "https://aws.amazon.com/eks/"
+        - name: "Azure AKS"
+          description: "Service Kubernetes managé d'Azure"
+          url: "https://azure.microsoft.com/services/kubernetes-service/"
+    
+    - title: "CI/CD & DevOps"
+      icon: "fas fa-shipping-fast"
+      items:
+        - name: "GitHub Actions"
+          description: "Automatisation CI/CD intégrée à GitHub"
+          url: "https://github.com/features/actions"
+        - name: "GitLab CI/CD"
+          description: "Pipeline DevOps complet dans GitLab"
+          url: "https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/"
+        - name: "Jenkins"
+          description: "Serveur d'automatisation open-source"
+          url: "https://www.jenkins.io/"
+        - name: "ArgoCD"
+          description: "GitOps pour Kubernetes"
+          url: "https://argo-cd.readthedocs.io/"
+
+resources:
+  title: "Ressources d'apprentissage"
+  books:
+    fundamentals:
+      title: "Cours en ligne et certifications"
+      items:
+        - title: "AWS Cloud Practitioner Essentials"
+          authors: "AWS Training"
+          description: "Cours d'introduction officiel couvrant les concepts de base d'AWS et du cloud computing."
+          url: "https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/"
+        - title: "Microsoft Azure Fundamentals"
+          authors: "Microsoft Learn"
+          description: "Formation gratuite pour comprendre les concepts de base d'Azure et du cloud computing."
+          url: "https://learn.microsoft.com/training/paths/azure-fundamentals/"
+        - title: "Google Cloud Platform (GCP) Fundamentals"
+          authors: "Google Cloud Training"
+          description: "Formation aux concepts fondamentaux de GCP."
+          url: "https://cloud.google.com/training/cloud-infrastructure"
+        - title: "Introduction to Kubernetes"
+          authors: "The Linux Foundation"
+          description: "Cours gratuit couvrant les concepts de base de Kubernetes et son architecture."
+          url: "https://training.linuxfoundation.org/training/introduction-to-kubernetes/"
+
+    specialized:
+      title: "Documentation et formations avancées"
+      items:
+        - title: "AWS Well-Architected Framework"
+          authors: "Amazon Web Services"
+          description: "Guide des meilleures pratiques pour construire des systèmes sécurisés, performants et efficaces"
+          url: "https://aws.amazon.com/architecture/well-architected/"
+        - title: "Kubernetes Documentation"
+          authors: "Kubernetes Community"
+          description: "Documentation complète de Kubernetes avec tutoriels et guides"
+          url: "https://kubernetes.io/docs/"
+        - title: "Terraform Learn"
+          authors: "HashiCorp"
+          description: "Tutoriels interactifs pour maîtriser Terraform"
+          url: "https://learn.hashicorp.com/terraform"
+        - title: "Cloud Native Computing Foundation"
+          authors: "CNCF"
+          description: "Ressources sur les technologies cloud-native"
+          url: "https://www.cncf.io/"
+
+careers: true
+career_paths:
+  title: "Perspectives de carrière"
+  description: "Le domaine du Cloud Computing offre de nombreuses opportunités professionnelles avec une demande constante et des salaires attractifs."
+  
+  roles:
+    - title: "Cloud Architect"
+      icon: "fas fa-cogs"
+      mission: "Concevoir et planifier les architectures cloud, garantir leur performance, sécurité et évolutivité."
+      skills: "Architecture distribuée, sécurité, réseaux, IAM, migrations"
+      salary: "60-90K€"
+      country: "France"
+    
+    - title: "DevOps Engineer"
+      icon: "fas fa-terminal"
+      mission: "Automatiser les processus de développement, déploiement et opérations dans le cloud."
+      skills: "CI/CD, IaC, Linux, scripting, monitoring, containers"
+      salary: "50-80K€"
+      country: "France"
+    
+    - title: "Cloud Infrastructure Engineer"
+      icon: "fas fa-sitemap"
+      mission: "Déployer et gérer l'infrastructure cloud au quotidien, assurer sa disponibilité et ses performances."
+      skills: "Services IaaS, réseaux cloud, infrastructure as code, monitoring"
+      salary: "45-70K€"
+      country: "France"
+    
+    - title: "Cloud Security Engineer"
+      icon: "fas fa-shield-alt"
+      mission: "Concevoir et appliquer les politiques de sécurité dans l'environnement cloud."
+      skills: "IAM, sécurité réseau, cryptographie, conformité, audit"
+      salary: "55-85K€"
+      country: "France"
+    
+    - title: "FinOps Engineer"
+      icon: "fas fa-chart-line"
+      mission: "Optimiser les coûts du cloud et mettre en place des bonnes pratiques financières."
+      skills: "Analyse de coûts, budgétisation, optimisation de ressources"
+      salary: "60-90K€"
+      country: "France"
+
+  evolution:
+    title: "Évolution de carrière"
+    timeline:
+      - category: "Début de carrière"
+        side: "left"
+        items:
+          - title: "Cloud Support Engineer"
+            description: "Support technique d'infrastructures cloud"
+          - title: "Junior DevOps"
+            description: "Automatisation et déploiement continu"
+          - title: "Cloud Developer"
+            description: "Développement d'applications cloud-native"
+          - title: "SRE Junior"
+            description: "Maintien de la fiabilité des services cloud"
+      
+      - category: "Mi-carrière"
+        side: "right"
+        items:
+          - title: "Cloud Architect"
+            description: "Conception d'architectures cloud complexes"
+          - title: "DevOps Team Lead"
+            description: "Direction d'équipes d'automatisation"
+          - title: "Multi-Cloud Specialist"
+            description: "Expert en solutions multi-cloud"
+          - title: "Cloud Migration Manager"
+            description: "Pilotage de projets de migration"
+      
+      - category: "Senior"
+        side: "left"
+        items:
+          - title: "Chief Cloud Officer"
+            description: "Stratégie cloud au niveau exécutif"
+          - title: "Director of Cloud Operations"
+            description: "Direction des opérations cloud"
+          - title: "Cloud Transformation Leader"
+            description: "Pilotage de transformations à l'échelle"
+          - title: "Cloud Infrastructure Entrepreneur"
+            description: "Création de startups cloud"
+
+  skills:
+    title: "Compétences recherchées"
+    technical:
+      title: "Plateformes cloud"
+      items:
+        - "AWS - EC2, S3, Lambda, CloudFormation, VPC, IAM, EKS"
+        - "Microsoft Azure - VMs, Storage, Functions, Azure DevOps, AKS"
+        - "Google Cloud - Compute Engine, GKE, GCS, Cloud Functions"
+        - "Multi-cloud - Stratégies et outils d'orchestration multi-cloud"
+        - "Cloud privé - OpenStack, VMware vCloud, Oracle Cloud"
+    
+    specialized:
+      title: "Technologies et pratiques"
+      items:
+        - "Containers - Docker, Kubernetes, OpenShift, ECS"
+        - "Infrastructure as Code - Terraform, CloudFormation, Pulumi, ARM"
+        - "CI/CD - Jenkins, GitHub Actions, GitLab CI, CircleCI"
+        - "Monitoring/Observabilité - Prometheus, Grafana, ELK, DataDog"
+        - "Serverless - Lambda, Azure Functions, Cloud Run, architectures event-driven"
+    
+    soft_skills:
+      title: "Soft skills et autres compétences"
+      items:
+        - "Pensée architecturale - Vision globale et conception de systèmes"
+        - "Optimisation coûts - FinOps et gestion efficace des ressources"
+        - "Automatisation - Pensée \"infrastructure as code\" et \"GitOps\""
+        - "Résolution de problèmes - Troubleshooting et débogage distribué"
+        - "Veille technologique - Adaptation continue aux nouveaux services"
+
+  market_trends:
+    title: "Tendances du marché"
+    items:
+      - "+48% de croissance des emplois cloud en Europe depuis 2019"
+      - "Pénurie critique de professionnels Kubernetes et cloud-native qualifiés"
+      - "Forte demande pour les profils DevOps/SRE avec +30% sur les salaires"
+      - "Convergence des compétences cloud avec l'IA, la cybersécurité et l'IoT"
+      - "Écart salarial de +25% pour les profils certifiés (AWS, Azure, GCP, etc.)"
+
+summary:
+  title: "En résumé"
+  description: "Le Cloud Computing est une compétence essentielle pour tout professionnel de la tech, offrant des solutions innovantes pour des défis complexes. Cette spécialité couvre :"
+  points:
+    - title: "Flexibilité et agilité"
+      description: "Capacité à s'adapter rapidement aux besoins changeants"
+    - title: "Économies d'échelle"
+      description: "Optimisation des coûts grâce aux modèles de paiement à l'usage"
+    - title: "Innovation accélérée"
+      description: "Accès à des services de pointe (IA, Big Data, IoT)"
+    - title: "Haute disponibilité"
+      description: "Architectures résilientes garantissant la continuité de service"
+    - title: "Sécurité avancée"
+      description: "Outils et pratiques pour protéger les données et applications"
+  conclusion: "Cette spécialité MSc vous prépare à devenir un expert en conception, déploiement et gestion d'infrastructures cloud robustes, sécurisées et performantes, ouvrant la voie à des carrières passionnantes dans un secteur en pleine expansion."
+
+has_media: true
+media:
+  - title: "Témoignage – Pierre-Marie Danieau (Alumni Epitech 2019)"
+    description: "Software Engineer chez AWS."
+    url: "https://www.youtube.com/embed/SLkZb71tNbI"
+  - title: "Témoignage – Lucas Ferry (Alumni Epitech 2019)"
+    description: "DevOps Engineer (ArtDesignStory)."
+    url: "https://www.youtube.com/embed/HuKefDBDa-w"
+  - title: "Interview – Solomon Hykes (Epitech 2006)"
+    description: "Co-fondateur de Docker/dotCloud."
+    url: "https://www.youtube.com/embed/CxMj1CuOD4E"

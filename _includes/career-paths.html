@@ -1,0 +1,100 @@
+<!-- Career paths section component -->
+{% if include.careers %}
+  <section id="career">
+    <h2><i class="fas fa-briefcase"></i> {{ include.careers.title }}</h2>
+    
+    <p>{{ include.careers.description }}</p>
+    
+    <h3>Les métiers de l'Intelligence Artificielle</h3>
+    
+    <div class="card-grid{% if include.careers.roles.size == 3 %} center-orphan{% endif %}">
+      {% for role in include.careers.roles %}
+        <div class="feature-card">
+          <h4><i class="{{ role.icon }}"></i> {{ role.title }}</h4>
+          <p><strong>Mission</strong> : {{ role.mission }}</p>
+          <p><strong>Compétences</strong> : {{ role.skills }}</p>
+          <p><strong>Salaire ({{ role.country }})</strong> : {{ role.salary }}</p>
+        </div>
+      {% endfor %}
+    </div>
+    
+    {% if include.careers.evolution %}
+      <h3 class="mt-4">{{ include.careers.evolution.title }}</h3>
+      {% include timeline.html timeline=include.careers.evolution.timeline %}
+    {% endif %}
+    
+    {% if include.careers.skills %}
+      <h3 class="mt-4">{{ include.careers.skills.title }}</h3>
+      
+      <div class="accordion">
+        {% if include.careers.skills.technical and include.careers.skills.technical.items %}
+          <div class="accordion-item">
+            <div class="accordion-header">
+              💻 {{ include.careers.skills.technical.title }}
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul>
+                  {% for skill in include.careers.skills.technical.items %}
+                    <li>{{ skill }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+        
+        {% if include.careers.skills.specialized and include.careers.skills.specialized.items %}
+          <div class="accordion-item">
+            <div class="accordion-header">
+              🔍 {{ include.careers.skills.specialized.title }}
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul>
+                  {% for skill in include.careers.skills.specialized.items %}
+                    <li>{{ skill }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+        
+        {% if include.careers.skills.soft_skills and include.careers.skills.soft_skills.items %}
+          <div class="accordion-item">
+            <div class="accordion-header">
+              🧠 {{ include.careers.skills.soft_skills.title }}
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul>
+                  {% for skill in include.careers.skills.soft_skills.items %}
+                    <li>{{ skill }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+    
+    {% if include.careers.market_trends %}
+      <h3 class="mt-4">{{ include.careers.market_trends.title }}</h3>
+      
+      <div class="centered-card">
+        <div class="feature-card">
+          <ul>
+            {% for trend in include.careers.market_trends.items %}
+              <li>{{ trend }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+  </section>
+{% endif %}

@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initial: {
       messages: [
         "<div class='bot-welcome-message'><div class='bot-icon-large'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H14A7,7 0 0,1 21,14H22A1,1 0 0,1 23,15V18A1,1 0 0,1 22,19H21V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V19H2A1,1 0 0,1 1,18V15A1,1 0 0,1 2,14H3A7,7 0 0,1 10,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2M7.5,13A2.5,2.5 0 0,0 5,15.5A2.5,2.5 0 0,0 7.5,18A2.5,2.5 0 0,0 10,15.5A2.5,2.5 0 0,0 7.5,13M16.5,13A2.5,2.5 0 0,0 14,15.5A2.5,2.5 0 0,0 16.5,18A2.5,2.5 0 0,0 19,15.5A2.5,2.5 0 0,0 16.5,13Z'></path></svg></div><strong class='welcome-text'>Bonjour !</strong><br/>Je suis votre assistant d'orientation Epitech. Prêt à trouver le MSc qui vous correspond ?</div>",
-        "Comment souhaitez-vous commencer ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"profile_check\")'>🎓 Découvrir mon profil</button><button class='inline-btn' onclick='handleInlineClick(\"help_q1\")'>✨ M'aider à choisir</button><button class='inline-btn' onclick='handleInlineClick(\"explainSpecialties\")'>📋 Voir toutes les spécialités</button><button class='inline-btn' onclick='handleInlineClick(\"practical_info\")'>ℹ️ Infos pratiques</button><button class='inline-btn' onclick='handleInlineClick(\"faq\")'>❓ FAQ</button></div>"
+        "Comment souhaitez-vous commencer ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button><button class='inline-btn' onclick='handleInlineClick(\"profile_check\")'>🎓 Découvrir mon profil</button><button class='inline-btn' onclick='handleInlineClick(\"help_q1\")'>✨ M'aider à choisir</button><button class='inline-btn' onclick='handleInlineClick(\"explainSpecialties\")'>📋 Voir toutes les spécialités</button><button class='inline-btn' onclick='handleInlineClick(\"practical_info\")'>ℹ️ Infos pratiques</button><button class='inline-btn' onclick='handleInlineClick(\"faq\")'>❓ FAQ</button></div>"
       ],
       options: []
     },
@@ -848,52 +848,134 @@ document.addEventListener('DOMContentLoaded', () => {
       options: []
     },
 
-    // --- NEW PERSONALITY QUIZ FLOW ---
-    personality_test: {
+    // --- NEW PERSONALITY TEST SYSTEM ---
+    personality_test_start: {
       messages: [
-        "<h3>🧠 Test de Personnalité Tech</h3>Commençons ! Ce test en 5 questions va nous aider à révéler votre profil.<br/>Prêt(e) ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleQuizClick(\"pt_q1\", {})'>🚀 C'est parti !</button></div>"
+        "<h3>🧠 Test de Personnalité MSc</h3><p>Découvrez quel type de professionnel tech vous êtes ! Ce test complet en 12 questions va analyser vos préférences et vous recommander les spécialités MSc les plus adaptées.</p><div class='test-info'><strong>⏱️ Durée :</strong> 5-7 minutes<br/><strong>📊 Résultat :</strong> Votre profil + Top 3 spécialités + Analyses comportementales</div><br/>Prêt(e) à commencer ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='startPersonalityTest()'>🚀 Commencer le test</button><button class='inline-btn' onclick='handleInlineClick(\"help_q1\")'>🎯 Plutôt un guide rapide</button></div>"
       ],
       options: []
     },
 
-    pt_q1: {
+    personality_test_question: {
+      messages: [],
+      options: []
+    },
+
+    personality_test_results: {
+      messages: [],
+      options: []
+    },
+
+    // --- MISSING STATES TO FIX DEAD ENDS ---
+    explainSpecialties: {
       messages: [
-        "<h4>Question 1/5</h4><p>Votre super-pouvoir rêvé serait de :</p><div class='inline-buttons'><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q2\", {analyst: 2, innovator: 1})'>🔮 Prévoir le futur avec précision</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q2\", {protector: 2})'>🛡️ Construire des forteresses imprenables</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q2\", {strategist: 2})'>🧠 Organiser et mener n'importe quel groupe</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q2\", {architect: 2, innovator: 1})'>🌍 Bâtir des mondes à partir de rien</button></div>"
+        "<h3>📋 Toutes les spécialités MSc</h3><p>Découvrez l'ensemble de notre offre de spécialisation divisée en deux grandes familles :</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"listTechSpecialties\")'>🔧 Spécialités Techniques</button><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>📈 Spécialités Business</button><button class='inline-btn' onclick='handleInlineClick(\"categorizeSpecialties\")'>🔄 Différences Tech vs Business</button></div>"
       ],
       options: []
     },
 
-    pt_q2: {
+    help_q_tech: {
       messages: [
-        "<h4>Question 2/5</h4><p>Un projet est une vraie réussite si :</p><div class='inline-buttons'><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q3\", {protector: 2})'>🔒 Il est parfaitement sécurisé et fiable</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q3\", {strategist: 2})'>📅 Il est livré à temps et dans le budget</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q3\", {architect: 2, innovator: 1})'>💡 Il est techniquement élégant et innovant</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q3\", {analyst: 2, catalyst: 2})'>📈 Son impact sur les utilisateurs est positif</button></div>"
+        "Excellent choix ! Vous voulez devenir un expert technique de haut niveau 🔧<br/>Dans quel domaine souhaitez-vous exceller ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"recommend_ai\")'>🧠 Intelligence Artificielle</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_cyber\")'>🛡️ Cybersécurité</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_cloud\")'>☁️ Cloud Computing</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_bigdata\")'>📊 Big Data</button><button class='inline-btn' onclick='handleInlineClick(\"listTechSpecialties\")'>🔧 Voir toutes les spé Tech</button></div>"
       ],
       options: []
     },
 
-    pt_q3: {
+    help_q_business: {
       messages: [
-        "<h4>Question 3/5</h4><p>Face à une nouvelle technologie, votre premier réflexe est de :</p><div class='inline-buttons'><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q4\", {architect: 2})'>🔧 La démonter pour comprendre comment elle marche</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q4\", {catalyst: 2, innovator: 1})'>🚀 Imaginer comment elle peut changer le monde</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q4\", {protector: 2})'> Hacker ses failles de sécurité</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q4\", {analyst: 2})'>📊 Analyser les données qu'elle produit</button></div>"
+        "Parfait ! Vous voulez piloter la transformation digitale 📈<br/>Quel type de leadership vous attire ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"recommend_ai_transfo\")'>🚀 Transformation par l'IA</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_fintech\")'>💰 Innovation Fintech</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_marketing\")'>📱 Marketing Digital</button><button class='inline-btn' onclick='handleInlineClick(\"help_q_business_industry\")'>🏢 Transformer un secteur</button><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>📈 Voir toutes les spé Business</button></div>"
       ],
       options: []
     },
 
-    pt_q4: {
+    help_q_business_industry: {
       messages: [
-        "<h4>Question 4/5</h4><p>La phrase qui vous décrit le mieux :</p><div class='inline-buttons'><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q5\", {strategist: 2})'>\"J'aime quand un plan se déroule sans accroc.\"</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q5\", {innovator: 2, catalyst: 1})'>\"Je veux créer des choses qui n'ont jamais été faites.\"</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q5\", {architect: 2})'>\"Je trouve la beauté dans l'organisation de systèmes complexes.\"</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_q5\", {protector: 2})'>\"Mon but : laisser le système plus sûr que je ne l'ai trouvé.\"</button></div>"
+        "Excellent ! Transformer un secteur entier, voilà une belle ambition ! 🎯<br/>Quel secteur vous passionne le plus ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"recommend_fintech\")'>💰 Finance & Fintech</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_sante\")'>🏥 Santé & E-santé</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_luxe\")'>💎 Luxe & Retail</button><button class='inline-btn' onclick='handleInlineClick(\"recommend_marketing\")'>📱 Marketing & Médias</button></div>"
       ],
       options: []
     },
 
-    pt_q5: {
+    help_q_business_internal: {
       messages: [
-        "<h4>Question 5/5</h4><p>Le secteur le plus passionnant à transformer selon vous :</p><div class='inline-buttons'><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_results\", {strategist: 1, analyst: 1})'>💰 La Finance ou la Santé</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_results\", {architect: 1, protector: 1})'>🏭 L'Industrie ou les infrastructures critiques</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_results\", {catalyst: 2})'>📱 La Communication, le retail et les médias</button><button class='inline-btn quiz' onclick='handleQuizClick(\"pt_results\", {innovator: 2})'>🎮 Le Divertissement et les expériences immersives</button></div>"
+        "Très bien ! Optimiser les organisations de l'intérieur 🏢<br/>Quel aspect vous motive le plus ?<br/><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"recommend_ai_transfo\")'>🤖 Transformation par l'IA</button><button class='inline-btn' onclick='handleInlineClick(\"explainProjectManagement\")'>🎯 Management de projets</button><button class='inline-btn' onclick='handleInlineClick(\"explainRH\")'>👥 RH & Collaborateurs</button><button class='inline-btn' onclick='handleInlineClick(\"explainDataProtection\")'>🔒 Gouvernance des données</button></div>"
       ],
       options: []
     },
-    
-    pt_results: {
+
+    // --- RECOMMENDATION STATES ---
+    recommend_ai: {
       messages: [
-        "Analyse de vos réponses..."
+        "<h3>🎯 Recommandation : Intelligence Artificielle</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : Intelligence Artificielle</strong><br/>Vous voulez être au cœur de la révolution technologique !</div><p>L'IA transforme tous les secteurs. Vous apprendrez à créer des algorithmes intelligents, du machine learning au deep learning, en passant par le NLP et la computer vision.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainAI\")'>🧠 Découvrir l'IA</button><button class='inline-btn' onclick='handleInlineClick(\"listTechSpecialties\")'>🔧 Autres spé Tech</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
+      ],
+      options: []
+    },
+
+    recommend_cloud: {
+      messages: [
+        "<h3>🎯 Recommandation : Cloud Computing</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : Cloud Computing</strong><br/>Vous voulez construire l'infrastructure de demain !</div><p>Le cloud est partout. Vous maîtriserez AWS, Azure, GCP, Kubernetes, et concevrez des architectures scalables pour les plus grandes entreprises.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainCloud\")'>☁️ Découvrir le Cloud</button><button class='inline-btn' onclick='handleInlineClick(\"listTechSpecialties\")'>🔧 Autres spé Tech</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
+      ],
+      options: []
+    },
+
+    recommend_bigdata: {
+      messages: [
+        "<h3>🎯 Recommandation : Big Data & Analytics</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : Big Data & Analytics</strong><br/>Vous voulez transformer les données en or !</div><p>Les données sont le nouveau pétrole. Vous apprendrez à gérer, analyser et valoriser des volumes massifs de données avec les technologies les plus avancées.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainBigData\")'>📊 Découvrir Big Data</button><button class='inline-btn' onclick='handleInlineClick(\"listTechSpecialties\")'>🔧 Autres spé Tech</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
+      ],
+      options: []
+    },
+
+    recommend_iot: {
+      messages: [
+        "<h3>🎯 Recommandation : Internet of Things (IoT)</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : Internet of Things</strong><br/>Vous voulez connecter le monde physique au numérique !</div><p>Des objets connectés aux smart cities, vous concevrez les écosystèmes IoT de demain avec capteurs, protocoles, edge computing et analyse temps réel.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainIoT\")'>📡 Découvrir l'IoT</button><button class='inline-btn' onclick='handleInlineClick(\"listTechSpecialties\")'>🔧 Autres spé Tech</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
+      ],
+      options: []
+    },
+
+    recommend_vrar: {
+      messages: [
+        "<h3>🎯 Recommandation : VR/AR</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : Réalité Virtuelle & Augmentée</strong><br/>Vous voulez créer des expériences immersives révolutionnaires !</div><p>VR, AR, métavers... Vous développerez les expériences immersives qui redéfinissent notre rapport au numérique, du gaming à la formation en passant par l'industrie.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainVR\")'>🥽 Découvrir VR/AR</button><button class='inline-btn' onclick='handleInlineClick(\"listTechSpecialties\")'>🔧 Autres spé Tech</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
+      ],
+      options: []
+    },
+
+    recommend_fintech: {
+      messages: [
+        "<h3>🎯 Recommandation : Fintech & Stratégies financières</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : Fintech</strong><br/>Vous voulez révolutionner la finance !</div><p>Blockchain, cryptomonnaies, néobanques, trading algorithmique... Vous piloterez la transformation digitale du secteur financier.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainFintech\")'>💰 Découvrir Fintech</button><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>📈 Autres spé Business</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
+      ],
+      options: []
+    },
+
+    recommend_marketing: {
+      messages: [
+        "<h3>🎯 Recommandation : Marketing & Influence</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : Marketing Digital & Influence</strong><br/>Vous voulez créer l'engagement et la croissance !</div><p>Growth hacking, réseaux sociaux, data marketing, influence... Vous maîtriserez tous les leviers pour faire rayonner les marques à l'ère digitale.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainMarketing\")'>📱 Découvrir Marketing</button><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>📈 Autres spé Business</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
+      ],
+      options: []
+    },
+
+    recommend_ai_transfo: {
+      messages: [
+        "<h3>🎯 Recommandation : IA & Transformation</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : IA & Transformation des organisations</strong><br/>Vous voulez piloter la révolution IA !</div><p>Conduite du changement, implémentation d'IA, transformation des processus... Vous accompagnerez les entreprises dans leur mutation vers l'intelligent business.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainAITransformation\")'>🚀 Découvrir IA & Transfo</button><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>📈 Autres spé Business</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
+      ],
+      options: []
+    },
+
+    recommend_sante: {
+      messages: [
+        "<h3>🎯 Recommandation : Santé, IA & IoT</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : Santé, IA & IoT</strong><br/>Vous voulez améliorer la vie grâce à la tech !</div><p>E-santé, objets connectés médicaux, IA de diagnostic, télémédecine... Vous serez au cœur de la révolution healthcare digitale.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainSante\")'>🏥 Découvrir Santé & IA</button><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>📈 Autres spé Business</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
+      ],
+      options: []
+    },
+
+    recommend_luxe: {
+      messages: [
+        "<h3>🎯 Recommandation : Luxe & Retail Tech</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : Luxe & Retail Tech</strong><br/>Vous voulez réinventer l'expérience client premium !</div><p>Omnicanalité, personnalisation, AR/VR, analytics client... Vous transformerez l'expérience d'achat dans l'univers du luxe et du retail.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainLuxe\")'>💎 Découvrir Luxe & Retail</button><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>📈 Autres spé Business</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
+      ],
+      options: []
+    },
+
+    recommend_ds_bi: {
+      messages: [
+        "<h3>🎯 Recommandation : Data Science & BI</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : Data Science & Business Intelligence</strong><br/>Vous voulez transformer les données en décisions !</div><p>Analytics, visualisation, machine learning appliqué, dashboards stratégiques... Vous serez l'expert qui fait parler les données pour éclairer les décisions business.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainDataScienceBI\")'>📊 Découvrir Data Science & BI</button><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialities\")'>📈 Autres spé Business</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
       ],
       options: []
     },
@@ -983,7 +1065,51 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 800);
   };
   
-  window.handleQuizClick = function(nextState, scores) {
+  // Initialize the personality test system
+  window.personalitySystem = new PersonalitySystem();
+
+  // Function to start the personality test
+  window.startPersonalityTest = function() {
+    window.personalitySystem.resetTest();
+    showTypingIndicator();
+    
+    setTimeout(() => {
+      showCurrentQuestion();
+    }, 800);
+  };
+
+  // Function to show the current question
+  function showCurrentQuestion() {
+    const question = window.personalitySystem.getCurrentQuestion();
+    if (!question) {
+      // Test completed, show results
+      showPersonalityResults();
+      return;
+    }
+
+    const progress = window.personalitySystem.currentQuestionIndex + 1;
+    const total = window.personalitySystem.questions.length;
+    
+    let answersHtml = '';
+    question.answers.forEach((answer, index) => {
+      answersHtml += `<button class='inline-btn' onclick='answerPersonalityQuestion(${question.id}, ${index})'>${answer.text}</button>`;
+    });
+
+    const questionHtml = `
+      <h4>Question ${progress}/${total}</h4>
+      <div class='progress-bar'>
+        <div class='progress-fill' style='width: ${(progress / total) * 100}%'></div>
+      </div>
+      <p class='question-text'>${question.text}</p>
+      <div class='inline-buttons'>${answersHtml}</div>
+    `;
+
+    conversationTree.personality_test_question.messages = [questionHtml];
+    renderConversationState('personality_test_question');
+  }
+
+  // Function to record an answer and move to next question
+  window.answerPersonalityQuestion = function(questionId, answerIndex) {
     const clickedButton = event.target.closest('.inline-btn');
     const buttonText = clickedButton.textContent || clickedButton.innerText;
     
@@ -992,64 +1118,29 @@ document.addEventListener('DOMContentLoaded', () => {
     userResponse.innerHTML = `${buttonText}`;
     botMessagesContainer.appendChild(userResponse);
     
-    // Aggregate scores
-    for (const profile in scores) {
-      if (!userProfile.scores) userProfile.scores = {};
-      if (!userProfile.scores[profile]) userProfile.scores[profile] = 0;
-      userProfile.scores[profile] += scores[profile];
-    }
+    // Record the answer
+    window.personalitySystem.recordAnswer(questionId, answerIndex);
+    
+    // Move to next question
+    const nextQuestion = window.personalitySystem.nextQuestion();
     
     showTypingIndicator();
     scrollToBottom();
     
     setTimeout(() => {
-      if (nextState === 'pt_results') {
-        renderConversationState('pt_results');
-        setTimeout(calculateAndShowResult, 2000); // Simulate calculation
+      if (nextQuestion) {
+        showCurrentQuestion();
       } else {
-        renderConversationState(nextState);
+        showPersonalityResults();
       }
     }, 800);
   };
 
-  function calculateAndShowResult() {
-    let scores = userProfile.scores || {};
-    
-    // Convert scores to an array and sort
-    const sortedProfiles = Object.entries(scores).sort(([,a],[,b]) => b-a);
-
-    // Reset scores for the next quiz
-    userProfile.scores = {};
-
-    if (sortedProfiles.length === 0) {
-        renderConversationState('reco_default');
-        return;
-    }
-
-    const topProfile = sortedProfiles[0][0];
-    const topScore = sortedProfiles[0][1];
-    
-    let finalReco = 'reco_' + topProfile; // Default to top profile
-
-    // Check for a close second or a tie
-    if (sortedProfiles.length > 1) {
-        const secondProfile = sortedProfiles[1][0];
-        const secondScore = sortedProfiles[1][1];
-
-        // If the second score is close to the top score (e.g., within 1 point), we have a hybrid profile
-        if (topScore > 0 && topScore - secondScore <= 1) {
-            // Create a consistent key for the hybrid profile (e.g., architect_innovator)
-            const hybridKey = [topProfile, secondProfile].sort().join('_');
-            const hybridReco = 'reco_' + hybridKey;
-            
-            // Check if a specific hybrid recommendation exists
-            if (conversationTree[hybridReco]) {
-                finalReco = hybridReco;
-            }
-        }
-    }
-    
-    renderConversationState(finalReco);
+  // Function to show personality test results
+  function showPersonalityResults() {
+    const results = window.personalitySystem.generateResults();
+    conversationTree.personality_test_results.messages = [results.html];
+    renderConversationState('personality_test_results');
   }
 
   // Initialize bot
