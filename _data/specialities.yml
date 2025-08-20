@@ -1,0 +1,9 @@
+# Individual YAML files for each specialty for better maintainability
+# Data is now split into separate files in the _data directory:
+# - ia.yml for Intelligence Artificielle
+# - bigdata.yml for Big Data & Analytics
+# - cybersecurite.yml for Cybersécurité
+# etc.
+
+# Note: Jekyll will automatically load these files and make them available 
+# via site.data.ia, site.data.bigdata, etc.

@@ -628,57 +628,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Add CSS Variable use in home.css for the ::before background
   
-  // ===== Initialisation de TypewriterJS pour l'effet de machine à écrire =====
-  const typewriterElement = document.getElementById('typewriter-text');
-
-  if (typewriterElement && typeof Typewriter !== 'undefined') {
-    const typewriter = new Typewriter(typewriterElement, {
-      loop: true,
-      delay: 75,
-      deleteSpeed: 50
-    });
-  
-  const specialties = [
-      'Intelligence Artificielle',
-      'Big Data & Analytics',
-      'Cloud Computing',
-      'Cybersécurité',
-      'Internet of Things',
-      'VR/AR',
-      'Digital Transformation',
-      'Project Management',
-      'Fintech',
-      'Marketing',
-      'IA & Transformation',
-      'Data Protection',
-      'RH Digitale',
-      'Santé, IA & IoT',
-      'Data Science & BI'
-    ];
-
-    // Shuffle array for variety
-    specialties.sort(() => Math.random() - 0.5);
-
-    typewriter
-      .pauseFor(1000)
-      .typeString(specialties[0])
-      .pauseFor(2500)
-      .deleteAll(50); // Use deleteSpeed
-
-    for (let i = 1; i < specialties.length; i++) {
-      typewriter
-        .typeString(specialties[i])
-        .pauseFor(2500)
-        .deleteAll(50);
-    }
-
-    typewriter.start();
-
-  } else if (typewriterElement) {
-    console.warn('TypewriterJS library not found. Please include it in your HTML.');
-    // Fallback or leave empty if library is missing
-    typewriterElement.textContent = 'votre domaine...';
-  }
+  // ===== Typewriter effect is now handled by home.js for better performance =====
+  // Removed TypewriterJS dependency to avoid conflicts and improve performance
 
   // ===== Scroll Animations =====
   const scrollElements = document.querySelectorAll('.specialties-section, .specialties-grid, .stats-band, .cta-section, .category-card, .specialite-card');

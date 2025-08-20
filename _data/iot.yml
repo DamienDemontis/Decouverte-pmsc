@@ -1,0 +1,563 @@
+title: "Internet of Things"
+slug: "iot"
+icon: "fas fa-microchip"
+type: "tech"
+order: 5
+colors:
+  primary: "#059669"
+  secondary: "#10B981"
+short_description: "Concevez et développez des solutions connectées complètes, du capteur embarqué jusqu'au cloud, pour transformer n'importe quel objet physique en source d'intelligence."
+description: "Maîtrisez l'art de créer des systèmes IoT complets, de l'électronique embarquée aux plateformes cloud, en passant par les réseaux de capteurs et l'analyse des données, pour développer des solutions intelligentes dans des domaines variés comme la ville intelligente, l'industrie 4.0 ou la santé connectée."
+
+overview:
+  title: "Pourquoi l'Internet of Things ?"
+  features:
+    - title: "Omniprésence"
+      icon: "fas fa-globe"
+      description: "Un monde où tous les objets physiques sont connectés, créant un réseau d'intelligence distribuée."
+      example: "D'ici 2025, plus de 75 milliards d'objets connectés seront déployés dans le monde, soit près de 10 appareils par personne."
+    
+    - title: "Données massives"
+      icon: "fas fa-chart-bar"
+      description: "Collecte et analyse de données en temps réel depuis des millions de points de captage distribués."
+      example: "Une seule usine connectée peut générer plus d'un téraoctet de données par jour via ses capteurs industriels."
+    
+    - title: "Transformation industrielle"
+      icon: "fas fa-industry"
+      description: "Révolution des processus industriels grâce à l'automatisation, la maintenance prédictive et l'optimisation."
+      example: "Michelin a réduit ses coûts de maintenance de 10% et augmenté sa productivité de 25% grâce à l'IoT industriel."
+    
+    - title: "Villes intelligentes"
+      icon: "fas fa-city"
+      description: "Réinvention de l'urbanisme par des infrastructures connectées optimisant ressources et services."
+      example: "Barcelone a économisé 75 millions d'euros grâce à ses systèmes d'éclairage intelligent et de gestion de l'eau connectée."
+    
+    - title: "Santé connectée"
+      icon: "fas fa-heartbeat"
+      description: "Surveillance continue des patients, diagnostic à distance et médecine personnalisée grâce aux wearables."
+      example: "Les dispositifs de télésurveillance ont réduit de 40% les réadmissions hospitalières pour les patients atteints d'insuffisance cardiaque."
+    
+    - title: "Durabilité"
+      icon: "fas fa-seedling"
+      description: "Réduction significative de l'empreinte environnementale par l'optimisation des ressources."
+      example: "Les systèmes d'irrigation intelligents peuvent réduire la consommation d'eau agricole jusqu'à 30% tout en augmentant les rendements."
+
+  accordion:
+    - title: "Systèmes embarqués et capteurs"
+      content: |
+        <p>L'IoT commence par des dispositifs physiques qui interagissent avec le monde réel :</p>
+        <ul>
+          <li><strong>Microcontrôleurs</strong> : Processeurs à faible consommation comme ESP32, Arduino, STM32</li>
+          <li><strong>Capteurs</strong> : Dispositifs de mesure pour température, humidité, pression, mouvement...</li>
+          <li><strong>Actionneurs</strong> : Mécanismes pour agir sur l'environnement (moteurs, relais, servomoteurs)</li>
+          <li><strong>Alimentation</strong> : Batteries, energy harvesting, gestion d'énergie optimisée</li>
+        </ul>
+        <p>Le défi : concevoir des systèmes fiables, économes en énergie et suffisamment puissants pour les tâches requises.</p>
+    
+    - title: "Connectivité et protocoles"
+      content: |
+        <p>Les réseaux IoT présentent des caractéristiques uniques :</p>
+        <ul>
+          <li><strong>LPWAN</strong> : Réseaux longue portée à faible consommation (LoRaWAN, Sigfox, NB-IoT)</li>
+          <li><strong>PAN/LAN</strong> : Réseaux courte portée (Bluetooth LE, Zigbee, Z-Wave, Wi-Fi)</li>
+          <li><strong>Cellulaire</strong> : Solutions mobiles (LTE-M, 5G) pour objets nécessitant mobilité et débit</li>
+          <li><strong>Protocoles</strong> : MQTT, CoAP, AMQP pour communications légères et efficaces</li>
+        </ul>
+        <p>L'enjeu : choisir la technologie adaptée selon les contraintes d'énergie, portée, débit et coût.</p>
+    
+    - title: "Plateformes cloud IoT"
+      content: |
+        <p>Le backend qui gère les données et l'intelligence du système :</p>
+        <ul>
+          <li><strong>Ingestion massive</strong> : Réception de millions de messages par seconde</li>
+          <li><strong>Stockage</strong> : Bases de données time-series optimisées pour données de capteurs</li>
+          <li><strong>Traitement</strong> : Analyse en temps réel et traitement par lots</li>
+          <li><strong>API</strong> : Interfaces pour intégration avec applications et services</li>
+        </ul>
+        <p>Les plateformes comme AWS IoT, Azure IoT, Google Cloud IoT ou ThingsBoard fournissent ces capacités en mode managé.</p>
+    
+    - title: "Analyse et Intelligence"
+      content: |
+        <p>Transformer les données brutes en insights actionnables :</p>
+        <ul>
+          <li><strong>Edge computing</strong> : Traitement au plus près des capteurs pour réduire latence et bande passante</li>
+          <li><strong>Machine Learning</strong> : Détection d'anomalies, prédiction, optimisation</li>
+          <li><strong>Digital Twins</strong> : Répliques virtuelles d'objets physiques pour simulation et analyse</li>
+          <li><strong>Visualisation</strong> : Dashboards et interfaces de monitoring</li>
+        </ul>
+        <p>C'est ici que réside la réelle valeur de l'IoT : l'intelligence qui émerge des données collectées.</p>
+
+  quote: "L'Internet des Objets n'est pas une technologie, c'est un concept : connecter n'importe quel appareil ayant un interrupteur on/off à Internet et entre eux."
+  quote_author: "Jacob Morgan"
+
+use_cases:
+  title: "Cas d'usage emblématiques"
+  timeline:
+    - category: "Industrie 4.0"
+      side: "left"
+      items:
+        - title: "Maintenance prédictive"
+          description: "Schneider Electric a déployé 4000+ capteurs dans ses usines pour surveiller les vibrations, la température et le bruit des machines. Les algorithmes d'IA détectent les pannes 3 semaines avant qu'elles ne surviennent, réduisant les temps d'arrêt de 70%."
+        - title: "Jumeaux numériques"
+          description: "Siemens utilise des répliques virtuelles de ses lignes de production pour simuler les changements avant implémentation, augmentant l'efficacité de 25% et réduisant les déchets de production de 18%."
+        - title: "Traçabilité"
+          description: "Renault a équipé ses chaînes d'assemblage de capteurs RFID pour suivre chaque pièce. Résultat : 15% de réduction des rappels et remontée immédiate des défauts qualité."
+          
+    - category: "Smart City"
+      side: "right"
+      items:
+        - title: "Gestion des déchets"
+          description: "La ville de Séoul a déployé 6000 poubelles connectées qui signalent leur niveau de remplissage. Le système optimise les itinéraires de collecte, réduisant de 83% les tournées inutiles et économisant 1,7 million d'euros par an."
+        - title: "Stationnement intelligent"
+          description: "Nice a installé 10 000 capteurs de stationnement réduisant de 30% le temps de recherche d'une place et la pollution associée, générant aussi 20 millions d'euros de revenus supplémentaires."
+        - title: "Éclairage adaptatif"
+          description: "Copenhague a équipé 20 000 lampadaires de capteurs et contrôleurs LED qui ajustent l'intensité selon le trafic et la météo, économisant 65% d'énergie."
+    
+    - category: "Santé connectée"
+      side: "left"
+      items:
+        - title: "Monitoring continu"
+          description: "Medtronic a développé des capteurs implantables pour diabétiques qui mesurent la glycémie toutes les 5 minutes et ajustent automatiquement les doses d'insuline, réduisant de 78% les épisodes d'hypoglycémie."
+        - title: "Télémédecine avancée"
+          description: "La Mayo Clinic équipe certains patients cardiaques de gilets connectés permettant un suivi post-opératoire à domicile, réduisant les réadmissions de 40% et les coûts de traitement de 32%."
+        - title: "Adhérence médicamenteuse"
+          description: "Les piluliers intelligents de Pillo Health ont augmenté l'observance des traitements de 95% chez les patients âgés, grâce aux rappels personnalisés et à la confirmation de prise."
+    
+    - category: "Agriculture intelligente"
+      side: "right"
+      items:
+        - title: "Irrigation de précision"
+          description: "John Deere déploie des réseaux de capteurs d'humidité du sol qui, couplés à des données météo, permettent une irrigation ciblée réduisant la consommation d'eau de 30% tout en augmentant les rendements de 15%."
+        - title: "Élevage connecté"
+          description: "Connecterra utilise des colliers intelligents pour surveiller le comportement des vaches et détecter les maladies 2 jours avant l'apparition de symptômes visibles, réduisant la mortalité de 30% et l'usage d'antibiotiques de 60%."
+        - title: "Serres autonomes"
+          description: "Les serres pilotées par IA de Plenty produisent 350 fois plus par mètre carré que l'agriculture traditionnelle, avec 95% d'eau en moins et zéro pesticide."
+
+  trends:
+    title: "Tendances émergentes"
+    features:
+      - title: "AIoT (Intelligence Artificielle + IoT)"
+        icon: "fas fa-brain"
+        description: "L'intégration de l'IA directement dans les dispositifs IoT (edge AI) permet la prise de décision autonome sans connexion cloud, réduisant latence et dépendance au réseau."
+      
+      - title: "Digital Twins"
+        icon: "fas fa-network-wired"
+        description: "Les jumeaux numériques évoluent pour créer des simulations complètes d'écosystèmes entiers, permettant de tester des scénarios et d'optimiser des systèmes complexes avant déploiement physique."
+      
+      - title: "Energy harvesting"
+        icon: "fas fa-battery-half"
+        description: "Les dispositifs IoT s'affranchissent des batteries en récoltant l'énergie de leur environnement (solaire, vibrations, chaleur, radiofréquences), devenant ainsi véritablement autonomes."
+      
+      - title: "Cybersécurité native"
+        icon: "fas fa-shield-alt"
+        description: "Face à la multiplication des cyberattaques, la sécurité devient intégrée dès la conception avec des puces intégrant des enclaves sécurisées et de la cryptographie légère."
+
+roadmap:
+  title: "Parcours d'apprentissage"
+  phases:
+    - title: "🎯 Phase 1: Fondamentaux techniques"
+      duration: "1-3 mois"
+      steps:
+        - title: "Électronique et microcontrôleurs"
+          description: "Apprenez les bases des circuits électroniques et familiarisez-vous avec les plateformes de prototypage comme Arduino et ESP32."
+          resources:
+            - text: "Arduino - Getting Started"
+              url: "https://www.arduino.cc/en/Tutorial/HomePage"
+            - text: "ESP32 - Getting Started Guide"
+              url: "https://randomnerdtutorials.com/getting-started-with-esp32/"
+        - title: "Capteurs et actionneurs"
+          description: "Explorez les différents types de capteurs (température, humidité, mouvement, etc.) et comment les interfacer avec vos systèmes."
+          resources:
+            - text: "Adafruit - Sensors Learning Guide"
+              url: "https://www.adafruit.com/category/35"
+            - text: "Last Minute Engineers - Arduino Sensors"
+              url: "https://lastminuteengineers.com/electronics/arduino-projects/"
+        - title: "Programmation embarquée"
+          description: "Maîtrisez les langages et frameworks utilisés dans les environnements contraints (C/C++, MicroPython)."
+          resources:
+            - text: "Learn C++"
+              url: "https://www.learncpp.com/"
+            - text: "MicroPython sur ESP32"
+              url: "https://docs.micropython.org/en/latest/esp32/tutorial/intro.html"
+        - title: "Communication et protocoles"
+          description: "Comprenez les différentes technologies de communication utilisées en IoT (Bluetooth LE, Wi-Fi, LoRaWAN, etc.)"
+          resources:
+            - text: "The Things Network - LoRaWAN"
+              url: "https://www.thethingsnetwork.org/docs/"
+            - text: "Introduction à Bluetooth Low Energy"
+              url: "https://www.bluetooth.com/bluetooth-resources/intro-to-bluetooth-low-energy/"
+    
+    - title: "🚀 Phase 2: Architectures et plateformes"
+      duration: "3-6 mois"
+      steps:
+        - title: "Architectures IoT"
+          description: "Explorez les différents modèles d'architecture pour systèmes IoT, du edge au cloud en passant par le fog computing."
+          resources:
+            - text: "AWS IoT - Reference Architectures"
+              url: "https://aws.amazon.com/iot/solutions/"
+            - text: "Designing Distributed Systems (O'Reilly)"
+              url: "https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/"
+        - title: "Plateformes IoT Cloud"
+          description: "Maîtrisez les principales plateformes cloud IoT qui permettent de connecter, gérer et analyser les données des appareils."
+          resources:
+            - text: "AWS IoT Core"
+              url: "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html"
+            - text: "Azure IoT Hub"
+              url: "https://learn.microsoft.com/en-us/azure/iot-hub/"
+            - text: "ThingsBoard - Getting Started"
+              url: "https://thingsboard.io/docs/getting-started-guides/helloworld/"
+    
+    - title: "⭐ Phase 3: Données et intelligence"
+      duration: "6+ mois"
+      steps:
+        - title: "Stockage et traitement des données IoT"
+          description: "Maîtrisez les techniques spécifiques pour gérer efficacement les volumes massifs de données générées par les capteurs."
+          resources:
+            - text: "InfluxDB - Time Series Database"
+              url: "https://www.influxdata.com/time-series-database/"
+            - text: "Big Data Integration and Processing (Coursera)"
+              url: "https://www.coursera.org/learn/big-data-integration-processing"
+        - title: "Machine Learning pour IoT"
+          description: "Explorez comment appliquer l'IA et le machine learning aux données IoT pour la prédiction, détection d'anomalies et optimisation."
+          resources:
+            - text: "TensorFlow Lite pour Microcontrôleurs"
+              url: "https://ai.google.dev/edge/litert/microcontrollers/overview"
+            - text: "Azure IoT Edge ML Tutorial"
+              url: "https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-machine-learning"
+
+projects:
+  title: "Projets pratiques"
+  items:
+    - title: "Projet 1: Station météo connectée"
+      difficulty: "Débutant"
+      duration: "6-8 heures"
+      objective: "Créer une station météo qui collecte des données environnementales et les envoie à une plateforme cloud"
+      description: |
+        <p>Dans ce projet, tu vas construire une station météo connectée qui mesure température, humidité et pression atmosphérique. Les données seront transmises à une plateforme IoT cloud pour visualisation et analyse en temps réel.</p>
+        <p>Le projet se décompose en étapes progressives :</p>
+        <ol>
+          <li><strong>Configuration du hardware</strong> - Assembler le microcontrôleur ESP32/ESP8266 avec les capteurs (DHT11/22, BMP280)</li>
+          <li><strong>Programmation du firmware</strong> - Développer le code pour lire les capteurs et se connecter au Wi-Fi</li>
+          <li><strong>Configuration cloud</strong> - Créer un compte sur une plateforme IoT (ThingsBoard, Ubidots ou Blynk)</li>
+          <li><strong>Transmission des données</strong> - Implémenter le protocole MQTT pour envoyer les données au cloud</li>
+          <li><strong>Visualisation</strong> - Créer un dashboard pour visualiser les données en temps réel et historiques</li>
+        </ol>
+      technologies:
+        - "ESP32 ou ESP8266 (NodeMCU)"
+        - "Capteurs DHT11/22, BMP280"
+        - "Protocole MQTT et Wi-Fi"
+        - "Plateforme cloud IoT"
+      resources:
+        - text: "Guide ESP32 - Documentation officielle"
+          url: "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/"
+        - text: "Arduino IDE pour ESP32"
+          url: "https://randomnerdtutorials.com/getting-started-with-esp32/"
+        - text: "MQTT Tutorial - ESP32"
+          url: "https://randomnerdtutorials.com/esp32-mqtt-publish-subscribe-arduino-ide/"
+    
+    - title: "Projet 2: Système de contrôle domotique"
+      difficulty: "Intermédiaire"
+      duration: "12-15 heures"
+      objective: "Développer un système domotique pour contrôler à distance l'éclairage, les appareils et monitorer l'environnement"
+      description: |
+        <p>Ce projet te permet de construire un système domotique complet utilisant plusieurs nœuds IoT qui communiquent entre eux et avec un hub central. Tu pourras contrôler des appareils électriques, surveiller la température et créer des automatisations.</p>
+        <p>Le projet comporte plusieurs composants :</p>
+        <ol>
+          <li><strong>Hub central</strong> - Raspberry Pi exécutant Home Assistant comme système de contrôle</li>
+          <li><strong>Nœuds de contrôle</strong> - ESP32 avec relais pour contrôler lampes et appareils</li>
+          <li><strong>Nœuds de capteurs</strong> - ESP8266 avec capteurs (température, mouvement, luminosité)</li>
+          <li><strong>Interface utilisateur</strong> - Application mobile et dashboard web</li>
+          <li><strong>Automatisations</strong> - Règles basées sur conditions, horaires et événements</li>
+        </ol>
+      technologies:
+        - "Raspberry Pi avec Home Assistant"
+        - "ESP32 et ESP8266"
+        - "Modules relais et capteurs variés"
+        - "Communication MQTT"
+      resources:
+        - text: "Home Assistant - Guide d'installation"
+          url: "https://www.home-assistant.io/installation/"
+        - text: "ESP32 avec Home Assistant"
+          url: "https://esphome.io/guides/getting_started_hassio.html"
+        - text: "MQTT Integration Guide"
+          url: "https://www.home-assistant.io/integrations/mqtt/"
+    
+    - title: "Projet 3: Système de surveillance environnementale LoRaWAN"
+      difficulty: "Avancé"
+      duration: "20-25 heures"
+      objective: "Déployer un réseau de capteurs longue portée utilisant LoRaWAN pour surveiller des paramètres environnementaux"
+      description: |
+        <p>Dans ce projet avancé, tu vas construire un réseau de capteurs environnementaux utilisant la technologie LoRaWAN pour transmettre des données sur de longues distances avec une faible consommation d'énergie. Idéal pour le monitoring agricole, urbain ou industriel.</p>
+        <p>Les différentes phases du projet :</p>
+        <ol>
+          <li><strong>Conception des nœuds capteurs</strong> - Développer des appareils autonomes alimentés par batterie</li>
+          <li><strong>Configuration d'une passerelle LoRaWAN</strong> - Installer et configurer une gateway pour The Things Network</li>
+          <li><strong>Backend et stockage</strong> - Mettre en place un système pour collecter et stocker les données</li>
+          <li><strong>Analyse et visualisation</strong> - Créer des tableaux de bord pour analyser les tendances</li>
+          <li><strong>Optimisation énergétique</strong> - Maximiser l'autonomie des capteurs (>1 an sur batterie)</li>
+        </ol>
+      technologies:
+        - "Modules LoRa (RFM95) et microcontrôleurs basse consommation"
+        - "Passerelle LoRaWAN (TTIG, Dragino, RAK)"
+        - "The Things Network"
+        - "Optimisation énergétique avancée"
+      resources:
+        - text: "The Things Network - Documentation"
+          url: "https://www.thethingsnetwork.org/docs/"
+        - text: "LoRaWAN Academy"
+          url: "https://lora-developers.semtech.com/resources/tools/lora-basics/"
+        - text: "LoRa Development Tutorial"
+          url: "https://randomnerdtutorials.com/esp32-lora-rfm95-transceiver-arduino-ide/"
+
+ecosystem:
+  title: "Écosystème IoT"
+  tools:
+    - title: "Hardware IoT"
+      icon: "fas fa-microchip"
+      items:
+        - name: "Arduino"
+          description: "Plateforme open-source de prototypage électronique"
+          url: "https://www.arduino.cc/"
+        - name: "ESP32/ESP8266"
+          description: "SoCs Wi-Fi/BLE à faible coût et haute performance"
+          url: "https://www.espressif.com/en/products/socs/esp32"
+        - name: "Raspberry Pi"
+          description: "Ordinateurs monocarte polyvalents pour IoT"
+          url: "https://www.raspberrypi.org/"
+        - name: "STM32"
+          description: "Microcontrôleurs ARM hautes performances pour applications industrielles"
+          url: "https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html"
+    
+    - title: "Connectivité IoT"
+      icon: "fas fa-broadcast-tower"
+      items:
+        - name: "LoRaWAN"
+          description: "Protocole LPWAN pour communications longue portée, faible énergie"
+          url: "https://lora-alliance.org/"
+        - name: "Sigfox"
+          description: "Réseau LPWAN mondial pour objets à faible bande passante"
+          url: "https://www.sigfox.com/"
+        - name: "Bluetooth Mesh"
+          description: "Réseaux maillés pour objets connectés indoor"
+          url: "https://www.bluetooth.com/learn-about-bluetooth/feature-enhancements/mesh/"
+        - name: "Zigbee/Matter"
+          description: "Standard pour réseaux maillés domestiques et industriels"
+          url: "https://csa-iot.org/"
+    
+    - title: "Plateformes Cloud IoT"
+      icon: "fas fa-cloud"
+      items:
+        - name: "AWS IoT"
+          description: "Suite complète de services IoT sur AWS"
+          url: "https://aws.amazon.com/iot/"
+        - name: "Azure IoT"
+          description: "Plateforme Microsoft pour connecter et gérer appareils"
+          url: "https://azure.microsoft.com/en-us/services/iot-hub/"
+        - name: "Google Cloud IoT"
+          description: "Services IoT intégrés avec BigQuery et ML"
+          url: "https://cloud.google.com/solutions/iot"
+        - name: "ThingsBoard"
+          description: "Plateforme IoT open-source pour data collection, processing, visualization et device management"
+          url: "https://thingsboard.io/"
+    
+    - title: "Software & Frameworks"
+      icon: "fas fa-code-branch"
+      items:
+        - name: "MQTT"
+          description: "Protocole de messagerie léger pour communications IoT"
+          url: "https://mqtt.org/"
+        - name: "TinyML"
+          description: "ML sur microcontrôleurs et appareils contraints"
+          url: "https://tinyml.org/"
+        - name: "InfluxDB"
+          description: "Base de données time-series pour données IoT"
+          url: "https://www.influxdata.com/"
+        - name: "Node-RED"
+          description: "Outil de programmation visuelle pour IoT"
+          url: "https://nodered.org/"
+
+resources:
+  title: "Ressources d'apprentissage"
+  books:
+    fundamentals:
+      title: "Cours en ligne et formations"
+      items:
+        - title: "Introduction to the Internet of Things and Embedded Systems"
+          authors: "University of California, Irvine sur Coursera"
+          description: "Cours d'introduction parfait pour les débutants, couvrant les bases de l'IoT et des systèmes embarqués."
+          url: "https://www.coursera.org/learn/iot"
+        - title: "An Introduction to Programming the Internet of Things"
+          authors: "University of California, Irvine sur Coursera"
+          description: "Spécialisation en 6 cours couvrant Arduino, systèmes embarqués et développement IoT."
+          url: "https://www.coursera.org/specializations/iot"
+        - title: "IoT & Embedded Systems"
+          authors: "edX (HarvardX)"
+          description: "Apprenez à construire des systèmes IoT en comprenant les bases de l'électronique et des microcontrôleurs."
+          url: "https://www.edx.org/professional-certificate/harvardx-tiny-machine-learning"
+        - title: "AWS IoT: Developing and Deploying an Internet of Things"
+          authors: "AWS Training"
+          description: "Formation officielle sur les services AWS IoT et comment déployer une solution complète."
+          url: "https://www.edx.org/learn/amazon-web-services-aws/amazon-web-services-aws-iot-developing-and-deploying-an-internet-of-things"
+    
+    specialized:
+      title: "Livres de référence"
+      items:
+        - title: "Designing the Internet of Things"
+          authors: "Adrian McEwen & Hakim Cassimally"
+          description: "Excellent livre pour débutants couvrant les aspects pratiques et théoriques de la conception IoT."
+          url: "https://www.amazon.fr/Designing-Internet-Things-Adrian-McEwen/dp/111843062X/"
+        - title: "IoT Fundamentals: Networking Technologies, Protocols, and Use Cases"
+          authors: "David Hanes et al."
+          description: "Guide complet sur les protocoles et technologies de communication pour IoT."
+          url: "https://www.amazon.fr/IoT-Fundamentals-Networking-Technologies-Protocols/dp/1587144565/"
+        - title: "Building the Web of Things"
+          authors: "Dominique Guinard & Vlad Trifa"
+          description: "Approche pratique pour construire des applications IoT basées sur les standards web."
+          url: "https://www.amazon.fr/Building-Web-Things-Manning/dp/1617292680/"
+        - title: "Practical IoT Hacking"
+          authors: "Fotios Chantzis et al."
+          description: "Manuel essentiel sur la sécurité IoT, les vecteurs d'attaque et comment sécuriser les appareils."
+          url: "https://www.amazon.fr/Practical-IoT-Hacking-Fotios-Chantzis/dp/1718500904/"
+
+careers: true
+career_paths:
+  title: "Perspectives de carrière"
+  description: "L'Internet des Objets offre des opportunités de carrière passionnantes à l'intersection du hardware, du software et du business, avec une demande qui ne cesse de croître dans de nombreux secteurs."
+  
+  roles:
+    - title: "IoT Hardware Engineer"
+      icon: "fas fa-microchip"
+      mission: "Concevoir et développer les dispositifs IoT, depuis les circuits électroniques jusqu'aux prototypes."
+      skills: "Électronique, microcontrôleurs, PCB design, firmware, gestion d'énergie"
+      salary: "45-75K€"
+      country: "France"
+    
+    - title: "IoT Software Developer"
+      icon: "fas fa-code"
+      mission: "Développer les applications et services qui font fonctionner l'écosystème IoT, du firmware au cloud."
+      skills: "C/C++, Python, MQTT, cloud platforms, cybersécurité, API"
+      salary: "45-80K€"
+      country: "France"
+    
+    - title: "IoT Solutions Architect"
+      icon: "fas fa-sitemap"
+      mission: "Concevoir des architectures IoT complètes et évolutives, du capteur au cloud, adaptées aux besoins métier."
+      skills: "Architecture système, cloud, sécurité, protocoles, middleware"
+      salary: "65-95K€"
+      country: "France"
+    
+    - title: "IoT Data Scientist"
+      icon: "fas fa-chart-line"
+      mission: "Extraire de la valeur des données massives générées par les systèmes IoT via l'analyse et le machine learning."
+      skills: "Python, statistiques, ML, séries temporelles, big data, edge analytics"
+      salary: "50-85K€"
+      country: "France"
+    
+    - title: "IoT Product Manager"
+      icon: "fas fa-cogs"
+      mission: "Diriger le développement de produits et services IoT, depuis la conception jusqu'au déploiement commercial."
+      skills: "Gestion de produit, vision technico-commerciale, UX, roadmap, market fit"
+      salary: "60-90K€"
+      country: "France"
+
+  evolution:
+    title: "Évolution de carrière"
+    timeline:
+      - category: "Début de carrière"
+        side: "left"
+        items:
+          - title: "IoT Embedded Developer"
+            description: "Programmation de firmware et systèmes embarqués"
+          - title: "IoT System Tester"
+            description: "Test et validation des solutions IoT"
+          - title: "IoT Support Engineer"
+            description: "Assistance technique et déploiement"
+          - title: "Hardware Prototyper"
+            description: "Développement de prototypes et preuve de concept"
+      
+      - category: "Mi-carrière"
+        side: "right"
+        items:
+          - title: "Senior IoT Developer"
+            description: "Direction technique de projets IoT complexes"
+          - title: "IoT Solutions Architect"
+            description: "Conception d'architectures systèmes complètes"
+          - title: "IoT Security Specialist"
+            description: "Expert en sécurisation des dispositifs et réseaux"
+          - title: "IoT Project Manager"
+            description: "Gestion de projets IoT de bout en bout"
+      
+      - category: "Senior"
+        side: "left"
+        items:
+          - title: "IoT Director"
+            description: "Responsabilité stratégique des initiatives IoT"
+          - title: "Chief IoT Officer"
+            description: "Direction exécutive de la stratégie IoT"
+          - title: "IoT Practice Lead"
+            description: "Direction d'une unité de conseil en IoT"
+          - title: "IoT Entrepreneur"
+            description: "Fondation de startups dans l'écosystème IoT"
+
+  skills:
+    title: "Compétences recherchées"
+    technical:
+      title: "Compétences hardware"
+      items:
+        - "Conception électronique - Design de circuits, PCB layout, prototypage"
+        - "Microcontrôleurs - ARM Cortex-M, ESP32, STM32, Arduino"
+        - "Interfaces capteurs - I2C, SPI, UART, ADC, DAC"
+        - "Gestion d'énergie - Conception basse consommation, batteries, energy harvesting"
+        - "RF & communications - Bluetooth, Wi-Fi, ZigBee, LoRa, cellulaire"
+    
+    specialized:
+      title: "Compétences software"
+      items:
+        - "Langages embarqués - C, C++, MicroPython, Rust"
+        - "Systèmes d'exploitation - FreeRTOS, Zephyr, Embedded Linux"
+        - "Middleware & protocoles - MQTT, CoAP, HTTP/REST, WebSockets"
+        - "Cloud Platforms - AWS IoT, Azure IoT, Google Cloud IoT"
+        - "Edge computing - TensorFlow Lite, Docker Edge, AWS Greengrass"
+    
+    soft_skills:
+      title: "Soft skills et autres compétences"
+      items:
+        - "Pensée système - Approche holistique des écosystèmes complexes"
+        - "Interdisciplinarité - Capacité à naviguer entre hardware, software et business"
+        - "Troubleshooting - Diagnostic et résolution de problèmes complexes"
+        - "Design thinking - Conception centrée utilisateur pour IoT"
+        - "Veille technologique - Adaptation continue aux évolutions rapides du domaine"
+
+  market_trends:
+    title: "Tendances du marché"
+    items:
+      - "+35% de croissance du marché du travail IoT en Europe depuis 2019"
+      - "Forte demande pour les profils hybrides hardware/software"
+      - "Secteurs en pointe : industrie 4.0, smart cities, santé connectée, agritech"
+      - "Prime de +20% pour les spécialistes en sécurité IoT"
+      - "Émergence de nouveaux rôles comme AIoT Engineer (IA+IoT) et FinOps IoT"
+
+summary:
+  title: "En résumé"
+  description: "L'Internet des Objets représente une révolution technologique qui transforme profondément notre façon d'interagir avec le monde physique. Cette spécialité combine :"
+  points:
+    - title: "Hardware et Embedded Systems"
+      description: "Conception et développement des dispositifs physiques connectés"
+    - title: "Connectivité et Communication"
+      description: "Technologies et protocoles permettant aux objets d'échanger des données"
+    - title: "Plateformes Cloud et Edge"
+      description: "Infrastructure de traitement et de stockage des données IoT"
+    - title: "Analytics et Intelligence"
+      description: "Extraction de valeur et automatisation basée sur les données collectées"
+    - title: "Sécurité et Confidentialité"
+      description: "Protection des écosystèmes IoT contre les menaces croissantes"
+  conclusion: "Cette spécialité MSc te prépare à devenir un architecte de solutions IoT complètes, capable de concevoir et développer des systèmes connectés intelligents qui transformeront notre monde de demain."
+
+has_media: true
+media:
+  - title: "IoT à but militaire : focus sur Le projet « DETER », de notre étudiant MSc Pro Yann Fontaine"
+    description: "Projet « DETER » de Yann Fontaine, étudiant MSc Pro Epitech (spé IoT)."
+    url: "https://www.youtube.com/embed/9yqtSnCLExc"
+  - title: "L'Internet des Objets, c'est quoi ?"
+    description: "Vidéo explicative sur l'IoT."
+    url: "https://www.youtube.com/embed/HCJtvzG6v10"

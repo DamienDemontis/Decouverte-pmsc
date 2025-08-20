@@ -1,0 +1,401 @@
+title: "Data, Protection & Sécurité"
+slug: "data-protection"
+icon: "fas fa-shield-alt"
+type: "business"
+order: 5
+colors:
+  primary: "#4F46E5"
+  secondary: "#A5B4FC"
+short_description: "Devenez un expert de la confiance numérique en maîtrisant la protection des données, la gestion des risques et la conformité réglementaire."
+description: "Développez une expertise à l'intersection de la gestion des données, de la cybersécurité et du droit pour concevoir et mettre en œuvre des stratégies de protection des données qui renforcent la confiance et garantissent la conformité des organisations."
+
+overview:
+  title: "Pourquoi la Data, Protection & Sécurité ?"
+  features:
+    - title: "Un enjeu de conformité majeur"
+      icon: "fas fa-gavel"
+      description: "Avec le RGPD, la directive NIS2 et d'autres régulations, la conformité n'est plus une option. C'est une obligation légale et un gage de sérieux."
+    
+    - title: "Le pilier de la confiance numérique"
+      icon: "fas fa-handshake"
+      description: "Les clients et utilisateurs ne confient leurs données qu'aux organisations qu'ils estiment dignes de confiance. La protection des données est un différenciant clé."
+    
+    - title: "Gestion des risques cyber"
+      icon: "fas fa-shield-check"
+      description: "Apprenez à identifier, évaluer et gérer les risques pour protéger les données sensibles de votre organisation contre des menaces en constante évolution."
+    
+    - title: "Au cœur de la stratégie d'entreprise"
+      icon: "fas fa-sitemap"
+      description: "La gouvernance des données n'est pas qu'un sujet technique ou juridique, c'est un sujet de direction générale qui impacte tous les départements."
+    
+    - title: "Un rôle de communicant et de pédagogue"
+      icon: "fas fa-comments"
+      description: "Sensibilisez les collaborateurs, expliquez les politiques de sécurité et communiquez efficacement avec toutes les parties prenantes, internes comme externes."
+    
+    - title: "L'analyse de données pour la sécurité"
+      icon: "fas fa-search-plus"
+      description: "Utilisez les techniques d'analyse de données pour détecter des menaces potentielles, des vulnérabilités et des comportements anormaux."
+
+  accordion:
+    - title: "Le Cadre Légal et Réglementaire"
+      content: |
+        <p>La protection des données s'inscrit dans un cadre juridique précis qu'il est essentiel de maîtriser.</p>
+        <ul>
+          <li><strong>RGPD (Règlement Général sur la Protection des Données)</strong> : Le texte de référence en Europe qui définit les droits des personnes et les obligations des organisations.</li>
+          <li><strong>Privacy by Design & by Default</strong> : Intégrer la protection des données dès la conception d'un projet et appliquer les paramètres les plus protecteurs par défaut.</li>
+          <li><strong>Analyse d'Impact sur la Vie Privée (AIPD)</strong> : Une étude obligatoire pour les traitements de données présentant un risque élevé.</li>
+        </ul>
+    
+    - title: "La Gouvernance et la Gestion des Risques"
+      content: |
+        <p>Mettre en place les politiques, les processus et les contrôles pour assurer une protection efficace.</p>
+        <ul>
+          <li><strong>Politique de Sécurité des Systèmes d'Information (PSSI)</strong> : Le document cadre qui définit la stratégie de sécurité de l'organisation.</li>
+          <li><strong>Analyse de risques</strong> : Méthodologies (ex: EBIOS Risk Manager) pour identifier les menaces, les vulnérabilités et évaluer les risques.</li>
+          <li><strong>Plan de Continuité d'Activité (PCA)</strong> : Préparer l'organisation à réagir en cas d'incident de sécurité majeur (ex: cyberattaque).</li>
+        </ul>
+    
+    - title: "Les Technologies de Sécurité"
+      content: |
+        <p>Comprendre les technologies clés qui permettent de protéger les données et les systèmes.</p>
+        <ul>
+          <li><strong>Cryptographie</strong> : Chiffrer les données au repos et en transit pour garantir leur confidentialité.</li>
+          <li><strong>Gestion des identités et des accès (IAM)</strong> : S'assurer que seules les bonnes personnes ont accès aux bonnes informations.</li>
+          <li><strong>Sécurité des réseaux</strong> : Firewalls, détection d'intrusion (IDS/IPS), VPN... pour protéger le périmètre de l'organisation.</li>
+        </ul>
+
+  quote: "La confiance est difficile à gagner, facile à perdre, et encore plus difficile à regagner. La protection des données est le fondement de cette confiance à l'ère numérique."
+  quote_author: ""
+
+use_cases:
+  title: "Cas d'usage emblématiques"
+  timeline:
+    - category: "Gestion de crise"
+      side: "left"
+      items:
+        - title: "Gestion d'une violation de données"
+          description: "Une entreprise de e-commerce découvre qu'une base de données clients a été exfiltrée. L'expert active la cellule de crise, qualifie l'incident, notifie la CNIL sous 72h, prépare la communication clients et coordonne l'analyse technique. Une gestion transparente et efficace permet de limiter l'impact sur la réputation."
+    
+    - category: "Mise en conformité"
+      side: "right"
+      items:
+        - title: "Mise en conformité d'une nouvelle application"
+          description: "Une startup développe une app mobile de santé collectant des données sur l'activité physique. L'expert intervient dès le début (Privacy by Design), mène une AIPD, conseille sur la minimisation des données et vérifie l'hébergement certifié. L'application est lancée en conformité RGPD."
+    
+    - category: "Sensibilisation"
+      side: "left"
+      items:
+        - title: "Programme de sensibilisation des collaborateurs"
+          description: "Une PME constate une augmentation des tentatives de phishing réussies. L'expert conçoit un programme de sensibilisation avec e-learning, campagnes de phishing simulées et communication régulière. Le taux de clics sur les emails malveillants diminue de 80%."
+
+roadmap:
+  title: "Parcours d'apprentissage"
+  phases:
+    - title: "🎯 Phase 1: Les Fondamentaux (1-3 mois)"
+      duration: "1-3 mois"
+      steps:
+        - title: "Droit de la protection des données"
+          description: "Maîtriser le RGPD et ses grands principes (finalité, minimisation, licéité, etc.)."
+          resources:
+            - text: "Le texte intégral du RGPD (CNIL)"
+              url: "https://www.cnil.fr/fr/reglement-europeen-protection-donnees"
+            - text: "Les principes clés de la protection des données (CNIL)"
+              url: "https://www.cnil.fr/fr/les-6-principes-cles-du-rgpd"
+        
+        - title: "Principes de la Cybersécurité"
+          description: "Comprendre les concepts de base de la sécurité des systèmes d'information (Confidentialité, Intégrité, Disponibilité)."
+          resources:
+            - text: "Guide d'hygiène informatique de l'ANSSI"
+              url: "https://www.ssi.gouv.fr/guide/guide-dhygiene-informatique/"
+    
+    - title: "🚀 Phase 2: Le cœur du métier (3-6 mois)"
+      duration: "3-6 mois"
+      steps:
+        - title: "Gestion des risques et conformité"
+          description: "Apprendre les méthodologies d'analyse de risques et les cadres de gouvernance (frameworks)."
+          resources:
+            - text: "Norme ISO/IEC 27001"
+              url: "https://www.iso.org/fr/standard/75281.html"
+            - text: "Méthode EBIOS Risk Manager (ANSSI)"
+              url: "https://www.ssi.gouv.fr/uploads/2019/11/anssi-guide-ebios_risk_manager-en-v1.0.pdf"
+        
+        - title: "Technologies de sécurité"
+          description: "Approfondir les connaissances sur les outils de sécurité : cryptographie, gestion des accès, sécurité des réseaux."
+          resources:
+            - text: "Cryptographie appliquée - Coursera"
+              url: "https://www.coursera.org/learn/crypto"
+            - text: "Guide ANSSI - Sécurité des réseaux"
+              url: "https://www.ssi.gouv.fr/guide/recommandations-de-securite-relatives-a-ipsec/"
+            - text: "NIST Cybersecurity Framework"
+              url: "https://www.nist.gov/cyberframework"
+
+projects:
+  title: "Projets pratiques"
+  items:
+    - title: "Projet 1: Réaliser l'audit RGPD d'un site web"
+      difficulty: "Débutant"
+      duration: "6-8 heures"
+      objective: "Appliquer concrètement les principes du RGPD."
+      description: |
+        <p>Choisissez le site web d'une association ou d'une petite entreprise. Analysez sa politique de confidentialité, son bandeau cookie, et ses formulaires de contact.</p>
+        <p>Rédigez un mini-rapport d'audit identifiant 3 à 5 points de non-conformité et les actions correctives à apporter. Ce projet vous permettra de comprendre concrètement l'application du RGPD.</p>
+      technologies:
+        - "Outils d'audit en ligne (ex: Website Policy Generator)"
+        - "Grille d'audit RGPD"
+        - "Documentation juridique CNIL"
+      resources:
+        - text: "Kit d'audit RGPD - CNIL"
+          url: "https://www.cnil.fr/fr/rgpd-par-ou-commencer"
+        - text: "Guide pratique RGPD"
+          url: "https://www.cnil.fr/sites/default/files/atoms/files/guide_rgpd_tpe_pme.pdf"
+        - text: "Modèles de politique de confidentialité"
+          url: "https://www.cnil.fr/fr/modeles-mentions-information-et-formulaires"
+    
+    - title: "Projet 2: Mener une analyse de risques sur un cas simple"
+      difficulty: "Intermédiaire"
+      duration: "10-12 heures"
+      objective: "Se familiariser avec la méthodologie d'analyse de risques."
+      description: |
+        <p>Prenez le cas d'une association qui gère les données de ses membres sur un simple fichier Excel stocké sur un ordinateur portable.</p>
+        <p>En utilisant une version simplifiée d'EBIOS, identifiez les biens essentiels (le fichier), les scénarios de menace (vol de l'ordinateur, phishing), les risques et proposez des mesures de sécurité (chiffrement du disque, sauvegarde, etc.).</p>
+      technologies:
+        - "Méthodologie EBIOS Risk Manager"
+        - "Matrice de risques"
+        - "Outils de cartographie (ex: Lucidchart)"
+      resources:
+        - text: "Guide EBIOS Risk Manager - ANSSI"
+          url: "https://www.ssi.gouv.fr/guide/ebios-risk-manager-the-method/"
+        - text: "Matrice de risques template"
+          url: "https://www.lucidchart.com/pages/templates/risk-assessment-matrix"
+        - text: "Cartographie des risques - Méthode"
+          url: "https://www.cnil.fr/fr/gerer-les-risques"
+    
+    - title: "Projet 3: Rédiger une charte informatique"
+      difficulty: "Intermédiaire"
+      duration: "8 heures"
+      objective: "Formaliser les bonnes pratiques de sécurité pour des utilisateurs."
+      description: |
+        <p>Imaginez que vous êtes le responsable de la sécurité d'une PME. Rédigez une charte informatique d'une ou deux pages destinée à tous les collaborateurs.</p>
+        <p>Elle doit expliquer de manière simple et claire les règles d'utilisation des outils informatiques, la politique de mot de passe, la conduite à tenir en cas d'email suspect, etc.</p>
+      technologies:
+        - "Templates de charte informatique"
+        - "Outils de rédaction collaborative"
+        - "Référentiels de bonnes pratiques ANSSI"
+      resources:
+        - text: "Modèle de charte informatique - ANSSI"
+          url: "https://www.ssi.gouv.fr/particulier/guide/charte-dutilisation-des-moyens-informatiques-et-des-outils-numeriques/"
+        - text: "Guide des bonnes pratiques - ANSSI"
+          url: "https://www.ssi.gouv.fr/guide/guide-dhygiene-informatique/"
+        - text: "Templates charte utilisateur"
+          url: "https://www.cnil.fr/fr/securite-des-donnees-personnelles"
+
+ecosystem:
+  title: "Écosystème de la Protection des Données"
+  tools:
+    - title: "Autorités de contrôle"
+      icon: "fas fa-gavel"
+      items:
+        - name: "CNIL (France)"
+          description: "Commission Nationale de l'Informatique et des Libertés"
+          url: "https://www.cnil.fr/"
+        - name: "EDPB (Europe)"
+          description: "European Data Protection Board"
+          url: "https://edpb.europa.eu/"
+        - name: "ICO (Royaume-Uni)"
+          description: "Information Commissioner's Office"
+          url: "https://ico.org.uk/"
+    
+    - title: "Agences de Cybersécurité"
+      icon: "fas fa-shield-alt"
+      items:
+        - name: "ANSSI (France)"
+          description: "Agence Nationale de la Sécurité des Systèmes d'Information"
+          url: "https://www.ssi.gouv.fr/"
+        - name: "ENISA (Europe)"
+          description: "European Union Agency for Cybersecurity"
+          url: "https://www.enisa.europa.eu/"
+        - name: "CISA (USA)"
+          description: "Cybersecurity and Infrastructure Security Agency"
+          url: "https://www.cisa.gov/"
+    
+    - title: "Logiciels de Conformité"
+      icon: "fas fa-cogs"
+      items:
+        - name: "OneTrust"
+          description: "Plateforme complète de gouvernance des données"
+          url: "https://www.onetrust.com/"
+        - name: "DataGueule"
+          description: "Solution française de conformité RGPD"
+          url: "https://www.datagueule.com/"
+        - name: "Dastra"
+          description: "Plateforme de gestion de la conformité RGPD"
+          url: "https://www.dastra.eu/"
+    
+    - title: "Associations Professionnelles"
+      icon: "fas fa-users"
+      items:
+        - name: "IAPP"
+          description: "International Association of Privacy Professionals"
+          url: "https://iapp.org/"
+        - name: "AFCDP (France)"
+          description: "Association Française des Correspondants à la protection des Données à caractère Personnel"
+          url: "https://www.afcdp.net/"
+        - name: "CLUSIF"
+          description: "Club de la Sécurité de l'Information Français"
+          url: "https://clusif.asso.fr/"
+
+resources:
+  title: "Ressources d'apprentissage"
+  books:
+    reference_sites:
+      title: "Sites de référence"
+      items:
+        - title: "CNIL"
+          authors: "France"
+          description: "Le site de la Commission Nationale de l'Informatique et des Libertés est une mine d'or d'informations et d'outils."
+          url: "https://www.cnil.fr"
+        - title: "ANSSI"
+          authors: "France"
+          description: "L'Agence Nationale de la Sécurité des Systèmes d'Information publie des guides et des recommandations de référence."
+          url: "https://www.ssi.gouv.fr/"
+        - title: "IAPP"
+          authors: "USA (en anglais)"
+          description: "L'International Association of Privacy Professionals est la plus grande communauté mondiale de professionnels de la vie privée."
+          url: "https://iapp.org/"
+
+careers: true
+career_paths:
+  title: "Perspectives de carrière"
+  description: "Un secteur en tension avec des débouchés dans tous les types d'organisations, des entreprises privées aux administrations publiques."
+  
+  roles:
+    - title: "Délégué à la Protection des Données (DPO)"
+      icon: "fas fa-user-secret"
+      mission: "Le \"chef d'orchestre\" de la conformité RGPD. Il informe, conseille, contrôle et coopère avec l'autorité de contrôle (CNIL)."
+      skills: "Droit, gestion de projet, communication, connaissance technique"
+      salary: "45-70K€"
+      country: "France"
+    
+    - title: "Consultant RGPD / Protection des données"
+      icon: "fas fa-handshake"
+      mission: "Accompagner plusieurs entreprises dans leur mise en conformité, réaliser des audits, des analyses d'impact et jouer le rôle de DPO externe."
+      skills: "Gestion de projet, adaptabilité, communication, expertise juridique et technique"
+      salary: "40-65K€"
+      country: "France"
+    
+    - title: "Chef de projet cybersécurité"
+      icon: "fas fa-tasks"
+      mission: "Piloter des projets visant à renforcer la sécurité (ex: déploiement d'un nouvel outil, campagne de sensibilisation) en respectant le budget et les délais."
+      skills: "Gestion de projet, connaissance des solutions de sécurité, organisation"
+      salary: "42-60K€"
+      country: "France"
+    
+    - title: "Spécialiste en gestion de crise cyber"
+      icon: "fas fa-fire-extinguisher"
+      mission: "Préparer l'entreprise à faire face à une cyberattaque et piloter la réponse en cas d'incident pour en limiter l'impact."
+      skills: "Gestion de crise, sang-froid, communication, connaissance technique"
+      salary: "50-75K€"
+      country: "France"
+    
+    - title: "Formateur cybersécurité"
+      icon: "fas fa-chalkboard-teacher"
+      mission: "Concevoir et animer des formations pour sensibiliser les collaborateurs aux risques et leur apprendre les bons réflexes de sécurité."
+      skills: "Pédagogie, communication, expertise technique"
+      salary: "38-55K€"
+      country: "France"
+
+  evolution:
+    title: "Évolution de carrière"
+    timeline:
+      - category: "Début de carrière"
+        side: "left"
+        items:
+          - title: "Consultant junior (RGPD/Cyber)"
+            description: "Accompagnement de projets de conformité et de sécurité"
+          - title: "Chargé de conformité"
+            description: "Gestion de la conformité réglementaire au sein d'une organisation"
+          - title: "Analyste en gouvernance des données"
+            description: "Analyse et mise en place de politiques de gouvernance"
+      
+      - category: "Mi-carrière"
+        side: "right"
+        items:
+          - title: "Consultant confirmé / Manager"
+            description: "Pilotage de projets complexes et encadrement d'équipes"
+          - title: "Chef de projet sécurité"
+            description: "Direction de projets de sécurisation des systèmes"
+          - title: "Délégué à la Protection des Données (DPO)"
+            description: "Responsabilité complète de la conformité RGPD"
+      
+      - category: "Senior"
+        side: "left"
+        items:
+          - title: "Responsable de la Protection des Données (groupe)"
+            description: "Coordination de la conformité au niveau groupe"
+          - title: "RSSI - orientation gouvernance"
+            description: "Direction de la sécurité avec focus gouvernance"
+          - title: "Partner en cabinet de conseil"
+            description: "Développement commercial et expertise sectorielle"
+
+  skills:
+    title: "Compétences recherchées"
+    technical:
+      title: "Compétences Juridiques & Conformité"
+      items:
+        - "Maîtrise du RGPD - Connaissance approfondie du règlement et de son application"
+        - "Droit du numérique - Connaissance des lois connexes (ePrivacy, NIS2, Data Act, AI Act...)"
+        - "Analyses d'Impact (AIPD) - Capacité à mener des analyses de risques sur la vie privée"
+        - "Veille réglementaire - Suivi constant de l'évolution des législations nationales et européennes"
+    
+    specialized:
+      title: "Compétences en Sécurité & Gouvernance"
+      items:
+        - "Gestion des risques - Maîtrise des méthodologies d'analyse de risques (EBIOS, ISO 27005)"
+        - "Gouvernance de la sécurité - Connaissance des standards comme ISO 27001/27002, le framework NIST"
+        - "Gestion de crise - Capacité à élaborer et dérouler un plan de réponse à incident"
+        - "Sécurité technique - Compréhension des concepts de cryptographie, gestion des accès, sécurité des réseaux"
+    
+    soft_skills:
+      title: "Soft skills et autres compétences"
+      items:
+        - "Communication et pédagogie - Savoir sensibiliser et former des publics non-spécialistes"
+        - "Gestion de projet - Piloter des projets de mise en conformité ou de sécurité"
+        - "Analyse et synthèse - Comprendre des situations complexes et les restituer clairement"
+        - "Rigueur et organisation - Gérer la documentation de conformité (registre, AIPD, etc.)"
+
+  market_trends:
+    title: "Tendances du marché"
+    items:
+      - "Le DPO au cœur de la stratégie : Le Délégué à la Protection des Données devient un partenaire stratégique de la direction"
+      - "Convergence Vie Privée & Cybersécurité : Les équipes \"Privacy\" et \"Cyber\" collaborent de plus en plus étroitement"
+      - "Automatisation de la conformité : Montée en puissance des outils de \"Privacy Tech\" pour automatiser la gestion de la conformité"
+      - "IA et Protection des données : L'essor de l'IA générative crée de nouveaux défis et un besoin d'experts capables d'encadrer son usage"
+      - "Focus sur les transferts de données : La gestion des transferts de données internationaux (notamment vers les États-Unis) reste un enjeu majeur"
+
+summary:
+  title: "En résumé"
+  description: "La spécialité Data, Protection & Sécurité forme des experts de la confiance numérique, capables de naviguer dans un environnement réglementaire complexe tout en protégeant efficacement les données des organisations. Cette expertise combine :"
+  points:
+    - title: "Expertise juridique"
+      description: "Maîtrise approfondie du RGPD et des réglementations de protection des données"
+    - title: "Vision stratégique"
+      description: "Capacité à intégrer la protection des données dans la stratégie globale de l'entreprise"
+    - title: "Compétences techniques"
+      description: "Compréhension des technologies de sécurité et des architectures de données"
+    - title: "Communication efficace"
+      description: "Capacité à sensibiliser et former les équipes aux enjeux de sécurité"
+    - title: "Gestion de crise"
+      description: "Préparation et pilotage de la réponse aux incidents de sécurité"
+  conclusion: "Cette spécialité MSc te prépare à devenir un gardien de la confiance numérique, capable de construire et maintenir des systèmes de protection des données robustes tout en accompagnant les organisations dans leur transformation digitale sécurisée."
+
+has_media: true
+media:
+  - title: "Témoignage d'un alternant (Epitech)"
+    description: "Un étudiant partage son expérience en alternance dans le domaine de la cybersécurité des systèmes industriels."
+    url: "https://www.youtube.com/embed/VJwLi5AJ_Mg"
+  - title: "Le métier d'Architecte Cybersécurité"
+    description: "Une interview d'expert qui présente son rôle et les défis de la sécurité, lors d'une Masterclass à Epitech Digital."
+    url: "https://www.youtube.com/embed/e5GWqaf5Dvw"
+  - title: "Le RGPD en 2 minutes"
+    description: "Une vidéo de vulgarisation essentielle pour comprendre les grands principes de la protection des données en Europe."
+    url: "https://www.youtube.com/embed/jeRN3le2ipY"

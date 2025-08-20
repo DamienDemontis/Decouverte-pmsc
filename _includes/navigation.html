@@ -1,0 +1,43 @@
+<!-- Navigation generated from _data/navigation.yml -->
+<ul class="nav-links">
+  <!-- Main navigation items -->
+  {% for item in site.data.navigation.main %}
+  <li class="nav-item">
+    <a href="{{ item.url | relative_url }}" class="nav-link {% if page.url == item.url %}active{% endif %}">
+      <i class="{{ item.icon }}"></i> {{ item.title }}
+    </a>
+  </li>
+  {% endfor %}
+  
+  <!-- Specialty categories -->
+  {% for category in site.data.navigation.categories %}
+    <li class="nav-category">
+      <span>{{ category[1].title }}</span>
+    </li>
+    
+    {% assign specialities = category[1].specialities | sort: 'order' %}
+    {% for specialty in specialities %}
+      {% assign specialty_page = site.specialites | where: "slug", specialty.slug | first %}
+      {% unless specialty_page %}
+        {% comment %}Fallback: try to find by filename if slug not found{% endcomment %}
+        {% assign specialty_page = site.specialites | where_exp: "item", "item.name contains specialty.slug" | first %}
+      {% endunless %}
+      {% if specialty_page %}
+        <li class="nav-item">
+          <a href="{{ specialty_page.url | relative_url }}" class="nav-link {% if page.url == specialty_page.url %}active{% endif %}">
+            <i class="{{ specialty.icon | default: 'fas fa-graduation-cap' }}"></i> {{ specialty.title }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  
+  <!-- Footer navigation -->
+  {% for item in site.data.navigation.footer %}
+  <li class="nav-item">
+    <a href="{{ item.url | relative_url }}" class="nav-link {% if page.url == item.url %}active{% endif %}">
+      <i class="{{ item.icon }}"></i> {{ item.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

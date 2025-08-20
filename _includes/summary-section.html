@@ -1,0 +1,18 @@
+<!-- Summary section component -->
+{% if include.summary %}
+  <section id="summary">
+    <h2><i class="fas fa-check-circle"></i> {{ include.summary.title }}</h2>
+    
+    <div class="centered-card">
+      <div class="feature-card">
+        <p>{{ include.summary.description }}</p>
+        <ul>
+          {% for point in include.summary.points %}
+            <li><strong>{{ point.title }}</strong> - {{ point.description }}</li>
+          {% endfor %}
+        </ul>
+        <p>{{ include.summary.conclusion }}</p>
+      </div>
+    </div>
+  </section>
+{% endif %}

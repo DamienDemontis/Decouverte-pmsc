@@ -1,0 +1,624 @@
+title: "Big Data & Analytics"
+slug: "bigdata"
+icon: "fas fa-database"
+type: "tech"
+order: 3
+colors:
+  primary: "#0EA5E9"
+  secondary: "#38BDF8"
+short_description: "Apprenez à collecter, stocker, traiter et analyser des volumes massifs de données pour en extraire des informations stratégiques et piloter la prise de décision."
+description: "Découvrez comment maîtriser le déluge de données de notre ère digitale grâce aux technologies Big Data, aux architectures distribuées et aux techniques analytiques avancées qui révolutionnent la prise de décision."
+
+overview:
+  title: "Pourquoi le Big Data ?"
+  features:
+    - title: "Volume"
+      icon: "fas fa-chart-line"
+      description: "Des quantités massives de données qui dépassent les capacités de traitement traditionnelles."
+      example: "Netflix ingère plus de 150 To de données par jour pour alimenter ses systèmes de recommandation."
+    
+    - title: "Vitesse"
+      icon: "fas fa-bolt"
+      description: "La création et le traitement de données à haute fréquence, souvent en temps réel."
+      example: "Twitter traite plus de 500 millions de tweets quotidiens, soit près de 6000 tweets par seconde."
+      
+    - title: "Variété"
+      icon: "fas fa-random"
+      description: "Données structurées, semi-structurées et non structurées provenant de sources diverses."
+      example: "TikTok analyse vidéos, audio, texte, comportement utilisateur et métadonnées simultanément."
+      
+    - title: "Véracité"
+      icon: "fas fa-check-circle"
+      description: "La fiabilité et la qualité des données, souvent compromise par leur volume même."
+      example: "IBM estime que les mauvaises données coûtent 3,1 billions de dollars par an à l'économie américaine."
+      
+    - title: "Valeur"
+      icon: "fas fa-gem"
+      description: "Capacité à transformer les données en insights et en avantages concurrentiels."
+      example: "Amazon génère 35% de ses ventes grâce à son système de recommandation basé sur le Big Data."
+      
+    - title: "Intelligence"
+      icon: "fas fa-brain"
+      description: "La capacité à extraire des connaissances et à prendre des décisions automatisées."
+      example: "Les modèles prédictifs de Walmart prévoient les ventes avec une précision de 90% en intégrant 40 PB de données."
+
+  accordion:
+    - title: "Limitations des bases de données traditionnelles"
+      content: |
+        <p>Les SGBDR classiques (MySQL, PostgreSQL) rencontrent plusieurs obstacles face aux Big Data :</p>
+        <ul>
+          <li><strong>Scaling vertical limité</strong> : Impossible d'ajouter indéfiniment de la RAM ou des CPU</li>
+          <li><strong>Jointures coûteuses</strong> : Deviennent prohibitives sur des milliards de lignes</li>
+          <li><strong>Schéma rigide</strong> : Difficile d'adapter pour des données semi-structurées</li>
+          <li><strong>Licensing onéreux</strong> : Les solutions Oracle/SQL Server deviennent très chères à grande échelle</li>
+        </ul>
+        <p>En revanche, les technologies Big Data sont conçues pour le <em>scaling horizontal</em> : ajouter des machines plutôt que de la puissance.</p>
+    
+    - title: "Limites du traitement séquentiel"
+      content: |
+        <p>Le traitement ligne par ligne devient problématique à l'échelle du Big Data :</p>
+        <ul>
+          <li><strong>Temps de calcul linéaire</strong> : Un traitement qui prend 1 minute sur 1 GB prendra théoriquement ~17 heures sur 1 TB</li>
+          <li><strong>Goulots d'étranglement I/O</strong> : Les disques ne peuvent pas fournir les données assez rapidement</li>
+          <li><strong>Limites de mémoire</strong> : Impossible de charger l'ensemble des données dans la RAM</li>
+        </ul>
+        <p>Les frameworks Big Data comme Spark ou Hadoop distribuent le traitement sur des dizaines ou centaines de nœuds en parallèle.</p>
+
+  quote: "Nous ne sommes plus dans l'ère de l'information. Nous sommes dans l'ère de la gestion de l'information."
+  quote_author: "Leandro Herrero"
+
+use_cases:
+  title: "Cas d'usage emblématiques"
+  timeline:
+    - category: "Commerce et Marketing"
+      side: "left"
+      items:
+        - title: "Personnalisation"
+          description: "Amazon analyse l'historique d'achat, le comportement de navigation et les tendances pour personnaliser 35% de ses ventes via son système de recommandation."
+        - title: "Optimisation des prix"
+          description: "Les compagnies aériennes ajustent leurs tarifs jusqu'à 100 000 fois par jour en fonction de la demande en temps réel."
+        - title: "Analyse du parcours client"
+          description: "Sephora combine données en ligne et en magasin pour créer une vue à 360° de ses 25 millions de clients."
+          
+    - category: "Santé et Recherche"
+      side: "right"
+      items:
+        - title: "Médecine personnalisée"
+          description: "Le projet \"All of Us\" du NIH américain analyse les données génomiques et médicales de plus d'un million de personnes pour révolutionner les traitements."
+        - title: "Prédiction d'épidémies"
+          description: "HealthMap a détecté l'épidémie d'Ebola 9 jours avant l'OMS en analysant les médias sociaux et les recherches web."
+        - title: "Drug discovery"
+          description: "Atomwise utilise l'IA sur des pétaoctets de données moléculaires pour simuler et tester virtuellement 10 millions de composés par jour."
+
+  trends:
+    title: "Tendances émergentes"
+    features:
+      - title: "IA Générative + Big Data"
+        icon: "fas fa-robot"
+        description: "L'explosion des LLMs ouvre de nouvelles perspectives pour naviguer, interroger et résumer des corpus massifs de données en langage naturel."
+      
+      - title: "Confidentialité et Souveraineté"
+        icon: "fas fa-shield-alt"
+        description: "Les réglementations comme RGPD et les préoccupations liées à la souveraineté des données imposent de nouvelles contraintes et opportunités."
+
+roadmap:
+  title: "Parcours d'apprentissage"
+  phases:
+    - title: "Phase 1 : Fondamentaux techniques"
+      duration: "1-3 mois"
+      steps:
+        - title: "Bases de programmation"
+          description: "Maîtrisez Python, le langage le plus utilisé en data engineering aujourd'hui. Comprenez les structures de données, l'algorithmique et l'orienté objet."
+          resources:
+            - text: "Python Official Tutorial"
+              url: "https://www.python.org/about/gettingstarted/"
+            - text: "Codecademy - Learn Python"
+              url: "https://www.codecademy.com/learn/learn-python-3"
+        - title: "Manipulation de données"
+          description: "Apprenez à nettoyer, transformer et analyser des datasets avec Pandas, la bibliothèque Python incontournable pour la manipulation de données."
+          resources:
+            - text: "Pandas Getting Started"
+              url: "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html"
+            - text: "Kaggle - Pandas Course"
+              url: "https://www.kaggle.com/learn/pandas"
+
+projects:
+  title: "Projets pratiques"
+  items:
+    - title: "Projet 1: TARDIS Bootstrap - Nettoyage et visualisation de données"
+      difficulty: "Débutant"
+      duration: "3-4 heures"
+      objective: "Explorer, nettoyer et visualiser un jeu de données sur les retards de trains"
+      description: |
+        <p>Ce projet guidé te permettra d'acquérir les compétences essentielles en préparation et visualisation de données, fondamentales pour tout projet de data science. Tu apprendras à:</p>
+        <ul>
+          <li>Charger et explorer un jeu de données à l'aide de pandas</li>
+          <li>Identifier et résoudre les problèmes courants (valeurs manquantes, doublons, formats incohérents)</li>
+          <li>Générer des visualisations pour comprendre les tendances</li>
+          <li>Préparer les données pour l'analyse dans le projet principal</li>
+        </ul>
+        <p>Le projet suit une approche étape par étape, avec des points de contrôle pour valider ta compréhension.</p>
+      technologies:
+        - "Python avec les bibliothèques pandas, matplotlib et seaborn"
+        - "Jupyter Notebook pour l'analyse interactive"
+      resources:
+        - text: "Sujet complet (PDF)"
+          url: "/assets/subjects/bigdata/tardis_bootstrap/G-AIA-210_tardis_bootstrap.pdf"
+        - text: "Dataset"
+          url: "/assets/subjects/bigdata/tardis_bootstrap/dataset.csv"
+
+    - title: "Projet 2: TARDIS - Prédire l'imprévisible"
+      difficulty: "Intermédiaire"
+      duration: "10-15 heures"
+      objective: "Analyser et prédire les retards de trains à l'aide de techniques de machine learning"
+      description: |
+        <p>Ce projet te place dans le rôle d'un analyste de données pour la SNCF. Ta mission est d'analyser les données historiques sur les retards des trains, de découvrir des modèles cachés et de développer un modèle prédictif qui peut prévoir les retards avant qu'ils ne se produisent.</p>
+        <p>Le projet se décompose en 4 étapes principales :</p>
+        <ol>
+          <li><strong>Nettoyage et prétraitement des données</strong> - Gestion des valeurs manquantes, des incohérences et préparation du dataset pour l'analyse.</li>
+          <li><strong>Analyse exploratoire (EDA)</strong> - Création de visualisations pertinentes pour comprendre les tendances et corrélations.</li>
+          <li><strong>Modélisation prédictive</strong> - Implémentation d'un modèle de machine learning pour prédire les retards des trains.</li>
+          <li><strong>Développement d'un dashboard</strong> - Création d'une application web interactive avec Streamlit pour présenter les résultats.</li>
+        </ol>
+        <p>Un sujet complet détaille chaque étape et les livrables attendus.</p>
+      technologies:
+        - "Python avec pandas, matplotlib, seaborn"
+        - "Machine learning avec scikit-learn"
+        - "Création d'interfaces utilisateur avec Streamlit"
+        - "Développement d'un pipeline complet de data science"
+      resources:
+        - text: "Sujet complet (PDF)"
+          url: "/assets/subjects/bigdata/tardis_suite/G-AIA-210_tardis.pdf"
+        - text: "Dataset"
+          url: "/assets/subjects/bigdata/tardis_suite/dataset.csv"
+
+    - title: "Projet 3: Analyse de données massives"
+      difficulty: "Débutant"
+      duration: "4-6 heures"
+      objective: "Explorer et analyser un jeu de données volumineux pour en extraire des insights"
+      description: |
+        <p>Dans ce projet, tu vas plonger dans un dataset volumineux du monde réel pour en extraire des tendances et patterns intéressants. Tu suivras une méthodologie structurée:</p>
+        <ol>
+          <li><strong>Préparation</strong>: Installer les bibliothèques nécessaires (pandas, matplotlib, seaborn) et charger le dataset</li>
+          <li><strong>Exploration initiale</strong>: Comprendre la structure des données (types, valeurs manquantes, distributions)</li>
+          <li><strong>Nettoyage</strong>: Traiter les valeurs manquantes et aberrantes, standardiser les formats</li>
+          <li><strong>Analyse</strong>: Calculer des statistiques descriptives et identifier des relations entre variables</li>
+          <li><strong>Visualisation</strong>: Créer au moins 3 types de graphiques différents pour illustrer tes découvertes</li>
+          <li><strong>Insights</strong>: Formuler au moins 5 conclusions basées sur ton analyse</li>
+        </ol>
+        <p>Pour chaque étape, documenter ton raisonnement et justifier tes choix techniques dans un notebook Jupyter.</p>
+      technologies:
+        - "Python avec pandas, matplotlib, seaborn"
+        - "Jupyter Notebook"
+      resources:
+        - text: "Pandas Tutorial - Data Analysis"
+          url: "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html"
+        - text: "Seaborn Gallery - Visualizations"
+          url: "https://seaborn.pydata.org/examples/index.html"
+        - text: "Jupyter Notebook Tutorial"
+          url: "https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook_Basics.html"
+      datasets:
+        - text: "NYC Taxi Trips"
+          url: "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page"
+        - text: "Instacart Market Basket"
+          url: "https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis"
+        - text: "Parcoursup"
+          url: "https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-parcoursup/information/"
+
+ecosystem:
+  title: "Écosystème Big Data"
+  tools:
+    - title: "Stockage distribué"
+      icon: "fas fa-database"
+      items:
+        - name: "Apache Hadoop HDFS"
+          description: "Système de fichiers distribué pour le stockage de gros volumes de données"
+          url: "https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html"
+        - name: "Amazon S3"
+          description: "Service de stockage objet scalable avec API REST"
+          url: "https://aws.amazon.com/s3/"
+        - name: "Azure Data Lake Storage"
+          description: "Data lake hyperscale pour l'analytics et l'IA"
+          url: "https://azure.microsoft.com/en-us/services/storage/data-lake-storage/"
+        - name: "Google Cloud Storage"
+          description: "Stockage objet unifié pour les applications cloud"
+          url: "https://cloud.google.com/storage"
+    
+    - title: "Processing batch et streaming"
+      icon: "fas fa-cogs"
+      items:
+        - name: "Apache Spark"
+          description: "Moteur de traitement unifié pour Big Data et machine learning"
+          url: "https://spark.apache.org/"
+        - name: "Apache Flink"
+          description: "Framework de traitement de flux en temps réel"
+          url: "https://flink.apache.org/"
+        - name: "Apache Kafka"
+          description: "Plateforme de streaming distribuée pour données en temps réel"
+          url: "https://kafka.apache.org/"
+        - name: "Apache Beam"
+          description: "Modèle de programmation unifié pour batch et streaming"
+          url: "https://beam.apache.org/"
+    
+    - title: "Bases de données NoSQL"
+      icon: "fas fa-server"
+      items:
+        - name: "Apache Cassandra"
+          description: "Base de données distribuée haute performance"
+          url: "https://cassandra.apache.org/"
+        - name: "MongoDB"
+          description: "Base de données document orientée développeur"
+          url: "https://www.mongodb.com/"
+        - name: "Apache HBase"
+          description: "Base de données NoSQL basée sur Hadoop"
+          url: "https://hbase.apache.org/"
+        - name: "Redis"
+          description: "Store de structures de données en mémoire"
+          url: "https://redis.io/"
+    
+    - title: "Orchestration et workflow"
+      icon: "fas fa-project-diagram"
+      items:
+        - name: "Apache Airflow"
+          description: "Plateforme pour orchestrer des workflows de données complexes"
+          url: "https://airflow.apache.org/"
+        - name: "Apache NiFi"
+          description: "Système d'intégration de données en temps réel"
+          url: "https://nifi.apache.org/"
+        - name: "Apache Oozie"
+          description: "Orchestrateur de workflows pour Hadoop"
+          url: "https://oozie.apache.org/"
+        - name: "Prefect"
+          description: "Workflow engine moderne pour data science"
+          url: "https://www.prefect.io/"
+
+  cloud_providers:
+    - title: "AWS Big Data Services"
+      icon: "fab fa-aws"
+      description: "Amazon propose une suite complète de services Big Data : EMR pour Spark/Hadoop, Glue pour ETL, Athena pour requêtes SQL sur S3, et Kinesis pour le streaming en temps réel."
+      url: "https://aws.amazon.com/big-data/"
+    
+    - title: "Azure Data Services"
+      icon: "fab fa-microsoft"
+      description: "Microsoft offre Azure Synapse Analytics pour l'analytics unifié, Data Factory pour l'intégration, et HDInsight pour les clusters Hadoop/Spark managés."
+      url: "https://azure.microsoft.com/en-us/solutions/big-data/"
+    
+    - title: "Google Cloud Data Platform"
+      icon: "fab fa-google"
+      description: "Google Cloud propose BigQuery pour l'analytics serverless, Dataflow pour le streaming, et Dataproc pour les clusters Spark/Hadoop managés."
+      url: "https://cloud.google.com/solutions/big-data"
+
+  community:
+    title: "Communautés et ressources d'apprentissage"
+    learning:
+      title: "Cours en ligne de référence"
+      items:
+        - name: "Databricks Academy"
+          description: "Formations gratuites sur Spark, Delta Lake et le Lakehouse"
+          url: "https://www.databricks.com/learn/training/lakehouse-fundamentals"
+        - name: "Cloudera University"
+          description: "Certifications et formations sur l'écosystème Hadoop"
+          url: "https://www.cloudera.com/about/training.html"
+        - name: "Confluent Developer"
+          description: "Tutoriels et guides pour Apache Kafka"
+          url: "https://developer.confluent.io/"
+        - name: "AWS Big Data Specialty"
+          description: "Certification AWS pour les solutions Big Data"
+          url: "https://aws.amazon.com/certification/certified-big-data-specialty/"
+    
+    competitions:
+      title: "Compétitions et challenges"
+      items:
+        - name: "Kaggle Big Data Competitions"
+          description: "Compétitions de data science sur datasets volumineux"
+          url: "https://www.kaggle.com/competitions"
+        - name: "DataTalks.Club"
+          description: "Communauté et compétitions autour du ML Engineering"
+          url: "https://datatalks.club/"
+        - name: "DrivenData"
+          description: "Compétitions orientées impact social et environnemental"
+          url: "https://www.drivendata.org/"
+        - name: "Big Data Hackathons"
+          description: "Événements de développement intensif sur données massives"
+          url: "https://www.hackerearth.com/challenges/hackathon/"
+    
+    networks:
+      title: "Communautés à rejoindre"
+      items:
+        - name: "r/bigdata"
+          description: "Discussions sur Reddit autour du Big Data"
+          url: "https://www.reddit.com/r/bigdata/"
+        - name: "Apache Mailing Lists"
+          description: "Listes de diffusion des projets Apache Big Data"
+          url: "https://apache.org/foundation/mailinglists.html"
+        - name: "Data Engineering Weekly"
+          description: "Newsletter hebdomadaire sur l'ingénierie des données"
+          url: "https://www.dataengineeringweekly.com/"
+        - name: "Big Data Meetups"
+          description: "Rencontres locales autour du Big Data"
+          url: "https://www.meetup.com/topics/big-data/"
+
+  job_market:
+    title: "Tendances de l'embauche et opportunités de carrière"
+    in_demand_roles:
+      title: "Métiers en forte demande"
+      items:
+        - role: "Data Engineer"
+          salary: "55-85K€/an en moyenne en France"
+        - role: "Big Data Architect"
+          salary: "75-120K€/an pour les profils expérimentés"
+        - role: "Platform Engineer"
+          salary: "65-95K€/an avec expertise cloud"
+        - role: "DataOps Engineer"
+          salary: "Nouveau rôle en forte croissance"
+        - role: "MLOps Engineer"
+          salary: "70-110K€ avec compétences ML/Data"
+    
+    sectors:
+      title: "Secteurs qui recrutent"
+      items:
+        - sector: "Tech et SaaS"
+          description: "Plateformes cloud et services data managés"
+        - sector: "Finance et assurance"
+          description: "Analyse de risque, détection de fraude, trading"
+        - sector: "E-commerce et retail"
+          description: "Personnalisation, optimisation logistique, analytics"
+        - sector: "Télécoms"
+          description: "Analyse de trafic, optimisation réseau, IoT"
+        - sector: "Startups data-native"
+          description: "Le segment qui attire le plus de financement"
+    
+    tips:
+      title: "Conseil pour se démarquer"
+      description: "Pour vous distinguer dans ce domaine technique :"
+      items:
+        - "Maîtrisez les fondamentaux : SQL, Python, Linux, réseaux"
+        - "Spécialisez-vous dans un écosystème (AWS, Azure, GCP)"
+        - "Contribuez à des projets open source Big Data"
+        - "Construisez des pipelines de données personnels"
+        - "Développez une expertise en streaming et temps réel"
+
+resources:
+  title: "Ressources"
+  books:
+    fundamentals:
+      title: "Fondamentaux et introduction"
+      items:
+        - title: "Designing Data-Intensive Applications"
+          authors: "Martin Kleppmann"
+          url: "https://www.amazon.fr/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321"
+        - title: "Big Data: Principles and Best Practices"
+          authors: "Nathan Marz & James Warren"
+          url: "https://www.amazon.fr/Big-Data-Principles-Best-Practices/dp/1617290343"
+        - title: "Hadoop: The Definitive Guide"
+          authors: "Tom White"
+          url: "https://www.amazon.fr/Hadoop-Definitive-Guide-Tom-White/dp/1491901632"
+        - title: "Spark: The Definitive Guide"
+          authors: "Bill Chambers & Matei Zaharia"
+          url: "https://www.amazon.fr/Spark-Definitive-Guide-Processing-Simple/dp/1491912219"
+    
+    specialized:
+      title: "Spécialisations avancées"
+      items:
+        - title: "Kafka: The Definitive Guide"
+          authors: "Neha Narkhede, Gwen Shapira & Todd Palino"
+          url: "https://www.amazon.fr/Kafka-Definitive-Guide-Real-Time-Streaming/dp/1491936169"
+        - title: "Streaming Systems"
+          authors: "Tyler Akidau, Slava Chernyak & Reuven Lax"
+          url: "https://www.amazon.fr/Streaming-Systems-Processing-Data-Streams/dp/1491983876"
+        - title: "Data Mesh"
+          authors: "Zhamak Dehghani"
+          url: "https://www.amazon.fr/Data-Mesh-Delivering-Data-Driven-Value/dp/1492092398"
+        - title: "The Data Warehouse Toolkit"
+          authors: "Ralph Kimball & Margy Ross"
+          url: "https://www.amazon.fr/Data-Warehouse-Toolkit-Definitive-Dimensional/dp/1118530803"
+
+  online_courses:
+    moocs:
+      title: "MOOCs de référence"
+      items:
+        - title: "Big Data Specialization"
+          provider: "UC San Diego sur Coursera"
+          url: "https://www.coursera.org/specializations/big-data"
+        - title: "Data Engineering with Google Cloud"
+          provider: "Google Cloud"
+          url: "https://www.coursera.org/specializations/gcp-data-machine-learning"
+        - title: "Apache Spark with Python"
+          provider: "Databricks Academy"
+          url: "https://www.databricks.com/learn/training/apache-spark-programming"
+        - title: "Real-Time Analytics with Apache Kafka"
+          provider: "Confluent"
+          url: "https://developer.confluent.io/learn-kafka/apache-kafka/events/"
+    
+    youtube:
+      title: "Chaînes YouTube éducatives"
+      items:
+        - title: "DataTalks.Club"
+          description: "Conférences et tutoriels sur l'ingénierie des données"
+          url: "https://www.youtube.com/c/DataTalksClub"
+        - title: "Apache Kafka"
+          description: "Chaîne officielle Apache Kafka"
+          url: "https://www.youtube.com/c/ApacheKafka"
+        - title: "Databricks"
+          description: "Tutoriels et présentations sur Spark et le Lakehouse"
+          url: "https://www.youtube.com/c/Databricks"
+        - title: "Confluent"
+          description: "Contenu éducatif sur Kafka et le streaming"
+          url: "https://www.youtube.com/c/ConfluentInc"
+
+  blogs_newsletters:
+    blogs:
+      title: "Blogs techniques"
+      items:
+        - title: "The Data Engineering Blog"
+          description: "Blog de l'équipe Data Engineering de Airbnb"
+          url: "https://medium.com/airbnb-engineering/data/home"
+        - title: "Netflix Data Engineering"
+          description: "Articles techniques sur l'architecture data de Netflix"
+          url: "https://netflixtechblog.com/tagged/data-engineering"
+        - title: "Uber Engineering"
+          description: "Blog technique d'Uber sur le Big Data"
+          url: "https://eng.uber.com/tag/data/"
+        - title: "LinkedIn Engineering"
+          description: "Articles sur l'infrastructure data de LinkedIn"
+          url: "https://engineering.linkedin.com/blog/topic/data"
+    
+    newsletters:
+      title: "Newsletters et actualités"
+      items:
+        - title: "Data Engineering Weekly"
+          description: "Newsletter hebdomadaire sur l'ingénierie des données"
+          url: "https://www.dataengineeringweekly.com/"
+        - title: "The Data Engineering Podcast"
+          description: "Podcast sur les tendances et technologies data"
+          url: "https://www.dataengineeringpodcast.com/"
+        - title: "DataTalks.Club Newsletter"
+          description: "Newsletter de la communauté DataTalks"
+          url: "https://datatalks.club/newsletter"
+        - title: "Apache Kafka Blog"
+          description: "Blog officiel d'Apache Kafka"
+          url: "https://kafka.apache.org/blog/"
+
+  datasets:
+    title: "Datasets et environnements de test"
+    description: "Pour pratiquer et tester vos compétences en Big Data :"
+    items:
+      - title: "Apache Kafka Quick Start"
+        description: "Environnement de test Kafka avec Docker"
+        url: "https://kafka.apache.org/quickstart"
+      - title: "Spark Examples"
+        description: "Exemples et datasets pour Apache Spark"
+        url: "https://github.com/apache/spark/tree/master/examples"
+      - title: "Big Data University"
+        description: "Datasets et tutoriels gratuits"
+        url: "https://bigdatauniversity.com/"
+      - title: "AWS Public Datasets"
+        description: "Datasets publics sur AWS pour tests"
+        url: "https://aws.amazon.com/fr/opendata/"
+      - title: "Google Cloud Public Datasets"
+        description: "Datasets publics sur Google Cloud"
+        url: "https://cloud.google.com/public-datasets"
+
+  conferences:
+    title: "Conférences et événements"
+    description: "Pour rester à jour et networker avec la communauté Big Data :"
+    items:
+      - title: "Data + AI Summit"
+        description: "Conférence annuelle de Databricks"
+        url: "https://databricks.com/dataaisummit"
+      - title: "Kafka Summit"
+        description: "Conférence internationale sur Apache Kafka"
+        url: "https://kafka-summit.org/"
+      - title: "Strata Data Conference"
+        description: "Conférence majeure sur le Big Data et l'IA"
+        url: "https://www.oreilly.com/conferences/strata.html"
+      - title: "QCon"
+        description: "Conférence sur l'architecture logicielle et le Big Data"
+        url: "https://qconferences.com/"
+      - title: "Big Data Paris"
+        description: "Salon français du Big Data"
+        url: "https://www.bigdataparis.com/"
+
+career_paths:
+  title: "Perspectives de carrière"
+  roles:
+    - title: "Data Engineer"
+      icon: "fas fa-cogs"
+      mission: "Construire et maintenir l'infrastructure et les pipelines de données."
+      skills: "SQL, Python, Spark, cloud, pipelines ETL/ELT, orchestration"
+      salary: "45-75K€"
+      country: "France"
+    
+    - title: "Big Data Architect"
+      icon: "fas fa-sitemap"
+      mission: "Concevoir des architectures data robustes, scalables et sécurisées."
+      skills: "Architecture distribuée, data modeling, sécurité, gouvernance"
+      salary: "60-90K€"
+      country: "France"
+    
+    - title: "Data Analyst"
+      icon: "fas fa-chart-line"
+      mission: "Analyser les données pour en extraire des insights business et faciliter la prise de décision."
+      skills: "SQL, Excel, BI (Tableau, Power BI), statistiques, data storytelling"
+      salary: "40-65K€"
+      country: "France"
+    
+    - title: "Data Scientist"
+      icon: "fas fa-database"
+      mission: "Créer des modèles prédictifs et extraire de la valeur des données via des algorithmes avancés."
+      skills: "Python/R, statistiques, machine learning, data mining, modélisation"
+      salary: "45-80K€"
+      country: "France"
+
+  evolution:
+    title: "Évolution de carrière"
+    timeline:
+      - category: "Début de carrière"
+        side: "left"
+        items:
+          - title: "Junior Data Engineer"
+            description: "Construction de pipelines ETL et infrastructure data"
+          - title: "BI Analyst"
+            description: "Création de tableaux de bord et reporting pour le business"
+          - title: "Data Analyst"
+            description: "Analyse de données et production d'insights"
+          - title: "Database Developer"
+            description: "Développement et optimisation de bases de données"
+      
+      - category: "Mi-carrière"
+        side: "right"
+        items:
+          - title: "Senior Data Engineer"
+            description: "Conception d'architectures data complexes"
+          - title: "Data Science Manager"
+            description: "Supervision d'équipes d'analystes et scientifiques"
+          - title: "Cloud Data Architect"
+            description: "Conception de solutions data sur le cloud"
+          - title: "Analytics Consultant"
+            description: "Conseil en stratégie data pour organisations"
+      
+      - category: "Senior"
+        side: "left"
+        items:
+          - title: "Chief Data Officer"
+            description: "Direction de la stratégie data au niveau exécutif"
+          - title: "VP of Analytics"
+            description: "Supervision des initiatives analytiques globales"
+          - title: "Data Governance Director"
+            description: "Établissement des standards et politiques de données"
+          - title: "Data Entrepreneur"
+            description: "Création de startups innovantes basées sur les données"
+
+  market_trends:
+    title: "Tendances du marché"
+    items:
+      - "+43% de croissance des offres d'emploi en Big Data et Analytics depuis 2020"
+      - "85% des entreprises déclarent avoir du mal à recruter des profils data qualifiés"
+      - "Fortes demandes dans les secteurs de la santé, finance, retail et industrie 4.0"
+      - "Convergence IA/Big Data créant de nouveaux rôles hybrides à forte valeur ajoutée"
+      - "+30% de premium salarial pour les profils maîtrisant à la fois les technologies data et le cloud"
+
+summary:
+  title: "En résumé"
+  description: "Le Big Data & Analytics représente un domaine fondamental dans l'économie numérique moderne, transformant la façon dont les organisations comprennent leurs activités et prennent des décisions. Cette spécialité combine :"
+  points:
+    - title: "Technologies de pointe"
+      description: "Maîtrise des frameworks distribués et architectures scalables"
+    - title: "Analyse stratégique"
+      description: "Transformation des données en insights actionables pour le business"
+    - title: "Impact mesurable"
+      description: "Optimisation des performances et création de valeur tangible"
+    - title: "Polyvalence"
+      description: "Applications dans tous les secteurs économiques"
+    - title: "Évolution rapide"
+      description: "Intégration croissante avec l'IA et les technologies émergentes"
+  conclusion: "Cette spécialité MSc te prépare à devenir un architecte de solutions data modernes, capable de naviguer dans l'écosystème complexe du Big Data tout en gardant une perspective business."
+
+has_media: true
+media:
+  - title: "Témoignage – David (Alumni Epitech 2018)"
+    description: "Staff Data Engineer chez Betclic."
+    url: "https://www.youtube.com/embed/JCywHkeHqpM"
+  - title: "Le Big Data, c'est quoi ?"
+    description: "Définition et explication en vidéo."
+    url: "https://www.youtube.com/embed/xO7M2yfDNoc"

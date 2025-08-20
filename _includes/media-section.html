@@ -1,0 +1,25 @@
+<!-- Media section component -->
+{% if include.media %}
+<section id="media">
+  <h2><i class="fas fa-play-circle"></i> Médias</h2>
+  <p>Découvrez des témoignages et des conférences sur l'Intelligence Artificielle.</p>
+  <div class="card-grid{% if include.media.size == 3 %} center-orphan{% endif %}">
+    {% for video in include.media %}
+      <div class="feature-card media-card">
+        <div class="video-embed-container">
+          <iframe 
+            src="{{ video.url }}" 
+            title="{{ video.title | escape }}" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <h4 class="video-title">{{ video.title }}</h4>
+        <p class="video-description">{{ video.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

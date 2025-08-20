@@ -1,0 +1,103 @@
+<!-- Resources section component for books, courses, etc. -->
+{% if include.resources %}
+  <section id="resources">
+    <h2><i class="fas fa-book"></i> {{ include.resources.title }}</h2>
+    
+    {% if include.resources.books %}
+      <h3>Livres incontournables</h3>
+      <div class="card-grid">
+        <div class="feature-card">
+          <h4>{{ include.resources.books.fundamentals.title }}</h4>
+          <ul>
+            {% for book in include.resources.books.fundamentals.items %}
+              <li><a href="{{ book.url }}" target="_blank"><strong>{{ book.title }}</strong></a> - {{ book.authors }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <h4>{{ include.resources.books.specialized.title }}</h4>
+          <ul>
+            {% for book in include.resources.books.specialized.items %}
+              <li><a href="{{ book.url }}" target="_blank"><strong>{{ book.title }}</strong></a> - {{ book.authors }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+    
+    {% if include.resources.online_courses %}
+      <h3 class="mt-4">Cours et tutoriels en ligne</h3>
+      <div class="card-grid">
+        <div class="feature-card">
+          <h4><i class="fas fa-graduation-cap"></i> {{ include.resources.online_courses.moocs.title }}</h4>
+          <ul>
+            {% for course in include.resources.online_courses.moocs.items %}
+              <li><a href="{{ course.url }}" target="_blank"><strong>{{ course.title }}</strong></a> - {{ course.provider }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <h4><i class="fab fa-youtube"></i> {{ include.resources.online_courses.youtube.title }}</h4>
+          <ul>
+            {% for channel in include.resources.online_courses.youtube.items %}
+              <li><a href="{{ channel.url }}" target="_blank"><strong>{{ channel.title }}</strong></a> - {{ channel.description }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+    
+    {% if include.resources.blogs_newsletters %}
+      <h3 class="mt-4">Blogs et newsletters</h3>
+      <div class="card-grid">
+        <div class="feature-card">
+          <h4><i class="fas fa-rss"></i> {{ include.resources.blogs_newsletters.blogs.title }}</h4>
+          <ul>
+            {% for blog in include.resources.blogs_newsletters.blogs.items %}
+              <li><a href="{{ blog.url }}" target="_blank"><strong>{{ blog.title }}</strong></a> - {{ blog.description }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <h4><i class="fas fa-envelope"></i> {{ include.resources.blogs_newsletters.newsletters.title }}</h4>
+          <ul>
+            {% for newsletter in include.resources.blogs_newsletters.newsletters.items %}
+              <li><a href="{{ newsletter.url }}" target="_blank"><strong>{{ newsletter.title }}</strong></a>{% if newsletter.description %} - {{ newsletter.description }}{% endif %}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+    
+    {% if include.resources.datasets %}
+      <h3 class="mt-4">{{ include.resources.datasets.title }}</h3>
+      <div class="centered-card">
+        <div class="feature-card">
+          <p>{{ include.resources.datasets.description }}</p>
+          <ul>
+            {% for dataset in include.resources.datasets.items %}
+              <li><a href="{{ dataset.url }}" target="_blank"><strong>{{ dataset.title }}</strong></a> - {{ dataset.description }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+    
+    {% if include.resources.conferences %}
+      <h3 class="mt-4">{{ include.resources.conferences.title }}</h3>
+      <div class="centered-card">
+        <div class="feature-card">
+          <p>{{ include.resources.conferences.description }}</p>
+          <ul>
+            {% for conference in include.resources.conferences.items %}
+              <li><a href="{{ conference.url }}" target="_blank"><strong>{{ conference.title }}</strong></a> - {{ conference.description }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+  </section>
+{% endif %}

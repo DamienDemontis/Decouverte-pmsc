@@ -1,0 +1,457 @@
+title: "Santé, IA & IoT"
+slug: "sante-ia-iot"
+icon: "fas fa-heartbeat"
+type: "business"
+order: 13
+colors:
+  primary: "#E11D48" # Rose-600
+  secondary: "#F472B6" # Rose-400
+short_description: "Pilotez la transformation du secteur de la santé grâce à l'intelligence artificielle et aux objets connectés."
+description: "Développez une expertise à l'intersection de la santé, de l'IA et de l'IoT pour concevoir des solutions innovantes qui révolutionnent les parcours de soins, améliorent l'efficacité des systèmes de santé et permettent une médecine plus personnalisée et proactive."
+
+overview:
+  title: "Pourquoi la Santé, l'IA & l'IoT ?"
+  features:
+    - title: "D'une médecine curative à préventive"
+      icon: "fas fa-pills"
+      description: "Grâce aux données des objets connectés, l'IA peut détecter des signaux faibles et anticiper les risques, permettant d'agir avant l'apparition de la maladie."
+    
+    - title: "Le patient devient acteur"
+      icon: "fas fa-hospital-user"
+      description: "Les technologies digitales redonnent du pouvoir au patient, lui permettant de mieux suivre sa santé, de mieux comprendre sa maladie et de mieux interagir avec le corps médical."
+    
+    - title: "Optimisation du système de santé"
+      icon: "fas fa-chart-line"
+      description: "L'IA et l'automatisation permettent d'optimiser les flux de patients, la gestion des lits, la planification des opérations et de réduire les tâches administratives."
+    
+    - title: "Aide au diagnostic et au traitement"
+      icon: "fas fa-stethoscope"
+      description: "L'IA peut analyser des images médicales (radios, scanners) avec une précision parfois supérieure à l'œil humain ou suggérer des protocoles de traitement personnalisés."
+    
+    - title: "Améliorer le quotidien des soignants"
+      icon: "fas fa-user-md"
+      description: "En automatisant les tâches répétitives, la technologie libère du temps médical pour que les soignants puissent se concentrer sur l'essentiel : le soin et la relation humaine."
+    
+    - title: "Un secteur à forts enjeux éthiques"
+      icon: "fas fa-balance-scale"
+      description: "La gestion des données de santé, l'explicabilité des algorithmes et l'équité d'accès aux soins sont des défis passionnants à relever."
+
+  accordion:
+    - title: "L'Internet des Objets (IoT) Médical"
+      content: |
+        <p>L'IoT médical (ou IoMT) regroupe tous les dispositifs connectés qui collectent des données de santé.</p>
+        <ul>
+          <li><strong>Wearables</strong> : Montres connectées, bracelets, patchs qui mesurent en continu l'activité physique, le rythme cardiaque, le sommeil, etc.</li>
+          <li><strong>Capteurs à domicile</strong> : Tensiomètres, glucomètres, balances connectées pour le suivi des maladies chroniques.</li>
+          <li><strong>Dispositifs hospitaliers</strong> : Lits intelligents, pompes à perfusion connectées, qui remontent des informations en temps réel au personnel soignant.</li>
+        </ul>
+    
+    - title: "L'Intelligence Artificielle en Santé"
+      content: |
+        <p>L'IA est le "cerveau" qui analyse les données collectées par l'IoT et les systèmes d'information des hôpitaux.</p>
+        <ul>
+          <li><strong>Aide au diagnostic</strong> : Algorithmes de vision par ordinateur pour analyser l'imagerie médicale.</li>
+          <li><strong>Médecine personnalisée</strong> : Analyse du génome et des données cliniques pour prédire la réponse d'un patient à un traitement.</li>
+          <li><strong>Recherche médicale</strong> : Analyse de vastes bases de données pour identifier de nouvelles cibles thérapeutiques et accélérer le développement de médicaments.</li>
+        </ul>
+    
+    - title: "Cadre Éthique et Réglementaire"
+      content: |
+        <p>La confiance est la pierre angulaire de la santé numérique. Ce domaine est encadré par des régulations très strictes.</p>
+        <ul>
+          <li><strong>Confidentialité et Sécurité</strong> : Respect du RGPD, hébergement des données sur des serveurs certifiés "Hébergeur de Données de Santé" (HDS).</li>
+          <li><strong>Dispositif Médical</strong> : Les logiciels les plus critiques doivent obtenir un marquage CE, comme un dispositif médical matériel.</li>
+          <li><strong>Éthique</strong> : Garantir l'équité des algorithmes, l'explicabilité des décisions et le contrôle humain.</li>
+        </ul>
+
+  quote: "La question n'est pas de savoir si l'IA remplacera les médecins. La question est : les médecins qui utilisent l'IA remplaceront-ils ceux qui ne l'utilisent pas ?"
+  quote_author: "Dr. Eric Topol, cardiologue et chercheur en médecine numérique"
+
+use_cases:
+  title: "Cas d'usage emblématiques"
+  timeline:
+    - category: "Suivi Patients"
+      side: "left"
+      items:
+        - title: "Suivi à distance du diabète"
+          description: "Problème : Le diabète est une maladie chronique qui demande un suivi constant de la glycémie. Solution : Des capteurs de glucose en continu (IoT) mesurent la glycémie toutes les quelques minutes et envoient les données à une application sur smartphone. Une IA peut analyser les tendances, prédire les risques d'hypo/hyperglycémie et alerter le patient ou son médecin. Impact : Meilleur contrôle de la maladie, moins de consultations d'urgence, et une meilleure qualité de vie pour le patient."
+    
+    - category: "Diagnostic IA"
+      side: "right"
+      items:
+        - title: "Détection précoce de la rétinopathie diabétique"
+          description: "Problème : Une complication du diabète qui peut mener à la cécité si elle n'est pas détectée tôt. Solution : Un algorithme d'IA développé par Google peut analyser des photos du fond de l'œil et détecter les signes de la maladie avec une précision équivalente, voire supérieure, à celle d'un ophtalmologue. Impact : Permet le dépistage à grande échelle dans des zones où les spécialistes sont rares."
+    
+    - category: "Hôpital Connecté"
+      side: "left"
+      items:
+        - title: "L'hôpital 'intelligent'"
+          description: "Problème : Optimiser les flux et la sécurité dans un environnement hospitalier complexe. Solution : Des capteurs IoT sur les équipements (brancards, pousse-seringues) permettent de les localiser en temps réel. Des bracelets connectés pour les patients peuvent alerter automatiquement en cas de chute. Une IA peut prédire l'affluence aux urgences pour adapter les effectifs. Impact : Moins de temps perdu pour le personnel, plus de sécurité pour les patients, et une meilleure gestion des ressources."
+
+  trends:
+    title: "Tendances émergentes"
+    features:
+      - title: "Jumeaux Numériques"
+        icon: "fas fa-pills"
+        description: "Créer un modèle virtuel d'un patient ou d'un organe pour simuler la réponse à différents traitements avant de les administrer."
+      
+      - title: "Thérapies Digitales (DTx)"
+        icon: "fas fa-headset"
+        description: "Des applications mobiles prescrites par des médecins pour traiter certaines maladies (addictions, dépression) en complément ou en remplacement de médicaments."
+      
+      - title: "IA Générative pour les soignants"
+        icon: "fas fa-comments-alt"
+        description: "Des IA qui écoutent la conversation médecin-patient et rédigent automatiquement le compte-rendu, libérant un temps médical précieux."
+      
+      - title: "Confidentialité et IA Fédérée"
+        icon: "fas fa-user-shield"
+        description: "Entraîner des modèles d'IA sur les données de plusieurs hôpitaux sans que les données ne quittent jamais l'hôpital, grâce à des techniques de cryptographie avancées."
+
+roadmap:
+  title: "Parcours d'apprentissage"
+  phases:
+    - title: "🎯 Phase 1: Les Fondamentaux (1-3 mois)"
+      duration: "1-3 mois"
+      steps:
+        - title: "Enjeux du système de santé"
+          description: "Comprendre les acteurs (hôpitaux, médecins, assurance maladie), les parcours de soins et les grands défis du secteur (vieillissement, maladies chroniques)."
+          resources:
+            - text: "Publications de la Haute Autorité de Santé (HAS) et de l'Assurance Maladie"
+              url: ""
+        
+        - title: "Bases de l'IA et de l'IoT"
+          description: "Comprendre les concepts clés de l'IA et le fonctionnement des objets connectés, d'un point de vue applicatif plus que technique."
+          resources:
+            - text: "AI For Everyone par Andrew Ng (Coursera)"
+              url: "https://www.coursera.org/learn/ai-for-everyone"
+            - text: "Vidéos de vulgarisation sur le fonctionnement des capteurs et des protocoles de communication (MQTT, LoRa)"
+              url: ""
+    
+    - title: "🚀 Phase 2: Le cœur du métier (3-6 mois)"
+      duration: "3-6 mois"
+      steps:
+        - title: "Réglementation des données de santé"
+          description: "Maîtriser les grands principes du RGPD et les spécificités du secteur de la santé (HDS, marquage CE des dispositifs médicaux)."
+          resources:
+            - text: "Dossier Santé de la CNIL"
+              url: "https://www.cnil.fr/fr/thematiques/sante"
+        
+        - title: "Gestion de Projet en e-santé"
+          description: "Apprendre à piloter un projet innovant dans un environnement complexe, en impliquant toutes les parties prenantes (médecins, patients, ingénieurs, juristes)."
+          resources:
+            - text: "Méthodes agiles appliquées à des projets non-IT"
+              url: ""
+
+projects:
+  title: "Projets pratiques"
+  items:
+    - title: "Projet 1: Analyser un dispositif médical connecté"
+      difficulty: "Débutant"
+      duration: "4-6 heures"
+      objective: "Comprendre l'expérience utilisateur et le modèle économique d'une solution de e-santé."
+      description: |
+        <p>Choisissez un objet de santé connecté grand public (ex: balance Withings, montre Apple Watch, tensiomètre iHealth). Analysez l'application mobile associée : quel est le parcours utilisateur ? Quelles données sont collectées ? Comment sont-elles présentées ? Quel est le modèle économique ?</p>
+      technologies:
+        - "Analyse d'applications mobiles santé"
+        - "Expérience utilisateur (UX)"
+        - "Modèles économiques e-santé"
+      resources:
+        - text: "Guide des applications de santé - ANSM"
+          url: "https://ansm.sante.fr/documents/reference/referentiel-de-bonnes-pratiques-sur-les-applications-et-les-objets-connectes-en-sante-mobile-health-ou-m-sante"
+        - text: "UX Design pour la santé"
+          url: "https://www.interaction-design.org/literature/topics/healthcare-design"
+        - text: "Modèles économiques e-santé"
+          url: "https://www.fondation-fhf.org/documents/modeles-economiques-e-sante.pdf"
+    
+    - title: "Projet 2: Concevoir le concept d'une application de e-santé"
+      difficulty: "Intermédiaire"
+      duration: "12-15 heures"
+      objective: "Appliquer les principes de la gestion de produit à un cas de santé."
+      description: |
+        <p>Identifiez un besoin non satisfait pour une population de patients (ex: suivi de l'asthme, aide pour les proches aidants...). Définissez le concept d'une application mobile qui répond à ce besoin. Listez les fonctionnalités clés (MVP), esquissez les principaux écrans (maquettes) et décrivez le modèle économique envisagé.</p>
+      technologies:
+        - "Design thinking en santé"
+        - "Maquettage et prototypage"
+        - "Stratégie produit e-santé"
+      resources:
+        - text: "Design Thinking pour la santé - d.school"
+          url: "https://dschool.stanford.edu/resources/design-thinking-for-health"
+        - text: "Figma - Prototypage d'applications"
+          url: "https://www.figma.com/resources/learn-design/"
+        - text: "Product Management en e-santé"
+          url: "https://medium.com/healthtech-product-management"
+    
+    - title: "Projet 3: Rédiger une note sur les enjeux éthiques d'un projet IA en santé"
+      difficulty: "Intermédiaire"
+      duration: "8-10 heures"
+      objective: "Se confronter aux questions éthiques et réglementaires."
+      description: |
+        <p>Imaginez un projet d'IA qui analyse les dossiers médicaux pour prédire le risque qu'un patient développe une maladie grave. Rédigez une note qui identifie les principaux risques (biais de l'algorithme, confidentialité, consentement du patient...) et propose des mesures concrètes pour les atténuer.</p>
+      technologies:
+        - "Éthique de l'IA en santé"
+        - "Analyse des risques réglementaires"
+        - "Rédaction de recommandations"
+      resources:
+        - text: "Éthique de l'IA en santé - WHO"
+          url: "https://www.who.int/publications/i/item/9789240029200"
+        - text: "RGPD et données de santé - CNIL"
+          url: "https://www.cnil.fr/fr/la-sante-connectee"
+        - text: "Guide réglementaire dispositifs médicaux - ANSM"
+          url: "https://ansm.sante.fr/page/dispositifs-medicaux-et-dispositifs-medicaux-de-diagnostic-in-vitro"
+
+ecosystem:
+  title: "Écosystème de la e-santé"
+  tools:
+    - title: "Géants de la Tech"
+      icon: "fas fa-globe"
+      items:
+        - name: "Apple (HealthKit)"
+          description: "Écosystème de santé intégré d'Apple"
+          url: "https://www.apple.com/healthcare/"
+        - name: "Google Health (Fitbit, Verily)"
+          description: "Initiatives santé et bien-être de Google"
+          url: "https://health.google/"
+        - name: "Amazon (Halo)"
+          description: "Solutions de santé connectée d'Amazon"
+          url: "https://www.amazon.com/halo"
+    
+    - title: "Acteurs de l'équipement médical"
+      icon: "fas fa-hospital"
+      items:
+        - name: "Philips"
+          description: "Fabricant d'équipements médicaux avec IoT et IA"
+          url: "https://www.philips.com/healthcare"
+        - name: "Siemens Healthineers"
+          description: "Technologies médicales avancées"
+          url: "https://www.siemens-healthineers.com/"
+        - name: "Medtronic"
+          description: "Dispositifs médicaux connectés"
+          url: "https://www.medtronic.com/"
+    
+    - title: "Startups & 'Licornes'"
+      icon: "fas fa-rocket"
+      items:
+        - name: "Doctolib"
+          description: "Plateforme de prise de rendez-vous médicaux (France)"
+          url: "https://www.doctolib.fr/"
+        - name: "Alan"
+          description: "Assurance santé digitale (France)"
+          url: "https://alan.com/"
+        - name: "Withings"
+          description: "Objets connectés de santé (France)"
+          url: "https://www.withings.com/"
+        - name: "Babylon Health"
+          description: "IA pour la consultation médicale (UK)"
+          url: "https://www.babylonhealth.com/"
+    
+    - title: "Industrie Pharmaceutique"
+      icon: "fas fa-pills"
+      items:
+        - name: "Sanofi"
+          description: "Laboratoire pharmaceutique avec initiatives IA"
+          url: "https://www.sanofi.com/"
+        - name: "Novartis"
+          description: "Innovateur en médecine personnalisée"
+          url: "https://www.novartis.com/"
+        - name: "Roche"
+          description: "Pionnier en diagnostic et thérapies ciblées"
+          url: "https://www.roche.com/"
+    
+    - title: "Régulateurs & Agences d'État"
+      icon: "fas fa-balance-scale"
+      items:
+        - name: "HAS (Haute Autorité de Santé)"
+          description: "Autorité publique indépendante (France)"
+          url: "https://www.has-sante.fr/"
+        - name: "ANSM"
+          description: "Agence nationale de sécurité du médicament (France)"
+          url: "https://ansm.sante.fr/"
+        - name: "CNIL"
+          description: "Commission nationale de l'informatique et des libertés (France)"
+          url: "https://www.cnil.fr/"
+        - name: "FDA"
+          description: "Food and Drug Administration (USA)"
+          url: "https://www.fda.gov/"
+
+resources:
+  title: "Ressources d'apprentissage"
+  books:
+    media:
+      title: "Médias et associations de référence"
+      items:
+        - title: "Tic Santé"
+          authors: "France"
+          description: "Le média de référence en France sur l'actualité des systèmes d'information et de la e-santé."
+          url: "https://www.ticsante.com/"
+        - title: "France Biotech"
+          authors: "France"
+          description: "L'association des entrepreneurs de l'innovation en santé, avec de nombreuses publications."
+          url: "https://france-biotech.fr/"
+        - title: "MobiHealthNews"
+          authors: "USA (en anglais)"
+          description: "Un des principaux médias internationaux sur l'actualité de la santé numérique."
+          url: "https://www.mobihealthnews.com/"
+    
+    fundamentals:
+      title: "Livres incontournables"
+      items:
+        - title: "Deep Medicine"
+          authors: "Eric Topol"
+          description: "Un livre de référence sur comment l'IA peut rendre la médecine plus humaine."
+          url: "https://www.amazon.fr/Deep-Medicine-Artificial-Intelligence-Healthcare/dp/1541644638"
+        - title: "The Patient Will See You Now"
+          authors: "Eric Topol"
+          description: "Sur la révolution numérique qui redonne le pouvoir aux patients."
+          url: ""
+
+careers: true
+career_paths:
+  title: "Perspectives de carrière"
+  description: "La santé numérique est un secteur en pleine explosion, à la recherche de profils hybrides capables de dialoguer avec les médecins, les ingénieurs et les patients."
+  
+  roles:
+    - title: "Chef de Projet E-santé / Digital Health"
+      icon: "fas fa-notes-medical"
+      mission: "Piloter le développement et le déploiement de solutions de santé connectée, de l'idée à la mise sur le marché, en assurant la coordination de toutes les équipes."
+      skills: "Gestion de projet agile, compréhension des enjeux réglementaires, communication"
+      salary: "40-55K€"
+      country: "France"
+    
+    - title: "Product Owner / Product Manager en santé"
+      icon: "fas fa-lightbulb"
+      mission: "Définir la vision et la feuille de route d'un produit de santé numérique (application, plateforme), en se basant sur les besoins des patients et des professionnels de santé."
+      skills: "Stratégie produit, UX/UI, analyse des besoins utilisateurs, priorisation"
+      salary: "45-60K€"
+      country: "France"
+    
+    - title: "Business & Technology Manager"
+      icon: "fas fa-handshake"
+      mission: "Faire le pont entre les équipes techniques et les directions métiers ou les clients, pour s'assurer que les solutions technologiques répondent à de vrais problèmes business."
+      skills: "Double compétence tech/business, négociation, gestion de la relation client"
+      salary: "45-58K€"
+      country: "France"
+    
+    - title: "Data Analyst en santé"
+      icon: "fas fa-chart-line"
+      mission: "Analyser les données issues des essais cliniques, des dispositifs médicaux ou des parcours de soins pour en extraire des connaissances et améliorer les produits ou les processus."
+      skills: "Analyse de données, SQL, outils de BI, connaissance du domaine de la santé"
+      salary: "40-50K€"
+      country: "France"
+    
+    - title: "Customer and Experience Manager"
+      icon: "fas fa-users"
+      mission: "Se spécialiser dans la conception et l'amélioration de l'expérience patient sur les plateformes numériques, et gérer la relation avec les utilisateurs."
+      skills: "Empathie, design de service, gestion de la relation client (CRM)"
+      salary: "38-48K€"
+      country: "France"
+    
+    - title: "Prompt Engineer (Santé)"
+      icon: "fas fa-feather-alt"
+      mission: "Un nouveau métier qui consiste à concevoir et optimiser les instructions (prompts) données aux IA génératives pour des applications médicales spécifiques et fiables."
+      skills: "Compréhension des modèles de langage (LLM), créativité, rigueur"
+      salary: "45-60K€"
+      country: "France"
+
+  evolution:
+    title: "Évolution de carrière"
+    timeline:
+      - category: "Début de carrière"
+        side: "left"
+        items:
+          - title: "Chef de Projet E-santé junior"
+            description: "Gestion de projets e-santé avec accompagnement"
+          - title: "Product Owner / Associate Product Manager"
+            description: "Support au développement produit santé"
+          - title: "Consultant junior en transformation digitale santé"
+            description: "Accompagnement dans la digitalisation des parcours"
+          - title: "Data Analyst santé"
+            description: "Analyse de données médicales et cliniques"
+          - title: "Chargé de déploiement de solutions e-santé"
+            description: "Implémentation d'outils dans les établissements de santé"
+      
+      - category: "Milieu de carrière"
+        side: "right"
+        items:
+          - title: "Chef de Projet E-santé confirmé / Programme Manager"
+            description: "Pilotage de programmes de transformation santé"
+          - title: "Product Manager / Lead Product Manager"
+            description: "Propriété complète de produits de santé numérique"
+          - title: "Consultant senior / Manager en e-santé"
+            description: "Expertise conseil en transformation digitale santé"
+          - title: "Responsable de l'innovation digitale"
+            description: "Direction de l'innovation technologique en santé"
+      
+      - category: "Carrière senior"
+        side: "left"
+        items:
+          - title: "Directeur de la Stratégie Digitale / CDO"
+            description: "Direction de la transformation numérique santé"
+          - title: "Head of Product / CPO en santé"
+            description: "Direction de la stratégie produit dans la santé"
+          - title: "Directeur de l'Innovation"
+            description: "Direction de l'innovation et de la R&D santé"
+          - title: "Partner en cabinet de conseil (practice santé)"
+            description: "Expertise senior en conseil santé numérique"
+
+  skills:
+    title: "Compétences recherchées"
+    technical:
+      title: "Compétences Santé & Réglementaire"
+      items:
+        - "Connaissance de l'écosystème de santé - Comprendre les parcours de soin, les acteurs (hôpitaux, médecins, assurance maladie) et les enjeux"
+        - "Réglementation des données de santé - Maîtrise du RGPD, de la certification HDS et du cadre réglementaire des dispositifs médicaux"
+        - "Éthique de l'IA en santé - Savoir adresser les questions de biais, de transparence et d'équité des algorithmes"
+    
+    specialized:
+      title: "Compétences Techniques & Projet"
+      items:
+        - "Gestion de projet complexe - Piloter des projets innovants impliquant des parties prenantes très diverses (médecins, ingénieurs, patients, juristes)"
+        - "Connaissance des technologies IoT & IA - Comprendre les principes de fonctionnement des capteurs, des protocoles de communication et des modèles d'IA"
+        - "Analyse de données de santé - Capacité à analyser des données cliniques ou issues de dispositifs pour en extraire des informations pertinentes"
+        - "Gestion de la relation patient/client - Savoir concevoir des solutions centrées sur les besoins des utilisateurs finaux"
+    
+    soft_skills:
+      title: "Soft skills et compétences transversales"
+      items:
+        - "Empathie et écoute active - Comprendre les besoins des patients et des professionnels de santé avec sensibilité"
+        - "Communication pédagogique - Vulgariser des concepts techniques complexes pour des audiences médicales et grand public"
+        - "Rigueur éthique - Maintenir les plus hauts standards de confidentialité et d'intégrité avec les données de santé"
+        - "Adaptabilité réglementaire - S'adapter rapidement aux évolutions du cadre légal et des bonnes pratiques"
+        - "Pensée systémique - Comprendre les interactions complexes dans l'écosystème de santé"
+
+  market_trends:
+    title: "Tendances du marché"
+    items:
+      - "Médecine préventive et prédictive : Le marché s'oriente massivement vers des solutions qui anticipent les maladies plutôt que de les guérir"
+      - "Décentralisation des soins : Forte croissance des solutions de télémédecine et de suivi à domicile pour désengorger les hôpitaux"
+      - "IA Générative pour les soignants : Les 'copilotes IA' qui automatisent la documentation administrative sont en pleine explosion"
+      - "Thérapies Digitales (DTx) : Un nouveau marché émerge pour des applications thérapeutiques validées cliniquement et prescrites par des médecins"
+      - "Souveraineté des données : Les solutions garantissant la confidentialité et le contrôle des données par le patient (via des 'Health Data Wallets') sont de plus en plus recherchées"
+
+summary:
+  title: "En résumé"
+  description: "La spécialité Santé, IA & IoT représente l'avant-garde de la médecine moderne, où la technologie se met au service de l'humain pour révolutionner les soins. Cette spécialité combine :"
+  points:
+    - title: "Innovation technologique"
+      description: "Maîtrise de l'IA et de l'IoT appliquées aux défis spécifiques de la santé"
+    - title: "Expertise sectorielle"
+      description: "Compréhension approfondie des enjeux de santé publique et des parcours de soin"
+    - title: "Vision éthique"
+      description: "Capacité à naviguer dans les questions complexes de confidentialité et d'éthique"
+    - title: "Gestion de l'innovation"
+      description: "Pilotage de projets innovants dans un environnement réglementaire strict"
+    - title: "Impact societal"
+      description: "Contribution directe à l'amélioration de la qualité des soins et de la vie des patients"
+  conclusion: "Cette spécialité MSc te prépare à devenir un acteur de la révolution de la santé numérique, capable de concevoir et déployer des solutions qui transforment positivement la vie des patients et l'efficacité des systèmes de santé, tout en respectant les plus hauts standards éthiques et réglementaires."
+
+has_media: true
+media:
+  - title: "Témoignage d'un entrepreneur (Alumni Epitech)"
+    description: "Le cofondateur de la startup Pheal partage son parcours et sa vision de la e-santé."
+    url: "https://www.youtube.com/embed/dIEqOpjdecc"
+  - title: "Santé connectée : révolution pour la recherche ? (TEDx)"
+    description: "Une conférence inspirante sur l'impact des données de santé collectées en vie réelle sur la recherche médicale."
+    url: "https://www.youtube.com/embed/-ZBxP9JA3Ek"
+  - title: "L'IA au service de la santé : apports ou dangers ?"
+    description: "Un reportage qui explore les promesses et les défis de l'intelligence artificielle appliquée à la médecine."
+    url: "https://www.youtube.com/embed/ud4yALS0wPk"

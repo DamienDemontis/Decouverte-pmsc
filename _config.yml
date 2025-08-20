@@ -32,6 +32,33 @@ github_username: Epitech
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO settings
+author: Damien Demontis
+social:
+  name: Epitech MSc
+  links:
+    - https://github.com/Epitech
+    - https://twitter.com/Epitech
+
+# Performance settings
+incremental: true
+profile: false
+safe: true
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Sass configuration
+sass:
+  style: compressed
+  sourcemap: development
 
 # Collections pour les spécialités
 collections:
