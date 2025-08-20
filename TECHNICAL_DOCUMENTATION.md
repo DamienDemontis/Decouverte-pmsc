@@ -225,61 +225,296 @@ let navigationHistory = ['initial']; // Historique navigation
 let userProfile = {                 // Profil utilisateur
   background: null,
   preferences: null, 
-  interests: []
+  interests: [],
+  scores: {}                        // Scores du test de personnalité
 };
 ```
 
-#### Arbre de conversation
+#### Arbre de conversation (Version 2.0)
 ```javascript
 const conversationTree = {
   // Navigation principale
   initial: {
-    messages: ["Message d'accueil", "Options principales"],
+    messages: ["Message d'accueil avec test de personnalité direct"],
+    options: ["personality_test_start", "profile_check", "help_q1", "explainSpecialties"]
+  },
+  
+  // Nouveau système de test de personnalité
+  personality_test_start: {
+    messages: ["Introduction au test avancé (12 questions)"],
     options: []
   },
-  
-  // Détection de profil
-  profile_check: {
-    messages: ["Questions sur niveau d'études"],
-    options: ["profile_bac2", "profile_bac3_tech", "profile_bac3_business"]
+  personality_test_question: {
+    messages: [], // Généré dynamiquement
+    options: []   // Avec barre de progression
+  },
+  personality_test_results: {
+    messages: [], // Résultats avec visualisations
+    options: []   // Liens vers spécialités cliquables
   },
   
-  // Guidance personnalisée
-  help_q1: {
-    messages: ["Questions d'orientation"],
-    options: ["motivation_build", "motivation_transform", "motivation_protect"]
-  },
+  // États de recommandation corrigés
+  recommend_ai: { messages: ["Recommandation IA personnalisée"] },
+  recommend_cloud: { messages: ["Recommandation Cloud personnalisée"] },
+  recommend_fintech: { messages: ["Recommandation Fintech personnalisée"] },
+  // ... + 15 autres états de recommandation
   
-  // Quiz de personnalité (5 questions)
-  personality_test: {
-    pt_q1: { /* Question 1 avec scoring */ },
-    pt_q2: { /* Question 2 avec scoring */ },
-    pt_q3: { /* Question 3 avec scoring */ },
-    pt_q4: { /* Question 4 avec scoring */ },
-    pt_q5: { /* Question 5 avec scoring */ }
-  }
+  // Correction des dead ends
+  explainSpecialties: { messages: ["Vue d'ensemble de toutes les spécialités"] },
+  help_q_tech: { messages: ["Guide spécialisé voie technique"] },
+  help_q_business: { messages: ["Guide spécialisé voie business"] }
 };
 ```
 
-#### Système de scoring
+## 🧠 Système de Test de Personnalité Avancé
+
+### Architecture du PersonalitySystem
+
+#### Module séparé (`personality-system.js`)
 ```javascript
-// Profils types avec scoring
-const profiles = {
-  architect: { /* Développeur/Architecte */ },
-  catalyst: { /* Business/Transformation */ },
-  protector: { /* Sécurité/Protection */ },
-  analyst: { /* Data/Analyse */ },
-  innovator: { /* Innovation/R&D */ }
+class PersonalitySystem {
+  constructor() {
+    // 5 dimensions comportementales avec polarités
+    this.dimensions = {
+      technical_business: { name: 'Technique - Business', technical: 0, business: 0 },
+      detail_vision: { name: 'Détail - Vision', detail: 0, vision: 0 },
+      individual_team: { name: 'Individuel - Équipe', individual: 0, team: 0 },
+      stability_innovation: { name: 'Stabilité - Innovation', stability: 0, innovation: 0 },
+      process_results: { name: 'Processus - Résultats', process: 0, results: 0 }
+    };
+    
+    // 8 profils professionnels français
+    this.personalityTypes = {
+      'architecte-technique': { name: 'L\'Architecte Technique', emoji: '🏗️' },
+      'innovateur-tech': { name: 'L\'Innovateur Tech', emoji: '💡' },
+      'gardien-cyber': { name: 'Le Gardien Cyber', emoji: '🛡️' },
+      'analyste-donnees': { name: 'L\'Analyste de Données', emoji: '📊' },
+      'chef-projet-tech': { name: 'Le Chef de Projet Tech', emoji: '🎯' },
+      'strategiste-digital': { name: 'Le Stratège Digital', emoji: '🧠' },
+      'catalyseur-business': { name: 'Le Catalyseur Business', emoji: '🚀' },
+      'consultant-expert': { name: 'Le Consultant Expert', emoji: '🎓' }
+    };
+    
+    // 12 questions sophistiquées
+    this.questions = [/* ... 12 questions avec scoring multidimensionnel */];
+  }
+}
+```
+
+#### Algorithme de scoring sophistiqué
+```javascript
+// Système de matching par patterns
+determinePersonalityType() {
+  const scores = this.currentScores;
+  let bestMatch = null;
+  let bestScore = -1;
+
+  for (let typeId in this.personalityTypes) {
+    let matchScore = this.calculateTypeMatch(scores, this.personalityTypes[typeId].pattern);
+    
+    if (matchScore > bestScore) {
+      bestScore = matchScore;
+      bestMatch = typeId;
+    }
+  }
+  
+  return bestMatch;
+}
+
+calculateTypeMatch(userScores, typePattern) {
+  let score = 0;
+  
+  for (let trait in typePattern) {
+    const userValue = userScores[trait] || 0;
+    const expectedLevel = typePattern[trait]; // 'high', 'medium', 'low'
+    
+    let targetValue;
+    if (expectedLevel === 'high') targetValue = 25;
+    else if (expectedLevel === 'medium') targetValue = 15;
+    else targetValue = 5;
+    
+    // Calcul de distance avec pénalité
+    const diff = Math.abs(userValue - targetValue);
+    score += Math.max(0, 30 - diff);
+  }
+  
+  return score;
+}
+```
+
+#### Mapping spécialités intelligent
+```javascript
+this.specialtyMappings = {
+  'architecte-technique': ['cloud', 'bigdata', 'iot'],
+  'innovateur-tech': ['ia', 'vrar', 'iot'],
+  'gardien-cyber': ['cybersecurite', 'data-protection', 'cloud'],
+  'analyste-donnees': ['data-science-bi', 'bigdata', 'fintech'],
+  'chef-projet-tech': ['project-management', 'ai-transformation', 'cloud'],
+  'strategiste-digital': ['ai-transformation', 'project-management', 'fintech'],
+  'catalyseur-business': ['marketing', 'luxe-retail-tech', 'rh-digitale'],
+  'consultant-expert': ['ai-transformation', 'data-protection', 'project-management']
 };
 
-function handleQuizClick(nextQuestion, scores) {
-  // Accumulation du score par profil
-  Object.keys(scores).forEach(profile => {
-    quizScores[profile] += scores[profile];
-  });
+// Actions cliquables pour chaque spécialité
+this.specialtyActions = {
+  'ia': 'explainAI',
+  'cloud': 'explainCloud', 
+  'cybersecurite': 'explainCyber',
+  // ... mapping complet vers les états du bot
+};
+```
+
+### Intégration UI/UX Avancée
+
+#### Barres de progression visuelles
+```javascript
+generateDimensionBars() {
+  let html = '<div class="personality-dimensions">';
   
-  // Navigation vers question suivante
-  navigateToState(nextQuestion);
+  for (let dimKey in this.dimensions) {
+    const dim = this.dimensions[dimKey];
+    let leftValue, rightValue, leftLabel, rightLabel;
+    
+    // Calcul des pourcentages
+    const leftPercent = Math.round((leftValue / (leftValue + rightValue || 1)) * 100);
+    const rightPercent = 100 - leftPercent;
+    
+    html += `
+      <div class="dimension-bar">
+        <div class="dimension-labels">
+          <span class="left-label">${leftLabel}</span>
+          <span class="right-label">${rightLabel}</span>
+        </div>
+        <div class="bar-container">
+          <div class="bar-left" style="width: ${leftPercent}%"></div>
+          <div class="bar-right" style="width: ${rightPercent}%"></div>
+        </div>
+        <div class="dimension-values">
+          <span class="left-value">${leftPercent}%</span>
+          <span class="right-value">${rightPercent}%</span>
+        </div>
+      </div>
+    `;
+  }
+  
+  return html;
+}
+```
+
+#### Spécialités cliquables dans les résultats
+```javascript
+let specialtiesHtml = '';
+topSpecialties.forEach((specialtyKey, index) => {
+  const rank = ['🥇', '🥈', '🥉'][index] || '🏅';
+  const name = this.specialtyNames[specialtyKey] || specialtyKey;
+  const action = this.specialtyActions[specialtyKey] || 'explainSpecialties';
+  const className = index === 0 ? 'primary' : index === 1 ? 'secondary' : 'tertiary';
+  
+  specialtiesHtml += `
+    <div class="recommendation ${className} clickable-specialty" 
+         onclick="handleInlineClick('${action}')">
+      ${rank} <strong>${name}</strong><br/>
+      <span class="click-hint">Cliquez pour en savoir plus →</span>
+    </div>
+  `;
+});
+```
+
+### CSS Système de Personnalité
+
+#### Variables et composants visuels
+```css
+/* Variables pour le système de personnalité */
+.personality-results {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 12px 0;
+  box-shadow: var(--bot-shadow-light);
+}
+
+.personality-dimensions {
+  margin: 20px 0;
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.bar-container {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--bot-border-light);
+  margin-bottom: 6px;
+}
+
+.bar-left {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  transition: width 0.6s ease;
+}
+
+.bar-right {
+  background: linear-gradient(90deg, #10b981, #34d399);
+  transition: width 0.6s ease;
+}
+
+.clickable-specialty {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clickable-specialty:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+```
+
+### Système de scoring
+```javascript
+// Profils types avec scoring mis à jour (Version 2.0)
+const profiles = {
+  'architecte-technique': {
+    pattern: { technical: 'high', detail: 'high', individual: 'medium', stability: 'high', process: 'high' }
+  },
+  'innovateur-tech': {
+    pattern: { technical: 'high', vision: 'high', individual: 'high', innovation: 'high', results: 'high' }
+  },
+  'gardien-cyber': {
+    pattern: { technical: 'high', detail: 'high', individual: 'medium', stability: 'high', process: 'high' }
+  },
+  'analyste-donnees': {
+    pattern: { technical: 'medium', detail: 'high', individual: 'medium', stability: 'medium', process: 'high' }
+  },
+  'chef-projet-tech': {
+    pattern: { business: 'high', vision: 'high', team: 'high', stability: 'high', process: 'high' }
+  },
+  'strategiste-digital': {
+    pattern: { business: 'high', vision: 'high', team: 'high', innovation: 'high', results: 'high' }
+  },
+  'catalyseur-business': {
+    pattern: { business: 'high', vision: 'high', team: 'high', innovation: 'high', results: 'high' }
+  },
+  'consultant-expert': {
+    pattern: { business: 'medium', vision: 'high', team: 'high', stability: 'medium', process: 'high' }
+  }
+};
+
+function recordAnswer(questionId, answerIndex) {
+  const question = this.questions.find(q => q.id === questionId);
+  const answer = question.answers[answerIndex];
+  
+  // Accumulation sophistiquée des scores
+  for (let trait in answer.scores) {
+    if (!this.currentScores[trait]) {
+      this.currentScores[trait] = 0;
+    }
+    this.currentScores[trait] += answer.scores[trait];
+  }
+  
+  // Mise à jour des dimensions en temps réel
+  this.updateDimensions();
 }
 ```
 

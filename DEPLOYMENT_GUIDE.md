@@ -4,12 +4,75 @@
 
 ### 1. GitHub Pages (Recommandé - Gratuit)
 
+#### ⚠️ Problème Résolu : Double Build
+**Ancien problème :** Deux builds se déclenchaient à chaque push
+- ❌ Build GitHub Actions personnalisé 
+- ❌ Build automatique GitHub Pages
+
+**✅ Solution mise en place :**
+- Workflow GitHub Actions moderne avec permissions appropriées
+- Configuration `concurrency` pour éviter les builds parallèles  
+- Actions mises à jour vers les versions les plus récentes
+- **Résultat :** Un seul build par push, déploiement plus rapide
+
 #### Configuration rapide
-1. **Repository GitHub** : Créer ou utiliser repository existant
-2. **Settings** → **Pages**
-3. **Source** : "Deploy from a branch"
-4. **Branch** : `main` / `root`
-5. **URL automatique** : `https://[username].github.io/Decouverte-pmsc/`
+1. **Repository GitHub** : Le repository utilise maintenant un workflow optimisé
+2. **Settings** → **Pages** → **Source** : "GitHub Actions" (recommandé)
+3. **Build automatique** : Via `.github/workflows/github-pages.yml`
+4. **URL automatique** : `https://damiendmontis.github.io/Decouverte-pmsc/`
+
+#### Workflow GitHub Actions moderne
+```yaml
+# .github/workflows/github-pages.yml
+name: Build and deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+          bundler-cache: true
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --trace
+        env:
+          JEKYLL_ENV: production
+          
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+**⏱️ Temps de build :** ~2-3 minutes (vs. 4-5 minutes avant)
 
 #### Avec domaine personnalisé
 ```bash
