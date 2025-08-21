@@ -130,29 +130,33 @@ projects:
       duration: "3-4 heures"
       objective: "Explorer, nettoyer et visualiser un jeu de données sur les retards de trains"
       description: |
-        <p>Ce projet guidé te permettra d'acquérir les compétences essentielles en préparation et visualisation de données, fondamentales pour tout projet de data science. Tu apprendras à:</p>
+        <p>Ce projet aboutit à l'acquisition des compétences essentielles en préparation et visualisation de données, fondamentales pour tout projet de data science. L'apprentissage porte sur:</p>
         <ul>
           <li>Charger et explorer un jeu de données à l'aide de pandas</li>
           <li>Identifier et résoudre les problèmes courants (valeurs manquantes, doublons, formats incohérents)</li>
           <li>Générer des visualisations pour comprendre les tendances</li>
           <li>Préparer les données pour l'analyse dans le projet principal</li>
         </ul>
-        <p>Le projet suit une approche étape par étape, avec des points de contrôle pour valider ta compréhension.</p>
+        <p>Le projet utilise une approche étape par étape, avec des points de contrôle pour valider la compréhension, en s'appuyant sur des ressources externes et des tutoriels spécialisés.</p>
       technologies:
         - "Python avec les bibliothèques pandas, matplotlib et seaborn"
         - "Jupyter Notebook pour l'analyse interactive"
       resources:
-        - text: "Sujet complet (PDF)"
+        - text: "📋 Sujet complet (PDF)"
           url: "/assets/subjects/bigdata/tardis_bootstrap/G-AIA-210_tardis_bootstrap.pdf"
-        - text: "Dataset"
+        - text: "🎯 Tutoriel complémentaire : Complete Data Cleaning with Pandas"
+          url: "https://pandas.pydata.org/docs/getting_started/intro_tutorials/07_reshape_table_layout.html"
+        - text: "Dataset projet"
           url: "/assets/subjects/bigdata/tardis_bootstrap/dataset.csv"
+        - text: "Visualizations : Seaborn Tutorial"
+          url: "https://seaborn.pydata.org/tutorial.html"
 
     - title: "Projet 2: TARDIS - Prédire l'imprévisible"
       difficulty: "Intermédiaire"
       duration: "10-15 heures"
       objective: "Analyser et prédire les retards de trains à l'aide de techniques de machine learning"
       description: |
-        <p>Ce projet te place dans le rôle d'un analyste de données pour la SNCF. Ta mission est d'analyser les données historiques sur les retards des trains, de découvrir des modèles cachés et de développer un modèle prédictif qui peut prévoir les retards avant qu'ils ne se produisent.</p>
+        <p>Ce projet simule le rôle d'un analyste de données pour la SNCF. L'objectif est d'analyser les données historiques sur les retards des trains, de découvrir des modèles cachés et de développer un modèle prédictif qui peut prévoir les retards avant qu'ils ne se produisent.</p>
         <p>Le projet se décompose en 4 étapes principales :</p>
         <ol>
           <li><strong>Nettoyage et prétraitement des données</strong> - Gestion des valeurs manquantes, des incohérences et préparation du dataset pour l'analyse.</li>
@@ -167,10 +171,14 @@ projects:
         - "Création d'interfaces utilisateur avec Streamlit"
         - "Développement d'un pipeline complet de data science"
       resources:
-        - text: "Sujet complet (PDF)"
+        - text: "📋 Sujet complet (PDF)"
           url: "/assets/subjects/bigdata/tardis_suite/G-AIA-210_tardis.pdf"
-        - text: "Dataset"
+        - text: "🎯 Tutoriel complémentaire : Machine Learning Pipeline with Scikit-learn"
+          url: "https://scikit-learn.org/stable/user_guide.html"
+        - text: "Dataset projet"
           url: "/assets/subjects/bigdata/tardis_suite/dataset.csv"
+        - text: "Dashboard Creation : Streamlit Tutorial"
+          url: "https://docs.streamlit.io/library/get-started/create-an-app"
 
     - title: "Projet 3: Analyse de données massives"
       difficulty: "Débutant"
@@ -191,12 +199,14 @@ projects:
         - "Python avec pandas, matplotlib, seaborn"
         - "Jupyter Notebook"
       resources:
-        - text: "Pandas Tutorial - Data Analysis"
+        - text: "🎯 Tutoriel principal : Complete Data Analysis with Pandas"
           url: "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html"
-        - text: "Seaborn Gallery - Visualizations"
-          url: "https://seaborn.pydata.org/examples/index.html"
-        - text: "Jupyter Notebook Tutorial"
-          url: "https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook_Basics.html"
+        - text: "Step-by-step : Data Visualization with Seaborn"
+          url: "https://seaborn.pydata.org/tutorial.html"
+        - text: "Jupyter Setup : Getting Started Guide"
+          url: "https://jupyter-notebook.readthedocs.io/en/stable/notebook.html"
+        - text: "Real Datasets : Kaggle Learn Datasets"
+          url: "https://www.kaggle.com/learn/data-cleaning"
       datasets:
         - text: "NYC Taxi Trips"
           url: "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page"
@@ -276,12 +286,12 @@ ecosystem:
     - title: "AWS Big Data Services"
       icon: "fab fa-aws"
       description: "Amazon propose une suite complète de services Big Data : EMR pour Spark/Hadoop, Glue pour ETL, Athena pour requêtes SQL sur S3, et Kinesis pour le streaming en temps réel."
-      url: "https://aws.amazon.com/big-data/"
+      url: "https://aws.amazon.com/big-data/datalakes-and-analytics/"
     
     - title: "Azure Data Services"
       icon: "fab fa-microsoft"
       description: "Microsoft offre Azure Synapse Analytics pour l'analytics unifié, Data Factory pour l'intégration, et HDInsight pour les clusters Hadoop/Spark managés."
-      url: "https://azure.microsoft.com/en-us/solutions/big-data/"
+      url: "https://azure.microsoft.com/en-us/solutions/data-analytics-ai"
     
     - title: "Google Cloud Data Platform"
       icon: "fab fa-google"
@@ -320,7 +330,7 @@ ecosystem:
           url: "https://www.drivendata.org/"
         - name: "Big Data Hackathons"
           description: "Événements de développement intensif sur données massives"
-          url: "https://www.hackerearth.com/challenges/hackathon/"
+          url: "https://www.hackerearth.com/challenges/"
     
     networks:
       title: "Communautés à rejoindre"
@@ -425,7 +435,7 @@ resources:
           url: "https://www.coursera.org/specializations/gcp-data-machine-learning"
         - title: "Apache Spark with Python"
           provider: "Databricks Academy"
-          url: "https://www.databricks.com/learn/training/apache-spark-programming"
+          url: "https://www.databricks.com/learn"
         - title: "Real-Time Analytics with Apache Kafka"
           provider: "Confluent"
           url: "https://developer.confluent.io/learn-kafka/apache-kafka/events/"
@@ -444,7 +454,7 @@ resources:
           url: "https://www.youtube.com/c/Databricks"
         - title: "Confluent"
           description: "Contenu éducatif sur Kafka et le streaming"
-          url: "https://www.youtube.com/c/ConfluentInc"
+          url: "https://www.youtube.com/c/Confluent"
 
   blogs_newsletters:
     blogs:
@@ -455,10 +465,10 @@ resources:
           url: "https://medium.com/airbnb-engineering/data/home"
         - title: "Netflix Data Engineering"
           description: "Articles techniques sur l'architecture data de Netflix"
-          url: "https://netflixtechblog.com/tagged/data-engineering"
+          url: "https://netflixtechblog.com/"
         - title: "Uber Engineering"
           description: "Blog technique d'Uber sur le Big Data"
-          url: "https://eng.uber.com/tag/data/"
+          url: "https://www.uber.com/blog/engineering/"
         - title: "LinkedIn Engineering"
           description: "Articles sur l'infrastructure data de LinkedIn"
           url: "https://engineering.linkedin.com/blog/topic/data"
@@ -474,10 +484,10 @@ resources:
           url: "https://www.dataengineeringpodcast.com/"
         - title: "DataTalks.Club Newsletter"
           description: "Newsletter de la communauté DataTalks"
-          url: "https://datatalks.club/newsletter"
+          url: "https://datatalks.club/"
         - title: "Apache Kafka Blog"
           description: "Blog officiel d'Apache Kafka"
-          url: "https://kafka.apache.org/blog/"
+          url: "https://kafka.apache.org/documentation/"
 
   datasets:
     title: "Datasets et environnements de test"
@@ -511,7 +521,7 @@ resources:
         url: "https://kafka-summit.org/"
       - title: "Strata Data Conference"
         description: "Conférence majeure sur le Big Data et l'IA"
-        url: "https://www.oreilly.com/conferences/strata.html"
+        url: "https://www.oreilly.com/conferences/"
       - title: "QCon"
         description: "Conférence sur l'architecture logicielle et le Big Data"
         url: "https://qconferences.com/"

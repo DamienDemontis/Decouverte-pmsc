@@ -171,7 +171,7 @@ roadmap:
             - text: "Cisco Networking Academy"
               url: "https://www.netacad.com/networking"
             - text: "Cloudflare Learning Center (Sécurité Web)"
-              url: "https://www.cloudflare.com/learning/security/what-is-web-security/"
+              url: "https://www.cloudflare.com/learning"
         - title: "Systèmes d'exploitation"
           description: "Maîtrisez Linux et Windows, leur fonctionnement interne, la gestion des services et la ligne de commande."
           resources:
@@ -220,36 +220,44 @@ projects:
       duration: "4-6 heures"
       objective: "Créer un environnement d'apprentissage sécurisé pour tester des outils et techniques"
       description: |
-        <p>Dans ce projet, tu vas mettre en place un laboratoire virtuel sécurisé pour expérimenter différentes techniques de sécurité offensive et défensive sans risque légal ou éthique.</p>
-        <p>Le projet suit une approche étape par étape, avec des points de contrôle pour valider ta compréhension.</p>
+        <p>Ce projet aboutit à la mise en place d'un laboratoire virtuel sécurisé pour expérimenter différentes techniques de sécurité offensive et défensive sans risque légal ou éthique.</p>
+        <p>En suivant des tutoriels spécialisés et des guides externes, l'étudiant configure un environnement d'apprentissage complet avec des points de contrôle pour valider la compréhension.</p>
       technologies:
         - "VirtualBox ou VMware"
         - "Kali Linux comme machine d'attaque"
         - "Metasploitable ou DVWA comme cible"
         - "Configuration réseau isolé"
       resources:
-        - text: "Documentation Kali Linux pour la virtualisation"
+        - text: "🎯 Tutoriel principal : Complete Penetration Testing Lab Setup"
+          url: "https://www.kali.org/docs/virtualization/install-virtualbox-guest-vm/"
+        - text: "Step-by-step : Metasploitable Setup Guide"
+          url: "https://docs.rapid7.com/metasploit/metasploitable-2/"
+        - text: "Alternative : VulnHub VM Collection"
+          url: "https://www.vulnhub.com/"
+        - text: "Network Configuration : Isolated Lab Setup"
           url: "https://www.kali.org/docs/virtualization/"
-        - text: "Metasploitable VM"
-          url: "https://www.metasploit.com/download"
     
     - title: "Projet 2: Analyse de sécurité web"
       difficulty: "Débutant"
       duration: "6-8 heures"
       objective: "Découvrir les vulnérabilités web courantes et leur exploitation éthique"
       description: |
-        <p>Ce projet te permettra d'explorer la sécurité des applications web en identifiant et exploitant des vulnérabilités courantes dans un environnement contrôlé et légal.</p>
-        <p>Tu apprendras les techniques de base d'audit de sécurité et comment sécuriser les applications web.</p>
+        <p>Ce projet aboutit à l'exploration de la sécurité des applications web en identifiant et exploitant des vulnérabilités courantes dans un environnement contrôlé et légal.</p>
+        <p>À travers des ressources externes dédiées, l'apprentissage portera sur les techniques de base d'audit de sécurité et les moyens de sécuriser les applications web.</p>
       technologies:
         - "DVWA (Damn Vulnerable Web Application)"
         - "Burp Suite Community Edition"
         - "Techniques d'exploitation éthique"
         - "Documentation des vulnérabilités"
       resources:
-        - text: "DVWA GitHub"
-          url: "https://github.com/digininja/DVWA"
-        - text: "Burp Suite Community Edition"
-          url: "https://portswigger.net/burp/communitydownload"
+        - text: "🎯 Tutoriel principal : Web Security Testing with DVWA"
+          url: "https://portswigger.net/web-security/learning-path"
+        - text: "Step-by-step : DVWA Installation Guide"
+          url: "https://github.com/digininja/DVWA#installation"
+        - text: "Burp Suite Tutorial : Web App Testing"
+          url: "https://portswigger.net/burp/documentation/desktop/getting-started"
+        - text: "OWASP Top 10 : Vulnerability Guide"
+          url: "https://owasp.org/www-project-top-ten/"
     
 
     
@@ -265,12 +273,14 @@ projects:
         - "Cryptographie"
         - "Reverse engineering"
       resources:
-        - text: "PicoCTF - Plateforme d'apprentissage gratuite"
+        - text: "🎯 Tutoriel principal : PicoCTF Beginner Guide"
           url: "https://picoctf.org/"
-        - text: "OverTheWire - Challenges progressifs"
-          url: "https://overthewire.org/wargames/"
-        - text: "TryHackMe - Plateformes de challenges et formation"
-          url: "https://tryhackme.com/"
+        - text: "Step-by-step : OverTheWire Bandit Walkthrough"
+          url: "https://overthewire.org/wargames/bandit/"
+        - text: "Alternative : TryHackMe Learning Paths"
+          url: "https://tryhackme.com/paths"
+        - text: "CTF Tools : Essential Toolkit Guide"
+          url: "https://github.com/zardus/ctf-tools"
 
 ecosystem:
   title: "Écosystème Cybersécurité"
@@ -302,7 +312,7 @@ ecosystem:
           url: "https://www.openvas.org/"
         - name: "OWASP ZAP"
           description: "Proxy de sécurité open-source pour applications web"
-          url: "https://owasp.org/www-project-zap/"
+          url: "https://www.zaproxy.org/"
         - name: "Qualys"
           description: "Plateforme cloud de sécurité et conformité"
           url: "https://www.qualys.com/"
@@ -383,10 +393,10 @@ resources:
           url: "https://www.edx.org/course/cybersecurity-fundamentals"
         - title: "Introduction to Cybersecurity"
           provider: "Coursera - NYU"
-          url: "https://www.coursera.org/learn/intro-cyber-security"
+          url: "https://www.coursera.org/learn/introduction-to-cybersecurity-fundamentals"
         - title: "Cybersecurity Specialization"
           provider: "Coursera - University of Maryland"
-          url: "https://www.coursera.org/specializations/cyber-security"
+          url: "https://www.coursera.org/specializations/intro-cyber-security"
         - title: "Ethical Hacking"
           provider: "Udemy"
           url: "https://www.udemy.com/course/learn-ethical-hacking-from-scratch/"
@@ -396,7 +406,7 @@ resources:
       items:
         - title: "Computerphile"
           description: "Explications techniques de concepts de sécurité"
-          url: "https://www.youtube.com/c/Computerphile"
+          url: "https://www.youtube.com/@Computerphile"
         - title: "LiveOverflow"
           description: "Tutoriels de hacking et sécurité informatique"
           url: "https://www.youtube.com/c/LiveOverflow"
@@ -478,7 +488,7 @@ resources:
         url: "https://www.sans.org/events/"
       - title: "Hack In Paris"
         description: "Conférence cybersécurité française"
-        url: "https://www.hackinparis.com/"
+        url: "https://hackinparis.com/"
 
 careers: true
 career_paths:

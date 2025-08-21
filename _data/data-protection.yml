@@ -100,7 +100,7 @@ roadmap:
             - text: "Le texte intégral du RGPD (CNIL)"
               url: "https://www.cnil.fr/fr/reglement-europeen-protection-donnees"
             - text: "Les principes clés de la protection des données (CNIL)"
-              url: "https://www.cnil.fr/fr/les-6-principes-cles-du-rgpd"
+              url: "https://www.cnil.fr/fr/rgpd-de-quoi-parle-t-on"
         
         - title: "Principes de la Cybersécurité"
           description: "Comprendre les concepts de base de la sécurité des systèmes d'information (Confidentialité, Intégrité, Disponibilité)."
@@ -147,9 +147,9 @@ projects:
         - text: "Kit d'audit RGPD - CNIL"
           url: "https://www.cnil.fr/fr/rgpd-par-ou-commencer"
         - text: "Guide pratique RGPD"
-          url: "https://www.cnil.fr/sites/default/files/atoms/files/guide_rgpd_tpe_pme.pdf"
+          url: "https://www.cnil.fr/fr/comprendre-le-rgpd"
         - text: "Modèles de politique de confidentialité"
-          url: "https://www.cnil.fr/fr/modeles-mentions-information-et-formulaires"
+          url: "https://www.cnil.fr/fr/rgpd-par-ou-commencer"
     
     - title: "Projet 2: Mener une analyse de risques sur un cas simple"
       difficulty: "Intermédiaire"
@@ -166,7 +166,7 @@ projects:
         - text: "Guide EBIOS Risk Manager - ANSSI"
           url: "https://www.ssi.gouv.fr/guide/ebios-risk-manager-the-method/"
         - text: "Matrice de risques template"
-          url: "https://www.lucidchart.com/pages/templates/risk-assessment-matrix"
+          url: "https://www.lucidchart.com/pages/templates/risk-matrix"
         - text: "Cartographie des risques - Méthode"
           url: "https://www.cnil.fr/fr/gerer-les-risques"
     
@@ -187,7 +187,7 @@ projects:
         - text: "Guide des bonnes pratiques - ANSSI"
           url: "https://www.ssi.gouv.fr/guide/guide-dhygiene-informatique/"
         - text: "Templates charte utilisateur"
-          url: "https://www.cnil.fr/fr/securite-des-donnees-personnelles"
+          url: "https://www.cnil.fr/fr/guide-de-la-securite-des-donnees-personnelles"
 
 ecosystem:
   title: "Écosystème de la Protection des Données"
@@ -226,7 +226,7 @@ ecosystem:
           url: "https://www.onetrust.com/"
         - name: "DataGueule"
           description: "Solution française de conformité RGPD"
-          url: "https://www.datagueule.com/"
+          url: "https://datagueule.tv/"
         - name: "Dastra"
           description: "Plateforme de gestion de la conformité RGPD"
           url: "https://www.dastra.eu/"
@@ -262,6 +262,104 @@ resources:
           authors: "USA (en anglais)"
           description: "L'International Association of Privacy Professionals est la plus grande communauté mondiale de professionnels de la vie privée."
           url: "https://iapp.org/"
+    
+    fundamentals:
+      title: "Livres incontournables"
+      items:
+        - title: "RGPD et Loi Informatique et Libertés"
+          authors: "Fabrice Mattatia"
+          description: "Guide pratique de mise en conformité avec le RGPD et la loi française."
+          url: "https://www.amazon.fr/RGPD-Loi-Informatique-Libert%C3%A9s-conformit%C3%A9/dp/2212678800"
+        - title: "La Protection des Données Personnelles"
+          authors: "Vincent Lemaire"
+          description: "Ouvrage de référence sur la protection des données personnelles dans l'entreprise."
+          url: "https://www.amazon.fr/Protection-donn%C3%A9es-personnelles-Vincent-Lemaire/dp/2100796771"
+        - title: "Privacy by Design: The Definitive Workshop"
+          authors: "Ann Cavoukian"
+          description: "Le concept fondamental du Privacy by Design expliqué par sa créatrice."
+          url: "https://iapp.org/resources/article/privacy-by-design-the-definitive-workshop/"
+    
+    specialized:
+      title: "Spécialisations avancées"
+      items:
+        - title: "Cybersecurity and Data Protection"
+          authors: "Peter Sommer & Ian Brown"
+          description: "Guide complet sur la sécurité des données et la protection de la vie privée."
+          url: "https://www.amazon.fr/Cybersecurity-Data-Protection-Peter-Sommer/dp/0199674299"
+        - title: "The EU General Data Protection Regulation (GDPR)"
+          authors: "Paul Voigt & Axel von dem Bussche"
+          description: "Commentaire pratique et guide d'implémentation du RGPD."
+          url: "https://www.amazon.fr/General-Data-Protection-Regulation-Commentary/dp/3319579584"
+        - title: "Data Protection Impact Assessments"
+          authors: "David Wright & Paul De Hert"
+          description: "Guide pratique pour réaliser des analyses d'impact sur la protection des données."
+          url: "https://www.amazon.fr/Data-Protection-Impact-Assessments-Practical/dp/9048199689"
+
+  online_courses:
+    moocs:
+      title: "MOOCs de référence"
+      items:
+        - title: "Privacy Engineering and Data Protection"
+          provider: "edX - University of Edinburgh"
+          url: "https://www.edx.org/learn/data-privacy"
+        - title: "GDPR Data Protection Certificate"
+          provider: "Coursera - University of Groningen"
+          url: "https://www.coursera.org/courses?query=privacy%20fundamentals"
+        - title: "Cybersecurity Compliance Framework & System Administration"
+          provider: "Coursera - IBM"
+          url: "https://www.coursera.org/learn/cybersecurity-compliance-framework-system-administration"
+        - title: "Information Security Management"
+          provider: "FutureLearn - King's College London"
+          url: "https://www.futurelearn.com/courses/information-security-management"
+    
+    youtube:
+      title: "Chaînes YouTube éducatives"
+      items:
+        - title: "CNIL"
+          description: "Chaîne officielle de la Commission Nationale Informatique et Libertés"
+          url: "https://www.youtube.com/c/CNIL"
+        - title: "Privacy International"
+          description: "Organisation dédiée à la protection de la vie privée dans le monde"
+          url: "https://www.youtube.com/c/PrivacyInternational"
+        - title: "IAPP - International Association of Privacy Professionals"
+          description: "Association mondiale des professionnels de la protection des données"
+          url: "https://www.youtube.com/c/IAPP"
+        - title: "ENISA - European Union Agency for Cybersecurity"
+          description: "Agence européenne chargée de la sécurité des réseaux et de l'information"
+          url: "https://www.youtube.com/c/ENISAEurope"
+
+  blogs_newsletters:
+    blogs:
+      title: "Blogs techniques"
+      items:
+        - title: "Privacy Tracker"
+          description: "Blog technique sur les actualités RGPD et protection des données"
+          url: "https://www.privacytracker.eu/"
+        - title: "IAPP Privacy Advisor"
+          description: "Blog de référence sur la protection des données et la vie privée"
+          url: "https://iapp.org/news/"
+        - title: "Data Protection Report"
+          description: "Actualités et analyses sur la protection des données"
+          url: "https://www.dataprotectionreport.com/"
+        - title: "Privacy Laws & Business"
+          description: "Analyses juridiques sur la protection des données"
+          url: "https://www.privacylaws.com/"
+    
+    newsletters:
+      title: "Newsletters et actualités"
+      items:
+        - title: "IAPP Privacy Advisor Weekly"
+          description: "Newsletter hebdomadaire de l'IAPP sur l'actualité privacy"
+          url: "https://iapp.org/news/"
+        - title: "Privacy Tracker Newsletter"
+          description: "Newsletter sur l'actualité RGPD en Europe"
+          url: "https://www.privacytracker.eu/"
+        - title: "OneTrust Privacy Weekly"
+          description: "Newsletter sur les tendances privacy et RGPD"
+          url: "https://www.onetrust.com/resources/"
+        - title: "CNIL Newsletter"
+          description: "Newsletter officielle de la CNIL France"
+          url: "https://www.cnil.fr/fr/newsletter"
 
 careers: true
 career_paths:

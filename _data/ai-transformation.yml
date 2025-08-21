@@ -117,7 +117,7 @@ roadmap:
           description: "Comprendre comment une entreprise fonctionne, comment on gère un projet et comment on définit une stratégie."
           resources:
             - text: "Certificat Google Project Management"
-              url: "https://www.coursera.org/professional-certificates/google-project-management"
+              url: "https://www.coursera.org/google-certificates/project-management-certificate"
             - text: "Livre : Le Personal MBA de Josh Kaufman"
               url: "#"
         
@@ -127,7 +127,7 @@ roadmap:
             - text: "AI For Everyone par Andrew Ng (Coursera)"
               url: "https://www.coursera.org/learn/ai-for-everyone"
             - text: "Elements of AI (cours gratuit)"
-              url: "https://www.elementsofai.com/fr/"
+              url: "https://course.elementsofai.com/"
     
     - title: "🚀 Phase 2: Le cœur du métier (3-6 mois)"
       duration: "3-6 mois"
@@ -165,7 +165,7 @@ projects:
         - text: "Zapier"
           url: "https://zapier.com/"
         - text: "Make (ex-Integromat)"
-          url: "https://www.make.com/"
+          url: "https://www.make.com"
     
     - title: "Projet 2: Analyser un processus existant et proposer une optimisation par l'IA"
       difficulty: "Intermédiaire"
@@ -252,10 +252,10 @@ ecosystem:
           url: "https://www.uipath.com/"
         - name: "Salesforce Einstein"
           description: "IA intégrée dans la suite CRM"
-          url: "https://www.salesforce.com/products/einstein/"
+          url: "https://www.salesforce.com/artificial-intelligence/"
         - name: "Adobe Sensei"
           description: "IA pour le marketing et la création"
-          url: "https://www.adobe.com/sensei.html"
+          url: "https://www.adobe.com/sensei"
 
 resources:
   title: "Ressources"
@@ -274,7 +274,7 @@ resources:
           url: "https://www.amazon.fr/AI-Superpowers-China-Silicon-Valley/dp/132854639X"
         - title: "The Business of AI"
           authors: "Michael Chui & James Manyika"
-          url: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-business-value-of-ai"
+          url: "https://www.mckinsey.com/capabilities/mckinsey-digital/how-we-help-clients"
     
     specialized:
       title: "Spécialisations avancées"
@@ -301,13 +301,13 @@ resources:
           url: "https://www.coursera.org/learn/ai-for-everyone"
         - title: "Digital Transformation"
           provider: "edX - Boston University"
-          url: "https://www.edx.org/course/digital-transformation"
+          url: "https://www.edx.org/learn/digital-transformation"
         - title: "AI Strategy"
           provider: "Coursera - University of Pennsylvania"
           url: "https://www.coursera.org/learn/ai-strategy"
         - title: "Business Analytics"
           provider: "Coursera - University of Pennsylvania"
-          url: "https://www.coursera.org/learn/business-analytics"
+          url: "https://www.coursera.org/specializations/business-analytics"
     
     youtube:
       title: "Chaînes YouTube éducatives"
@@ -323,7 +323,7 @@ resources:
           url: "https://www.youtube.com/c/MITTechnologyReview"
         - title: "AI Alignment"
           description: "Contenu sur l'alignement et l'éthique de l'IA"
-          url: "https://www.youtube.com/c/AIAlignment"
+          url: "https://www.youtube.com/@RobertMilesAI"
 
   blogs_newsletters:
     blogs:
@@ -331,7 +331,7 @@ resources:
       items:
         - title: "McKinsey AI Blog"
           description: "Analyses et insights sur l'IA en entreprise"
-          url: "https://www.mckinsey.com/capabilities/quantumblack/our-insights"
+          url: "https://www.mckinsey.com/capabilities/quantumblack"
         - title: "MIT Technology Review"
           description: "Actualités et analyses sur les technologies émergentes"
           url: "https://www.technologyreview.com/"
@@ -347,7 +347,7 @@ resources:
       items:
         - title: "The Algorithm"
           description: "Newsletter de MIT Technology Review sur l'IA"
-          url: "https://www.technologyreview.com/newsletter/the-algorithm/"
+          url: "https://www.technologyreview.com/newsletters/"
         - title: "AI Weekly"
           description: "Newsletter hebdomadaire sur l'IA"
           url: "https://aiweekly.co/"
@@ -356,7 +356,7 @@ resources:
           url: "https://importai.substack.com/"
         - title: "Machine Learning Monthly"
           description: "Newsletter sur le machine learning"
-          url: "https://mlmonthly.com/"
+          url: "https://thesequence.substack.com/"
 
   datasets:
     title: "Outils et plateformes de pratique"
@@ -364,7 +364,7 @@ resources:
     items:
       - title: "Google AI Hub"
         description: "Plateforme de ressources et outils IA de Google"
-        url: "https://aihub.google.com/"
+        url: "https://ai.google/"
       - title: "Microsoft AI"
         description: "Ressources et outils IA de Microsoft"
         url: "https://www.microsoft.com/en-us/ai"

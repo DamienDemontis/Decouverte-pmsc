@@ -122,9 +122,9 @@ roadmap:
           description: "Comprendre les bases du cycle de vie d'un projet, le triangle d'or (coût, délai, périmètre) et les processus clés."
           resources:
             - text: "Guide PMBOK® du PMI"
-              url: "https://ibimone.com/PMBOK%207th%20Edition%20(iBIMOne.com).pdf"
+              url: "https://ibimone.com/PMBOK%207th%20Edition%20%28iBIMOne.com%29.pdf).pdf"
             - text: "Google Project Management Certificate (Coursera)"
-              url: "https://www.coursera.org/professional-certificates/google-project-management"
+              url: "https://www.coursera.org/google-certificates/project-management-certificate"
         
         - title: "Principes de l'Agilité"
           description: "S'imprégner du Manifeste Agile et maîtriser les frameworks Scrum et Kanban."
@@ -253,7 +253,7 @@ ecosystem:
           url: "https://monday.com/"
         - name: "Microsoft Project"
           description: "Solution Microsoft pour la gestion de projets complexes"
-          url: "https://www.microsoft.com/en-us/microsoft-365/project"
+          url: "https://www.microsoft.com/en/microsoft-365/project/project-management-software"
     
     - title: "Outils de collaboration"
       icon: "fas fa-users"
@@ -356,23 +356,23 @@ resources:
           url: "https://www.coursera.org/learn/agile-atlassian-jira"
         - title: "Digital Product Management"
           provider: "edX"
-          url: "https://www.edx.org/course/digital-product-management"
+          url: "https://www.edx.org/learn/product-management"
         - title: "Project Management Principles and Practices"
           provider: "Coursera"
-          url: "https://www.coursera.org/learn/project-management"
+          url: "https://www.coursera.org/learn/project-management-foundations"
     
     youtube:
       title: "Chaînes YouTube éducatives"
       items:
         - title: "Product School"
           description: "Webinaires et tutoriels sur le Product Management"
-          url: "https://www.youtube.com/c/ProductSchool"
+          url: "https://www.youtube.com/@ProductSchool"
         - title: "Marty Cagan"
           description: "Conférences et conseils du fondateur de SVPG"
-          url: "https://www.youtube.com/c/MartyCagan"
+          url: "https://www.youtube.com/@martycagan"
         - title: "Mind the Product"
           description: "Conférences et interviews de Product Managers"
-          url: "https://www.youtube.com/c/MindTheProduct"
+          url: "https://www.youtube.com/@MindTheProduct"
         - title: "Agile Alliance"
           description: "Contenu éducatif sur l'agilité et Scrum"
           url: "https://www.youtube.com/c/AgileAlliance"
@@ -392,7 +392,7 @@ resources:
           url: "https://www.romanpichler.com/blog/"
         - title: "The Lean Startup Blog"
           description: "Blog officiel d'Eric Ries"
-          url: "https://theleanstartup.com/blog/"
+          url: "https://theleanstartup.com/"
     
     newsletters:
       title: "Newsletters et actualités"
@@ -402,13 +402,13 @@ resources:
           url: "https://www.producthunt.com/newsletter"
         - title: "Mind the Product Newsletter"
           description: "Newsletter hebdomadaire sur le Product Management"
-          url: "https://www.mindtheproduct.com/newsletter/"
+          url: "https://www.mindtheproduct.com/"
         - title: "The Startup Newsletter"
           description: "Actualités et conseils pour entrepreneurs"
           url: "https://thestartup.co/"
         - title: "Agile Alliance Newsletter"
           description: "Actualités et ressources sur l'agilité"
-          url: "https://www.agilealliance.org/newsletter/"
+          url: "https://www.agilealliance.org/"
 
   datasets:
     title: "Outils et plateformes de pratique"
