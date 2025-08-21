@@ -222,7 +222,7 @@ projects:
         - "Infrastructure as Code (Terraform)"
       resources:
         - text: "🎯 Tutoriel principal : Deploy a Web App with Auto Scaling on AWS"
-          url: "https://aws.amazon.com/getting-started/hands-on/launch-a-web-app/"
+          url: "https://aws.amazon.com/getting-started/hands-on/"
         - text: "Alternative Azure : Create scalable web app"
           url: "https://learn.microsoft.com/en-us/azure/app-service/tutorial-multi-container-app"
         - text: "Load Balancer Setup : AWS Application Load Balancer"
@@ -251,7 +251,7 @@ projects:
         - text: "🎯 Tutoriel principal : Complete CI/CD Pipeline with Docker and Kubernetes"
           url: "https://kubernetes.io/docs/tutorials/kubernetes-basics/"
         - text: "GitHub Actions : Build and Deploy to Kubernetes"
-          url: "https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-azure/deploying-docker-to-azure-container-instances"
+          url: "https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions"
         - text: "AWS EKS Workshop (approfondi)"
           url: "https://www.eksworkshop.com/"
         - text: "Alternative GitLab CI/CD"

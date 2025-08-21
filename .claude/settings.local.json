@@ -4,7 +4,10 @@
       "Bash(grep:*)",
       "Bash(bundle exec jekyll:*)",
       "Bash(powershell:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(python:*)",
+      "Bash(lychee:*)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []

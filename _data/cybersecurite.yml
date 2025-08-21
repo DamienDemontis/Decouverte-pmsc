@@ -171,7 +171,7 @@ roadmap:
             - text: "Cisco Networking Academy"
               url: "https://www.netacad.com/networking"
             - text: "Cloudflare Learning Center (Sécurité Web)"
-              url: "https://www.cloudflare.com/learning/security/what-is-web-security/"
+              url: "https://www.cloudflare.com/learning"
         - title: "Systèmes d'exploitation"
           description: "Maîtrisez Linux et Windows, leur fonctionnement interne, la gestion des services et la ligne de commande."
           resources:
@@ -312,7 +312,7 @@ ecosystem:
           url: "https://www.openvas.org/"
         - name: "OWASP ZAP"
           description: "Proxy de sécurité open-source pour applications web"
-          url: "https://owasp.org/www-project-zap/"
+          url: "https://www.zaproxy.org/"
         - name: "Qualys"
           description: "Plateforme cloud de sécurité et conformité"
           url: "https://www.qualys.com/"
@@ -393,10 +393,10 @@ resources:
           url: "https://www.edx.org/course/cybersecurity-fundamentals"
         - title: "Introduction to Cybersecurity"
           provider: "Coursera - NYU"
-          url: "https://www.coursera.org/learn/intro-cyber-security"
+          url: "https://www.coursera.org/learn/introduction-to-cybersecurity-fundamentals"
         - title: "Cybersecurity Specialization"
           provider: "Coursera - University of Maryland"
-          url: "https://www.coursera.org/specializations/cyber-security"
+          url: "https://www.coursera.org/specializations/intro-cyber-security"
         - title: "Ethical Hacking"
           provider: "Udemy"
           url: "https://www.udemy.com/course/learn-ethical-hacking-from-scratch/"
@@ -406,7 +406,7 @@ resources:
       items:
         - title: "Computerphile"
           description: "Explications techniques de concepts de sécurité"
-          url: "https://www.youtube.com/c/Computerphile"
+          url: "https://www.youtube.com/@Computerphile"
         - title: "LiveOverflow"
           description: "Tutoriels de hacking et sécurité informatique"
           url: "https://www.youtube.com/c/LiveOverflow"
@@ -488,7 +488,7 @@ resources:
         url: "https://www.sans.org/events/"
       - title: "Hack In Paris"
         description: "Conférence cybersécurité française"
-        url: "https://www.hackinparis.com/"
+        url: "https://hackinparis.com/"
 
 careers: true
 career_paths:

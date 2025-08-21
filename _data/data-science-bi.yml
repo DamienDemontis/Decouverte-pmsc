@@ -142,13 +142,13 @@ roadmap:
             - text: "Formations gratuites sur Tableau"
               url: "https://www.tableau.com/learn/training"
             - text: "Parcours d'apprentissage Power BI"
-              url: "https://docs.microsoft.com/fr-fr/power-bi/learning-paths/"
+              url: "https://learn.microsoft.com/en-us/power-bi/"
         
         - title: "Machine Learning"
           description: "Comprendre les principaux algorithmes, comment les entraîner et, surtout, comment évaluer leur performance de manière critique."
           resources:
             - text: "Machine Learning Specialization par Andrew Ng (Coursera)"
-              url: "https://www.coursera.org/specializations/machine-learning-introduction"
+              url: "https://www.coursera.org/specializations/machine-learning"
 
 projects:
   title: "Projets pratiques"
@@ -206,7 +206,7 @@ projects:
         - text: "Power BI Learning Path"
           url: "https://docs.microsoft.com/en-us/learn/powerplatform/power-bi"
         - text: "Data Visualization Principles"
-          url: "https://www.storytellingwithdata.com/fundamentals"
+          url: "https://www.storytellingwithdata.com/books"
 
 ecosystem:
   title: "Écosystème Data"

@@ -261,7 +261,7 @@ projects:
         - text: "Solidity by Example"
           url: "https://solidity-by-example.org/"
         - text: "Tutoriel Hardhat"
-          url: "https://hardhat.org/tutorial"
+          url: "https://hardhat.org/getting-started"
         - text: "Sepolia Faucet"
           url: "https://sepoliafaucet.com/"
 
@@ -343,7 +343,7 @@ ecosystem:
     - title: "Microsoft Azure for Financial Services"
       icon: "fab fa-microsoft"
       description: "Solutions cloud pour institutions financières"
-      url: "https://azure.microsoft.com/en-us/solutions/financial-services/"
+      url: "https://learn.microsoft.com/en-us/industry/financial-services/"
     
     - title: "Google Cloud Financial Services"
       icon: "fab fa-google"
@@ -378,7 +378,6 @@ ecosystem:
       items:
         - name: "Hack the Bank"
           description: "Hackathon organisé par les banques"
-          url: "https://www.hackthebank.fr/"
         - name: "Fintech Innovation Challenge"
           description: "Compétition d'innovation fintech"
           url: "https://www.fintechinnovationchallenge.com/"
@@ -387,7 +386,7 @@ ecosystem:
           url: "https://www.blockchainhackathon.com/"
         - name: "Open Banking Challenge"
           description: "Défis autour de l'Open Banking"
-          url: "https://www.openbankingchallenge.com/"
+          url: "https://www.openbanking.org.uk/"
     
     networks:
       title: "Réseaux et événements"
@@ -449,13 +448,13 @@ resources:
           url: "https://www.coursera.org/specializations/wharton-fintech"
         - title: "DeFi and the Future of Finance"
           provider: "Coursera - Duke University"
-          url: "https://www.coursera.org/learn/defi-future-finance"
+          url: "https://www.coursera.org/courses?query=decentralized%20finance"
         - title: "Oxford Fintech Programme"
           provider: "Saïd Business School"
           url: "https://www.sbs.ox.ac.uk/programmes/oxford-fintech-programme"
         - title: "Blockchain and Cryptocurrency"
           provider: "edX - Berkeley"
-          url: "https://www.edx.org/course/blockchain-fundamentals"
+          url: "https://www.edx.org/learn/blockchain"
     
     youtube:
       title: "Chaînes YouTube éducatives"
@@ -471,7 +470,7 @@ resources:
           url: "https://www.youtube.com/c/FintechInsider"
         - title: "Banking on Air"
           description: "Podcast sur l'innovation bancaire"
-          url: "https://www.youtube.com/c/BankingonAir"
+          url: "https://www.youtube.com/c/BankingTechnology"
 
   blogs_newsletters:
     blogs:
@@ -482,7 +481,7 @@ resources:
           url: "https://www.finextra.com/"
         - title: "The Block"
           description: "Actualités crypto et DeFi"
-          url: "https://www.theblockcrypto.com/"
+          url: "https://www.theblock.co/"
         - title: "CoinDesk"
           description: "Média de référence sur les cryptomonnaies"
           url: "https://www.coindesk.com/"
@@ -495,16 +494,16 @@ resources:
       items:
         - title: "Fintech Weekly"
           description: "Newsletter hebdomadaire sur la fintech"
-          url: "https://www.fintechweekly.com/"
+          url: "https://fintechweekly.com/"
         - title: "The Block Newsletter"
           description: "Newsletter sur les cryptomonnaies"
-          url: "https://www.theblockcrypto.com/newsletter"
+          url: "https://www.theblock.co/newsletters"
         - title: "CoinDesk Newsletter"
           description: "Actualités crypto quotidiennes"
           url: "https://www.coindesk.com/newsletter"
         - title: "Finextra Newsletter"
           description: "Actualités fintech"
-          url: "https://www.finextra.com/newsletter"
+          url: "https://www.finextra.com/"
 
   datasets:
     title: "Outils et plateformes de pratique"

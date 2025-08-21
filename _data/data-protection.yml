@@ -100,7 +100,7 @@ roadmap:
             - text: "Le texte intégral du RGPD (CNIL)"
               url: "https://www.cnil.fr/fr/reglement-europeen-protection-donnees"
             - text: "Les principes clés de la protection des données (CNIL)"
-              url: "https://www.cnil.fr/fr/les-6-principes-cles-du-rgpd"
+              url: "https://www.cnil.fr/fr/rgpd-de-quoi-parle-t-on"
         
         - title: "Principes de la Cybersécurité"
           description: "Comprendre les concepts de base de la sécurité des systèmes d'information (Confidentialité, Intégrité, Disponibilité)."
@@ -147,9 +147,9 @@ projects:
         - text: "Kit d'audit RGPD - CNIL"
           url: "https://www.cnil.fr/fr/rgpd-par-ou-commencer"
         - text: "Guide pratique RGPD"
-          url: "https://www.cnil.fr/sites/default/files/atoms/files/guide_rgpd_tpe_pme.pdf"
+          url: "https://www.cnil.fr/fr/comprendre-le-rgpd"
         - text: "Modèles de politique de confidentialité"
-          url: "https://www.cnil.fr/fr/modeles-mentions-information-et-formulaires"
+          url: "https://www.cnil.fr/fr/rgpd-par-ou-commencer"
     
     - title: "Projet 2: Mener une analyse de risques sur un cas simple"
       difficulty: "Intermédiaire"
@@ -166,7 +166,7 @@ projects:
         - text: "Guide EBIOS Risk Manager - ANSSI"
           url: "https://www.ssi.gouv.fr/guide/ebios-risk-manager-the-method/"
         - text: "Matrice de risques template"
-          url: "https://www.lucidchart.com/pages/templates/risk-assessment-matrix"
+          url: "https://www.lucidchart.com/pages/templates/risk-matrix"
         - text: "Cartographie des risques - Méthode"
           url: "https://www.cnil.fr/fr/gerer-les-risques"
     
@@ -187,7 +187,7 @@ projects:
         - text: "Guide des bonnes pratiques - ANSSI"
           url: "https://www.ssi.gouv.fr/guide/guide-dhygiene-informatique/"
         - text: "Templates charte utilisateur"
-          url: "https://www.cnil.fr/fr/securite-des-donnees-personnelles"
+          url: "https://www.cnil.fr/fr/guide-de-la-securite-des-donnees-personnelles"
 
 ecosystem:
   title: "Écosystème de la Protection des Données"
@@ -226,7 +226,7 @@ ecosystem:
           url: "https://www.onetrust.com/"
         - name: "DataGueule"
           description: "Solution française de conformité RGPD"
-          url: "https://www.datagueule.com/"
+          url: "https://datagueule.tv/"
         - name: "Dastra"
           description: "Plateforme de gestion de la conformité RGPD"
           url: "https://www.dastra.eu/"
@@ -301,10 +301,10 @@ resources:
       items:
         - title: "Privacy Engineering and Data Protection"
           provider: "edX - University of Edinburgh"
-          url: "https://www.edx.org/course/privacy-engineering-and-data-protection"
+          url: "https://www.edx.org/learn/data-privacy"
         - title: "GDPR Data Protection Certificate"
           provider: "Coursera - University of Groningen"
-          url: "https://www.coursera.org/learn/gdpr-data-protection-privacy"
+          url: "https://www.coursera.org/courses?query=privacy%20fundamentals"
         - title: "Cybersecurity Compliance Framework & System Administration"
           provider: "Coursera - IBM"
           url: "https://www.coursera.org/learn/cybersecurity-compliance-framework-system-administration"
@@ -317,13 +317,13 @@ resources:
       items:
         - title: "CNIL"
           description: "Chaîne officielle de la Commission Nationale Informatique et Libertés"
-          url: "https://www.youtube.com/c/CNILfrance"
+          url: "https://www.youtube.com/c/CNIL"
         - title: "Privacy International"
           description: "Organisation dédiée à la protection de la vie privée dans le monde"
           url: "https://www.youtube.com/c/PrivacyInternational"
         - title: "IAPP - International Association of Privacy Professionals"
           description: "Association mondiale des professionnels de la protection des données"
-          url: "https://www.youtube.com/c/privacyassociation"
+          url: "https://www.youtube.com/c/IAPP"
         - title: "ENISA - European Union Agency for Cybersecurity"
           description: "Agence européenne chargée de la sécurité des réseaux et de l'information"
           url: "https://www.youtube.com/c/ENISAEurope"
@@ -334,7 +334,7 @@ resources:
       items:
         - title: "Privacy Tracker"
           description: "Blog technique sur les actualités RGPD et protection des données"
-          url: "https://www.privacytracker.be/"
+          url: "https://www.privacytracker.eu/"
         - title: "IAPP Privacy Advisor"
           description: "Blog de référence sur la protection des données et la vie privée"
           url: "https://iapp.org/news/"
@@ -353,13 +353,13 @@ resources:
           url: "https://iapp.org/news/"
         - title: "Privacy Tracker Newsletter"
           description: "Newsletter sur l'actualité RGPD en Europe"
-          url: "https://www.privacytracker.be/"
+          url: "https://www.privacytracker.eu/"
         - title: "OneTrust Privacy Weekly"
           description: "Newsletter sur les tendances privacy et RGPD"
           url: "https://www.onetrust.com/resources/"
         - title: "CNIL Newsletter"
           description: "Newsletter officielle de la CNIL France"
-          url: "https://www.cnil.fr/fr/sabonner-aux-lettres-dinformation-de-la-cnil"
+          url: "https://www.cnil.fr/fr/newsletter"
 
 careers: true
 career_paths:

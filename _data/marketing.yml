@@ -182,7 +182,7 @@ projects:
         - text: "Guide SEO pour débutants - Moz"
           url: "https://moz.com/beginners-guide-to-seo"
         - text: "Canva - Créer des visuels de blog"
-          url: "https://www.canva.com/create/blog-graphics/"
+          url: "https://www.canva.com/templates?q=blog+graphics"
     
     - title: "Projet 2: Gérer un budget publicitaire de 50€ sur Meta"
       difficulty: "Débutant"
@@ -207,7 +207,7 @@ projects:
         - text: "Guide Facebook Ads - Meta Business"
           url: "https://www.facebook.com/business/help/200000840044554"
         - text: "Créer sa première campagne Facebook"
-          url: "https://www.facebook.com/business/learn/facebook-create-ad-basics"
+          url: "https://www.facebook.com/business/learn/"
         - text: "Analytics Academy - Google"
           url: "https://analytics.google.com/analytics/academy/"
     
@@ -232,11 +232,11 @@ projects:
         - "Templates de messages"
       resources:
         - text: "Guide complet du marketing d'influence"
-          url: "https://blog.hubspot.com/marketing/influencer-marketing-guide"
+          url: "https://blog.hubspot.com/marketing/influencer-marketing-power"
         - text: "Template outreach influenceur"
           url: "https://grin.co/influencer-outreach-email-templates/"
         - text: "Recherche d'influenceurs sur Instagram"
-          url: "https://blog.hootsuite.com/find-instagram-influencers/"
+          url: "https://blog.hootsuite.com/how-to-find-instagram-influencers/"
 
 ecosystem:
   title: "Écosystème Marketing & Influence"
@@ -316,7 +316,7 @@ ecosystem:
           url: "https://www.capcut.com/"
         - name: "Adobe Creative Suite"
           description: "Suite professionnelle complète de création"
-          url: "https://www.adobe.com/creativecloud.html"
+          url: "https://www.adobe.com/creativecloud"
 
 resources:
   title: "Ressources d'apprentissage"
@@ -391,7 +391,7 @@ resources:
       items:
         - title: "Neil Patel"
           description: "Expert en marketing digital et SEO"
-          url: "https://www.youtube.com/c/neipatel"
+          url: "https://www.youtube.com/@neilpatel"
         - title: "Gary Vaynerchuk"
           description: "Entrepreneur et expert en marketing d'influence"
           url: "https://www.youtube.com/c/garyvee"

@@ -174,7 +174,7 @@ projects:
         - text: "📋 Sujet complet (PDF)"
           url: "/assets/subjects/bigdata/tardis_suite/G-AIA-210_tardis.pdf"
         - text: "🎯 Tutoriel complémentaire : Machine Learning Pipeline with Scikit-learn"
-          url: "https://scikit-learn.org/stable/tutorial/statistical_inference/putting_together.html"
+          url: "https://scikit-learn.org/stable/user_guide.html"
         - text: "Dataset projet"
           url: "/assets/subjects/bigdata/tardis_suite/dataset.csv"
         - text: "Dashboard Creation : Streamlit Tutorial"
@@ -204,7 +204,7 @@ projects:
         - text: "Step-by-step : Data Visualization with Seaborn"
           url: "https://seaborn.pydata.org/tutorial.html"
         - text: "Jupyter Setup : Getting Started Guide"
-          url: "https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook_Basics.html"
+          url: "https://jupyter-notebook.readthedocs.io/en/stable/notebook.html"
         - text: "Real Datasets : Kaggle Learn Datasets"
           url: "https://www.kaggle.com/learn/data-cleaning"
       datasets:
@@ -286,12 +286,12 @@ ecosystem:
     - title: "AWS Big Data Services"
       icon: "fab fa-aws"
       description: "Amazon propose une suite complète de services Big Data : EMR pour Spark/Hadoop, Glue pour ETL, Athena pour requêtes SQL sur S3, et Kinesis pour le streaming en temps réel."
-      url: "https://aws.amazon.com/big-data/"
+      url: "https://aws.amazon.com/big-data/datalakes-and-analytics/"
     
     - title: "Azure Data Services"
       icon: "fab fa-microsoft"
       description: "Microsoft offre Azure Synapse Analytics pour l'analytics unifié, Data Factory pour l'intégration, et HDInsight pour les clusters Hadoop/Spark managés."
-      url: "https://azure.microsoft.com/en-us/solutions/big-data/"
+      url: "https://azure.microsoft.com/en-us/solutions/data-analytics-ai"
     
     - title: "Google Cloud Data Platform"
       icon: "fab fa-google"
@@ -330,7 +330,7 @@ ecosystem:
           url: "https://www.drivendata.org/"
         - name: "Big Data Hackathons"
           description: "Événements de développement intensif sur données massives"
-          url: "https://www.hackerearth.com/challenges/hackathon/"
+          url: "https://www.hackerearth.com/challenges/"
     
     networks:
       title: "Communautés à rejoindre"
@@ -435,7 +435,7 @@ resources:
           url: "https://www.coursera.org/specializations/gcp-data-machine-learning"
         - title: "Apache Spark with Python"
           provider: "Databricks Academy"
-          url: "https://www.databricks.com/learn/training/apache-spark-programming"
+          url: "https://www.databricks.com/learn"
         - title: "Real-Time Analytics with Apache Kafka"
           provider: "Confluent"
           url: "https://developer.confluent.io/learn-kafka/apache-kafka/events/"
@@ -454,7 +454,7 @@ resources:
           url: "https://www.youtube.com/c/Databricks"
         - title: "Confluent"
           description: "Contenu éducatif sur Kafka et le streaming"
-          url: "https://www.youtube.com/c/ConfluentInc"
+          url: "https://www.youtube.com/c/Confluent"
 
   blogs_newsletters:
     blogs:
@@ -465,10 +465,10 @@ resources:
           url: "https://medium.com/airbnb-engineering/data/home"
         - title: "Netflix Data Engineering"
           description: "Articles techniques sur l'architecture data de Netflix"
-          url: "https://netflixtechblog.com/tagged/data-engineering"
+          url: "https://netflixtechblog.com/"
         - title: "Uber Engineering"
           description: "Blog technique d'Uber sur le Big Data"
-          url: "https://eng.uber.com/tag/data/"
+          url: "https://www.uber.com/blog/engineering/"
         - title: "LinkedIn Engineering"
           description: "Articles sur l'infrastructure data de LinkedIn"
           url: "https://engineering.linkedin.com/blog/topic/data"
@@ -484,10 +484,10 @@ resources:
           url: "https://www.dataengineeringpodcast.com/"
         - title: "DataTalks.Club Newsletter"
           description: "Newsletter de la communauté DataTalks"
-          url: "https://datatalks.club/newsletter"
+          url: "https://datatalks.club/"
         - title: "Apache Kafka Blog"
           description: "Blog officiel d'Apache Kafka"
-          url: "https://kafka.apache.org/blog/"
+          url: "https://kafka.apache.org/documentation/"
 
   datasets:
     title: "Datasets et environnements de test"
@@ -521,7 +521,7 @@ resources:
         url: "https://kafka-summit.org/"
       - title: "Strata Data Conference"
         description: "Conférence majeure sur le Big Data et l'IA"
-        url: "https://www.oreilly.com/conferences/strata.html"
+        url: "https://www.oreilly.com/conferences/"
       - title: "QCon"
         description: "Conférence sur l'architecture logicielle et le Big Data"
         url: "https://qconferences.com/"
