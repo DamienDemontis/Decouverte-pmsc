@@ -233,7 +233,7 @@ projects:
       duration: "6-8 heures"
       objective: "Créer une station météo qui collecte des données environnementales et les envoie à une plateforme cloud"
       description: |
-        <p>Dans ce projet, tu vas construire une station météo connectée qui mesure température, humidité et pression atmosphérique. Les données seront transmises à une plateforme IoT cloud pour visualisation et analyse en temps réel.</p>
+        <p>Ce projet aboutit à la construction d'une station météo connectée qui mesure température, humidité et pression atmosphérique. Les données seront transmises à une plateforme IoT cloud pour visualisation et analyse en temps réel.</p>
         <p>Le projet se décompose en étapes progressives :</p>
         <ol>
           <li><strong>Configuration du hardware</strong> - Assembler le microcontrôleur ESP32/ESP8266 avec les capteurs (DHT11/22, BMP280)</li>
@@ -248,19 +248,21 @@ projects:
         - "Protocole MQTT et Wi-Fi"
         - "Plateforme cloud IoT"
       resources:
-        - text: "Guide ESP32 - Documentation officielle"
-          url: "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/"
-        - text: "Arduino IDE pour ESP32"
-          url: "https://randomnerdtutorials.com/getting-started-with-esp32/"
-        - text: "MQTT Tutorial - ESP32"
-          url: "https://randomnerdtutorials.com/esp32-mqtt-publish-subscribe-arduino-ide/"
+        - text: "🎯 Tutoriel principal : Complete ESP32 Weather Station"
+          url: "https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-web-server-arduino-ide/"
+        - text: "Step-by-step : ESP32 + DHT22 + MQTT"
+          url: "https://randomnerdtutorials.com/esp32-mqtt-publish-dht22-readings-arduino-ide/"
+        - text: "Cloud Platform : ThingsBoard Setup"
+          url: "https://thingsboard.io/docs/getting-started-guides/helloworld-pe/"
+        - text: "Alternative : Ubidots IoT Platform"
+          url: "https://help.ubidots.com/en/articles/513304-connect-an-esp32-to-ubidots-using-mqtt"
     
     - title: "Projet 2: Système de contrôle domotique"
       difficulty: "Intermédiaire"
       duration: "12-15 heures"
       objective: "Développer un système domotique pour contrôler à distance l'éclairage, les appareils et monitorer l'environnement"
       description: |
-        <p>Ce projet te permet de construire un système domotique complet utilisant plusieurs nœuds IoT qui communiquent entre eux et avec un hub central. Tu pourras contrôler des appareils électriques, surveiller la température et créer des automatisations.</p>
+        <p>Ce projet aboutit à la construction d'un système domotique complet utilisant plusieurs nœuds IoT qui communiquent entre eux et avec un hub central. L'objectif est de contrôler des appareils électriques, surveiller la température et créer des automatisations.</p>
         <p>Le projet comporte plusieurs composants :</p>
         <ol>
           <li><strong>Hub central</strong> - Raspberry Pi exécutant Home Assistant comme système de contrôle</li>
@@ -275,12 +277,14 @@ projects:
         - "Modules relais et capteurs variés"
         - "Communication MQTT"
       resources:
-        - text: "Home Assistant - Guide d'installation"
-          url: "https://www.home-assistant.io/installation/"
-        - text: "ESP32 avec Home Assistant"
-          url: "https://esphome.io/guides/getting_started_hassio.html"
-        - text: "MQTT Integration Guide"
-          url: "https://www.home-assistant.io/integrations/mqtt/"
+        - text: "🎯 Tutoriel principal : Complete Home Automation with ESP32"
+          url: "https://randomnerdtutorials.com/esp32-web-server-arduino-ide/"
+        - text: "Step-by-step : Home Assistant Setup"
+          url: "https://www.home-assistant.io/getting-started/"
+        - text: "ESP32 Control : Relays and Sensors"
+          url: "https://randomnerdtutorials.com/esp32-relay-module-ac-appliances/"
+        - text: "Mobile App : Home Assistant Companion"
+          url: "https://companion.home-assistant.io/"
     
     - title: "Projet 3: Système de surveillance environnementale LoRaWAN"
       difficulty: "Avancé"
@@ -302,12 +306,14 @@ projects:
         - "The Things Network"
         - "Optimisation énergétique avancée"
       resources:
-        - text: "The Things Network - Documentation"
-          url: "https://www.thethingsnetwork.org/docs/"
-        - text: "LoRaWAN Academy"
-          url: "https://lora-developers.semtech.com/resources/tools/lora-basics/"
-        - text: "LoRa Development Tutorial"
+        - text: "🎯 Tutoriel principal : Complete LoRaWAN Node Tutorial"
+          url: "https://www.thethingsnetwork.org/docs/devices/arduino/"
+        - text: "Step-by-step : Gateway Setup Guide"
+          url: "https://www.thethingsnetwork.org/docs/gateways/"
+        - text: "Hardware Guide : ESP32 + LoRa RFM95"
           url: "https://randomnerdtutorials.com/esp32-lora-rfm95-transceiver-arduino-ide/"
+        - text: "Advanced : Power Optimization Techniques"
+          url: "https://lora-developers.semtech.com/resources/tools/lora-basics/"
 
 ecosystem:
   title: "Écosystème IoT"

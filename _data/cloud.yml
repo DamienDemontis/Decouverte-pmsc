@@ -213,17 +213,21 @@ projects:
       duration: "6-8 heures"
       objective: "Déployer une application web sur le cloud avec mise à l'échelle automatique"
       description: |
-        <p>Ce projet te guide dans la création d'une infrastructure web complète sur AWS ou Azure, incluant load balancing, auto-scaling et monitoring.</p>
-        <p>Tu apprendras à déployer une application simple, la rendre hautement disponible et mettre en place un système de surveillance.</p>
+        <p>Ce projet aboutit à la mise en place d'une infrastructure web complète sur AWS ou Azure, incluant load balancing, auto-scaling et monitoring.</p>
+        <p>À travers des tutoriels externes spécialisés, tu apprendras à déployer une application simple, la rendre hautement disponible et mettre en place un système de surveillance robuste.</p>
       technologies:
         - "AWS EC2, ALB, Auto Scaling Groups"
         - "Azure VMs, Load Balancer, Scale Sets"
         - "CloudWatch ou Azure Monitor"
         - "Infrastructure as Code (Terraform)"
       resources:
-        - text: "AWS Auto Scaling Guide"
-          url: "https://docs.aws.amazon.com/autoscaling/"
-        - text: "Terraform AWS Provider"
+        - text: "🎯 Tutoriel principal : Deploy a Web App with Auto Scaling on AWS"
+          url: "https://aws.amazon.com/getting-started/hands-on/launch-a-web-app/"
+        - text: "Alternative Azure : Create scalable web app"
+          url: "https://learn.microsoft.com/en-us/azure/app-service/tutorial-multi-container-app"
+        - text: "Load Balancer Setup : AWS Application Load Balancer"
+          url: "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancer-getting-started.html"
+        - text: "Terraform pour l'infrastructure (référence)"
           url: "https://registry.terraform.io/providers/hashicorp/aws/"
     
     - title: "Projet 2: Pipeline CI/CD Containerisé"
@@ -231,7 +235,7 @@ projects:
       duration: "10-12 heures"
       objective: "Créer un pipeline complet de build, test et déploiement pour une application conteneurisée"
       description: |
-        <p>Ce projet avancé te permet de maîtriser les pratiques DevOps modernes en créant un pipeline automatisé qui :</p>
+        <p>Ce projet avancé aboutit à la maîtrise des pratiques DevOps modernes en créant un pipeline automatisé qui :</p>
         <ol>
           <li><strong>Build automatique</strong> - Construction d'images Docker à partir du code source</li>
           <li><strong>Tests automatisés</strong> - Exécution de tests unitaires et d'intégration</li>
@@ -244,10 +248,14 @@ projects:
         - "GitHub Actions ou GitLab CI"
         - "Helm pour le packaging Kubernetes"
       resources:
-        - text: "Kubernetes CI/CD with GitLab"
-          url: "https://docs.gitlab.com/ee/user/clusters/agent/"
-        - text: "AWS EKS Workshop"
+        - text: "🎯 Tutoriel principal : Complete CI/CD Pipeline with Docker and Kubernetes"
+          url: "https://kubernetes.io/docs/tutorials/kubernetes-basics/"
+        - text: "GitHub Actions : Build and Deploy to Kubernetes"
+          url: "https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-azure/deploying-docker-to-azure-container-instances"
+        - text: "AWS EKS Workshop (approfondi)"
           url: "https://www.eksworkshop.com/"
+        - text: "Alternative GitLab CI/CD"
+          url: "https://docs.gitlab.com/ee/user/clusters/agent/"
     
     - title: "Projet 3: Architecture Microservices"
       difficulty: "Avancé"
@@ -268,10 +276,14 @@ projects:
         - "Bases de données managées (RDS, CosmosDB)"
         - "Observabilité (Jaeger, Prometheus, Grafana)"
       resources:
-        - text: "Istio Getting Started"
+        - text: "🎯 Tutoriel principal : Build Microservices with Istio"
+          url: "https://istio.io/latest/docs/examples/bookinfo/"
+        - text: "Step-by-step : Service Mesh with Istio"
           url: "https://istio.io/latest/docs/setup/getting-started/"
-        - text: "Microservices Patterns"
+        - text: "Microservices Patterns (théorie)"
           url: "https://microservices.io/patterns/"
+        - text: "Observability : Jaeger Tracing Tutorial"
+          url: "https://www.jaegertracing.io/docs/1.6/getting-started/"
 
 ecosystem:
   title: "Écosystème Cloud"

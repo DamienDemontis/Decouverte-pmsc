@@ -998,6 +998,8 @@ a:hover {
   color: var(--main);
   /* Fixed spacing between title and content */
   margin-bottom: 1rem !important;
+  /* Prevent title from growing */
+  flex-shrink: 0;
 }
 
 .feature-card > p {
@@ -1006,10 +1008,19 @@ a:hover {
   flex-grow: 1;
 }
 
+.feature-card > ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  /* Allow ul to take up available space but start immediately after title */
+  flex-grow: 1;
+  /* Ensure ul starts right after title with minimal margin */
+  margin-top: 0 !important;
+}
+
 .feature-card > *:last-child {
   margin-bottom: 0;
-  /* Push last element to bottom in flex container */
-  margin-top: auto;
+  /* Only push to bottom if it's not the main content */
+  margin-top: 0;
   /* Prevent flex shrink on last element */
   flex-shrink: 0;
 }

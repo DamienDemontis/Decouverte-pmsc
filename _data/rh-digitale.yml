@@ -301,6 +301,104 @@ resources:
           authors: "USA (en anglais)"
           description: "Un des analystes les plus influents au monde sur le marché de la HR Tech et le futur du travail."
           url: "https://joshbersin.com/"
+    
+    fundamentals:
+      title: "Livres incontournables"
+      items:
+        - title: "La Fonction RH à l'ère du numérique"
+          authors: "François Silva & Jean-Marie Peretti"
+          description: "Comment les RH se transforment grâce au digital : enjeux, défis et opportunités."
+          url: "https://www.amazon.fr/Fonction-RH-lère-numérique-transformation/dp/2759033651"
+        - title: "People Analytics"
+          authors: "Ben Waber"
+          description: "Guide pratique pour utiliser les données dans la gestion des ressources humaines."
+          url: "https://www.amazon.fr/People-Analytics-Science-Building-Organizations/dp/0133158314"
+        - title: "The Future of Work"
+          authors: "Jacob Morgan"
+          description: "Comment l'évolution technologique transforme l'organisation du travail et la gestion des équipes."
+          url: "https://www.amazon.fr/Future-Work-Attract-Employees-Transform/dp/1118877241"
+    
+    specialized:
+      title: "Spécialisations avancées"
+      items:
+        - title: "HR Technology Systems"
+          authors: "David Millwater"
+          description: "Guide pratique pour choisir et implémenter des solutions HR Tech."
+          url: "https://www.amazon.fr/Technology-Systems-Practical-Choosing-Implementing/dp/1398605948"
+        - title: "Digital HR Strategy"
+          authors: "Dave Ulrich & Wayne Brockbank"
+          description: "Comment développer une stratégie RH centrée sur le digital et l'expérience employé."
+          url: "https://www.amazon.fr/Digital-Strategy-Connecting-People-Performance/dp/1260128792"
+        - title: "The Algorithmic Leader"
+          authors: "Mike Walsh"
+          description: "Comment les leaders RH peuvent utiliser l'IA pour prendre de meilleures décisions."
+          url: "https://www.amazon.fr/Algorithmic-Leader-Smarter-Decisions-Better/dp/1610397673"
+
+  online_courses:
+    moocs:
+      title: "MOOCs de référence"
+      items:
+        - title: "Digital Transformation in Human Resources"
+          provider: "Coursera - ESSEC Business School"
+          url: "https://www.coursera.org/learn/digital-transformation-human-resources"
+        - title: "People Analytics"
+          provider: "Coursera - University of Pennsylvania"
+          url: "https://www.coursera.org/learn/wharton-people-analytics"
+        - title: "HR Analytics"
+          provider: "edX - IIM Bangalore"
+          url: "https://www.edx.org/course/hr-analytics"
+        - title: "Strategic Human Resource Management"
+          provider: "FutureLearn - King's College London"
+          url: "https://www.futurelearn.com/courses/strategic-human-resource-management"
+    
+    youtube:
+      title: "Chaînes YouTube éducatives"
+      items:
+        - title: "Josh Bersin"
+          description: "Expert mondial en HR Tech et futur du travail"
+          url: "https://www.youtube.com/c/JoshBersin"
+        - title: "Dave Ulrich"
+          description: "Gourou des RH et professeur à l'Université du Michigan"
+          url: "https://www.youtube.com/results?search_query=dave+ulrich+hr"
+        - title: "myRHline"
+          description: "Média français spécialisé RH avec webinaires et interviews"
+          url: "https://www.youtube.com/c/myRHline"
+        - title: "ANDRH"
+          description: "Association Nationale des DRH - conférences et bonnes pratiques"
+          url: "https://www.youtube.com/c/ANDRH"
+
+  blogs_newsletters:
+    blogs:
+      title: "Blogs techniques"
+      items:
+        - title: "HR Technologist"
+          description: "Blog international sur les technologies RH"
+          url: "https://www.hrtechnologist.com/"
+        - title: "Workology"
+          description: "Blog américain sur les tendances RH et workplace"
+          url: "https://workology.com/"
+        - title: "HR Exchange Network"
+          description: "Réseau et blog pour les professionnels RH"
+          url: "https://www.hrexchangenetwork.com/"
+        - title: "Focus RH"
+          description: "Magazine français spécialisé dans les ressources humaines"
+          url: "https://www.focusrh.com/"
+    
+    newsletters:
+      title: "Newsletters et actualités"
+      items:
+        - title: "Josh Bersin Newsletter"
+          description: "Newsletter hebdomadaire de Josh Bersin sur les tendances RH"
+          url: "https://joshbersin.com/newsletter/"
+        - title: "myRHline Newsletter"
+          description: "Newsletter française sur l'actualité RH et HR Tech"
+          url: "https://www.myrhline.com/newsletter"
+        - title: "HR Morning"
+          description: "Newsletter quotidienne sur l'actualité RH américaine"
+          url: "https://hrmorning.com/"
+        - title: "People Management Newsletter"
+          description: "Newsletter britannique du magazine People Management"
+          url: "https://www.peoplemanagement.co.uk/"
   
   reports:
     title: "Rapports & Études"

@@ -336,7 +336,72 @@ resources:
           authors: "USA (en anglais)"
           description: "Une newsletter quotidienne qui résume les dernières tendances et actualités du monde du marketing."
           url: "https://www.marketingbrew.com/"
-  
+    
+    fundamentals:
+      title: "Livres incontournables"
+      items:
+        - title: "Influence et Manipulation"
+          authors: "Robert Cialdini"
+          description: "Le livre de référence sur la psychologie de la persuasion, essentiel pour comprendre les mécanismes d'influence."
+          url: "https://www.amazon.fr/Influence-manipulation-Robert-B-Cialdini/dp/2012793819"
+        - title: "Permission Marketing"
+          authors: "Seth Godin"
+          description: "Un classique qui explique comment passer d'un marketing intrusif à un marketing basé sur la permission."
+          url: "https://www.amazon.fr/Permission-Marketing-Turning-Strangers-Customers/dp/0684856360"
+        - title: "Contagious: Why Things Catch On"
+          authors: "Jonah Berger"
+          description: "Pourquoi certains contenus deviennent viraux et d'autres non, basé sur des recherches scientifiques."
+          url: "https://www.amazon.fr/Contagious-Things-Catch-Jonah-Berger/dp/1451686579"
+    
+    specialized:
+      title: "Spécialisations avancées"
+      items:
+        - title: "Building a StoryBrand"
+          authors: "Donald Miller"
+          description: "Comment clarifier votre message pour que vos clients vous écoutent."
+          url: "https://www.amazon.fr/Building-StoryBrand-Clarify-Message-Customers/dp/0718033329"
+        - title: "Expert Secrets"
+          authors: "Russell Brunson"
+          description: "Le guide ultime pour faire grandir votre entreprise en ligne."
+          url: "https://www.amazon.fr/Expert-Secrets-Underground-Playbook-Converting/dp/1683504585"
+        - title: "The Content Code"
+          authors: "Mark Schaefer"
+          description: "Comment faire remarquer votre contenu dans un monde surchargé d'informations."
+          url: "https://www.amazon.fr/Content-Code-Six-Essential-Strategies/dp/0996082115"
+
+  online_courses:
+    moocs:
+      title: "MOOCs de référence"
+      items:
+        - title: "Digital Marketing Specialization"
+          provider: "Coursera - University of Illinois"
+          url: "https://www.coursera.org/specializations/digital-marketing"
+        - title: "Social Media Marketing Specialization"
+          provider: "Coursera - Northwestern University"
+          url: "https://www.coursera.org/specializations/social-media-marketing"
+        - title: "Google Digital Marketing Course"
+          provider: "Google Digital Garage"
+          url: "https://learndigital.withgoogle.com/digitalgarage"
+        - title: "Facebook Social Media Marketing"
+          provider: "Coursera - Facebook"
+          url: "https://www.coursera.org/professional-certificates/facebook-social-media-marketing"
+    
+    youtube:
+      title: "Chaînes YouTube éducatives"
+      items:
+        - title: "Neil Patel"
+          description: "Expert en marketing digital et SEO"
+          url: "https://www.youtube.com/c/neipatel"
+        - title: "Gary Vaynerchuk"
+          description: "Entrepreneur et expert en marketing d'influence"
+          url: "https://www.youtube.com/c/garyvee"
+        - title: "Brian Dean (Backlinko)"
+          description: "Stratégies SEO avancées"
+          url: "https://www.youtube.com/c/Backlinko"
+        - title: "Sunny Lenarduzzi"
+          description: "Stratégies de contenu et marketing YouTube"
+          url: "https://www.youtube.com/c/SunnyLenarduzzi"
+
   courses:
     title: "Cours en ligne"
     items:

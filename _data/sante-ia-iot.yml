@@ -302,7 +302,93 @@ resources:
         - title: "The Patient Will See You Now"
           authors: "Eric Topol"
           description: "Sur la révolution numérique qui redonne le pouvoir aux patients."
-          url: ""
+          url: "https://www.amazon.fr/Patient-Will-See-You-Now/dp/0465054749"
+        - title: "The Age of AI in Healthcare"
+          authors: "Andy Slavitt"
+          description: "Comment l'intelligence artificielle révolutionne la prise en charge médicale et l'expérience patient."
+          url: "https://www.amazon.fr/Age-AI-Healthcare-Revolutionizing-Experience/dp/0525561471"
+    
+    specialized:
+      title: "Spécialisations avancées"
+      items:
+        - title: "AI in Healthcare: From Hype to Hope"
+          authors: "Bertalan Meskó"
+          description: "Guide pratique sur l'implémentation réelle de l'IA en santé."
+          url: "https://www.amazon.fr/Healthcare-Artificial-Intelligence-Medicine-Technology/dp/3030214113"
+        - title: "Digital Health: Scaling Healthcare to the World"
+          authors: "Julie Yoo, Trystan Upstill & Josh Stein"
+          description: "Comment la technologie peut démocratiser l'accès aux soins de santé."
+          url: "https://www.amazon.fr/Digital-Health-Scaling-Healthcare-World/dp/0593136942"
+        - title: "Wearable Technology in Medicine"
+          authors: "Mahmoud El-Gohary & James McNames"
+          description: "Applications médicales des dispositifs connectés et capteurs de santé."
+          url: "https://www.amazon.fr/Wearable-Technology-Medicine-Mahmoud-El-Gohary/dp/0128187719"
+
+  online_courses:
+    moocs:
+      title: "MOOCs de référence"
+      items:
+        - title: "AI in Healthcare Specialization"
+          provider: "Coursera - Stanford University"
+          url: "https://www.coursera.org/specializations/ai-healthcare"
+        - title: "Digital Health"
+          provider: "edX - University of Edinburgh"
+          url: "https://www.edx.org/course/digital-health"
+        - title: "Introduction to Digital Health"
+          provider: "FutureLearn - King's College London"
+          url: "https://www.futurelearn.com/courses/introduction-to-digital-health"
+        - title: "IoT and AI in Healthcare"
+          provider: "Coursera - University of California San Diego"
+          url: "https://www.coursera.org/learn/internet-of-things-healthcare"
+    
+    youtube:
+      title: "Chaînes YouTube éducatives"
+      items:
+        - title: "The Medical Futurist"
+          description: "Dr. Bertalan Meskó - Vision du futur de la médecine et de la santé"
+          url: "https://www.youtube.com/c/TheMedicalFuturist"
+        - title: "Healthcare Information and Management Systems Society (HIMSS)"
+          description: "Organisation mondiale pour l'amélioration de la santé par la technologie"
+          url: "https://www.youtube.com/c/HIMSS"
+        - title: "Stanford Medicine 25"
+          description: "Université de Stanford - Innovation en médecine et technologie"
+          url: "https://www.youtube.com/c/StanfordMedicine25"
+        - title: "Digital Health Today"
+          description: "Actualités et tendances de la santé numérique"
+          url: "https://www.youtube.com/c/DigitalHealthToday"
+
+  blogs_newsletters:
+    blogs:
+      title: "Blogs techniques"
+      items:
+        - title: "The Medical Futurist"
+          description: "Blog de référence sur le futur de la médecine et de la santé"
+          url: "https://medicalfuturist.com/"
+        - title: "Digital Health News"
+          description: "Actualités mondiales sur la santé numérique"
+          url: "https://www.digitalhealthnews.eu/"
+        - title: "Healthcare IT News"
+          description: "Actualités sur les technologies de l'information en santé"
+          url: "https://www.healthcareitnews.com/"
+        - title: "mHealth Intelligence"
+          description: "Intelligence sur la santé mobile et les applications médicales"
+          url: "https://mhealthintelligence.com/"
+    
+    newsletters:
+      title: "Newsletters et actualités"
+      items:
+        - title: "Digital Health Newsletter"
+          description: "Newsletter hebdomadaire sur les innovations en santé numérique"
+          url: "https://www.mobihealthnews.com/newsletter"
+        - title: "Rock Health Newsletter"
+          description: "Newsletter sur l'écosystème startup de la santé numérique"
+          url: "https://rockhealth.com/"
+        - title: "Tic Santé Newsletter"
+          description: "Newsletter française sur les systèmes d'information de santé"
+          url: "https://www.ticsante.com/"
+        - title: "HIMSS Newsletter"
+          description: "Newsletter de l'association mondiale des professionnels de la santé numérique"
+          url: "https://www.himss.org/newsletter"
 
 careers: true
 career_paths:

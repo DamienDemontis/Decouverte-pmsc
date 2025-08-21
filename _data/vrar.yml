@@ -146,60 +146,70 @@ projects:
         - "C# pour le scripting"
         - "Conception d'environnements 3D"
       resources:
-        - text: "Unity XR Interaction Toolkit Documentation"
+        - text: "🎯 Tutoriel principal : Create Your First VR App in Unity"
+          url: "https://learn.unity.com/tutorial/creating-your-first-vr-app"
+        - text: "Step-by-step : VR Interaction Setup"
           url: "https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.0/manual/index.html"
-        - text: "Unity Learn - VR Development"
-          url: "https://learn.unity.com/course/oculus-vr"
-        - text: "C# pour Unity - Microsoft Learn"
-          url: "https://docs.microsoft.com/en-us/dotnet/csharp/"
+        - text: "Alternative : Oculus VR Development"
+          url: "https://developer.oculus.com/documentation/unity/unity-gs-overview/"
+        - text: "C# scripting basics pour Unity"
+          url: "https://learn.unity.com/tutorial/beginner-gameplay-scripting"
     
     - title: "Projet 2: AR Product Visualizer"
       difficulty: "Intermédiaire"
       duration: "10-12 heures"
       objective: "Développer une application AR permettant de visualiser et personnaliser des produits en 3D dans l'environnement réel"
       description: |
-        <p>Ce projet te place dans le rôle d'un développeur AR pour une entreprise de mobilier. Ta mission est de créer une application de visualisation de produits qui permet aux utilisateurs de:</p>
+        <p>Ce projet simule le rôle d'un développeur AR pour une entreprise de mobilier. L'objectif est de créer une application de visualisation de produits qui permet aux utilisateurs de:</p>
         <ol>
           <li><strong>Scanner l'environnement</strong> - Détecter les surfaces planes pour le placement d'objets</li>
           <li><strong>Placer des modèles 3D</strong> - Positionner précisément des meubles virtuels dans l'espace réel</li>
           <li><strong>Personnaliser les produits</strong> - Changer les couleurs, matériaux et configurations</li>
           <li><strong>Partager les visualisations</strong> - Capturer des images de la scène augmentée</li>
         </ol>
-        <p>Tu implémenteras ces fonctionnalités avec ARCore (Android) ou ARKit (iOS) via Unity, en suivant les meilleures pratiques d'UX pour l'AR.</p>
+        <p>Ces fonctionnalités seront implémentées avec ARCore (Android) ou ARKit (iOS) via Unity, en s'appuyant sur des tutoriels spécialisés et les meilleures pratiques d'UX pour l'AR.</p>
       technologies:
         - "Unity avec le package AR Foundation"
         - "ARCore (Android) ou ARKit (iOS)"
         - "Détection de surfaces et placement d'objets"
         - "Interface utilisateur adaptée à l'AR"
       resources:
-        - text: "AR Foundation Documentation"
+        - text: "🎯 Tutoriel principal : Build AR App with Plane Detection"
+          url: "https://learn.unity.com/tutorial/introduction-to-ar-foundation"
+        - text: "Step-by-step : AR Foundation Setup"
           url: "https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.2/manual/index.html"
-        - text: "ARCore Fundamentals"
+        - text: "Android : ARCore Quick Start"
           url: "https://developers.google.com/ar/develop/unity/quickstart-android"
+        - text: "iOS : ARKit Setup Guide"
+          url: "https://developer.apple.com/documentation/arkit/creating_your_first_ar_experience"
     
     - title: "Projet 3: Multi-User VR Experience"
       difficulty: "Avancé"
       duration: "15-20 heures"
       objective: "Créer une expérience VR collaborative permettant à plusieurs utilisateurs d'interagir dans le même espace virtuel"
       description: |
-        <p>Dans ce projet avancé, tu vas développer une expérience VR multi-utilisateurs qui permettra à plusieurs personnes d'interagir dans un espace virtuel partagé. Tu implémenteras:</p>
+        <p>Dans ce projet avancé, l'objectif est de développer une expérience VR multi-utilisateurs qui permettra à plusieurs personnes d'interagir dans un espace virtuel partagé. L'implémentation comprendra:</p>
         <ol>
           <li><strong>Networking</strong>: Synchronisation d'état entre utilisateurs via Photon ou Mirror</li>
           <li><strong>Représentation des avatars</strong>: Visualisation des autres utilisateurs avec IK pour les mains et la tête</li>
           <li><strong>Interaction sociale</strong>: Communication vocale et gestuelle entre participants</li>
           <li><strong>Outils collaboratifs</strong>: Manipulation d'objets partagés et whiteboard virtuel</li>
         </ol>
-        <p>Ce projet complexe te permettra de maîtriser les défis spécifiques des expériences VR multi-utilisateurs, essentielles pour les applications professionnelles modernes.</p>
+        <p>Ce projet complexe permet d'appréhender les défis spécifiques des expériences VR multi-utilisateurs, essentielles pour les applications professionnelles modernes.</p>
       technologies:
         - "Unity avec XR Interaction Toolkit et Netcode for GameObjects"
         - "Photon PUN2 ou Mirror Networking"
         - "Communication vocale intégrée"
         - "Inverse Kinematics pour les avatars"
       resources:
-        - text: "Photon PUN2 Documentation"
+        - text: "🎯 Tutoriel principal : Multiplayer VR with Photon"
           url: "https://doc.photonengine.com/pun2/current/getting-started/pun-intro"
-        - text: "Unity Netcode for GameObjects"
-          url: "https://docs-multiplayer.unity3d.com/"
+        - text: "Step-by-step : VR Networking Setup"
+          url: "https://docs-multiplayer.unity3d.com/netcode/current/tutorials/get-started-ngo/"
+        - text: "Avatar System : Full Body IK"
+          url: "https://docs.unity3d.com/Packages/com.unity.animation.rigging@1.2/manual/index.html"
+        - text: "Voice Chat : Photon Voice Integration"
+          url: "https://doc.photonengine.com/voice/current/getting-started/voice-intro"
 
 ecosystem:
   title: "Écosystème VR/AR"

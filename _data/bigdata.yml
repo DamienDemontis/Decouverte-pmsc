@@ -130,29 +130,33 @@ projects:
       duration: "3-4 heures"
       objective: "Explorer, nettoyer et visualiser un jeu de données sur les retards de trains"
       description: |
-        <p>Ce projet guidé te permettra d'acquérir les compétences essentielles en préparation et visualisation de données, fondamentales pour tout projet de data science. Tu apprendras à:</p>
+        <p>Ce projet aboutit à l'acquisition des compétences essentielles en préparation et visualisation de données, fondamentales pour tout projet de data science. L'apprentissage porte sur:</p>
         <ul>
           <li>Charger et explorer un jeu de données à l'aide de pandas</li>
           <li>Identifier et résoudre les problèmes courants (valeurs manquantes, doublons, formats incohérents)</li>
           <li>Générer des visualisations pour comprendre les tendances</li>
           <li>Préparer les données pour l'analyse dans le projet principal</li>
         </ul>
-        <p>Le projet suit une approche étape par étape, avec des points de contrôle pour valider ta compréhension.</p>
+        <p>Le projet utilise une approche étape par étape, avec des points de contrôle pour valider la compréhension, en s'appuyant sur des ressources externes et des tutoriels spécialisés.</p>
       technologies:
         - "Python avec les bibliothèques pandas, matplotlib et seaborn"
         - "Jupyter Notebook pour l'analyse interactive"
       resources:
-        - text: "Sujet complet (PDF)"
+        - text: "📋 Sujet complet (PDF)"
           url: "/assets/subjects/bigdata/tardis_bootstrap/G-AIA-210_tardis_bootstrap.pdf"
-        - text: "Dataset"
+        - text: "🎯 Tutoriel complémentaire : Complete Data Cleaning with Pandas"
+          url: "https://pandas.pydata.org/docs/getting_started/intro_tutorials/07_reshape_table_layout.html"
+        - text: "Dataset projet"
           url: "/assets/subjects/bigdata/tardis_bootstrap/dataset.csv"
+        - text: "Visualizations : Seaborn Tutorial"
+          url: "https://seaborn.pydata.org/tutorial.html"
 
     - title: "Projet 2: TARDIS - Prédire l'imprévisible"
       difficulty: "Intermédiaire"
       duration: "10-15 heures"
       objective: "Analyser et prédire les retards de trains à l'aide de techniques de machine learning"
       description: |
-        <p>Ce projet te place dans le rôle d'un analyste de données pour la SNCF. Ta mission est d'analyser les données historiques sur les retards des trains, de découvrir des modèles cachés et de développer un modèle prédictif qui peut prévoir les retards avant qu'ils ne se produisent.</p>
+        <p>Ce projet simule le rôle d'un analyste de données pour la SNCF. L'objectif est d'analyser les données historiques sur les retards des trains, de découvrir des modèles cachés et de développer un modèle prédictif qui peut prévoir les retards avant qu'ils ne se produisent.</p>
         <p>Le projet se décompose en 4 étapes principales :</p>
         <ol>
           <li><strong>Nettoyage et prétraitement des données</strong> - Gestion des valeurs manquantes, des incohérences et préparation du dataset pour l'analyse.</li>
@@ -167,10 +171,14 @@ projects:
         - "Création d'interfaces utilisateur avec Streamlit"
         - "Développement d'un pipeline complet de data science"
       resources:
-        - text: "Sujet complet (PDF)"
+        - text: "📋 Sujet complet (PDF)"
           url: "/assets/subjects/bigdata/tardis_suite/G-AIA-210_tardis.pdf"
-        - text: "Dataset"
+        - text: "🎯 Tutoriel complémentaire : Machine Learning Pipeline with Scikit-learn"
+          url: "https://scikit-learn.org/stable/tutorial/statistical_inference/putting_together.html"
+        - text: "Dataset projet"
           url: "/assets/subjects/bigdata/tardis_suite/dataset.csv"
+        - text: "Dashboard Creation : Streamlit Tutorial"
+          url: "https://docs.streamlit.io/library/get-started/create-an-app"
 
     - title: "Projet 3: Analyse de données massives"
       difficulty: "Débutant"
@@ -191,12 +199,14 @@ projects:
         - "Python avec pandas, matplotlib, seaborn"
         - "Jupyter Notebook"
       resources:
-        - text: "Pandas Tutorial - Data Analysis"
+        - text: "🎯 Tutoriel principal : Complete Data Analysis with Pandas"
           url: "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html"
-        - text: "Seaborn Gallery - Visualizations"
-          url: "https://seaborn.pydata.org/examples/index.html"
-        - text: "Jupyter Notebook Tutorial"
+        - text: "Step-by-step : Data Visualization with Seaborn"
+          url: "https://seaborn.pydata.org/tutorial.html"
+        - text: "Jupyter Setup : Getting Started Guide"
           url: "https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook_Basics.html"
+        - text: "Real Datasets : Kaggle Learn Datasets"
+          url: "https://www.kaggle.com/learn/data-cleaning"
       datasets:
         - text: "NYC Taxi Trips"
           url: "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page"
