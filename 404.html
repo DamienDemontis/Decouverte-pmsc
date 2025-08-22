@@ -1,25 +1,428 @@
 ---
+layout: default  
+title: Page introuvable - 404
 permalink: /404.html
-layout: page
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
+<div class="error-page">
+  <div class="error-container">
+    
+    <!-- 404 Visual -->
+    <div class="error-visual">
+      <div class="floating-elements">
+        <div class="float-element" style="--delay: 0s; --color: var(--main);">
+          <i class="fas fa-question-circle"></i>
+        </div>
+        <div class="float-element" style="--delay: 1.5s; --color: var(--accent);">
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <div class="float-element" style="--delay: 3s; --color: var(--success);">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="float-element" style="--delay: 4.5s; --color: var(--warning);">
+          <i class="fas fa-compass"></i>
+        </div>
+      </div>
+      
+      <div class="error-number">
+        <span class="number-gradient">404</span>
+      </div>
+    </div>
+    
+    <!-- Error Content -->
+    <div class="error-content">
+      <h1 class="error-title">Oups ! Page introuvable</h1>
+      <p class="error-subtitle">
+        Il semblerait que cette page soit aussi introuvable qu'un bug dans un code parfait...
+      </p>
+      <p class="error-description">
+        La page que vous cherchez a peut-être été déplacée, supprimée, ou n'existe pas encore.
+      </p>
+      
+      <!-- Quick Navigation -->
+      <div class="quick-nav">
+        <h3>Où souhaitez-vous aller ?</h3>
+        <div class="nav-buttons">
+          <a href="/Decouverte-pmsc/" class="nav-btn">
+            <i class="fas fa-home"></i>
+            <span>Accueil</span>
+          </a>
+          
+          <a href="/Decouverte-pmsc/#specialties" class="nav-btn">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Spécialités</span>
+          </a>
+          
+          <a href="/Decouverte-pmsc/#tech-specialties" class="nav-btn">
+            <i class="fas fa-code"></i>
+            <span>Tech</span>
+          </a>
+          
+          <a href="/Decouverte-pmsc/#business-specialties" class="nav-btn">
+            <i class="fas fa-briefcase"></i>
+            <span>Business</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Actions -->
+      <div class="main-actions">
+        <a href="/Decouverte-pmsc/" class="btn-primary-main">
+          <i class="fas fa-arrow-left"></i>
+          <span>Retour à l'accueil</span>
+        </a>
+        <a href="/Decouverte-pmsc/#specialties" class="btn-secondary-main">
+          <i class="fas fa-rocket"></i>
+          <span>Découvrir les spécialités</span>
+        </a>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+<style>
+/* 404 Page - Single Viewport Design */
+.error-page {
+  height: 100vh;
+  background: linear-gradient(135deg, var(--light) 0%, #f1f5f9 100%);
+  overflow: hidden;
+}
+
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+/* Visual Section */
+.error-visual {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.floating-elements {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.float-element {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: var(--color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  animation: float 4s ease-in-out infinite;
+  animation-delay: var(--delay);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.float-element:nth-child(1) { top: 15%; left: 75%; }
+.float-element:nth-child(2) { top: 65%; right: 80%; }
+.float-element:nth-child(3) { bottom: 15%; left: 10%; }
+.float-element:nth-child(4) { top: 10%; left: 15%; }
+
+.error-number {
+  position: relative;
+  z-index: 10;
+}
+
+.number-gradient {
+  font-size: 6rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--main), var(--main-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(67, 97, 238, 0.3);
+  animation: pulse 3s ease-in-out infinite;
+}
+
+/* Content Section */
+.error-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.error-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--main);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.error-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.error-description {
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Quick Navigation */
+.quick-nav {
+  margin-bottom: 2.5rem;
+}
+
+.quick-nav h3 {
+  font-size: 1.3rem;
+  color: var(--main);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.nav-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: white;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 12px;
+  border: 2px solid var(--card-border);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.nav-btn:hover {
+  border-color: var(--main);
+  color: var(--main);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(67, 97, 238, 0.15);
+}
+
+.nav-btn i {
+  font-size: 1.3rem;
+  color: var(--main);
+}
+
+/* Main Actions */
+.main-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: var(--main);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(67, 97, 238, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary-main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-primary-main:hover::before {
+  left: 100%;
+}
+
+.btn-primary-main:hover {
+  background: var(--main-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(67, 97, 238, 0.4);
+}
+
+.btn-secondary-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: white;
+  color: var(--main);
+  text-decoration: none;
+  border-radius: 12px;
+  border: 2px solid var(--main);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(67, 97, 238, 0.1);
+}
+
+.btn-secondary-main:hover {
+  background: var(--main);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(67, 97, 238, 0.3);
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-8px) rotate(3deg); }
+  50% { transform: translateY(-4px) rotate(0deg); }
+  75% { transform: translateY(-12px) rotate(-3deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .error-container {
+    flex-direction: column;
     text-align: center;
+    gap: 2rem;
+    padding: 1.5rem;
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
+  
+  .floating-elements {
+    width: 250px;
+    height: 250px;
   }
+  
+  .number-gradient {
+    font-size: 4.5rem;
+  }
+  
+  .error-title {
+    font-size: 2.2rem;
+  }
+  
+  .error-content {
+    max-width: 100%;
+  }
+  
+  .nav-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .main-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .error-container {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .floating-elements {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .float-element {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .number-gradient {
+    font-size: 3.5rem;
+  }
+  
+  .error-title {
+    font-size: 1.8rem;
+  }
+  
+  .error-subtitle {
+    font-size: 1rem;
+  }
+  
+  .nav-buttons {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .nav-btn {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
+  
+  .main-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn-primary-main, .btn-secondary-main {
+    width: 100%;
+    justify-content: center;
+    padding: 0.875rem 1.5rem;
+  }
+}
+
+/* Hide scrollbar for webkit browsers */
+.error-page::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.error-page {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 </style>
 
-<div class="container">
-  <h1>404</h1>
+<script>
+console.log('Enhanced 404 page loaded successfully!');
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+// Add smooth scroll behavior for anchor links
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+});
+</script>
