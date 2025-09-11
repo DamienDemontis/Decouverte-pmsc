@@ -800,53 +800,10 @@ document.addEventListener('DOMContentLoaded', () => {
       options: []
     },
 
-    listTechSpecialties: {
-      messages: [
-        "<h3>🔧 Spécialités Tech (6)</h3>Les formations techniques les plus demandées :<br/><div class='mini-grid'><div class='mini-card' onclick='handleInlineClick(\"explainCyber\")'><strong>🛡️ Cybersécurité</strong><br/>Protection systèmes</div><div class='mini-card' onclick='handleInlineClick(\"explainCloud\")'><strong>☁️ Cloud Computing</strong><br/>Infrastructures</div></div><div class='mini-grid'><div class='mini-card' onclick='handleInlineClick(\"explainAI\")'><strong>🧠 Intelligence Artificielle</strong><br/>Algorithmes intelligents</div><div class='mini-card' onclick='handleInlineClick(\"explainBigData\")'><strong>📊 Big Data & Analytics</strong><br/>Données massives</div></div><div class='mini-grid'><div class='mini-card' onclick='handleInlineClick(\"explainIoT\")'><strong>📡 Internet of Things</strong><br/>Objets connectés</div><div class='mini-card' onclick='handleInlineClick(\"explainVR\")'><strong>🥽 VR & AR</strong><br/>Réalités immersives</div></div><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>📈 Spécialités Business</button><button class='inline-btn' onclick='handleInlineClick(\"help_q1\")'>🎯 Aide au choix</button></div>"
-      ],
-      options: []
-    },
 
-    listBusinessSpecialties: {
-      messages: [
-        "<h3>📈 Spécialités Business & Management (9)</h3>Les spécialisations alliant tech et business :<br/><div class='mini-grid'><div class='mini-card' onclick='handleInlineClick(\"explainProjectManagement\")'><strong>🎯 Project Management</strong><br/>Leadership & entrepreneuriat</div><div class='mini-card' onclick='handleInlineClick(\"explainFintech\")'><strong>💰 Fintech</strong><br/>Innovation financière</div></div><div class='mini-grid'><div class='mini-card' onclick='handleInlineClick(\"explainMarketing\")'><strong>📱 Marketing Digital</strong><br/>Influence & e-commerce</div><div class='mini-card' onclick='handleInlineClick(\"explainAITransformation\")'><strong>🚀 IA & Transformation</strong><br/>Conduite changement</div></div><div class='mini-grid'><div class='mini-card' onclick='handleInlineClick(\"explainDataProtection\")'><strong>🔒 Data Protection</strong><br/>Conformité RGPD</div><div class='mini-card' onclick='handleInlineClick(\"explainRH\")'><strong>👥 RH Digitale</strong><br/>Expérience collaborateur</div></div>Plus de spécialités business :<br/><div class='mini-grid'><div class='mini-card' onclick='handleInlineClick(\"explainSante\")'><strong>🏥 Santé, IA & IoT</strong><br/>E-santé</div><div class='mini-card' onclick='handleInlineClick(\"explainDataScienceBI\")'><strong>📊 Data Science & BI</strong><br/>Aide à la décision</div></div><div class='mini-grid'><div class='mini-card' onclick='handleInlineClick(\"explainLuxe\")'><strong>💎 Luxe & Retail Tech</strong><br/>Expérience client</div></div><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"listTechSpecialties\")'>🔧 Spécialités Tech</button><button class='inline-btn' onclick='handleInlineClick(\"help_q1\")'>🎯 Aide au choix</button></div>"
-      ],
-      options: []
-    },
 
-    fintech_trends: {
-      messages: [
-        "<h3>📈 Tendances Fintech 2024</h3>",
-        "<div class='trend-item'>₿ <strong>Crypto & DeFi</strong> - Finance décentralisée en plein essor</div>",
-        "<div class='trend-item'>📱 <strong>Super apps</strong> - Tout en une application</div>",
-        "<div class='trend-item'>🤖 <strong>IA en finance</strong> - Trading algorithmique et conseil robo</div>",
-        "<div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainFintech\")'>💰 Retour Fintech</button><button class='inline-btn' onclick='handleInlineClick(\"ai_finance\")'>🤖 IA en Finance</button></div>"
-      ],
-      options: []
-    },
 
-    recommend_ai_multiple: {
-      messages: [
-        "<h3>🎯 Toutes les options IA</h3>",
-        "Plusieurs spécialités pour explorer l'IA :",
-        "<div class='comparison-mini'>🧠 <strong>Intelligence Artificielle</strong> - Technique pure</div>",
-        "<div class='comparison-mini'>🚀 <strong>IA & Transformation</strong> - Business orientation</div>",
-        "<div class='comparison-mini'>📊 <strong>Data Science & BI</strong> - IA appliquée aux données</div>",
-        "<div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainAI\")'>🧠 IA Technique</button><button class='inline-btn' onclick='handleInlineClick(\"explainAITransformation\")'>🚀 IA Business</button><button class='inline-btn' onclick='handleInlineClick(\"explainDataScienceBI\")'>📊 Data Science</button></div>"
-      ],
-      options: []
-    },
 
-    compare_security: {
-      messages: [
-        "<h3>🔒 Sécurité : 2 approches</h3>",
-        "Même objectif, moyens différents :",
-        "<div class='comparison-mini'>🛡️ <strong>Cybersécurité</strong> - Technique, pentesting, SOC</div>",
-        "<div class='comparison-mini'>📋 <strong>Data Protection</strong> - Juridique, RGPD, gouvernance</div>",
-        "<div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainCyber\")'>🛡️ Cybersécurité</button><button class='inline-btn' onclick='handleInlineClick(\"explainDataProtection\")'>📋 Data Protection</button><button class='inline-btn' onclick='handleInlineClick(\"security_hybrid_path\")'>🔀 Approche hybride</button></div>"
-      ],
-      options: []
-    },
 
     // --- NEW PERSONALITY TEST SYSTEM ---
     personality_test_start: {
@@ -866,13 +823,6 @@ document.addEventListener('DOMContentLoaded', () => {
       options: []
     },
 
-    // --- MISSING STATES TO FIX DEAD ENDS ---
-    explainSpecialties: {
-      messages: [
-        "<h3>📋 Toutes les spécialités MSc</h3><p>Découvrez l'ensemble de notre offre de spécialisation divisée en deux grandes familles :</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"listTechSpecialties\")'>🔧 Spécialités Techniques</button><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>📈 Spécialités Business</button><button class='inline-btn' onclick='handleInlineClick(\"categorizeSpecialties\")'>🔄 Différences Tech vs Business</button></div>"
-      ],
-      options: []
-    },
 
     help_q_tech: {
       messages: [
@@ -975,7 +925,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     recommend_ds_bi: {
       messages: [
-        "<h3>🎯 Recommandation : Data Science & BI</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : Data Science & Business Intelligence</strong><br/>Vous voulez transformer les données en décisions !</div><p>Analytics, visualisation, machine learning appliqué, dashboards stratégiques... Vous serez l'expert qui fait parler les données pour éclairer les décisions business.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainDataScienceBI\")'>📊 Découvrir Data Science & BI</button><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialities\")'>📈 Autres spé Business</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
+        "<h3>🎯 Recommandation : Data Science & BI</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : Data Science & Business Intelligence</strong><br/>Vous voulez transformer les données en décisions !</div><p>Analytics, visualisation, machine learning appliqué, dashboards stratégiques... Vous serez l'expert qui fait parler les données pour éclairer les décisions business.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainDataScienceBI\")'>📊 Découvrir Data Science & BI</button><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>📈 Autres spé Business</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
+      ],
+      options: []
+    },
+
+    // --- MISSING RECOMMENDATION STATES ---
+    recommend_project: {
+      messages: [
+        "<h3>🎯 Recommandation : Strategic Project Management</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : Strategic Project Management</strong><br/>Vous voulez devenir un leader et piloter l'innovation !</div><p>Leadership, entrepreneuriat, gestion de projets complexes, agilité... Vous serez capable de diriger des équipes et de mener des projets stratégiques à leur réussite.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainProjectManagement\")'>🎯 Découvrir Project Management</button><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>📈 Autres spé Business</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
+      ],
+      options: []
+    },
+
+    recommend_rh: {
+      messages: [
+        "<h3>🎯 Recommandation : Digitalisation de la fonction RH</h3><div class='recommendation primary'>🥇 <strong>Spécialité recommandée : Digitalisation de la fonction RH</strong><br/>Vous voulez transformer l'expérience collaborateur !</div><p>SIRH, HR Analytics, expérience collaborateur, marque employeur... Vous piloterez la transformation digitale des ressources humaines et améliorerez le bien-être au travail.</p><div class='inline-buttons'><button class='inline-btn' onclick='handleInlineClick(\"explainRH\")'>👥 Découvrir RH Digitale</button><button class='inline-btn' onclick='handleInlineClick(\"listBusinessSpecialties\")'>📈 Autres spé Business</button><button class='inline-btn' onclick='handleInlineClick(\"personality_test_start\")'>🧠 Test de personnalité</button></div>"
       ],
       options: []
     },
