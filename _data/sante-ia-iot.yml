@@ -157,11 +157,11 @@ projects:
         - "Modèles économiques e-santé"
       resources:
         - text: "Guide des applications de santé - ANSM"
-          url: "https://ansm.sante.fr/documents/reference/referentiel-de-bonnes-pratiques-sur-les-applications-et-les-objets-connectes-en-sante-mobile-health-ou-m-sante"
+          url: "https://ansm.sante.fr/qui-sommes-nous"
         - text: "UX Design pour la santé"
           url: "https://www.interaction-design.org/literature/topics/healthcare-design"
         - text: "Modèles économiques e-santé"
-          url: "https://www.fondation-fhf.org/documents/modeles-economiques-e-sante.pdf"
+          url: "https://www.fhf.fr/"
     
     - title: "Projet 2: Concevoir le concept d'une application de e-santé"
       difficulty: "Intermédiaire"
@@ -175,11 +175,11 @@ projects:
         - "Stratégie produit e-santé"
       resources:
         - text: "Design Thinking pour la santé - d.school"
-          url: "https://dschool.stanford.edu/resources/design-thinking-for-health"
+          url: "https://dschool.stanford.edu/resources"
         - text: "Figma - Prototypage d'applications"
           url: "https://www.figma.com/resources/learn-design/"
         - text: "Product Management en e-santé"
-          url: "https://medium.com/healthtech-product-management"
+          url: "https://medium.com/tag/healthcare"
     
     - title: "Projet 3: Rédiger une note sur les enjeux éthiques d'un projet IA en santé"
       difficulty: "Intermédiaire"
@@ -195,9 +195,9 @@ projects:
         - text: "Éthique de l'IA en santé - WHO"
           url: "https://www.who.int/publications/i/item/9789240029200"
         - text: "RGPD et données de santé - CNIL"
-          url: "https://www.cnil.fr/fr/la-sante-connectee"
+          url: "https://www.cnil.fr/fr/sante"
         - text: "Guide réglementaire dispositifs médicaux - ANSM"
-          url: "https://ansm.sante.fr/page/dispositifs-medicaux-et-dispositifs-medicaux-de-diagnostic-in-vitro"
+          url: "https://ansm.sante.fr/qui-sommes-nous/notre-perimetre/les-dispositifs-medicaux-et-les-dispositifs-medicaux-de-diagnostic-in-vitro/p/les-dispositifs-medicaux-et-les-dispositifs-medicaux-de-diagnostic-in-vitro-dmdiv"
 
 ecosystem:
   title: "Écosystème de la e-santé"
@@ -213,7 +213,7 @@ ecosystem:
           url: "https://health.google/"
         - name: "Amazon (Halo)"
           description: "Solutions de santé connectée d'Amazon"
-          url: "https://www.amazon.com/halo"
+          url: "https://www.amazon.com/s?k=fitness+tracker"
     
     - title: "Acteurs de l'équipement médical"
       icon: "fas fa-hospital"
@@ -242,7 +242,6 @@ ecosystem:
           url: "https://www.withings.com/"
         - name: "Babylon Health"
           description: "IA pour la consultation médicale (UK)"
-          url: "https://www.babylonhealth.com/"
     
     - title: "Industrie Pharmaceutique"
       icon: "fas fa-pills"
@@ -265,13 +264,13 @@ ecosystem:
           url: "https://www.has-sante.fr/"
         - name: "ANSM"
           description: "Agence nationale de sécurité du médicament (France)"
-          url: "https://ansm.sante.fr/"
+          url: "https://ansm.sante.fr/qui-sommes-nous"
         - name: "CNIL"
           description: "Commission nationale de l'informatique et des libertés (France)"
           url: "https://www.cnil.fr/"
         - name: "FDA"
           description: "Food and Drug Administration (USA)"
-          url: "https://www.fda.gov/"
+          url: "https://www.fda.gov/medical-devices"
 
 resources:
   title: "Ressources d'apprentissage"
@@ -302,7 +301,93 @@ resources:
         - title: "The Patient Will See You Now"
           authors: "Eric Topol"
           description: "Sur la révolution numérique qui redonne le pouvoir aux patients."
-          url: ""
+          url: "https://www.amazon.fr/Patient-Will-See-You-Now/dp/0465054749"
+        - title: "The Age of AI in Healthcare"
+          authors: "Andy Slavitt"
+          description: "Comment l'intelligence artificielle révolutionne la prise en charge médicale et l'expérience patient."
+          url: "https://www.amazon.fr/Age-AI-Healthcare-Revolutionizing-Experience/dp/0525561471"
+    
+    specialized:
+      title: "Spécialisations avancées"
+      items:
+        - title: "AI in Healthcare: From Hype to Hope"
+          authors: "Bertalan Meskó"
+          description: "Guide pratique sur l'implémentation réelle de l'IA en santé."
+          url: "https://www.amazon.fr/Healthcare-Artificial-Intelligence-Medicine-Technology/dp/3030214113"
+        - title: "Digital Health: Scaling Healthcare to the World"
+          authors: "Julie Yoo, Trystan Upstill & Josh Stein"
+          description: "Comment la technologie peut démocratiser l'accès aux soins de santé."
+          url: "https://www.amazon.fr/Digital-Health-Scaling-Healthcare-World/dp/0593136942"
+        - title: "Wearable Technology in Medicine"
+          authors: "Mahmoud El-Gohary & James McNames"
+          description: "Applications médicales des dispositifs connectés et capteurs de santé."
+          url: "https://www.amazon.fr/Wearable-Technology-Medicine-Mahmoud-El-Gohary/dp/0128187719"
+
+  online_courses:
+    moocs:
+      title: "MOOCs de référence"
+      items:
+        - title: "AI in Healthcare Specialization"
+          provider: "Coursera - Stanford University"
+          url: "https://www.coursera.org/specializations/ai-healthcare"
+        - title: "Digital Health"
+          provider: "edX - University of Edinburgh"
+          url: "https://www.edx.org/learn/health-informatics"
+        - title: "Introduction to Digital Health"
+          provider: "FutureLearn - King's College London"
+          url: "https://www.futurelearn.com/courses/introduction-to-digital-health"
+        - title: "IoT and AI in Healthcare"
+          provider: "Coursera - University of California San Diego"
+          url: "https://www.coursera.org/browse/health"
+    
+    youtube:
+      title: "Chaînes YouTube éducatives"
+      items:
+        - title: "The Medical Futurist"
+          description: "Dr. Bertalan Meskó - Vision du futur de la médecine et de la santé"
+          url: "https://www.youtube.com/@themedicalfuturist"
+        - title: "Healthcare Information and Management Systems Society (HIMSS)"
+          description: "Organisation mondiale pour l'amélioration de la santé par la technologie"
+          url: "https://www.youtube.com/c/HIMSS"
+        - title: "Stanford Medicine 25"
+          description: "Université de Stanford - Innovation en médecine et technologie"
+          url: "https://www.youtube.com/c/StanfordMedicine25"
+        - title: "Digital Health Today"
+          description: "Actualités et tendances de la santé numérique"
+          url: "https://www.youtube.com/c/DigitalHealthToday"
+
+  blogs_newsletters:
+    blogs:
+      title: "Blogs techniques"
+      items:
+        - title: "The Medical Futurist"
+          description: "Blog de référence sur le futur de la médecine et de la santé"
+          url: "https://medicalfuturist.com/"
+        - title: "Digital Health News"
+          description: "Actualités mondiales sur la santé numérique"
+          url: "https://www.digitalhealthnews.eu/"
+        - title: "Healthcare IT News"
+          description: "Actualités sur les technologies de l'information en santé"
+          url: "https://www.healthcareitnews.com/"
+        - title: "mHealth Intelligence"
+          description: "Intelligence sur la santé mobile et les applications médicales"
+          url: "https://mhealthintelligence.com"
+    
+    newsletters:
+      title: "Newsletters et actualités"
+      items:
+        - title: "Digital Health Newsletter"
+          description: "Newsletter hebdomadaire sur les innovations en santé numérique"
+          url: "https://www.mobihealthnews.com/"
+        - title: "Rock Health Newsletter"
+          description: "Newsletter sur l'écosystème startup de la santé numérique"
+          url: "https://rockhealth.com/"
+        - title: "Tic Santé Newsletter"
+          description: "Newsletter française sur les systèmes d'information de santé"
+          url: "https://www.ticsante.com/"
+        - title: "HIMSS Newsletter"
+          description: "Newsletter de l'association mondiale des professionnels de la santé numérique"
+          url: "https://www.himss.org/newsletters"
 
 careers: true
 career_paths:

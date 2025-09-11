@@ -1,0 +1,35 @@
+# Mapping des spécialités majeures/mineures pour les spécialités techniques
+# Format: slug_majeure -> informations sur la mineure associée
+
+# Intelligence Artificielle <-> Big Data
+ia:
+  slug: "bigdata"
+  description: "Big Data"
+  explanation: "💡 L'IA a besoin de volumes massifs de données pour apprendre efficacement<br>🔍 Le Big Data fournit les techniques pour traiter ces volumes<br>📈 Ensemble, elles forment l'épine dorsale de l'analytique moderne"
+
+bigdata:
+  slug: "ia"
+  description: "Intelligence Artificielle"
+  explanation: "⚙️ Le Big Data génère des volumes que seule l'IA peut interpréter<br>🧠 L'IA apporte l'intelligence nécessaire pour extraire de la valeur<br>🎯 Complémentarité parfaite entre volume et intelligence"
+
+# Cybersécurité <-> Cloud Computing
+cybersecurite:
+  slug: "cloud"
+  description: "Cloud Computing"
+  explanation: "🌐 Le Cloud est omniprésent, la cybersécurité devient critique<br>🔒 Comprendre le Cloud permet de mieux le sécuriser<br>⚖️ Équilibre essentiel entre accessibilité et protection"
+
+cloud:
+  slug: "cybersecurite"
+  description: "Cybersécurité"
+  explanation: "☁️ Le Cloud amplifie les enjeux de sécurité<br>🛡️ La cybersécurité est indispensable pour un Cloud fiable<br>🔐 Confiance et performance vont de pair dans le Cloud"
+
+# Internet of Things <-> VR/AR
+iot:
+  slug: "vrar"
+  description: "VR/AR"
+  explanation: "🌍 L'IoT connecte le monde physique, la VR/AR enrichit l'expérience<br>👁️ La VR/AR donne du sens aux données IoT<br>🔗 Pont entre réalité physique et expérience numérique"
+
+vrar:
+  slug: "iot"
+  description: "IoT"
+  explanation: "📡 La VR/AR a besoin de données du monde réel pour être pertinente<br>🎮 L'IoT fournit les données contextuelles aux expériences immersives<br>⚡ Fusion entre captation du réel et immersion virtuelle"

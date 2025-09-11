@@ -142,13 +142,13 @@ roadmap:
             - text: "Formations gratuites sur Tableau"
               url: "https://www.tableau.com/learn/training"
             - text: "Parcours d'apprentissage Power BI"
-              url: "https://docs.microsoft.com/fr-fr/power-bi/learning-paths/"
+              url: "https://learn.microsoft.com/en-us/power-bi/"
         
         - title: "Machine Learning"
           description: "Comprendre les principaux algorithmes, comment les entraîner et, surtout, comment évaluer leur performance de manière critique."
           resources:
             - text: "Machine Learning Specialization par Andrew Ng (Coursera)"
-              url: "https://www.coursera.org/specializations/machine-learning-introduction"
+              url: "https://www.coursera.org/specializations/machine-learning"
 
 projects:
   title: "Projets pratiques"
@@ -206,7 +206,7 @@ projects:
         - text: "Power BI Learning Path"
           url: "https://docs.microsoft.com/en-us/learn/powerplatform/power-bi"
         - text: "Data Visualization Principles"
-          url: "https://www.storytellingwithdata.com/fundamentals"
+          url: "https://www.storytellingwithdata.com/books"
 
 ecosystem:
   title: "Écosystème Data"
@@ -279,22 +279,6 @@ ecosystem:
 resources:
   title: "Ressources d'apprentissage"
   books:
-    blogs:
-      title: "Blogs & Newsletters de référence"
-      items:
-        - title: "Towards Data Science"
-          authors: "USA (en anglais)"
-          description: "Une immense publication sur Medium avec des articles sur tous les sujets de la data, du débutant à l'expert."
-          url: "https://towardsdatascience.com/"
-        - title: "Data Analytics Post"
-          authors: "France"
-          description: "Un blog en français avec des articles de qualité sur la data science et la BI."
-          url: "https://dataanalyticspost.com/"
-        - title: "The Analytics Engineering Roundup"
-          authors: "USA (en anglais)"
-          description: "La newsletter de référence sur la \"Modern Data Stack\", publiée par l'équipe de dbt."
-          url: "https://roundup.getdbt.com/"
-    
     fundamentals:
       title: "Livres incontournables"
       items:
@@ -306,6 +290,92 @@ resources:
           authors: "Cole Nussbaumer Knaflic"
           description: "Un livre essentiel pour apprendre à communiquer efficacement avec les données."
           url: "https://www.storytellingwithdata.com/books"
+        - title: "The Data Warehouse Toolkit"
+          authors: "Ralph Kimball & Margy Ross"
+          description: "Le guide de référence pour concevoir des entrepôts de données."
+          url: "https://www.amazon.fr/Data-Warehouse-Toolkit-Definitive-Dimensional/dp/1118530802"
+    
+    specialized:
+      title: "Spécialisations avancées"
+      items:
+        - title: "Hands-On Machine Learning"
+          authors: "Aurélien Géron"
+          description: "Guide pratique complet pour le machine learning avec Python."
+          url: "https://www.amazon.fr/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646"
+        - title: "Designing Data-Intensive Applications"
+          authors: "Martin Kleppmann"
+          description: "Architecture et design des systèmes de données à grande échelle."
+          url: "https://www.amazon.fr/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321"
+        - title: "The Visual Display of Quantitative Information"
+          authors: "Edward R. Tufte"
+          description: "Classique de la visualisation de données et du design d'information."
+          url: "https://www.amazon.fr/Visual-Display-Quantitative-Information/dp/0961392142"
+
+  online_courses:
+    moocs:
+      title: "MOOCs de référence"
+      items:
+        - title: "IBM Data Science Professional Certificate"
+          provider: "Coursera - IBM"
+          url: "https://www.coursera.org/professional-certificates/ibm-data-science"
+        - title: "Google Data Analytics Professional Certificate"
+          provider: "Coursera - Google"
+          url: "https://www.coursera.org/professional-certificates/google-data-analytics"
+        - title: "Data Science Specialization"
+          provider: "Coursera - Johns Hopkins University"
+          url: "https://www.coursera.org/specializations/jhu-data-science"
+        - title: "Applied Data Science with Python"
+          provider: "Coursera - University of Michigan"
+          url: "https://www.coursera.org/specializations/data-science-python"
+    
+    youtube:
+      title: "Chaînes YouTube éducatives"
+      items:
+        - title: "StatQuest with Josh Starmer"
+          description: "Explications claires et visuelles des concepts statistiques et ML"
+          url: "https://www.youtube.com/c/joshstarmer"
+        - title: "3Blue1Brown"
+          description: "Mathématiques visuelles, excellent pour comprendre les algos ML"
+          url: "https://www.youtube.com/c/3blue1brown"
+        - title: "Krish Naik"
+          description: "Tutoriels pratiques en data science et machine learning"
+          url: "https://www.youtube.com/user/krishnaik06"
+        - title: "Ken Jee"
+          description: "Conseils carrière et projets pratiques en data science"
+          url: "https://www.youtube.com/c/KenJee1"
+
+  blogs_newsletters:
+    blogs:
+      title: "Blogs techniques"
+      items:
+        - title: "Towards Data Science"
+          description: "Publication Medium avec des articles sur tous les sujets de la data"
+          url: "https://towardsdatascience.com/"
+        - title: "Data Analytics Post"
+          description: "Blog français avec des articles de qualité sur la data science et la BI"
+          url: "https://dataanalyticspost.com/"
+        - title: "KDnuggets"
+          description: "Site de référence pour la data science et le machine learning"
+          url: "https://www.kdnuggets.com/"
+        - title: "The dbt Blog"
+          description: "Blog sur l'analytics engineering et la Modern Data Stack"
+          url: "https://blog.getdbt.com/"
+    
+    newsletters:
+      title: "Newsletters et actualités"
+      items:
+        - title: "The Analytics Engineering Roundup"
+          description: "Newsletter de référence sur la Modern Data Stack par dbt"
+          url: "https://roundup.getdbt.com/"
+        - title: "Data Science Weekly"
+          description: "Newsletter hebdomadaire sur la data science"
+          url: "https://www.datascienceweekly.org/"
+        - title: "O'Reilly Data Newsletter"
+          description: "Newsletter sur les tendances data et IA par O'Reilly"
+          url: "https://www.oreilly.com/emails/newsletters/"
+        - title: "The Batch by DeepLearning.AI"
+          description: "Newsletter hebdomadaire sur l'IA et le machine learning"
+          url: "https://www.deeplearning.ai/thebatch/"
 
 careers: true
 career_paths:

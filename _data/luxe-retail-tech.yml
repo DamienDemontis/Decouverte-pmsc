@@ -173,11 +173,11 @@ projects:
         - "Grille d'audit omnicanal"
       resources:
         - text: "Customer Journey Mapping Guide"
-          url: "https://www.salesforce.com/resources/articles/customer-journey/"
+          url: "https://www.salesforce.com/resources/articles/"
         - text: "UX Tools et Methods"
-          url: "https://uxtools.co/survey-2021/"
+          url: "https://uxtools.co/"
         - text: "Audit d'expérience omnicanal"
-          url: "https://blog.adobe.com/en/publish/2019/04/18/omnichannel-customer-experience-audit"
+          url: "https://business.adobe.com/blog/"
     
     - title: "Projet 3: Designer un concept de boutique 'phygitale'"
       difficulty: "Intermédiaire"
@@ -191,9 +191,9 @@ projects:
         - "UX/UI design"
       resources:
         - text: "Figma - Design de magasins connectés"
-          url: "https://www.figma.com/community/file/retail-design-templates"
+          url: "https://www.figma.com/templates/"
         - text: "Retail Innovation Lab"
-          url: "https://nrf.com/research/retail-innovation-and-technology"
+          url: "https://nrf.com/research-insights"
         - text: "Concepts phygital retail"
           url: "https://blog.salesforce.com/what-is-phygital-retail/"
 
@@ -293,7 +293,7 @@ resources:
       items:
         - title: "Retail and Omnichannel Management"
           provider: "Coursera - University of Pennsylvania"
-          url: "https://www.coursera.org/learn/retail-omnichannel"
+          url: "https://www.coursera.org/browse/business/marketing"
         - title: "Digital Marketing"
           provider: "Coursera - University of Illinois"
           url: "https://www.coursera.org/specializations/digital-marketing"
@@ -302,7 +302,7 @@ resources:
           url: "https://www.coursera.org/learn/fashion-design"
         - title: "Customer Analytics"
           provider: "Coursera - University of Pennsylvania"
-          url: "https://www.coursera.org/learn/customer-analytics"
+          url: "https://www.coursera.org/learn/wharton-customer-analytics"
     
     youtube:
       title: "Chaînes YouTube éducatives"
@@ -318,7 +318,7 @@ resources:
           url: "https://www.youtube.com/c/RetailTouchPoints"
         - title: "Luxury Society"
           description: "Contenu sur l'industrie du luxe"
-          url: "https://www.youtube.com/c/LuxurySociety"
+          url: "https://www.youtube.com/@luxurysociety"
 
   blogs_newsletters:
     blogs:
@@ -342,7 +342,7 @@ resources:
       items:
         - title: "Business of Fashion Newsletter"
           description: "Newsletter quotidienne sur la mode"
-          url: "https://www.businessoffashion.com/newsletter"
+          url: "https://www.businessoffashion.com/newsletters/"
         - title: "LSA Newsletter"
           description: "Actualités retail françaises"
           url: "https://www.lsa-conso.fr/newsletter"
@@ -351,7 +351,7 @@ resources:
           url: "https://www.voguebusiness.com/newsletter"
         - title: "Retail TouchPoints Newsletter"
           description: "Innovation retail"
-          url: "https://www.retailtouchpoints.com/newsletter"
+          url: "https://www.retailtouchpoints.com/"
 
   datasets:
     title: "Outils et plateformes de pratique"

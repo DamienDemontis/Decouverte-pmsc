@@ -204,8 +204,8 @@ projects:
       duration: "8-12 heures"
       objective: "Créer un classificateur d'images capable de reconnaître différentes catégories d'objets avec une précision de 85%+"
       description: |
-        <p>Dans ce premier projet pratique, tu vas développer un système de classification d'images en utilisant les techniques de deep learning et de transfer learning.</p>
-        <p>Tu partiras d'un modèle pré-entraîné comme ResNet ou EfficientNet et l'adapteras pour reconnaître tes propres catégories d'images. Le projet couvre :</p>
+        <p>Ce premier projet pratique aboutit au développement d'un système de classification d'images en utilisant les techniques de deep learning et de transfer learning.</p>
+        <p>En s'appuyant sur des tutoriels spécialisés, l'approche consiste à partir d'un modèle pré-entraîné comme ResNet ou EfficientNet et l'adapter pour reconnaître des catégories d'images spécifiques. Le projet couvre :</p>
         <ul>
           <li><strong>Collecte et préparation de données</strong> - Création d'un dataset équilibré avec au moins 5 catégories</li>
           <li><strong>Data augmentation</strong> - Techniques pour améliorer la robustesse du modèle</li>
@@ -213,27 +213,29 @@ projects:
           <li><strong>Fine-tuning</strong> - Optimisation des performances sur ton dataset</li>
           <li><strong>Évaluation</strong> - Métriques de performance et analyse des erreurs</li>
         </ul>
-        <p>À la fin du projet, tu auras une application web simple permettant d'uploader une image et d'obtenir une prédiction en temps réel.</p>
+        <p>À la fin du projet, le résultat sera une application web simple permettant d'uploader une image et d'obtenir une prédiction en temps réel.</p>
       technologies:
         - "Python avec PyTorch ou TensorFlow"
         - "OpenCV pour le prétraitement d'images"
         - "Streamlit ou Flask pour l'interface web"
         - "Jupyter Notebook pour l'expérimentation"
       resources:
-        - text: "Transfer Learning Tutorial (PyTorch)"
+        - text: "🎯 Tutoriel principal : Complete Image Classification with Transfer Learning"
+          url: "https://www.tensorflow.org/tutorials/images/transfer_learning"
+        - text: "Step-by-step : PyTorch Transfer Learning"
           url: "https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html"
-        - text: "Image Classification with TensorFlow"
-          url: "https://www.tensorflow.org/tutorials/images/classification"
-        - text: "CIFAR-10 Dataset"
-          url: "https://www.cs.toronto.edu/~kriz/cifar.html"
+        - text: "Dataset Collection : Kaggle Image Datasets"
+          url: "https://www.kaggle.com/datasets?search=image+classification"
+        - text: "Web App Deployment : Streamlit Tutorial"
+          url: "https://docs.streamlit.io/library/get-started"
     
     - title: "Projet 2: Assistant de diagnostic médical par IA"
       difficulty: "Intermédiaire"
       duration: "12-18 heures"
       objective: "Développer un système d'aide au diagnostic médical utilisant l'analyse d'images radiologiques"
       description: |
-        <p>Ce projet intermédiaire te plonge dans l'une des applications les plus prometteuses de l'IA : la santé. Tu vas créer un système capable d'analyser des images médicales et de détecter des anomalies.</p>
-        <p>Tu travailleras sur la détection de maladies des plantes (plus accessible que les images médicales réelles) mais avec des techniques directement transposables au domaine médical :</p>
+        <p>Ce projet intermédiaire explore l'une des applications les plus prometteuses de l'IA : la santé. L'objectif est de créer un système capable d'analyser des images médicales et de détecter des anomalies.</p>
+        <p>Le projet porte sur la détection de maladies des plantes (plus accessible que les images médicales réelles) mais avec des techniques directement transposables au domaine médical :</p>
         <ul>
           <li><strong>Dataset médical</strong> - Utilisation du PlantVillage dataset avec 38 classes de maladies</li>
           <li><strong>Préprocessing spécialisé</strong> - Techniques de normalisation et d'amélioration d'images</li>
@@ -247,12 +249,14 @@ projects:
         - "Weights & Biases pour le suivi des expériences"
         - "Flask ou Streamlit pour le déploiement"
       resources:
-        - text: "Transfer Learning Tutorial (PyTorch)"
-          url: "https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html"
-        - text: "Transfer Learning for Image Classification (TensorFlow)"
+        - text: "🎯 Tutoriel principal : Plant Disease Classification with Deep Learning"
           url: "https://www.tensorflow.org/tutorials/images/transfer_learning"
-        - text: "PlantVillage Dataset (Kaggle)"
+        - text: "Step-by-step : Medical Image Analysis"
+          url: "https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html"
+        - text: "Dataset : PlantVillage Disease Dataset"
           url: "https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset"
+        - text: "Explainability : Grad-CAM Implementation"
+          url: "https://keras.io/examples/vision/grad_cam/"
     
     - title: "Projet 3: Système de recommandation personnalisé"
       difficulty: "Avancé"
@@ -280,12 +284,14 @@ projects:
         - "NLTK ou spaCy pour le traitement du langage naturel"
         - "Flask ou FastAPI pour créer une API de recommandation"
       resources:
-        - text: "Cours de recommandation Google ML"
+        - text: "🎯 Tutoriel principal : Build a Movie Recommendation System"
           url: "https://developers.google.com/machine-learning/recommendation"
-        - text: "Documentation Surprise"
-          url: "https://surprise.readthedocs.io/en/stable/"
-        - text: "Netflix Prize Dataset (Kaggle)"
-          url: "https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data"
+        - text: "Step-by-step : Collaborative Filtering with Surprise"
+          url: "https://surprise.readthedocs.io/en/stable/getting_started.html"
+        - text: "Dataset : MovieLens Ratings Dataset"
+          url: "https://www.kaggle.com/datasets/grouplens/movielens-20m-dataset"
+        - text: "Advanced : Hybrid Recommendation Systems"
+          url: "https://www.tensorflow.org/recommenders"
 
 ecosystem:
   title: "Écosystème"
@@ -383,7 +389,7 @@ ecosystem:
           url: "https://www.fast.ai/"
         - name: "Udacity - School of AI"
           description: "Parcours d'apprentissage pour devenir un expert en IA, du niveau débutant à avancé"
-          url: "https://www.udacity.com/school-of-ai"
+          url: "https://www.udacity.com/courses/school-of-ai"
         - name: "DataCamp - Machine Learning Scientist with Python"
           description: "Track complet pour maîtriser le Machine Learning avec Python"
           url: "https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python"
@@ -396,7 +402,7 @@ ecosystem:
           url: "https://www.kaggle.com/competitions"
         - name: "AIcrowd"
           description: "Plateforme de challenges IA avec focus sur l'IA de renforcement"
-          url: "https://aicrowd.com/"
+          url: "https://www.aicrowd.com/challenges"
         - name: "DrivenData"
           description: "Compétitions orientées impact social et environnemental"
           url: "https://www.drivendata.org/"
@@ -507,10 +513,10 @@ resources:
           url: "https://course.fast.ai/"
         - title: "TinyML"
           provider: "HarvardX"
-          url: "https://www.edx.org/professional-certificate/harvardx-tiny-machine-learning"
+          url: "https://www.edx.org/learn/machine-learning"
         - title: "Intro to Artificial Intelligence"
           provider: "Udacity"
-          url: "https://www.udacity.com/school-of-ai"
+          url: "https://www.udacity.com/courses/school-of-ai"
     
     youtube:
       title: "Chaînes YouTube éducatives"
@@ -523,7 +529,7 @@ resources:
           url: "https://www.youtube.com/c/YannicKilcher"
         - title: "Two Minute Papers"
           description: "Résumés concis d'avancées en IA"
-          url: "https://www.youtube.com/c/TwoMinutePapers"
+          url: "https://www.youtube.com/@TwoMinutePapers"
         - title: "Code Emporium"
           description: "Tutoriels pratiques sur les algorithmes d'IA"
           url: "https://www.youtube.com/c/CodeEmporium"

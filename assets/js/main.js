@@ -701,4 +701,35 @@ document.addEventListener('DOMContentLoaded', function() {
      heroVisual.style.transition = 'transform 0.3s ease-out';
   }
 
+  // ===== Minor Specialty Bubble Navigation =====
+  const minorSpecialtyBubble = document.querySelector('.minor-specialty-bubble');
+  
+  if (minorSpecialtyBubble) {
+    minorSpecialtyBubble.addEventListener('click', function() {
+      const minorSlug = this.getAttribute('data-minor-slug');
+      if (minorSlug) {
+        // Add smooth transition effect
+        this.style.transform = 'scale(0.95)';
+        
+        setTimeout(() => {
+          // Navigate to the minor specialty page
+          window.location.href = `/specialites/${minorSlug}.html`;
+        }, 150);
+      }
+    });
+
+    // Add click feedback animation
+    minorSpecialtyBubble.addEventListener('mousedown', function() {
+      this.style.transform = 'scale(0.95)';
+    });
+
+    minorSpecialtyBubble.addEventListener('mouseup', function() {
+      this.style.transform = 'translateY(-2px) scale(1.02)';
+    });
+
+    minorSpecialtyBubble.addEventListener('mouseleave', function() {
+      this.style.transform = '';
+    });
+  }
+
 }); // Fin de DOMContentLoaded 
