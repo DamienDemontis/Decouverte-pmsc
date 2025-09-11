@@ -1,297 +1,281 @@
-# Site de Découverte des Spécialités MSc Epitech
+# Plateforme Interactive MSc Epitech - Documentation Technique
 
 ## 📋 Table des Matières
 
 - [Vue d'ensemble](#-vue-densemble)
+- [Performances et métriques](#-performances-et-métriques)
 - [Architecture technique](#-architecture-technique)
-- [Installation et démarrage](#-installation-et-démarrage)
-- [Structure des fichiers](#-structure-des-fichiers)
+- [Installation et configuration](#-installation-et-configuration)
+- [Structure du projet](#-structure-du-projet)
 - [Fonctionnalités principales](#-fonctionnalités-principales)
 - [Gestion du contenu](#-gestion-du-contenu)
-- [Maintenance et mise à jour](#-maintenance-et-mise-à-jour)
-- [Déploiement](#-déploiement)
-- [Performances et SEO](#-performances-et-seo)
+- [Maintenance](#-maintenance)
 - [Support technique](#-support-technique)
 
 ---
 
 ## 🎯 Vue d'ensemble
 
-Ce site web est une plateforme interactive conçue pour présenter les spécialités MSc d'Epitech. Il combine une architecture Jekyll moderne avec des fonctionnalités interactives avancées pour offrir une expérience utilisateur optimale aux futurs étudiants.
+Plateforme web interactive de présentation des 15 spécialités MSc d'Epitech, développée avec Jekyll et optimisée pour la performance et l'engagement utilisateur. Le site intègre un assistant conversationnel intelligent et offre une expérience utilisateur premium sur tous les appareils.
 
-### Objectifs du site
-- **Découverte guidée** : Aider les étudiants à choisir leur spécialité via un bot conversationnel intelligent
-- **Information complète** : Présenter de manière détaillée les 15 spécialités MSc disponibles
-- **Engagement utilisateur** : Offrir une expérience immersive avec animations et interactions
-- **Performance** : Garantir des temps de chargement rapides et une excellente expérience mobile
+### Caractéristiques principales
+- **Bot conversationnel intelligent** avec détection de profil et recommandations personnalisées
+- **15 spécialités MSc** présentées de manière détaillée et structurée
+- **Animations interactives** et expérience utilisateur immersive
+- **Architecture data-driven** avec maintenance centralisée
+- **Performance optimale** sur tous les appareils
 
-### Spécialités couvertes
-**Tech (6 spécialités) :**
-- Intelligence Artificielle
-- Cybersécurité  
-- Big Data & Analytics
-- Cloud Computing
-- Internet of Things (IoT)
-- VR/AR
+### Spécialités disponibles
 
-**Business & Management (9 spécialités) :**
-- Strategic Project Management
-- Fintech & Stratégies financières
-- Marketing & Influence
-- IA & Transformation des organisations
-- Data Protection & Sécurité
-- Digitalisation RH
-- Santé, IA & IoT
-- Data Science & Business Intelligence
-- Luxe & Retail Tech
+<table>
+<tr>
+<td><strong>Technologies (6)</strong></td>
+<td><strong>Business & Management (9)</strong></td>
+</tr>
+<tr>
+<td>
+• Intelligence Artificielle<br/>
+• Cybersécurité<br/>
+• Big Data & Analytics<br/>
+• Cloud Computing<br/>
+• Internet of Things (IoT)<br/>
+• VR/AR
+</td>
+<td>
+• Strategic Project Management<br/>
+• Fintech & Stratégies financières<br/>
+• Marketing & Influence<br/>
+• IA & Transformation<br/>
+• Data Protection & Sécurité<br/>
+• Digitalisation RH<br/>
+• Santé, IA & IoT<br/>
+• Data Science & BI<br/>
+• Luxe & Retail Tech
+</td>
+</tr>
+</table>
+
+---
+
+## 📊 Performances et métriques
+
+### Scores Lighthouse actuels
+<table>
+<tr>
+<td><strong>Performance</strong></td>
+<td><strong>Accessibilité</strong></td>
+<td><strong>Bonnes Pratiques</strong></td>
+<td><strong>SEO</strong></td>
+</tr>
+<tr>
+<td align="center">🟢 98/100</td>
+<td align="center">🟡 84/100</td>
+<td align="center">🟢 100/100</td>
+<td align="center">🟢 100/100</td>
+</tr>
+</table>
+
+### Métriques de performance
+- **First Contentful Paint**: < 1.5s
+- **Largest Contentful Paint**: < 2.5s
+- **Time to Interactive**: < 3.5s
+- **Cumulative Layout Shift**: < 0.1
+- **Total Blocking Time**: < 300ms
+
+### Optimisations implémentées
+✅ Compression CSS/JS automatique en production  
+✅ Preconnect vers domaines externes  
+✅ Lazy loading pour contenu média  
+✅ Images optimisées avec favicon personnalisé  
+✅ Cache browser optimisé  
+✅ Minification HTML automatique  
 
 ---
 
 ## 🏗️ Architecture technique
 
 ### Stack technologique
-- **Générateur** : Jekyll 3.10.0 (compatibilité GitHub Pages)
-- **Langage** : Ruby avec Liquid templating
-- **Front-end** : HTML5, CSS3, JavaScript ES6+
-- **Styling** : CSS personnalisé avec variables CSS modernes
-- **Plugins** : SEO, Sitemap, Feed RSS
-- **Hébergement** : Originellement GitHub Pages
 
-### Philosophie architecturale
+| Technologie | Version | Utilisation |
+|------------|---------|------------|
+| **Jekyll** | 3.10.0 | Générateur de site statique |
+| **Ruby** | 2.7+ | Environnement d'exécution |
+| **Liquid** | 4.0 | Moteur de templating |
+| **JavaScript** | ES6+ | Interactivité et animations |
+| **CSS3** | Modern | Styling avec CSS Variables |
+| **Font Awesome** | 6.4.0 | Bibliothèque d'icônes |
 
-#### Séparation des préoccupations
+### Architecture du système
+
 ```
-Content (Markdown) → Data (YAML) → Templates (Liquid) → Styling (CSS)
+┌─────────────────────────────────────┐
+│         Contenu (Markdown)          │
+└────────────┬────────────────────────┘
+             ▼
+┌─────────────────────────────────────┐
+│      Données (YAML Files)           │
+│   • navigation.yml                  │
+│   • specialities.yml                │
+└────────────┬────────────────────────┘
+             ▼
+┌─────────────────────────────────────┐
+│    Templates (Liquid/Jekyll)        │
+│   • Layouts                         │
+│   • Includes                        │
+└────────────┬────────────────────────┘
+             ▼
+┌─────────────────────────────────────┐
+│     Site statique généré            │
+│   • HTML optimisé                   │
+│   • CSS/JS minifiés                 │
+└─────────────────────────────────────┘
 ```
 
-#### Data-Driven Design
-- **Contenu centralisé** dans `_data/` pour une maintenance facilitée
-- **Navigation automatique** générée depuis les fichiers de données
-- **Composants réutilisables** via le système d'includes Jekyll
-
-#### Performance First
-- **Assets externes** avec hachage SRI pour la sécurité
-- **JavaScript modulaire** avec chargement optimisé
-- **Compression CSS/JS** automatique en production
-- **Images optimisées** et favicon personnalisé
+### Principes de conception
+- **Data-Driven**: Contenu centralisé pour maintenance simplifiée
+- **Component-Based**: Composants réutilisables via includes
+- **Performance-First**: Optimisations automatiques en production
+- **Security-Aware**: SRI hashes pour ressources externes
 
 ---
 
-## 🚀 Installation et démarrage
+## 🚀 Installation et configuration
 
-### Prérequis système
+### Prérequis
+- Ruby 2.7+ avec Bundler
+- Git pour le versioning
+- Éditeur de code moderne (VS Code recommandé)
+
+### Installation
+
+#### 1. Configuration initiale
 ```bash
-# Ruby (version 2.7+)
-ruby --version
-
-# Bundler
-gem install bundler
-
-# Git
-git --version
-```
-
-### Installation rapide
-```bash
-# 1. Cloner le repository
-git clone [URL_DU_REPOSITORY]
-cd Decouverte-pmsc
-
-# 2. Installer les dépendances
+# Installer les dépendances Ruby
 bundle install
 
-# 3. Lancer le serveur de développement
+# Vérifier l'installation
+bundle exec jekyll --version
+```
+
+#### 2. Lancement en développement
+```bash
+# Serveur avec rechargement automatique
 bundle exec jekyll serve --livereload
 
-# 4. Accéder au site
-open http://localhost:4000/Decouverte-pmsc/
+# Le site sera accessible sur
+# http://localhost:4000/Decouverte-pmsc/
 ```
 
-### Commandes utiles
+#### 3. Build de production
 ```bash
-# Développement avec rechargement automatique
-bundle exec jekyll serve --livereload --port 4000
+# Générer le site optimisé
+JEKYLL_ENV=production bundle exec jekyll build
 
-# Build de production
-bundle exec jekyll build --env production
-
-# Nettoyage du cache
-bundle exec jekyll clean
-
-# Mise à jour des gems
-bundle update
+# Les fichiers sont générés dans _site/
 ```
 
-### Variables d'environnement
-```bash
-# Développement local
-JEKYLL_ENV=development
+### Commandes essentielles
 
-# Production
-JEKYLL_ENV=production
-```
+| Commande | Description |
+|----------|------------|
+| `bundle exec jekyll serve` | Lance le serveur de développement |
+| `bundle exec jekyll build` | Génère le site statique |
+| `bundle exec jekyll clean` | Nettoie le cache et _site |
+| `bundle update` | Met à jour les dépendances |
 
 ---
 
-## 📁 Structure des fichiers
+## 📁 Structure du projet
 
 ```
 Decouverte-pmsc/
-├── 📄 Configuration
-│   ├── _config.yml              # Configuration Jekyll principal
-│   ├── Gemfile                  # Dépendances Ruby
-│   └── Gemfile.lock            # Versions verrouillées
 │
-├── 📊 Données centralisées
-│   ├── _data/
-│   │   ├── navigation.yml       # Structure du menu principal
-│   │   └── specialities.yml     # Données des spécialités (nouveau)
-│   │
-├── 🎨 Templates et layouts
-│   ├── _layouts/
-│   │   ├── default.html         # Layout principal
-│   │   └── specialite.html      # Layout des pages spécialité
-│   │
-│   ├── _includes/               # Composants réutilisables
-│   │   ├── navigation.html      # Menu latéral dynamique
-│   │   ├── feature-card.html    # Carte de fonctionnalité
-│   │   ├── feature-grid.html    # Grille de fonctionnalités
-│   │   ├── timeline.html        # Composant timeline
-│   │   ├── career-paths.html    # Parcours de carrière
-│   │   ├── media-section.html   # Section vidéo
-│   │   └── specialty-bot.html   # Bot conversationnel
-│   │
-├── 📝 Contenu
-│   ├── _specialites/            # 15 pages de spécialités + templates
-│   │   ├── ia.md               # Intelligence Artificielle (exemple)
-│   │   ├── ia-clean.md         # Template moderne (exemple)
-│   │   └── ...                 # Autres spécialités
-│   │
-│   ├── _posts/                  # Articles de blog (optionnel)
-│   ├── index.markdown           # Page d'accueil
-│   └── about.markdown           # Page à propos
+├── 📄 _config.yml              # Configuration Jekyll
+├── 📦 Gemfile                  # Dépendances Ruby
+├── 🔒 Gemfile.lock            # Versions verrouillées
 │
-├── 🎨 Assets
-│   ├── assets/
-│   │   ├── css/
-│   │   │   ├── main.css         # Styles principaux (1700+ lignes)
-│   │   │   ├── home.css         # Styles page d'accueil
-│   │   │   └── specialty-bot.css # Styles bot conversationnel
-│   │   │
-│   │   ├── js/
-│   │   │   ├── main.js          # JavaScript principal
-│   │   │   ├── home.js          # Animations page d'accueil
-│   │   │   └── specialty-bot.js # Logic bot conversationnel (2000+ lignes)
-│   │   │
-│   │   ├── images/              # Images et favicons
-│   │   └── subjects/            # Sujets de projets pédagogiques
-│   │
-└── 🔧 Autres
-    ├── 404.html                 # Page d'erreur personnalisée
-    └── _site/                   # Site généré (ignoré par Git)
+├── 📊 _data/                   # Données centralisées
+│   ├── navigation.yml          # Structure de navigation
+│   ├── specialities.yml        # Contenu des spécialités
+│   └── [15 fichiers YAML]      # Un par spécialité
+│
+├── 🎨 _layouts/                # Templates de page
+│   ├── default.html            # Layout principal
+│   └── specialite.html         # Layout spécialités
+│
+├── 🧩 _includes/               # Composants réutilisables
+│   ├── navigation.html         # Menu latéral
+│   ├── specialty-bot.html      # Bot conversationnel
+│   └── [15+ composants]        # Sections modulaires
+│
+├── 📝 _specialites/            # Pages des spécialités
+│   └── [15 fichiers .md]       # Une page par spécialité
+│
+├── 🎨 assets/                  # Ressources statiques
+│   ├── css/                    # Styles (3 fichiers)
+│   ├── js/                     # Scripts (4 fichiers)
+│   └── images/                 # Images et icônes
+│
+├── 📄 index.markdown           # Page d'accueil
+├── 📄 about.markdown           # Page à propos
+└── 📄 404.html                # Page d'erreur
 ```
 
-### Fichiers clés à connaître
+### Fichiers critiques
 
-#### Configuration (`_config.yml`)
-```yaml
-# Informations du site
-title: Découverte des Spécialités MSc Epitech
-baseurl: "/Decouverte-pmsc"
-url: "https://DamienDemontis.github.io"
-
-# Collections pour les spécialités
-collections:
-  specialites:
-    output: true
-    permalink: /:collection/:name
-
-# Plugins SEO et performance
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-```
-
-#### Navigation (`_data/navigation.yml`)
-Structure centralisée du menu avec catégorisation automatique des spécialités.
-
-#### Données spécialités (`_data/specialities.yml`)
-Contenu structuré pour les spécialités, permettant une maintenance centralisée.
+| Fichier | Rôle | Lignes |
+|---------|------|--------|
+| `specialty-bot.js` | Assistant conversationnel | 2000+ |
+| `main.css` | Styles principaux | 1700+ |
+| `main.js` | Interactions globales | 700+ |
+| `_config.yml` | Configuration Jekyll | 96 |
 
 ---
 
 ## ✨ Fonctionnalités principales
 
-### 1. 🤖 Bot conversationnel intelligent
+### 1. 🤖 Assistant conversationnel intelligent
 
-**Localisation** : `assets/js/specialty-bot.js` (2000+ lignes)
-
-**Fonctionnalités** :
-- **Détection de profil** : Bac+2, Bac+3 Tech/Business, Bac+4+
-- **Guidance personnalisée** : Recommandations basées sur le parcours
-- **Quiz de personnalité** : 5 questions pour identifier le profil type
-- **Navigation contextuelle** : Liens directs vers les spécialités pertinentes
-- **FAQ intégrée** : Réponses aux questions fréquentes
-
-**Arbre conversationnel** :
-```javascript
-conversationTree: {
-  initial → profile_check → [profil détecté] → recommandations
-        → help_q1 → [série de questions] → spécialités suggérées
-        → explainSpecialties → vue d'ensemble → navigation
-        → practical_info → informations pratiques
-        → faq → questions fréquentes
-}
-```
+Bot interactif avec arbre décisionnel complexe offrant:
+- **Détection de profil étudiant** (Bac+2, Bac+3, Bac+4+)
+- **Recommandations personnalisées** basées sur le parcours
+- **Test de personnalité complet** (12 questions)
+- **Navigation contextuelle** vers les spécialités
+- **FAQ dynamique** avec réponses instantanées
 
 ### 2. 🎨 Animations et interactions
 
-**Localisation** : `assets/js/home.js`
+Expérience utilisateur immersive avec:
+- **Typewriter effect** sur la page d'accueil
+- **Orbite technologique** interactive avec survol dynamique
+- **Animations de compteurs** pour les statistiques
+- **Transitions fluides** entre sections
+- **Parallax effects** subtils
 
-**Animations incluses** :
-- **Typewriter effect** : Rotation des noms de spécialités
-- **Tech orbit** : Icônes en orbite avec interactions au survol
-- **Count-up** : Animation des statistiques
-- **Scroll animations** : Apparition progressive des éléments
-- **Smooth scrolling** : Navigation fluide entre sections
+### 3. 📱 Design responsive
 
-### 3. 📱 Design responsive et moderne
+| Appareil | Breakpoint | Optimisations |
+|----------|------------|---------------|
+| Mobile | < 768px | Menu burger, navigation tactile |
+| Tablette | 768-1024px | Layout adaptatif, grilles flexibles |
+| Desktop | > 1024px | Expérience complète, animations avancées |
 
-**Breakpoints** :
-- Mobile : < 768px
-- Tablet : 768px - 1024px  
-- Desktop : > 1024px
+### 4. 📊 Architecture data-driven
 
-**Caractéristiques** :
-- **Mobile-first** : Optimisation prioritaire mobile
-- **Navigation latérale** : Menu coulissant sur mobile
-- **Grid flexible** : Adaptation automatique du contenu
-- **Touch-friendly** : Interactions optimisées tactile
+Système de gestion de contenu centralisé:
+- **17 fichiers YAML** pour le contenu structuré
+- **15 composants réutilisables** via includes
+- **Navigation automatique** générée dynamiquement
+- **Maintenance simplifiée** avec un point d'entrée unique
 
-### 4. 📊 Système de données centralisé
+### 5. 🔍 SEO et accessibilité
 
-**Avantages** :
-- **Maintenance facilitée** : Modification centralisée du contenu
-- **Cohérence** : Structure uniforme garantie
-- **Performance** : Chargement optimisé
-- **Évolutivité** : Ajout simple de nouvelles spécialités
-
-### 5. 🔍 SEO et performance optimisés
-
-**SEO** :
-- **Meta tags automatiques** via `jekyll-seo-tag`
-- **Sitemap XML** généré automatiquement
-- **Feed RSS** pour le référencement
-- **Schema markup** ready (structure données)
-- **URL canoniques** et breadcrumbs
-
-**Performance** :
-- **Compression assets** en production
-- **Lazy loading** pour les vidéos YouTube
-- **Preconnect** vers domaines externes
-- **SRI integrity** pour la sécurité
-- **Temps de build** < 2 secondes
+Optimisations pour le référencement:
+- **Meta tags automatiques** avec Jekyll SEO
+- **Sitemap XML** et **robots.txt**
+- **Structured data** pour rich snippets
+- **Open Graph** pour réseaux sociaux
+- **Score SEO**: 100/100 Lighthouse
 
 ---
 
@@ -299,362 +283,148 @@ conversationTree: {
 
 ### Ajouter une nouvelle spécialité
 
-#### 1. Créer le fichier Markdown
-```markdown
-# _specialites/nouvelle-specialite.md
+#### Étape 1: Créer la page
+Créer un fichier dans `_specialites/nouvelle-specialite.md`:
+```yaml
 ---
 layout: specialite
-title: "Nouvelle Spécialité"
+title: "Nom de la Spécialité"
 slug: nouvelle-specialite
-icon: fas fa-icon
-ordre: 10
+icon: fas fa-icon-name
 type: tech # ou business
-color_primary: "#COLOR"
-color_secondary: "#COLOR"  
-careers: true
-has_media: true
-description: "Description complète..."
 ---
-
-## Contenu en Markdown
-
-Votre contenu détaillé ici...
+{% assign specialty_data = site.data.nouvelle-specialite %}
+{% include overview-section.html %}
+{% include cases-section.html %}
+[...]
 ```
 
-#### 2. Ajouter aux données navigation
-```yaml
-# _data/navigation.yml
-categories:
-  tech:
-    specialities:
-      - slug: "nouvelle-specialite"
-        title: "Nouvelle Spécialité"
-        icon: "fas fa-icon"
-        order: 10
-```
+#### Étape 2: Ajouter les données
+Créer `_data/nouvelle-specialite.yml` avec la structure complète du contenu.
 
-#### 3. (Optionnel) Ajouter aux données structurées
-```yaml
-# _data/specialities.yml
-nouvelle-specialite:
-  title: "Nouvelle Spécialité"
-  overview:
-    features: [...]
-  use_cases: [...]
-  career_paths: [...]
-```
+#### Étape 3: Mettre à jour la navigation
+Ajouter dans `_data/navigation.yml` sous la bonne catégorie.
 
 ### Modifier le contenu existant
 
-#### Textes et descriptions
-Les modifications se font directement dans les fichiers Markdown des spécialités.
+| Type de modification | Fichier à éditer |
+|---------------------|------------------|
+| Texte d'une spécialité | `_data/[nom-specialite].yml` |
+| Ordre du menu | `_data/navigation.yml` |
+| Styles globaux | `assets/css/main.css` |
+| Comportement du bot | `assets/js/specialty-bot.js` |
 
-#### Navigation et structure
-Modifications centralisées dans `_data/navigation.yml`.
+### Gestion des médias
 
-#### Styling et couleurs
-Variables CSS dans `:root` du fichier `assets/css/main.css`.
-
-### Ajouter des médias
-
-#### Images
-1. Placer dans `assets/images/`
-2. Référencer avec `{{ '/assets/images/nom.jpg' | relative_url }}`
-
-#### Vidéos YouTube
-Utiliser le composant media-section :
-```yaml
-# Dans les données spécialité
-media:
-  - title: "Titre vidéo"
-    description: "Description"
-    url: "https://www.youtube.com/embed/VIDEO_ID"
-```
+- **Images**: Placer dans `assets/images/`, optimiser avant upload
+- **Vidéos**: Utiliser des embeds YouTube via les données YAML
+- **Icônes**: Font Awesome 6.4.0 disponible
 
 ---
 
-## 🔧 Maintenance et mise à jour
+## 🔧 Maintenance
 
 ### Tâches régulières
 
-#### Mise à jour des gems
+#### Mises à jour mensuelles
 ```bash
-# Vérifier les mises à jour disponibles
+# Vérifier et appliquer les mises à jour
 bundle outdated
-
-# Mettre à jour (attention aux breaking changes)
 bundle update
 
-# Test après mise à jour
+# Tester après mise à jour
 bundle exec jekyll serve
 ```
 
-#### Vérification SEO
-```bash
-# Générer sitemap et vérifier
-bundle exec jekyll build
-cat _site/sitemap.xml
+#### Vérifications trimestrielles
+- Audit Lighthouse pour maintenir les scores
+- Vérification des liens cassés
+- Mise à jour du contenu des spécialités
+- Test sur différents navigateurs
 
-# Tester les meta tags
-curl -s http://localhost:4000/Decouverte-pmsc/ | grep "<meta"
-```
+### Résolution de problèmes
 
-### Optimisations recommandées
+| Problème | Solution |
+|----------|----------|
+| Build échoue | `bundle exec jekyll clean && bundle install` |
+| Navigation cassée | Vérifier cohérence des slugs dans `_data/` |
+| Bot non fonctionnel | Inspecter console JavaScript |
+| Styles manquants | Vérifier `baseurl` dans `_config.yml` |
+| Performance dégradée | Optimiser images, nettoyer CSS inutilisé |
 
-#### Performance
-1. **Optimiser images** : Compression et formats modernes (WebP)
-2. **Minimiser CSS** : Supprimer styles inutilisés
-3. **CDN** : Utiliser un CDN pour les assets statiques
-4. **Caching** : Configurer headers cache appropriés
+### Points de vigilance
 
-#### Maintenance code
-1. **Linting** : Ajouter des outils de linting CSS/JS
-2. **Testing** : Tests automatisés des composants critiques
-3. **Monitoring** : Outils de monitoring performance (PageSpeed, etc.)
-
-### Résolution problèmes courants
-
-#### Build qui échoue
-```bash
-# Nettoyer le cache
-bundle exec jekyll clean
-
-# Réinstaller les gems
-rm Gemfile.lock && bundle install
-
-# Vérifier la syntaxe YAML
-ruby -e "require 'yaml'; YAML.load_file('_config.yml')"
-```
-
-#### Navigation cassée
-Vérifier la cohérence entre :
-- Slugs dans `_data/navigation.yml`
-- Noms de fichiers dans `_specialites/`
-- Frontmatter `slug:` dans les fichiers
-
-#### Bot conversationnel ne fonctionne pas
-1. Vérifier le chargement JS dans la console
-2. Contrôler que `specialty-bot.html` est inclus
-3. Valider la syntaxe JavaScript dans `specialty-bot.js`
-
----
-
-## 🚀 Déploiement
-
-### GitHub Pages (Recommandé)
-
-#### Configuration automatique
-1. **Repository settings** → Pages
-2. **Source** : Deploy from a branch
-3. **Branch** : `main` / `root`
-4. **URL** : `https://[username].github.io/Decouverte-pmsc/`
-
-#### Custom domain (optionnel)
-```bash
-# Ajouter CNAME file
-echo "votre-domaine.com" > CNAME
-git add CNAME && git commit -m "Add custom domain"
-```
-
-### Netlify
-
-#### Deploy automatique
-1. Connecter repository GitHub
-2. **Build command** : `bundle exec jekyll build`
-3. **Publish directory** : `_site`
-4. **Environment variables** :
-   ```
-   JEKYLL_ENV=production
-   ```
-
-### Serveur dédié
-
-#### Via Docker
-```dockerfile
-FROM ruby:3.1-alpine
-WORKDIR /site
-COPY Gemfile* ./
-RUN bundle install
-COPY . .
-RUN bundle exec jekyll build --env production
-EXPOSE 4000
-CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0"]
-```
-
-#### Build script
-```bash
-#!/bin/bash
-# deploy.sh
-bundle install
-JEKYLL_ENV=production bundle exec jekyll build
-rsync -avz --delete _site/ user@server:/var/www/html/
-```
-
-### Variables d'environnement
-
-#### Développement
-```yaml
-# _config-development.yml
-url: "http://localhost:4000"
-show_drafts: true
-incremental: true
-profile: true
-```
-
-#### Production
-```yaml
-# _config-production.yml
-url: "https://votre-domaine.com"
-google_analytics: "GA_TRACKING_ID"
-sass:
-  style: compressed
-```
-
----
-
-## ⚡ Performances et SEO
-
-### Métriques actuelles
-
-#### Lighthouse Score (estimé)
-- **Performance** : 85-90/100
-- **Accessibility** : 88-92/100  
-- **Best Practices** : 92-95/100
-- **SEO** : 95-100/100
-
-#### Temps de chargement
-- **First Contentful Paint** : < 2s
-- **Largest Contentful Paint** : < 3s
-- **Time to Interactive** : < 4s
-
-### Optimisations implémentées
-
-#### Performance
-✅ **External resources** avec preconnect  
-✅ **JavaScript modulaire** et externe  
-✅ **CSS compression** en production  
-✅ **Images optimisées** et favicon  
-✅ **Lazy loading** pour vidéos YouTube  
-
-#### SEO
-✅ **jekyll-seo-tag** pour meta tags automatiques  
-✅ **Sitemap XML** généré  
-✅ **Feed RSS** structuré  
-✅ **URLs canoniques**  
-✅ **Meta descriptions** personnalisées  
-✅ **Schema markup** ready  
-
-#### Sécurité
-✅ **SRI integrity hashes** pour CDN  
-✅ **HTTPS enforce** ready  
-✅ **CSP headers** ready  
-✅ **XSS protection** via escaping Liquid  
-
-### Recommandations futures
-
-#### Performance avancée
-- **Service Worker** pour mise en cache
-- **Critical CSS** inline pour above-the-fold
-- **WebP images** avec fallback
-- **Resource hints** (prefetch, preload)
-
-#### SEO avancé
-- **Structured data** JSON-LD pour spécialités
-- **Multilingual support** (hreflang)
-- **AMP pages** pour mobile
-- **Internal linking** optimisé
+⚠️ **Avant toute mise à jour majeure:**
+1. Sauvegarder le site actuel
+2. Tester en environnement local
+3. Vérifier la compatibilité Jekyll/GitHub Pages
+4. Valider les scores Lighthouse
 
 ---
 
 ## 🛠️ Support technique
 
-### Technologies utilisées
+### Stack technologique
 
-#### Core Stack
-- **Jekyll** 3.10.0 - Générateur site statique
-- **Ruby** 2.7+ - Environnement runtime
-- **Liquid** - Templating engine
-- **Kramdown** - Processeur Markdown
-- **Sass** - Préprocesseur CSS
+#### Backend & Build
+- **Jekyll** 3.10.0 - Générateur de site statique
+- **Ruby** 2.7+ - Environnement d'exécution
+- **Liquid** 4.0 - Moteur de templating
+- **Bundler** 2.0+ - Gestionnaire de dépendances
+
+#### Frontend
+- **JavaScript ES6+** - Vanilla JS, aucun framework
+- **CSS3** - Variables CSS, Flexbox, Grid
+- **Font Awesome** 6.4.0 - Bibliothèque d'icônes
+- **Google Fonts** - Typographie Inter
 
 #### Plugins Jekyll
-- **jekyll-seo-tag** 2.8.0 - Meta tags automatiques
-- **jekyll-sitemap** 1.4.0 - Génération sitemap  
-- **jekyll-feed** 0.17.0 - Flux RSS
+- `jekyll-seo-tag` - Optimisation SEO
+- `jekyll-sitemap` - Génération sitemap XML
+- `jekyll-feed` - Flux RSS automatique
 
-#### Front-end
-- **CSS3** avec Custom Properties
-- **JavaScript ES6+** - Vanilla JS, pas de framework
-- **Font Awesome** 6.4.0 - Icônes
-- **Google Fonts** - Typographie (Inter)
+### Documentation et ressources
 
-#### External Services
-- **YouTube** - Intégration vidéos
-- **Google Analytics** - Ready (non configuré)
-- **CDNs** - Font Awesome, Animate.css
+#### Références essentielles
+- [Documentation Jekyll](https://jekyllrb.com/docs/)
+- [Liquid Templating](https://shopify.github.io/liquid/)
+- [Markdown Guide](https://www.markdownguide.org/)
 
-### Contacts et ressources
-
-#### Documentation officielle
-- [Jekyll Documentation](https://jekyllrb.com/docs/)
-- [Liquid Documentation](https://shopify.github.io/liquid/)
-- [GitHub Pages](https://docs.github.com/en/pages)
-
-#### Community Support  
+#### Support communautaire
 - [Jekyll Forum](https://talk.jekyllrb.com/)
-- [Jekyll GitHub Issues](https://github.com/jekyll/jekyll/issues)
-- [Stack Overflow - Jekyll](https://stackoverflow.com/questions/tagged/jekyll)
+- [Stack Overflow Jekyll](https://stackoverflow.com/questions/tagged/jekyll)
 
-#### Développement custom
-Pour des modifications spécifiques ou des fonctionnalités supplémentaires, nous recommandons de faire appel à un développeur Jekyll/Ruby expérimenté.
+### Guide de dépannage rapide
 
-### Troubleshooting Quick Guide
+```bash
+# Problèmes fréquents et solutions
 
-| Problème | Solution rapide |
-|----------|----------------|
-| Build fails | `bundle exec jekyll clean && bundle install` |
-| Navigation broken | Vérifier cohérence slugs dans `_data/navigation.yml` |
-| Styles not loading | Vérifier `baseurl` dans `_config.yml` |
-| Bot not working | Console browser pour erreurs JS |
-| SEO tags missing | Vérifier `{% seo %}` dans `default.html` |
-| Slow build | Désactiver `incremental: false` temporairement |
+# Erreur de build
+bundle exec jekyll clean && bundle install
 
----
+# Problème de dépendances
+rm Gemfile.lock && bundle install
 
-## 📈 Roadmap et améliorations futures
+# Vérifier la syntaxe YAML
+ruby -e "require 'yaml'; YAML.load_file('_config.yml')"
 
-### Court terme (1-3 mois)
-- [ ] **A/B Testing** des parcours bot conversationnel
-- [ ] **Analytics avancées** avec Google Analytics 4
-- [ ] **Formulaires de contact** intégrés
-- [ ] **Newsletter signup** avec intégration email
-
-### Moyen terme (3-6 mois)  
-- [ ] **Progressive Web App** (PWA) avec service worker
-- [ ] **Recherche full-text** avec lunr.js
-- [ ] **Système de favoris** pour spécialités
-- [ ] **Mode sombre** avec switch utilisateur
-
-### Long terme (6-12 mois)
-- [ ] **Multilingual** (anglais international)
-- [ ] **CMS Headless** integration (Strapi, Contentful)
-- [ ] **API REST** pour données spécialités  
-- [ ] **Mobile app** companion
+# Serveur qui ne démarre pas
+lsof -i :4000  # Vérifier si le port est occupé
+```
 
 ---
 
-## 📄 Licence et propriété
+## 📄 Informations légales
 
-Ce site web et son code source sont la propriété d'**Epitech** suite à l'acquisition.
+### Propriété intellectuelle
+Site web développé pour **Epitech** - École de l'innovation et de l'expertise informatique.
 
-**Développeur original** : Damien Demontis  
-**Date de création** : 2025  
-**Dernière mise à jour** : Août 2025  
-**Version** : 2.0 (Post-refactoring Jekyll)
-
-### Utilisation du code
-Le code peut être réutilisé et modifié pour les besoins d'Epitech. Pour toute question technique ou modification majeure, référez-vous à ce README ou contactez l'équipe de développement.
+### Crédits
+- **Conception & Développement**: Damien Demontis
+- **Version actuelle**: 2.0
+- **Dernière mise à jour**: Septembre 2025
+- **Technologies**: Jekyll, Ruby, JavaScript
 
 ---
 
-*Ce README constitue la documentation technique complète du site. Il est recommandé de le tenir à jour lors de modifications importantes de l'architecture ou des fonctionnalités.*
+*Documentation technique complète - Version 2.0*
