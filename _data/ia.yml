@@ -389,7 +389,7 @@ ecosystem:
           url: "https://www.fast.ai/"
         - name: "Udacity - School of AI"
           description: "Parcours d'apprentissage pour devenir un expert en IA, du niveau débutant à avancé"
-          url: "https://www.udacity.com/courses/school-of-ai"
+          url: "https://www.udacity.com/school/artificial-intelligence"
         - name: "DataCamp - Machine Learning Scientist with Python"
           description: "Track complet pour maîtriser le Machine Learning avec Python"
           url: "https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python"
@@ -516,7 +516,7 @@ resources:
           url: "https://www.edx.org/learn/machine-learning"
         - title: "Intro to Artificial Intelligence"
           provider: "Udacity"
-          url: "https://www.udacity.com/courses/school-of-ai"
+          url: "https://www.udacity.com/school/artificial-intelligence"
     
     youtube:
       title: "Chaînes YouTube éducatives"

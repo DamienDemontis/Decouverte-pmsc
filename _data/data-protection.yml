@@ -242,7 +242,7 @@ ecosystem:
           url: "https://www.afcdp.net/"
         - name: "CLUSIF"
           description: "Club de la Sécurité de l'Information Français"
-          url: "https://clusif.asso.fr/"
+          url: "https://clusif.fr/"
 
 resources:
   title: "Ressources d'apprentissage"
@@ -273,7 +273,7 @@ resources:
         - title: "La Protection des Données Personnelles"
           authors: "Vincent Lemaire"
           description: "Ouvrage de référence sur la protection des données personnelles dans l'entreprise."
-          url: "https://www.amazon.fr/Protection-donn%C3%A9es-personnelles-Vincent-Lemaire/dp/2100796771"
+          url: "https://www.amazon.fr/protection-donn%C3%A9es-personnelles-%C3%A0/dp/2802759213"
         - title: "Privacy by Design: The Definitive Workshop"
           authors: "Ann Cavoukian"
           description: "Le concept fondamental du Privacy by Design expliqué par sa créatrice."
@@ -293,7 +293,7 @@ resources:
         - title: "Data Protection Impact Assessments"
           authors: "David Wright & Paul De Hert"
           description: "Guide pratique pour réaliser des analyses d'impact sur la protection des données."
-          url: "https://www.amazon.fr/Data-Protection-Impact-Assessments-Practical/dp/9048199689"
+          url: "https://www.cnil.fr/fr/RGPD-analyse-impact-protection-des-donnees-aipd"
 
   online_courses:
     moocs:
@@ -310,7 +310,7 @@ resources:
           url: "https://www.coursera.org/learn/cybersecurity-compliance-framework-system-administration"
         - title: "Information Security Management"
           provider: "FutureLearn - King's College London"
-          url: "https://www.futurelearn.com/courses/information-security-management"
+          url: "https://www.futurelearn.com/courses/introduction-to-information-security-management"
     
     youtube:
       title: "Chaînes YouTube éducatives"
@@ -334,7 +334,7 @@ resources:
       items:
         - title: "Privacy Tracker"
           description: "Blog technique sur les actualités RGPD et protection des données"
-          url: "https://www.privacytracker.eu/"
+          url: "https://www.edps.europa.eu/data-protection/technology-monitoring/data-protection-and-privacy-tools_en"
         - title: "IAPP Privacy Advisor"
           description: "Blog de référence sur la protection des données et la vie privée"
           url: "https://iapp.org/news/"
@@ -353,7 +353,7 @@ resources:
           url: "https://iapp.org/news/"
         - title: "Privacy Tracker Newsletter"
           description: "Newsletter sur l'actualité RGPD en Europe"
-          url: "https://www.privacytracker.eu/"
+          url: "https://www.edps.europa.eu/data-protection/technology-monitoring/data-protection-and-privacy-tools_en"
         - title: "OneTrust Privacy Weekly"
           description: "Newsletter sur les tendances privacy et RGPD"
           url: "https://www.onetrust.com/resources/"

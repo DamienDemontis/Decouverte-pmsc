@@ -270,7 +270,7 @@ ecosystem:
           url: "https://www.cnil.fr/"
         - name: "FDA"
           description: "Food and Drug Administration (USA)"
-          url: "https://www.fda.gov/medical-devices"
+          url: "https://www.fda.gov/"
 
 resources:
   title: "Ressources d'apprentissage"
@@ -313,7 +313,7 @@ resources:
         - title: "AI in Healthcare: From Hype to Hope"
           authors: "Bertalan Meskó"
           description: "Guide pratique sur l'implémentation réelle de l'IA en santé."
-          url: "https://www.amazon.fr/Healthcare-Artificial-Intelligence-Medicine-Technology/dp/3030214113"
+          url: "https://www.amazon.fr/Artificial-Intelligence-Healthcare-Adam-Bohr/dp/0128184388"
         - title: "Digital Health: Scaling Healthcare to the World"
           authors: "Julie Yoo, Trystan Upstill & Josh Stein"
           description: "Comment la technologie peut démocratiser l'accès aux soins de santé."
@@ -321,7 +321,7 @@ resources:
         - title: "Wearable Technology in Medicine"
           authors: "Mahmoud El-Gohary & James McNames"
           description: "Applications médicales des dispositifs connectés et capteurs de santé."
-          url: "https://www.amazon.fr/Wearable-Technology-Medicine-Mahmoud-El-Gohary/dp/0128187719"
+          url: "https://www.amazon.fr/Wearable-Technology-Medicine-Health-Care/dp/0128118105"
 
   online_courses:
     moocs:
@@ -335,7 +335,7 @@ resources:
           url: "https://www.edx.org/learn/health-informatics"
         - title: "Introduction to Digital Health"
           provider: "FutureLearn - King's College London"
-          url: "https://www.futurelearn.com/courses/introduction-to-digital-health"
+          url: "https://www.futurelearn.com/courses/digital-health-essentials"
         - title: "IoT and AI in Healthcare"
           provider: "Coursera - University of California San Diego"
           url: "https://www.coursera.org/browse/health"
@@ -387,7 +387,7 @@ resources:
           url: "https://www.ticsante.com/"
         - title: "HIMSS Newsletter"
           description: "Newsletter de l'association mondiale des professionnels de la santé numérique"
-          url: "https://www.himss.org/newsletters"
+          url: "https://www.himss.org/"
 
 careers: true
 career_paths:

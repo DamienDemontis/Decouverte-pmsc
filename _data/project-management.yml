@@ -153,7 +153,7 @@ roadmap:
           description: "Apprendre à définir une vision produit, à gérer un backlog et à prioriser les fonctionnalités."
           resources:
             - text: "'Inspired' par Marty Cagan"
-              url: "https://www.svpg.com/inspired-how-to-create-tech-products-customers-love/"
+              url: "https://www.amazon.fr/Inspired-Create-Tech-Products-Customers/dp/1119387507"
             - text: "Mind the Product"
               url: "https://www.mindtheproduct.com/"
 
@@ -317,7 +317,7 @@ resources:
           url: "https://www.theleanstartup.com"
         - title: "Inspired"
           authors: "Marty Cagan"
-          url: "https://www.svpg.com/inspired-how-to-create-tech-products-customers-love/"
+          url: "https://www.amazon.fr/Inspired-Create-Tech-Products-Customers/dp/1119387507"
         - title: "Measure What Matters"
           authors: "John Doerr"
           url: "https://www.whatmatters.com/"
@@ -326,7 +326,7 @@ resources:
           url: "https://www.amazon.fr/Hard-Thing-About-Things-Building/dp/0062273205"
         - title: "Scrum: The Art of Doing Twice the Work in Half the Time"
           authors: "Jeff Sutherland"
-          url: "https://www.amazon.fr/Scrum-Doing-Twice-Work-Half/dp/1847941100"
+          url: "https://www.amazon.fr/Scrum-Doing-Twice-Work-Half/dp/038534645X"
     
     specialized:
       title: "Spécialisations avancées"
@@ -350,7 +350,7 @@ resources:
       items:
         - title: "Become a Product Manager"
           provider: "Udacity"
-          url: "https://www.udacity.com/course/product-manager-nanodegree--nd036"
+          url: "https://www.udacity.com/school/product-management"
         - title: "Agile with Atlassian Jira"
           provider: "Coursera"
           url: "https://www.coursera.org/learn/agile-atlassian-jira"
@@ -439,7 +439,7 @@ resources:
         url: "https://www.mindtheproduct.com/conferences/"
       - title: "ProductCamp"
         description: "Conférences non-commerciales organisées par la communauté"
-        url: "https://productcamp.org/"
+        url: "https://www.productcampchicago.com/"
       - title: "Agile Alliance Conference"
         description: "Conférence annuelle sur l'agilité"
         url: "https://www.agilealliance.org/agile2024/"

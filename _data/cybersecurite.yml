@@ -363,7 +363,7 @@ resources:
           url: "https://www.amazon.fr/Hacking-Art-Exploitation-Jon-Erickson/dp/1593271441"
         - title: "Network Security: Private Communication in a Public World"
           authors: "Charlie Kaufman, Radia Perlman & Mike Speciner"
-          url: "https://www.amazon.fr/Network-Security-Private-Communication-Public/dp/0137155889"
+          url: "https://www.amazon.fr/Cybersécurité-éd-Sécurité-informatique-réseaux/dp/2100747347"
         - title: "Applied Cryptography"
           authors: "Bruce Schneier"
           url: "https://www.amazon.fr/Applied-Cryptography-Protocols-Algorithms-Source/dp/1119096723"
@@ -488,7 +488,7 @@ resources:
         url: "https://www.sans.org/events/"
       - title: "Hack In Paris"
         description: "Conférence cybersécurité française"
-        url: "https://hackinparis.com/"
+        url: "https://cysat.eu/"
 
 careers: true
 career_paths:

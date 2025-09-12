@@ -283,7 +283,7 @@ resources:
         - title: "Créer votre premier projet VR avec Unreal Engine 5"
           authors: "Epic Games / Unreal Engine Docs"
           description: "Tutoriel officiel pour démarrer un projet VR avec Unreal Engine 5."
-          url: "https://docs.unrealengine.com/5.3/en-US/vr-development-in-unreal-engine/"
+          url: "https://dev.epicgames.com/documentation/en-us/unreal-engine/vr-template-in-unreal-engine"
     
     specialized:
       title: "Livres recommandés"
