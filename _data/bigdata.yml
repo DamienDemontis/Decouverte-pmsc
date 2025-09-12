@@ -421,7 +421,7 @@ resources:
           url: "https://www.amazon.fr/Data-Mesh-Delivering-Data-Driven-Value/dp/1492092398"
         - title: "The Data Warehouse Toolkit"
           authors: "Ralph Kimball & Margy Ross"
-          url: "https://www.amazon.fr/Data-Warehouse-Toolkit-Definitive-Dimensional/dp/1118530803"
+          url: "https://www.amazon.fr/Data-Warehouse-Toolkit-Definitive-Dimensional/dp/1118530802"
 
   online_courses:
     moocs:

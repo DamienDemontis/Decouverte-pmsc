@@ -380,7 +380,7 @@ ecosystem:
           description: "Hackathon organisé par les banques"
         - name: "Fintech Innovation Challenge"
           description: "Compétition d'innovation fintech"
-          url: "https://www.fintechinnovationchallenge.com/"
+          url: "https://www.globalfintechfest.com/"
         - name: "Blockchain Hackathon"
           description: "Hackathons blockchain et DeFi"
           url: "https://www.blockchainhackathon.com/"
@@ -412,16 +412,16 @@ resources:
       items:
         - title: "The Future of Finance"
           authors: "Henri Arslanian & Fabrice Fischer"
-          url: "https://www.amazon.fr/Future-Finance-Impact-Technology-Financial/dp/3030234567"
+          url: "https://www.amazon.fr/Future-Finance-Impact-Technology-Financial/dp/3030145328"
         - title: "Digital Bank"
           authors: "Chris Skinner"
-          url: "https://www.amazon.fr/Digital-Bank-Strategies-Launch-Financial/dp/0957124700"
+          url: "https://www.amazon.fr/Digital-Bank-Strategies-Launch-Become/dp/9814516465"
         - title: "The Business Blockchain"
           authors: "William Mougayar"
-          url: "https://www.amazon.fr/Business-Blockchain-Promise-Technology-Internet/dp/1119300315"
+          url: "https://www.amazon.fr/Business-Blockchain-Practice-Application-Technology/dp/1119300312"
         - title: "DeFi and the Future of Finance"
           authors: "Campbell Harvey, Ashwin Ramachandran & Joey Santoro"
-          url: "https://www.amazon.fr/DeFi-Future-Finance-Campbell-Harvey/dp/1119836013"
+          url: "https://www.amazon.fr/Defi-Future-Finance-Campbell-Harvey/dp/1119836018"
     
     specialized:
       title: "Spécialisations avancées"
@@ -451,7 +451,7 @@ resources:
           url: "https://www.coursera.org/courses?query=decentralized%20finance"
         - title: "Oxford Fintech Programme"
           provider: "Saïd Business School"
-          url: "https://www.sbs.ox.ac.uk/programmes/oxford-fintech-programme"
+          url: "https://www.sbs.ox.ac.uk/programmes/executive-education/online-programmes/oxford-fintech-programme"
         - title: "Blockchain and Cryptocurrency"
           provider: "edX - Berkeley"
           url: "https://www.edx.org/learn/blockchain"
@@ -487,7 +487,7 @@ resources:
           url: "https://www.coindesk.com/"
         - title: "Banking Technology"
           description: "Actualités sur l'innovation bancaire"
-          url: "https://www.bankingtech.com/"
+          url: "https://www.fintechfutures.com/"
     
     newsletters:
       title: "Newsletters et actualités"

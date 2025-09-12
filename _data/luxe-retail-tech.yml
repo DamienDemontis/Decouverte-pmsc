@@ -195,7 +195,7 @@ projects:
         - text: "Retail Innovation Lab"
           url: "https://nrf.com/research-insights"
         - text: "Concepts phygital retail"
-          url: "https://blog.salesforce.com/what-is-phygital-retail/"
+          url: "https://www.salesforce.com/digital-transformation/"
 
 ecosystem:
   title: "Écosystème Luxe & Retail Tech"
@@ -260,32 +260,32 @@ resources:
       items:
         - title: "The New Rules of Retail"
           authors: "Robin Lewis & Michael Dart"
-          url: "https://www.amazon.fr/New-Rules-Retail-Competing-Consumer/dp/0230103788"
+          url: "https://www.amazon.fr/New-Rules-Retail-Competing-Marketplace/dp/1137279265"
         - title: "Retail 4.0"
           authors: "Stefan Gerlach & Michael Renz"
           url: "https://www.amazon.fr/Retail-4-0-Digital-Transformation-Industry/dp/3030301567"
         - title: "The Luxury Strategy"
           authors: "Jean-Noël Kapferer & Vincent Bastien"
-          url: "https://www.amazon.fr/Luxury-Strategy-Break-Rules-Marketing/dp/0749464912"
+          url: "https://www.amazon.fr/Luxury-Strategy-Break-Marketing-Brands/dp/1398624268"
         - title: "Digital Luxury"
           authors: "Wided Batat"
-          url: "https://www.amazon.fr/Digital-Luxury-Transforming-Brands-Consumer/dp/1137600004"
+          url: "https://www.amazon.fr/Digital-Luxury-Transforming-Consumer-Experiences/dp/1526458942"
     
     specialized:
       title: "Spécialisations avancées"
       items:
         - title: "The Future of Retail"
           authors: "Doug Stephens"
-          url: "https://www.amazon.fr/Future-Retail-Everything-Selling-Buying/dp/1118456538"
+          url: "https://www.amazon.fr/WTF-Whats-Future-Business-Experiences/dp/111845653X"
         - title: "Retail Therapy"
           authors: "Mark Pilkington"
-          url: "https://www.amazon.fr/Retail-Therapy-Industry-Transformed-Technology/dp/1472962484"
+          url: "https://www.amazon.fr/Retail-Therapy-Mark-Pilkington/dp/1472965108"
         - title: "Luxury Brand Management"
           authors: "Michel Chevalier & Gerald Mazzalovo"
           url: "https://www.amazon.fr/Luxury-Brand-Management-Chevalier-Mazzalovo/dp/1119192498"
         - title: "The Experience Economy"
           authors: "B. Joseph Pine II & James H. Gilmore"
-          url: "https://www.amazon.fr/Experience-Economy-Updated-Edition/dp/1422161976"
+          url: "https://www.amazon.fr/Experience-Economy-B-Joseph-Pine/dp/1422161978"
 
   online_courses:
     moocs:
@@ -388,7 +388,7 @@ resources:
         url: "https://www.parisretailweek.com/"
       - title: "Luxury Digital Summit"
         description: "Conférence sur le luxe digital"
-        url: "https://luxurydigitalsummit.com/"
+        url: "https://eluxurysummit.ch/"
       - title: "Viva Technology"
         description: "Salon français de l'innovation"
         url: "https://vivatechnology.com/"
@@ -534,5 +534,6 @@ media:
   - title: "L'IA au cœur de la révolution du retail"
     description: "Une conférence qui explore comment l'intelligence artificielle transforme tous les aspects du commerce de détail."
     url: "https://www.youtube.com/embed/dEDzDuQW3Vs"
-  - title: "Cas pratique : la cabine d'essayage virtuelle"
-    description: "Une démonstration concrète d'une solution de réalité augmentée pour l'essayage de vêtements en ligne."
+  - title: "CES 2025 : L'avenir de la technologie retail"
+    description: "Plongez dans l'avenir du retail avec ce récap du CES 2025 : IA conversationnelle multilingue, personnalisation, durabilité, robotique et innovations Walmart."
+    url: "https://www.youtube.com/embed/qSiIEbdKSAs"

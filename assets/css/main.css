@@ -1896,6 +1896,18 @@ aside p {
   margin-top: 3rem;
 }
 
+.developer-link {
+  color: var(--main);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.developer-link:hover {
+  color: var(--main-dark);
+  text-decoration: underline;
+}
+
 .footer-content {
   display: flex;
   justify-content: space-between;

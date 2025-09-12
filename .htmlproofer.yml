@@ -1,0 +1,20 @@
+# .htmlproofer.yml
+# Ignore URLs that are always noisy or dev-only
+ignore_urls:
+  - http://localhost:4000
+  - fonts.googleapis.com
+  - fonts.gstatic.com
+  - cdnjs.cloudflare.com
+  - unpkg.com
+  - animate.css
+
+# Enforce https everywhere possible
+enforce_https: true
+
+# Typhoeus HTTP client config
+Typhoeus:
+  timeout: 20
+  connecttimeout: 10
+  followlocation: true
+  maxredirs: 5
+  parallel: 10   # limit concurrency to avoid CDN rate-limiting

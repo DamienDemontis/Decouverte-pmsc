@@ -313,7 +313,7 @@ projects:
         - text: "Hardware Guide : ESP32 + LoRa RFM95"
           url: "https://randomnerdtutorials.com/esp32-lora-rfm95-transceiver-arduino-ide/"
         - text: "Advanced : Power Optimization Techniques"
-          url: "https://lora-developers.semtech.com/resources/tools/lora-basics/"
+          url: "https://lora-developers.semtech.com/build/software/lora-basics/"
 
 ecosystem:
   title: "Écosystème IoT"
