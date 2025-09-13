@@ -228,6 +228,8 @@ projects:
         - "Metasploitable ou DVWA comme cible"
         - "Configuration réseau isolé"
       resources:
+        - text: "📋 Sujet complet (PDF)"
+          url: "/Decouverte-pmsc/assets/subjects/cybersecurity/Sujet_Decouverte_CyberSec.pdf"
         - text: "🎯 Tutoriel principal : Complete Penetration Testing Lab Setup"
           url: "https://www.kali.org/docs/virtualization/install-virtualbox-guest-vm/"
         - text: "Step-by-step : Metasploitable Setup Guide"
@@ -236,6 +238,8 @@ projects:
           url: "https://www.vulnhub.com/"
         - text: "Network Configuration : Isolated Lab Setup"
           url: "https://www.kali.org/docs/virtualization/"
+        - text: "Assets complémentaires (ZIP)"
+          url: "/Decouverte-pmsc/assets/subjects/cybersecurity/Assets.zip"
     
     - title: "Projet 2: Analyse de sécurité web"
       difficulty: "Débutant"

@@ -128,7 +128,7 @@ roadmap:
           description: "Comprendre les bases du cycle de vie d'un projet, le triangle d'or (coût, délai, périmètre) et les processus clés."
           resources:
             - text: "Guide PMBOK® du PMI"
-              url: "https://ibimone.com/PMBOK%207th%20Edition%20%28iBIMOne.com%29.pdf).pdf"
+              url: "https://ibimone.com/PMBOK%207th%20Edition%20%28iBIMOne.com%29.pdf"
             - text: "Google Project Management Certificate (Coursera)"
               url: "https://www.coursera.org/google-certificates/project-management-certificate"
         
