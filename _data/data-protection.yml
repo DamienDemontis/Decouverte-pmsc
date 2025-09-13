@@ -15,26 +15,32 @@ overview:
     - title: "Un enjeu de conformité majeur"
       icon: "fas fa-gavel"
       description: "Avec le RGPD, la directive NIS2 et d'autres régulations, la conformité n'est plus une option. C'est une obligation légale et un gage de sérieux."
+      example: "British Airways a écopé de 230 millions d'euros d'amende RGPD en 2020 suite à une fuite de données touchant 500 000 clients."
     
     - title: "Le pilier de la confiance numérique"
       icon: "fas fa-handshake"
       description: "Les clients et utilisateurs ne confient leurs données qu'aux organisations qu'ils estiment dignes de confiance. La protection des données est un différenciant clé."
+      example: "Apple a fait du respect de la vie privée un argument marketing central, avec des fonctions comme App Tracking Transparency qui ont réduit de 60% le tracking publicitaire."
     
     - title: "Gestion des risques cyber"
       icon: "fas fa-shield-check"
       description: "Apprenez à identifier, évaluer et gérer les risques pour protéger les données sensibles de votre organisation contre des menaces en constante évolution."
+      example: "Le ransomware Colonial Pipeline en 2021 a paralysé 45% de l'approvisionnement en carburant de la côte Est américaine, coûtant 4,4 millions de dollars de rançon."
     
     - title: "Au cœur de la stratégie d'entreprise"
       icon: "fas fa-sitemap"
       description: "La gouvernance des données n'est pas qu'un sujet technique ou juridique, c'est un sujet de direction générale qui impacte tous les départements."
+      example: "Microsoft a nommé un Chief Privacy Officer dès 2000 et emploie 1500+ personnes dans ses équipes privacy et compliance globales."
     
     - title: "Un rôle de communicant et de pédagogue"
       icon: "fas fa-comments"
       description: "Sensibilisez les collaborateurs, expliquez les politiques de sécurité et communiquez efficacement avec toutes les parties prenantes, internes comme externes."
+      example: "Google forme 100% de ses employés à la protection des données chaque année avec des simulations de phishing qui ont réduit de 90% les clics suspects."
     
     - title: "L'analyse de données pour la sécurité"
       icon: "fas fa-search-plus"
       description: "Utilisez les techniques d'analyse de données pour détecter des menaces potentielles, des vulnérabilités et des comportements anormaux."
+      example: "PayPal analyse 1+ milliard de transactions par jour avec l'IA pour détecter la fraude, réduisant les pertes de 50% tout en approuvant 89% des transactions en temps réel."
 
   accordion:
     - title: "Le Cadre Légal et Réglementaire"

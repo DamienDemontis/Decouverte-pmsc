@@ -15,26 +15,32 @@ overview:
     - title: "Pilotage de projets complexes"
       icon: "fas fa-project-diagram"
       description: "Apprenez à décomposer des défis complexes en projets gérables et à les mener à bien dans le respect des délais, du budget et de la qualité."
+      example: "Microsoft a coordonné 5000+ développeurs sur 65+ équipes pour livrer Windows 11, gérant des millions de lignes de code avec un planning millimétré."
     
     - title: "Création de valeur et innovation"
       icon: "fas fa-rocket"
       description: "Acquérez les méthodes pour identifier des opportunités de marché, valider des idées et construire des business models solides pour des entreprises innovantes."
+      example: "Airbnb a pivoté 3 fois avant de trouver son modèle, passant de la location de matelas gonflables à une plateforme de 7 millions de logements."
     
     - title: "Leadership et gestion d'équipe"
       icon: "fas fa-users-cog"
       description: "Maîtrisez l'art de constituer, motiver et diriger des équipes multidisciplinaires pour atteindre des objectifs ambitieux dans le secteur technologique."
+      example: "Netflix utilise le concept de 'Freedom & Responsibility', donnant une autonomie maximale à ses équipes tout en maintenant une performance exceptionnelle."
     
     - title: "Vision stratégique"
       icon: "fas fa-chart-line"
       description: "Développez une vision à 360° pour aligner les projets sur la stratégie de l'entreprise et anticiper les évolutions du marché."
+      example: "Satya Nadella a réorienté Microsoft vers le cloud et l'IA, faisant passer sa capitalisation de 300 milliards à 3000 milliards de dollars."
     
     - title: "Maîtrise des méthodologies"
       icon: "fas fa-cogs"
       description: "Devenez expert des approches prédictives (Waterfall), adaptatives (Agile, Scrum, Kanban) et hybrides pour choisir le bon outil pour chaque contexte."
+      example: "SpaceX utilise Agile pour le software et Waterfall pour le hardware, réduisant le coût des lancements spatiaux de 90% en 20 ans."
     
     - title: "Prise de décision éclairée"
       icon: "fas fa-balance-scale"
       description: "Apprenez à utiliser les données et les indicateurs clés (KPIs) pour prendre des décisions rationnelles et piloter la performance."
+      example: "Amazon mesure tout avec 500+ KPIs temps réel, permettant de détecter et corriger les problèmes en moins de 5 minutes sur l'ensemble de sa plateforme."
 
   accordion:
     - title: "Méthodologies de gestion de projet"

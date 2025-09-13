@@ -15,26 +15,32 @@ overview:
     - title: "Le nouvel or noir"
       icon: "fas fa-database"
       description: "Les données sont l'actif le plus précieux du 21e siècle. Apprenez à les extraire, les raffiner et les transformer en décisions stratégiques."
+      example: "Alibaba traite 1+ pétaoctet de données par jour, générant 40 milliards de dollars de revenus supplémentaires grâce aux recommandations personnalisées."
     
     - title: "Du descriptif au prédictif"
       icon: "fas fa-magic"
       description: "Allez au-delà du \"que s'est-il passé ?\" (BI) pour répondre à \"que va-t-il se passer ?\" (Data Science) et prescrire les meilleures actions."
+      example: "Target prédit les grossesses de ses clientes avec 87% de précision en analysant 25 produits, permettant un marketing ciblé augmentant les ventes de 50%."
     
     - title: "Prise de décision éclairée"
       icon: "fas fa-bullseye"
       description: "Remplacez l'intuition par des faits. Fournissez aux décideurs des visualisations claires et des analyses robustes pour guider la stratégie de l'entreprise."
+      example: "Procter & Gamble utilise des 'decision cockpits' temps réel qui ont réduit le temps de décision de 80% et augmenté le ROI marketing de 20%."
     
     - title: "Optimisation des performances"
       icon: "fas fa-cogs"
       description: "Identifiez les inefficacités, optimisez les processus marketing, les opérations logistiques ou la tarification grâce à une analyse fine des données."
+      example: "UPS économise 400 millions de dollars par an grâce à ORION, son système d'optimisation de routes basé sur l'analyse de 250 millions de points de données."
     
     - title: "Compréhension client 360°"
       icon: "fas fa-user-friends"
       description: "Analysez les comportements, segmentez les audiences et personnalisez l'expérience client pour augmenter la satisfaction et la fidélité."
+      example: "Starbucks analyse 90+ millions de transactions par semaine pour personnaliser ses offres, augmentant les revenus par client de 150%."
     
     - title: "Un avantage concurrentiel"
       icon: "fas fa-search-dollar"
       description: "Les entreprises \"data-driven\" (pilotées par la donnée) sont plus agiles, plus innovantes et surpassent systématiquement leurs concurrents."
+      example: "Les entreprises data-driven sont 23x plus susceptibles d'acquérir des clients, 6x plus de les retenir et 19x plus d'être profitables selon McKinsey."
 
   accordion:
     - title: "Business Intelligence (BI)"

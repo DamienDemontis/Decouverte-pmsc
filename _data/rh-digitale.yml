@@ -15,26 +15,32 @@ overview:
     - title: "L'Expérience Collaborateur au centre"
       icon: "fas fa-heart"
       description: "Offrez à vos collaborateurs une expérience aussi fluide et intuitive que celle qu'ils connaissent en tant que consommateurs, de l'embauche à l'offboarding."
+      example: "Workday permet à 60+ millions d'utilisateurs de gérer leur carrière via mobile, avec 95% des actions réalisables en moins de 3 clics."
     
     - title: "Des décisions basées sur la donnée"
       icon: "fas fa-chart-line"
       description: "Passez d'une gestion administrative à un pilotage stratégique du capital humain grâce à l'analyse de données (turnover, engagement, performance)."
+      example: "Google utilise l'algorithme 'Project Oxygen' qui analyse 10 000+ reviews managers pour identifier les 8 comportements des meilleurs managers, améliorant la rétention de 50%."
     
     - title: "Gain d'efficacité et de temps"
       icon: "fas fa-tachometer-alt"
       description: "Automatisez les tâches à faible valeur ajoutée (gestion des congés, notes de frais) pour que les équipes RH se concentrent sur l'accompagnement et la stratégie."
+      example: "Unilever a réduit de 90% le temps de recrutement en utilisant des chatbots et l'IA pour présélectionner 1,8 million de candidats par an."
     
     - title: "Attirer et retenir les talents"
       icon: "fas fa-search"
       description: "Une expérience RH moderne et des outils performants sont devenus des arguments clés pour attirer les meilleurs profils et fidéliser les employés."
+      example: "LinkedIn Talent Solutions aide 20 000+ entreprises à identifier et contacter 800+ millions de professionnels, réduisant le temps de recrutement de 40%."
     
     - title: "Culture de l'innovation"
       icon: "fas fa-lightbulb"
       description: "La digitalisation des RH est un moteur pour insuffler une culture d'agilité, de feedback continu et de développement des compétences dans toute l'entreprise."
+      example: "Adobe a supprimé les évaluations annuelles pour un système de 'check-ins' continus, augmentant l'engagement employé de 30% et réduisant le turnover volontaire de 50%."
     
     - title: "Conformité et sécurité"
       icon: "fas fa-gavel"
       description: "Assurez la conformité réglementaire (RGPD, etc.) et sécurisez les données sensibles des collaborateurs grâce à des systèmes robustes et centralisés."
+      example: "SAP SuccessFactors gère les données RH de 200+ millions d'utilisateurs avec une conformité automatique à 180+ réglementations locales dans 100+ pays."
 
   accordion:
     - title: "Le SIRH (Système d'Information de Gestion des Ressources Humaines)"

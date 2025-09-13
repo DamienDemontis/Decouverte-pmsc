@@ -15,26 +15,32 @@ overview:
     - title: "D'une médecine curative à préventive"
       icon: "fas fa-pills"
       description: "Grâce aux données des objets connectés, l'IA peut détecter des signaux faibles et anticiper les risques, permettant d'agir avant l'apparition de la maladie."
+      example: "L'Apple Watch a sauvé des milliers de vies en détectant des fibrillations auriculaires non diagnostiquées chez 0,5% des utilisateurs, soit 2 millions de personnes."
     
     - title: "Le patient devient acteur"
       icon: "fas fa-hospital-user"
       description: "Les technologies digitales redonnent du pouvoir au patient, lui permettant de mieux suivre sa santé, de mieux comprendre sa maladie et de mieux interagir avec le corps médical."
+      example: "MySugr permet à 3 millions de diabétiques de gérer leur glycémie via smartphone, réduisant l'HbA1c de 1,2% et les complications de 40%."
     
     - title: "Optimisation du système de santé"
       icon: "fas fa-chart-line"
       description: "L'IA et l'automatisation permettent d'optimiser les flux de patients, la gestion des lits, la planification des opérations et de réduire les tâches administratives."
+      example: "L'hôpital Johns Hopkins utilise l'IA pour prédire les admissions avec 80% de précision 48h à l'avance, réduisant l'attente aux urgences de 30%."
     
     - title: "Aide au diagnostic et au traitement"
       icon: "fas fa-stethoscope"
       description: "L'IA peut analyser des images médicales (radios, scanners) avec une précision parfois supérieure à l'œil humain ou suggérer des protocoles de traitement personnalisés."
+      example: "L'IA de Google détecte le cancer du sein sur les mammographies avec 94,5% de précision, réduisant les faux positifs de 5,7% et les faux négatifs de 9,4%."
     
     - title: "Améliorer le quotidien des soignants"
       icon: "fas fa-user-md"
       description: "En automatisant les tâches répétitives, la technologie libère du temps médical pour que les soignants puissent se concentrer sur l'essentiel : le soin et la relation humaine."
+      example: "Nuance DAX automatise la documentation médicale par reconnaissance vocale, économisant 3h par jour aux médecins, soit 30% de temps en plus avec les patients."
     
     - title: "Un secteur à forts enjeux éthiques"
       icon: "fas fa-balance-scale"
       description: "La gestion des données de santé, l'explicabilité des algorithmes et l'équité d'accès aux soins sont des défis passionnants à relever."
+      example: "Le Health Data Hub français centralise les données de 67 millions de patients avec une gouvernance éthique stricte pour améliorer la recherche tout en protégeant la vie privée."
 
   accordion:
     - title: "L'Internet des Objets (IoT) Médical"

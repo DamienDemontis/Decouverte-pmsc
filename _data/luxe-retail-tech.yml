@@ -15,26 +15,32 @@ overview:
     - title: "L'Expérience est le produit"
       icon: "fas fa-store"
       description: "Dans le luxe, l'expérience d'achat est aussi importante que le produit lui-même. La technologie permet de créer des moments magiques et mémorables."
+      example: "Le flagship Dior sur les Champs-Élysées utilise 164 écrans LED et des capteurs pour créer des expériences immersives personnalisées, augmentant le temps passé en boutique de 40%."
     
     - title: "Hyper-personnalisation"
       icon: "fas fa-hand-sparkles"
       description: "Utilisez la data et l'IA pour offrir un service ultra-personnalisé, anticipant les désirs des clients et créant une relation unique avec la marque."
+      example: "Net-a-Porter analyse 100+ points de données par client pour recommander des produits, générant 35% du chiffre d'affaires via la personnalisation IA."
     
     - title: "Phygital & Omnicanal"
       icon: "fas fa-border-style"
       description: "Fusionnez les mondes physique et digital pour un parcours client sans couture, où le site web, l'application mobile et la boutique ne font qu'un."
+      example: "Nike Live permet de réserver en ligne et essayer en magasin en 30 secondes, ou de retourner via casier automatique 24/7, augmentant la satisfaction client de 45%."
     
     - title: "Réalités Immersives (XR)"
       icon: "fas fa-vr-cardboard"
       description: "Intégrez la réalité augmentée (AR) pour essayer des produits virtuellement et la réalité virtuelle (VR) pour des expériences de marque immersives."
+      example: "L'app Gucci permet d'essayer virtuellement 70+ modèles de sneakers en AR, générant 18 millions de vues et augmentant la conversion online de 30%."
     
     - title: "Nouveaux marchés, nouveaux codes"
       icon: "fas fa-globe-asia"
       description: "La technologie est la clé pour toucher les nouvelles générations de consommateurs de luxe (Gen Z) et s'implanter sur les marchés asiatiques dynamiques."
+      example: "Balenciaga a lancé une collection dans Fortnite touchant 350 millions de joueurs, dont 60% de Gen Z, créant un nouveau canal de vente de 70 millions d'euros."
     
     - title: "Traçabilité & Authentification"
       icon: "fas fa-link"
       description: "Utilisez la blockchain et les NFTs pour garantir l'authenticité des produits, lutter contre la contrefaçon et raconter l'histoire unique de chaque pièce."
+      example: "LVMH utilise la blockchain Aura pour tracer 10+ millions de produits, réduisant la contrefaçon de 80% et augmentant la confiance client de 65%."
 
   accordion:
     - title: "L'Expérience Client Unifiée"
