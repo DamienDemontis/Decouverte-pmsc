@@ -15,32 +15,32 @@ overview:
     - title: "Révolution du secteur bancaire"
       icon: "fas fa-university"
       description: "La finance est l'un des secteurs les plus massivement transformés par la technologie. Les acteurs traditionnels sont challengés par des startups agiles."
-      example: ""
+      example: "Revolut a acquis 35+ millions de clients en 8 ans, offrant des services bancaires complets sans agence physique."
     
     - title: "Démocratisation de l'accès"
       icon: "fas fa-hand-holding-usd"
       description: "La Fintech rend les services financiers (paiement, crédit, investissement) plus accessibles, moins chers et plus simples pour des millions de personnes."
-      example: ""
+      example: "M-Pesa au Kenya permet à 51 millions d'utilisateurs de transférer de l'argent via SMS, sans compte bancaire traditionnel."
     
     - title: "Convergence Technologie & Finance"
       icon: "fas fa-cogs"
       description: "Ce domaine est au carrefour de l'ingénierie logicielle, de la data science, de la cryptographie et de l'expertise financière traditionnelle."
-      example: ""
+      example: "Square (Block) combine hardware de paiement, logiciels de gestion, prêts automatisés et trading de cryptomonnaies dans un écosystème unifié."
     
     - title: "Décisions basées sur les données"
       icon: "fas fa-brain"
       description: "L'IA et le Big Data permettent d'analyser les marchés, de prédire les risques et de personnaliser les services financiers à une échelle inédite."
-      example: ""
+      example: "Ant Financial utilise l'IA pour évaluer la solvabilité en 3 secondes en analysant 3000+ variables, accordant des microcrédits instantanés."
     
     - title: "Émergence de la finance décentralisée"
       icon: "fab fa-btc"
       description: "La blockchain et les crypto-actifs créent un système financier alternatif, ouvert, transparent et programmable, redéfinissant la notion même de confiance."
-      example: ""
+      example: "Uniswap gère plus de 1,5 milliard de dollars d'échanges quotidiens sans intermédiaire, uniquement via des smart contracts."
     
     - title: "Enjeux réglementaires complexes"
       icon: "fas fa-balance-scale"
       description: "Innover dans la finance impose de naviguer dans un environnement réglementaire dense (DSP2, RGPD, MiCA) qui est à la fois une contrainte et une opportunité."
-      example: ""
+      example: "La directive DSP2 a permis l'émergence de 400+ fintechs d'Open Banking en Europe, créant un marché de 13 milliards d'euros."
 
   accordion:
     - title: "1. Technologies de Paiement"

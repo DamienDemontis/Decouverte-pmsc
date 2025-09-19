@@ -15,26 +15,32 @@ overview:
     - title: "Un impératif compétitif"
       icon: "fas fa-industry"
       description: "L'IA n'est plus une option. Les entreprises qui l'intègrent à leur stratégie gagnent en efficacité, en agilité et créent de nouvelles sources de revenus."
+      example: "McKinsey estime que l'IA générative pourrait ajouter 4,4 trillions de dollars à l'économie mondiale, avec les early adopters captant 70% de cette valeur."
     
     - title: "Augmenter le potentiel humain"
       icon: "fas fa-sync-alt"
       description: "L'IA automatise les tâches répétitives et analyse des données complexes, libérant les collaborateurs pour qu'ils se concentrent sur la créativité, la stratégie et les relations humaines."
+      example: "GitHub Copilot augmente la productivité des développeurs de 55%, leur permettant de se concentrer sur l'architecture et la résolution de problèmes complexes."
     
     - title: "Réinventer les processus"
       icon: "fas fa-cogs"
       description: "Passez de l'optimisation à la réinvention. L'IA permet de repenser entièrement les processus métiers, de la supply chain au service client, pour une performance démultipliée."
+      example: "Walmart utilise l'IA pour optimiser sa supply chain, réduisant les ruptures de stock de 30% et économisant 2,3 milliards de dollars par an."
     
     - title: "Piloter le changement"
       icon: "fas fa-users-cog"
       description: "La réussite d'un projet IA est à 70% humaine. Maîtriser la conduite du changement est la compétence clé pour assurer l'adoption et le succès de ces transformations."
+      example: "Schneider Electric a formé 100% de ses 130 000 employés à l'IA, augmentant l'adoption des outils IA de 85% et la satisfaction employé de 40%."
     
     - title: "Vers une IA responsable"
       icon: "fas fa-balance-scale"
       description: "Développer une vision stratégique pour une IA éthique, transparente et équitable est crucial pour la confiance des clients et des collaborateurs, et pour la pérennité de l'entreprise."
+      example: "IBM a créé un conseil d'éthique IA et refuse 30% des projets clients jugés non éthiques, renforçant sa réputation et gagnant 5 milliards en contrats 'trusted AI'."
     
     - title: "Catalyseur d'innovation"
       icon: "fas fa-lightbulb-on"
       description: "L'IA permet de découvrir de nouvelles opportunités, de créer des produits et services personnalisés et d'explorer des business models inédits."
+      example: "Moderna a utilisé l'IA pour développer son vaccin COVID-19 en 42 jours au lieu de 10 ans, révolutionnant l'industrie pharmaceutique."
 
   accordion:
     - title: "Stratégie & Vision"

@@ -15,26 +15,32 @@ overview:
     - title: "Le nouveau bouche-à-oreille"
       icon: "fas fa-satellite-dish"
       description: "À l'ère numérique, l'influence et les réseaux sociaux sont devenus le principal levier de recommandation, dépassant les médias traditionnels."
+      example: "92% des consommateurs font plus confiance aux recommandations d'influenceurs qu'à la publicité traditionnelle, générant 11x plus de ROI selon Nielsen."
     
     - title: "Marketing basé sur la donnée"
       icon: "fas fa-chart-line"
       description: "Passez de l'intuition à la certitude en exploitant l'analyse de données pour comprendre les audiences, personnaliser les messages et optimiser les campagnes en temps réel."
+      example: "Netflix utilise 1300+ clusters d'audience et l'A/B testing sur 250 000+ utilisateurs par test pour personnaliser les vignettes, augmentant l'engagement de 30%."
     
     - title: "Le contenu est roi"
       icon: "fas fa-pen-nib"
       description: "Apprenez à créer du contenu engageant (vidéos, articles, podcasts) qui captive l'attention, établit l'autorité et construit une relation de confiance durable."
+      example: "Red Bull génère 2 milliards de vues par an avec son content marketing, transformant une boisson énergisante en empire médiatique sportif."
     
     - title: "Le pouvoir de la communauté"
       icon: "fas fa-users"
       description: "Découvrez comment construire, animer et engager des communautés authentiques autour d'une marque, transformant les clients en ambassadeurs."
+      example: "La communauté Glossier a généré 90% de la croissance de la marque via le bouche-à-oreille, atteignant 1,2 milliard de valorisation en 5 ans."
     
     - title: "Impact mesurable (ROI)"
       icon: "fas fa-dollar-sign"
       description: "Maîtrisez les outils pour suivre précisément le retour sur investissement de chaque action marketing, de l'acquisition à la conversion."
+      example: "HubSpot permet de tracer chaque euro dépensé jusqu'à la vente finale, montrant que l'inbound marketing génère 3x plus de leads pour 62% moins cher."
     
     - title: "Psychologie et persuasion"
       icon: "fas fa-brain"
       description: "Plongez au cœur des mécanismes psychologiques de la persuasion pour créer des messages qui résonnent et incitent à l'action."
+      example: "Amazon utilise 35+ principes de psychologie comportementale (urgence, preuve sociale, réciprocité) pour augmenter la conversion de 29%."
 
   accordion:
     - title: "Stratégie de Contenu (Content Marketing)"
