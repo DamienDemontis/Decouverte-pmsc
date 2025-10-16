@@ -412,6 +412,11 @@ body {
   text-decoration: none;
 }
 
+/* Smart fix: When hovering any tech icon, boost the entire visual container's z-index */
+.hero-visual:has(.tech-icon:hover) {
+  z-index: 20;
+}
+
 /* Style pour le tooltip qui affiche le nom de la spécialité */
 .icon-tooltip {
   position: absolute;
