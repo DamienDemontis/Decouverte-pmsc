@@ -305,13 +305,18 @@ body {
 .hero-content {
   max-width: 800px;
   position: relative;
-  z-index: 2;
+  z-index: 10;
   padding: 2rem;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 1.5rem;
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   margin-bottom: 2rem;
+}
+
+.hero-visual {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content h1 {
@@ -360,6 +365,7 @@ body {
   height: 500px;
   margin: 0 auto;
   perspective: 1000px;
+  z-index: 1;
 }
 
 .orbit-circle {
@@ -398,7 +404,7 @@ body {
 }
 
 .tech-icon:hover {
-  z-index: 10;
+  z-index: 2;
   background-color: var(--primary);
   color: var(--white);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
@@ -424,6 +430,7 @@ body {
   transition: opacity 0.3s ease, visibility 0.3s ease, top 0.3s ease;
   box-shadow: var(--shadow);
   pointer-events: none;
+  z-index: 9999;
 }
 
 .icon-tooltip::after {
@@ -543,7 +550,7 @@ body {
   color: var(--primary);
   line-height: 1;
   margin-bottom: 0.5rem;
-  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -551,7 +558,7 @@ body {
 .stat-symbol {
   font-size: 2rem; /* Reduced size slightly */
   font-weight: 800;
-  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: 0.25rem; /* Add space before symbol */
@@ -1026,7 +1033,7 @@ body {
 /* CTA Section with enhanced styling */
 .cta-section {
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   color: var(--white);
   text-align: center;
   position: relative;
@@ -1046,6 +1053,7 @@ body {
   margin-bottom: 1.75rem;
   letter-spacing: -0.025em;
   line-height: 1.2;
+  color: var(--white);
 }
 
 .cta-section p {
