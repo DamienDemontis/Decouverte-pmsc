@@ -135,7 +135,6 @@ Plateforme web interactive de présentation des 15 spécialités MSc d'Epitech, 
 - **Data-Driven**: Contenu centralisé pour maintenance simplifiée
 - **Component-Based**: Composants réutilisables via includes
 - **Performance-First**: Optimisations automatiques en production
-- **Security-Aware**: SRI hashes pour ressources externes
 
 ---
 
@@ -173,6 +172,73 @@ JEKYLL_ENV=production bundle exec jekyll build
 
 # Les fichiers sont générés dans _site/
 ```
+
+---
+
+## 🔄 Intégration sur epitech.eu
+
+### Configuration pour le déploiement
+
+#### 1. Modification du fichier `_config.yml`
+Les paramètres suivants **DOIVENT** être modifiés selon votre structure d'URL cible :
+
+```yaml
+# Configuration actuelle (GitHub Pages)
+baseurl: "/Decouverte-pmsc"
+url: "https://DamienDemontis.github.io"
+
+# À remplacer par
+
+baseurl: ""
+url: "https://msc.decouverte.epitech.eu" # Exemple 
+
+```
+
+#### 2. Structure des URLs
+Le site utilise Jekyll avec `{{ site.baseurl }}` pour tous les liens internes. Les URLs seront automatiquement ajustées selon votre configuration :
+
+- **Pages des spécialités** : `[baseurl]/specialites/[nom-specialite]`
+- **Assets CSS/JS** : `[baseurl]/assets/`
+- **Images** : `[baseurl]/assets/images/`
+
+#### 3. Options de déploiement
+
+##### CI/CD avec GitLab
+Exemple de fichier `.gitlab-ci.yml` :
+```yaml
+image: ruby:3.0
+
+variables:
+  JEKYLL_ENV: production
+
+before_script:
+  - gem install bundler
+  - bundle install
+
+build:
+  stage: build
+  script:
+    - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main  # ou master selon votre branche
+
+deploy:
+  stage: deploy
+  script:
+    - # Votre script de déploiement vers msc.decouverte.epitech.eu
+  dependencies:
+    - build
+```
+
+##### Option B : GitHub Actions (si vous gardez GitHub)
+Le workflow existe déjà dans `.github/workflows/`. Il suffit de modifier les variables de déploiement.
+
+#### 4. Points d'attention
+- **Chemins absolus** : Tous les liens utilisent `{{ site.baseurl }}`, pas de modification manuelle nécessaire
+- **Assets externes** : Font Awesome via CDN, pas d'hébergement local requis
 
 ### Commandes essentielles
 
@@ -326,7 +392,7 @@ Ajouter dans `_data/navigation.yml` sous la bonne catégorie.
 
 ### Tâches régulières
 
-#### Mises à jour mensuelles
+#### Mises à jour
 ```bash
 # Vérifier et appliquer les mises à jour
 bundle outdated
@@ -351,14 +417,6 @@ bundle exec jekyll serve
 | Bot non fonctionnel | Inspecter console JavaScript |
 | Styles manquants | Vérifier `baseurl` dans `_config.yml` |
 | Performance dégradée | Optimiser images, nettoyer CSS inutilisé |
-
-### Points de vigilance
-
-⚠️ **Avant toute mise à jour majeure:**
-1. Sauvegarder le site actuel
-2. Tester en environnement local
-3. Vérifier la compatibilité Jekyll/GitHub Pages
-4. Valider les scores Lighthouse
 
 ---
 
