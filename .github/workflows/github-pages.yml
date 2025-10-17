@@ -3,7 +3,7 @@ name: Deploy redirect to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - vercel-prod
   workflow_dispatch:
 
 permissions:
