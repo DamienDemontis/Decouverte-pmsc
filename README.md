@@ -6,6 +6,7 @@
 - [Performances et métriques](#-performances-et-métriques)
 - [Architecture technique](#-architecture-technique)
 - [Installation et configuration](#-installation-et-configuration)
+- [Déploiement sur epitech.eu](#-déploiement-sur-epitecheu)
 - [Structure du projet](#-structure-du-projet)
 - [Fonctionnalités principales](#-fonctionnalités-principales)
 - [Gestion du contenu](#-gestion-du-contenu)
@@ -141,113 +142,92 @@ Plateforme web interactive de présentation des 15 spécialités MSc d'Epitech, 
 ## 🚀 Installation et configuration
 
 ### Prérequis
-- Ruby 2.7+ avec Bundler
-- Git pour le versioning
-- Éditeur de code moderne (VS Code recommandé)
+- **Docker** et **Docker Compose** installés
+### Installation avec Docker
 
-### Installation
-
-#### 1. Configuration initiale
+#### 1. Lancement en développement
 ```bash
-# Installer les dépendances Ruby
-bundle install
-
-# Vérifier l'installation
-bundle exec jekyll --version
-```
-
-#### 2. Lancement en développement
-```bash
-# Serveur avec rechargement automatique
-bundle exec jekyll serve --livereload
+# Démarrer l'environnement de développement
+docker-compose up
 
 # Le site sera accessible sur
-# http://localhost:4000/Decouverte-pmsc/
+# http://localhost:4000/
+# Hot-reload activé : les modifications sont automatiquement rechargées
+
+# Arrêter le serveur
+# Ctrl+C ou docker-compose down
 ```
 
-#### 3. Build de production
+#### 2. Build et test de production
 ```bash
-# Générer le site optimisé
-JEKYLL_ENV=production bundle exec jekyll build
+# Construire et démarrer le conteneur de production
+docker-compose --profile production up --build
 
-# Les fichiers sont générés dans _site/
+# Le site sera accessible sur
+# http://localhost:8080/
+# Serveur Nginx optimisé avec compression, cache et sécurité
+```
+
+#### 3. Nettoyage et rebuild
+```bash
+# Nettoyer le cache Jekyll (si nécessaire)
+docker-compose exec dev rm -rf _site .jekyll-cache
+
+# Rebuild complet des images
+docker-compose build --no-cache
+
+# Supprimer tous les conteneurs et volumes
+docker-compose down -v
 ```
 
 ---
 
-## 🔄 Intégration sur epitech.eu
+## 🔄 Déploiement sur epitech.eu
 
-### Configuration pour le déploiement
+### Configuration
 
-#### 1. Modification du fichier `_config.yml`
-Les paramètres suivants **DOIVENT** être modifiés selon votre structure d'URL cible :
+Le fichier `_config.yml` est déjà configuré pour un déploiement direct :
 
 ```yaml
-# Configuration actuelle (GitHub Pages)
-baseurl: "/Decouverte-pmsc"
-url: "https://DamienDemontis.github.io"
-
-# À remplacer par
-
-baseurl: ""
-url: "https://msc.decouverte.epitech.eu" # Exemple 
-
+baseurl: ""  # Pas de sous-dossier
+url: "http://localhost:4000"  # À remplacer par l'URL de production
 ```
 
-#### 2. Structure des URLs
-Le site utilise Jekyll avec `{{ site.baseurl }}` pour tous les liens internes. Les URLs seront automatiquement ajustées selon votre configuration :
-
-- **Pages des spécialités** : `[baseurl]/specialites/[nom-specialite]`
-- **Assets CSS/JS** : `[baseurl]/assets/`
-- **Images** : `[baseurl]/assets/images/`
-
-#### 3. Options de déploiement
-
-##### CI/CD avec GitLab
-Exemple de fichier `.gitlab-ci.yml` :
+**Avant le déploiement**, modifier uniquement la ligne `url` dans `_config.yml` :
 ```yaml
-image: ruby:3.0
-
-variables:
-  JEKYLL_ENV: production
-
-before_script:
-  - gem install bundler
-  - bundle install
-
-build:
-  stage: build
-  script:
-    - bundle exec jekyll build -d public
-  artifacts:
-    paths:
-      - public
-  only:
-    - main  # ou master selon votre branche
-
-deploy:
-  stage: deploy
-  script:
-    - # Votre script de déploiement vers msc.decouverte.epitech.eu
-  dependencies:
-    - build
+url: "https://msc.epitech.eu"  # Remplacer par l'URL réelle
 ```
 
-##### Option B : GitHub Actions (si vous gardez GitHub)
-Le workflow existe déjà dans `.github/workflows/`. Il suffit de modifier les variables de déploiement.
+### Déploiement avec Docker
 
-#### 4. Points d'attention
-- **Chemins absolus** : Tous les liens utilisent `{{ site.baseurl }}`, pas de modification manuelle nécessaire
-- **Assets externes** : Font Awesome via CDN, pas d'hébergement local requis
+Le site est containerisé et prêt à être déployé. L'image de production inclut :
+- Build Jekyll optimisé avec minification
+- Serveur Nginx avec compression gzip
+- Cache des assets statiques (30 jours)
+- Headers de sécurité configurés
 
-### Commandes essentielles
+**Déploiement sur le serveur :**
+```bash
+# 1. Build l'image Docker de production
+docker build -t msc-epitech:latest .
+
+# 2. Lancer le conteneur sur le serveur
+docker run -d \
+  --name msc-epitech \
+  -p 80:80 \
+  --restart unless-stopped \
+  msc-epitech:latest
+```
+
+### Commandes Docker essentielles
 
 | Commande | Description |
 |----------|------------|
-| `bundle exec jekyll serve` | Lance le serveur de développement |
-| `bundle exec jekyll build` | Génère le site statique |
-| `bundle exec jekyll clean` | Nettoie le cache et _site |
-| `bundle update` | Met à jour les dépendances |
+| `docker-compose up` | Lance l'environnement de développement |
+| `docker-compose --profile production up` | Lance l'environnement de production |
+| `docker-compose down` | Arrête les conteneurs |
+| `docker-compose build` | Reconstruit les images Docker |
+| `docker-compose exec dev bash` | Ouvre un shell dans le conteneur dev |
 
 ---
 
@@ -394,12 +374,11 @@ Ajouter dans `_data/navigation.yml` sous la bonne catégorie.
 
 #### Mises à jour
 ```bash
-# Vérifier et appliquer les mises à jour
-bundle outdated
-bundle update
+# Reconstruire les images Docker avec les dernières dépendances
+docker-compose build --no-cache
 
 # Tester après mise à jour
-bundle exec jekyll serve
+docker-compose up
 ```
 
 #### Vérifications trimestrielles
@@ -412,11 +391,13 @@ bundle exec jekyll serve
 
 | Problème | Solution |
 |----------|----------|
-| Build échoue | `bundle exec jekyll clean && bundle install` |
+| Build échoue | `docker-compose down -v && docker-compose build --no-cache` |
+| Cache Jekyll corrompu | `docker-compose exec dev rm -rf _site .jekyll-cache` |
 | Navigation cassée | Vérifier cohérence des slugs dans `_data/` |
-| Bot non fonctionnel | Inspecter console JavaScript |
+| Bot non fonctionnel | Inspecter console JavaScript dans le navigateur |
 | Styles manquants | Vérifier `baseurl` dans `_config.yml` |
 | Performance dégradée | Optimiser images, nettoyer CSS inutilisé |
+| Port déjà utilisé | Modifier les ports dans `docker-compose.yml` |
 
 ---
 
@@ -457,17 +438,21 @@ bundle exec jekyll serve
 ```bash
 # Problèmes fréquents et solutions
 
-# Erreur de build
-bundle exec jekyll clean && bundle install
+# Erreur de build Docker
+docker-compose down -v
+docker-compose build --no-cache
+docker-compose up
 
-# Problème de dépendances
-rm Gemfile.lock && bundle install
+# Nettoyer le cache Jekyll
+docker-compose exec dev rm -rf _site .jekyll-cache
+docker-compose restart dev
 
 # Vérifier la syntaxe YAML
-ruby -e "require 'yaml'; YAML.load_file('_config.yml')"
+docker-compose exec dev ruby -e "require 'yaml'; YAML.load_file('_config.yml')"
 
-# Serveur qui ne démarre pas
-lsof -i :4000  # Vérifier si le port est occupé
+# Port déjà utilisé
+docker ps  # Voir les conteneurs actifs
+docker-compose down  # Arrêter tous les services
 ```
 
 ---

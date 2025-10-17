@@ -1,0 +1,31 @@
+# Development Dockerfile with all dependencies
+FROM ruby:3.3-slim
+
+# Install essential dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    git \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /srv/jekyll
+
+# Copy Gemfile first for better caching
+COPY Gemfile* ./
+
+# Install bundler
+RUN gem install bundler
+
+# Copy the rest of the application
+COPY . .
+
+# Install gems (including webrick)
+RUN bundle config set --local force_ruby_platform true && \
+    bundle install
+
+# Expose ports
+EXPOSE 4000 35729
+
+# Default command
+CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--livereload", "--force_polling"]

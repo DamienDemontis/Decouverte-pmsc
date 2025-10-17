@@ -152,7 +152,7 @@ permalink: /about/
         </div>
         
         <div class="cta-section">
-          <a href="/Decouverte-pmsc/#specialties" class="btn-explore">
+          <a href="{{ site.baseurl }}/#specialties" class="btn-explore">
             <i class="fas fa-arrow-right"></i>
             Explorer toutes les spécialités
           </a>

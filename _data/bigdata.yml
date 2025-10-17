@@ -143,11 +143,11 @@ projects:
         - "Jupyter Notebook pour l'analyse interactive"
       resources:
         - text: "📋 Sujet complet (PDF)"
-          url: "/Decouverte-pmsc/assets/subjects/bigdata/tardis_bootstrap/G-AIA-210_tardis_bootstrap.pdf"
+          url: "/assets/subjects/bigdata/tardis_bootstrap/G-AIA-210_tardis_bootstrap.pdf"
         - text: "🎯 Tutoriel complémentaire : Complete Data Cleaning with Pandas"
           url: "https://pandas.pydata.org/docs/getting_started/intro_tutorials/07_reshape_table_layout.html"
         - text: "Dataset projet"
-          url: "/Decouverte-pmsc/assets/subjects/bigdata/tardis_bootstrap/dataset.csv"
+          url: "/assets/subjects/bigdata/tardis_bootstrap/dataset.csv"
         - text: "Visualizations : Seaborn Tutorial"
           url: "https://seaborn.pydata.org/tutorial.html"
 
@@ -172,11 +172,11 @@ projects:
         - "Développement d'un pipeline complet de data science"
       resources:
         - text: "📋 Sujet complet (PDF)"
-          url: "/Decouverte-pmsc/assets/subjects/bigdata/tardis_suite/G-AIA-210_tardis.pdf"
+          url: "/assets/subjects/bigdata/tardis_suite/G-AIA-210_tardis.pdf"
         - text: "🎯 Tutoriel complémentaire : Machine Learning Pipeline with Scikit-learn"
           url: "https://scikit-learn.org/stable/user_guide.html"
         - text: "Dataset projet"
-          url: "/Decouverte-pmsc/assets/subjects/bigdata/tardis_suite/dataset.csv"
+          url: "/assets/subjects/bigdata/tardis_suite/dataset.csv"
         - text: "Dashboard Creation : Streamlit Tutorial"
           url: "https://docs.streamlit.io/library/get-started/create-an-app"
 
