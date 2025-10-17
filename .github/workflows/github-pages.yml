@@ -1,4 +1,4 @@
-name: Build and deploy Jekyll site to GitHub Pages
+name: Deploy redirect to GitHub Pages
 
 on:
   push:
@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  deploy-redirect:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -28,21 +28,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Override config for GitHub Pages
+      - name: Create redirect page
         run: |
-          cat > _config.override.yml << EOF
-          baseurl: "/Decouverte-pmsc"
-          url: "https://DamienDemontis.github.io"
-          EOF
-          cat _config.yml _config.override.yml > _config.final.yml
-          mv _config.final.yml _config.yml
-
-      - name: Build with Docker
-        run: |
-          docker build --target builder -t msc-epitech-builder:latest .
-          docker create --name temp-container msc-epitech-builder:latest
-          docker cp temp-container:/app/_site ./_site
-          docker rm temp-container
+          mkdir -p _site
+          cp redirect.html _site/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
