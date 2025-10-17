@@ -1,0 +1,36 @@
+services:
+  # Development environment with hot reload
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: msc-epitech-dev
+    command: /bin/bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling"
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - .:/srv/jekyll:rw
+      - bundle-cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=development
+    networks:
+      - msc-network
+
+  # Production build with Nginx
+  prod:
+    build: .
+    container_name: msc-epitech-prod
+    ports:
+      - "8080:80"
+    networks:
+      - msc-network
+    profiles:
+      - production
+
+volumes:
+  bundle-cache:
+
+networks:
+  msc-network:
+    driver: bridge
