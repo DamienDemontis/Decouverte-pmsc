@@ -39,8 +39,8 @@ jobs:
 
       - name: Build with Docker
         run: |
-          docker build -t msc-epitech-gh:latest .
-          docker create --name temp-container msc-epitech-gh:latest
+          docker build --target builder -t msc-epitech-builder:latest .
+          docker create --name temp-container msc-epitech-builder:latest
           docker cp temp-container:/app/_site ./_site
           docker rm temp-container
 
