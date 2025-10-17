@@ -1,5 +1,0 @@
-# GitHub Pages specific configuration
-# Use this for GitHub Pages deployment with: jekyll build --config _config.yml,_config.github.yml
-
-baseurl: "/Decouverte-pmsc"
-url: "https://DamienDemontis.github.io"

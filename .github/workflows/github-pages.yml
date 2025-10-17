@@ -24,24 +24,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.2
-          bundler-cache: true
-      
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        
-      - name: Build with Jekyll
-        run: bundle exec jekyll build --config _config.yml,_config.github.yml --trace
-        env:
-          JEKYLL_ENV: production
-          
+
+      - name: Override config for GitHub Pages
+        run: |
+          cat > _config.override.yml << EOF
+          baseurl: "/Decouverte-pmsc"
+          url: "https://DamienDemontis.github.io"
+          EOF
+          cat _config.yml _config.override.yml > _config.final.yml
+          mv _config.final.yml _config.yml
+
+      - name: Build with Docker
+        run: |
+          docker build -t msc-epitech-gh:latest .
+          docker create --name temp-container msc-epitech-gh:latest
+          docker cp temp-container:/app/_site ./_site
+          docker rm temp-container
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4 
