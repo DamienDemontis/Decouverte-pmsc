@@ -1,5 +1,5 @@
 {
-  "buildCommand": "bundle install && JEKYLL_ENV=production bundle exec jekyll build",
+  "buildCommand": "bundle config set --local force_ruby_platform true && bundle install && JEKYLL_ENV=production bundle exec jekyll build",
   "outputDirectory": "_site",
   "installCommand": "gem install bundler",
   "framework": null,
