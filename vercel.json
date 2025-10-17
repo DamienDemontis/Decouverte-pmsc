@@ -3,6 +3,8 @@
   "outputDirectory": "_site",
   "installCommand": "gem install bundler",
   "framework": null,
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
